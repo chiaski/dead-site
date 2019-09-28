@@ -1,0 +1,33 @@
+@import 'reset.scss';
+@import 'aos.css'; // for animations
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:100,300,400");
+
+
+/* MAIN STRUCTURLA ELEMENTS HEHEHE */
+
+body{
+    font-family:"Montserrat";
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+.container {
+    position: absolute;
+    min-width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.box {
+    display: block;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
