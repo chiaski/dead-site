@@ -1,13 +1,13 @@
 @import 'reset.scss';
 @import 'aos.css'; // for animations
 
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:100,300,400");
+  @import url("https://use.typekit.net/oei4qnq.css");
 
 
 /* MAIN STRUCTURLA ELEMENTS HEHEHE */
 
 body{
-    font-family:"Montserrat";
+    font-family:"Miller-text";
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -29,5 +29,16 @@ body{
     width: 100%;
     top: 0;
     left: 0;
+    
+    .box-inner{
+    width:90%; margin:0 auto;
+    background:red;
+    
+}
+    
+    .inner-center{
+        min-width: 400px;
+        padding:1em !important;
+    }
 }
 
