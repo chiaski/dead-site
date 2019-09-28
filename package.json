@@ -1,0 +1,15 @@
+{
+  "name": "chiasite-webpacktest",
+  "version": "1.0.0",
+  "description": "Testing Webpack",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack ./src/scripts/app.js ./dist/app.bundle.js"
+  },
+  "author": "Chia Amisola",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.41.0",
+    "webpack-cli": "^3.3.9"
+  }
+}
