@@ -737,6 +737,7 @@ h1, h2, h3, h4, h5 {
 
 /* MAIN STRUCTURLA ELEMENTS HEHEHE */
 body {
+  background: #edf3f7;
   font-family: "Miller-text";
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -744,23 +745,24 @@ body {
 
 .container {
   position: absolute;
-  min-width: 100%;
+  width: 100%;
   height: 100%;
   top: 0;
-  left: 0; }
+  left: 0;
+  display: flex;
+  flex-wrap: wrap; }
 
 .box {
-  display: block;
-  justify-content: center;
+  position: relative;
+  display: flex;
   box-sizing: border-box;
-  width: 100%;
-  top: 0;
-  left: 0; }
+  align-items: center;
+  width: 100%; }
   .box .box-inner {
-    width: 90%;
-    margin: 0 auto;
+    margin: auto;
+    border: 1px solid pink;
+    align-self: center;
     background: red; }
   .box .inner-center {
-    min-width: 400px;
     padding: 1em !important; }
 
