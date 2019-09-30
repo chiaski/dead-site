@@ -736,8 +736,10 @@ h1, h2, h3, h4, h5 {
   padding: 0; }
 
 /* MAIN STRUCTURAL ELEMENTS HEHEHE */
+* {
+  cursor: none; }
+
 body {
-  cursor: none;
   background: #edf3f7;
   font-family: "Miller-text";
   text-rendering: optimizeLegibility;
@@ -761,11 +763,24 @@ body {
   width: 100%; }
   .box .box-inner {
     margin: auto;
-    border: 1px solid pink;
     align-self: center;
     background: red; }
   .box .inner-center {
     padding: 1em !important; }
+
+#landing h1, #landing p {
+  margin: 0; }
+
+#landing h1 {
+  font-size: 20px;
+  text-align: right; }
+
+#landing p {
+  line-height: 24px;
+  font-size: 15px; }
+
+#landing a {
+  color: blue; }
 
 .cursor {
   position: absolute;

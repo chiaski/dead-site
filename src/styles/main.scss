@@ -9,8 +9,9 @@ $bg-color: #edf3f7;
 
 /* MAIN STRUCTURAL ELEMENTS HEHEHE */
 
+*{cursor:none;}
+
 body {
-    cursor:none;
     background: $bg-color;
     font-family:"Miller-text";
     text-rendering: optimizeLegibility;
@@ -38,7 +39,6 @@ body {
     
     .box-inner{
         margin: auto;
-        border:1px solid pink;
         align-self: center;
         background:red;
     
@@ -49,8 +49,25 @@ body {
     }
 }
 
-
-
+#landing{
+    h1, p{
+        margin:0;
+    }
+    
+    h1{
+        font-size:20px;
+        text-align: right;
+    }
+    
+    p{
+        line-height:24px;
+        font-size:15px;
+    }
+    
+    a{
+        color:blue;
+    }
+}
 
 // Extra Shit
 
