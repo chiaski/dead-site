@@ -1,4 +1,6 @@
 const path = require('path');
+var webpack = require('webpack');
+
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const devMode = process.env.NODE_ENV !== 'production';
 module.exports = {
@@ -106,6 +108,8 @@ module.exports = {
     ]
   },
   plugins: [
+      
+        new webpack.ProvidePlugin({$: 'jquery', jQuery: 'jquery' }),
     // Configuration options for MiniCssExtractPlugin. Here I'm only
     // indicating what the CSS outputted file name should be and
     // the location

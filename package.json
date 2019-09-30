@@ -30,6 +30,7 @@
     "build": "cross-env NODE_ENV=production webpack"
   },
   "dependencies": {
-    "aos": "^2.3.4"
+    "aos": "^2.3.4",
+    "jquery": "^3.4.1"
   }
 }

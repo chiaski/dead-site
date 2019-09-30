@@ -1,2 +1,4 @@
 node_modules
 testing
+yarn.lock
+.DS_Store
