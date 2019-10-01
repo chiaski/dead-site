@@ -93,3 +93,8 @@ body {
 .cursor.is-moving {
   transform: scale(0.9);
 }
+
+.cursor.is-hovering {
+  transform: scale(1.8);
+  mix-blend-mode: exclusion;
+}

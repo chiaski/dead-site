@@ -18,7 +18,19 @@ function moveCursor(e) {
    }, 300);
 }
 
+function enlargeCursor(e){
+$cursor.removeClass('is-moving');
+  $cursor.addClass('is-hovering');
+}
+
+function unenlargeCursor(e){
+  $cursor.removeClass('is-hovering');
+}
+
 $(window).on('mousemove', moveCursor);
+$("a").on('mouseenter', enlargeCursor);
+$("a").on('mouseleave', unenlargeCursor);
+
 
 $("#sayhello").mouseenter(function(){
     $("#landing").css("background-image", "url(assets/images/sayhello.jpg)");
@@ -30,9 +42,16 @@ $("#clickdeveloph").mouseenter(function(){
     console.log("hello");
 });
 
+$("#clickchia").mouseenter(function(){
+    $("#landing").css("background-image", "url(assets/images/chia.jpg)");
+    $("#landing").css("background-size", "contain");
+    console.log("hello");
+});
+
 
 $("a").mouseleave(function(){
     $("#landing").css("background-image", "url()");
+    $("#landing").css("background-size", "cover");
 });
 
 
