@@ -41,7 +41,6 @@ body {
         margin: auto;
         align-self: center;
         background:red;
-    
 }
     
     .inner-center{
@@ -50,6 +49,8 @@ body {
 }
 
 #landing{
+    background-position:center center;
+    
     h1, p{
         margin:0;
     }

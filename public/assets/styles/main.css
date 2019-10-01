@@ -768,19 +768,18 @@ body {
   .box .inner-center {
     padding: 1em !important; }
 
-#landing h1, #landing p {
-  margin: 0; }
-
-#landing h1 {
-  font-size: 20px;
-  text-align: right; }
-
-#landing p {
-  line-height: 24px;
-  font-size: 15px; }
-
-#landing a {
-  color: blue; }
+#landing {
+  background-position: center center; }
+  #landing h1, #landing p {
+    margin: 0; }
+  #landing h1 {
+    font-size: 20px;
+    text-align: right; }
+  #landing p {
+    line-height: 24px;
+    font-size: 15px; }
+  #landing a {
+    color: blue; }
 
 .cursor {
   position: absolute;

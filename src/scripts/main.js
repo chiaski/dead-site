@@ -5,6 +5,8 @@ AOS.init(); // initialize animate on scroll
 var $cursor = $('.cursor');
 
 
+// If cursor is moving
+
 function moveCursor(e) {
   $cursor.addClass('is-moving');
   $cursor.css({"top": e.pageY, "left": e.pageX});
@@ -23,12 +25,19 @@ $("#sayhello").mouseenter(function(){
     console.log("hello");
 });
 
-$("#sayhello").mouseleave(function(){
-    
+$("#clickdeveloph").mouseenter(function(){
+    $("#landing").css("background-image", "url(assets/images/projects.jpg)");
+    console.log("hello");
+});
+
+
+$("a").mouseleave(function(){
     $("#landing").css("background-image", "url()");
 });
 
 
+
+/* PARALLAX */
 
 var lFollowX = 0,
     lFollowY = 0,
@@ -42,7 +51,7 @@ function moveBackground() {
   
   translate = 'translate(' + x + 'px, ' + y + 'px) scale(1.1)';
 
-  $('.bg').css({
+  $('#landing .box-inner').css({
     '-webit-transform': translate,
     '-moz-transform': translate,
     'transform': translate
