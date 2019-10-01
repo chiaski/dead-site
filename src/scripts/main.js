@@ -72,8 +72,8 @@ $("#clickmusic").mouseenter(function(){
 
 
 $("a").mouseleave(function(){
-    $("#landing").css("background-image", "url()");
-    $("#landing").css("background-size", "cover");
+    $("#landing").css("background-image", "url(assets/images/bg.gif)");
+    $("#landing").css("background-size", "auto");
 });
 
 
