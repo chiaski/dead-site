@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'Recoleta';
+    src: url('fonts/Recoleta-Medium.eot');
+    src: url('fonts/Recoleta-Medium.ttf') format('truetype'),
+        url('fonts/Recoleta-Medium.svg#Recoleta-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Recoleta';
+    src: url('fonts/Recoleta-Regular.eot');
+    src: url('fonts/Recoleta-Regular.ttf') format('truetype'),
+        url('fonts/Recoleta-Regular.svg#Recoleta-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+

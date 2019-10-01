@@ -1,3 +1,4 @@
+
 AOS.init(); // initialize animate on scroll
 
 // https://michalsnik.github.io/aos/
@@ -44,6 +45,27 @@ $("#clickdeveloph").mouseenter(function(){
 
 $("#clickchia").mouseenter(function(){
     $("#landing").css("background-image", "url(assets/images/chia.jpg)");
+    $("#landing").css("background-size", "contain");
+    console.log("hello");
+});
+
+
+$("#clickghc").mouseenter(function(){
+    $("#landing").css("background-image", "url(assets/images/ghc.jpg)");
+    $("#landing").css("background-size", "contain");
+    console.log("hello");
+});
+
+$("#clickgtl").mouseenter(function(){
+    $("#landing").css("background-image", "url(assets/images/gtl.jpg)");
+    $("#landing").css("background-size", "contain");
+    console.log("hello");
+});
+
+
+
+$("#clickmusic").mouseenter(function(){
+    $("#landing").css("background-image", "url(assets/images/music.jpg)");
     $("#landing").css("background-size", "contain");
     console.log("hello");
 });

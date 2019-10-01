@@ -1,5 +1,6 @@
 const path = require('path');
 var webpack = require('webpack');
+var ImageminPlugin = require('imagemin-webpack-plugin').default
 
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const devMode = process.env.NODE_ENV !== 'production';
@@ -7,7 +8,7 @@ module.exports = {
   // Tells Webpack which built-in optimizations to use
   // In 'production' mode, Webpack will minify and uglify our JS code
   // If you leave this out, Webpack will default to 'production'
-  mode: devMode ? 'development' : 'production',
+ // mode: devMode ? 'development' : 'production',
   // Webpack needs to know where to start the bundling process,
   // so we define the main JS and Sass files, both under
   // the './src' directory

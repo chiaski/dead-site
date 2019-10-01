@@ -1,5 +1,6 @@
 @import 'reset.scss';
 @import 'aos.css'; // for animations
+@import 'fonts.css';
 
 @import url("https://use.typekit.net/oei4qnq.css");
 
@@ -9,11 +10,10 @@ $bg-color: #edf3f7;
 
 /* MAIN STRUCTURAL ELEMENTS HEHEHE */
 
-*{cursor:none;}
+*{cursor:none; font-family:"Miller-text";}
 
 body {
     background: $bg-color;
-    font-family:"Miller-text";
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -40,7 +40,7 @@ body {
     .box-inner{
         margin: auto;
         align-self: center;
-        background:red;
+        padding:1em;
 }
     
     .inner-center{
@@ -61,12 +61,38 @@ body {
     }
     
     p{
-        line-height:24px;
-        font-size:15px;
+        font-family:"Recoleta";
+        line-height:20px;
+        font-size:14px;
     }
     
     a{
-        color:blue;
+        color:#000;
+        text-decoration: none;
+        background:#fff;
+        font-size:13px;
+        font-family:"Recoleta";
+    } a:hover{
+        color:#fff;
+        text-decoration: none;
+        background:#3422bc;
+    }
+}
+
+#projects{
+    .box-inner{
+        
+    }
+    h1{margin:0;
+    color:#fff;
+    font-size:14px;
+    font-family:"Recoleta";
+    text-align: center;}
+    
+    a{color:#fff;margin:.5em;font-size:14px;font-family:"Recoleta";}
+    
+    #whereischia a{
+        margin:0;font-size:16px;
     }
 }
 
@@ -96,5 +122,4 @@ body {
 
 .cursor.is-hovering {
   transform: scale(1.8);
-  mix-blend-mode: exclusion;
 }
