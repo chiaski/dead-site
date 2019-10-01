@@ -769,7 +769,8 @@ body {
     padding: 1em !important; }
 
 #landing {
-  background-position: center center; }
+  background-position: center center;
+  color: #f8f6f6; }
   #landing h1, #landing p {
     margin: 0; }
   #landing h1 {
