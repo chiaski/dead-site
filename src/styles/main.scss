@@ -56,8 +56,10 @@ body {
     color: #f8f6f6;
 
     h1 {
-        font-family: "Termina";
-        font-size: 1.7em;
+        font-family: "aktiv-grotesk-extended";
+        font-size: 1.8em;
+        margin-bottom:.2em;
+        sup{font-family:"aktiv-grotesk-extended";font-size:12px;font-weight:100;margin-bottom:10px;line-height:.5em;}
     }
 
     h1,
@@ -67,15 +69,15 @@ body {
 
     p {
         font-family: "aktiv-grotesk";
-        line-height: 2em;
-        font-size: .8em;
+        line-height: 1.7em;
+        font-size: .9em;
     }
 
     a {
+        font-size:.85em;
         color: #000;
         text-decoration: none;
         background: #fff;
-        font-size: .9em;
         font-family: "aktiv-grotesk-extended";
         -webkit-transition: all .3s linear;
         -moz-transition: all .3s linear;
