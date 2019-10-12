@@ -92,7 +92,7 @@ function moveBackground() {
   
   translate = 'translate(' + x + 'px, ' + y + 'px) scale(1.1)';
 
-  $('#landing .box-inner').css({
+  $('#landing').css({
     '-webit-transform': translate,
     '-moz-transform': translate,
     'transform': translate
@@ -100,6 +100,7 @@ function moveBackground() {
 
   window.requestAnimationFrame(moveBackground);
 }
+
 
 $(window).on('mousemove click', function(e) {
 
