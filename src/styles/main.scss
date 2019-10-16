@@ -90,7 +90,7 @@ body {
     }
     
     .header-left a:hover{
-        border-bottom:1px solid #222126
+        border-bottom:1px solid #222126;
     }
     
     .header-left{
@@ -99,7 +99,8 @@ body {
     
     .header-right a{
         color:#2b13af;
-        padding:.3em;
+        margin:.3em;
+        padding:.5em;
         font-family: "aktiv-grotesk-extended";
         margin-right:.7em;
         -webkit-transition: all .3s linear;
@@ -110,7 +111,7 @@ body {
     }
     
     .header-right a:hover{
-        background:yellow;
+        background:#f6e404;
     }
     
 }
@@ -246,7 +247,7 @@ body {
 }
 
 .portfolio-box:hover{
-    background:yellow;
+    background:#f6e404;
 }
 
 // Extra Shit

@@ -31,10 +31,6 @@ $dark-mid: #262c2b;
     }
     
 }
-
-.portfolio-box:hover{
-    background:yellow;
-}
       
 
 .image-container{
@@ -117,13 +113,13 @@ $dark-mid: #262c2b;
         
         h2{
             font-family: aktiv-grotesk, sans-serif; 
-            font-weight: 800;
+            font-weight: 600;
             color:#8b8484;
         }
         
         h3{
             font-size:1.3em;
-            font-family: "aktiv-grotesk";   
+            font-family: "aktiv-grotesk-extended";     
         }
         
         p{
@@ -135,20 +131,26 @@ $dark-mid: #262c2b;
         .description{
             background: $dark-mid;
             padding:1.4em;
-            font-family: "aktiv-grotesk-extended";   
-            font-size:.9em;
+            line-height:1.4em;
+            font-size:1em;
             margin-bottom:1em;
             color: $light-color;
         }
         
         blockquote{
             box-sizing: border-box;
-            font-size:1.2em !important;
+            font-size:1.1em !important;
             padding:1em;
             margin-bottom:2em;
             border-top:1px solid $dark-mid;
             border-bottom:1px solid $dark-mid;
             color: $dark-lightest;
+            
+            h3{
+                margin:0;
+                font-family:"Sporting Grotesque";
+                font-size:19px;
+            }
         }
         
     }
