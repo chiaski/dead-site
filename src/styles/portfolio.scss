@@ -43,33 +43,49 @@
 
 .image-container{
     
-    width:100%;
+    padding:1em;
+    margin-left:-5%;
+    width:110%;
     display:flex;
-    justify-content: space-between;
-        box-sizing: border-box;
+    justify-content: space-around;
+    box-sizing: border-box;
     
     img{
-        max-width:100%;
+        max-width:inherit;
         box-sizing: border-box;
-        padding:1em;
+        margin:.5em;
     }
+    
+    .image-twentyfive{
+        width:23%;
+        box-sizing: border-box;
+    }
+    
     
     .image-third{
         width:33%;
     }
     
     .image-half{
-        width:50%;
+        width:45%;
     }
     
     .image-seventyfive{
-        width:75%;
+        width:71%;
+        box-sizing: border-box;
     }
+    
+    .image-full{
+        width:100%;
+        box-sizing: border-box;
+    }
+    
     
 }
     
 
 #portfolio{
+    
     
     .portfolio-landing{
         h1{
