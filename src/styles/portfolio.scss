@@ -87,6 +87,25 @@ $dark-mid: #262c2b;
         p{
             margin:.5em;
         }
+        
+        .portfolio-overview{
+        float:left;    
+        }
+        
+        .project-contents{
+            right:0;
+            width:40%;
+            max-width:300px;
+            float:right;
+            border:1px solid $dark-mid;
+            padding:.5em;
+            
+            a{
+                display:block;
+                
+            }
+        }
+        
     }
     
     .portfolio-last{
