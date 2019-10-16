@@ -79,6 +79,7 @@ $dark-mid: #262c2b;
 #portfolio{
     
     .portfolio-landing{
+        padding:1em;
         h1{
             font-size:2.4em;
             margin:0;
@@ -105,6 +106,22 @@ $dark-mid: #262c2b;
                 
             }
         }
+        
+        
+        @media only screen and (max-width: 600px) {
+            .project-contents{
+                display:block;
+                float:none;
+                margin:1em;
+                margin-top:50px;
+            }   
+            
+            .portfolio-overview{
+                float:none;
+            }
+        }
+        
+        
         
     }
     
@@ -142,9 +159,23 @@ $dark-mid: #262c2b;
         }
         
         p{
-            font-size:1.2em !important;
+            font-size:1.1em !important;
             margin:.3em;
             padding-bottom:1em;
+        }
+        
+        .side-description{
+            float:right;
+            display:inline-block;
+            width:200px;
+            margin:1.2em 1.5em 1.2em 1.2em;
+            border-top:1px solid $dark-mid;
+            border-bottom:1px solid $dark-mid;
+            
+            p{
+                padding:.3em;
+                margin:0;
+            }
         }
         
         .description{
