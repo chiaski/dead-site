@@ -20,12 +20,12 @@ function moveCursor(e) {
 }
 
 function enlargeCursor(e){
-$cursor.removeClass('is-moving');
-  $cursor.addClass('is-hovering');
+    $cursor.removeClass('is-moving');
+    $cursor.addClass('is-hovering');
 }
 
 function unenlargeCursor(e){
-  $cursor.removeClass('is-hovering');
+    $cursor.removeClass('is-hovering');
 }
 
 $(window).on('mousemove', moveCursor);

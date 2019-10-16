@@ -11,12 +11,12 @@ $bg-color: #001a19;
 /* MAIN STRUCTURAL ELEMENTS HEHEHE */
 
 * {
-    cursor: none;
+    cursor: none !important;
     font-family: "aktiv-grotesk";
 }
 
 body {
-    cursor: none;
+    cursor: none !important;
     background: $bg-color;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -51,9 +51,63 @@ body {
     }
 }
 
+.box{
+    color: #222126;
+    
+    h1 {
+        font-family: "aktiv-grotesk-extended";
+        font-size: 1.8em;
+        margin-bottom:.2em;
+        sup{font-family:"aktiv-grotesk-extended";font-size:12px;font-weight:100;margin-bottom:10px;line-height:.5em;}
+    }
+
+    
+    p {
+        font-family: "aktiv-grotesk";
+        line-height: 1.7em;
+        font-size: .9em;
+    }
+}
+
+.header{
+    z-index:999;
+    position: absolute;
+    height:80px;
+    width:100%;
+    top:0;
+    box-sizing:border-box;
+    padding:1em;
+    display:flex;
+    justify-content: space-between;
+    
+    .header-left{
+        font-family: 'Sporting Grotesque' !important;
+        font-weight:100;
+        font-size:1.4em;
+    }
+    
+    .header-right a{
+        color:#2b13af;
+        padding:.3em;
+        font-family: "aktiv-grotesk-extended";
+        margin-right:.7em;
+        -webkit-transition: all .3s linear;
+        -moz-transition: all .3s linear;
+        -ms-transition: all .3s linear;
+        -o-transition: all .3s linear;
+        transition: all .3s linear;
+    }
+    
+    .header-right a:hover{
+        background:yellow;
+    }
+    
+}
+
+
 #landing {
+    color: #f0f8f7;
     background-position: center center;
-    color: #f8f6f6;
 
     h1 {
         font-family: "aktiv-grotesk-extended";
@@ -67,11 +121,6 @@ body {
         margin: 0;
     }
 
-    p {
-        font-family: "aktiv-grotesk";
-        line-height: 1.7em;
-        font-size: .9em;
-    }
 
     a {
         font-size:.85em;
@@ -94,7 +143,9 @@ body {
 }
 
 #projects {
+    
     margin:1em;
+    
     h1 {
         margin: 0;
         color: #fff;
@@ -139,6 +190,51 @@ body {
     p {
         font-family: "aktiv-grotesk";
     }
+}
+
+
+// Portfolio
+
+.portfolio-link{
+    text-decoration: none;
+}
+
+.portfolio-container{
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.portfolio-box{
+    
+    display:inline-block;
+    text-align: left;
+    padding:1.3em;
+    
+    img{
+        width:100%;
+    }
+    
+    h2{
+        font-family: "Sporting Grotesque";
+        font-weight:100;
+        margin:0;
+        font-size:1em;
+        text-decoration: none;  
+        color:#2b13af;
+    }
+    
+    p{
+        margin:0;
+        margin-top:-7px;
+        color: #5e5d62;
+        font-size:.8em;
+    }
+}
+
+.portfolio-box:hover{
+    background:yellow;
 }
 
 // Extra Shit
