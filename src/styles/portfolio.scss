@@ -14,31 +14,15 @@
         width:180px !important;
     }
     
-    display:flex;
-    flex-wrap: wrap;
-    display:inline-block;
-    text-align: left;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
     padding:1.2em;
     
-    img{
-        width:160pxs;
+    h3{
+        font-family:"Sporting Grotesque";
     }
     
-    h2{
-        font-family: "Sporting Grotesque";
-        font-weight:100;
-        margin:0;
-        font-size:1em;
-        text-decoration: none;  
-        color:#2b13af;
-    }
-    
-    p{
-        margin:0;
-        margin-top:-7px;
-        color: #5e5d62;
-        font-size:.8em;
-    }
 }
 
 .portfolio-box:hover{
@@ -91,7 +75,6 @@
 
 #portfolio{
     
-    
     .portfolio-landing{
         h1{
             font-size:2.4em;
@@ -135,5 +118,11 @@
             margin:.3em;
             padding-bottom:1em;
         }
+        
+        
+        blockquote{
+            font-size:1.2em !important;
+        }
+        
     }
 }
