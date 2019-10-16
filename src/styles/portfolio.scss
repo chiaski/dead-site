@@ -8,10 +8,15 @@
 }
 
 
-.portfolio-box{
+.portfolio-project-container{
     
+    .portfolio-box{
+        width:180px !important;
+    }
+    
+    display:flex;
+    flex-wrap: wrap;
     display:inline-block;
-    width:190px;
     text-align: left;
     padding:1.2em;
     
@@ -98,7 +103,22 @@
     }
     .portfolio-description{
     
-    
+        a{
+            background:#2b13af;
+            padding:.1em;
+            text-decoration: none;
+            color:#fdf6f6;
+            -webkit-transition: all .3s linear;
+            -moz-transition: all .3s linear;
+            -ms-transition: all .3s linear;
+            -o-transition: all .3s linear;
+            transition: all .3s linear;
+        }
+        
+        a:hover{
+           background:yellow;
+            color:#262c2b;
+        }
         
         h2{
             font-family: aktiv-grotesk, sans-serif; 
