@@ -81,9 +81,19 @@ body {
     display:flex;
     justify-content: space-between;
     
-    .header-left{
+    .header-left a{
         font-family: 'Sporting Grotesque' !important;
         font-weight:100;
+        font-size:1.1em;
+        text-decoration: none;
+        color:#222126;
+    }
+    
+    .header-left a:hover{
+        border-bottom:1px solid #222126
+    }
+    
+    .header-left{
         font-size:1.4em;
     }
     
