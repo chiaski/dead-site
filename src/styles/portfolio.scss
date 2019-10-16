@@ -1,3 +1,9 @@
+
+$light-color: #f0f8f7;
+
+$dark-lightest: #605757;
+$dark-mid: #262c2b;
+
 #footer{
     background:#262222;
     display:inline-block;
@@ -21,6 +27,7 @@
     
     h3{
         font-family:"Sporting Grotesque";
+        font-size:16px;
     }
     
 }
@@ -78,6 +85,7 @@
     .portfolio-landing{
         h1{
             font-size:2.4em;
+            margin:0;
         }
         
         p{
@@ -104,12 +112,13 @@
         
         a:hover{
            background:yellow;
-            color:#262c2b;
+            color: $dark-mid;
         }
         
         h2{
             font-family: aktiv-grotesk, sans-serif; 
-            font-weight: 800;  
+            font-weight: 800;
+            color:#8b8484;
         }
         
         h3{
@@ -123,9 +132,23 @@
             padding-bottom:1em;
         }
         
+        .description{
+            background: $dark-mid;
+            padding:1.4em;
+            font-family: "aktiv-grotesk-extended";   
+            font-size:.9em;
+            margin-bottom:1em;
+            color: $light-color;
+        }
         
         blockquote{
+            box-sizing: border-box;
             font-size:1.2em !important;
+            padding:1em;
+            margin-bottom:2em;
+            border-top:1px solid $dark-mid;
+            border-bottom:1px solid $dark-mid;
+            color: $dark-lightest;
         }
         
     }

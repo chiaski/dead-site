@@ -6,6 +6,7 @@
 @import url("https://use.typekit.net/hig4mif.css");
 
 $bg-color: #001a19;
+$light-color: #f0f8f7;
 
 
 /* MAIN STRUCTURAL ELEMENTS HEHEHE */
@@ -106,7 +107,7 @@ body {
 
 
 #landing {
-    color: #f0f8f7;
+    color: $light-color;
     background-position: center center;
 
     h1 {
