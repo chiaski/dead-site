@@ -169,8 +169,9 @@ $dark-mid: #262c2b;
             display:inline-block;
             width:200px;
             margin:1.2em 1.5em 1.2em 1.2em;
-            border-top:1px solid $dark-mid;
-            border-bottom:1px solid $dark-mid;
+            border-top:1px solid #96979b;
+            border-bottom:1px solid #96979b;
+            color:$dark-mid;
             
             p{
                 padding:.3em;
