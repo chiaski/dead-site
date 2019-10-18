@@ -165,8 +165,14 @@ body {
         font-family: "aktiv-grotesk-extended";
         text-align: center;
     }
+    
+    
+    
+    .projects-archive{
+        padding-top:2em;
+    }
 
-    a {
+    .projects-archive a {
         color: #fff;
         margin: .5em .8em .5em 0;
         padding: .1em;
@@ -184,6 +190,38 @@ body {
         background: blue;
     }
 
+    
+    .projects-details{
+        p{
+            font-size:13px;
+            color:#fff;
+            margin:0;
+            padding-bottom:1em;
+            line-height:18px;
+        }
+            
+        a h3{
+        margin:0;
+        font-family: "aktiv-grotesk-extended";
+        color:blue;
+        font-size:15px;
+            
+        -webkit-transition: all .3s linear;
+        -moz-transition: all .3s linear;
+        -ms-transition: all .3s linear;
+        -o-transition: all .3s linear;
+        transition: all .3s linear;
+        }
+        
+        a h3:hover{
+        color:yellow;
+        }
+        
+        h3{margin:0;} a{margin:0;
+        text-decoration: none;box-sizing: border-box;}
+    }
+    
+    
 
     #whereischia a {
         color: #000;
@@ -191,6 +229,7 @@ body {
         background: #fff;
         font-size: .9em;
         font-family: "aktiv-grotesk-extended";
+        margin: .5em .8em .5em 0;
     }
 
     #whereischia a:hover {
