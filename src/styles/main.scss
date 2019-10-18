@@ -127,6 +127,7 @@ body {
         margin-bottom:.2em;
         sup{font-family:"aktiv-grotesk-extended";font-size:12px;font-weight:100;margin-bottom:10px;line-height:.5em;}
     }
+    
 
     h1,
     p {
@@ -152,10 +153,20 @@ body {
         text-decoration: none;
         background: #3422bc;
     }
+    
+    
+        
+        @media only screen and (max-width: 600px) {
+            .hide, sup{
+                display:none !important;
+            }
+        }
+    
 }
 
 #projects {
     
+    top:15%;
     margin:1em;
     
     h1 {
@@ -169,7 +180,7 @@ body {
     
     
     .projects-archive{
-        padding-top:2em;
+        padding-top:15%;
     }
 
     .projects-archive a {
@@ -192,6 +203,8 @@ body {
 
     
     .projects-details{
+        padding-top:15%;
+        
         p{
             font-size:13px;
             color:#fff;
