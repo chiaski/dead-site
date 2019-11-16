@@ -3,7 +3,7 @@
 @import 'fonts.css';
 
 
-@import url("https://use.typekit.net/hig4mif.css");
+@import url("https://use.typekit.net/cuk4jse.css");
 
 $bg-color: #001a19;
 $light-color: #f0f8f7;
@@ -70,6 +70,7 @@ body {
     }
 }
 
+
 .header{
     z-index:999;
     position: absolute;
@@ -114,6 +115,17 @@ body {
         background:#f6e404;
     }
     
+}
+
+
+#portfolio-page{
+    .quote-block{
+        text-align: center !important;
+        color:#2c2929;
+        font-size:2em;
+        padding:.5em 2em .5em  2em;
+        font-family: moret, serif; 
+    }   
 }
 
 
