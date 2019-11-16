@@ -76,13 +76,28 @@ $dark-mid: #262c2b;
 }
     
 
+
+
+#portfolio-page{
+    .quote-block{
+        text-align: center !important;
+        color:#2c2929;
+        font-size:2em;
+        padding:.5em 10% .5em  10%;
+        margin-top:-2em;
+        font-family: moret, serif; 
+    }   
+}
+
+
+
 #portfolio{
     
     .portfolio-landing{
         padding:1em;
-        h1{
-            font-size:2.4em;
-            margin:0;
+        h3{
+            font-size:1.3em;
+            font-family: "aktiv-grotesk-extended";     
         }
         
         p{
@@ -98,12 +113,11 @@ $dark-mid: #262c2b;
             width:40%;
             max-width:300px;
             float:right;
-            border:1px solid $dark-mid;
-            padding:.5em;
+            padding:1em;
             
             a{
                 display:block;
-                
+                margin-left:.5em;
             }
         }
         
@@ -147,10 +161,17 @@ $dark-mid: #262c2b;
             color: $dark-mid;
         }
         
+        h1{font-size:1.3em;
+        padding:1em 0 .5em 0;}
+        
         h2{
-            font-family: aktiv-grotesk, sans-serif; 
+            font-family: halyard-display, sans-serif;
+            font-size:18px;
+            text-transform:uppercase;
+            letter-spacing:1px;
             font-weight: 600;
-            color:#8b8484;
+            color:#221e1e;
+            margin-top:-.4em;
         }
         
         h3{
@@ -160,6 +181,7 @@ $dark-mid: #262c2b;
         
         p{
             font-size:1.1em !important;
+            color:#435262;
             margin:.3em;
             padding-bottom:1em;
         }
