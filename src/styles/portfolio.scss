@@ -6,10 +6,10 @@ $dark-mid: #262c2b;
 
 #footer{
     background:#262222;
-    display:inline-block;
+    box-sizing: border-box;
     min-height:120px;
     width:100%;
-    padding:1em;
+    padding:2em;
     margin-top:2em;
 }
 
@@ -82,7 +82,12 @@ $dark-mid: #262c2b;
     
 }
 
-.box{background:#f0f8f7;width:100%;}
+
+.box{background:#f0f8f7;width:100%;margin:0 !important;}
+
+.box-inner{margin:2em !important;}
+
+
 
 .box-still{
     position:fixed;
@@ -96,7 +101,6 @@ $dark-mid: #262c2b;
         color:#2c2929;
         font-size:2em;
         padding:.5em 10% .5em  10%;
-        margin-top:-2em;
         font-family: moret, serif; 
     }   
 }
@@ -106,6 +110,13 @@ $dark-mid: #262c2b;
 #portfolio{
     
     .portfolio-landing{
+        
+         h1{
+            text-align: center;
+             font-size:3.2em;
+             color:transparent;
+             -webkit-text-stroke: 1px #fff;
+        }
         
         padding:1em;
         h3{
@@ -175,7 +186,9 @@ $dark-mid: #262c2b;
         }
         
         h1{font-size:1.3em;
-        padding:1em 0 .5em 0;}
+        padding:1em 0 .5em 0;
+        max-width:70%;
+        }
         
         h2{
             font-family: halyard-display, sans-serif;
@@ -240,4 +253,10 @@ $dark-mid: #262c2b;
         }
         
     }
+}
+
+
+.alt{
+    background:black !important;
+    color:#fff !important;
 }
