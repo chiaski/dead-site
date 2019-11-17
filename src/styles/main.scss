@@ -41,7 +41,7 @@ body {
     box-sizing: border-box;
     align-items: center;
     width: 100%;
-    align-items: center; 
+    align-items: center;
     justify-content: center;
 
     .box-inner {
@@ -54,17 +54,24 @@ body {
     }
 }
 
-.box{
+.box {
     color: #222126;
-    
+
     h1 {
         font-family: "aktiv-grotesk-extended";
         font-size: 1.8em;
-        margin-bottom:.2em;
-        sup{font-family:"aktiv-grotesk-extended";font-size:12px;font-weight:100;margin-bottom:10px;line-height:.5em;}
+        margin-bottom: .2em;
+
+        sup {
+            font-family: "aktiv-grotesk-extended";
+            font-size: 12px;
+            font-weight: 100;
+            margin-bottom: 10px;
+            line-height: .5em;
+        }
     }
 
-    
+
     p {
         font-family: "aktiv-grotesk";
         line-height: 1.7em;
@@ -73,51 +80,52 @@ body {
 }
 
 
-.header{
-    z-index:999;
+.header {
+    z-index: 999;
     position: absolute;
-    height:80px;
-    width:100%;
-    top:0;
-    box-sizing:border-box;
-    padding:1.5em;
-    display:flex;
+    height: 80px;
+    width: 100%;
+    top: 0;
+    box-sizing: border-box;
+    padding: 1.5em;
+    display: flex;
     justify-content: space-between;
-    
-    .header-left a{
+
+    .header-left a {
         font-family: 'Sporting Grotesque' !important;
-        font-weight:100;
-        font-size:1.1em;
+        font-weight: 100;
+        font-size: 1.1em;
         text-decoration: none;
-        color:#222126;
+        color: #222126;
     }
-    
-    .header-left a:hover{
-        border-bottom:1px solid #222126;
+
+    .header-left a:hover {
+        border-bottom: 1px solid #222126;
     }
-    
-    .header-left{
-        font-size:1.4em;
+
+    .header-left {
+        font-size: 1.4em;
     }
-    
-    .header-right a{
-        color:#2b13af;
-        margin:.3em;
-        padding:.5em;
+
+    .header-right a {
+        color: #2b13af;
+        margin: .3em;
+        padding: .5em;
         font-family: "aktiv-grotesk-extended";
-        margin-right:.7em;
+        margin-right: .7em;
         -webkit-transition: all .3s linear;
         -moz-transition: all .3s linear;
         -ms-transition: all .3s linear;
         -o-transition: all .3s linear;
         transition: all .3s linear;
     }
-    
-    .header-right a:hover{
-        background:#f6e404;
+
+    .header-right a:hover {
+        background: #f6e404;
     }
-    
+
 }
+
 #landing {
     color: $light-color;
     background-position: center center;
@@ -125,10 +133,17 @@ body {
     h1 {
         font-family: "aktiv-grotesk-extended";
         font-size: 1.8em;
-        margin-bottom:.2em;
-        sup{font-family:"aktiv-grotesk-extended";font-size:12px;font-weight:100;margin-bottom:10px;line-height:.5em;}
+        margin-bottom: .2em;
+
+        sup {
+            font-family: "aktiv-grotesk-extended";
+            font-size: 12px;
+            font-weight: 100;
+            margin-bottom: 10px;
+            line-height: .5em;
+        }
     }
-    
+
 
     h1,
     p {
@@ -137,7 +152,7 @@ body {
 
 
     a {
-        font-size:.85em;
+        font-size: .85em;
         color: #000;
         text-decoration: none;
         background: #fff;
@@ -154,22 +169,24 @@ body {
         text-decoration: none;
         background: #3422bc;
     }
-    
-    
-        
-        @media only screen and (max-width: 600px) {
-            .hide, sup{
-                display:none !important;
-            }
+
+
+
+    @media only screen and (max-width: 600px) {
+
+        .hide,
+        sup {
+            display: none !important;
         }
-    
+    }
+
 }
 
 #projects {
-    
-    top:15%;
-    margin:1em;
-    
+
+    top: 15%;
+    margin: 1em;
+
     h1 {
         margin: 0;
         color: #fff;
@@ -177,11 +194,11 @@ body {
         font-family: "aktiv-grotesk-extended";
         text-align: center;
     }
-    
-    
-    
-    .projects-archive{
-        padding-top:15%;
+
+
+
+    .projects-archive {
+        padding-top: 15%;
     }
 
     .projects-archive a {
@@ -202,40 +219,47 @@ body {
         background: blue;
     }
 
-    
-    .projects-details{
-        padding-top:15%;
-        
-        p{
-            font-size:13px;
-            color:#fff;
-            margin:0;
-            padding-bottom:1em;
-            line-height:18px;
+
+    .projects-details {
+        padding-top: 15%;
+
+        p {
+            font-size: 13px;
+            color: #fff;
+            margin: 0;
+            padding-bottom: 1em;
+            line-height: 18px;
         }
-            
-        a h3{
-        margin:0;
-        font-family: "aktiv-grotesk-extended";
-        color:blue;
-        font-size:15px;
-            
-        -webkit-transition: all .3s linear;
-        -moz-transition: all .3s linear;
-        -ms-transition: all .3s linear;
-        -o-transition: all .3s linear;
-        transition: all .3s linear;
+
+        a h3 {
+            margin: 0;
+            font-family: "aktiv-grotesk-extended";
+            color: blue;
+            font-size: 15px;
+
+            -webkit-transition: all .3s linear;
+            -moz-transition: all .3s linear;
+            -ms-transition: all .3s linear;
+            -o-transition: all .3s linear;
+            transition: all .3s linear;
         }
-        
-        a h3:hover{
-        color:yellow;
+
+        a h3:hover {
+            color: yellow;
         }
-        
-        h3{margin:0;} a{margin:0;
-        text-decoration: none;box-sizing: border-box;}
+
+        h3 {
+            margin: 0;
+        }
+
+        a {
+            margin: 0;
+            text-decoration: none;
+            box-sizing: border-box;
+        }
     }
-    
-    
+
+
 
     #whereischia a {
         color: #000;
@@ -252,6 +276,16 @@ body {
         background: #3422bc;
     }
 
+    #whereischia .special {
+        font-family: "Avara";
+        font-size: 26px !important;
+        background: transparent;
+        color: #fff;
+        border-bottom: 3px solid #fff;
+        text-align: center;
+    }
+
+
     p {
         font-family: "aktiv-grotesk";
     }
@@ -260,47 +294,47 @@ body {
 
 // Portfolio
 
-.portfolio-link{
+.portfolio-link {
     text-decoration: none;
 }
 
-.portfolio-container{
+.portfolio-container {
     flex-wrap: wrap;
     text-align: center;
     align-items: center;
     justify-content: center;
 }
 
-.portfolio-box{
-    
-    display:inline-block;
-    width:300px !important;
+.portfolio-box {
+
+    display: inline-block;
+    width: 300px !important;
     text-align: left;
-    padding:1.3em;
-    
-    img{
-        width:100%;
+    padding: 1.3em;
+
+    img {
+        width: 100%;
     }
-    
-    h2{
-        
-        font-weight:100;
-        margin:0;
-        font-size:1em;
-        text-decoration: none;  
-        color:#2b13af;
+
+    h2 {
+
+        font-weight: 100;
+        margin: 0;
+        font-size: 1em;
+        text-decoration: none;
+        color: #2b13af;
     }
-    
-    p{
-        margin:0;
-        margin-top:-7px;
+
+    p {
+        margin: 0;
+        margin-top: -7px;
         color: #5e5d62;
-        font-size:.8em;
+        font-size: .8em;
     }
 }
 
-.portfolio-box:hover{
-    background:#f6e404;
+.portfolio-box:hover {
+    background: #f6e404;
 }
 
 // Extra Shit
