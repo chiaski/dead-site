@@ -3,6 +3,8 @@ $light-color: #f0f8f7;
 $dark-lightest: #605757;
 $dark-mid: #262c2b;
 
+@import "fonts.css";
+
 #footer {
     background: #262222;
     box-sizing: border-box;
@@ -107,7 +109,8 @@ $dark-mid: #262c2b;
         color: #2c2929;
         font-size: 2.5em;
         padding: 1em 10% 1em 10%;
-        font-family: moret, serif;
+        font-family: moret,
+            serif;
     }
 }
 
@@ -139,6 +142,7 @@ $dark-mid: #262c2b;
 
         .portfolio-overview {
             text-align: center;
+
         }
 
         .project-contents {
@@ -294,7 +298,7 @@ $dark-mid: #262c2b;
 
 p.summary {
     padding: .5em 2.5em 4em 2.5em;
-    margin-bottom: 30px !important;
+    margin-bottom: 30px;
     max-width: 650px;
     line-height: 1.5em;
     font-size: .9em;
