@@ -293,9 +293,11 @@ $dark-mid: #262c2b;
 }
 
 p.summary {
-    padding: 2.5em 2.5em 4em 2.5em;
+    padding: .5em 2.5em 4em 2.5em;
     margin-bottom: 30px !important;
-    max-width: 600px;
+    max-width: 650px;
+    line-height: 1.5em;
+    font-size: .9em;
     box-sizing: border-box;
 }
 
