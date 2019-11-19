@@ -127,6 +127,7 @@ $dark-mid: #262c2b;
             font-size: 3.2em;
             color: transparent;
             -webkit-text-stroke: 1px #fff;
+
         }
 
         padding:1em;
@@ -200,19 +201,21 @@ $dark-mid: #262c2b;
         }
 
         h1 {
-            font-size: 1.3em;
-            padding: 1em 0 .5em 0;
+            font-size: 1.8em;
+            padding: 0;
             max-width: 70%;
+
         }
 
         h2 {
-            font-family: halyard-display, sans-serif;
-            font-size: 18px;
+            font-family: "Sporting Grotesque";
+            font-weight: 800;
+            font-size: 1.1em;
             text-transform: uppercase;
-            letter-spacing: 1px;
+            letter-spacing: .7px;
             font-weight: 600;
-            color: #221e1e;
-            margin-top: -.4em;
+            margin-bottom: -.7em;
+            color: #eff7f4;
         }
 
         h3 {
@@ -305,6 +308,21 @@ p.summary {
     box-sizing: border-box;
 }
 
+.summary-add {
+    display: block;
+    padding: .2em;
+    width: 80%;
+    max-width: 600px;
+    font-size: .9em;
+
+    strong {
+        font-weight: 800;
+        font-family: 'Sporting Grotesque';
+        font-size: 1em;
+        padding-right: .5em;
+    }
+}
+
 /* ALT COLOR */
 
 .header-alt {
@@ -329,6 +347,10 @@ p.summary {
 
     }
 
+    h2 {
+        color: #eff7f4 !important;
+    }
+
     #portfolio {
         p {
             color: #ebf6f7 !important;
@@ -351,7 +373,10 @@ p.summary {
 
 
     h2 {
-        color: #fff;
+        color: #eff7f4 !important;
+        line-height: 1em;
+        margin-top: -.4em;
+        font-size: .9em;
     }
 }
 
