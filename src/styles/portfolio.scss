@@ -262,12 +262,13 @@ $dark-mid: #262c2b;
 
         blockquote {
             box-sizing: border-box;
-            font-size: 1.1em !important;
+            font-size: 1em !important;
             padding: 1em;
             margin-bottom: 2em;
             border-top: 1px solid $dark-mid;
             border-bottom: 1px solid $dark-mid;
             color: $dark-lightest;
+            line-height:1.5em;
 
             h3 {
                 margin: 0;
@@ -309,17 +310,20 @@ p.summary {
 }
 
 .summary-add {
+    text-align: left;
     display: block;
     padding: .2em;
     width: 80%;
     max-width: 600px;
     font-size: .9em;
+    margin-bottom:.3em;
 
     strong {
         font-weight: 800;
         font-family: 'Sporting Grotesque';
         font-size: 1em;
         padding-right: .5em;
+        line-height:1.1em;
     }
 }
 
@@ -364,7 +368,9 @@ p.summary {
         color: #f7eaea !important;
     }
 
-
+    blockquote{
+        color:#dcddea !important;
+    }
 
 }
 
