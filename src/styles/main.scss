@@ -7,6 +7,7 @@
 
 $bg-color: #001a19;
 $light-color: #f0f8f7;
+$white: #f0f8f7;
 
 
 /* MAIN STRUCTURAL ELEMENTS HEHEHE */
@@ -126,10 +127,11 @@ body {
 
 }
 
+
 #landing {
     color: $light-color;
     background-position: center center;
-
+    
     h1 {
         font-family: "aktiv-grotesk-extended";
         font-size: 1.8em;
@@ -155,7 +157,7 @@ body {
         font-size: .85em;
         color: #000;
         text-decoration: none;
-        background: #fff;
+        background: $white;
         font-family: "aktiv-grotesk-extended";
         -webkit-transition: all .3s linear;
         -moz-transition: all .3s linear;
@@ -165,7 +167,7 @@ body {
     }
 
     a:hover {
-        color: #fff;
+        color: $white;
         text-decoration: none;
         background: #3422bc;
     }
@@ -189,7 +191,7 @@ body {
 
     h1 {
         margin: 0;
-        color: #fff;
+        color: $white;
         font-size: .9em;
         font-family: "aktiv-grotesk-extended";
         text-align: center;
@@ -202,7 +204,7 @@ body {
     }
 
     .projects-archive a {
-        color: #fff;
+        color: $white;
         margin: .5em .8em .5em 0;
         padding: .1em;
         line-height: 2em;
@@ -225,7 +227,7 @@ body {
 
         p {
             font-size: 13px;
-            color: #fff;
+            color: $white;
             margin: 0;
             padding-bottom: 1em;
             line-height: 18px;
@@ -264,14 +266,14 @@ body {
     #whereischia a {
         color: #000;
         text-decoration: none;
-        background: #fff;
+        background: $white;
         font-size: .9em;
         font-family: "aktiv-grotesk-extended";
         margin: .5em .8em .5em 0;
     }
 
     #whereischia a:hover {
-        color: #fff;
+        color: $white;
         text-decoration: none;
         background: #3422bc;
     }
@@ -280,8 +282,8 @@ body {
         font-family: "Avara";
         font-size: 26px !important;
         background: transparent;
-        color: #fff;
-        border-bottom: 3px solid #fff;
+        color: $white;
+        border-bottom: 3px solid $white;
         text-align: center;
     }
 
@@ -342,12 +344,12 @@ body {
 
 .cursor {
     position: absolute;
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     top: -50%;
     left: -50%;
     margin: -15px 0 0 -15px;
-    border-radius: 50%;
+    border-radius: 100%;
     background-color: white;
     backface-visibility: hidden;
     transition: transform 0.2s ease-out;
@@ -358,9 +360,9 @@ body {
 
 
 .cursor.is-moving {
-    transform: scale(0.8);
+    transform: scale(.8);
 }
 
 .cursor.is-hovering {
-    transform: scale(1.8);
+    transform: scale(2.2);
 }

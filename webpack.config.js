@@ -3,6 +3,9 @@ var webpack = require('webpack');
 var ImageminPlugin = require('imagemin-webpack-plugin').default
 
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+
+
+
 const devMode = process.env.NODE_ENV !== 'production';
 module.exports = {
   // Tells Webpack which built-in optimizations to use
@@ -12,7 +15,13 @@ module.exports = {
   // Webpack needs to know where to start the bundling process,
   // so we define the main JS and Sass files, both under
   // the './src' directory
-  entry: ['./src/scripts/main.js', './src/styles/main.scss', './src/styles/portfolio.scss'],
+  entry: {
+      'main': './src/scripts/main.js',
+      'theme-main': './src/styles/main.scss',
+      'theme-portfolio': './src/styles/portfolio.scss'
+  },
+    
+    // ['./src/scripts/main.js', './src/styles/main.scss', './src/styles/portfolio.scss'],
   // This is where we define the path where Webpack will place
   // the bundled JS file
   output: {
@@ -23,7 +32,7 @@ module.exports = {
     publicPath: '/assets',
     // The name of the output bundle. Path is also relative
     // to the output path
-    filename: 'assets/scripts/bundle.js'
+    filename: 'assets/scripts/[name].js'
   },
   module: {
     // Array of rules that tells Webpack how the modules (output)
@@ -111,11 +120,9 @@ module.exports = {
   plugins: [
       
         new webpack.ProvidePlugin({$: 'jquery', jQuery: 'jquery' }),
-    // Configuration options for MiniCssExtractPlugin. Here I'm only
-    // indicating what the CSS outputted file name should be and
-    // the location
     new MiniCssExtractPlugin({
-      filename: 'assets/styles/main.css'
+      filename: 'assets/styles/[name].css',
+      chunkFilename: "[name].css"
     })
   ]
 };
