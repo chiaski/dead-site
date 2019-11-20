@@ -60,18 +60,30 @@ a{text-decoration: none;}
 
 
 .image-container {
+    
+    display:flex;
+    align-content: center;
+    justify-content: center;
 
-    padding: 1em;
-    margin-left: -5%;
-    width: 110%;
-    display: flex;
-    justify-content: space-around;
-    box-sizing: border-box;
+    @media only screen and (max-width: 600px) {
+        img{      
+        object-fit: contain !important;
+        height:auto;
+        max-width: 100% !important;
+        padding:1em;
+            box-sizing: border-box !important;
+            margin:0;
+            
+        }
+    }
 
     img {
-        max-width: 100%;
-        box-sizing: border-box;
+        object-fit:contain;
         margin: 1em;
+    }
+    
+    .image-full{
+        max-width:100%;
     }
 
     .image-twentyfive {
@@ -88,13 +100,9 @@ a{text-decoration: none;}
         width: 45%;
     }
 
+
     .image-seventyfive {
         width: 71%;
-        box-sizing: border-box;
-    }
-
-    .image-full {
-        max-width:100%;
         box-sizing: border-box;
     }
 
