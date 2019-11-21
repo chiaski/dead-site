@@ -6,8 +6,10 @@ $dark-mid: #262c2b;
 
 @import "fonts.css";
 
+html{
+  scroll-behavior: smooth;}
+
 #footer {
-    border-top:1px solid #383232;
     background:#001a19;
     box-sizing: border-box;
     text-align: center;
@@ -38,6 +40,22 @@ $dark-mid: #262c2b;
         color:yellow !important;
     }
     
+    .footer-links{
+        color:#fff;
+        
+        h2{
+            font-size:1em;
+        font-family:"aktiv-grotesk-extended";
+        }
+        
+        a{
+            color:blue;
+            font-size:.8em;
+            line-height:1.2em;
+            margin:0 .3em 0 .3em;
+        }
+    }
+    
     .sub-link{
         font-family:"aktiv-grotesk-extended";
         color:$white;
@@ -58,62 +76,14 @@ $dark-mid: #262c2b;
 a{text-decoration: none;}
 
 
-img{max-width:100%;}
-
-/*
-.image-container {
-    
-    display:flex;
+img{
+    max-width:100%;
     align-content: center;
     justify-content: center;
-
-    @media only screen and (max-width: 600px) {
-        img{      
-        max-width: 100% !important;
-        width:auto !important;
-        height: auto !important;
-        padding:1em;
-            box-sizing: border-box !important;
-            margin:0;
-            
-        }
-    }
-
-    img {
-        display:block;
-        object-fit:contain;
-        margin: 1em;
-        flex: 1;
-        overflow:hidden;
-    }
-    
-    .image-full{
-        max-width:100%;
-    }
-
-    .image-twentyfive {
-        width: 23%;
-        box-sizing: border-box;
-    }
-
-
-    .image-third {
-        width: 33%;
-    }
-
-    .image-half {
-        width: 45%;
-    }
-
-
-    .image-seventyfive {
-        width: 71%;
-        box-sizing: border-box;
-    }
-
-
-}*/
-
+    vertical-align: center;
+    margin:auto;
+    display: block;
+}
 
 
 #navigation .white {
@@ -291,7 +261,7 @@ img{max-width:100%;}
         }
 
         p strong {
-            font-family: "Aktiv-Grotesk-Extended";
+            font-family: "aktiv-grotesk-extended";
             font-weight: 800;
             border-bottom: 1px solid $white;
         }
@@ -453,7 +423,6 @@ p.summary {
     .box {
         background:#001a19;
         color: $white;
-
     }
 
     h2 {
@@ -506,7 +475,23 @@ p.summary {
 
 /* PORTFOLIO PAGE */
 
+.cursor.alt{
+    background-color:#477775;
+}
+
+.cursor{
+    background-color: #0d3b39;
+    mix-blend-mode: exclusion !important;
+}
+
+.cursor.is-hovering{
+    background-color: red;
+    mix-blend-mode: difference ;
+}
+
 .portfolio-page-landing{
+    font-family: "aktiv-grotesk-extended";
+    
     h1{
         color:#001a19;
         font-size:3em;
@@ -514,9 +499,17 @@ p.summary {
     }
     
     p{
-        font-family:"Aktiv-grotesk-extended";
+        font-family: "aktiv-grotesk-extended";
         font-size:1.1em;
         margin:0;
+    }
+    
+    .portfolio-overview{
+        
+        a{
+            font-family: "aktiv-grotesk-extended";
+            font-size:.9em;
+        }
     }
 }
 
@@ -556,28 +549,29 @@ p.summary {
     }
     
     .quote-block{
+
+        font-family:"Aktiv Grotesk";
         max-width:550px !important;
-        color:#26235f;
+        color:#484855;
         margin:0 !important;
         padding:0 !important;
-        font-size:1.7em !important;
+        font-size:1.3em !important;
         text-align: left !important;
     }
 
     h2{
         padding:.5em 0 0 0;
-        margin:0;
-        font-family:"aktiv-grotesk-extended";
-        font-size:1.8em;
-        color: transparent;
-        -webkit-text-stroke: 1px #0a0798;
+        margin:0 0 -.3em 0;
+        font-family:"Sporting Grotesque";
+        font-size:1.7em;
+        color: #222127;
         
     }
 
     h3 {
-        font-family: "Aktiv Grotesk";
-        font-size: .8em;
-        color:#5b6271;
+        font-family: "aktiv-grotesk-extended";
+        font-size: .7em;
+        color:#40444b;
         margin:.5em 0 0 0;
     }
     
