@@ -100,6 +100,13 @@ function moveBackground() {
         'transform': translate
     });
 
+    
+    $('.portfolio-landing').css({
+        '-webit-transform': translate,
+        '-moz-transform': translate,
+        'transform': translate
+    });
+
     window.requestAnimationFrame(moveBackground);
 }
 
