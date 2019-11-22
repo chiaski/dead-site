@@ -238,14 +238,13 @@ img{
         }
 
         h2 {
-            font-family: "Value Serif";
+            font-family: "Aktiv Grotesk";
             font-weight: 800;
-            font-size: 1.1em;
+            font-size: .9em;
             text-transform: uppercase;
             letter-spacing: .7px;
-            font-weight: 600;
-            margin-bottom: -.7em;
-            color: #eff7f4;
+            font-weight: 400;
+            color: #2b312f;
         }
 
         h3 {
@@ -578,7 +577,8 @@ p.summary {
     
     @media only screen and (max-width: 600px) {
         .quote-block{
-            font-size:1.4em !important;
+            //display:none;
+            font-size:1em !important;
         }  
     }
 
