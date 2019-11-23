@@ -522,8 +522,13 @@ img{
     mix-blend-mode: difference ;
 }
 
-.portfolio-page-landing{
+.portfolio-landing{
     font-family: "aktiv-grotesk-extended";
+    vertical-align: center;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
     
     h1{
         color:#001a19;
@@ -532,9 +537,11 @@ img{
     }
     
     p{
+        text-align: center;
         font-family: "aktiv-grotesk-extended";
         font-size:1.1em;
         margin:0;
+        max-width:500px !important;
     }
     
     .portfolio-overview{
