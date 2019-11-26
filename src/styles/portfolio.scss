@@ -279,13 +279,22 @@ img{
             padding-top:1em;
         }
 
+        
+    @media only screen and (max-width: 600px) {
+        p{
+            padding-right:0 !important;
+        }
+    }
+        
         p {
             font-size: .9em !important;
             color: #435262;
-            line-height:1.8em;
+            line-height:1.9em;
             margin: .3em 1.3em .3em .3em;
-            padding-left:.1em;
+            padding-right:15%;
+            padding-left:.2em;
             padding-bottom: 1em;
+            
         }
 
         p strong {
@@ -373,6 +382,12 @@ img{
     line-height: 1.5em;
     font-size: 1.2em !important;
     box-sizing: border-box;
+}
+
+.summary{
+    padding-right:0 !important;
+    width:60%;
+    line-height:1.4em !important;
 }
 
 .summary-add {
