@@ -429,7 +429,13 @@ img{
     }
 }
 
+
+.header{
+    position:fixed;
+}
+
 /* ALT COLOR */
+
 
 .header-alt {
     .header-left a {
@@ -501,7 +507,6 @@ img{
 }
 
 .sticky {
-    position: sticky;
     top: 0;
     padding: 1em;
 }
