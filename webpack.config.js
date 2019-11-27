@@ -18,7 +18,8 @@ module.exports = {
   entry: {
       'main': './src/scripts/main.js',
       'theme-main': './src/styles/main.scss',
-      'theme-portfolio': './src/styles/portfolio.scss'
+      'theme-portfolio': './src/styles/portfolio.scss',
+      'theme-landing': './src/styles/landing.scss'
   },
     
     // ['./src/scripts/main.js', './src/styles/main.scss', './src/styles/portfolio.scss'],

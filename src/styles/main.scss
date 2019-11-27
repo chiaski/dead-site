@@ -1,7 +1,5 @@
 @import 'reset.scss';
 @import 'aos.css'; // for animations
-@import 'fonts.css';
-
 
 @import url("https://use.typekit.net/cuk4jse.css");
 
@@ -19,7 +17,6 @@ $white: #f0f8f7;
 
 body {
     cursor: none !important;
-    background: $bg-color;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -80,7 +77,6 @@ body {
     }
 }
 
-
 .header {
     z-index: 999;
     position: absolute;
@@ -128,62 +124,6 @@ body {
 
 }
 
-
-#landing {
-    color: $light-color;
-    background-position: center center;
-    
-    h1 {
-        font-family: "aktiv-grotesk-extended";
-        font-size: 1.8em;
-        margin-bottom: .2em;
-
-        sup {
-            font-family: "aktiv-grotesk-extended";
-            font-size: 12px;
-            font-weight: 100;
-            margin-bottom: 10px;
-            line-height: .5em;
-        }
-    }
-
-
-    h1,
-    p {
-        margin: 0;
-    }
-
-
-    a {
-        font-size: .85em;
-        color: #000;
-        text-decoration: none;
-        background: $white;
-        font-family: "aktiv-grotesk-extended";
-        -webkit-transition: all .3s linear;
-        -moz-transition: all .3s linear;
-        -ms-transition: all .3s linear;
-        -o-transition: all .3s linear;
-        transition: all .3s linear;
-    }
-
-    a:hover {
-        color: $white;
-        text-decoration: none;
-        background: #3422bc;
-    }
-
-
-
-    @media only screen and (max-width: 600px) {
-
-        .hide,
-        sup {
-            display: none !important;
-        }
-    }
-
-}
 
 #projects {
 
@@ -236,7 +176,6 @@ body {
 
         a h3 {
             margin: 0;
-            font-family: "aktiv-grotesk-extended";
             color: blue;
             font-size: 15px;
 
@@ -290,7 +229,7 @@ body {
 
 
     p {
-        font-family: "aktiv-grotesk";
+        
     }
 }
 

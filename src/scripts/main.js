@@ -34,6 +34,7 @@ $(window).on('mousemove', moveCursor);
 $("a").on('mouseenter', enlargeCursor);
 $("a").on('mouseleave', unenlargeCursor);
 
+/*
 
 $("#sayhello").mouseenter(function () {
     $("#landing").css("background-image", "url(assets/images/sayhello.jpg)");
@@ -79,6 +80,7 @@ $("a").mouseleave(function () {
 });
 
 
+*/
 
 /* PARALLAX */
 
