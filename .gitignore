@@ -4,3 +4,4 @@ yarn.lock
 .DS_Store
 */fonts/*
 fonts/*
+public/assets/fonts/*
