@@ -96,7 +96,7 @@ function moveBackground() {
 
     translate = 'translate(' + x + 'px, ' + y + 'px) scale(1.1)';
 
-    $('#landing').css({
+    $('.landing-style-container').css({
         '-webit-transform': translate,
         '-moz-transform': translate,
         'transform': translate
