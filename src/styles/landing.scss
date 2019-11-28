@@ -242,7 +242,48 @@ a{
             display:block;
             color: $white;
             margin:0;
+            font-weight:100;
+            text-transform: uppercase;
+            font-size:1em;
         }
+    
+    .landing-word{
+        position:relative;
+        max-width:500px;
+        clear:both;
+        display:flex;
+        justify-content:space-around;
+        
+        h1{font-family:"Canela";font-weight:100;font-style:italic;display:inline;font-size:2.8em; line-height:.9em !important;
+            vertical-align: top;
+        color:$white;margin:0;}
+        
+        p{
+            padding:1em;
+            margin-top:-1em;
+        max-width:300px;
+        color:$white;
+        vertical-align: top;
+            
+        }
+    }
+    
+    .landing-social{
+        
+        a{
+            
+            text-decoration: none;
+            color:cyan;
+            margin-right:1em;
+            padding-top:.5em;
+            border-bottom: 1px solid $white;
+        }
+        
+        a:hover{
+            color:yellow;
+            border-bottom: 1px solid cyan;
+        }
+    }
     
     .showcase-container{
         padding:1em;
@@ -255,7 +296,8 @@ a{
             border-bottom:1px solid $white;
             width:80%;
             max-width:600px;
-            margin:0 0 1em 0;
+            margin:0 0 1.5em 0;
+            padding-bottom:1em;
             
             h1{
                 font-family:"Canela";
@@ -279,10 +321,23 @@ a{
                 margin-left:-1em;
             }
             
+            h2{clear:both;display:block;}
+            
+            h3{
+                margin:0;
+                font-family:"aktiv-grotesk-extended";
+                font-size:.7em;
+                color:cyan;
+                font-weight:100;
+                text-transform: uppercase;
+                letter-spacing:.4px;
+            }
+            
             p{
                 font-family:"aktiv-grotesk-extended";
-                margin:0 0 1em 0;
+                margin:0;
                 color:$white;
+                font-size:.8em !important;
                 line-height:1.5em;
             }
         }
