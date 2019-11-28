@@ -181,19 +181,22 @@ img{
             font-family: "aktiv-grotesk-extended";
         }
 
+        
         p {
             margin: .5em;
         }
 
         .portfolio-overview {
             text-align: center;
+            margin:0;
+            
             p{font-size:.9em;font-family:"Aktiv-grotesk-extended"; line-height:1.1em;}
         }
 
         .project-contents {
             display: block;
-            padding: 1em;
             text-align: center;
+            margin-top:0 !important;
 
             a {
                 display: inline-block;
@@ -221,15 +224,22 @@ img{
 
 
         @media only screen and (max-width: 600px) {
+            h1{
+                font-size:2em;
+                line-height:1em;
+            }
+            
+            
             .project-contents {
                 display: block;
                 float: none;
-                margin: 1em;
-                margin-top: 50px;
+                margin:0;
             }
 
             .portfolio-overview {
                 float: none;
+                font-size:.8em;
+                width:80%;
             }
         }
 
@@ -244,6 +254,10 @@ img{
     }
 
     .portfolio-description {
+        
+        vertical-align: center;
+        justify-content: center;
+        display: flex;
 
         a {
             background: #2b13af;
@@ -283,7 +297,11 @@ img{
         h3 {
             font-size: 1.3em;
             font-family: "aktiv-grotesk-extended";
-            padding-top:1em;
+            padding-top:.6em;
+        }
+        
+        h3::before{
+            content: "⟶ ";
         }
 
         
@@ -349,6 +367,7 @@ img{
                 font-family: "aktiv-grotesk-extended";
                 font-size: 19px;
             }
+            
         }
 
     }
@@ -356,11 +375,47 @@ img{
 
 /* SPECIAL */
 
+.summary-container{
+    margin-top:1em;
+    
+    .summary{
+        width:55%;
+        float:left;
+    }
+    
+    .summary-details{
+        float:right;
+        width:40%;
+    }
+    
 
+    .summary{
+    padding-right:0 !important;
+    max-width:500px;
+    text-align: justify;
+    line-height:1.6em !important;
+    }
+    
+@media only screen and (max-width: 600px) {
+    .summary{
+        float:none;
+        width:100%;
+    }
+    
+    .summary-details{
+        width:100%;
+        float:none;
+    }
+    
+}
+
+
+    
+}
     .quote-block {
         text-align: center !important;
         color: #2c2929;
-        font-size: 2.5em;
+        font-size: 2em;
         padding: 1em 10% .5em 10%;
         font-family: moret,
             serif;
@@ -381,20 +436,6 @@ img{
     font-family: moret !important;
     margin: auto;
     text-align: center;
-}
-
-.p-summary {
-    padding: .5em 3em 3em 3em !important;
-    max-width: 650px;
-    line-height: 1.5em;
-    font-size: 1.2em !important;
-    box-sizing: border-box;
-}
-
-.summary{
-    padding-right:0 !important;
-    width:60%;
-    line-height:1.4em !important;
 }
 
 .summary-add {

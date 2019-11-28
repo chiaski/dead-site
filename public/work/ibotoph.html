@@ -36,11 +36,11 @@
         <div class="box box-still portfolio-landing" id="portfolio" style="background:transparent;background-image:url(../assets/images/project/ibotoph-preview.png);background-position:center bottom;height:420px;color:#fff;text-shadow:0 0 20px #601c1c;background-size:cover;">
             <div class="box-inner inner-center portfolio-landing" style="background-size:cover; max-width:830px;width:90%;padding-left:15%;padding-top:130px;">
 
-                <h1 style="font-size:3.4em;">Iboto.ph</h1>
+                <h1>Iboto.ph</h1>
                 
                 <div class="portfolio-overview">
                     <p>Voter education for the Filipino masses</p>
-                    <div class="project-contents">
+                    <div class="project-contents" style="">
                         <a href="#part-context">Context</a>
                         <a href="#part-inquiry">Inquiry</a>
                         <a href="#part-nextsteps">Next Steps</a>
@@ -58,26 +58,23 @@
 
             <div class="box-inner inner-center portfolio-description" style="width:100%;">
 
-                <div id="sticky-header" class="alt" style="width:100%;display:block;clear:both;">
-                    <h2 style="float:left;">Chiaski</h2>
-
-                    <h2 style="float:right;">Iboto.ph</h2>
-                </div>
-
                 <div style="max-width:850px;margin:auto;">
                     <div class="quote-block">
                         The Philippine digital sphere has become a political weapon.
                     </div>
 
                     <center>
-                        <p class="p-summary">For the Philippine midterms, I conceptualized and launched into fruition a project to campaign for and spread voter information about progressive Philippine senatorial and partylist candidates. We reached <u>millions of Filipinos across a month of pre-election, and election vote counting</u>, with our materials directly shared over >100k times. Today, Iboto.ph is gearing up to be a go-to platform for disruptive digital grassroots campaigning for the 2022 elections.</p>
+                    <div class="summary-container">
+                        <p class="summary">For the Philippine midterms, I conceptualized and launched a voter education resource for progressive candidates. We reached <u>millions of Filipinos in a month</u>, with  materials directly shared over >100k times. Now, Iboto.ph is gearing up to be a go-to platform for disruptive digital grassroots campaigning for 2022.</p>
 
-                        <span class="summary-add"><strong>Roles</strong> Lead engineer, design, and project growth with a  remote team</span>
-
+                        <span class="summary-add"><strong>Roles</strong> Project Management, Front-end, Research & Design</span>
                         
-                        <span class="summary-add"><strong>Methods</strong> Rapid research and inquiry, user journey evaluations, remote usability studies, web development, visual design. Main tools: React, Figma, Heroku Pipeline with Github CI</span>
+                        <span class="summary-add"><strong>Methods</strong> Rapid research/ inquiry, user journey, remote usability studies; React, Figma</span>
                         
+                    </div>
+                        <div class="summary-details">
                         <span class="summary-add"><strong>Visit</strong> On <a href="https://iboto.ph" target="_blank">Iboto.ph</a> and our social sites <a href="https://facebook.com/ibotoph" target="_blank"><i class="fa fa-facebook"></i> Facebook,</a> and <a href="https://medium.com/iboto" target="_blank"><i class="fa fa-medium"></i> Medium</a></span>
+                        </div>
 
                     </center>
                     
@@ -94,7 +91,7 @@
 
                     <p>In the months preceding the election, I began brainstorming with Developh organization mates on how we could propel voter education to the masses. Intentionally targeting social media and more visual-oriented, compact means of information dissemination, I was thinking closely about the <em>76 million social media users (71% penetration)</em> in the Philippines, with 72 million of those being mobile social media users. Filipinos are communicating, learning, and congregating online.</p>
 
-                    <p>Despite this, majority of <em>senatorial</em> candidates did not have platforms or materials up. Most had at least a somewhat active social media presence, but no websites or information sheets about their backgrounds, platforms, experience, or anything like that&mdash;at best, you'd fine an official Facebook description. </p>
+                    <p>Despite this, majority of <em>senatorial</em> candidates did not have platforms or materials up. Most had at least a somewhat active social media presence, but no websites or information sheets about their backgrounds, platforms, or prior experiences&mdash;at best, you'd find a description on Facebook</p>
 
                     <center>
                         <p class="p-emphasis">How can we educate voters through social platforms? How can we encourage discussion and conversations for the Filipino voter?</p>
@@ -106,11 +103,12 @@
                     <span class="image-container">
                         <img class="image-full" src="../assets/portfolio/iboto/logo.jpg" style="max-height:150px;margin:1em;"> </span>
                     
-                    <blockquote style="float:right;width:200px;">
+                    <blockquote>
                         <p>Research and connection building for the project began as early as September 2018; though it was incredibly hard to get in touch with many campaign teams, even far before the campaigning season had kicked off</p>
                     </blockquote>
                     
                     <h2 id="part-inquiry">Inquiry</h2>
+                    <h1>Elections for the online Filipino</h1>
 
 
                     <p>Meaning "to vote" in Tagalog, the title Iboto.ph was chosen for its simplicity and forwardness. <br><br>Mostly made in three weeks prior to the May 13 elections with a small team, we surveyed the Philippine digital landscape and tried to get a deeper sense of what kinds of Filipinos were out there:</p>
@@ -130,9 +128,9 @@
 
                     </span>
 
-                    <p>To present information effectively, we opted for a website with infographic-like displays. On first glance, viewers would be able to see candidate stances on critical and timely issues &mdash; from lowering the minimum age of criminal responsibility to divorce. Each point would link the user to a relevant article or claim about the chosen information. <br><br>Procuring viewpoints on each issue was a bit of a challenge: we wanted to standardize viewpoints on key issues as much as possible, but shifted the list of stances based on what the candidate was known for or frequently discussed. We sifted through their social accounts, past interviews, official senatorial debates, and program lists (for the few that had materials) in order to come up with eight key stances for the landing.</p>
+                    <p>To present information effectively, we opted for a website with infographic-like displays. On first glance, viewers would be able to see candidate stances on critical and timely issues &mdash; from lowering the minimum age of criminal responsibility to divorce. Each point would link the user to a relevant article or claim about the chosen information. <br><br>Procuring viewpoints on each issue was a bit of a challenge: we wanted to standardize viewpoints on key issues as much as possible, but shifted the list of stances based on what the candidate was known for or frequently discussed. We sifted through their social accounts, past interviews, official senatorial debates, and program lists (for the few that had materials) in order to come up with eight key stances for the landing. <br>To better this process, the team also implemented a form of card sorting to prioritize what stances to highlight after constructing the initial list.</p><br>
 
-                    <h3>Key Questions</h3>
+                    <h1>Key Questions</h1>
                     <p><em>What are my values? What change am I looking for in the Philippine senate? What qualifications am I looking for in a candidate? What am I looking for in a candidate? What information do I need to retain about my candidate? How can I further engage with my candidate?</em>
                     </p>
 
@@ -193,17 +191,17 @@
                     
                     <p>Through Iboto.ph, we were astounded not only by the traction and numbers we hit, but by the engagement of the platform. <u>The internet is a tool not maximally used by candidates</u>: this project we came up with in only three weeks, sometimes doing the barebones work of comprehensively talking about a candidate's platforms, set us up to realize how much more work could be done in the space.</p>
                     
-                    <h3>⟶ Questions for engagement</h3>
+                    <h3>Questions for engagement</h3>
                     <p>Our page and contact email frequently received questions about how to further a specific cause, or support the work of candidates. Other inquiries that we received were on the actions and next steps of candidates that we had featured, and also people sharing information on candidates that align with their views that weren't necessarily up on the site.</p>
                     
-                    <h3>⟶ Accessibility and language</h3>
+                    <h3>Accessibility and language</h3>
                     <p>The highly iterative research and design process was very constricting at times. There are over 150 spoken languages and 6 were frequently requested. Although the Philippines is largely English-speaking, emphasis on expanding language offerings and designing with a visual-first approach is highly suggested.</p>
                     
-                    <h3>⟶ Adapting to use cases</h3>
+                    <h3>Adapting to use cases</h3>
                     <p>We want to explore more methods and flows of how users navigate our tool, and help better cater the experience for different needs&mdash;and nudge existing users towards new means of engagements.</p>
                     
                     
-                    <h3>⟶ Combatting disinformation</h3>
+                    <h3>Combatting disinformation</h3>
                     <p>With how the product and its platforms were established and structured, we were able to move forward and execute mini-campaigns and fact-checks on disinformation and illegal campaigning done in the election season. This was from fixing vote counts, informing the public about fallacious statements made by officials, and more. Although lots of transformation happened in the social media space, we also re-emphasized the value of dedicated sites, especially for political use that establish stronger credibility and connections.</p>
                     
                     
@@ -214,7 +212,8 @@
                     </span>
                     
 
-            <h3>Learnings</h3>
+            <h2>Insights</h2>
+            <h1>Conversation as progress</h1>
             <p>The next Philippine elections are happening in 2022. The team behind Iboto.ph is thinking of how to further transform the digital space for education, awareness, and discussion as we did with Iboto.ph&mdash;with these 2022 elections, we have a lot to tackle. Thankfully, Iboto.ph's pilot taught us about establishing user loyalty&mdash;and how things will never end up as you expect.</p>
                     
             <p>There's value in engaging with the principles that voters believe in, and using those as grounds to understand, listen, and respond effectively. <em>Fighting categorization and labeling</em> through engagement was key, and we're looking forward to more spaces that encourage discussions like this.</p>
@@ -274,7 +273,7 @@
             
             
             <div class="footer-links">
-            <h2>💫</h2>
+           
             <a href="https://blog.chiaski.com">Blog</a> * 
             <a href="https://chia.dev/work">Work</a> * <a href="mailto:hello@chiaski.com">Mail</a> 
                 
