@@ -590,7 +590,7 @@ img{
     mix-blend-mode: difference ;
 }
 
-.portfolio-landing{
+.portfolio-landing, .portfolio-page-landing{
     font-family: "aktiv-grotesk-extended";
     vertical-align: center;
     justify-content: center;
@@ -644,6 +644,8 @@ img{
         margin:0 0 3em 0;
         display:block;
         text-decoration: none;
+        padding-bottom:.5em;
+        border-bottom:1px solid $white;
         -webkit-transition: all .3s linear;
         -moz-transition: all .3s linear;
         -ms-transition: all .3s linear;
@@ -671,14 +673,14 @@ img{
         margin:0 0 -.2em 0;
         font-family:"Sporting Grotesque";
         font-size:1.6em;
-        color: #222127;
+        color:lightcyan !important;
         line-height:1.3em;
     }
 
     h3 {
         font-family: "aktiv-grotesk-extended";
         font-size: .7em;
-        color:#40444b;
+        color:lightblue !important;
         margin:.5em 0 0 0;
     }
     
