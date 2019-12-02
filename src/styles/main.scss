@@ -54,7 +54,6 @@ body {
 }
 
 .box {
-    color: #222126;
     background:none;
 
     h1 {
@@ -159,9 +158,9 @@ body {
         -o-transition: all .3s linear;
         transition: all .3s linear;
     }
-
-    a:hover {
-        background: blue;
+    
+    .projects-archive a:hover{
+        background:yellow;
     }
 
 
@@ -202,37 +201,7 @@ body {
             box-sizing: border-box;
         }
     }
-
-
-
-    #whereischia a {
-        color: #000;
-        text-decoration: none;
-        background: $white;
-        font-size: .9em;
-        font-family: "aktiv-grotesk-extended";
-        margin: .5em .8em .5em 0;
-    }
-
-    #whereischia a:hover {
-        color: $white;
-        text-decoration: none;
-        background: #3422bc;
-    }
-
-    #whereischia .special {
-        font-family: "Avara";
-        font-size: 26px !important;
-        background: transparent;
-        color: $white;
-        border-bottom: 3px solid $white;
-        text-align: center;
-    }
-
-
-    p {
-        
-    }
+    
 }
 
 

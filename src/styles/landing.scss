@@ -177,6 +177,14 @@ a{
         -o-transition: all .3s linear;
         transition: all .3s linear;
     }
+    
+    .landing-style-container p a::after{
+        content: "○";
+        position:absolute;
+        line-height:12px;
+        font-size:12px;
+        color: $white;
+    }
 
     a:hover {
         color: cyan !important;
