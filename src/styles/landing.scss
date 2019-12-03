@@ -246,6 +246,21 @@ a{
 
 #landing-chia{
     
+    p{
+        color:$white;
+        
+        a{
+            color:#fff;
+            border-bottom:1px solid cyan;
+            text-decoration: none;
+        }
+        
+        a::before{
+            color:cyan;
+            content:"◌";
+        }
+    }
+    
     .thing{position: absolute;background-position: center center;background-size:contain;background-repeat:no-repeat;z-index:-999;}
     
         h2{
