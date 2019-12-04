@@ -257,7 +257,7 @@ a{
         
         a::before{
             color:cyan;
-            content:"◌";
+            content:"◦ ";
         }
     }
     
@@ -397,7 +397,30 @@ a{
 
 /* LANDING AREAS */
 
-.landing-front{
+.love-container{
+    
+    display:flex;
+    
+    .love-col h2{
+        padding-bottom:.5em;
+    }
+    
+    .love-col p{
+        max-width:90%;
+        margin:0 0 .5em 0;
+        line-height:1.3em;
+    }
+    
+    .love-col p::before{
+        content: "↘ ";
+        font-size:.8em;
+        color:cyan;
+        padding-right:.3em;
+    }
+    
+    .love-col a::before{
+        content: "" !important;
+    }
     
 }
 
