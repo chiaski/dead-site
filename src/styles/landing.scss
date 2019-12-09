@@ -9,6 +9,7 @@ $blue-screen: #141cd1;
 
 body{
     background:#141cd1;
+    cursor: auto;
 } 
 
 .box{
@@ -29,33 +30,39 @@ a{
 
 .landing-style-container{
     top:0;
-    max-height:500px !important;
+    height:70vh;
     width:100%;
     overflow-x:scroll;
     overflow-y: hidden;
+    display:flex;
+    
     
     
     .landing-style{
-        background-position: center left;
-        background-size:contain;
-        background-repeat: repeat-x;
-
+        align-self:top;
+        vertical-align: top !important;
         box-sizing: border-box;
         display:flex;
         width:auto;
-        min-width:300vw;
+        background-image:url("https://chia.dev/assets/landing/chia-bg-alt.png");
+        background-position: center left;
+        background-size:contain;
+        background-repeat: no-repeat;
+        
+        max-width:420vw;
         padding:0 6vw 0 8vw;
     }
     
     .special{
         margin-left:6vw !important;
         display:block;
-        width:100vw;
-        max-width:550px;
-        min-width:450px;
+        width:110vw;
+        max-width:700px;
         line-height:1.2em;
+        font-size:1.3em;
         border:0;
         padding-left:5vw;
+        
         
         a{
             display:inline-block;
@@ -69,20 +76,35 @@ a{
     @media only screen and (max-width: 700px) {
 
         .landing-style-container{  
-        top:5vh;
+            position: absolute;
+            background:cyan;
+            background:none !important;
+            
+        }
+        
+        .landing-style{
+            padding-top:5vh;
+            background:none !important;
+            background-image:none !important;
+            margin:1em;
+        }
+        
+        .box-inner{
+            width:75vw !important;
+            
+        }
+        
+        .special{
+            font-size:1.15em;
+            padding-left:0vw !important;
+            margin:1em !important;
         }
         
     .landing-style{
-        padding:0;
-        min-width:530vw;
-        height:80vh;
+        min-width:400vw;
         display:flex;
         overflow-x:hidden;
-    }
         
-    .special{
-        padding:3em;
-        width:100vw !important;
     }
         
     }
@@ -448,7 +470,7 @@ a{
     padding:1.3em;
     font-weight: 400;
     font-style: normal;
-    font-size:1.4em;
+    font-size:1.5em;
     
     a .fa{
         font-size:.8em;
@@ -463,6 +485,7 @@ a{
         display:block;
         color:$white!important;
         background:none !important;
+        text-align: left;
     }
     
     a:hover{
@@ -473,7 +496,9 @@ a{
         padding:1em;
         
         .landing-comms{
+            background:red;
             width:100%;
+            margin:auto;
         }
         
         a{
@@ -482,6 +507,7 @@ a{
             letter-spacing:0;
             font-size:.8em !important;
             font-weight:100;
+            text-align: center;
         }
     }
 }
