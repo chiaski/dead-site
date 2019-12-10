@@ -14,6 +14,22 @@ $dark-mid: #262c2b;
 html{
   scroll-behavior: smooth;}
 
+box{
+    
+    margin:0;
+    padding:0;
+    left:0;
+    
+    .box-inner{
+        position: absolute;
+        left:0;
+        padding:0;
+        margin:0;
+        width:100%;
+        left:0;
+    }
+}
+
 #footer {
     background:#001a19;
     box-sizing: border-box;
@@ -265,6 +281,7 @@ img{
         h3 {
             text-align: center;
         }
+        
     }
 
     .portfolio-description {
@@ -659,11 +676,12 @@ img{
 
     display:flex;
     flex-wrap: wrap;
-    width:100%;
     margin:0;
+    width:100%;
     align-content: space-between;
     justify-content: center;
     padding:0;
+    box-sizing: border-box;
     
     
     img{
@@ -676,8 +694,8 @@ img{
     }
     
     .project-box {
-        width:450px;
-        max-width:100%;
+        width:100%;
+        max-width:450px;
         margin:0 .5em 3.5em .5em;
         display:block;
         text-decoration: none;
@@ -797,6 +815,7 @@ img{
         font-weight:100;
         font-size:1em;
         margin:0;
+        
     }
     
     p{text-align:left;}
