@@ -419,35 +419,6 @@ a{
 
 /* LANDING AREAS */
 
-.love-container{
-    
-    display:flex;
-    
-    .love-col h2{
-        padding-bottom:.5em;
-    }
-    
-    .love-col p{
-        max-width:220px;
-        margin:0 0 .5em 0;
-        line-height:1.3em;
-    }
-    
-    .love-col p::before{
-        content: "↘ ";
-        font-size:.8em;
-        color:cyan;
-        padding-right:.3em;
-        line-height:0;
-    }
-    
-    .love-col a::before{
-        content: "" !important;
-        
-    }
-    
-}
-
 .landing-name{
     position:absolute;
     top:0; left:0;
@@ -470,7 +441,7 @@ a{
     padding:1.3em;
     font-weight: 400;
     font-style: normal;
-    font-size:1.5em;
+    font-size:1 .5em;
     
     a .fa{
         font-size:.8em;
