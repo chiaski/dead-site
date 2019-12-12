@@ -252,6 +252,7 @@ body {
 .love-container{
     
     display:flex;
+    flex-wrap: wrap;
     
     .love-col h2{
         padding-bottom:.5em;

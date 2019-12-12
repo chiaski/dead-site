@@ -343,9 +343,9 @@ a{
         .showcase-box{
             display:inline-block;
             border-bottom:1px solid $white;
-            width:80% !important;
-            max-width:600px;
-            margin:0 0 1.5em 0;
+            max-width:75% !important;
+            min-width:280px;
+            margin:0 .5em 1.5em .5em;
             padding-bottom:1em;
             
             h1{
