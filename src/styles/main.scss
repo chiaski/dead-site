@@ -47,7 +47,7 @@ body {
     }
 
     .inner-center {
-        padding: 1em !important;
+        padding: 1em;
     }
 }
 
@@ -251,6 +251,7 @@ body {
 
 .love-container{
     
+    text-align: left;
     display:flex;
     flex-wrap: wrap;
     
