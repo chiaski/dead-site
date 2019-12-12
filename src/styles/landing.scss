@@ -29,15 +29,13 @@ a{
 
 
 .landing-style-container{
-    top:0;
-    height:70vh;
+    position:absolute;
     width:100%;
     overflow-x:scroll;
     overflow-y: hidden;
     display:flex;
     
-    
-    
+
     .landing-style{
         align-self:top;
         vertical-align: top !important;
@@ -49,19 +47,19 @@ a{
         background-size:contain;
         background-repeat: no-repeat;
         
-        max-width:420vw;
-        padding:0 6vw 0 8vw;
+        max-width:450vw;
+        padding:5vh 2vw 0 8vw;
     }
     
     .special{
-        margin-left:6vw !important;
+        box-sizing: border-box;
+        margin: 0 6vw 0 6vw;
         display:block;
-        width:110vw;
+        width:60vh !important;
         max-width:700px;
         line-height:1.2em;
         font-size:1.3em;
         border:0;
-        padding-left:5vw;
         
         
         a{
@@ -466,12 +464,9 @@ a{
     
     @media only screen and (max-width: 700px) {
         padding:1em;
-        
-        .landing-comms{
-            background:red;
-            width:100%;
-            margin:auto;
-        }
+        width:100%;
+        margin:auto;
+        font-size:1.5em;
         
         a{
             display:inline-block;

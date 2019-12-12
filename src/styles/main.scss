@@ -251,16 +251,22 @@ body {
 
 .love-container{
     
+    justify-content: center;
     text-align: left;
     display:flex;
     flex-wrap: wrap;
+    margin-left:-1em;
+    
+    .love-col{
+        margin:0 1em 1em 1em;
+    }
     
     .love-col h2{
         padding-bottom:.5em;
     }
     
     .love-col p{
-        max-width:220px;
+        max-width:250px;
         margin:0 0 .5em 0;
         line-height:1.35em;
     }
