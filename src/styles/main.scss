@@ -29,6 +29,8 @@ body {
     left: 0;
     display: flex;
     flex-wrap: wrap;
+    vertical-align: baseline;
+    align-content: flex-start;
 }
 
 .box {
@@ -140,7 +142,7 @@ body {
 
 
     .projects-archive {
-        padding-top: 15%;
+        padding-top: 1em;
     }
 
     .projects-archive a {
