@@ -67,8 +67,34 @@ a{
             display:inline-block;
             background:none !important;
             color:cyan !important;
-            font-size:32px !important;
+            font-size:32px;
+            
+            .btn{
+                color: $white;
+                font-size:.6em;
+                padding:.1em .2em .1em .2em;
+                border:1px solid cyan;
+                line-height:12px;
+            }
+            
+            .btn:hover{
+                color: $blue-screen;
+                background: $white;
+                border:1px solid $white;
+            }
+            
         }
+        
+        a.btn{
+            font-family:"aktiv-grotesk" !important;
+                text-decoration: none !important;
+                line-height:12px;
+                border: none !important;
+                
+            }
+        
+            
+            
     }
     
     
@@ -171,7 +197,8 @@ a{
         a{
             font-family:"Canela";
             font-size: 1.1em !important;
-            border-bottom:1px solid $white;
+            text-decoration: underline;
+            text-decoration-color: $white;
         }
         
         a:hover{
@@ -225,7 +252,7 @@ a{
     
     .btn-landing{
         border-bottom:1px solid $white;
-        padding:0 0 .2em 0;
+        padding:0 0 .1em 0;
         font-size:1.2em !important;
     }
     
