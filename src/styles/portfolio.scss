@@ -674,29 +674,36 @@ img{
     
     display:flex;
     flex-wrap: wrap;
+    vertical-align: middle;
     margin:0;
     width:100%;
-    align-content: space-between;
-    justify-content: center;
     padding:0;
     box-sizing: border-box;
     
     img{
         padding:0;
-        max-width: 100%;
+        max-width: 190px;
+        align-self: center;
+        padding:1em;
+        margin-right:1em;
+        float:left;
     }
     
     .project-box:hover{
-        filter: grayscale(1);
+        filter: grayscale(0);
+        background: rgba(176, 226, 226, 0.36);
     }
     
     .project-box {
+        filter: grayscale(1);
         width:100%;
-        max-width:420px;
+        max-width:650px;
+        min-width: 100%;
+        min-height:190px;
         margin:0 1em 3.5em 1em;
         display:block;
         text-decoration: none;
-        padding-bottom:.5em;
+        padding-bottom:1.5em;
         border-bottom:1px solid $white;
         -webkit-transition: all .3s linear;
         -moz-transition: all .3s linear;
@@ -704,6 +711,26 @@ img{
         -o-transition: all .3s linear;
         transition: all .3s linear;
         
+        
+    }
+    
+    .container-experiments{
+        
+        display:flex;
+        flex-wrap: wrap;
+        
+        .project-box{
+            max-width:320px !important;
+            min-height:80px;
+            padding:.5em;
+            margin: 2em !important;
+            border-right:1em solid transparent;
+            border-left:1em solid transparent;
+            
+            h2{
+                font-size:1.6em;
+            }
+        }
         
     }
     
@@ -718,7 +745,7 @@ img{
         color:#484855;
         line-height:22px;
         font-size:14px;
-        margin:0 !important;
+        margin:0 1.5em 0 0!important;
         padding:0 !important;
         font-size:1em !important;
         text-align: left !important;
@@ -730,7 +757,7 @@ img{
         font-weight:300;
         font-style: italic;
         font-family:"Canela";
-        font-size:1.8em;
+        font-size:2.2em;
         color:lightcyan !important;
         line-height:1.1em;
     }
@@ -738,6 +765,10 @@ img{
     h2 sup{
         align-self:right;
         font-size:50%;
+        font-weight: 100;
+        font-style: normal;
+        font-size:.4em;
+        padding-left:.1em;
     }
     
     h2::before{
