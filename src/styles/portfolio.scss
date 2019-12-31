@@ -697,8 +697,7 @@ img{
     .project-box {
         filter: grayscale(1);
         width:100%;
-        max-width:650px;
-        min-width: 100%;
+        max-width:650px !important;
         min-height:190px;
         margin:0 1em 3.5em 1em;
         display:block;
@@ -712,6 +711,10 @@ img{
         transition: all .3s linear;
         
         
+    }
+    
+    .project-unavailable{
+        cursor:not-allowed !important;
     }
     
     .container-experiments{
