@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Chiaski: About</title>
+    
+    <meta name="description" content="Chiaski is Chiara Amisola. An 19-year-old activist, developer, and creator in love with code and prose.">
+    <meta name="keywords" content="chia amisola, chiaski, chiara amisola, developers society, devsoc, portfolio, website, metro manila, blog, graphic design, web developer,writer,writing">
+    <meta name="author" content="Chia Amisola">
+    <link rel="shortcut icon" href="favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha256-NuCn4IvuZXdBaFKJOAcsU2Q3ZpwbdFisd5dux4jkQ5w=" crossorigin="anonymous" />
+    
+    <link rel="stylesheet" href="./assets/styles/theme-main.css">
+    <link rel="stylesheet" href="./assets/styles/font-canela.css">
+    
+</head>
+<body style="background:#141cd1;">
+    
+    
+<div class="container alt container-portfolio" style="background:#141cd1;">
+    
+    <div class="header header-alt" id="navigation" style="background-image:url(assets/landing/nav-trans.png);position:fixed;">
+        <div class="header-left"><a href="index.html"  style="color:#f0f8f7 !important;">Chiaski</a></div>
+        <div class="header-right">
+            <a href="about.html">About</a>
+            <a href="https://chias.blog">Blog</a>
+            <a href="work.html">Work</a>
+        </div>
+    </div>
+    
+    
+    
+    <div class="box" id="about" style="padding-top:2em;height:100%;">
+        <div class="box-inner inner-center" style="width:100%;">
+            
+           <h1>Chiara Amisola</h1>
+            <p>Chiara is a nineteen-year-old student at Yale. </p>
+            
+        </div>
+    </div>
+    
+        <div class="box footer footer-alt" id="footer" >
+            <a class="main-link" href="https://chia.dev">Chiara Amisola</a>
+            
+            
+            <div class="footer-links">
+            <h2>Explore Chia</h2>
+            <a href="https://blog.chiaski.com">Blog</a> * 
+            <a href="https://chia.dev/work">Work</a> * <a href="mailto:hello@chiaski.com">Mail</a> 
+                
+            </div>
+        </div>
+        
+        
+        
+  </div>
+    
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script src="./assets/scripts/bundle.js"></script>
+    
+    <script type="text/javascript">
+       
+    
+// Select all links with hashes
+$('a[href*="#"]')
+    // Remove links that don't actually link to anything
+    .not('[href="#"]')
+    .not('[href="#0"]')
+    .click(function (event) {
+        // On-page links
+        if (
+            location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
+            location.hostname == this.hostname
+        ) {
+            // Figure out element to scroll to
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            // Does a scroll target exist?
+            if (target.length) {
+                // Only prevent default if animation is actually gonna happen
+                event.preventDefault();
+                $('html, body, .container').animate({
+                    scrollTop: target.offset().top
+                }, 1500, function () {
+                    // Callback after animation
+                    // Must change focus!
+                    var $target = $(target);
+                    $target.focus();
+                    if ($target.is(":focus")) { // Checking if the target was focused
+                        return false;
+                    } else {
+                        $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
+                        $target.focus(); // Set focus again
+                    };
+                });
+            }
+        }
+    });
+
+    
+    </script>
+    
+</body>
+</html>
