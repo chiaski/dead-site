@@ -133,12 +133,18 @@ body {
     align-items: center;
     vertical-align: center;
     cursor: help !important;
-    max-width:700px;
+    
+    .box-inner{
+        margin-top:5vh;
+        max-width:700px;
+        margin-bottom:10vh;
+    }
     
     img.chia{
-        width:60vw;
+        width:80vw;
+        max-width:600px;
         padding:1em;
-        opacity:0.7;
+        opacity:0.5;
         mix-blend-mode: lighten;
         pointer-events: none;
         
