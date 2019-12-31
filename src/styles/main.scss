@@ -127,9 +127,21 @@ body {
 
 #about{
     
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: center;
+    
+    img.chia{
+        width:60vw;
+        padding:1em;
+    }
+    
     h1{
+        margin-top:-20vw;
         font-family: 'Sporting Grotesque' !important;
         color: $light-color;
+        font-size:2.6rem;
     }
     
     p{
