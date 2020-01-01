@@ -664,6 +664,7 @@ img {
     width: 100%;
     padding: 0;
     box-sizing: border-box;
+    justify-content: center;
 
     img {
         padding: 0;
@@ -698,8 +699,9 @@ img {
         cursor: e-resize !important;
 
         .btn{
+            float:right;
             display:inline-block;
-            margin:.5em 0 .2em 0;
+            margin:1em 0 .2em 0;
             width:90px;
             padding:.3em;
             color: cyan;
@@ -731,9 +733,10 @@ img {
 
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
 
         .project-box {
-            max-width: 320px !important;
+            max-width: 450px !important;
             min-height: 80px;
             padding: .5em;
             margin: 2em !important;
@@ -778,13 +781,12 @@ img {
         cursor: e-resize !important;
     }
 
-    h2 sup {
-        align-self: right;
-        font-size: 50%;
+     sup {
+         color:cyan;
+         font-size:.8em;
         font-weight: 100;
         font-style: normal;
-        font-size: .4em;
-        padding-left: .1em;
+         font-family:"aktiv-grotesk-extended";
     }
 
     h2::before {
