@@ -678,11 +678,10 @@ img {
     .project-box:hover {
         filter: grayscale(0);
         cursor: e-resize !important;
-        background: rgba(176, 226, 226, 0.36);
+        //background: rgba(176, 226, 226, 0.36);
     }
 
     .project-box {
-        filter: grayscale(1);
         width: 100%;
         max-width: 650px !important;
         min-height: 190px;
@@ -698,6 +697,29 @@ img {
         transition: all .3s linear;
         cursor: e-resize !important;
 
+        .btn{
+            display:inline-block;
+            margin:.5em 0 .2em 0;
+            width:90px;
+            padding:.3em;
+            color: cyan;
+            border:1px solid cyan;
+            font-family:"aktiv-grotesk-extended";
+            cursor: e-resize !important;
+        }
+        
+        .btn::before{
+            content: " ❍";
+            margin-right:.5em;
+        }
+        
+        .btn:hover{
+            border:1px solid #fff;
+            background:#fff;
+            color: #222cb7;
+            cursor: e-resize !important;
+        }
+        
 
     }
 
@@ -746,7 +768,7 @@ img {
 
     h2 {
         padding: .5em 0 .2em 0;
-        margin: 0 0 0 0;
+        margin:0;
         font-weight: 300;
         font-style: italic;
         font-family: "Canela";
@@ -775,8 +797,8 @@ img {
     }
 
     h3 {
-        font-family: "aktiv-grotesk";
-        font-size: .8em;
+        font-family: "aktiv-grotesk-extended";
+        font-size: .7em;
         color: lightblue !important;
         margin: .5em 0 0 0;
         text-align: left;
