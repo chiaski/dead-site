@@ -383,6 +383,10 @@ img {
     .summary-details{
         width:240px;
     }
+    
+    .summary-add::before{
+        content: "◖";
+    }
 
     .summary-add{
         width:100%;
@@ -437,9 +441,10 @@ img {
 
 .p-emphasis {
     font-weight: 800;
-    max-width: 70%;
-    font-family: moret !important;
-    margin: auto;
+    max-width: 90%;
+    font-size:1.4em;
+    font-family: "aktiv-grotesk-extended" !important;
+    padding:1.4em;
     text-align: center;
 }
 
@@ -667,10 +672,12 @@ img {
         padding: 1em;
         margin-right: 1em;
         float: left;
+        cursor: e-resize !important;
     }
 
     .project-box:hover {
         filter: grayscale(0);
+        cursor: e-resize !important;
         background: rgba(176, 226, 226, 0.36);
     }
 
@@ -689,6 +696,7 @@ img {
         -ms-transition: all .3s linear;
         -o-transition: all .3s linear;
         transition: all .3s linear;
+        cursor: e-resize !important;
 
 
     }
@@ -709,6 +717,7 @@ img {
             margin: 2em !important;
             border-right: 1em solid transparent;
             border-left: 1em solid transparent;
+            cursor: e-resize !important;
 
             h2 {
                 font-size: 1.6em;
@@ -732,6 +741,7 @@ img {
         padding: 0 !important;
         font-size: 1em !important;
         text-align: left !important;
+        cursor: e-resize !important;
     }
 
     h2 {
@@ -743,6 +753,7 @@ img {
         font-size: 2.2em;
         color: lightcyan !important;
         line-height: 1.1em;
+        cursor: e-resize !important;
     }
 
     h2 sup {
@@ -770,6 +781,7 @@ img {
         margin: .5em 0 0 0;
         text-align: left;
         font-weight: 800;
+        cursor: e-resize !important;
     }
 
 

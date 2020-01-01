@@ -134,6 +134,9 @@ body {
     align-items: center;
     vertical-align: center;
     cursor: help !important;
+    
+    background-image:url(https://chia.dev/assets/images/about-bg.png);
+    background-size:contain;
     padding:2em;
     
     .box-inner{
@@ -223,7 +226,8 @@ body {
         font-family:"Sporting Grotesque";
         text-decoration: none;
         display:inline-block;
-        
+        color: $light-color !important;
+        cursor: e-resize !important;
     }
     
     .main-link{
