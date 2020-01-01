@@ -365,9 +365,7 @@ img {
     
     padding: 1em;
     margin-top: 1em;
-    
-    font-size:1.1em;
-    line-height:1.2em;
+    font-size:1.2em;
     
     display:flex;
     flex-wrap: wrap;
@@ -375,29 +373,49 @@ img {
 
 
     p{
-        max-width:600px;
+        text-align: left !important;
+        max-width:500px !important;
+        line-height:1.7em !important;
         padding:0;
     }
 
     
-    p.summary {
-        text-align: center;
+    .summary-details{
+        width:240px;
+    }
+
+    .summary-add{
+        width:100%;
+        font-size:.7em;
+        
+        strong{
+            font-size:.9em;
+            padding-right:.3em;
+        }
         
     }
 
-
-    @media only screen and (max-width: 600px) {}
-
+    @media only screen and (max-width: 800px) {
+        
+        .summary-details{
+            width:100%;
+        }
+        
+        p{
+            max-width:100%;
+        }
+        
+    }
+ 
 
 }
 
 .quote-block {
     text-align: center !important;
     color: #2c2929;
-    font-size: 2em;
-    padding: 1em 10% .5em 10%;
-    font-family: moret,
-        serif;
+    font-size: 2.6em !important;
+    padding: 1.5em 10% .5em 10%;
+    font-family: moret, serif;
 }
 
 .persona {
@@ -452,12 +470,14 @@ img {
     background-position: center;
     display: flex;
     vertical-align: center;
+    cursor: help !important;
 
     .portfolio-large-center {
         margin: auto;
     }
 
     h1 {
+        cursor: help !important;
         text-align: center !important;
         font-size: 2em !important;
         line-height: 1em;
@@ -466,6 +486,7 @@ img {
 
     a {
 
+        cursor: pointer !important;
         font-size: 1.2em;
         background: #000 !important;
         padding: .5em !important;
@@ -589,7 +610,7 @@ img {
     flex-wrap: wrap;
 
     h1 {
-        font-family: "Canela";
+        font-family: "sporting grotesque";
         color: lightblue;
         font-weight: 300;
         font-size: 3em;
