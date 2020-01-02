@@ -425,9 +425,11 @@ img {
 
 .persona {
     
+    display:inline-block;
     box-sizing: border-box;
     border-bottom: 1px solid #c8dee3;
-    margin: 2em;
+    max-width:340px;
+    margin: 1em;
     padding: .5em;
 
     img {
@@ -442,6 +444,7 @@ img {
     }
     
     @media only screen and (max-width: 600px) {
+        
         img{
             display:block;
             float:none;
