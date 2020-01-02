@@ -291,12 +291,6 @@ img {
         }
 
 
-        @media only screen and (max-width: 600px) {
-            p {
-                padding-right: 0 !important;
-            }
-        }
-
         p {
             font-size: .9em !important;
             color: #435262;
@@ -354,6 +348,13 @@ img {
                 font-size: 19px;
             }
 
+        }
+        
+
+        @media only screen and (max-width: 600px) {
+            p {
+                max-width:90%;
+            }
         }
 
     }
@@ -423,8 +424,10 @@ img {
 }
 
 .persona {
+    
+    box-sizing: border-box;
     border-bottom: 1px solid #c8dee3;
-    margin: 1em;
+    margin: 2em;
     padding: .5em;
 
     img {
@@ -436,6 +439,16 @@ img {
 
     h3 {
         font-family: 'Sporting Grotesque' !important;
+    }
+    
+    @media only screen and (max-width: 600px) {
+        img{
+            display:block;
+            float:none;
+            clear:both;
+            align-self: center;
+            margin:auto;
+        }   
     }
 }
 
