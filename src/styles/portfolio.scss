@@ -443,7 +443,9 @@ img {
         font-family: 'Sporting Grotesque' !important;
     }
     
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 900px) {
+        
+        max-width:100% !important;
         
         img{
             display:block;
