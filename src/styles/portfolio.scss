@@ -788,7 +788,7 @@ img {
     }
 
     h2 {
-        padding: .5em 0 .2em 0;
+        padding: .5em 0 0 0;
         margin:0;
         font-weight: 300;
         font-style: italic;
@@ -801,7 +801,8 @@ img {
 
      sup {
          color:cyan;
-         font-size:.8em;
+         vertical-align: normal;
+         font-size:.1em;
         font-weight: 100;
         font-style: normal;
          font-family:"aktiv-grotesk-extended";
@@ -818,9 +819,9 @@ img {
 
     h3 {
         font-family: "aktiv-grotesk-extended";
-        font-size: .7em;
+        font-size: .7em ;
         color: lightblue !important;
-        margin: .5em 0 0 0;
+        margin: .2em 0;
         text-align: left;
         font-weight: 800;
         cursor: e-resize !important;
