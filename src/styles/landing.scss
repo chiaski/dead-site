@@ -9,15 +9,11 @@ $blue-screen: #141cd1;
 
 body{
     background:#141cd1;
-    cursor: auto;
+    cursor: default;
 } 
 
-.box{
-    background:none !important;
-}
-
-
 div{box-sizing:border-box;}
+
 a{
         -webkit-transition: all .3s linear;
         -moz-transition: all .3s linear;
@@ -26,6 +22,9 @@ a{
         transition: all .3s linear;
 }
 
+.landing-front{
+    min-height:100vh;
+}
 
 
 .landing-style-container{
@@ -35,7 +34,6 @@ a{
     overflow-y: hidden;
     display:flex;
     
-
     .landing-style{
         align-self:top;
         vertical-align: top !important;
@@ -310,7 +308,7 @@ a{
         }
     }
     
-    .thing{position: absolute;background-position: center center;background-size:contain;background-repeat:no-repeat;z-index:-999;}
+    .thing{margin-top:100vh;position: absolute;background-position: center center;background-size:contain;background-repeat:no-repeat;z-index:-999;}
     
         h2{
             font-family:"aktiv-grotesk-extended";
