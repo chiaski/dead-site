@@ -291,7 +291,77 @@ a{
 
 }
 
+#landing-works{
+    
+    padding:1em;
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+    
+    h1{
+        display:block;
+    }
+    
+    a.btn{
+        display:block;
+        font-family:"Canela";
+        font-size:2.4em;
+        font-style: italic;
+        font-weight: 100;
+        padding:1em;
+        color: $white;
+    }
+    
+    a.btn:hover{
+        color: cyan;
+    }
+    
+    .showcase-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .showcase-box{
+        display:inline-block;
+        margin:1em;
+        width:320px;
+        height:110px;
+        border:1px solid $white;
+        background-size:cover;
+        padding:1em;
+        box-sizing: border-box;
+        
+        h3{
+            margin:0;
+            text-align: center;
+            font-size:1.8em;
+            color: $white;
+            font-family:"aktiv-grotesk-extended";
+        }
+        
+        p{
+            margin:0;
+            color:cyan;
+            padding:0 1em;
+            text-align: center;
+            line-height:1em;
+            font-family:"aktiv grotesk";
+        }
+        
+    }
+    
+    .showcase-box:hover{
+        h3{text-decoration: underline;}
+    }
+    
+}
+
 #landing-chia{
+    
+    .box-inner{
+        padding-top:80px;
+    }
     
     p{
         color:$white;
