@@ -7,13 +7,13 @@ $dark-mid: #262c2b;
 @import "fonts.css";
 
 ::-moz-selection {
-    background: #161f8d;
-    color: #f8eded;
+    background: #f8c9c9;
+    color: $dark-mid;
 }
 
 ::selection {
-    background: #161f8d;
-    color: #f8eded;
+    background: #f8c9c9;
+    color: $dark-mid;
 }
 
 * {
@@ -732,9 +732,6 @@ iframe {
     padding: 0;
     box-sizing: border-box;
     justify-content: center;
-    background: yellow;
-
-
 
     .project-box:hover {
         filter: grayscale(0);
@@ -743,22 +740,20 @@ iframe {
     }
 
     .project-box {
-        width: 600px;
-        background: red;
+        width: 420px;
+        max-width: 90%;
         box-sizing: border-box;
         justify-content: center;
         align-items: center;
         padding: 1em;
-        margin: 0 1em 3.5em 1em;
         display: flex;
         flex-wrap: wrap;
         text-decoration: none;
-        border-bottom: 1px solid $white;
         cursor: e-resize !important;
+        margin-bottom: 1em;
 
         img {
             margin: auto;
-            height: 300px;
             text-align: center;
             cursor: e-resize;
         }
@@ -768,7 +763,7 @@ iframe {
             display: inline-block;
             margin: 1em 0 .2em 0;
             width: 90px;
-            padding: .3em;
+            padding: .3em .6em;
             color: cyan;
             border: 1px solid cyan;
             font-family: "aktiv-grotesk-extended";
@@ -794,29 +789,8 @@ iframe {
         cursor: not-allowed !important;
     }
 
-    .container-experiments {
-
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-
-        .project-box {
-            max-width: 450px !important;
-            min-height: 80px;
-            padding: .5em;
-            margin: 2em !important;
-            border-right: 1em solid transparent;
-            border-left: 1em solid transparent;
-            cursor: e-resize !important;
-
-            h2 {
-                font-size: 1.6em;
-            }
-        }
-
-    }
-
     .project-box-desc {
+        margin: 0 .5em;
         text-align: left;
     }
 
@@ -827,7 +801,6 @@ iframe {
         color: #484855;
         line-height: 22px;
         font-size: 14px;
-        margin: 0 1.5em 0 0 !important;
         padding: 0 !important;
         font-size: 1em !important;
         text-align: left !important;
@@ -837,9 +810,10 @@ iframe {
     h2 {
         padding: .5em 0 0 0;
         margin: 0;
+        display: inline-block;
         font-weight: 300;
         font-style: italic;
-        font-family: "Canela";
+        font-family: "Canela", Helvetica, Arial;
         font-size: 2.2em;
         color: lightcyan !important;
         line-height: 1.1em;
@@ -855,38 +829,50 @@ iframe {
         font-family: "aktiv-grotesk-extended";
     }
 
-    h2::before {
-        margin-right: .3em;
-        font-size: 50%;
-        margin-left: -.9em;
-        vertical-align: super;
-        display: inline-block;
-    }
-
     h3 {
-        font-family: "aktiv-grotesk-extended";
-        font-size: .7em;
+        font-family: "aktiv-grotesk";
+        text-transform: uppercase;
+        text-align: left;
+        display: block;
+        font-size: .8em;
+        letter-spacing: .5px;
         color: lightblue !important;
         margin: .2em 0;
-        text-align: left;
-        font-weight: 800;
         cursor: e-resize !important;
     }
 
 
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 800px) {
         .quote-block {
             //display:none;
             font-size: .9em !important;
         }
 
         h2 {
+            padding-top: 1em;
             font-size: 1.8em;
         }
 
-        img {
-            width: 100%;
+        .project-box {
+            width: 100vw;
+            border-bottom: 1px solid $white;
+
+            img {
+                width: 100%;
+            }
+
+
+            .btn {
+                display: none;
+            }
         }
+
+        .project-box:hover {
+            img {
+                filter: grayscale(1);
+            }
+        }
+
     }
 
 }
