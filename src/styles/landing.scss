@@ -645,10 +645,12 @@ a {
     position: absolute;
     top: 0;
     right: 0;
-    padding: 1.3em;
+    width:100%;
+    padding: 1em;
     font-weight: 400;
     font-style: normal;
-    font-size: 1.5em;
+    font-size: 1.3em;
+        z-index:999;
 
     a .fa {
         font-size: .8em;
@@ -663,7 +665,7 @@ a {
         display: block;
         color: $white !important;
         background: none !important;
-        text-align: left;
+        text-align: right;
     }
 
     a:hover {
@@ -678,9 +680,9 @@ a {
 
         a {
             display: inline-block;
-            margin-right: 1em;
+            margin:0 .5em;
             letter-spacing: 0;
-            font-size: .8em !important;
+            font-size: 1em;
             font-weight: 100;
             text-align: center;
         }
