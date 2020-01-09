@@ -298,6 +298,11 @@ a {
     justify-content: center;
     max-width: 900px;
 
+    a {
+        text-decoration: none;
+
+    }
+
     a.btn {
         font-family: "Canela";
         color: cyan;
@@ -333,6 +338,7 @@ a {
             box-sizing: border-box;
             justify-content: center;
             align-items: center;
+            text-decoration: none;
             align-self: top;
             padding: 1em;
             display: flex;
@@ -410,14 +416,6 @@ a {
             cursor: e-resize !important;
         }
 
-        sup {
-            color: cyan;
-            vertical-align: normal;
-            font-size: .1em;
-            font-weight: 100;
-            font-style: normal;
-            font-family: "aktiv-grotesk-extended";
-        }
 
         h3 {
             font-family: "aktiv-grotesk";
@@ -428,6 +426,7 @@ a {
             letter-spacing: .5px;
             color: lightblue !important;
             margin: .2em 0;
+            font-weight: 400;
             cursor: e-resize !important;
         }
 
@@ -723,6 +722,7 @@ a {
         }
     }
 }
+
 
 
 

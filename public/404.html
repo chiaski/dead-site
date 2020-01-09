@@ -23,6 +23,7 @@
 -->
 
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -51,80 +52,85 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha256-NuCn4IvuZXdBaFKJOAcsU2Q3ZpwbdFisd5dux4jkQ5w=" crossorigin="anonymous" />
 
     <link rel="stylesheet" href="https://chia.dev/assets/styles/theme-main.css">
-    
+
     <link rel="stylesheet" href="https://chia.dev/assets/styles/theme-landing.css">
-    
-    <style>
-        body{
-            background:#141cd1;
-            cursor: auto;
+
+    <style type="text/css">
+        body {
+            background: #141cd1;
         }
-        
+
+        #error {
+
+            height: 100vh;
+            padding: 10vw;
+
+        }
+
+        #error p {
+            color: #fff;
+            font-family: "aktiv-grotesk", Helvetica, Arial;
+        }
+
+        #error a {
+            text-decoration: none;
+            font-size: 1.8em;
+            font-family: "Canela";
+            background: none !important;
+            color: cyan;
+
+
+        }
+
+        #error a:hover {
+            text-decoration: underline;
+        }
+
     </style>
 
 </head>
 
 <body>
 
-    <div class="cursor" style="z-index:9999;background:pink;width:25px;height:25px;"></div>
 
     <div class="container">
-        <div class="box" id="landing" style="min-height:100%; ">
-            
-            <div class="landing-name"><h1>Chiara<br> &nbsp;&nbsp;Amisola</h1>
+
+        <div class="box" id="landing">
+
+            <div class="landing-name">
+                <h1>Chiara<br> &nbsp;&nbsp;Amisola</h1>
             </div>
-            
+
             <div class="landing-comms" style="z-index:999999999;">
                 <center>
-            <a href="mailto:chiamisola@gmail.com"><i class="fa fa-envelope-o" style="font-size:.6em;"></i> &nbsp;email</a>
-                
-            <a href="resume.pdf"><i class="fa fa-file-text-o" style="font-size:.6em;"></i>&nbsp; resume</a>
-                
-            <a href="work.html"><i class="fa fa-genderless"></i>&nbsp; design</a>
+                    <a href="mailto:chiamisola@gmail.com"><i class="fa fa-envelope-o" style="font-size:.6em;"></i> &nbsp;email</a>
+
+                    <a href="resume.pdf"><i class="fa fa-file-text-o" style="font-size:.6em;"></i>&nbsp; resume</a>
+
+                    <a href="work.html"><i class="fa fa-genderless"></i>&nbsp; design</a>
                 </center>
             </div>
-            
-            <div class="box-inner" id="error">
-            
-                <p>Whoops, this page doesn't exist.</p><br>
-                
-                <center><a href="https://chia.dev">Go back?</a></center>
-            
-            </div>
-            
-        
+
         </div>
-        
-        
-        
+
+
+        <div class="box" id="error">
+            <div class="box-inner">
+                <p>Whoops, this page doesn't exist.</p><br>
+
+                <center><a href="https://chia.dev">Go back?</a></center>
+
+            </div>
+
+        </div>
+
+
+
 
 
 
     </div>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
-    <script type="text/javascript">
-        
-        $(document).ready(function() {
+</body>
 
-    $('.landing-style-stuff>a').bind('click',function(event){
-        var $anchor = $(this);
-
-        $('.landing-style-container').stop().animate({
-            scrollLeft: $($anchor.attr('href')).offset().left - 200
-        }, 1000);
-        event.preventDefault();
-    });
-
-});
-        
-        
-        
-    </script>
-
-
-    <script src="https://chia.dev/assets/scripts/main.js"></script>
-
-</body></html>
+</html>
