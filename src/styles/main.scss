@@ -23,9 +23,10 @@ body {
 
 .container {
     position: absolute;
-    width: 100%;
+    width: 100vw;
     top: 0;
     left: 0;
+    margin: 0;
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
@@ -213,6 +214,11 @@ body {
 
 }
 
+
+
+
+
+
 #footer {
     box-sizing: border-box;
     text-align: center;
@@ -275,7 +281,164 @@ body {
 }
 
 
-#projects {
+.portfolio-project-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    justify-content: center;
+    align-self: top;
+
+    .project-box:hover {
+        filter: grayscale(0);
+        cursor: e-resize !important;
+        //background: rgba(176, 226, 226, 0.36);
+    }
+
+    .project-box {
+        width: 420px !important;
+        max-width: 90%;
+        box-sizing: border-box;
+        justify-content: center;
+        align-items: center;
+        align-self: top;
+        padding: 1em;
+        display: flex;
+        flex-wrap: wrap;
+        text-decoration: none;
+        cursor: e-resize !important;
+        margin-bottom: 1em;
+
+        img {
+            width: 100% !important;
+            margin: auto;
+            text-align: center;
+            cursor: e-resize;
+        }
+
+        .btn {
+            float: right;
+            display: inline-block;
+            margin: 1em 0 .2em 0;
+            width: 90px;
+            padding: .3em .6em;
+            color: cyan;
+            border: 1px solid cyan;
+            font-family: "aktiv-grotesk-extended";
+            cursor: e-resize !important;
+        }
+
+        .btn::before {
+            content: " ❍";
+            margin-right: .5em;
+        }
+
+        .btn:hover {
+            border: 1px solid #fff;
+            background: #fff;
+            color: #222cb7;
+            cursor: e-resize !important;
+        }
+
+
+    }
+
+    .project-unavailable {
+        cursor: not-allowed !important;
+    }
+
+    .project-box-desc {
+        margin: 0 .5em;
+        text-align: left;
+    }
+
+    .quote-block {
+
+        font-family: "aktiv-grotesk";
+        text-rendering: optimizelegibility;
+        color: #ededf7;
+        line-height: 22px;
+        font-size: 14px;
+        padding: 0 !important;
+        font-size: 1em !important;
+        text-align: left !important;
+        cursor: e-resize !important;
+    }
+
+    h2 {
+        padding: .5em 0 0 0;
+        margin: 0;
+        display: inline-block;
+        font-weight: 300;
+        font-style: italic;
+        font-family: "Canela", Helvetica, Arial;
+        font-size: 2.2em;
+        color: lightcyan !important;
+        line-height: 1.1em;
+        cursor: e-resize !important;
+    }
+
+    sup {
+        color: cyan;
+        vertical-align: normal;
+        font-size: .1em;
+        font-weight: 100;
+        font-style: normal;
+        font-family: "aktiv-grotesk-extended";
+    }
+
+    h3 {
+        font-family: "aktiv-grotesk";
+        text-transform: uppercase;
+        text-align: left;
+        display: block;
+        font-size: .8em;
+        letter-spacing: .5px;
+        color: lightblue !important;
+        margin: .2em 0;
+        cursor: e-resize !important;
+    }
+
+
+    @media only screen and (max-width: 800px) {
+        .quote-block {
+            //display:none;
+            font-size: .9em !important;
+        }
+
+        h2 {
+            padding-top: 1em;
+            font-size: 1.8em;
+        }
+
+        .project-box {
+            max-width: 600px;
+            width: 100%;
+            border-bottom: 1px solid $white;
+
+            img {
+                width: 100%;
+            }
+
+
+            .btn {
+                display: none;
+            }
+        }
+
+        .project-box:hover {
+            img {
+                filter: grayscale(1);
+            }
+        }
+
+    }
+
+}
+
+f #projects {
 
     top: 15%;
     margin: 1em;
