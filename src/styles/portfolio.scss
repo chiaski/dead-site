@@ -4,8 +4,6 @@ $white: #f0f8f7;
 $dark-lightest: #605757;
 $dark-mid: #262c2b;
 
-@import "fonts.css";
-
 ::-moz-selection {
     background: #f8c9c9;
     color: $dark-mid;
@@ -43,8 +41,7 @@ box {
 
 a {
     text-decoration: none;
-}
-
+}cd
 
 img {
     max-width: 95%;

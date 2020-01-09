@@ -2,6 +2,7 @@
 @import 'aos.css'; // for animations
 
 @import url("https://use.typekit.net/cuk4jse.css");
+@import "fonts.css";
 
 $bg-color: #001a19;
 $light-color: #f0f8f7;
@@ -248,7 +249,8 @@ body {
         }
 
         a::after {
-            content: " ↗";
+            content: " ↗\00FE0E";
+        font-family:"Segoe UI Symbol" !important;
         }
 
         a:hover {
@@ -582,11 +584,12 @@ f #projects {
     }
 
     .love-col p::before {
-        content: "↘ ";
+        content: "↘\00FE0E ";
         font-size: .8em;
         color: cyan;
         padding-right: .3em;
         line-height: 0;
+        font-family:"Segoe UI Symbol" !important;
     }
 
     .love-col a::before {
