@@ -39,7 +39,7 @@ body {
     align-items: center;
     width: 100%;
     justify-content: center;
-    background:none;
+    background: none;
 
     .box-inner {
         margin: auto;
@@ -52,7 +52,7 @@ body {
 }
 
 .box {
-    background:none;
+    background: none;
 
     h1 {
         font-family: "aktiv-grotesk-extended";
@@ -125,157 +125,153 @@ body {
 
 }
 
-#about{
-    
-    display:flex;
+#about {
+
+    display: flex;
     justify-content: center;
     align-items: center;
     vertical-align: center;
     cursor: help !important;
-    
-    
-    background-image:url(https://chia.dev/assets/images/about-bg.png);
-    background-size:contain;
-    padding:2em;
-    margin-top:8vh;
-    margin-bottom:5vh;
-    
-    .box-inner{
-        max-width:700px;
-        margin-bottom:10vh;
+
+
+    background-image: url(https://chia.dev/assets/images/about-bg.png);
+    background-size: contain;
+    padding: 2em;
+    margin-top: 8vh;
+    margin-bottom: 5vh;
+
+    .box-inner {
+        max-width: 700px;
+        margin-bottom: 10vh;
     }
-    
-    img.chia{
-        width:80vw;
-        max-width:600px;
-        padding:1em;
-        opacity:0.5;
+
+    img.chia {
+        width: 80vw;
+        max-width: 600px;
+        padding: 1em;
+        opacity: 0.5;
         mix-blend-mode: lighten;
         pointer-events: none;
-        
+
     }
-    
-    h1{
+
+    h1 {
         font-family: 'Sporting Grotesque' !important;
         color: $light-color;
-        font-size:2.6rem;
-        line-height:2.2rem;
+        font-size: 2.6rem;
+        line-height: 2.2rem;
     }
-    
-    p{
+
+    p {
         color: $light-color;
-        font-size:1.1rem;
-        line-height:1.8rem;
+        font-size: 1.1rem;
+        line-height: 1.8rem;
         text-align: left;
-        font-weight:100;
+        font-weight: 100;
         text-rendering: optimizeLegibility;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-        
-        a{
-            display:inline-block;
-            background:none !important;
+
+        a {
+            display: inline-block;
+            background: none !important;
             color: $white;
-            font-size:.9em;
-            padding:.1em .2em .1em .2em;
-            border:1px solid cyan;
-            line-height:1.3em;
-            text-decoration: none; 
+            font-size: .9em;
+            padding: .1em .2em .1em .2em;
+            border: 1px solid cyan;
+            line-height: 1.3em;
+            text-decoration: none;
             cursor: pointer;
         }
-        
-        a:hover{
-                color: blue;
-                background: $white !important;
-                border:1px solid $white;
-            }
-        
+
+        a:hover {
+            color: blue;
+            background: $white !important;
+            border: 1px solid $white;
+        }
+
     }
-    
-    .social{
-        
-        margin-top:2em;
-        
-        a{
-            font-family:"aktiv-grotesk-extended";
+
+    .social {
+
+        margin-top: 2em;
+
+        a {
+            font-family: "aktiv-grotesk-extended";
             text-decoration: none;
             color: cyan;
-            margin:0 1em 0 1em;
+            margin: 0 1em 0 1em;
         }
-        
-        a:hover{
+
+        a:hover {
             text-decoration: underline;
         }
-        
+
     }
-    
-    
-    
+
+
+
 }
 
 #footer {
-    background:#001a19;
     box-sizing: border-box;
     text-align: center;
     width: 100%;
+    height: 60px;
     padding: 2em;
-    margin-top:2em;
-    display:block;
-    
-    a{
-        font-family:"Sporting Grotesque";
-        text-decoration: none;
-        display:inline-block;
-        color: $light-color !important;
-        cursor: e-resize !important;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: block;
+
+    .main-link:hover {
+        color: yellow !important;
     }
-    
-    .main-link{
-        color: #f2e4e4 !important;
-        display:block;
-        font-size:1.2em;
-            -webkit-transition: all .3s linear;
-            -moz-transition: all .3s linear;
-            -ms-transition: all .3s linear;
-            -o-transition: all .3s linear;
-            transition: all .3s linear;
-    }
-    
-    .main-link:hover{
-        color:yellow !important;
-    }
-    
-    .footer-links{
-        color:#fff;
-        
-        h2{
-            font-size:1em;
-        font-family:"aktiv-grotesk-extended";
+
+    .footer-links {
+
+        h2 {
+            font-size: 1em;
+            font-family: "aktiv-grotesk-extended";
         }
-        
-        a{
-            color:blue;
-            font-size:.8em;
-            line-height:1.2em;
-            margin:0 .3em 0 .3em;
+
+
+        a {
+            float: right;
+            font-family: "Sporting Grotesque";
+            text-decoration: none;
+            display: inline-block;
+            color: $light-color;
+            cursor: e-resize !important;
+            margin: 0 1em;
+        }
+
+        a::after {
+            content: " ↗";
+        }
+
+        a:hover {
+            color: cyan !important;
+        }
+
+        a.about {
+            float: left;
         }
     }
-    
-    .sub-link{
-        font-family:"aktiv-grotesk-extended";
-        color:$white;
-        padding:.3em;
-            -webkit-transition: all .3s linear;
-            -moz-transition: all .3s linear;
-            -ms-transition: all .3s linear;
-            -o-transition: all .3s linear;
-            transition: all .3s linear;
+
+
+
+
+}
+
+#footer.footer-dark {
+
+    .footer-links {
+
+        a {
+            color: #000;
+        }
     }
-    
-    .sub-link:hover{
-        background:$white;
-        color:#000;
-    }
+
 }
 
 
@@ -311,9 +307,9 @@ body {
         -o-transition: all .3s linear;
         transition: all .3s linear;
     }
-    
-    .projects-archive a:hover{
-        background:yellow;
+
+    .projects-archive a:hover {
+        background: yellow;
     }
 
 
@@ -354,7 +350,7 @@ body {
             box-sizing: border-box;
         }
     }
-    
+
 }
 
 
@@ -404,77 +400,77 @@ body {
 }
 
 
-.love-container{
-    
+.love-container {
+
     justify-content: center;
     text-align: left;
-    display:flex;
+    display: flex;
     flex-wrap: wrap;
-    margin-left:-1em;
-    
-    .love-col{
-        margin:0 1em 1em 1em;
+    margin-left: -1em;
+
+    .love-col {
+        margin: 0 1em 1em 1em;
     }
-    
-    .love-col h2{
-        padding-bottom:.5em;
+
+    .love-col h2 {
+        padding-bottom: .5em;
     }
-    
-    .love-col p{
-        max-width:250px;
-        margin:0 0 .5em 0;
-        line-height:1.35em;
+
+    .love-col p {
+        max-width: 250px;
+        margin: 0 0 .5em 0;
+        line-height: 1.35em;
     }
-    
-    .love-col p::before{
+
+    .love-col p::before {
         content: "↘ ";
-        font-size:.8em;
-        color:cyan;
-        padding-right:.3em;
-        line-height:0;
+        font-size: .8em;
+        color: cyan;
+        padding-right: .3em;
+        line-height: 0;
     }
-    
-    .love-col a::before{
+
+    .love-col a::before {
         content: "" !important;
-        
+
     }
-    
+
 }
 
 
 /* MAIN ELEEMENTS */
 
-li{
-    font-size:.9em;
-    line-height:1.6em;
-    margin-bottom:1em;
-    max-width:80%;
-    
+li {
+    font-size: .9em;
+    line-height: 1.6em;
+    margin-bottom: 1em;
+    max-width: 80%;
+
 }
 
 
-mark{
-    padding:.2em;
+mark {
+    padding: .2em;
 }
 
-hr{
-    margin:2em 0 2em 0;
+hr {
+    margin: 2em 0 2em 0;
 }
 
 
 // Extra Shit
 
-#error{
-    
-    p{
-        font-size:2em !important;
+#error {
+
+    p {
+        font-size: 2em !important;
         text-align: center;
     }
-    
-    a{
+
+    a {
         background: cyan !important;
     }
-    
+
 }
 
 
