@@ -24,11 +24,17 @@ a {
 
 .landing-front {
     margin-top:5vh;
-    min-height:400px;
+    min-height:430px;
     height:auto;
     
+
     @media only screen and (max-width: 700px) {
-        min-height:60vh;
+        min-height:500px;
+    
+        
+        details{
+            font-size:.8em;
+        }
     }
 }
 
@@ -36,6 +42,16 @@ details summary::-webkit-details-marker {
   display:none;
 }
 
+details summary{
+    cursor:pointer;
+}
+
+details[open]{
+    margin-top:1em;
+}
+details[open] > summary{
+    display: none;
+}
 
 .landing-style-container {
     position: absolute;
@@ -44,6 +60,7 @@ details summary::-webkit-details-marker {
     overflow-y: hidden;
     display: flex;
     justify-content: center;
+    
 
     .special {
         box-sizing: border-box;
@@ -51,14 +68,18 @@ details summary::-webkit-details-marker {
         margin:1em;
         width: 80vw !important;
         max-width: 700px;
-        line-height: 1.6em;
-        font-size: 1.2em;
+        font-size: 1.3em;
         border: 0;
+        
+        font-family:"Canela" !important;
+        
+        p.intro{
+            font-size:1.4em !important;
+        }
 
 
         a {
-            
-            font-family:"aktiv grotesk" !important;
+            font-family:"Canela" !important;
             background: none !important;
             color: cyan !important;
             text-decoration: none !important;
@@ -79,39 +100,8 @@ details summary::-webkit-details-marker {
         }
 
 
-        .special {
-            font-size:1em;
-        }
-
     }
 
-}
-
-.landing-style-stuff {
-    border-bottom: $white 1px solid;
-    padding: .5em 0 1em 0;
-    position: absolute;
-    bottom: 7vh;
-    width: 70%;
-    text-align: center;
-
-    a {
-        background: none !important;
-        margin: 0 1em 10px 1em;
-        color: $white !important;
-    }
-
-    a:hover {
-        color: cyan !important;
-    }
-
-    @media only screen and (max-width: 700px) {
-
-        a {
-            margin: 0 3px 10px 3px;
-        }
-
-    }
 }
 
 
@@ -138,6 +128,7 @@ details summary::-webkit-details-marker {
 
     p {
         margin: 0;
+        font-family:"Canela" !important;
         
         //font-family:"Aktiv-Grotesk" !important;
         font-size: 1em;
@@ -145,12 +136,6 @@ details summary::-webkit-details-marker {
         font-weight: 300;
         color: $white;
 
-        a {
-            font-family: "Canela";
-            font-size: 1.1em !important;
-            text-decoration: underline;
-            text-decoration-color: $white;
-        }
 
         a:hover {
             color: yellow !important;
@@ -223,10 +208,11 @@ details summary::-webkit-details-marker {
         sup {
             display: none !important;
         }
-
+        
+    
         p {
-            font-size: 1.1em !important;
-            line-height: 1.6em !important;
+            font-size: 1.1em;
+            line-height: 1.4em;
         }
 
         em {
@@ -623,7 +609,7 @@ details summary::-webkit-details-marker {
         padding: 1em;
         margin: auto;
         width: 100%;
-        font-size: 1.2em;
+        font-size: 1.1em;
 
         a {
             display: inline-block;
