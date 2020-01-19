@@ -24,7 +24,7 @@ a {
 
 .landing-front {
     margin-top:5vh;
-    min-height:430px;
+    min-height:440px;
     height:auto;
     
 
@@ -55,9 +55,6 @@ details[open] > summary{
 
 .landing-style-container {
     position: absolute;
-    width: 100%;
-    overflow-x: scroll;
-    overflow-y: hidden;
     display: flex;
     justify-content: center;
     
