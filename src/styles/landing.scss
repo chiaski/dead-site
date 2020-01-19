@@ -23,7 +23,7 @@ a {
 }
 
 .landing-front {
-    min-height: 100vh;
+    min-height:550px;
 }
 
 
@@ -33,28 +33,13 @@ a {
     overflow-x: scroll;
     overflow-y: hidden;
     display: flex;
-
-    .landing-style {
-        align-self: top;
-        vertical-align: top !important;
-        box-sizing: border-box;
-        display: flex;
-        width: auto;
-        background-image: url("https://chia.dev/assets/landing/chia-bg-alt.png");
-        background-position: center left;
-        background-size: contain;
-        background-repeat: no-repeat;
-
-        max-height: 80vh;
-        max-width: 450vw;
-        padding: 7vh 2vw 0 8vw;
-    }
+    justify-content: center;
 
     .special {
         box-sizing: border-box;
-        margin: 1em 6vw 0 6vw;
         display: block;
-        width: 75vw !important;
+        margin:1em;
+        width: 80vw !important;
         max-width: 700px;
         line-height: 1.2em;
         font-size: 1.3em;
@@ -105,29 +90,10 @@ a {
 
         }
 
-        .landing-style {
-            padding-top: 5vh;
-            background: none !important;
-            background-image: none !important;
-            margin: 1em;
-        }
-
-        .box-inner {
-            width: 75vw !important;
-
-        }
 
         .special {
-            font-size: 1.15em;
+            font-size: 1.3em;
             padding-left: 0vw !important;
-            margin: 1em !important;
-        }
-
-        .landing-style {
-            min-width: 400vw;
-            display: flex;
-            overflow-x: hidden;
-
         }
 
     }
@@ -224,14 +190,6 @@ a {
         transition: all .3s linear;
     }
 
-    .landing-style-container p a::after {
-        content: "○";
-        position: absolute;
-        line-height: 12px;
-        font-size: 12px;
-        color: $white;
-    }
-
     a:hover {
         color: cyan !important;
         text-decoration: none;
@@ -292,7 +250,7 @@ a {
 }
 
 #landing-works {
-
+    
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -638,7 +596,7 @@ a {
     top: 0;
     right: 0;
     width:100%;
-    padding: 1em;
+    padding: 1.5em;
     font-weight: 400;
     font-style: normal;
     font-size: 1.3em;
@@ -650,11 +608,11 @@ a {
 
     a {
         text-transform: uppercase;
-        margin-bottom: .4em;
+        margin:0 .5em;
         font-family: 'aktiv-grotesk-extended' !important;
         font-weight: 400;
         font-style: normal;
-        display: block;
+        display: inline-block;
         color: $white !important;
         background: none !important;
         text-align: right;
@@ -664,6 +622,7 @@ a {
         font-style: italic;
     }
 
+    
     @media only screen and (max-width: 700px) {
         padding: 1em;
         margin: auto;
