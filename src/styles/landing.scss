@@ -23,7 +23,17 @@ a {
 }
 
 .landing-front {
-    min-height:450px;
+    margin-top:5vh;
+    min-height:400px;
+    height:auto;
+    
+    @media only screen and (max-width: 700px) {
+        min-height:60vh;
+    }
+}
+
+details summary::-webkit-details-marker {
+  display:none;
 }
 
 
@@ -41,47 +51,25 @@ a {
         margin:1em;
         width: 80vw !important;
         max-width: 700px;
-        line-height: 1.2em;
-        font-size: 1.3em;
+        line-height: 1.6em;
+        font-size: 1.2em;
         border: 0;
 
 
         a {
-            display: inline-block;
+            
+            font-family:"aktiv grotesk" !important;
             background: none !important;
             color: cyan !important;
-            font-size: 32px;
-
-            .btn {
-                color: $white;
-                font-size: .6em;
-                padding: .1em .2em .1em .2em;
-                border: 1px solid cyan;
-                line-height: 12px;
-            }
-
-            .btn:hover {
-                color: $blue-screen;
-                background: $white;
-                border: 1px solid $white;
-            }
-
-        }
-
-        a.btn {
-            font-family: "aktiv-grotesk" !important;
             text-decoration: none !important;
-            line-height: 12px;
-            border: none !important;
 
         }
-
-
 
     }
 
 
     @media only screen and (max-width: 700px) {
+        
 
         .landing-style-container {
             position: absolute;
@@ -92,8 +80,7 @@ a {
 
 
         .special {
-            font-size: 1.3em;
-            padding-left: 0vw !important;
+            font-size:1em;
         }
 
     }
@@ -151,9 +138,9 @@ a {
 
     p {
         margin: 0;
-        font-family: "Canela" !important;
+        
         //font-family:"Aktiv-Grotesk" !important;
-        font-size: 1.3em;
+        font-size: 1em;
         line-height: 1.4em;
         font-weight: 300;
         color: $white;
@@ -201,7 +188,8 @@ a {
         font-style: normal !important;
         font-family: "aktiv-grotesk-extended";
         line-height: 1em !important;
-        color: cyan;
+        color: $white;
+        font-size:.8em;
     }
 
 
@@ -405,12 +393,16 @@ a {
     }
 
     .thing {
-        margin-top: 100vh;
+        margin-top: 50vh;
         position: absolute;
         background-position: center center;
         background-size: contain;
         background-repeat: no-repeat;
         z-index: -999;
+        
+    @media only screen and (max-width: 700px) {
+        display: none;
+        }
     }
 
     h2 {
@@ -592,6 +584,8 @@ a {
 }
 
 .landing-comms {
+    position: fixed;
+    top:0;
     width:100%;
     max-width:900px;
     margin:0 auto;
