@@ -29,11 +29,11 @@ a {
     
 
     @media only screen and (max-width: 700px) {
-        min-height:500px;
+        min-height:400px;
     
-        
         details{
             font-size:.8em;
+            display: none;
         }
     }
 }
@@ -577,7 +577,8 @@ details[open] > summary{
     font-style: normal;
     font-size: 1.2em;
     z-index:999;
-    height:10px;
+    height:80px;
+    background-repeat: repeat-x;
     
     span a::after{
             content: " ↗\00FE0E";
@@ -607,6 +608,14 @@ details[open] > summary{
         margin: auto;
         width: 100%;
         font-size: 1.1em;
+        
+        span{
+            float:none !important;
+        }
+        
+        .chia{
+            display: none;
+        }
 
         a {
             display: inline-block;
