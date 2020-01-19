@@ -23,7 +23,7 @@ a {
 }
 
 .landing-front {
-    min-height:550px;
+    min-height:450px;
 }
 
 
@@ -592,25 +592,30 @@ a {
 }
 
 .landing-comms {
-    position: absolute;
-    top: 0;
-    right: 0;
     width:100%;
+    max-width:900px;
+    margin:0 auto;
     padding: 1.5em;
     font-weight: 400;
     font-style: normal;
-    font-size: 1.3em;
-        z-index:999;
+    font-size: 1.2em;
+    z-index:999;
+    height:10px;
+    
+    span a::after{
+            content: " ↗\00FE0E";
+        font-family:"Segoe UI Symbol" !important;
+    }
 
     a .fa {
         font-size: .8em;
     }
 
     a {
-        text-transform: uppercase;
+        text-decoration: none;
         margin:0 .5em;
-        font-family: 'aktiv-grotesk-extended' !important;
         font-weight: 400;
+        font-family: 'Sporting Grotesque' !important;
         font-style: normal;
         display: inline-block;
         color: $white !important;
@@ -618,9 +623,6 @@ a {
         text-align: right;
     }
 
-    a:hover {
-        font-style: italic;
-    }
 
     
     @media only screen and (max-width: 700px) {
