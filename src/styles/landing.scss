@@ -24,8 +24,12 @@ a {
 
 .landing-front {
     margin-top:5vh;
-    min-height:440px;
+    min-height:460px;
     height:auto;
+    
+    details{
+        font-size:1.1em;
+    }
     
 
     @media only screen and (max-width: 700px) {
@@ -62,16 +66,16 @@ details[open] > summary{
     .special {
         box-sizing: border-box;
         display: block;
-        margin:1em;
+        padding-top:2em;
         width: 80vw !important;
-        max-width: 700px;
-        font-size: 1.3em;
+        max-width: 750px;
         border: 0;
         
         font-family:"Canela" !important;
         
         p.intro{
-            font-size:1.4em !important;
+                line-height:1.3em !important;
+            font-size:2.4em !important;
         }
 
 
@@ -85,17 +89,19 @@ details[open] > summary{
 
     }
 
+    
+    @media only screen and (max-width: 1024px) {
+        .special{
+            p.intro{
+                font-size:1.8em !important; 
+                line-height:1.4em !important;
+            }
+        }
+        
+    }
 
     @media only screen and (max-width: 700px) {
         
-
-        .landing-style-container {
-            position: absolute;
-            background: cyan;
-            background: none !important;
-
-        }
-
 
     }
 
@@ -128,7 +134,7 @@ details[open] > summary{
         font-family:"Canela" !important;
         
         //font-family:"Aktiv-Grotesk" !important;
-        font-size: 1em;
+        font-size: 1.2em;
         line-height: 1.4em;
         font-weight: 300;
         color: $white;
