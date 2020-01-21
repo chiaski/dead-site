@@ -150,6 +150,11 @@ iframe {
 #portfolio {
 
     min-height: 480px;
+    
+    hr{
+        margin:2em 0;
+        border:.5px solid #343784;
+    }
 
     ol,
     ul {
@@ -324,8 +329,7 @@ iframe {
             font-weight: 800;
             font-size: .9em;
             text-transform: uppercase;
-            letter-spacing: .7px;
-            font-weight: 400;
+            letter-spacing: .3px;
             color: #2b312f;
             padding: 1.5em 0 0 0;
         }
@@ -381,6 +385,24 @@ iframe {
             margin-bottom: 1em;
             color: $light-color;
         }
+        
+        blockquote.testimonial{
+            display: inline-block;
+            width:30%;
+            float:right;
+            border:0;
+            font-stretch: expanded;
+            color:#191919;
+            font-family:"aktiv-grotesk-extended";
+            
+            @media only screen and (max-width: 600px) {
+            float:none;
+                text-align: center;
+                width:100%;
+                margin-left:-2%;
+            }
+        }
+        
 
         blockquote {
             box-sizing: border-box;
@@ -423,22 +445,47 @@ iframe {
         
         .col{
             
+            margin:1em 0;
             display:flex;
+            flex-wrap: wrap;
+            
+            
+            h2{
+                margin:0 1em;
+                padding:0;
+            }
+            
+            p{
+                margin:0 .8em;
+            }
+            
             
             img{
+                max-width:100%;
                 box-shadow: 0 0 20px #ccc;
+                margin:1em 0 2em 0;
             }
             
             .col-half{
-                width:50%;
-                
+                width:49%;
                 
             }
             
         }
+        
 
 
-        @media only screen and (max-width: 600px) {
+        @media only screen and (max-width: 800px) {
+
+            .col{
+                max-width:100%;
+                display: flex;
+                
+                .col-half{
+                    width:100%;
+                }
+            }
+            
             p {
                 max-width: 90%;
             }
