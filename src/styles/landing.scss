@@ -74,7 +74,7 @@ details[open] > summary{
         font-family:"Canela" !important;
         
         p.intro{
-                line-height:1.3em !important;
+            line-height:1.3em !important;
             font-size:2.4em !important;
         }
 
@@ -90,10 +90,10 @@ details[open] > summary{
     }
 
     
-    @media only screen and (max-width: 1024px) {
+    @media only screen and (max-width: 900px) {
         .special{
             p.intro{
-                font-size:1.8em !important; 
+                font-size:2em !important; 
                 line-height:1.4em !important;
             }
         }
