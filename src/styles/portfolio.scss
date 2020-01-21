@@ -399,6 +399,43 @@ iframe {
             }
 
         }
+        
+        table{
+            
+            padding:1em 0;
+            border-top:1px solid $dark-mid;
+            border-bottom:1px solid $dark-mid;
+            
+            
+            th{
+                font-family:"aktiv-grotesk-extended";
+                
+            }
+            
+            td{
+                font-size:.9em;
+                padding:.8em 1em;
+                line-height:1.6em;
+                vertical-align: top;
+            }
+            
+        }
+        
+        .col{
+            
+            display:flex;
+            
+            img{
+                box-shadow: 0 0 20px #ccc;
+            }
+            
+            .col-half{
+                width:50%;
+                
+                
+            }
+            
+        }
 
 
         @media only screen and (max-width: 600px) {
@@ -576,6 +613,9 @@ iframe {
 
 .header {
     position: fixed;
+    height:90px;
+    background-repeat: repeat-x;
+    background-size:contain;
 }
 
 /* ALT COLOR */
