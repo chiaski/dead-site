@@ -145,6 +145,20 @@ iframe {
     .box-inner {
         max-width: 1000px;
     }
+    
+    .project-box h2{
+        font-size:2.3em;
+                -webkit-transition: all .3s linear;
+                -moz-transition: all .3s linear;
+                -ms-transition: all .3s linear;
+                -o-transition: all .3s linear;
+                transition: all .3s linear;}
+    
+    .project-box:hover{
+        h2{
+            color:cyan !important;
+        }
+    }
 
 }
 
