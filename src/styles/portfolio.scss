@@ -211,10 +211,11 @@ iframe {
         vertical-align: center;
         justify-content: center;
         background-size: cover;
+        margin-top:-2em !important;
 
         h1 {
             text-align: center;
-            font-size: 3em;
+            font-size: 2.2em;
             color: $white;
             flex-basis: 100%;
         }
@@ -734,10 +735,8 @@ iframe {
     #portfolio {
         p {
             color: #ebf6f7 !important;
-            ;
         }
 
-        color: #e3eaf0 !important;
     }
 
     .quote-block {

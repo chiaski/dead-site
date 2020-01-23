@@ -16,7 +16,7 @@
 
     <link rel="stylesheet" href="../assets/styles/theme-main.css">
     <link rel="stylesheet" href="../assets/styles/theme-portfolio.css">
-    <link rel="stylesheet" href="../assets/styles/font-canela.css">
+    <link rel="stylesheet" href="./assets/styles/font-canela.css">
 
 </head>
 
@@ -25,7 +25,7 @@
 
     <div class="container alt container-portfolio" style="background:#141cd1;">
 
-        <div class="header header-alt" id="navigation" style="background-image:url(../assets/landing/nav-trans.png);position:fixed;">
+        <div class="header header-alt" id="navigation" style="background-image:url(assets/landing/nav-trans.png);position:fixed;">
             <div class="header-left"><a href="../index.html">Chiaski</a></div>
             <div class="header-right">
                 <a href="../about">About</a>
@@ -36,7 +36,7 @@
 
 
 
-        <div class="box" style="padding-top:2em;background:none;">
+        <div class="box" id="portfolio-intro">
             <div class="box-inner inner-center" style="width:100%;">
 
                 <center>
@@ -59,16 +59,11 @@
                                 </span>
 
                                 <span class="love">
-                                    <p>managing student startups for good at <a href="https://developh.org/collab">Collab</a></p>
+                                    <p>managing student startups for good at <a href="https://developh.org/collab">Collab</a>, Developh's incubator</p>
                                 </span>
 
                                 <span class="love">
-                                    <p>building a Filipina-first healthtech startup</p>
-                                </span>
-
-
-                                <span class="love">
-                                    <p>producing creative open-source talks and works at the Yale CCAM</p>
+                                    <p>producing creative experimental talks and works at the Yale CCAM</p>
                                 </span>
 
 
@@ -102,10 +97,8 @@
             </div>
         </div>
 
-        <div class="box" style="display: flex;width:100vw;background:none;">
+        <div class="box" id="portfolio-list">
             <div class="box-inner">
-
-                <h3>Design & Experiences</h3><br>
 
                 <div class="portfolio-project-container">
 
@@ -115,10 +108,10 @@
                             <img src="../assets/portfolio/preview-ibotoph.jpg">
 
                             <div class="project-box-desc">
-                                <h2>Iboto.ph <h3>Web App</h3>
-                                </h2>
+                                <h2>Iboto.ph</h2>
+                                <h3>Website</h3>
                                 <div class="quote-block">
-                                    Designing voter education for the Philippine masses&mdash;transformed into a space for political conversation.
+                                    Designing voter education for the Philippine masses&mdash;into a space for political conversation.
                                 </div>
 
                             </div>
@@ -133,7 +126,7 @@
 
                     <a href="twitter">
                         <div class="project-box" id="link-ibotoph">
-                            <img src="../assets/portfolio/preview-twitter.jpg" style="width:600px;">
+                            <img src="../assets/portfolio/preview-twitter.jpg">
 
                             <div class="project-box-desc">
                                 <h2>Twitter: Better Engagements</h2>
@@ -152,16 +145,15 @@
                     </a>
 
 
-
                     <a href="collab">
                         <div class="project-box">
                             <img src="../assets/portfolio/preview-collab.jpg">
 
                             <div class="project-box-desc">
-                                <h2>Collab Incubator <h3>Event</h3>
-                                </h2>
+                                <h2>Collab Incubator</h2>
+                                <h3>Event</h3>
                                 <div class="quote-block">
-                                    Collab is a by-students, for-students incubator for technology and social impact launched with Developh.
+                                    Collab is a by-students, for-students incubator for technology and social impact with Developh.
                                 </div>
 
                             </div>
@@ -179,8 +171,8 @@
                             <img src="../assets/portfolio/preview-hopefuls.jpg">
 
                             <div class="project-box-desc">
-                                <h2>Politic: Presidential Hopefuls <h3>Website</h3>
-                                </h2>
+                                <h2>Politic: Presidential Hopefuls</h2>
+                                <h3>Website</h3>
                                 <div class="quote-block">
                                     Minisite for the Yale Politic showcasing interviews with 2020 American Presidential Candidates.
                                 </div>
@@ -198,10 +190,11 @@
 
                     <a href="https://medium.com/@chiaski/letterboxd-feature-concepts-reel-67c1ceaca699">
                         <div class="project-box">
-                            <img src="../assets/portfolio/preview-letterboxd.jpg" style="width:600px;">
+                            <img src="../assets/portfolio/preview-letterboxd.jpg">
 
                             <div class="project-box-desc">
                                 <h2>Letterboxd Feature Concepts </h2>
+                                <h3>Case Study</h3>
                                 <div class="quote-block">
                                     <i class="fa fa-medium"></i> &nbsp;For love of film: a small series of feature concepts and redesigns for the social film discovery platform.
                                 </div>
@@ -220,14 +213,15 @@
 
                     <a href="https://round.ph" target="_blank">
                         <div class="project-box">
-                            <img src="../assets/portfolio/preview-round.jpg" style="width:600px;">
+                            <img src="../assets/portfolio/preview-round.jpg">
 
                             <div class="project-box-desc">
-                                <h2>Round <h3>Web Experience</h3>
-                                </h2>
+                                <h2>Round </h2>
+                                <h3>Web Experience</h3>
                                 <div class="quote-block">
                                     Round explores the intersection between spacial and narrative memory, loneliness, and our interactions with space and internet intimacy. ⚫
                                 </div>
+
 
                             </div>
 
@@ -237,8 +231,8 @@
 
                         </div>
                     </a>
-
-
+                    
+                    
                         <div class="project-box" style="cursor: not-allowed !important;">
                             <img src="../assets/portfolio/preview-technologyph.jpg" style="cursor: not-allowed !important;">
 
@@ -257,58 +251,40 @@
                             </a>
 
                         </div>
-                    
+
+
                     <!--
+
+
                     <div class="project-box project-unavailable" id="link-ibotoph" style="cursor: not-allowed !important;">
-                        <img src="../assets/portfolio/preview-technologyph.jpg">
+                        <img src="assets/portfolio/preview-technologyph.jpg">
 
                         <div class="project-box-desc" style="cursor: not-allowed !important;">
-                            <h2>Technology.ph <h3>Website</h3>
-                            </h2>
+                            <h2>Technology.ph </h2>
+                            <h3>Website + Newsletter</h3>
                             <div class="quote-block">
                                 Technology.ph is a publication and biweekly digest for everything Philippine tech, published by Developh. I designed the experience, write, and deliver materials for the newsletter.
                             </div>
 
-                            <h3>[December 2019]&nbsp; In Progress</h3>
                         </div>
 
                     </div>
 
                     <a href="https://github.com/chiaski/3d-thirdimpact" target="_blank">
                         <div class="project-box">
-                            <img src="../assets/portfolio/preview-kimochiwarui.jpg" style="width:600px;">
+                            <img src="assets/portfolio/preview-kimochiwarui.jpg" style="width:600px;">
 
                             <div class="project-box-desc">
-                                <h2>Kimochi Warui <h3>3D Experience</h3>
-                                </h2>
+                                <h2>Kimochi Warui</h2>
+                                <h3>3D Experience</h3>
                                 <div class="quote-block">
                                     "Humans cannot create anything out of nothingness. Humans cannot accomplish anything without holding onto something. After all, humans are not gods."
                                 </div>
 
-                                <h3>[October 2019] Unity * 3D Modeling</h3>
                             </div>
 
                         </div>
-                    </a>
-
-
-            
-            <a>
-            <div class="project-box">
-            <img src="assets/portfolio/preview-developh.jpg" style="width:600px;">
-                
-            <div class="project-box-desc">
-            <h2>↺ Developh</h2>
-            <div class="quote-block">
-            Investing in student innovation across Southeast Asia and shifting the tech pipeline
-            </div>
-                
-            <h3>Project Management * Branding & Identity * and everything, really</h3>
-            </div>
-                
-            </div>
-            </a>-->
-
+                    </a>-->
 
 
                 </div>
@@ -317,11 +293,10 @@
 
 
 
-
         <div class="box footer footer-alt" id="footer">
 
             <div class="footer-links">
-                <a href="../aabout" class="about">About</a>
+                <a href="about" class="../about">About</a>
 
                 <a href="https://chias.blog">Blog</a>
                 <a href="mailto:hello@chiaski.com">Mail</a>
@@ -332,7 +307,6 @@
 
 
     </div>
-
 
 </body>
 
