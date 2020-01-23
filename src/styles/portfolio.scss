@@ -117,6 +117,7 @@ iframe {
 
 #portfolio-page {
     top: 0;
+    padding-top:100px;
 }
 
 #portfolio-intro {
@@ -311,7 +312,7 @@ iframe {
         vertical-align: center;
         justify-content: center;
         display: flex;
-        max-width:700px;
+        max-width:750px;
         
 
         a {
@@ -367,7 +368,7 @@ iframe {
             padding-left: .2em;
             padding-top:1em;
             padding-bottom: 1em;
-            max-width:600px;
+            max-width:95%;
             margin:auto;
             
         }
@@ -503,6 +504,7 @@ iframe {
             box-sizing: border-box;
             
             h1, h2{
+                width:88%;
                 margin:auto;
             }
 
