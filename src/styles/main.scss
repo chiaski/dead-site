@@ -1,7 +1,5 @@
 @import 'reset.scss';
 @import 'aos.css'; // for animations
-
-@import url("https://use.typekit.net/cuk4jse.css");
 @import "fonts.css";
 
 $bg-color: #001a19;
@@ -10,10 +8,6 @@ $white: #f0f8f7;
 
 
 /* MAIN STRUCTURAL ELEMENTS HEHEHE */
-
-* {
-    font-family: "aktiv-grotesk";
-}
 
 body {
     text-rendering: optimizeLegibility;
@@ -33,6 +27,7 @@ body {
     align-content: flex-start;
     justify-content: center;
     align-items: center;
+    font-family:"GT America", Helvetica;
 }
 
 .box {
@@ -57,12 +52,12 @@ body {
     background: none;
 
     h1 {
-        font-family: "aktiv-grotesk-extended";
+        font-family: 'GT America Expanded';
         font-size: 1.8em;
         margin-bottom: .2em;
 
         sup {
-            font-family: "aktiv-grotesk-extended";
+            font-family: 'GT America Expanded';
             font-size: 12px;
             font-weight: 100;
             margin-bottom: 10px;
@@ -72,9 +67,8 @@ body {
 
 
     p {
-        font-family: "aktiv-grotesk";
+        font-family: "GT America";
         line-height: 1.7em;
-        font-size: .9em;
     }
 }
 
@@ -111,7 +105,7 @@ body {
         color: #fff;
         margin: .3em;
         padding: .5em;
-        font-family: "aktiv-grotesk-extended";
+    font-family: 'GT America Expanded';
         margin-right: .7em;
         -webkit-transition: all .3s linear;
         -moz-transition: all .3s linear;
@@ -195,7 +189,7 @@ body {
         margin-top: 2em;
 
         a {
-            font-family: "aktiv-grotesk-extended";
+            font-family: 'GT America Expanded';
             text-decoration: none;
             color: cyan;
             margin: 0 1em 0 1em;
@@ -230,7 +224,7 @@ body {
 
         h2 {
             font-size: 1em;
-            font-family: "aktiv-grotesk-extended";
+            font-family: 'GT America Expanded';
         }
 
 
@@ -321,7 +315,7 @@ body {
             padding: .3em .6em;
             color: cyan;
             border: 1px solid cyan;
-            font-family: "aktiv-grotesk-extended";
+    font-family: 'GT America Expanded';
             cursor: e-resize !important;
         }
 
@@ -351,7 +345,7 @@ body {
 
     .quote-block {
 
-        font-family: "aktiv-grotesk";
+        font-family: "GT America";
         text-rendering: optimizelegibility;
         color: #ededf7;
         line-height: 22px;
@@ -381,11 +375,11 @@ body {
         font-size: .1em;
         font-weight: 100;
         font-style: normal;
-        font-family: "aktiv-grotesk-extended";
+        font-family: 'GT America Expanded';
     }
 
     h3 {
-        font-family: "aktiv-grotesk";
+        font-family: "GT America";
         text-transform: uppercase;
         text-align: left;
         display: block;

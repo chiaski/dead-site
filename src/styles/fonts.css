@@ -55,5 +55,46 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'GT America';
+    src: url('../fonts/GTAmerica-RegularItalic.woff2') format('woff2'),
+        url('../fonts/GTAmerica-RegularItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'GT America';
+    src: url('../fonts/GTAmerica-Bold.woff2') format('woff2'),
+        url('../fonts/GTAmerica-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GT America';
+    src: url('../fonts/GTAmerica-Regular.woff2') format('woff2'),
+        url('../fonts/GTAmerica-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GT America Expanded';
+    src: url('../fonts/GTAmerica-ExpandedBold.woff2') format('woff2'),
+        url('../fonts/GTAmerica-ExpandedBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GT America Expanded';
+    src: url('../fonts/GTAmerica-ExpandedRegular.woff2') format('woff2'),
+        url('../fonts/GTAmerica-ExpandedRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 
 

@@ -121,7 +121,7 @@ details[open] > summary{
         font-style: italic;
 
         sup {
-            font-family: "aktiv-grotesk-extended";
+            font-family: "GT America Expanded";
             font-size: 12px;
             font-weight: 100;
             margin-bottom: 10px;
@@ -157,7 +157,7 @@ details[open] > summary{
         color: #000;
         text-decoration: none;
         background: $white;
-        font-family: "aktiv-grotesk-extended";
+        font-family: "GT America Expanded";
         -webkit-transition: all .3s linear;
         -moz-transition: all .3s linear;
         -ms-transition: all .3s linear;
@@ -174,7 +174,7 @@ details[open] > summary{
 
     em {
         font-style: normal !important;
-        font-family: "aktiv-grotesk-extended";
+        font-family: "GT America Expanded";
         line-height: 1em !important;
         color: $white;
         font-size:.8em;
@@ -309,7 +309,7 @@ details[open] > summary{
 
 
         h3 {
-            font-family: "aktiv-grotesk";
+            font-family: "GT America";
             text-transform: uppercase;
             text-align: center;
             display: block;
@@ -395,7 +395,7 @@ details[open] > summary{
     }
 
     h2 {
-        font-family: "aktiv-grotesk-extended";
+        font-family: "GT America Expanded";
         display: block;
         color: $white;
         margin: 0;
@@ -482,7 +482,6 @@ details[open] > summary{
             }
 
             h1::before {
-                content: "⇁ ";
                 font-size: .8em;
                 vertical-align: super;
                 margin-left: -1em;
@@ -495,7 +494,7 @@ details[open] > summary{
 
             h3 {
                 margin: 0;
-                font-family: "aktiv-grotesk-extended";
+                font-family: "GT America Expanded";
                 font-size: .7em;
                 color: cyan;
                 font-weight: 100;
@@ -504,11 +503,9 @@ details[open] > summary{
             }
 
             p {
-                font-family: "aktiv-grotesk-extended";
                 margin: 0;
                 color: $white;
-                font-size: .8em !important;
-                line-height: 1.5em;
+                line-height: 1.4em;
             }
 
 
@@ -632,51 +629,4 @@ details[open] > summary{
             text-align: center;
         }
     }
-}
-@font-face {
-    font-family: 'Canela';
-    src: url('../fonts/Canela-LightItalic.woff2') format('woff2'),
-        url('../fonts/Canela-LightItalic.woff') format('woff');
-    font-weight: 300;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Canela';
-    src: url('../fonts/Canela-Medium.woff2') format('woff2'),
-        url('../fonts/Canela-Medium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Canela';
-    src: url('../fonts/Canela-MediumItalic.woff2') format('woff2'),
-        url('../fonts/Canela-MediumItalic.woff') format('woff');
-    font-weight: 500;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Canela';
-    src: url('../fonts/Canela-Regular.woff2') format('woff2'),
-        url('../fonts/Canela-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Canela';
-    src: url('../fonts/Canela-Light.woff2') format('woff2'),
-        url('../fonts/Canela-Light.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Canela';
-    src: url('../fonts/Canela-RegularItalic.woff2') format('woff2'),
-        url('../fonts/Canela-RegularItalic.woff') format('woff');
-    font-weight: normal;
-    font-style: italic;
 }
