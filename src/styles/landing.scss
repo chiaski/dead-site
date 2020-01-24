@@ -283,11 +283,8 @@ details[open] > summary{
             cursor: e-resize !important;
             margin-bottom: 0;
 
+            
 
-        }
-
-        .project-unavailable {
-            cursor: not-allowed !important;
         }
 
         h2 {
@@ -313,11 +310,10 @@ details[open] > summary{
             text-transform: uppercase;
             text-align: center;
             display: block;
-            font-size: .7em;
-            letter-spacing: .5px;
+            font-size: .6em;
             color: lightblue !important;
             margin: .2em 0;
-            font-weight: 400;
+            font-weight: 100;
             cursor: e-resize !important;
         }
 
