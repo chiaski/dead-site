@@ -494,6 +494,16 @@ iframe {
             margin:2em;
             box-sizing: border-box;
             
+            .image-container{
+                width:100%;
+                display: block;
+            }
+            
+            
+            li{
+                font-size:.85em;
+            }
+            
             h1, h2{
                 width:88%;
                 margin:auto;
@@ -513,6 +523,7 @@ iframe {
             
             p {
                 padding: 1em;
+                font-size:.85em;
             }
         }
 
