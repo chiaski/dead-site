@@ -187,6 +187,21 @@ iframe {
         color: cyan !important;
     }
 
+    .portfolio-nav{
+        text-align: center;
+        font-size:1.2em;
+        
+        a{
+            font-family: "GT America Expanded";
+            margin:0 1em;
+            background: none !important;
+        }
+        
+        a:hover{
+            color:yellow !important;
+        }
+        
+    }
 
     .portfolio-links {
         text-align: center;
