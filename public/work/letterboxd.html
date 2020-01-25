@@ -48,8 +48,7 @@
                     <br><br>
 
                     <div class="summary-container">
-                        <p class="summary">For the Philippine midterms, I conceptualized and led the launch of a voter education resource network for progressive candidates. We reached <u>millions of Filipinos in a month</u>, with materials directly shared over >100k times. Now, Letterboxd is gearing up to be a go-to platform for disruptive digital grassroots campaigning for 2022.
-                            <br>My favorite explorations & learnings on the neutrality of tech as a medium, free internet, and more.
+                        <p class="summary">For love of film: I wanted to take on a suite of usability proposals to Letterboxd on the web, my favorite film site. I frequently watch movies while working and do my browsing, debating, and scouring for opinions on them online&mdash;and I'd love to expand on how Letterboxd can do that for myself and others.
                         </p>
 
 
@@ -61,7 +60,7 @@
                             <span class="summary-add"><strong>Methods</strong> Rapid research/ inquiry, user journey, remote usability studies; React, Figma</span>
 
 
-                            <span class="summary-add"><strong>Visit</strong> On <a href="https://Letterboxd" target="_blank">Letterboxd</a> and our social sites <a href="https://facebook.com/ibotoph" target="_blank"><i class="fa fa-facebook"></i> Facebook,</a> and <a href="https://medium.com/iboto" target="_blank"><i class="fa fa-medium"></i> Medium</a></span>
+                            <span class="summary-add"><strong>Visit</strong> Say hello to me on <a href="https://letterboxd.com/Chiaski" target="_blank">Letterboxd</a>
                         </div>
                     </div>
 
@@ -78,7 +77,7 @@
 
                     <blockquote>Have other frustrations on Letterboxd's web version? <a href="mailto:chiamisola@gmail.com">Message me</a>  and let's look into it!</blockquote>
                     
-                    <hr>
+                    <br><hr>
                     
                     
                     <span class="image-container">
@@ -110,7 +109,7 @@
                     </div>
                     <div class="col-half">
 
-                    <p>Immediately after watching a movie, we want to talk about it.<br><br>
+                    <p><mark>Immediately after watching a movie, we want to talk about it.</mark><br><br>
                     There needs to be a more direct way to get there.</p>
                         
                     </div>
@@ -118,24 +117,256 @@
                     
                     <h3>Issues&mdash;Movie Logging</h3>
                     
-                    <p>The next Philippine elections are happening in 2022. The team behind Letterboxd is thinking of how to further transform the digital space for education, awareness, and discussion as we did with Letterboxd&mdash;with these 2022 elections, we have a lot to tackle. Thankfully, Letterboxd's pilot taught us about establishing user loyalty&mdash;and how things will never end up as you expect.</p>
+                    <p>After observing this problem, I talked casually with over a dozen users to obtain a deeper sense of this key action. (Thank you Film Twitter!) Here are the key insights I captured:
+                    </p>
+                    
+                    
+                    <span class="image-container" style="float: right;">
 
+                        <img class="image-full" src="../assets/portfolio/letterboxd/logflow-box.png" style="max-width:240px;"> 
+
+                    </span>
+                    
                     <ul>
-                        <li>Design to satisfy user desires: we furthered Letterboxd's social presence as users moved to use our tools to carry conversations over.</li>
-
-                        <li>Neutrality is not an option: designing to reach those who could change their viewpoints and spread the word to support our candidates was priority&mdash;tech is never neutral.</li>
-
+            <li><strong>Prominence of log action</strong> — It’s strange that the most prominent actions are the least important ones. The most confusing part about the action prompt is that “Watched” is used as a backlog tool without giving any prompt for when the film was watched. I address the iconography in itself later, but here I wanted to zero in on how the “Review or log…” action could be highlighted further.</li>
+                        
+                        
+            <li><strong>Homepage layout</strong> — One of my initial assumptions that was validated through these talks was that the homepage was heavily underutilized. There are no existing prompts for users to take action on their own logs, such as shifting through their watch list or logging a new movie. The sections on the homepage are all on outside engagements with lots of repetitions (e.g. the popular reviews section tends to be filled with reviews of the latest movies; and majority of Letterboxd users, users that don’t maintain an active “friends” list, will have the first section stagnant).</li>
+                    
+            <li><strong>Extended and unintuitive user journey </strong> — All search actions on Letterboxd take the user to a results page, and the search action is only accessible from the navigation prompt. (Clicking “Films” brings the user to a list of films in they’ve watch in reverse chronological order.)</li>
+                        
+            <li><strong>Missing features </strong> — On the web version, the log box has areas to input less frequently used features (tags), but excludes lists: one of the prominent user-generated discovery features on the website.</li>
+                    
                     </ul>
+ 
+                <h2>Proposal</h2>
+                <h1>An active homepage</h1>
+                    
+                <p>As a starting point, I wanted to make better use of the Letterboxd home screen.</p>
 
-                    <p>There's value in engaging with the principles that voters believe in, and using those as grounds to understand, listen, and respond effectively. <em>Fighting categorization and labeling</em> through engagement was key, and we're looking forward to more spaces that encourage discussions like this.</p>
+                <p>My proposed flow from the homepage involves a direct interaction from searching for a movie title (or director/actor) to opening up the review/log prompt to allow users to easily add movies.</p>
+                        
+                        
+            <div class="col">
+                <div class="col-half">
+                
+                    <h2>Current Home</h2>
+                    
+                    <span class="image-container">
+
+                        <img class="image-full" src="../assets/portfolio/letterboxd/logflow-home.png"> 
+
+                    </span>
+                
+                </div>    
+                <div class="col-half">
+                
+                    <h2>With Watch Prompt</h2>
+                    
+                    <span class="image-container">
+
+                        <img class="image-full" src="../assets/portfolio/letterboxd/logflow-homewireframe.png"> 
+
+                    </span>
+                
+                </div>     
+                
+                    <span class="image-container">
+
+                        <img class="image-full" src="../assets/portfolio/letterboxd/logflow-flowrevised.png"> 
+
+                    </span>
+                
+                
+            </div>
+                    
+                <p>On the homepage, I replaced the previous greeting/friend message with a new, large section prompting the user to write down what they’ve “seen” lately. Copy is very similar to the original page with the added “Seen anything lately?”</p><br>
+                        
+                        
+                    <span class="image-container">
+
+                        <img class="image-full image-zoom" src="../assets/portfolio/letterboxd/logflow-homenew.jpeg"> 
+
+                    </span><br>
+                    
+                <p><strong>Watchlist cues</strong>&mdash;Visually, there’s a captivating header image (similar to the ones executed in film pages) in the background selected randomly from the user’s watchlist. User watchlists are one of the main sections on user profiles, and drawing attention to these backlogs would be an interesting way to nudge users to get through the list — and return to the website to mark it as done, of course.</p>
+
+                        
+            <span class="image-container">
+
+                        <img class="image-full image-zoom" src="../assets/portfolio/letterboxd/logflow-homeaction.png"> 
+
+                    </span><br>
+                    
+                        
+                    <p><strong>Direct search</strong>&mdash;With the homepage search bar, I took on a prominent user assumption where they would have liked to be driven to the page immediately; as searches are frequently direct. I added an area for filters that replaces the search icon on type that could display primary filters: Film, Director, Genre, and the like.<br>
+                    This new interaction would bring the user to the film page with the review/log prompt available, and the current date selected as the watch date. Upon saving the entry to the user’s log, the user can then view the rest of the film’s details, top reviews, and interact with what other members of the community are saying about it.</p>
+                        
+                <h3>Persisting Challenges</h3>
+            <p><strong>Inclusion of search results page</strong>&mdash;The Letterboxd search results page tracks film titles, directors, cast & crew, and review contents. In certain cases (reused movie titles, similarly-titled sequels), I worry about the interaction bringing the user directly to the film page — but from my studies, this is rarely the case. Plus, search queries are generally filled with film reviews (always showcasing 250+ results, the maximum number displayed) when no relevant titles are available; this is a huge waste of clicks in most instances. I would love to see data on search queries and what results are most selected from the homepage to refine this thinking process further.</p>
+                        
+                        
+                        
+                    <br><br><hr>
+                    
+                    
+                    <span class="image-container">
+
+                        <img class="image-full" src="../assets/portfolio/letterboxd/flavor-filmlogging.jpg">
+
+                    </span>
 
 
-                    <div class="portfolio-large" style="background-image:url(../assets/portfolio/iboto/iboto-large.png);">
+                    <h2>Process</h2>
+                    <h1>Better Discovery & Engagements on Film Logging</h1>
+                    <p>After designing a revised flow for logging and presenting it to friends and peers in online film communities, I also set my eye on modifying the interactions available on the logging prompt itself.</p>
+                        
+                    <h3>Issues&mdash;Movie Logging</h3>
+                
+                        
+                <p><strong>Limited interactions</strong>&mdash;The main actions available are writing reviews, specifying date watched and if the film is a rewatch, tagging, liking, and starring. Half of these interactions (tagging, liking) aren’t pushed into action for other users (there are no prompts to see that a friend recently “liked” a movie, tags serve more as keywords).</p>
+                        
+                <p><strong>"Diary entry" is unclear</strong>&mdash;Currently, the review and diary prompts are mixed together, leading to a flow with mixed pointers. There needs to be more direction and clarity on the Letterboxd logging process.</p><br><br>
+                    
+ 
+                <h2>Proposal</h2>
+                <h1>A revised log prompt</h1>
+                        
+                        
+                    <span class="image-container">
+
+                        <img class="image-full" src="../assets/portfolio/letterboxd/diary-view.png">
+
+                    </span>
+
+                           
+                <div class="col">
+                    <div class="col-half">
+                        
+                <p><strong>Rating</strong>&mdash;Rating a movie is one of the easiest ways for us to share an opinion about it. It’s what the user takes action on first, too. I moved the rating upwards right next to the movie title/date watched to follow more into the regular reading pattern and establish prominence.</p>
+                        
+                <p><strong>Tags</strong>&mdash;Next, I revised the tags area. I thought saving space here would be safer since from research, most of the users I talk to don't tag movies (or if they do, add jokes as tags)&mdash;and if they are, they don't usually require an amount that demands as much real estate as it presently has.</p>
+                        
+                    </div>
+                    <div class="col-half">
+
+                    <p><strong>List</strong>&mdash;With the new space, I added in the list dropdown where users can be prompted to start a new list or select an existing one. Lists are one of the main means where users tell stories, share insights, and group together recommendations for the masses: putting it on this log section is important to get more people engaged on building them.</p>
+                        
+                    <p><strong>Favorite</strong>&mdash;Finally, along with the “Like” functionality, I added a favorite star. This would add the film (replacing the oldest selected one) to the user’s favorites on their profile.</p>
+                        
+                        
+                    </div>
+                </div>
+                        
+                <p>From sharing these hi-fidelity mockups of the new prompt, I validated these assumptions and found that users started wondering why some of the existing actions were so scarce.</p>
+                        
+                <br>
+                        
+                <p>One of the main reasons why people go to Letterboxd is because of its interface and community/discovery tools. By improving the logging process, I’d love to see how this gets users to continuously return to Letterboxd as a go-to website for sharing their own film discoveries and taking part in the network.</p>
+                        
+                        
+
+                    <br><br><br><hr>
+                    
+                    
+                    <span class="image-container">
+
+                        <img class="image-full" src="../assets/portfolio/letterboxd/flavor-reviews.jpg">
+
+                    </span>
+                        
+                    
+                    <h2>Process</h2>
+                    <h1>Reviews: Discussion for all</h1>
+                    <p>
+There’s nothing more critical to the film experience than being able to articulate and share our thoughts. It’s why movies like <em>Uncut Gems</em> with polarizing audience and critic responses show you that ratings alone won't cut it.</p>
+                        
+                    
+                    <span class="image-container">
+
+                        <img class="image-full" src="../assets/portfolio/letterboxd/reviews-uncutgems.png">
+                        <em>The current Most Popular Reviews for Uncut Gems (2019)</em>
+
+                    </span>    
+                        
+                <p>At present there’s a clear divide between two large user groups of Letterboxd: casual filmgoers (e.g. film twitter and Timothée Chalamet fans galore) that usually share humorous, pop culture-inflected thoughts, and film reviewers intent on sharing more traditional criticisms and breakdowns of pieces. In essence, the primary personas I’m thinking of are the following:</p>
+                        
+                <ul>
+                    <li>Younger film enthusiasts who offer casual, humorous, and witty engagements about movies and pop culture — with a lot of knowledge on trending actors; definitely engaged in the social aspects of Letterboxd</li>
+                    
+                    <li>Classic film reviewers and critics — these users head to Letterboxd over IMBD to explore the social aspects of film. They’re engaged in analyzing themes and longer thoughts on films.</li>        
+                        
+                </ul>
+                        
+                    <p>Letterboxd’s approach to reviews on desktops present this way: on movie pages below summaries and details, friend reviews are listed, then the top three most popular reviews (from “likes”) and the top three most recent ones. Reviews along with lists are the main spaces for users to interact with one another on the website. I’m interested in exploring how we can potentially filter through comedic reviews and more informational or critical ones to cater to what users feel like discussing.<br> After all, post-Parasite (2019) I might want to decompress and just joke about the magnificence of another Bong (Joon-ho) hit, or work through a deeper criticism on all its commentaries. Better filtering through these conversations will help all types of users in the platform to engage in different types of commentary.</p>
+                        
+              <div class="col">
+                    <div class="col-half">
+                        
+                    <h3>Exploring existing models</h3>
+                    <span class="image-container">
+
+                        <img class="image-full" src="../assets/portfolio/letterboxd/reviews-existingmodels.png">
+                    </span>    
+                        
+                        
+                    </div>
+                    <div class="col-half">
+
+                    <p>The first existing model that I wanted to lift from is the Steam Store; games are just as meticulously looked over through reviews, and are equally a space for even AAA games to be laughed over.<br><br>
+                        The way Steam approached reviews would then be my main foundation for exploring improvement on this feature.</p>
+                        
+                    </div>
+                </div><br>
+                        
+                    <span class="image-container">
+                        <img class="image-full" src="../assets/portfolio/letterboxd/reviews-insightful.png">
+                    </span>    
+                        
+                    <p>There are several buttons to indicate whether the review is helpful, and a “funny” option. The copy on this is a bit awkward, so I opted for three bttons instead: retaining the <mark>likes, laugh, and insightful</mark> — buttons that are similar to recent, intuitive trends on reaction on sites like Facebook and LinkedIn. I decided on these three buttons a bit arbitrarily; though they’re also the types of content filters used on Steam games and based on discussion with other users. Would take a note to do more research on categorization in this area before potentially moving forward for implementation. These buttons help users gauge and filter reviews themselves while addding onto the types of interactions with them.</p>
+                        
+                               
+              <div class="col">
+                    <div class="col-half">
+                        
+                <p>Moving onto viewing these reviews, I envision adding category buttons at the popular review view to sift through the three most relevant reviews categorized as needed.<br>By default, the more reviews view continues to just show the most liked, popular reviews — which at the moment inhibits smaller users or more diverse sets of reviews to be seen; these limits in visibility mean that users don’t get to see content produced outside of the followers that they already follow, and make it harder for less established users to rise in popularity.</p>
+                  
+                        
+                    </div>
+                    <div class="col-half">
+                        
+        <span class="image-container">
+
+                        <img class="image-full" src="../assets/portfolio/letterboxd/reviews-wireframe.png">
+                    </span>    
+                        
+                    </div>
+                </div><br>
+                        
+                    <p>By adding new categories to reviews and making review filtering a priority on film pages, we hope to achieve the following:</p>
+                
+            <ul>
+                <li>Satisfying all types of users who are looking for different types of information from reviews: whether pure humor, critics’ insight, or more</li>            
+                <li>Allowing more room for top reviews to shift; continuing interaction with the film, especially as time passes</li>            
+                <li>Opening more avenues for users to engage with other reviewers on the platform, increasing follower interactions</li>            
+                        
+            </ul>
+                        
+            <h2>Continuing Questions</h2> 
+            <h1>What kind of film network does Letterboxd want to be?</h1>
+                        
+                <ul>
+                    <li>As always, there’s going to be conflict in shifting to a new system of review interaction. How do we get users to use these new buttons as a means of reacting and engaging with posts? By design and with two new categories (insight and funny), we know that every single film prior to the system is going to have more rotation in reactions with these new tabs. How can the rollout be conducted in such a way that these new conversations spark the most user engagement?</li> 
+                    <li>What type of reviews do users on Letterboxd love the most? The retention of the general “like” button is going to help dictate and give insights to this. Is Letterboxd as a platform encouraging more casual, witty dialogue around film — or are people looking for the same thoughts as they do in critics? These would be interesting numbers to use in surveying the types of social dynamics happening around the platform, bettering not only our understanding of why this polarization in content exists in the first but how to best expand on it.</li>        
+                        
+                </ul>
+                        
+                    <div class="portfolio-large" style="background-image:url(../assets/portfolio/letterboxd/flavor-bottom.jpg);">
                         <div class="portfolio-large-center">
                             <center>
-                                <h1>Isang boto, isang bayan.</h1>
+                                <h1>Film is community.</h1>
                                 <br>
-                                <a href="https://Letterboxd" target="_blank">Visit Letterboxd</a>
+                                <a href="https://letterboxd.com" target="_blank">Visit Letterboxd</a>
                             </center>
                         </div>
                     </div>
@@ -162,7 +393,7 @@
 <script src="../assets/scripts/zooming.min.js"></script>
     
 <script>
-  new Zooming().listen('.image-container img')
+  new Zooming().listen('.image-zoom')
 </script>
     
     
