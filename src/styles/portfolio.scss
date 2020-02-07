@@ -182,8 +182,18 @@ iframe {
     
     ul.feature-large{
         li{
-            font-size:1.2em;
+            font-size:1.1em;
         }
+    }
+    
+    .notice-wip{
+        width:80%;
+        text-align: center;
+        margin:auto;
+        font-size:.9em;
+        color:#efeca2;
+        padding:1em;
+        line-height:1.8em;
     }
 
     .summary-details a,
