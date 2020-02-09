@@ -193,7 +193,7 @@ iframe {
         font-size:.9em;
         color:#efeca2;
         padding:1em;
-        line-height:1.8em;
+        line-height:1.8em
     }
 
     .summary-details a,
@@ -225,6 +225,7 @@ iframe {
         }
         
     }
+    
 
     .portfolio-links {
         text-align: center;
@@ -338,6 +339,48 @@ iframe {
 
     }
 
+    
+    .portfolio-travel{
+        margin-top:50px;
+        padding:1.5em;
+        
+        .travel-right{
+            float:right;
+        }
+        
+        .travel-right::before {
+            content: "→\00FE0E ";
+            margin-right:.3em;
+        font-family:"Segoe UI Symbol" !important;
+        }
+        
+        
+        .travel-left::before {
+            content: "←\00FE0E ";
+            margin-right:.3em;
+        font-family:"Segoe UI Symbol" !important;
+        }
+        
+        a{
+            display:inline-block;
+            text-decoration: none;
+            background:none !important;
+            line-height:2.6em;
+            font-family:"gt america";
+            
+            
+            strong{
+                font-weight:100;
+                font-size:2.4em;
+                font-family:"Canela";
+            }
+        }
+        
+        a:hover{
+            text-shadow:0 0 20px #412b2b;
+        }
+    }
+    
     .portfolio-last {
         h3 {
             text-align: center;
