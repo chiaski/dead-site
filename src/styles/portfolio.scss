@@ -39,6 +39,10 @@ a {
     text-decoration: none;
 }
 
+
+/* IMAGE CONTAINER TYPES */
+
+
 .image-container {
     
     max-width: 100vw;
@@ -59,6 +63,32 @@ a {
     }
     
 }
+
+
+
+.image-container-long {
+    
+    max-width: 90vw;
+    padding:1em;
+    margin:1em;
+    overflow-x:scroll !important;
+    
+    img {
+        width:auto;
+        max-height:350px;
+        display:inline-block;
+    }
+    
+    em{
+        justify-content: center;
+        text-align: center;
+        display: block;
+        font-size:.8em;
+        padding:.5em;
+    }
+    
+}
+
 
 @media only screen and (max-width: 700px) {
     #portfolio img {
