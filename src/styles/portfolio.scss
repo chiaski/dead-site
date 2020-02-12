@@ -65,16 +65,13 @@ a {
 }
 
 
-
 .image-container-long {
     
-    max-width: 90vw;
-    padding:1em;
+    max-width:90vw;
+    overflow-x:scroll;
     margin:1em;
-    overflow-x:scroll !important;
     
     img {
-        width:auto;
         max-height:350px;
         display:inline-block;
     }
@@ -97,7 +94,9 @@ a {
         margin: 0;
     }
 
-
+    #portfolio .image-container-long img{
+        max-width:auto !important;
+    }
 
 }
 
