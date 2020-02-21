@@ -459,7 +459,7 @@ iframe {
         vertical-align: center;
         justify-content: center;
         display: flex;
-        max-width:780px;
+        max-width:740px;
         
 
         a {
@@ -738,7 +738,7 @@ iframe {
     display: inline-block;
     box-sizing: border-box;
     border-bottom: 1px solid #c8dee3;
-    max-width: 360px;
+    max-width: 90vw;
     margin: 1em;
     padding: .5em;
     vertical-align: top;
@@ -746,16 +746,24 @@ iframe {
 
     img {
         max-width: 100%;
-        width: 300px;
-        float: right;
-        margin: 1em;
+    }
+    
+    img.flavor{
+        width:160px;
+        margin:1em;
     }
     
     h5{
-        margin:0;
+        margin:0 .5em;
+        font-weight:100;
+        font-family:"GT America";
     }
 
-    h4{font-family:"Canela";font-size:1.6em; font-weight:100; margin:0;}
+    h4{font-family:"GT America Expanded";font-size:1.6em; font-weight:100; margin:0; color:yellow;}
+    
+    li strong{
+        color:yellow;
+    }
     
     p{margin:0 !important;padding:0 !important;}
 
