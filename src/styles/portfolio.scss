@@ -114,6 +114,7 @@ a {
         max-width: 90vw !important;
         box-sizing: border-box;
         margin: 0;
+        margin-left:1em;
     }
 
     #portfolio .image-container-long img{
@@ -394,6 +395,7 @@ iframe {
     .portfolio-travel{
         margin-top:50px;
         padding:1.5em;
+        height:auto;
         
         .travel-right{
             float:right;
@@ -429,6 +431,12 @@ iframe {
         
         a:hover{
             text-shadow:0 0 20px #412b2b;
+        }
+        
+        @media only screen and (max-width: 700px) {
+            .travel-right{
+                float:none;
+            }
         }
     }
     
