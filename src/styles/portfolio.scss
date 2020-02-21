@@ -232,7 +232,7 @@ iframe {
         margin: 1em 0;
     }
     
-    ul.feature-large{
+    ol.feature-large, ul.feature-large{
         li{
             font-size:1.1em;
         }
@@ -738,7 +738,7 @@ iframe {
     display: inline-block;
     box-sizing: border-box;
     border-bottom: 1px solid #c8dee3;
-    max-width: 300px;
+    max-width: 340px;
     margin: 1em;
     padding: .5em;
     vertical-align: top;
