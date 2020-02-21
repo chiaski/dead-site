@@ -134,6 +134,14 @@ body {
     padding: 2em;
     margin-top: 8vh;
     margin-bottom: 5vh;
+    
+    .masterpiece{
+        justify-content: center;
+        display: flex;
+        max-width:90vw;
+        flex-wrap: wrap;
+        img{max-width:220px;width:45%;margin:1em;}
+    }
 
     .box-inner {
         max-width: 800px;
@@ -182,6 +190,15 @@ body {
             border: 1px solid cyan;
         }
 
+    }
+    
+    h2{
+        font-family:"Recoleta";
+        text-align: center;
+        color:cyan;
+        margin:1em;
+        font-size:2em;
+        font-weight:600;
     }
 
     .social {
