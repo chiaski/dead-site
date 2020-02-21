@@ -52,6 +52,7 @@ a {
         max-width: 95%;
         display: block;
         margin:auto;
+        
     }
     
     em{
@@ -93,6 +94,7 @@ a {
     overflow-y:scroll;
     
     img {
+        width:100%;
         height:auto;
         display:inline-block;
     }
@@ -459,7 +461,7 @@ iframe {
         vertical-align: center;
         justify-content: center;
         display: flex;
-        max-width:740px;
+        max-width:780px;
         
 
         a {
@@ -809,7 +811,7 @@ iframe {
 }
 
 .portfolio-large {
-    margin: 4em 0 2em 0 !important;
+    margin: 3em 0 2em 0 !important;
     padding: 1em;
     min-height: 250px;
     background-size: cover;
