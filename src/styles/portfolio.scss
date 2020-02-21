@@ -251,16 +251,23 @@ iframe {
     .summary-details a,
     p a {
         background: none !important;
-        border-bottom: 1px solid blue;
         color: cyan !important;
-        font-family: "GT America Expanded";
+        font-family: "GT America";
         font-size: .9em;
     }
 
     p a::before {
-        content: "○ ";
+        content: "→\00FE0E ";
+        margin-right:.3em;
+        border-bottom:none;
+        font-family:"Segoe UI Symbol" !important;
         color: cyan !important;
     }
+    
+    p a:hover{
+        color:yellow !important;
+    }
+    
 
     .portfolio-nav{
         text-align: center;
