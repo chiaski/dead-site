@@ -90,6 +90,19 @@ details[open] > summary{
     }
 
     
+    .landing-overlay{
+        position: absolute;
+        width:35vw;
+        z-index:-99;
+        mix-blend-mode: saturation;
+        img{
+            width:100%;
+            filter: blur(0.3px) invert(1);
+        }
+    }
+
+    
+    
     @media only screen and (max-width: 900px) {
         .special{
             p.intro{
@@ -385,9 +398,9 @@ details[open] > summary{
         background-repeat: no-repeat;
         z-index: -999;
         
-    @media only screen and (max-width: 700px) {
-        display: none;
-        }
+        @media only screen and (max-width: 700px) {
+            display: none;
+            }
     }
 
     h2 {
@@ -431,7 +444,7 @@ details[open] > summary{
             }
         }
     }
-
+    
     .landing-social {
 
         a {
