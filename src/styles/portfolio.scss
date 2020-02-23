@@ -398,6 +398,7 @@ iframe {
                 font-size: .8em;
                 width: 80%;
             }
+          
         }
 
 
@@ -676,8 +677,16 @@ iframe {
             
             p {
                 padding: 1em;
-                font-size:.85em;
+                font-size:1em;
             }
+              
+            ol.feature-large, ul.feature-large{
+                li{
+                    font-size:1em;
+                }
+            }
+
+            
         }
 
     }
