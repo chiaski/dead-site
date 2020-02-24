@@ -55,6 +55,18 @@ a {
         
     }
     
+    img.image-part{
+        max-width:70%;
+        border-left:2.5em solid transparent;
+        border-right:2.5em solid transparent;
+        box-sizing: border-box;
+    }
+    
+    img.image-old{
+        filter: grayscale(0.8);
+    }
+    
+    
     em{
         justify-content: center;
         text-align: center;
@@ -109,8 +121,10 @@ a {
     
 }
 
+
 .image-container-iphone{
-    max-height:664px;
+    max-height:604px;
+    padding:1em;
 }
 
 
@@ -608,7 +622,8 @@ iframe {
         }
         
         .col{
-            
+    
+            box-sizing: border-box;
             margin:1em 0;
             display:flex;
             flex-wrap: wrap;
@@ -639,6 +654,7 @@ iframe {
             }
             
         }
+        
         
 
 
