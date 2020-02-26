@@ -106,7 +106,7 @@ body {
         font-size:.8em;
         margin: .3em;
         padding: .5em;
-    font-family: 'GT America Expanded';
+        font-family: 'GT America Expanded';
         -webkit-transition: all .3s linear;
         -moz-transition: all .3s linear;
         -ms-transition: all .3s linear;
@@ -115,9 +115,9 @@ body {
         cursor: context-menu !important;
     }
 
-    .header-right a:hover {
-        background: #f6e404;
-        color: #000;
+    a:hover {
+        background: #f6e404 !important;
+        color: #000 !important;
     }
 
 }

@@ -4,9 +4,10 @@ $white: #f0f8f7;
 
 $text: #2b2c36;
 $blue-screen: #141cd1;
+$white-screen: #141317;
 
 body {
-    background: #141cd1;
+    background: $white-screen;
     cursor: default;
 }
 
@@ -28,7 +29,7 @@ a {
     height:auto;
     
     details{
-        font-size:1.1em;
+        font-size:1.2em;
     }
     
 
@@ -71,14 +72,13 @@ details[open] > summary{
         max-width: 750px;
         border: 0;
         
-        font-family:"Canela" !important;
+        font-family:"Canela";
         
         p.intro{
             line-height:1.3em !important;
             font-size:2.4em !important;
         }
-
-
+        
         a {
             font-family:"Canela" !important;
             background: none !important;
@@ -261,7 +261,7 @@ details[open] > summary{
     }
 
     a.btn:hover {
-        font-style: italic;
+        color:yellow;
     }
 
     .portfolio-project-container {
@@ -313,7 +313,7 @@ details[open] > summary{
             cursor: e-resize !important;
         }
         
-        h2:hover{
+        .project-box:hover h2{
             color:cyan !important;
         }
 
@@ -461,6 +461,7 @@ details[open] > summary{
             border-bottom: 1px solid cyan;
         }
     }
+    
 
     .showcase-container {
         padding: 1em;
@@ -592,7 +593,7 @@ details[open] > summary{
     height:80px;
     background-repeat: repeat-x;
     
-    span a::after{
+    .header-right a::after{
             content: " ↗\00FE0E";
         font-family:"Segoe UI Symbol" !important;
     }
@@ -613,7 +614,14 @@ details[open] > summary{
         text-align: right;
     }
 
-
+    .header-right{
+        float:right;
+    }
+    
+    a:hover {
+        color: cyan !important;
+    }
+    
     
     @media only screen and (max-width: 700px) {
         padding: 1em;
