@@ -95,8 +95,10 @@ details[open] > summary{
         width:35vw;
         z-index:-99;
         mix-blend-mode: saturation;
+        pointer-events: none;
         img{
             width:100%;
+            max-width:400px;
             filter: blur(0.3px) invert(1);
         }
     }
@@ -589,7 +591,6 @@ details[open] > summary{
     font-weight: 400;
     font-style: normal;
     font-size: 1.2em;
-    z-index:999;
     height:80px;
     background-repeat: repeat-x;
     
@@ -646,4 +647,22 @@ details[open] > summary{
             text-align: center;
         }
     }
+}
+
+
+#project-random{
+    position: absolute;
+    width:100vw;
+    height:100vh;
+    top:0; left: 0;
+    pointer-events: none;
+    z-index:9999999;
+    mix-blend-mode: screen;
+    opacity:0.2;
+}
+
+#project-random video, #project-random source{
+    filter:grayscale(.9);
+    min-width: 100%;
+min-height: 100%;
 }

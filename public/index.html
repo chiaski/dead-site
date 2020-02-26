@@ -73,8 +73,16 @@
 
 <body>
 
-    <div class="container">
+    <div id="project-random">
+    
+    
+    </div>
          
+            
+    <div class="container">
+        
+
+            
             <div class="landing-comms" style="background-image:url(assets/landing/nav-trans.png);">
                 <center>
                     <a class="chia" style="float:left" href="mailto:chiamisola@gmail.com">chia.dev </a>
@@ -128,7 +136,7 @@
         </div>
 
 
-        <div class="box" id="landing-works" style="background:#141317;">
+        <div class="box" id="landing-works">
             <center>
                 <div class="box-inner">
                     <div class="portfolio-project-container">
@@ -462,6 +470,18 @@
             <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
             
    <script type="text/javascript">
+
+       $( document ).ready(function() {
+        let choose = Math.floor(Math.random() * 6);
+        
+        let links = ["proj-round", "proj-nineteen", "proj-music", "proj-eighteen"];
+           
+        console.log(choose, links[choose]);
+           
+        $("#project-random").html('<video width="100%" autoplay loop><source src="./assets/landing/' + links[choose] + '.mp4" type="video/mp4"></video>');
+           
+    });
+
        
        $("a").mouseout(function() {
            $(".landing-overlay").html('')
