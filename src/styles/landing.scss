@@ -3,6 +3,7 @@ $light-color: #f0f8f7;
 $white: #f0f8f7;
 
 $text: #2b2c36;
+$accent: #8bb6e3;
 $blue-screen: #141cd1;
 $white-screen: #141317;
 
@@ -29,7 +30,9 @@ a {
     height:auto;
     
     details{
-        font-size:1.2em;
+        font-size:1em;
+        line-height:.8em;
+        font-family:"GT America";
     }
     
 
@@ -67,28 +70,45 @@ details[open] > summary{
     .special {
         box-sizing: border-box;
         display: block;
-        padding-top:2em;
-        width: 80vw !important;
+        width: 80vw;
         max-width: 750px;
         border: 0;
-        
-        font-family:"Canela";
+
         
         p.intro{
+            font-family:"Canela";
             line-height:1.3em !important;
             font-size:2.4em !important;
         }
         
         a {
-            font-family:"Canela" !important;
-            background: none !important;
-            color: cyan !important;
-            text-decoration: none !important;
+            font-family:"GT America" !important;
+            text-decoration: none ;
+            padding:.1em;
 
         }
+        
+    
 
     }
 
+    .special-links{
+        text-align: right;
+        margin-bottom:1em;
+        
+        a{
+            padding:.2em;
+            background:none !important;
+            color: $blue-screen !important;
+            margin-right:.3em;
+        }
+        
+        a::after {
+        content: " ↗︎";
+        font-family: "Segoe UI Symbol" !important;
+        }
+        
+    }
     
     .landing-overlay{
         position: absolute;
@@ -146,7 +166,6 @@ details[open] > summary{
 
     p {
         margin: 0;
-        font-family:"Canela" !important;
         
         //font-family:"Aktiv-Grotesk" !important;
         font-size: 1.2em;
@@ -181,7 +200,7 @@ details[open] > summary{
     }
 
     a:hover {
-        color: cyan !important;
+        color: $accent !important;
         text-decoration: none;
         background: #3422bc;
     }
@@ -189,10 +208,14 @@ details[open] > summary{
 
     em {
         font-style: normal !important;
-        font-family: "GT America Expanded";
+        font-family: "Canela";
         line-height: 1em !important;
         color: $white;
-        font-size:.8em;
+        font-size:1.2em;
+    }
+    
+    em:hover{
+        color:$accent;
     }
 
 
@@ -255,7 +278,7 @@ details[open] > summary{
 
     a.btn {
         font-family: "Canela";
-        color: cyan;
+        color: $accent;
         text-decoration: none;
         font-weight: 100;
         font-size: 2em;
@@ -312,11 +335,11 @@ details[open] > summary{
             font-family: "Canela", Helvetica, Arial;
             font-size: 1.8em;
             line-height: 1.1em;
-            cursor: e-resize !important;
+            cursor: e-resize;
         }
         
         .project-box:hover h2{
-            color:cyan !important;
+            color:$accent !important;
         }
 
 
@@ -326,10 +349,10 @@ details[open] > summary{
             text-align: center;
             display: block;
             font-size: .6em;
-            color: lightblue !important;
+            color: $blue-screen;
             margin: .2em 0;
             font-weight: 100;
-            cursor: e-resize !important;
+            cursor: e-resize;
         }
 
 
@@ -382,12 +405,12 @@ details[open] > summary{
 
         a {
             color: #fff;
-            border-bottom: 1px solid cyan;
+            border-bottom: 1px solid $accent;
             text-decoration: none;
         }
 
         a::before {
-            color: cyan;
+            color: $accent;
             content: "◦ ";
         }
     }
@@ -442,7 +465,7 @@ details[open] > summary{
             vertical-align: top;
 
             a {
-                color: cyan !important;
+                color: $accent !important;
             }
         }
     }
@@ -452,7 +475,7 @@ details[open] > summary{
         a {
 
             text-decoration: none;
-            color: cyan;
+            color: $accent;
             margin-right: 1em;
             padding-top: .5em;
             border-bottom: 1px solid $white;
@@ -460,7 +483,7 @@ details[open] > summary{
 
         a:hover {
             color: yellow;
-            border-bottom: 1px solid cyan;
+            border-bottom: 1px solid $accent;
         }
     }
     
@@ -508,7 +531,7 @@ details[open] > summary{
                 margin: 0;
                 font-family: "GT America Expanded";
                 font-size: .7em;
-                color: cyan;
+                color: $accent;
                 font-weight: 100;
                 text-transform: uppercase;
                 letter-spacing: .4px;
@@ -534,7 +557,7 @@ details[open] > summary{
         }
 
         .showcase-box:hover > h1 {
-            color: cyan;
+            color: $accent;
         }
 
 
@@ -556,7 +579,7 @@ details[open] > summary{
     }
 
     a:hover {
-        color: cyan !important;
+        color: $accent !important;
         border-bottom: 1px solid yellow !important;
     }
 
@@ -620,7 +643,7 @@ details[open] > summary{
     }
     
     a:hover {
-        color: cyan !important;
+        color: $accent !important;
     }
     
     
