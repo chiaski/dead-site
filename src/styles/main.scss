@@ -85,7 +85,7 @@ body {
     background-repeat: repeat-x;
 
     .header-left a {
-        font-family: 'Sporting Grotesque' !important;
+        font-family: 'Canela';
         font-weight: 100;
         font-size: 1.1em;
         text-decoration: none;
@@ -93,7 +93,8 @@ body {
     }
 
     .header-left a:hover {
-        border-bottom: 1px solid #222126;
+        background: none !important;
+        mix-blend-mode: difference;
     }
 
     .header-left {
@@ -103,21 +104,20 @@ body {
     .header-right a {
         text-decoration: none;
         color: #fff;
-        font-size:.8em;
+        font-size:1em;
         margin: .3em;
         padding: .5em;
-        font-family: 'GT America Expanded';
+        font-family: 'GT America';
         -webkit-transition: all .3s linear;
         -moz-transition: all .3s linear;
         -ms-transition: all .3s linear;
         -o-transition: all .3s linear;
         transition: all .3s linear;
-        cursor: context-menu !important;
     }
 
-    a:hover {
-        background: #f6e404 !important;
-        color: #000 !important;
+    .header-right a:hover {
+        mix-blend-mode: exclusion;
+        text-shadow:0 0 20px #fff;
     }
 
 }
@@ -247,12 +247,17 @@ body {
 
         a {
             float: right;
-            font-family: "Sporting Grotesque";
+            font-family: "GT America";
             text-decoration: none;
             display: inline-block;
             color: $light-color;
             cursor: e-resize !important;
             margin: 0 1em;
+            -webkit-transition: all .3s linear;
+            -moz-transition: all .3s linear;
+            -ms-transition: all .3s linear;
+            -o-transition: all .3s linear;
+            transition: all .3s linear;
         }
 
         a::after {
@@ -261,7 +266,8 @@ body {
         }
 
         a:hover {
-            color: cyan !important;
+            mix-blend-mode: exclusion;
+            text-shadow:0 0 20px #fff;
         }
 
         a.about {
@@ -271,7 +277,7 @@ body {
 
 
 
-
+        
 }
 
 #footer.footer-dark {
