@@ -206,7 +206,6 @@ body {
         margin-top: 2em;
 
         a {
-            font-family: 'GT America Expanded';
             text-decoration: none;
             color: cyan;
             margin: 0 1em 0 1em;
@@ -233,17 +232,7 @@ body {
     margin-top: 1em;
     display: block;
 
-    .main-link:hover {
-        color: yellow !important;
-    }
-
     .footer-links {
-
-        h2 {
-            font-size: 1em;
-            font-family: 'GT America Expanded';
-        }
-
 
         a {
             float: right;
@@ -303,8 +292,8 @@ body {
     align-self: top;
 
     .project-box:hover {
+        cursor: e-resize;
         filter: grayscale(0);
-        cursor: e-resize !important;
         //background: rgba(176, 226, 226, 0.36);
     }
 
@@ -319,7 +308,6 @@ body {
         display: flex;
         flex-wrap: wrap;
         text-decoration: none;
-        cursor: e-resize !important;
         margin-bottom: 1em;
 
         img {
@@ -338,8 +326,7 @@ body {
             padding: .3em .6em;
             color: cyan;
             border: 1px solid cyan;
-    font-family: 'GT America Expanded';
-            cursor: e-resize !important;
+            font-family: 'GT America Expanded';
         }
 
         .btn::before {
@@ -351,7 +338,6 @@ body {
             border: 1px solid #fff;
             background: #fff;
             color: #222cb7;
-            cursor: e-resize !important;
         }
 
 
@@ -628,6 +614,8 @@ li {
 
 mark {
     padding: .2em;
+    filter: hue-rotate(90deg);
+    mix-blend-mode: difference;
 }
 
 hr {

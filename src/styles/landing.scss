@@ -100,13 +100,18 @@ details[open] > summary{
         a{
             padding:.2em;
             background:none !important;
-            color: $blue-screen !important;
+            color: $accent !important;
             margin-right:.3em;
+        }
+        
+        a:hover{
+            text-shadow: 0 0 20px #fff;
+            color: #dde7ea !important;
         }
         
         a::after {
         content: " ↗︎";
-        font-family: "Segoe UI Symbol" !important;
+        font-family: "Segoe UI Symbol";
         }
         
     }
@@ -201,7 +206,7 @@ details[open] > summary{
     }
 
     a:hover {
-        color: $accent !important;
+        color: $accent;
         text-decoration: none;
         background: #3422bc;
     }
@@ -224,11 +229,11 @@ details[open] > summary{
     .btn-landing {
         border-bottom: 1px solid $white;
         padding: 0 0 .1em 0;
-        font-size: 1.2em !important;
+        font-size: 1.2em;
     }
 
     .btn-landing:hover {
-        color: yellow !important;
+        color: yellow;
         border: 0;
     }
 
@@ -236,7 +241,7 @@ details[open] > summary{
         font-family: "Canela";
         font-style: italic;
         float: right;
-        font-size: 2em !important;
+        font-size: 2em;
     }
 
     /* LANDING SHOWCASE */
@@ -248,7 +253,7 @@ details[open] > summary{
 
         .hide,
         sup {
-            display: none !important;
+            display: none;
         }
         
     
@@ -259,7 +264,7 @@ details[open] > summary{
 
         em {
             font-size: .7em;
-            line-height: .8em !important;
+            line-height: .8em;
         }
     }
 
