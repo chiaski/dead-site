@@ -383,7 +383,6 @@ iframe {
                 display: inline-block;
                 max-width: 130px;
                 margin: 0 .6em 0 .6em;
-                font-family: "Sporting Grotesque";
                 font-size: .8em;
                 border-bottom: 1px solid #f4e9e9;
                 line-height: 1em;
@@ -554,7 +553,7 @@ iframe {
         li{font-size:1em;}
 
         p strong {
-            font-family: "GT America Expanded";
+            mix-blend-mode: difference;
             font-weight: 800;
         }
 
@@ -845,7 +844,6 @@ iframe {
 
     strong {
         font-weight: 800;
-        font-family: 'Sporting Grotesque';
         font-size: 1em;
         padding-right: .5em;
         line-height: 1.1em;
@@ -1002,7 +1000,6 @@ iframe {
     flex-wrap: wrap;
 
     h1 {
-        font-family: "sporting grotesque";
         color: lightblue;
         font-weight: 300;
         font-size: 3em;
@@ -1029,7 +1026,7 @@ iframe {
 .container-portfolio {
     h1 {
         text-align: center;
-        margin: 0 1em 1em 1em;
+        margin: 0 1em 1em 1em !important;
     }
 
     h3 {
