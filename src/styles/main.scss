@@ -128,7 +128,8 @@ body {
     justify-content: center;
     align-items: center;
     vertical-align: center;
-    cursor: help !important;
+    cursor: help;
+    font-family:"GT America";
 
 
     padding: 2em;
@@ -137,14 +138,13 @@ body {
     
     .masterpiece{
         justify-content: center;
-        display: flex;
+        text-align: center;
         max-width:90vw;
-        flex-wrap: wrap;
         img{max-width:220px;width:45%;margin:1em;}
     }
 
     .box-inner {
-        max-width: 800px;
+        max-width: 700px;
         margin-bottom: 10vh;
     }
 
@@ -162,11 +162,10 @@ body {
 
     p {
         color: $light-color;
-        font-size:1.7em;
+        font-size:1.2em;
         line-height:1.5em;
-        font-family:"Canela";
         text-align: left;
-        font-weight: 100;
+        font-weight: 400;
         text-rendering: optimizeLegibility;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
@@ -193,7 +192,7 @@ body {
     }
     
     h2{
-        font-family:"Recoleta";
+        font-family:"Canela";
         text-align: center;
         color:cyan;
         margin:1em;
