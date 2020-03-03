@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chiaski: Last.fm Redesign</title>
+
+    <meta name="description" content="Chiaski is Chiara Amisola. An 19-year-old activist, developer, and creator in love with code and prose.">
+    <meta name="keywords" content="chia amisola, chiaski, chiara amisola, developers society, devsoc, portfolio, website, metro manila, blog, graphic design, web developer,writer,writing">
+    <meta name="author" content="Chia Amisola">
+    <link rel="shortcut icon" href="favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="./../assets/styles/theme-main.css">
+    <link rel="stylesheet" href="./../assets/styles/theme-portfolio.css">
+    
+    <style type="text/css">
+        html, .box, #portfolio{
+            background:#121212;
+        }
+        
+        .image-full.board{
+            padding:0 !important;
+            border:.5em solid #AB2217;
+        }
+        
+        
+        p{
+            margin-bottom:2.5em;
+        }
+        
+        body::-webkit-scrollbar {
+          width: 1em;
+        }
+
+        body::-webkit-scrollbar-track {
+          box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        }
+        
+        .col-half h5{
+            color:#F28580;
+        }
+
+        
+    </style>
+
+</head>
+
+<body style="background:#121212;">
+
+    <div class="header header-alt" id="navigation" style="background-image:url(../assets/portfolio/lastfm/nav-trans.png);">
+        <div class="header-left"><a href="../index.html">Last.fm</a></div>
+        <div class="header-right">
+            <a href="../about.html">About</a>
+            <a href="https://chias.blog">Blog</a>
+            <a href="https://chia.dev/work.html">Work</a>
+        </div>
+    </div>
+
+    <div id="portfolio-page" class="container alt">
+
+        <div class="box" id="portfolio">
+
+
+            <div class="box-inner inner-center portfolio-description">
+
+                <div class="portfolio-study" style="max-width:850px;margin:auto;">
+                    <div class="quote-block">
+                        Improving how people scrobble and connect over sound.
+                    </div><br><br>
+                    
+                    <span class="image-container">
+
+                        <img class="image-full" src="../assets/portfolio/lastfm/main.jpg">
+                    
+                    </span>
+                    
+                    <br>
+                    
+                    <blockquote>This is a work-in-progress! (My Muji sketchbook is suffering!) Have other thoughts on the beloved music platform? <a href="mailto:chiamisola@gmail.com">Message me</a>  and let's talk about Last.fm!</blockquote>
+                    
+                    
+                <div class="portfolio-nav">
+                    <a href="#part-overview">Feature Overview</a>   
+                    
+                    <a href="#part-dashboard">Dashboard</a>    
+                    
+                    <a href="#part-music">Music Screens</a>    
+                    
+                    <a href="#part-onboarding">Onboarding</a>    
+                </div>
+                    
+                    <div class="summary-container">
+                        <p class="summary">Last.fm is <em>the</em> music search & discovery network. In a time of streaming sites galore, Last.fm remains the go-to space for strong listeners to track history, fan over songs, and find people just like them. As we move more onto mobile listening, I thought of revamping the aged Last.fm application to give a proper space for the music we love.
+                        </p>
+
+
+                        <div class="summary-details">
+
+
+                            <span class="summary-add"><strong>Roles</strong> User Research & UX Design</span>
+
+                            <span class="summary-add"><strong>Visit</strong> Say hello to me on <a href="https://last.fm/user/chiaski" target="_blank">Last.fm</a></span>
+                 
+                        </div>
+                    </div>
+
+
+                    <br><br>
+
+                    <h2 id="part-context">Context</h2>
+                    <h1>Learning and spreading  music you love</h1>
+                    <p>The beauty of Last.fm is that it puts discovery together with community, while providing comprehensive listening statistics from every platform I listen to. It's essentially a music lover's dream: data-driven and social&mdash;and it seems the music community agrees.</p>
+                    
+                    <p>If I weren't in tech, I would be in music&mdash;I'm sure of it. In each of the past two years, I listened to about 115,000 minutes of music according to Spotify Wrapped (so this excludes my considerable local file and YouTube collection). I fell in love with Last.fm because as a listener and music fan, I want to know my activity, how I fell in love with an album, and what else I can discover.</p>
+                    
+                    <p>Last.fm brands itself as your <mark>"musical calling card".</mark> However, the mobile application doesn't reflect this yet. <br>I set out to design a mobile experience for Last.fm: the go-to place for music from everywhere should be accessible anywhere.</p>
+                    
+                    
+                    
+                    <span class="image-container">
+
+                        <img class="image-full" src="../assets/portfolio/lastfm/lastfm-present.png">
+
+                        <em>Present Last.fm mobile app</em>
+                    </span>
+                    
+                    <p><strong>At present</strong>, the Last.fm mobile app shows you your music history, and has tabs dedicated to top artists, albums, and tracks that you can filter over select time periods. There's brief informational overviews for all of these, too&mdash;but the app was lacking in what the website did best: comprehensive listening reports (we want a musical calling card, after all), music recommendations and discovery, and even some of its social aspects.</p>
+                    
+                    <h3>Music as a center</h3>
+                    
+            <p>Before working to redesign Last.fm, I had initially planned to create a concept for an all-around "recommendation" site. Like the scrobbling site, it would be built around chrome extensions and service integrations (Spotify, Goodreads, IMDB...)&mdash;I realized this would be trying to achieve too much.</p>
+                    
+            <div class="col">
+                <div class="col-half">
+
+                    
+                    <span class="image-container">
+
+                        <img class="image-full" src="../assets/portfolio/lastfm/lovedlive-sketch-1.png">
+
+                    </span>
+                
+                </div>    
+            <div class="col-half">
+
+                    
+                    <span class="image-container">
+
+                        <img class="image-full" src="../assets/portfolio/lastfm/lovedlive-sketch-2.png">
+
+                    </span>
+                
+                </div>  
+            </div>  
+                      
+            <p>Instead, I would borrow a lot of concepts from this redesign for the Last.fm mobile app.</p>
+                    
+        
+        <h3>Feature Mapping</h3>
+            
+            <p>I talked to existing Last.fm users and explored Last.fm alternatives to explore issues with the current mobile experience. What I found pretty much <mark>aligned with my personal experiences: the Last.fm app is underwhelming</mark>, provides no clarity if when streaming breaks, and is missing so many data-driven features that make it what it is&mdash;it displays the raw data, but doesn't synthesize it the way it does on the web.</p>
+            
+
+        <ul class="feature-large">
+            <li><strong>Missing key features 👎 </strong><br>
+            Users often use the mobile site to substitute the app just because it has so many missing features: listening history, discovery, and social features aren't built for the mobile version yet</li>
+            
+            <li><strong>No mobile onboarding 👎</strong><br>
+            No onboarding or syncing on mobile, only on desktop&mdash;alienating mobile-first listeners</li>
+            
+            
+            <li><strong>Missing integrations 👎</strong><br>
+            Scrobbling support is only built-in for Spotify mobile and local files, and there's no clarity on what is synced; worse, it doesn't notify you if you're not properly synced up!</li>
+            
+            
+            <li><strong>Minimal track information 👎</strong><br>
+            Unlike the web version that brings up biographies, lyrics, and other key information about music&mdash;our mobile version has sparse content.</li>
+        </ul>
+                    
+        
+            <p>It was clear that there was a suite of product features inaccessible in the application. What stood out to me was the <strong>lack of listening history</strong>, which presumably should be accessible since the current mobile app mainly gives users information on their <em>previous scrobbles</em>.</p>
+             
+                
+        <center>
+        <div class="p-emphasis">How can we give on-the-go listeners the ability to understand and discover their music?</div>
+        </center>
+
+                
+            <p>What does Last.fm serve when it tracks music you're playing on your phone, without letting you dive into that history? Tracking and listening history would become a priority.<br> As we go mobile: users should be able to breakdown their music history and pull it up as needed.</p>
+                    
+        <h3>New Architecture & Map</h3>
+                    
+        <p>For this iteration of the redesign, I prioritized building an onboarding flow, showcasing listening history and statistics, reworking the way music information is presented, and introducing the social aspects of the site on mobile through profiles. </p>
+                    
+                    <span class="image-container">
+
+                        <img class="image-full" src="../assets/portfolio/lastfm/draft1-flo.png">
+
+                        
+                        <em>Mapping for a proposed redesign, first prioritizing the addition of stats, discovery, and minimal social features (profiles)</em>
+                    </span>
+        
+                    
+                    
+                                
+            <div class="col">
+                <div class="col-half">
+
+                    
+                    <span class="image-container">
+
+                        <img class="image-full" src="../assets/portfolio/lastfm/sketch-2.png">
+
+
+                    </span>
+                
+                </div>    
+            <div class="col-half">
+
+                    
+                    <span class="image-container">
+
+                        <img class="image-full" src="../assets/portfolio/lastfm/sketch-1.png">
+                        
+                    </span>
+                
+                </div>  
+            </div>  
+                    
+                    
+                    <p>I sketched a base flow for the redesign taking into account these features. The original mobile app only had a view for the top tracks, and then recent scrobbles. Much of my flow was based on ensuring key web spaces were found on the app.</p><br>
+                    
+                    
+                    <span class="image-container">
+
+                        <img class="image-full" src="../assets/portfolio/lastfm/lastfm-ios.png">
+                        
+                        <em>Present Last.fm mobile application</em>
+
+                    </span>
+                    
+                    <br><br>
+                    
+                   
+                    
+    <h3>Prioritizations</h3>
+        <ul class="feature-large">
+            <li><strong>Universality 🌎</strong><br>
+            While eyeing to add a breadth of web features on Last.fm, I kept in mind how <em>sizable amounts of users are non-English speaking</em>. (Many of the most popular Last.fm integrations and extensions are made by users outside of the English-speaking world!)<br>Keeping with minimalism and intuitive visual flows was key; I didn't want to detract from the way deeper navigation happens on the web. <mark>Song details would be a focus, no complexity or getting lost.</mark></li>
+            
+            <li><strong>Immediacy 🗂</strong><br>Last.fm has fun social features and discovery, but I wanted to keep to the statistics and history that many users were prioritizing and looking for in the app. I opted to leave out some web features like neighbors and events to focus on the app as a <mark>musical calling card.</mark></li>
+            
+        </ul>
+                    
+                    <hr>
+                    
+        <div class="col">
+    <div class="col-half">
+    <p><strong>Constraints</strong>&mdash;while crafting this redesign, prioritization of universality and listening history led me to forego some of the more expansive features on the web: events, chatting, charts, and streaming from Last.fm weren't features to prioritize.</p>
+    </div>
+    <div class="col-half">
+    
+    <p><strong>Key Assumption</strong>&mdash;Last.fm's edge is in its <mark>data</mark>. In an age where we stream everywhere, aggregating and focusing on this data to truly understand it is key&mdash;<em>it is empowering to listeners when they understand their behavior.</em></p>
+        
+    </div>
+        
+                    
+        </div>
+                    
+           <hr>
+                      
+        <span class="image-container">
+            <img class="image-full" src="../assets/portfolio/lastfm/component.png">
+
+            <em>A selection of the design assets for the redesign that I began reusing while putting together mid-fi screens</em>
+        </span>
+                
+            <h3>Asset Library</h3>
+                <p>For these designs, you'll notice a heavy use of images. One tiny, impactful feature on Last.fm is <mark>community-voted images</mark> that overlay artist and album pages. I wanted to keep this level of customization and intimacy in while developing the Last.fm mobile world.</p>    
+                
+            <hr>                    
+        
+
+    <h2 id="part-overview">OVERVIEW</h2>
+    <h1>A redesigned musicscape</h1>
+
+    <p>To begin, I built lo-fidelity mocks for the home, top listening stats and music (artist, album, track) screens. The following are mid-fidelity looks into my proposed redesigns:</p>
+
+                      
+    <span class="image-container">
+
+    <img class="image-full" src="../assets/portfolio/lastfm/screens-home.png">
+
+        <em>Dashboard, top artist, and music (artist, album, track) screens</em>
+    </span>
+                    
+            <div class="col">
+                
+                    <span class="image-container">
+
+                <br><br><img class="image-full" src="../assets/portfolio/lastfm/overview-home.jpg">
+
+                    </span>
+                
+                <div class="col-half">
+                <h4>Discover and own your music.</h4>
+                <h5>A dashboard with discovery lets users focus on understanding and expanding their music.</h5>
+                </div>
+                
+                <div class="col-half">
+                
+                <p>In addition to scrobble history on your homepage, recommendations take stage as music you love is recommended to the user. <em>Simple and straight to discovery, users can track their own activity and expand it with ease.</em></p>
+                    
+                </div>
+                
+   
+            <span class="image-container">
+                  <br><br><img class="image-full" src="../assets/portfolio/lastfm/overview-swapmusic.png">
+            </span>
+                
+                  <div class="col-half">
+                <h4>Your listening activity at a glance.</h4>
+                <h5>Swipe interactions to go through top music at different time levels.</h5>
+                </div>
+                
+                <div class="col-half">
+                
+                <p>A new approach at music history gives users the ability to see their musical activity at a glance with an intuitive <em>swipe gesture</em>.</p>
+                    
+                </div>
+
+                
+            <span class="image-container">
+                  <br><br><img class="image-full" src="../assets/portfolio/lastfm/overview-personal.jpg">
+            </span>
+                
+                 <div class="col-half">
+                <h4>Your calling card & stats.</h4>
+                <h5>Easily look at a user's musicality with customized listener reports and profile views.</h5>
+                </div>
+                
+                <div class="col-half">
+                
+                <p>Spaces for user profile and listening reports give mobile users another layer of insight to their activity, and help them connect with other music fans. <em>Social engagements begin and end with music.</em></p>
+                    
+                </div>
+        
+            <span class="image-container">
+                    <br><br> <img class="image-full" src="../assets/portfolio/lastfm/overview-onboard.png">
+            </span>
+                
+                 <div class="col-half">
+                <h4>The experience starts on mobile.</h4>
+                <h5>A flow to capture mobile listeners.</h5>
+                </div>
+                
+                <div class="col-half">
+                
+                <p>Now music fans can begin exploring their tastes and history right from mobile. As more of the masses go mobile, it makes sense for Last.fm to begin prioritizing its mobile experience as a starting ground. Even if the app can only technically sync-in to local music files and Spotify&mdash;that's a lot of streaming activity that Last.fm can look at!  <em>On-the-go music fans can spread their love for music, and have their friends hop onto the platform too.</em></p>
+                    
+                </div>
+            </div>  
+                
+    <hr>
+        <blockquote>Take a closer look at how these screens were crafted with music and love, plus see them in action!</blockquote>
+                    
+    <h2 id="part-dashboard">Process</h2>
+    <h1>Building ground for sound</h1>
+    
+    <div class="col">
+        <div class="col-half">
+            
+        <span class="image-container image-container-iphone"><br>
+            
+            <img class="image-full" src="../assets/portfolio/lastfm/oldscreen-home.png" style="width:80%">
+            <em>Present app home</em>
+            
+        </span>
+            
+
+        </div>        
+        <div class="col-half">
+            
+            <h3>Home Dashboard</h3>
+        <span class="image-container">
+            <img class="image-full" src="../assets/portfolio/lastfm/sketch-home.jpg" style="width:100%">
+            <em>Screen explorations</em>
+        </span>
+            
+        <p>Previously, the app home only displayed recent scrobbles that took over the entire screen. Now, a redesigned home gives the user a glimpse into their profile, listening report, and music recommendations.</p>
+            
+        
+        </div>   
+        
+        
+        <span class="image-container">
+            
+    
+        <video width="100%" autoplay loop style="padding:2em;">
+      <source src="../assets/portfolio/lastfm/lastfm-new-front.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+    </video>
+
+            <em>New app home (mid-fi)</em>
+        </span>
+        
+        
+        <div class="col-half">
+            <p><strong>NEW HOME</strong>&mdash;On the new home, recent tracks are more condensed but offer users a direct way to visit their <em>listening reports</em> and <em>discovers</em>.</p>
+        </div>
+        
+        <div class="col-half">
+            <p>On universality and discovery 🌎<br>
+            A redesigned home mirrors the features that users love on the web:This mirrors  the Last.fm web experience and immediately offers users a way for more discovery & engagement.</p>
+        </div>
+        
+        
+        <div class="col-half"><br><br>
+        <span class="image-container">
+            <img class="image-full" src="../assets/portfolio/lastfm/track-love.png" style="width:100%">
+            <em>Swipe to love interaction</em>
+        </span>
+            
+            
+        </div>
+        
+        <div class="col-half">
+            <h3>Track Displays</h3>
+            <p><strong>Love</strong>&mdash;The redesigned track component features <mark>track length</mark> and a <mark>swipe to love</mark> interaction&mdash;helping mobile listeners remember highlights from their streaming activity.<br>Loved tracks are highlighted in music pages.</p>
+        </div>
+        
+        <div class="col-half">
+            
+            <p><strong>Edit Scrobbles</strong>&mdash;a <em>premium functionality</em> allows users to edit track details. In addition to a love interaction, I designed a potential modal that could be used for users editing their tracks.</p>
+            
+            
+        </div>
+        
+        <div class="col-half">
+        <span class="image-container">
+            <img class="image-full" src="../assets/portfolio/lastfm/track-editscrobble.png" style="width:100%">
+            <em>Edit scrobble</em>
+        </span>
+            
+        </div>
+        
+    </div>
+                 
+
+    <hr><hr>         
+
+        <div class="col">
+        <div class="col-half">
+        <h3 id="part-music">Top Music</h3>
+            <br>
+        <span class="image-container">
+            <img class="image-full" src="../assets/portfolio/lastfm/oldscreen-topalbums.png" style="width:60%">
+            <em>Present top music</em>
+        </span>
+                  
+        <p><strong>TOP MUSIC</strong>&mdash;A <mark>swipe</mark> interaction easily lets users switch between their top artists, albums, and tracks.<br>
+        With <mark>history levels</mark> present at the top, users can easily see their activity through time.
+            </p>
+            
+        </div>        
+        <div class="col-half">
+        
+       <span class="image-container">
+            <img class="image-full" src="../assets/portfolio/lastfm/lofi-tophistory-2.png">
+            <em>New top music</em>
+        </span>
+                  
+    
+        </div>  
+            
+             <span class="image-container">
+    <video width="100%" autoplay loop style="padding:2em;">
+      <source src="../assets/portfolio/lastfm/lastfm-music.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+    </video>
+        </span>
+            
+    </div>
+           
+           <hr><hr>         
+            
+    
+    <div class="col">
+        <div class="col-half">
+        <span class="image-container">
+            <img class="image-part" src="../assets/portfolio/lastfm/sketch-hold.jpg">
+        </span>
+        </div>
+        <div class="col-half">
+            
+        <span class="image-container">
+            <img class="image-part" src="../assets/portfolio/lastfm/lofi-hold.png">
+        </span>
+        </div>
+        
+        <p><strong>Hold Interaction</strong>&mdash;For previewing music pages, I thought of creating a "hard hold" interaction that would showcase a modal previewing the artist page. I need to look into this more closely to determine where the modal should appear based on source button and thumb/hold position.</p>
+        
+        
+        
+        <span class="image-container">
+            <img class="image-full" src="../assets/portfolio/lastfm/lofi-holdinteraction.png">
+        </span>
+        
+        
+        <span class="image-container">
+    <video width="100%" autoplay loop style="padding:2em;">
+      <source src="../assets/portfolio/lastfm/lastfm-holdinteraction.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+    </video>
+        </span>
+        
+    </div>
+                          
+       
+        <hr>
+
+                    
+    <h3>Music Screens</h3>
+                    
+  
+<div class="col">
+        <div class="col-half">
+        <span class="image-container">
+            <img class="image-full image-old" src="../assets/portfolio/lastfm/oldscreen-artist.png" style="width:60%">
+        </span>
+             <p><strong>ARTIST PAGE</strong>&mdash;Emphasis on discovery and providing a concise view of an artist's music.<br>
+        On the artist page, I opted out of displaying the <em>bio field</em> that the website has due to potential inconsistencies.
+        </p>
+
+        </div>    
+    
+        <div class="col-half"> 
+  
+        <div class="image-container-tall image-container-iphone">
+            <em>Revised mid-fi artist page (scroll ↓)</em>
+            <img class="image-full" src="../assets/portfolio/lastfm/lofi-artist-1.png">
+        </div>
+            
+        </div>   
+         
+    </div>
+                    
+     <hr>  <hr>             
+                                       
+     <div class="col">
+        <div class="col-half">
+        <span class="image-container">
+            <img class="image-full image-old" src="../assets/portfolio/lastfm/oldscreen-album.png" style="width:60%">
+        </span>
+
+          <p><strong>ALBUM PAGE</strong>&mdash;The redesign emphasizes the need-to-knows: release date, length, and an expandable about.<br>
+          A tracklist offers an overview of the songs featured on the album; discovery follows at the end of the page.</p>
+            
+        </div>        
+        <div class="col-half"> 
+            
+        <div class="image-container-tall image-container-iphone">
+            <em>Revised mid-fi album page (scroll ↓)</em>
+            <img class="image-full" src="../assets/portfolio/lastfm/mid-album-long.png">
+        </div>
+            
+        </div>   
+    </div>
+                    
+     <hr><hr>               
+                                
+     <div class="col">
+        <div class="col-half">
+        <span class="image-container image-container-iphone">
+            <img class="image-full image-old" src="../assets/portfolio/lastfm/oldscreen-track.jpg" style="width:60%">
+        </span>
+            
+        <p><strong>TRACK PAGE</strong>&mdash;The background color on the track shifts based on the originating album. Lyrics are available in full through a modal.</p>
+            
+        </div>        
+        <div class="col-half"> 
+       
+        <div class="image-container-tall image-container-iphone">
+            <img class="image-full" src="../assets/portfolio/lastfm/mid-track-long.png">
+            <em>Revised mid-fi track page</em>
+            <img class="image-full" src="../assets/portfolio/lastfm/lofi-track-lyrics.png">
+            <em>Lyrics modal for the track page</em>
+            
+        </div>
+        </div>   
+         
+    </div>
+          
+    <hr><hr>
+            
+<div class="col">
+        <div class="col-half">
+            
+        <div class="image-container-tall image-container-iphone">
+            <em>Mid-fi profile page (scroll ↓)</em>
+            <img class="image-full board" src="../assets/portfolio/lastfm/midfi-profile-long.jpg">
+        </div>
+            
+        </div>        
+        <div class="col-half"> 
+        <h3>Introducing User Profiles</h3>
+        <p><strong>PROFILE PAGE</strong>&mdash;There was previously no profile page on mobile. Now, it's a social space to instantly see a user's top music, and engage with them through a <em>shoutbox</em>. (Who calls it that anymore?)
+        <br>Other potential features for this space are neighbors (users with similar music tastes to you) and more details covering play counts & listener statistics.</p>
+            
+        <p><mark>These profiles focus on music</mark>&mdash;at a glance, a snippet of a user's activity and history, week to week.<br><em>As part of our "musical calling card" design, I wanted all music stats to be easily compiled in the profile screen.</em></p>
+            
+        </div>   
+    </div>
+              
+                    
+    <hr><hr>
+                                   
+<div class="col">
+        <div class="col-half">
+        <h3>Listening Stats</h3>
+            
+        <p>The listening report page gives users a glimpse into their history.<br>
+            
+        <p>The reports are filtered by week, month, or year: with immediate scrobble counts, day views, overlaid on their top discovery of the week.</p>
+            
+            <ul>
+    <li><strong>Scrobble Counts</strong> displayed as bars encourage users to listen even more than previous weeks.</li>
+    <li><strong>Tag Timeline</strong> shows the diversity in music taste over time, and highlights the user-generated tags on Last.fm.</li>     
+    <li><strong>Discoveries</strong> show users their top listens throughout the week.</li>
+    <li><strong>A listening clock</strong> provides a new glance into user activity.</li>
+            </ul>
+            
+        </div>        
+        <div class="col-half"> 
+        
+            
+        <div class="image-container-tall image-container-iphone">
+            <em>Mid-fi listening report (scroll ↓)</em>
+            <img class="image-full board" src="../assets/portfolio/lastfm/midfi-listeningreport.jpg">
+        </div>
+            
+        </div>   
+    </div>
+            
+          <hr id="part-onboarding"><hr>
+                    
+    <h3>Onboarding: Building a mobile onboarding experience</h3>
+                    
+             <span class="image-container">
+    <video width="100%" autoplay loop style="padding:2em;">
+      <source src="../assets/portfolio/lastfm/lastfm-onboarding.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+    </video>
+        </span>
+                    
+        <p>I also wanted to tackle a mobile onboarding experience, especially for the number of users that stream locally or on Spotify that can't wait until their end-of-the-year to understand and expand their music history. This is a huge opportunity area.</p>
+                    
+        <p>Visually, albums and artists are highlighted&mdash;like in Last.fm's web experience that relies on <mark>community votes to select top images</mark>. As the user connects streaming services, the background image reflects this&mdash;showing the <mark>user's music customizes their entire experience</mark>.</p>
+                    
+    <hr>
+
+        
+    <h2 id="part-results">Next Steps</h2>
+    <h1></h1>   
+                    
+    <p>As a product, Last.fm has a dwindling userbase and desperately needs to be the best at its many developed features over the years. To me and in this redesign, that was how in an age of mobile streaming over dozens of services: it <mark>connected and made sense of everything</mark>, empowering me as a listener by letting me know the data behind my behavior.</p>
+                    
+    <p>Instead of falling into a trap of underused prompts or spaces, I'm interested in seeing how the dead simple edge as a <em>musical calling card</em> can lead to everything else: discovery, engagement, and more streams. I'm certain there's power in these building blocks even if the mobile redesign doesn't have the entire web featureset: there's already so much we can get from these numbers and materials. They're simply universal to every listener.</p>
+                    
+                    
+        <ul class="feature-large">
+            <li><strong>Going social ❔ </strong><br>
+            This design only featured user profiles as a beginning engagement space. If put into action, it would be interesting to observe data on how users engage with one another&mdash;especially while only currently prompted by music pages.</li>
+            
+            <li><strong>Listening activity ❔ </strong><br>With the redesign, it would be interesting to capture how much more active listeners are. Are they only checking on Last.fm to see their latest activity? Do their behaviors change now that there's more numbers and customization that reflect their listens?</li>
+            
+        </ul>
+               
+    <p>Again, all of this is still a work-in-progress. Let me know what you think, or better yet&mdash;let me know how you listen. </p>
+                   
+            <!-- <div class="portfolio-large" style="background-image:url(../assets/portfolio/iboto/iboto-large.png);">
+                        <div class="portfolio-large-center">
+                            <center>
+                                <h1>Isang boto, isang bayan.</h1>
+                                <br>
+                                <a href="https://iboto.ph" target="_blank">Visit Iboto.ph</a>
+                            </center>
+                        </div>
+            </div> -->
+
+                    
+                    <div class="portfolio-travel" style="background:#a72b2b;">
+                    
+                <!-- Back / Home -->
+                    <a href="designexercise" class="travel-left">
+                        Previous project<br>
+                        <strong>Design Exercise</strong></a>
+                        
+                    <a href="collab" class="travel-right">Next Project<br>
+                    <strong>Collab Incubator</strong></a>
+                    
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="box footer footer-alt" id="footer">
+
+            <div class="footer-links">
+                <a href="../about" class="about">About</a>
+
+                <a href="https://chias.blog">Blog</a>
+                <a href="mailto:hello@chiaski.com">Mail</a>
+
+            </div>
+        </div>
+
+
+
+    </div>
+    
+<script src="../assets/scripts/zooming.min.js"></script>
+    
+<script>
+  new Zooming().listen('.image-container .zoom img')
+</script>
+    
+    
+</body>
+
+</html>
