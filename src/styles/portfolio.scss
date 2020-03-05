@@ -74,6 +74,20 @@ a {
         font-size: .8em;
         padding: .5em;
     }
+    
+    a{
+        margin:0 !important;
+        display:inline !important;
+        background:none !important;
+        padding:0 !important;
+        
+        em::after{
+            content: " ↗\00FE0E";
+        }
+    }
+    
+    
+    
 
 }
 
