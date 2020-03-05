@@ -414,7 +414,7 @@ body {
     }
 
 
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: 850px) {
         
         h2 {
             font-size: 1.8em;
@@ -427,10 +427,8 @@ body {
         }
 
         .project-box {
-            outline:1px solid red;
             max-width: 600px;
             width: 100%;
-            border-bottom: 1px solid #49495f;
             text-align: left !important;
         
             h3{display:none !important;}
