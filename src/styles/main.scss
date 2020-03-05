@@ -414,7 +414,7 @@ body {
     }
 
 
-    @media only screen and (max-width: 700px) {
+    @media only screen and (max-width: 900px) {
         
         h2 {
             font-size: 1.8em;
@@ -422,11 +422,12 @@ body {
         }
         
         h2::after{
-            content: " →";
+            content: " →\00FE0E";
             margin-left:.1em;
         }
 
         .project-box {
+            outline:1px solid red;
             max-width: 600px;
             width: 100%;
             border-bottom: 1px solid #49495f;
@@ -613,10 +614,6 @@ body {
         font-family:"Segoe UI Symbol" !important;
     }
 
-    .love-col a::before {
-        content: "" !important;
-
-    }
 
 }
 
