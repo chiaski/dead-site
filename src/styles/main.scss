@@ -292,11 +292,11 @@ body {
     .project-box:hover {
         cursor: e-resize;
         filter: grayscale(0);
-        //background: rgba(176, 226, 226, 0.36);
     }
 
     .project-box {
         width: 420px;
+        overflow:hidden;
         max-width: 95%;
         box-sizing: border-box;
         justify-content: center;
@@ -313,23 +313,31 @@ body {
             padding: 0 .5em;
             margin: auto;
             text-align: center;
-            cursor: e-resize;
+            cursor: e-resize; filter:invert(0);
+           
+            -webkit-transition: all .3s linear;
+            -moz-transition: all .3s linear;
+            -ms-transition: all .3s linear;
+            -o-transition: all .3s linear;
+            transition: all .3s linear;
         }
 
         .btn {
             float: right;
+            text-align: center;
             display: inline-block;
             margin: 1em 0 .2em 0;
             width: 90px;
-            padding: .3em .6em;
+            padding: .5em .6em;
             color: cyan;
-            border: 1px solid cyan;
-            font-family: 'GT America Expanded';
-        }
-
-        .btn::before {
-            content: " ❍";
-            margin-right: .5em;
+            border: $white 1px solid;
+            font-family: 'GT America';
+           
+            -webkit-transition: all .3s linear;
+            -moz-transition: all .3s linear;
+            -ms-transition: all .3s linear;
+            -o-transition: all .3s linear;
+            transition: all .3s linear;
         }
 
         .btn:hover {
@@ -339,6 +347,15 @@ body {
         }
 
 
+    }
+    
+    
+    .project-box:hover{
+        
+        
+        img{
+            filter:invert(1);
+        }
     }
 
     .project-unavailable {
@@ -416,7 +433,6 @@ body {
             img {
                 width: 100%;
             }
-
 
             .btn {
                 display: none;

@@ -325,12 +325,13 @@ iframe {
         a{
             padding:1em !important;
             border: $white 1px solid;
-            background: none !important;
+            background: transparent !important;
             
         }
         
         a:hover{
-            color:cyan !important;
+            color: blue !important;
+            background: $white !important;
             box-shadow:0 0 20px #3b4060;
         }
         
