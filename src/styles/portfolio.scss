@@ -689,7 +689,7 @@ iframe {
             }
 
             .col-third {
-                width: 30%;
+                width: 29%;
                 box-sizing: border-box;
                 margin: 0 1% 2% 1%;
 
@@ -736,7 +736,12 @@ iframe {
                 }
 
                 .col-third {
-                    min-width: 200px;
+                    
+                    h3{
+                        font-size:1.2em !important;
+                    }
+                    
+                    min-width: 150px;
                 }
 
             }
@@ -785,7 +790,6 @@ iframe {
     }
 
     .col-third {
-
         border-radius: 5px;
         padding: 1em;
     }
