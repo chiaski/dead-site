@@ -502,25 +502,6 @@ details[open] > summary{
             }
         }
     }
-    
-    .landing-social {
-
-        a {
-
-            text-decoration: none;
-            color: $accent;
-            margin-right: 1em;
-            padding-top: .5em;
-            border-bottom: 1px solid $white;
-        }
-
-        a:hover {
-            color: yellow;
-            border-bottom: 1px solid $accent;
-        }
-    }
-    
-
     .showcase-container {
         padding: 1em;
         display: flex;

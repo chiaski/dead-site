@@ -6,6 +6,7 @@ $bg-color: #001a19;
 $light-color: #f0f8f7;
 $white: #f0f8f7;
 
+$accent: #8bb6e3;
 
 /* MAIN STRUCTURAL ELEMENTS HEHEHE */
 
@@ -186,7 +187,7 @@ body {
         a:hover {
             background: none !important;
             color: $white;
-            border: 1px solid cyan;
+            border: 1px solid $accent;
         }
 
     }
@@ -194,33 +195,34 @@ body {
     h2{
         font-family:"Canela";
         text-align: center;
-        color:cyan;
+        color:$accent;
         margin:1em;
         font-size:2em;
         font-weight:600;
     }
 
-    .social {
-
-        margin-top: 2em;
-
-        a {
-            text-decoration: none;
-            color: cyan;
-            margin: 0 1em 0 1em;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-    }
+    
 
 
 
 }
 
 
+.social {
+        margin-top: 2em;
+
+        a {
+
+            text-decoration: none;
+            color: $accent;
+            margin-right: 1em;
+            padding-top: .5em;
+        }
+
+        a:hover {
+            text-shadow:0 0 10px $accent;
+        }
+    }
 
 #footer {
     box-sizing: border-box;
@@ -308,6 +310,15 @@ body {
         text-decoration: none;
         margin-bottom: 1em;
 
+        h2{
+            color: $white;
+            -webkit-transition: all .3s linear;
+            -moz-transition: all .3s linear;
+            -ms-transition: all .3s linear;
+            -o-transition: all .3s linear;
+            transition: all .3s linear;
+        }
+
         img {
             width: 100%;
             padding: 0 .5em;
@@ -329,7 +340,7 @@ body {
             margin: 1em 0 .2em 0;
             width: 90px;
             padding: .5em .6em;
-            color: cyan;
+            color: $accent;
             border: $white 1px solid;
             font-family: 'GT America';
            
@@ -355,6 +366,11 @@ body {
         img{
             filter:invert(1);
         }
+        
+        h2{
+            text-shadow:0 0 10px $accent;
+        }
+        
     }
 
     .project-unavailable {
@@ -387,13 +403,13 @@ body {
         font-style: italic;
         font-family: "Canela", Helvetica, Arial;
         font-size: 2.1em;
-        color: lightcyan !important;
+        color: light$accent !important;
         line-height: 1.1em;
         cursor: e-resize !important;
     }
 
     sup {
-        color: cyan;
+        color: $accent;
         vertical-align: normal;
         font-size: .1em;
         font-weight: 100;
@@ -606,7 +622,7 @@ body {
     .love-col p::before {
         content: "↘\00FE0E ";
         font-size: .8em;
-        color: cyan;
+        color: $accent;
         padding-right: .3em;
         line-height: 0;
         font-family:"Segoe UI Symbol" !important;
