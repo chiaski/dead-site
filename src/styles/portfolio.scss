@@ -527,6 +527,10 @@ iframe {
         justify-content: center;
         display: flex;
         max-width: 780px;
+        
+        iframe{
+            max-width:100%;
+        }
 
 
         a {
