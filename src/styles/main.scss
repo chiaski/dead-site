@@ -440,7 +440,9 @@ body {
         h2::after{
             content: " →\00FE0E";
             margin-left:.1em;
+            transition: all .1s ease-in-out;
         }
+        
 
         .project-box {
             max-width: 600px;
@@ -464,6 +466,12 @@ body {
             img {
                 filter: grayscale(1);
             }
+            
+            h2::after{
+                color:#fff;
+                margin-left:.5em;
+            }
+
         }
 
     }
@@ -627,7 +635,10 @@ body {
         line-height: 0;
         font-family:"Segoe UI Symbol" !important;
     }
-
+    
+    p a{
+        color: $accent !important;
+    }
 
 }
 

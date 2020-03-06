@@ -1,6 +1,8 @@
 $light-color: #f0f8f7;
 $white: #f0f8f7;
 
+$accent: #8bb6e3;
+
 $dark-lightest: #605757;
 $dark-mid: #262c2b;
 
@@ -247,7 +249,7 @@ iframe {
 
     .project-box:hover {
         h2 {
-            color: cyan !important;
+            color: $accent !important;
         }
     }
 
@@ -287,7 +289,7 @@ iframe {
     .summary-details a,
     p a {
         background: none !important;
-        color: cyan !important;
+        color: $accent !important;
         font-family: "GT America";
         font-size: .9em;
     }
@@ -297,7 +299,7 @@ iframe {
         margin-right: .3em;
         border-bottom: none;
         font-family: "Segoe UI Symbol" !important;
-        color: cyan !important;
+        color: $accent !important;
     }
 
     p a:hover {
@@ -777,7 +779,6 @@ iframe {
                 }
             }
 
-
         }
 
     }
@@ -1210,7 +1211,7 @@ iframe {
     }
 
     a {
-        color: cyan;
+        color: $accent;
     }
 
 }
