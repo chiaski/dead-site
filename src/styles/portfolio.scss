@@ -143,7 +143,9 @@ a {
     padding: 1em;
 }
 
-
+.image-container-half{
+    max-height:450px;
+}
 
 @media only screen and (max-width: 700px) {
     #portfolio img {
@@ -288,8 +290,8 @@ iframe {
 
     .summary-details a,
     p a {
-        background: none !important;
-        color: $accent !important;
+        background: none;
+        color: $accent;
         font-family: "GT America";
         font-size: .9em;
     }
@@ -537,7 +539,6 @@ iframe {
 
 
         a {
-            background: #2b13af;
             padding: .1em;
             text-decoration: none;
             color: #fdf6f6;

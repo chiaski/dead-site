@@ -172,7 +172,7 @@ body {
 
         a {
             color: blue;
-            background: $white !important;
+            background: $white;
             border: 1px solid $white;
             display: inline-block;
             font-size: 1em;
@@ -296,7 +296,7 @@ body {
         cursor: e-resize;
         filter: grayscale(0);
     }
-
+    
     .project-box {
         width: 390px;
         overflow:hidden;
@@ -320,7 +320,8 @@ body {
         }
 
         img {
-            width: 100%;
+            overflow:hidden;
+            max-width: 100%;
             padding: 0 .5em;
             margin: auto;
             text-align: center;
