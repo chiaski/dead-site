@@ -295,17 +295,9 @@ iframe {
         font-family: "GT America";
         font-size: .9em;
     }
-
-    p a::before {
-        content: "→\00FE0E ";
-        margin-right: .3em;
-        border-bottom: none;
-        font-family: "Segoe UI Symbol" !important;
-        color: $accent !important;
-    }
-
-    p a:hover {
-        color: yellow !important;
+    
+    p a:hover{
+        text-decoration: underline;
     }
 
 
@@ -329,10 +321,6 @@ iframe {
             font-family: "GT America Expanded";
             margin: 0 1em;
             background: none !important;
-        }
-
-        a:hover {
-            color: yellow !important;
         }
 
     }
@@ -370,7 +358,6 @@ iframe {
 
 
         a:hover {
-            background: yellow !important;
             border: none;
         }
 
@@ -507,9 +494,6 @@ iframe {
             }
         }
 
-        a:hover {
-            text-shadow: 0 0 20px #412b2b;
-        }
 
         @media only screen and (max-width: 700px) {
             
@@ -555,7 +539,6 @@ iframe {
         }
 
         a:hover {
-            background: yellow;
             color: $dark-mid;
         }
 
