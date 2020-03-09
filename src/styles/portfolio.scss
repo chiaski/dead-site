@@ -117,9 +117,11 @@ a {
 
 .image-container-tall {
 
-    max-width: 90vw;
     max-height: 70vh;
     overflow-y: scroll;
+    text-align: center;
+    margin:1em;
+    box-sizing: border-box;
 
     img {
         width: 100%;
@@ -573,8 +575,7 @@ iframe {
             font-size: 1.1em;
             color: #435262;
             line-height: 1.8em;
-            padding-left: .2em;
-            padding-top: 1em;
+            padding-top: .5em;
             padding-bottom: 1em;
             max-width: 95%;
             margin: auto;
@@ -729,27 +730,28 @@ iframe {
 
             h1,
             h2 {
-                width: 88%;
+                width: 90%;
                 margin: auto;
             }
 
             h3 {
-                margin: 0 1em;
+                margin:0 .9em;
             }
 
             .col {
                 max-width: 100%;
                 display: flex;
+                
+                    h3{
+                        font-size:1.4em;
+                    }
+                    
 
                 .col-half {
                     width: 100%;
                 }
 
                 .col-third {
-                    
-                    h3{
-                        font-size:1.2em !important;
-                    }
                     
                     min-width: 150px;
                 }
@@ -767,7 +769,7 @@ iframe {
             }
 
             p {
-                padding: 1em;
+                padding: 0 1em;
                 font-size: 1em;
             }
 
