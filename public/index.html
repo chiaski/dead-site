@@ -131,7 +131,6 @@
 
 
                 <div class="landing-overlay">
-
                 </div>
 
             </div>
@@ -155,6 +154,18 @@
                             </div>
                         </a>
 
+
+                        <a href="work/developh.html" data-link="developh">
+                            <div class="project-box" id="link-developh">
+
+                                <div class="project-box-desc">
+                                    <h2>Developh</h2>
+                                    <h3>Branding + System</h3>
+                                </div>
+
+                            </div>
+                        </a>
+                        
 
                         <a href="work/twitter.html" data-link="twitter">
                             <div class="project-box" id="link-ibotoph">
@@ -496,6 +507,14 @@
                 })
 
 
+
+            $("a[data-link='developh']").mouseover(
+                function() {
+                    $(".landing-overlay").html('<img src="./assets/portfolio/preview-developh.jpg">').css("top", "240px").css("left", "130px")
+                })
+
+
+            
             $("a[data-link='exercise']").mouseover(
                 function() {
                     $(".landing-overlay").html('<img src="./assets/portfolio/preview-designexercise.jpg">').css("top", "140px").css("left", "100px")

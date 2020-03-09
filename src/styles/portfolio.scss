@@ -767,6 +767,16 @@ iframe {
                 }
 
             }
+            
+            .content{
+                .col-third{
+                    width:100%;
+                    max-width:600px;
+                    text-align: center;
+                    box-sizing: border-box;
+                    padding:1em;
+                }
+            }
 
             p {
                 padding: 1em;
