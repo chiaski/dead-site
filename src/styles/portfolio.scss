@@ -48,6 +48,7 @@ a {
 .image-container {
 
     max-width: 100vw;
+    text-align: center;
     overflow: hidden;
 
     img {
@@ -528,7 +529,6 @@ iframe {
             width:550px;
         }
 
-
         a {
             padding: .1em;
             text-decoration: none;
@@ -673,7 +673,7 @@ iframe {
             margin: 1em 0;
             display: flex;
             flex-wrap: wrap;
-            justify-content: center;
+            justify-content: space-between;
 
 
             h2 {
@@ -691,12 +691,11 @@ iframe {
 
 
             img {
-                max-width: 100%;
-                margin: auto;
+                max-width:100%;
             }
 
             .col-half {
-                width: 50%;
+                width: 48%;
             }
 
             .col-third {
@@ -721,6 +720,7 @@ iframe {
             .image-container {
                 width: 100%;
                 display: block;
+                text-align: center;
             }
 
 
