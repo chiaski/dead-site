@@ -562,11 +562,12 @@ iframe {
         }
 
         h3 {
-            margin: 0;
             font-size: 2em;
             font-family: "Canela";
             font-weight: 300;
             padding-top: 1em;
+            max-width:95%;
+            margin:auto;
         }
 
 
@@ -692,11 +693,10 @@ iframe {
             img {
                 max-width: 100%;
                 margin: auto;
-                padding: 1em;
             }
 
             .col-half {
-                width: 49%;
+                width: 50%;
             }
 
             .col-third {
@@ -819,7 +819,7 @@ iframe {
 
 .summary-container {
 
-    padding: 1em;
+    padding: 1em 2.5em;
     margin-top: 1em;
     font-size: 1em;
 
@@ -829,10 +829,8 @@ iframe {
 
 
     p {
-        text-align: left !important;
-        line-height: 1.7em !important;
-        padding: 0 !important;
-        margin-bottom: 1em !important;
+        line-height: 1.7em;
+        opacity:0.9;
     }
 
 
