@@ -68,6 +68,11 @@ a {
     img.image-old {
         filter: grayscale(0.8);
     }
+    
+    img.comment{
+        box-shadow:0 0 20px #ccc;
+        margin-top:1em;
+    }
 
 
     em {
