@@ -301,7 +301,7 @@ iframe {
         background: none;
         color: $accent;
         font-family: "GT America";
-        font-size: .9em;
+        text-shadow: 0 0 15px #ccc;
     }
     
     p a:hover{
@@ -417,7 +417,6 @@ iframe {
                 display: inline-block;
                 max-width: 130px;
                 margin: 0 .6em 0 .6em;
-                font-size: .8em;
                 border-bottom: 1px solid #f4e9e9;
                 line-height: 1em;
                 padding: .3em;
@@ -535,8 +534,6 @@ iframe {
         }
 
         a {
-            padding: .1em;
-            text-decoration: none;
             color: #fdf6f6;
             -webkit-transition: all .3s linear;
             -moz-transition: all .3s linear;
@@ -547,6 +544,7 @@ iframe {
 
         a:hover {
             color: $dark-mid;
+            text-shadow:0 0 20px #ccc;
         }
 
         h1 {
@@ -990,7 +988,7 @@ iframe {
     }
 
     a:hover {
-        background: $white !t;
+        background: $white;
         color: #000 !important;
     }
 }
