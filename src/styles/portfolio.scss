@@ -121,10 +121,11 @@ a {
     max-height: 70vh;
     overflow-y: scroll;
     text-align: center;
-    margin:1em;
+        padding:0 !important;
     box-sizing: border-box;
 
     img {
+        outline:1px solid red;
         width: 100%;
         height: auto;
         display: inline-block;
