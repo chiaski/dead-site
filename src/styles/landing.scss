@@ -200,7 +200,7 @@ details[open] > summary{
 
 
         a:hover {
-            color: yellow !important;
+            color: blue;
         }
 
         sup {
@@ -252,7 +252,7 @@ details[open] > summary{
     }
 
     .btn-landing:hover {
-        color: yellow;
+        color: blue;
         border: 0;
     }
 
@@ -312,7 +312,7 @@ details[open] > summary{
     }
 
     a.btn:hover {
-        color:yellow;
+        color:blue;
     }
 
     .portfolio-project-container {
@@ -595,7 +595,7 @@ details[open] > summary{
 
     a:hover {
         color: $accent !important;
-        border-bottom: 1px solid yellow !important;
+        border-bottom: 1px solid blue !important;
     }
 
 }
