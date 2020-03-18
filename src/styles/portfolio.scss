@@ -636,7 +636,7 @@ iframe {
 
         blockquote {
             box-sizing: border-box;
-            font-size: 1em !important;
+            font-size: 1em ;
             padding: 1em;
             margin-bottom: 2em;
             border-top: 1px solid $dark-mid;
@@ -800,27 +800,26 @@ iframe {
 
     img {
         max-width: 100%;
-        width: 120px !important;
+        width: 120px;
         mix-blend-mode: lighten;
     }
 
     p {
         font-size: 15px !important;
         line-height: 20px !important;
-        margin: 0 !important;
-        padding: 0 !important;
     }
 
     h3 {
-        margin: 0 !important;
         padding: 0 !important;
-        font-size: 1.5em !important;
+        font-size: 1.4em !important;
     }
 
     .col-third {
         border-radius: 5px;
         padding: 1em;
     }
+    
+    
 
 }
 
@@ -1116,19 +1115,6 @@ iframe {
 
 /* PORTFOLIO PAGE */
 
-.cursor.alt {
-    background-color: #477775;
-}
-
-.cursor {
-    background-color: #0d3b39;
-    mix-blend-mode: exclusion !important;
-}
-
-.cursor.is-hovering {
-    background-color: red;
-    mix-blend-mode: difference;
-}
 
 .portfolio-landing,
 .portfolio-page-landing {
@@ -1144,7 +1130,7 @@ iframe {
         font-weight: 300;
         font-size: 3em;
         line-height: 1.2em;
-        margin: 0 !important;
+        margin: 0 ;
     }
 
     p {
@@ -1166,7 +1152,7 @@ iframe {
 .container-portfolio {
     h1 {
         text-align: center;
-        margin: 0 1em 1em 1em !important;
+        margin: 0 1em 1em 1em ;
     }
 
     h3 {
