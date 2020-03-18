@@ -335,6 +335,21 @@ iframe {
 
     }
 
+    
+    details summary::-webkit-details-marker {
+        display: none;
+    }
+
+    details summary::after {
+        content: "Learn more...";
+        margin-left:1.25em;
+    }
+    
+    details:hover summary::after{
+        text-shadow:0 0 15px #fff;
+    }
+
+
     .full-button {
         margin: 0 2em !important;
         display: block;
