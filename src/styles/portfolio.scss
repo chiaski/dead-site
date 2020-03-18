@@ -676,7 +676,7 @@ iframe {
             margin: 1em 0;
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
+            justify-content: center;
 
 
             h2 {
@@ -736,7 +736,8 @@ iframe {
             }
 
             h3 {
-                margin:0 .9em;
+                font-size:1.2em;
+                margin:0 1.5em;
             }
 
             .col {
@@ -744,7 +745,7 @@ iframe {
                 display: flex;
                 
                     h3{
-                        font-size:1.4em;
+                        font-size:1em !important;
                     }
                     
 
@@ -769,11 +770,19 @@ iframe {
                 }
             }
 
-            p {
+            p, details {
                 padding: 0 1em;
-                font-size: 1em;
+                font-size: .9em;
+                line-height:1.5em;
+                margin-bottom:1em !important;
             }
 
+            mark{
+                background:none;
+                color:3fff;
+                font-weight: bold;
+            }
+            
             ol.feature-large,
             ul.feature-large {
                 li {
