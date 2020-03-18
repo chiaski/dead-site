@@ -149,7 +149,7 @@ body {
     }
 
     img.chia {
-        float:left !important;
+        float:left;
         margin-right:-8em;
         width: 60vw;
         max-width: 400px;
@@ -185,7 +185,7 @@ body {
         }
 
         a:hover {
-            background: none !important;
+            background: none;
             color: $white;
             border: 1px solid $accent;
         }
@@ -241,7 +241,7 @@ body {
             text-decoration: none;
             display: inline-block;
             color: $light-color;
-            cursor: e-resize !important;
+            cursor: e-resize;
             margin: 0 1em;
             -webkit-transition: all .3s linear;
             -moz-transition: all .3s linear;
@@ -252,7 +252,7 @@ body {
 
         a::after {
             content: " ↗\00FE0E";
-        font-family:"Segoe UI Symbol" !important;
+        font-family:"Segoe UI Symbol";
         }
 
         a:hover {
@@ -389,10 +389,10 @@ body {
         color: #ededf7;
         line-height: 22px;
         font-size: 14px;
-        padding: 0 !important;
-        font-size: 1em !important;
+        padding: 0;
+        font-size: 1em;
         text-align: left !important;
-        cursor: e-resize !important;
+        cursor: e-resize;
     }
 
     h2 {
@@ -403,9 +403,9 @@ body {
         font-style: italic;
         font-family: "Canela", Helvetica, Arial;
         font-size: 2.1em;
-        color: light$accent !important;
+        color: $accent;
         line-height: 1.1em;
-        cursor: e-resize !important;
+        cursor: e-resize;
     }
 
     sup {
@@ -426,12 +426,11 @@ body {
         letter-spacing: .5px;
         color: lightblue !important;
         padding:0; margin:0;
-        cursor: e-resize !important;
+        cursor: e-resize;
     }
 
 
     @media only screen and (max-width: 1100px) {
-       
         
         .project-box{
             width:390px;
@@ -443,7 +442,7 @@ body {
         
         h2 {
             font-size: 1.8em;
-            text-align: left !important;
+            text-align: left;
         }
         
         h2::after{
@@ -456,9 +455,9 @@ body {
         .project-box {
             max-width: 600px;
             width: 100%;
-            text-align: left !important;
+            text-align: left ;
         
-            h3{display:none !important;}
+            h3{display:none;}
             
             img {
                 width: 100%;
@@ -584,7 +583,7 @@ body {
 .portfolio-box {
 
     display: inline-block;
-    width: 300px !important;
+    width: 300px;
     text-align: left;
     padding: 1.3em;
 
@@ -642,11 +641,11 @@ body {
         color: $accent;
         padding-right: .3em;
         line-height: 0;
-        font-family:"Segoe UI Symbol" !important;
+        font-family:"Segoe UI Symbol";
     }
     
     p a{
-        color: $accent !important;
+        color: $accent;
     }
 
 }
