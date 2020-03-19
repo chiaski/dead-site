@@ -81,6 +81,16 @@ details[open] > summary{
             font-family:"Canela", "GT America", apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial;
             line-height:1.3em !important;
             font-size:2.6em !important;
+            
+            strong{
+                font-weight:300;
+                -webkit-animation: color-change 3s infinite;
+                -moz-animation: color-change 3s infinite;
+                -o-animation: color-change 3s infinite;
+                -ms-animation: color-change 3s infinite;
+                animation: color-change 3s infinite;
+            }
+            
         }
         
         a {
@@ -372,7 +382,7 @@ details[open] > summary{
             text-transform: uppercase;
             text-align: center;
             display: block;
-            font-size: .6em;
+            font-size: .5em !important;
             color: $blue-screen;
             margin: .2em 0;
             font-weight: 100;
@@ -636,4 +646,32 @@ details[open] > summary{
     filter:grayscale(.9);
     min-width: 100%;
 min-height: 100%;
+}
+
+
+
+@-webkit-keyframes color-change {
+    0% { color: red; }
+    50% { color: $accent; }
+    100% { color: red; }
+}
+@-moz-keyframes color-change {
+    0% { color: red; }
+    50% { color: $accent; }
+    100% { color: red; }
+}
+@-ms-keyframes color-change {
+    0% { color: red; }
+    50% { color: $accent; }
+    100% { color: red; }
+}
+@-o-keyframes color-change {
+    0% { color: red; }
+    50% { color: $accent; }
+    100% { color: red; }
+}
+@keyframes color-change {
+    0% { color: red; }
+    50% { color: $accent; }
+    100% { color: red; }
 }
