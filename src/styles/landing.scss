@@ -52,10 +52,6 @@ details summary::-webkit-details-marker {
   display:none;
 }
 
-details summary{
-    cursor:pointer;
-}
-
 details[open]{
     margin-top:1em;
 }
@@ -97,7 +93,6 @@ details[open] > summary{
             font-family:"GT America" !important;
             text-decoration: none ;
             padding:.1em;
-
         }
         
     
@@ -253,29 +248,7 @@ details[open] > summary{
         color:$accent;
     }
 
-
-
-    .btn-landing {
-        border-bottom: 1px solid $white;
-        padding: 0 0 .1em 0;
-        font-size: 1.2em;
-    }
-
-    .btn-landing:hover {
-        color: blue;
-        border: 0;
-    }
-
-    .btn-scroll {
-        font-family: "Canela";
-        font-style: italic;
-        float: right;
-        font-size: 2em;
-    }
-
     /* LANDING SHOWCASE */
-
-
 
 
     @media only screen and (max-width: 600px) {
