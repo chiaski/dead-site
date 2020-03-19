@@ -3,7 +3,7 @@ $light-color: #f0f8f7;
 $white: #f0f8f7;
 
 $text: #2b2c36;
-$accent: #8bb6e3;
+$accent: #3131ef;
 $blue-screen: #141cd1;
 $white-screen: #141317;
 
@@ -95,6 +95,9 @@ details[open] > summary{
             padding:.1em;
         }
         
+        a:hover{
+            color:#fff !important;
+        }
     
 
     }
