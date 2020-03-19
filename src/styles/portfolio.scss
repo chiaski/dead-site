@@ -332,6 +332,10 @@ iframe {
             background: none !important;
         }
 
+        a:hover{
+            color:blue;
+            mix-blend-mode: difference;
+        }
     }
 
     
