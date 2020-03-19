@@ -16,18 +16,6 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-a{
-    opacity:0.8;
-    -webkit-transition: all .3s linear;
-    -moz-transition: all .3s linear;
-    -ms-transition: all .3s linear;
-    -o-transition: all .3s linear;
-    transition: all .3s linear;
-}
-
-a:hover{
-    opacity:1;
-}
 
 .container {
     position: absolute;
@@ -286,6 +274,20 @@ a:hover{
         }
     }
 
+}
+
+
+blockquote a, p a, li a, .summary-details a{
+    opacity:0.75;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+}
+
+a:hover{
+    opacity:1;
 }
 
 
