@@ -1046,11 +1046,12 @@ iframe {
         padding: .5em !important;
         font-family: "GT America";
         letter-spacing: .05em;
+        display: inline-block;
     }
 
     a:hover {
-        background: $white;
-        color: #000 !important;
+        transform: translateY(-2px);
+        box-shadow:0 10px 10px rgba(0, 0, 0, 0.28);
     }
 }
 
