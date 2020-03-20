@@ -334,15 +334,22 @@ a:hover{
         display: flex;
         flex-wrap: wrap;
         text-decoration: none;
-        margin-bottom: 1em;
+        margin-bottom: 2em;
 
         h2{
+            margin-top:.25em;
+            font-size:2em;
             color: $white;
+            margin-bottom:.1em;
             -webkit-transition: all .3s linear;
             -moz-transition: all .3s linear;
             -ms-transition: all .3s linear;
             -o-transition: all .3s linear;
             transition: all .3s linear;
+        }
+        
+        .quote-block{
+            margin-bottom: .5em;
         }
 
         img {
@@ -361,28 +368,9 @@ a:hover{
         }
 
         .btn {
-            float: right;
-            text-align: center;
-            display: inline-block;
-            margin: 1em 0 .2em 0;
-            width: 90px;
-            padding: .5em .6em;
-            color: $accent;
-            border: $white 1px solid;
-            font-family: 'GT America';
-           
-            -webkit-transition: all .3s linear;
-            -moz-transition: all .3s linear;
-            -ms-transition: all .3s linear;
-            -o-transition: all .3s linear;
-            transition: all .3s linear;
+            display: none !important;
         }
 
-        .btn:hover {
-            border: 1px solid #fff;
-            background: #fff;
-            color: #222cb7;
-        }
 
 
     }
