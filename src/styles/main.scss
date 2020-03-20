@@ -16,6 +16,16 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+::-moz-selection { /* Code for Firefox */
+  color: $white;
+  background: $accent;
+}
+
+::selection {
+  color: $white;
+  background: $accent;
+}
+
 
 .container {
     position: absolute;
