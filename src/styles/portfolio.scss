@@ -53,7 +53,7 @@ a {
     overflow: hidden;
 
     img {
-        max-width: 95%;
+        max-width: 90%;
         display: block;
         margin:auto;
     }
@@ -359,6 +359,7 @@ iframe {
         text-align: center;
 
         a {
+            display: inline-block;
             padding: 1em !important;
             border: $white 1px solid;
             background: transparent !important;
@@ -367,8 +368,8 @@ iframe {
 
         a:hover {
             color: blue !important;
-            background: $white !important;
-            box-shadow: 0 0 20px #3b4060;
+            transform: translateY(-2px);
+            box-shadow: 0 -10px 20px #3b4060;
         }
 
     }
@@ -713,8 +714,7 @@ iframe {
 
 
             img {
-                max-width:100%;
-                padding:1em;
+                max-width:95%;
                 box-sizing: border-box;
             }
             
