@@ -6,6 +6,8 @@ $accent: #3131ef;
 $dark-lightest: #605757;
 $dark-mid: #262c2b;
 
+$lightcyan: #eff7f4;
+
 ::-moz-selection {
     background: #f8c9c9;
     color: $dark-mid;
@@ -934,7 +936,7 @@ iframe {
 
     display: inline-block;
     box-sizing: border-box;
-    border-bottom: 1px solid #c8dee3;
+    border-bottom: 1px solid $lightcyan;
     max-width: 90vw;
     margin: 1em;
     padding: .5em;
@@ -962,11 +964,11 @@ iframe {
         font-size: 1.6em;
         font-weight: 800;
         margin:.2em 0 .25em 0;
-        color: #59aa9d;
+        color: $lightcyan;
     }
 
     li strong {
-        color: #59aa9d;
+        color: $lightcyan;
     }
 
 
@@ -1080,22 +1082,23 @@ iframe {
     }
 
     h2 {
-        color: #eff7f4 !important;
+        color:$white !important;
     }
 
     #portfolio {
         p {
-            color: #ebf6f7 !important;
+            color: $white !important;
         }
 
     }
 
     .quote-block {
-        color: #f7eaea !important;
+        color: $white !important;
     }
 
     blockquote {
-        color: #dcddea !important;
+        color: $white !important;
+        opacity:0.9 !important;
     }
 
 }
@@ -1105,7 +1108,7 @@ iframe {
 
 
     h2 {
-        color: #eff7f4 !important;
+        color: $lightcyan !important;
         line-height: 1em;
         font-size: .8em;
         letter-spacing: .1em;
