@@ -41,11 +41,22 @@
 
         <div class="box" id="portfolio-list">
             <div class="box-inner">
+                
+                <br><br>
+                
+                    <div class="portfolio-nav">
+                        
+                        <a data-filter="design">Product Design</a>
+                        <a data-filter="art">Visuals & Games</a>
 
+                    </div>
+                
+                <br><br>
+                
                 <div class="portfolio-project-container">
 
 
-                    <a href="work/ibotoph">
+                    <a href="work/ibotoph"  class="type-design">
                         <div class="project-box" id="link-ibotoph">
                             <img src="assets/portfolio/preview-ibotoph.jpg">
 
@@ -61,7 +72,7 @@
                     </a>
 
                     
-                    <a href="work/developh">
+                    <a href="work/developh"  class="type-design">
                         <div class="project-box">
                             <img src="assets/portfolio/preview-developh.jpg">
 
@@ -78,7 +89,7 @@
                     </a>
                     
 
-                    <a href="work/twitter.html">
+                    <a href="work/twitter.html" class="type-design">
                         <div class="project-box" id="link-ibotoph">
                             <img src="assets/portfolio/preview-twitter.jpg">
 
@@ -90,12 +101,11 @@
                                 <h3>Case Study</h3>
 
                             </div>
-
                         </div>
                     </a>
 
 
-                    <a href="work/designexercise.html">
+                    <a href="work/designexercise.html"  class="type-design">
                         <div class="project-box">
                             <img src="assets/portfolio/preview-designexercise.jpg">
 
@@ -113,7 +123,7 @@
                     </a>
                     
                         
-                    <a href="work/lastfm">
+                    <a href="work/lastfm"  class="type-design">
                         <div class="project-box">
                             <img src="assets/portfolio/preview-lastfm.jpg">
 
@@ -125,12 +135,10 @@
                                 <h3>Mobile App Redesign</h3>
 
                             </div>
-
-
                         </div>
                     </a>
                     
-                    <a href="work/collab">
+                    <a href="work/collab"  class="type-design">
                         <div class="project-box">
                             <img src="assets/portfolio/preview-collab.jpg">
 
@@ -146,8 +154,7 @@
                         </div>
                     </a>
 
-
-                    <a href="work/hopefuls">
+                    <a href="work/hopefuls"  class="type-design">
                         <div class="project-box">
                             <img src="assets/portfolio/preview-hopefuls.jpg">
 
@@ -160,16 +167,12 @@
 
                             </div>
 
-                            <a href="work/hopefuls">
-                                <div class="btn">Read</div>
-                            </a>
-
                         </div>
                     </a>
 
 
 
-                    <a href="work/letterboxd.html">
+                    <a href="work/letterboxd.html"  class="type-design">
                         <div class="project-box">
                             <img src="assets/portfolio/preview-letterboxd.jpg">
 
@@ -182,17 +185,12 @@
                                 <h3>Case Study</h3>
                             </div>
 
-
-                            <a href="work/letterboxd.html">
-                                <div class="btn">Read</div>
-                            </a>
-
                         </div>
                     </a>
 
 
 
-                    <a href="work/design">
+                    <a href="work/design" class="type-art">
                         <div class="project-box">
                             <img src="assets/portfolio/preview-designs.jpg">
 
@@ -205,15 +203,12 @@
                                 <h3>Graphic Design Archive</h3>
 
                             </div>
-
-
-
                         </div>
                     </a>
 
                     
 
-                    <a href="https://round.ph" target="_blank">
+                    <a href="https://round.ph" target="_blank" class="type-art">
                         <div class="project-box">
                             <img src="assets/portfolio/preview-round.jpg">
 
@@ -230,7 +225,7 @@
                     </a>
                     
                     
-                        <div class="project-box" style="cursor: not-allowed !important;">
+                        <div class="project-box type-design" style="cursor: not-allowed !important;">
                             <img src="assets/portfolio/preview-technologyph.jpg" style="cursor: not-allowed !important;">
 
                             <div class="project-box-desc" style="cursor: not-allowed !important;">
@@ -318,6 +313,18 @@ $(document).ready(function() {
         window.location = linkLocation;
     }
 });
+        
+    $("a[data-filter='art']").click(function(){
+       $(".type-art").fadeIn("slow");
+       $(".type-design").fadeOut("slow");
+    });
+        
+    $("a[data-filter='design']").click(function(){
+       $(".type-art").fadeOut("slow");
+       $(".type-design").fadeIn("slow");
+    });
+        
+        
 </script>
     
 

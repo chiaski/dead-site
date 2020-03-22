@@ -579,6 +579,7 @@ a:hover{
 }
 
 
+
 // Portfolio
 
 .portfolio-link {
@@ -590,6 +591,30 @@ a:hover{
     text-align: center;
     align-items: center;
     justify-content: center;
+}
+
+
+
+.portfolio-nav {
+        text-align: center;
+        font-size: 1.2em;
+
+        a {
+            font-family: "GT America Expanded";
+            margin: 0 1em;
+            background: none !important;
+            cursor:pointer;
+            -webkit-transition: all .3s linear;
+            -moz-transition: all .3s linear;
+            -ms-transition: all .3s linear;
+            -o-transition: all .3s linear;
+            transition: all .3s linear;
+        }
+
+        a:hover{
+            color:blue;
+            mix-blend-mode: difference;
+        }
 }
 
 .portfolio-box {

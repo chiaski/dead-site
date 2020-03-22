@@ -323,23 +323,6 @@ iframe {
         font-weight: 100;
     }
 
-
-    .portfolio-nav {
-        text-align: center;
-        font-size: 1.2em;
-
-        a {
-            font-family: "GT America Expanded";
-            margin: 0 1em;
-            background: none !important;
-        }
-
-        a:hover{
-            color:blue;
-            mix-blend-mode: difference;
-        }
-    }
-
     
     details summary::-webkit-details-marker {
         display: none;

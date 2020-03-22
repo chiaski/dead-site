@@ -43,10 +43,21 @@
         <div class="box" id="portfolio-list">
             <div class="box-inner">
 
+                 <br><br>
+                
+                    <div class="portfolio-nav">
+                        
+                        <a data-filter="design">Product Design</a>
+                        <a data-filter="art">Visuals & Games</a>
+
+                    </div>
+                
+                <br><br>
+                
                 <div class="portfolio-project-container">
 
 
-                    <a href="ibotoph">
+                    <a href="ibotoph" class="type-design">
                         <div class="project-box" id="link-ibotoph">
                             <img src="../assets/portfolio/preview-ibotoph.jpg">
 
@@ -64,7 +75,7 @@
                     </a>
 
                     
-                    <a href="developh">
+                    <a href="developh" class="type-design">
                         <div class="project-box">
                             <img src="../assets/portfolio/preview-developh.jpg">
 
@@ -81,7 +92,7 @@
                     </a>
                     
                     
-                    <a href="twitter">
+                    <a href="twitter" class="type-design">
                         <div class="project-box" id="link-ibotoph">
                             <img src="../assets/portfolio/preview-twitter.jpg">
 
@@ -99,7 +110,7 @@
 
                     
 
-                    <a href="designexercise">
+                    <a href="designexercise" class="type-design">
                         <div class="project-box">
                             <img src="../assets/portfolio/preview-designexercise.jpg">
 
@@ -116,7 +127,7 @@
                     </a>
                     
                     
-                    <a href="lastfm">
+                    <a href="lastfm" class="type-design">
                         <div class="project-box">
                             <img src="../assets/portfolio/preview-lastfm.jpg">
 
@@ -133,7 +144,7 @@
                         </div>
                     </a>
 
-                    <a href="collab">
+                    <a href="collab" class="type-design">
                         <div class="project-box">
                             <img src="../assets/portfolio/preview-collab.jpg">
 
@@ -151,7 +162,7 @@
                     </a>
 
 
-                    <a href="hopefuls">
+                    <a href="hopefuls" class="type-design">
                         <div class="project-box">
                             <img src="../assets/portfolio/preview-hopefuls.jpg">
 
@@ -170,7 +181,7 @@
 
 
 
-                    <a href="letterboxd">
+                    <a href="letterboxd" class="type-design">
                         <div class="project-box">
                             <img src="../assets/portfolio/preview-letterboxd.jpg">
 
@@ -187,7 +198,7 @@
                     </a>
 
                     
-                    <a href="design">
+                    <a href="design" class="type-art">
                         <div class="project-box">
                             <img src="../assets/portfolio/preview-designs.jpg">
 
@@ -205,7 +216,7 @@
 
 
 
-                    <a href="https://round.ph" target="_blank">
+                    <a href="https://round.ph" target="_blank" class="type-art">
                         <div class="project-box">
                             <img src="../assets/portfolio/preview-round.jpg">
 
@@ -222,7 +233,7 @@
                     </a>
                     
                     
-                        <div class="project-box" style="cursor: not-allowed !important;">
+                        <div class="project-box type-design" style="cursor: not-allowed !important;">
                             <img src="../assets/portfolio/preview-technologyph.jpg" style="cursor: not-allowed !important;">
 
                             <div class="project-box-desc" style="cursor: not-allowed !important;">
@@ -316,6 +327,19 @@ $(document).ready(function() {
         window.location = linkLocation;
     }
 });
+        
+        
+    $("a[data-filter='art']").click(function(){
+       $(".type-art").fadeIn("slow");
+       $(".type-design").fadeOut("slow");
+    });
+        
+    $("a[data-filter='design']").click(function(){
+       $(".type-art").fadeOut("slow");
+       $(".type-design").fadeIn("slow");
+    });
+        
+        
 </script>
     
     
