@@ -941,7 +941,6 @@ iframe {
 
     display: inline-block;
     box-sizing: border-box;
-    border-bottom: 1px solid $lightcyan;
     max-width: 90vw;
     margin: 1em;
     padding: .5em;
@@ -969,11 +968,6 @@ iframe {
         font-size: 1.6em;
         font-weight: 800;
         margin:.2em 0 .25em 0;
-        color: $lightcyan;
-    }
-
-    li strong {
-        color: $lightcyan;
     }
 
 
