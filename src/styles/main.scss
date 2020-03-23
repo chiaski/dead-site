@@ -238,7 +238,7 @@ body {
     box-sizing: border-box;
     text-align: center;
     width: 100%;
-    height: 90px;
+    height: 190px;
     padding: 2em;
     margin-top: 1em;
     display: block;
@@ -275,6 +275,59 @@ body {
         a.about {
             float: left;
         }
+    }
+    
+    .footer-newsletter{
+        
+        text-align: left;
+        margin-left:1em;
+        height:60px;
+        margin-bottom:1.5em;
+        
+        h3{
+            display: inline-block;
+            font-family:"Canela";
+            font-weight:100;
+            font-style: italic;
+            font-size:2.2em;
+            line-height:60px;
+            height:50px;
+            margin-right:1em;
+            vertical-align: bottom;
+        }
+        
+        input[type="text"]{
+            display:inline-block;
+            font-family: "GT America";
+            border:0;
+            height:40px;
+            width:80% !important;
+            max-width:300px;
+            padding:1em;
+            
+        }
+        
+        input[type="submit"]{
+            display: inline-block;
+            box-sizing: border-box;
+            padding:1em;
+            background:none;
+            color:#fff;
+            border:0;
+            font-size:1.3em;
+            margin:0;
+            -webkit-transition: all .3s linear;
+            -moz-transition: all .3s linear;
+            -ms-transition: all .3s linear;
+            -o-transition: all .3s linear;
+            transition: all .3s linear;
+        }
+        
+        input[type="submit"]:hover{
+            padding-left:1.5em;
+        }
+        
+        
     }
 
 
