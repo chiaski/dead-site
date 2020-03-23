@@ -2,9 +2,10 @@
 @import 'aos.css'; // for animations
 @import "fonts.css";
 
-$bg-color: #001a19;
+$bg-color: #141317;
 $light-color: #f0f8f7;
 $white: #f0f8f7;
+$black: #141317;
 
 $accent: #3131ef;
 
@@ -141,10 +142,8 @@ body {
     cursor: help;
     font-family:"GT America";
 
-
     padding: 2em;
     margin-top: 8vh;
-    margin-bottom: 5vh;
     
     .masterpiece{
         justify-content: center;
@@ -155,7 +154,6 @@ body {
 
     .box-inner {
         max-width: 700px;
-        margin-bottom: 10vh;
     }
 
     img.chia {
@@ -211,12 +209,7 @@ body {
         font-weight:600;
     }
 
-    
-
-
-
 }
-
 
 .social {
         margin-top: 2em;
@@ -233,6 +226,7 @@ body {
             text-shadow:0 0 10px $accent;
         }
     }
+
 
 #footer {
     box-sizing: border-box;
@@ -329,13 +323,12 @@ body {
         
         
     }
-
-
-
-        
+    
 }
 
-#footer.footer-dark {
+
+
+#footer.footer-alt {
 
     .footer-links {
 
@@ -343,6 +336,15 @@ body {
             color: #000;
         }
     }
+    
+        .footer-newsletter{
+            
+            
+        input[type="submit"]{
+            color: $black !important;
+        }
+        }
+        
 
 }
 
