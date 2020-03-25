@@ -490,11 +490,38 @@ details[open] > summary{
                 color: $accent !important;
             }
         }
+        
     }
+    
+    
+    .showcase-container.landing{
+        max-height:300px;
+        overflow: hidden;
+        box-sizing: border-box;
+        color: $white;
+        padding:1.5em 0;
+    }
+    
+    
+    .showcase-container.landing .projects-archive{
+         
+        padding:1em;
+        position: relative;
+        box-sizing: border-box;
+        
+        animation: marquee 9s linear infinite;
+        
+    }
+    
     .showcase-container {
+        
         padding: 1em;
         display: flex;
         flex-wrap: wrap;
+        
+            a{
+                opacity:1;
+            }
 
         .showcase-box {
             display: inline-block;
@@ -544,6 +571,7 @@ details[open] > summary{
                 color: $white;
                 line-height: 1.4em;
             }
+            
 
 
 
@@ -622,6 +650,13 @@ details[open] > summary{
     filter:grayscale(.9);
     min-width: 100%;
 min-height: 100%;
+}
+
+
+
+@keyframes marquee {
+    0%   { top:   8em }
+    100% { top: -11em }
 }
 
 
