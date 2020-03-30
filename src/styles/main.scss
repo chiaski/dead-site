@@ -161,7 +161,7 @@ body {
         width: 60vw;
         max-width: 400px;
         padding: 1em 2em;
-        opacity: 1;
+        opacity: .6;
         mix-blend-mode: lighten;
         pointer-events: none;
 
@@ -169,7 +169,7 @@ body {
 
     p {
         color: $light-color;
-        font-size:1.2em;
+        font-size:1.1em;
         line-height:1.55em;
         text-align: left;
         font-weight: 300;
@@ -178,25 +178,15 @@ body {
         -moz-osx-font-smoothing: grayscale;
 
         a {
-            color: blue;
-            background: $white;
-            border: 1px solid $white;
             display: inline-block;
-            font-size: 1em;
-            padding: .1em .2em 0 .2em;
+            font-size: 1.3em;
+            font-family: "Canela";
+            font-style: italic;
             line-height: 1.3em;
             text-decoration: none;
             cursor: pointer;
-            font-family:"Canela";
-            font-weight:100;
-        }
-
-        a:hover {
-            background: none;
             color: $white;
-            border: 1px solid $accent;
         }
-
     }
     
     h2{
