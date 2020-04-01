@@ -662,12 +662,20 @@ a:hover{
             -ms-transition: all .3s linear;
             -o-transition: all .3s linear;
             transition: all .3s linear;
+            
+
+            @media only screen and (max-width: 850px) {
+                display: block;
+                padding:.5em .25em;
+            }
+            
         }
 
         a:hover{
             color:blue;
             mix-blend-mode: difference;
         }
+    
 }
 
 .portfolio-box {
