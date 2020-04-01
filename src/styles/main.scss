@@ -655,6 +655,7 @@ a:hover{
         a {
             font-family: "GT America Expanded";
             margin: 0 1em;
+            opacity:0.6 !important;
             background: none !important;
             cursor:pointer;
             -webkit-transition: all .3s linear;
@@ -672,6 +673,7 @@ a:hover{
         }
 
         a:hover{
+            opacity:1 !important;
             color:blue;
             mix-blend-mode: difference;
         }

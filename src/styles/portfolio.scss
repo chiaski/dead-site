@@ -127,6 +127,7 @@ a {
 .image-container-tall {
 
     max-height: 70vh;
+    overflow-x: hidden;
     overflow-y: scroll;
     text-align: center;
         padding:0 !important;
@@ -144,6 +145,20 @@ a {
         display: block;
         font-size: .8em;
         padding: .5em;
+    }
+    
+    @media only screen and (max-width: 600px) {
+        
+        max-width:80%;
+        margin: auto;
+        padding: 1em;
+        
+        img{
+            box-sizing: border-box;
+            padding:1em;
+            max-width:95%;
+            border: 0 !important;
+        }
     }
 
 }
@@ -748,10 +763,31 @@ iframe {
                 width: 90%;
                 margin: auto;
             }
+            
+            h1{
+                font-size:2em;
+                margin:0 .7em .5em .7em;
+            }
+            
+            h2{
+                margin:.5em 1.75em;
+            }
 
             h3 {
                 font-size:1.3em;
                 margin:.25em 1.25em;
+            }
+            
+            h4{
+                font-size:2em;
+                margin:auto;
+                text-align: center;
+            }
+            
+            h5{
+                max-width:70%;
+                text-align: center;
+                margin: .5em auto 1em auto;
             }
 
             .col {
@@ -789,9 +825,9 @@ iframe {
 
             p, details {
                 padding: 0 1em;
-                font-size: .8em !important;
+                font-size: .85em !important;
                 line-height:1.5em;
-                margin-bottom:.5em !important;
+                margin-bottom:1em !important;
             }
 
             
@@ -817,6 +853,11 @@ iframe {
         max-width: 100%;
         width: 120px;
         mix-blend-mode: lighten;
+        
+        @media only screen and (max-width: 800px) {
+            width:60px;
+        
+        }
     }
 
     p {
@@ -832,8 +873,16 @@ iframe {
     .col-third {
         border-radius: 5px;
         padding: 1em;
-    }
+        
     
+        @media only screen and (max-width: 800px) {
+            
+            padding: .5em;
+            
+            
+        }
+
+    }
     
 
 }
@@ -862,6 +911,8 @@ iframe {
 
         .testimonial{
             max-width:100%;
+            font-size:.8em;
+            margin:.5em;
         }
         
     }
