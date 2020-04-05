@@ -156,7 +156,7 @@ body {
         justify-content: center;
         text-align: center;
         max-width:90vw;
-        img{max-width:210px;width:48%;margin:.5em;}
+        img{max-width:210px;width:45%;margin:.5em;}
     }
 
     .box-inner {
@@ -177,8 +177,8 @@ body {
 
     p {
         color: $light-color;
-        font-size:1.1em;
-        line-height:1.55em;
+        font-size:1em;
+        line-height:1.65em;
         text-align: left;
         font-weight: 300;
         text-rendering: optimizeLegibility;
@@ -205,11 +205,26 @@ body {
         font-size:2em;
         font-weight:600;
     }
+    
+    @media only screen and (max-width: 850px) {
+    
+        img.chia{
+            float:none;
+            text-align: center;
+            margin: auto;
+            max-width:250px;
+        }
+        
+        .intro-p{
+            margin-top:-6em;
+            padding: 1.25em;
+        }
+        
+    }
 
 }
 
 .social {
-        margin-top: 2em;
 
         a {
 
