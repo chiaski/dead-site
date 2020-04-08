@@ -425,16 +425,6 @@ details[open] > summary{
     p {
         color: $white;
 
-        a {
-            color: #fff;
-            border-bottom: 1px solid $accent;
-            text-decoration: none;
-        }
-
-        a::before {
-            color: $accent;
-            content: "◦ ";
-        }
     }
 
     .thing {
@@ -503,6 +493,7 @@ details[open] > summary{
     }
     
     
+    .showcase-container.landing .projects-archive{
     .showcase-container.landing .projects-archive{
          
         padding:1em;

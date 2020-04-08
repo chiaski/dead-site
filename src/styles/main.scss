@@ -517,7 +517,7 @@ a:hover{
     }
     
     
-    @media only screen and (max-width: 850px) {
+    @media only screen and (max-width: 800px) {
         
         h2 {
             font-size: 1.8em;
@@ -530,7 +530,6 @@ a:hover{
             transition: all .1s ease-in-out;
         }
         
-
         .project-box {
             max-width: 600px;
             width: 100%;
