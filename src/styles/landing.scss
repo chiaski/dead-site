@@ -118,9 +118,11 @@ details[open] > summary{
             color: #dde7ea !important;
         }
         
-        a::after {
-        content: " ↗︎";
-        font-family: "Segoe UI Symbol";
+        a::before {
+            content: "↗︎ ";
+            padding-right:.25em;
+            font-size: .8em;
+            font-family: "Segoe UI Symbol";
         }
         
     }
@@ -494,12 +496,10 @@ details[open] > summary{
     
     
     .showcase-container.landing .projects-archive{
-    .showcase-container.landing .projects-archive{
          
         padding:1em;
         position: relative;
         box-sizing: border-box;
-        
         animation: marquee 30s linear infinite;
         
     }
@@ -514,6 +514,7 @@ details[open] > summary{
                 opacity:1;
             }
 
+        
         .showcase-box {
             display: inline-block;
             border-bottom: 1px solid $white;
@@ -575,16 +576,15 @@ details[open] > summary{
                 width: 70vw !important;
             }
 
+        
+
+            .showcase-box:hover > h1 {
+                color: $accent;
+            }
+
+
         }
-
-        .showcase-box:hover > h1 {
-            color: $accent;
-        }
-
-
-
-        a {}
-
+        
     }
 
 
@@ -597,6 +597,10 @@ details[open] > summary{
         width: 80%;
         line-height: 1.2em;
         padding: .5em 0;
+        text-decoration: none;
+        color: $white;          
+        border-bottom: 1px solid $accent;
+
     }
 
     a:hover {
@@ -640,7 +644,7 @@ details[open] > summary{
 #project-random video, #project-random source{
     filter:grayscale(.9);
     min-width: 100%;
-min-height: 100%;
+    min-height: 100%;
 }
 
 
@@ -649,7 +653,6 @@ min-height: 100%;
     0%   { top:   8em }
     100% { top: -58em }
 }
-
 
 
 @-webkit-keyframes color-change {

@@ -267,7 +267,7 @@ body {
             transition: all .3s linear;
         }
 
-        a::after {
+        a::before {
             content: " ↗\00FE0E";
         font-family:"Segoe UI Symbol";
         }
