@@ -268,8 +268,10 @@ body {
         }
 
         a::before {
-            content: " ↗\00FE0E";
-        font-family:"Segoe UI Symbol";
+            content: "↗\00FE0E ";
+            padding-right: .5em;
+            font-size:.8em;
+            font-family:"Segoe UI Symbol";
         }
 
         a:hover {
