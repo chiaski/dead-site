@@ -119,10 +119,10 @@ details[open] > summary{
         }
         
         a::before {
-            content: "↗︎ ";
+            content: "↗︎\00FE0E ";
             padding-right:.25em;
             font-size: .8em;
-            font-family: "Segoe UI Symbol";
+            font-family: "GT America" !important;
         }
         
     }
