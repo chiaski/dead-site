@@ -373,6 +373,16 @@ blockquote a, p a, li a, .summary-details a{
     transition: all .3s linear;
 }
 
+details[open] summary ~ * {
+  animation: sweep .75s ease-in-out;
+}
+
+@keyframes sweep {
+  0%    {opacity: 0; margin-left: -10px}
+  100%  {opacity: 1; margin-left: 0;}
+}
+
+
 a:hover{
     opacity:1;
 }
