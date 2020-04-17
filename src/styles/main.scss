@@ -538,6 +538,7 @@ a:hover{
         
         h2::after{
             content: " →\00FE0E";
+            font-family: "GT America";
             margin-left:.1em;
             transition: all .1s ease-in-out;
         }

@@ -338,13 +338,21 @@ iframe {
         font-weight: 100;
     }
 
+    details summary{
+                -webkit-transition: all .3s linear;
+                -moz-transition: all .3s linear;
+                -ms-transition: all .3s linear;
+                -o-transition: all .3s linear;
+                transition: all .3s linear;
+    }
     
     details summary::-webkit-details-marker {
         display: none;
     }
 
     details summary::after {
-        content: "Learn more...";
+        content: "More →\00FE0E";
+        padding-bottom: 1.25em;
         margin-left:1.25em;
     }
     
