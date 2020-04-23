@@ -208,6 +208,8 @@ body {
     
     @media only screen and (max-width: 850px) {
     
+        padding:0 2em;
+        
         img.chia{
             float:none;
             text-align: center;
@@ -217,7 +219,6 @@ body {
         
         .intro-p{
             margin-top:-6em;
-            padding: 1.25em;
         }
         
     }
