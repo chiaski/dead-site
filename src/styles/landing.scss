@@ -111,7 +111,7 @@ details[open] > summary{
             padding:.2em;
             background:none !important;
             color: $accent !important;
-            margin-right:.3em;
+            margin-right:.75em;
         }
         
         a:hover{
@@ -121,7 +121,7 @@ details[open] > summary{
         
         a::before {
             content: "↗︎\00FE0E ";
-            padding-right:.25em;
+            padding-right:.4em;
             font-size: .8em;
             font-family: "GT America" !important;
         }
