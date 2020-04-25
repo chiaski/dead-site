@@ -1159,7 +1159,7 @@ iframe {
 
 
 .alt {
-    color: $white !important;
+    color: $white;
 
     #footer {
         background: none;
@@ -1171,23 +1171,23 @@ iframe {
     }
 
     h2 {
-        color:$white !important;
+        color:$white;
     }
 
     #portfolio {
         p {
-            color: $white !important;
+            color: $white ;
         }
 
     }
 
     .quote-block {
-        color: $white !important;
+        color: $white ;
     }
 
     blockquote {
         color: $white !important;
-        opacity:0.9 !important;
+        opacity:0.9 ;
     }
 
 }
