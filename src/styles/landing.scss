@@ -493,7 +493,6 @@ details[open] > summary{
     
     .showcase-container.landing .projects-archive{
          
-        padding:1em;
         position: relative;
         box-sizing: border-box;
         animation: marquee 30s linear infinite;
@@ -502,7 +501,7 @@ details[open] > summary{
     
     .showcase-container {
         
-        padding: 1em;
+        margin:1em 0;
         display: flex;
         flex-wrap: wrap;
         
