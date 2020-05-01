@@ -598,7 +598,7 @@ iframe {
         }
         
         h1, h2, h3{
-            max-width: 770px;
+            max-width: 750px;
             margin: auto;
         }
         
@@ -698,6 +698,8 @@ iframe {
 
         blockquote {
             box-sizing: border-box;
+            max-width:70%;
+            margin:auto;
             font-size: 1em ;
             padding: 1em;
             margin-bottom: 2em;
@@ -733,7 +735,8 @@ iframe {
 
             max-width:800px;
             box-sizing: border-box;
-            margin: 1em 0;
+            padding:1em 0;
+            margin: auto;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
