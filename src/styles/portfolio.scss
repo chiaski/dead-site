@@ -798,8 +798,20 @@ iframe {
             box-sizing: border-box;
 
             .image-container {
-                width: 100%;
+                margin: auto;
+                width: 90%;
                 display: block;
+                
+                img{
+                    margin: 0;
+                    padding: 0;
+                    width: 100%;
+                }
+                
+            }
+            
+            hr{
+                margin: 0;
             }
 
 
@@ -808,24 +820,15 @@ iframe {
             }
 
             h1,
-            h2 {
-                width: 90%;
+            h2, h3 {
+                max-width: 100% !important;
+                width:100%;
                 margin: auto;
             }
             
             h1{
-                font-size:2.4em;
-                margin:0 .7em .5em .7em;
-                line-height: 1.4em;
-            }
-            
-            h2{
-                margin:.5em 1.75em;
-            }
-
-            h3 {
-                font-size:1.3em;
-                margin:.25em 1.25em;
+                font-size:1.8em;
+                padding:.5em 0;
             }
             
             h4{
@@ -842,10 +845,15 @@ iframe {
 
             .col {
                 max-width: 100%;
+                width: 100%;
                 display: flex;
                 
+                p{
+                    margin:0;
+                }
+                
                     h3{
-                        font-size:1em !important;
+                        font-size:1.4em;
                     }
                     
 
@@ -854,7 +862,7 @@ iframe {
                 }
 
                 .col-third {
-                    width:48%;
+                    width:49%;
                     min-width: 150px;
                 }
 
@@ -874,7 +882,7 @@ iframe {
             }
 
             p, details {
-                padding: 0 1em;
+                margin: 0;
                 font-size: 1.1em;
                 line-height:1.9em;
                 margin-bottom:1em !important;
