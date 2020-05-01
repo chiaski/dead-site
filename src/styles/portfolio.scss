@@ -103,6 +103,17 @@ a {
 }
 
 
+.image-container-max{
+    position: relative;
+    
+    img{
+        width:150%;
+        padding: 1em;
+    }
+    
+}
+
+
 .image-container-long {
 
     max-width: 90vw;
@@ -560,10 +571,12 @@ iframe {
 
     .portfolio-description {
 
-        vertical-align: center;
-        justify-content: center;
         display: flex;
-        max-width: 780px;
+        place-items:center;
+        max-width: 900px;
+        margin: 0;
+        padding: 0;
+        
         
         iframe{
             max-width:100%;
@@ -584,12 +597,16 @@ iframe {
             opacity:1;
         }
         
+        h1, h2, h3{
+            max-width: 770px;
+            margin: auto;
+        }
+        
         h1 {
             font-family: "Canela";
             font-weight: 400;
             font-size: 2.7em;
             padding: 0;
-            max-width: 650px;
             
         }
 
@@ -610,7 +627,7 @@ iframe {
             font-family: "Canela";
             font-weight: 300;
             padding-top: 1em;
-            max-width:95%;
+            width:95%;
             margin:auto;
         }
 
@@ -622,7 +639,8 @@ iframe {
             line-height: 1.8em;
             padding-top: .5em;
             padding-bottom: 1em;
-            max-width: 95%;
+            width:95%;
+            max-width: 750px;
             margin: auto;
 
         }
@@ -713,6 +731,7 @@ iframe {
 
         .col {
 
+            max-width:800px;
             box-sizing: border-box;
             margin: 1em 0;
             display: flex;
@@ -894,20 +913,19 @@ iframe {
     }
 
     h3 {
+        font-family: "GT America" !important;
         padding: 0 !important;
-        font-size: 1.4em !important;
+        font-size: 1.1em !important;
     }
 
     .col-third {
         border-radius: 5px;
-        padding: 1em;
+        padding: .5em;
         
     
         @media only screen and (max-width: 800px) {
             
-            padding: .5em;
-            
-            
+            padding: .5em;  
         }
 
     }
@@ -1006,6 +1024,8 @@ iframe {
     color: #2c2929;
     font-size: 2.6em;
     line-height: 1.2em;
+    max-width:80%;
+    margin: auto;
     padding: 0 10%;
     font-weight: 300;
     font-family: "Canela", serif;
