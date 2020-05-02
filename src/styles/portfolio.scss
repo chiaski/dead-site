@@ -766,6 +766,7 @@ iframe {
 
             .col-half {
                 width: 48%;
+                
                 img:first-child{
                     margin-top:1em;
                 }
@@ -835,6 +836,7 @@ iframe {
             
             h2, h3{
                 text-align: center;
+                margin-bottom:.5em;
             }
             
             h4{
@@ -852,6 +854,7 @@ iframe {
             .col {
                 max-width: 100%;
                 width: 100%;
+                padding: .25em;
                 display: flex;
                 
                 p{
@@ -912,6 +915,7 @@ iframe {
 .feature-list {
 
     text-align: center;
+    padding:1em 0;
 
     img {
         max-width: 100%;
@@ -940,10 +944,20 @@ iframe {
         padding: .5em;
         
     
-        @media only screen and (max-width: 800px) {
+        @media only screen and (max-width: 600px) {
             
-            margin: 0;
+            padding: .5em;
+            margin: .5em;
+            width:100% !important;
             
+            img{
+                display: none;
+            }
+            
+            p{
+                margin: 0;
+                padding: 0 !important;
+            }
             
         }
 
@@ -1122,11 +1136,19 @@ iframe {
 .p-emphasis {
     font-weight: 800;
     width:90%;
-    max-width:650px;
+    max-width:600px;
     font-size: 1.4em;
     font-family: "GT America Expanded" !important;
-    padding: 1.4em;
+    margin:1em 0;
     text-align: center;
+    
+    @media only screen and (max-width: 600px) {
+     
+        
+        
+    }
+    
+    
 }
 
 .summary-add {
