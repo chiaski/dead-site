@@ -60,6 +60,7 @@ a {
 
     img {
         max-width: 98%;
+        margin: auto;
         display: block;
         padding:.25em;
     }
@@ -181,6 +182,10 @@ a {
 
 .image-container-iphone {
     max-height: 604px;
+    
+    img{
+        max-width:337px !important;
+    }
     
 }
 
@@ -811,7 +816,7 @@ iframe {
                 display: block;
                 
                 img{
-                    margin: 0;
+                    margin: auto;
                     padding: 0;
                     width: 100%;
                 }
