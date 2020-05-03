@@ -314,9 +314,10 @@ iframe {
     ol.feature-large,
     ul.feature-large {
         li {
-            font-size: 1.1em;
+            font-size: 1.125rem;
+            padding-bottom:.5em;
             margin: auto;
-            line-height: 2em;
+            line-height: 1.5em;
         
         }
     }
@@ -652,7 +653,7 @@ iframe {
         }
 
         li {
-            font-size: 1em;
+            font-size: 1.125rem;
         }
 
         p strong {
