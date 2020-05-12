@@ -1,11 +1,11 @@
-$bg-color: #001a19;
+$bg-color: #3131ef;
 $light-color: #f0f8f7;
 $white: #f0f8f7;
 
 $text: #2b2c36;
-$accent: #3131ef;
-$blue-screen: #141cd1;
-$white-screen: #141317;
+$accent: #a3a3f4;
+$blue-screen: #cacdf2;
+$white-screen: #3131ef;
 
 body {
     background: $white-screen;
@@ -206,7 +206,7 @@ details[open] > summary{
 
 
         a:hover {
-            color: blue;
+            color: $accent;
         }
 
         sup {
@@ -296,7 +296,7 @@ details[open] > summary{
     }
 
     a.btn:hover {
-        color:blue;
+        color: $white;
     }
 
     .portfolio-project-container {
@@ -611,7 +611,7 @@ details[open] > summary{
 
     a:hover {
         color: $accent !important;
-        border-bottom: 1px solid blue !important;
+        border-bottom: 1px solid $white !important;
     }
 
 }

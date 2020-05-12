@@ -1,11 +1,11 @@
 @import "reset.scss";
 @import "fonts.css";
 
-$bg-color: #141317;
+$bg-color: #3131ef;
 $light-color: #f0f8f7;
 $white: #f0f8f7;
-$black: #141317;
-$accent: #3131ef;
+$black: #3131ef;
+$accent: #a3a3f4;
 
 /* MAIN STRUCTURAL ELEMENTS HEHEHE */
 
@@ -98,7 +98,7 @@ body {
         font-weight: 100;
         font-size: 1.1em;
         text-decoration: none;
-        color: #9a9a9a;
+        color: #f9f9f9;
     }
 
     .header-left a:hover {
@@ -112,7 +112,7 @@ body {
 
     .header-right a {
         text-decoration: none;
-        color: #9a9a9a;
+        color: #f9f9f9;
         font-size:1.2em;
         margin: .5em;
         padding: .5em;
@@ -482,6 +482,10 @@ a:hover{
         img{
             filter:invert(1);
         }
+        
+        a{
+            color: $accent !important;
+        }
 
         
     }
@@ -535,9 +539,9 @@ a:hover{
         text-transform: uppercase;
         text-align: left;
         display: block;
-        font-size: .8em !important;
+        font-size: .9em !important;
         letter-spacing: .5px;
-        color: #9a9a9a !important;
+        color: $accent !important;
         padding:0; margin:0;
         cursor: e-resize;
     }
@@ -664,7 +668,7 @@ a:hover{
         }
 
         a h3:hover {
-            color: blue;
+            color: $accent;
         }
 
         h3 {
@@ -723,7 +727,7 @@ a:hover{
 
         a:hover{
             opacity:1 !important;
-            color:blue;
+            color: $accent;
             mix-blend-mode: difference;
         }
     
