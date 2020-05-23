@@ -705,6 +705,12 @@ details[open] summary ~ * {
             opacity:0.6 !important;
             background: none !important;
             cursor:pointer;
+            
+            -webkit-transition: all .3s linear;
+            -moz-transition: all .3s linear;
+            -ms-transition: all .3s linear;
+            -o-transition: all .3s linear;
+            transition: all .3s linear;
 
             @media only screen and (max-width: 850px) {
                 display: block;
@@ -716,7 +722,6 @@ details[open] summary ~ * {
         a:hover{
             opacity:1 !important;
             color: $accent;
-            mix-blend-mode: difference;
         }
     
 }
