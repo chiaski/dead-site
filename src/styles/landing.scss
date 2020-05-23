@@ -90,16 +90,6 @@ details[open] > summary{
             
         }
         
-        a {
-            font-family:"GT America" !important;
-            text-decoration: none ;
-            padding:.1em;
-        }
-        
-        a:hover{
-            color:#fff !important;
-        }
-    
 
     }
 
@@ -197,17 +187,11 @@ details[open] > summary{
 
     p {
         margin: 0;
-        
         //font-family:"Aktiv-Grotesk" !important;
         font-size: 1.2em;
         line-height: 1.4em;
         font-weight: 300;
         color: $white;
-
-
-        a:hover {
-            color: $accent;
-        }
 
         sup {
             font-weight: 300;
@@ -219,23 +203,15 @@ details[open] > summary{
 
 
     a {
-        color: #000;
         text-decoration: none;
+        color: $white-screen;
+        padding:.1em;
         background: $white;
-        font-family: "GT America Expanded";
-        -webkit-transition: all .3s linear;
-        -moz-transition: all .3s linear;
-        -ms-transition: all .3s linear;
-        -o-transition: all .3s linear;
-        transition: all .3s linear;
+        font-family: "GT America";
+        opacity:1;
     }
-
-    a:hover {
-        color: $accent;
-        text-decoration: none;
-        background: #3422bc;
-    }
-
+    
+    
 
     em {
         font-style: normal !important;

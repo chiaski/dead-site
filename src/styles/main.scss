@@ -378,19 +378,16 @@ body {
             color: $black !important;
         }
         }
-        
 
 }
 
 
 blockquote a, p a, li a, .summary-details a{
-    opacity:0.75;
-    -webkit-transition: all .3s linear;
-    -moz-transition: all .3s linear;
-    -ms-transition: all .3s linear;
-    -o-transition: all .3s linear;
-    transition: all .3s linear;
+    //opacity:0.75;
+    
 }
+
+
 
 details[open] summary ~ * {
   animation: sweep .75s ease-in-out;
@@ -402,9 +399,6 @@ details[open] summary ~ * {
 }
 
 
-a:hover{
-    opacity:1;
-}
 
 
 .portfolio-project-container {
@@ -711,12 +705,6 @@ a:hover{
             opacity:0.6 !important;
             background: none !important;
             cursor:pointer;
-            -webkit-transition: all .3s linear;
-            -moz-transition: all .3s linear;
-            -ms-transition: all .3s linear;
-            -o-transition: all .3s linear;
-            transition: all .3s linear;
-            
 
             @media only screen and (max-width: 850px) {
                 display: block;
@@ -764,44 +752,6 @@ a:hover{
 .portfolio-box:hover {
     background: #f6e404;
 }
-
-//
-//.love-container {
-//
-//    justify-content: center;
-//    text-align: left;
-//    display: flex;
-//    flex-wrap: wrap;
-//    margin-left: -1em;
-//
-//    .love-col {
-//        margin: 0 1em 1em 1em;
-//    }
-//
-//    .love-col h2 {
-//        padding-bottom: .5em;
-//    }
-//
-//    .love-col p {
-//        max-width: 250px;
-//        margin: 0 0 .5em 0;
-//        line-height: 1.35em;
-//    }
-//
-//    .love-col p::before {
-//        content: "↘\00FE0E ";
-//        font-size: .8em;
-//        color: $accent;
-//        padding-right: .3em;
-//        line-height: 0;
-//        font-family:"GT America";
-//    }
-//    
-//    p a{
-//        color: $accent;
-//    }
-//
-//}
 
 
 /* MAIN ELEEMENTS */
