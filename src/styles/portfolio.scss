@@ -257,10 +257,6 @@ iframe {
     }
 }
 
-#portfolio-page {
-    top: 0;
-    padding-top: 100px;
-}
 
 #portfolio-intro {
     padding-top: 3em;
@@ -300,6 +296,11 @@ iframe {
         }
     }
 
+}
+
+
+.container #portfolio{
+    padding-top:50px;
 }
 
 #portfolio {
@@ -585,9 +586,11 @@ iframe {
 
         display: flex;
         place-items:center;
+        width:100vw;
         max-width: 900px;
         margin: 0;
         padding: 0;
+        box-sizing: border-box;
         
         
         iframe{
@@ -925,16 +928,23 @@ iframe {
 
 #portfolio .intro{
     
-    width:100%;
+    width:100vw;
     min-height:600px;
     
-    background-size: fit;
+    background-size: contain;
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
     
     
     .quote-block{
+        font-size:3.6rem;
+        line-height: 1em;
+        margin-bottom: .5em;
+    }
+    
+    
+    .intro-inner{
         position: relative;
         top:200px;
     }

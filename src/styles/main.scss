@@ -15,20 +15,22 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-::-moz-selection { /* Code for Firefox */
-  color: $white;
-  background: $accent;
+::-moz-selection {
+    /* Code for Firefox */
+    color: $white;
+    background: $accent;
 }
 
 ::selection {
-  color: $white;
-  background: $accent;
+    color: $white;
+    background: $accent;
 }
 
 
 .container {
     position: absolute;
-    width: 100vw;
+    
+    width: 100%;
     top: 0;
     left: 0;
     margin: 0;
@@ -37,7 +39,7 @@ body {
     align-content: flex-start;
     justify-content: center;
     align-items: center;
-    font-family:"GT America", Helvetica;
+    font-family: "GT America", Helvetica;
 }
 
 .box {
@@ -113,40 +115,40 @@ body {
     .header-right a {
         text-decoration: none;
         color: #f9f9f9;
-        font-size:1.2em;
+        font-size: 1.2em;
         margin: .5em;
         padding: .5em;
-        line-height:32px;
+        line-height: 32px;
         font-family: 'GT America';
-    -webkit-transition: all .3s linear;
-    -moz-transition: all .3s linear;
-    -ms-transition: all .3s linear;
-    -o-transition: all .3s linear;
-    transition: all .3s linear;
+        -webkit-transition: all .3s linear;
+        -moz-transition: all .3s linear;
+        -ms-transition: all .3s linear;
+        -o-transition: all .3s linear;
+        transition: all .3s linear;
     }
 
     .header-right a:hover {
         mix-blend-mode: exclusion;
-        text-shadow:0 0 20px #fff;
+        text-shadow: 0 0 20px #fff;
     }
-    
+
     @media only screen and (max-width: 700px) {
-    
+
         padding: .5em;
-        
-        .header-left{
+
+        .header-left {
             display: none;
         }
-        
-        .header-right{
+
+        .header-right {
             width: 100%;
             text-align: center;
         }
-        
-        .header-right a{
+
+        .header-right a {
             font-size: 1em;
         }
-        
+
     }
 
 }
@@ -158,24 +160,29 @@ body {
     align-items: center;
     vertical-align: center;
     cursor: help;
-    font-family:"GT America";
+    font-family: "GT America";
 
     padding: 2em;
     margin-top: 8vh;
-    
-    h1{
-        font-family:"Canela";
+
+    h1 {
+        font-family: "Canela";
         font-style: italic;
         font-weight: 100;
-        font-size:2.4em;
+        font-size: 2.4em;
         text-align: center;
     }
-    
-    .masterpiece{
+
+    .masterpiece {
         justify-content: center;
         text-align: center;
-        max-width:90vw;
-        img{max-width:210px;width:45%;margin:.5em;}
+        max-width: 90vw;
+
+        img {
+            max-width: 210px;
+            width: 45%;
+            margin: .5em;
+        }
     }
 
     .box-inner {
@@ -183,8 +190,8 @@ body {
     }
 
     img.chia {
-        float:left;
-        margin-right:-9em;
+        float: left;
+        margin-right: -9em;
         width: 60vw;
         max-width: 350px;
         padding: 1em 2em 0 0;
@@ -196,8 +203,8 @@ body {
 
     p {
         color: $light-color;
-        font-size:1em;
-        line-height:1.65em;
+        font-size: 1em;
+        line-height: 1.65em;
         text-align: left;
         font-weight: 300;
         text-rendering: optimizeLegibility;
@@ -215,49 +222,49 @@ body {
             color: $white;
         }
     }
-    
-    h2{
-        font-family:"Canela";
+
+    h2 {
+        font-family: "Canela";
         text-align: center;
-        color:$accent;
-        margin:1em;
-        font-size:2em;
-        font-weight:600;
+        color: $accent;
+        margin: 1em;
+        font-size: 2em;
+        font-weight: 600;
     }
-    
+
     @media only screen and (max-width: 850px) {
-    
-        padding:0 2em;
-        
-        img.chia{
-            float:none;
+
+        padding: 0 2em;
+
+        img.chia {
+            float: none;
             text-align: center;
             margin: auto;
-            max-width:250px;
+            max-width: 250px;
         }
-        
-        .intro-p{
-            margin-top:-6em;
+
+        .intro-p {
+            margin-top: -6em;
         }
-        
+
     }
 
 }
 
 .social {
 
-        a {
+    a {
 
-            text-decoration: none;
-            color: $accent;
-            margin-right: 1em;
-            padding-top: .5em;
-        }
-
-        a:hover {
-            text-shadow:0 0 10px $accent;
-        }
+        text-decoration: none;
+        color: $accent;
+        margin-right: 1em;
+        padding-top: .5em;
     }
+
+    a:hover {
+        text-shadow: 0 0 10px $accent;
+    }
+}
 
 
 #footer {
@@ -279,7 +286,7 @@ body {
             color: $light-color;
             cursor: ne-resize;
             margin: 0 1em;
-            opacity:0.7;
+            opacity: 0.7;
 
             -webkit-transition: all .3s linear;
             -moz-transition: all .3s linear;
@@ -291,74 +298,75 @@ body {
         a::before {
             content: "↗\00FE0E ";
             padding-right: .5em;
-            font-size:.8em;
-            font-family:"GT America" !important;
+            font-size: .8em;
+            font-family: "GT America" !important;
         }
 
         a:hover {
-            opacity:1;
+            opacity: 1;
         }
 
         a.about {
             float: left;
         }
     }
-    
-   
-    
+
+
+
 }
- .footer-newsletter{
-        
-        text-align: left;
-        margin-left:1em;
-        height:60px;
-        margin-bottom:1.5em;
-        
-        h3{
-            display: inline-block;
-            font-family:"Canela";
-            font-weight:100;
-            font-style: italic;
-            font-size:2.2em;
-            line-height:60px;
-            height:50px;
-            margin-right:1em;
-            vertical-align: bottom;
-        }
-        
-        input[type="text"]{
-            display:inline-block;
-            font-family: "GT America";
-            border:0;
-            height:40px;
-            width:80% !important;
-            max-width:300px;
-            padding:1em;
-            
-        }
-        
-        input[type="submit"]{
-            display: inline-block;
-            box-sizing: border-box;
-            padding:1em;
-            background:none;
-            color:#fff;
-            border:0;
-            font-size:1.3em;
-            margin:0;
-            -webkit-transition: all .3s linear;
-            -moz-transition: all .3s linear;
-            -ms-transition: all .3s linear;
-            -o-transition: all .3s linear;
-            transition: all .3s linear;
-        }
-        
-        input[type="submit"]:hover{
-            padding-left:1.5em;
-        }
-        
-        
+
+.footer-newsletter {
+
+    text-align: left;
+    margin-left: 1em;
+    height: 60px;
+    margin-bottom: 1.5em;
+
+    h3 {
+        display: inline-block;
+        font-family: "Canela";
+        font-weight: 100;
+        font-style: italic;
+        font-size: 2.2em;
+        line-height: 60px;
+        height: 50px;
+        margin-right: 1em;
+        vertical-align: bottom;
     }
+
+    input[type="text"] {
+        display: inline-block;
+        font-family: "GT America";
+        border: 0;
+        height: 40px;
+        width: 80% !important;
+        max-width: 300px;
+        padding: 1em;
+
+    }
+
+    input[type="submit"] {
+        display: inline-block;
+        box-sizing: border-box;
+        padding: 1em;
+        background: none;
+        color: #fff;
+        border: 0;
+        font-size: 1.3em;
+        margin: 0;
+        -webkit-transition: all .3s linear;
+        -moz-transition: all .3s linear;
+        -ms-transition: all .3s linear;
+        -o-transition: all .3s linear;
+        transition: all .3s linear;
+    }
+
+    input[type="submit"]:hover {
+        padding-left: 1.5em;
+    }
+
+
+}
 
 
 
@@ -370,32 +378,42 @@ body {
             color: #000;
         }
     }
-    
-        .footer-newsletter{
-            
-            
-        input[type="submit"]{
+
+    .footer-newsletter {
+
+
+        input[type="submit"] {
             color: $black !important;
         }
-        }
+    }
 
 }
 
 
-blockquote a, p a, li a, .summary-details a{
+blockquote a,
+p a,
+li a,
+.summary-details a {
     //opacity:0.75;
-    
+
 }
 
 
 
 details[open] summary ~ * {
-  animation: sweep .75s ease-in-out;
+    animation: sweep .75s ease-in-out;
 }
 
 @keyframes sweep {
-  0%    {opacity: 0; margin-left: -10px}
-  100%  {opacity: 1; margin-left: 0;}
+    0% {
+        opacity: 0;
+        margin-left: -10px
+    }
+
+    100% {
+        opacity: 1;
+        margin-left: 0;
+    }
 }
 
 
@@ -415,10 +433,10 @@ details[open] summary ~ * {
         cursor: e-resize;
         filter: grayscale(0);
     }
-    
+
     .project-box {
         width: 500px;
-        overflow:hidden;
+        overflow: hidden;
         box-sizing: border-box;
         justify-content: center;
         align-items: center;
@@ -429,33 +447,34 @@ details[open] summary ~ * {
         text-decoration: none;
         margin-bottom: 2em;
 
-        h2{
-            margin-top:.25em;
-            font-size:2em;
+        h2 {
+            margin-top: .25em;
+            font-size: 2em;
             color: $white;
-            margin-bottom:.1em;
+            margin-bottom: .1em;
             -webkit-transition: all .3s linear;
             -moz-transition: all .3s linear;
             -ms-transition: all .3s linear;
             -o-transition: all .3s linear;
             transition: all .3s linear;
         }
-        
-        .quote-block{
+
+        .quote-block {
             margin-bottom: .5em;
             max-width: 100%;
-    
+
             width: 100%;
         }
 
         img {
-            overflow:hidden;
+            overflow: hidden;
             max-width: 100%;
             padding: 0 .5em;
             margin: auto;
             text-align: center;
-            cursor: e-resize; filter:invert(0);
-           
+            cursor: e-resize;
+            filter: invert(0);
+
             -webkit-transition: all .3s linear;
             -moz-transition: all .3s linear;
             -ms-transition: all .3s linear;
@@ -470,18 +489,18 @@ details[open] summary ~ * {
 
 
     }
-    
-    
-    .project-box:hover{
-        img{
-            filter:invert(1);
+
+
+    .project-box:hover {
+        img {
+            filter: invert(1);
         }
-        
-        a{
+
+        a {
             color: $accent !important;
         }
 
-        
+
     }
 
     .project-unavailable {
@@ -507,7 +526,7 @@ details[open] summary ~ * {
     }
 
     h2 {
-        padding:.3em 0 0 0;
+        padding: .3em 0 0 0;
         margin: 0;
         display: inline-block;
         font-weight: 300;
@@ -536,41 +555,44 @@ details[open] summary ~ * {
         font-size: .9em !important;
         letter-spacing: .5px;
         color: $accent !important;
-        padding:0; margin:0;
+        padding: 0;
+        margin: 0;
         cursor: e-resize;
     }
 
 
     @media only screen and (max-width: 1100px) {
-        
-        .project-box{
-            width:390px;
+
+        .project-box {
+            width: 390px;
         }
     }
-    
-    
+
+
     @media only screen and (max-width: 800px) {
-        
+
         h2 {
             font-size: 1.8em;
             text-align: left;
         }
-        
-        h2::after{
+
+        h2::after {
             content: " →\00FE0E";
             font-family: "GT America";
-            margin-left:.1em;
+            margin-left: .1em;
             transition: all .1s ease-in-out;
         }
-        
+
         .project-box {
             max-width: 600px;
             width: 100%;
             text-align: left;
-            margin-bottom:0;
-            
-            h3{display:none;}
-            
+            margin-bottom: 0;
+
+            h3 {
+                display: none;
+            }
+
             img {
                 width: 100%;
             }
@@ -579,17 +601,17 @@ details[open] summary ~ * {
                 display: none;
             }
         }
-        
-        
+
+
 
         .project-box:hover {
             img {
                 filter: grayscale(1);
             }
-            
-            h2::after{
-                color:#fff;
-                margin-left:.25em;
+
+            h2::after {
+                color: #fff;
+                margin-left: .25em;
             }
 
         }
@@ -598,7 +620,9 @@ details[open] summary ~ * {
 
 }
 
-#portfolio-list h3{text-align:left;}
+#portfolio-list h3 {
+    text-align: left;
+}
 
 #projects {
 
@@ -696,34 +720,36 @@ details[open] summary ~ * {
 
 
 .portfolio-nav {
-        text-align: center;
-        font-size: 1.2em;
+    padding: .5em;
+    text-align: center;
+    font-size: 1.2em;
+    line-height: .8em;
 
-        a {
-            font-family: "GT America Expanded";
-            margin: 0 1em;
-            opacity:0.6 !important;
-            background: none !important;
-            cursor:pointer;
-            
-            -webkit-transition: all .3s linear;
-            -moz-transition: all .3s linear;
-            -ms-transition: all .3s linear;
-            -o-transition: all .3s linear;
-            transition: all .3s linear;
+    a {
+        font-family: "GT America Expanded";
+        margin: 0 1em;
+        opacity: 0.6 !important;
+        background: none !important;
+        cursor: pointer;
 
-            @media only screen and (max-width: 850px) {
-                display: block;
-                padding:.5em .25em;
-            }
-            
+        -webkit-transition: all .3s linear;
+        -moz-transition: all .3s linear;
+        -ms-transition: all .3s linear;
+        -o-transition: all .3s linear;
+        transition: all .3s linear;
+
+        @media only screen and (max-width: 850px) {
+            display: block;
+            padding: .5em .25em;
         }
 
-        a:hover{
-            opacity:1 !important;
-            color: $accent;
-        }
-    
+    }
+
+    a:hover {
+        opacity: 1 !important;
+        color: $accent;
+    }
+
 }
 
 .portfolio-box {
@@ -778,7 +804,7 @@ mark {
 
 hr {
     margin: 3em 0 3em 0;
-    height:20px;
+    height: 20px;
 }
 
 
