@@ -103,9 +103,6 @@ a {
         }
     }
     
-    
-    
-
 }
 
 
@@ -193,6 +190,7 @@ a {
     max-height:450px;
 }
 
+
 @media only screen and (max-width: 700px) {
     #portfolio img {
         max-width: 90vw !important;
@@ -205,6 +203,7 @@ a {
     }
 
 }
+
 
 #navigation .white {
     a {
@@ -224,13 +223,14 @@ iframe {
 .box {
     background: none;
     width: 100%;
-    margin: 0 !important;
-}
+    margin: 0;
 
-.box-inner {
-    margin: 2em !important;
-}
+    .box-inner {
+        margin: 1.5em;
+    }
 
+
+}
 
 
 .box-still {
@@ -304,8 +304,6 @@ iframe {
 
 
 #portfolio {
-
-    min-height: 480px;
     
     .box-inner{
         max-width: 100%;
