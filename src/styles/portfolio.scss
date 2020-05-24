@@ -921,6 +921,28 @@ iframe {
     }
 }
 
+
+
+#portfolio .intro{
+    
+    width:100%;
+    min-height:600px;
+    
+    background-size: fit;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    
+    
+    .quote-block{
+        position: relative;
+        top:200px;
+    }
+
+    
+}
+
+
 /* SPECIAL */
 
 .feature-list {
@@ -1067,7 +1089,7 @@ iframe {
 }
 
 .quote-block {
-    text-align: center !important;
+    text-align: center;
     color: #2c2929;
     font-size: 2.6em;
     line-height: 1.2em;
