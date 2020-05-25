@@ -24,17 +24,14 @@ html {
 }
 
 box {
-
+    
     margin: 0;
     padding: 0;
     left: 0;
 
     .box-inner {
-        position: absolute;
         left: 0;
-        padding: 0;
-        margin: 0;
-        width: 90%;
+        width: 95%;
         left: 0;
     }
 }
@@ -220,18 +217,6 @@ iframe {
 }
 
 
-.box {
-    background: none;
-    width: 100%;
-    margin: 0;
-
-    .box-inner {
-        margin: 1.5em;
-    }
-
-
-}
-
 
 .box-still {
     position: fixed;
@@ -257,19 +242,6 @@ iframe {
     }
 }
 
-
-#portfolio-intro {
-    padding-top: 3em;
-    background: none;
-    max-height: 340px;
-
-    .box-inner,
-    .inner-center {
-        padding: 0;
-        margin: 0;
-
-    }
-}
 
 #portfolio-list {
     background: none;
@@ -588,8 +560,7 @@ iframe {
 
         display: flex;
         place-items:center;
-        width:100vw;
-        max-width: 900px;
+        max-width: 920px;
         margin: 0;
         padding: 0;
         box-sizing: border-box;
@@ -811,8 +782,9 @@ iframe {
 
         @media only screen and (max-width: 800px) {
 
-            max-width: 100vw;
-            padding: 1em;
+            max-width: 100%;
+            padding: 0 2em;
+            margin: auto;
             box-sizing: border-box;
 
             .image-container {
