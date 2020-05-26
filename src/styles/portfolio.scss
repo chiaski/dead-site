@@ -52,8 +52,8 @@ a {
     overflow: hidden;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    
+    flex-direction: column;
+    justify-content: center;    
 
     img {
         max-width: 98%;
@@ -83,7 +83,6 @@ a {
         justify-content: center;
         text-align: center;
         display: block;
-        width: 100%;
         font-size: .8em;
         padding: .5em;
         opacity:0.85;
@@ -98,6 +97,11 @@ a {
         em::after{
             content: " ↗\00FE0E";
         }
+    }
+    
+    a em{
+        display: block;
+
     }
     
 }
