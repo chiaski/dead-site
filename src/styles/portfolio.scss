@@ -283,6 +283,13 @@ iframe {
 
 #portfolio {
     
+    
+            .portfolio-study{
+                display: flex;
+                flex-wrap: wrap;
+                max-width: 100%;
+            }
+    
     .box-inner{
         max-width: 100%;
     }
@@ -794,11 +801,6 @@ iframe {
             box-sizing: border-box;
 
             
-            .portfolio-study{
-                display: flex;
-                flex-wrap: wrap;
-                max-width: 100%;
-            }
             
             .image-container {
                 margin: auto;
