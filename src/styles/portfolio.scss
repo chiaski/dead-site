@@ -55,7 +55,7 @@ a {
     flex-direction: column;
     justify-content: center;    
 
-    img {
+    img, video{
         max-width: 98%;
         margin: auto;
         display: block;
@@ -807,7 +807,7 @@ iframe {
                 width: 90%;
                 display: block;
                 
-                img{
+                img, video{
                     margin: auto;
                     padding: 0;
                     width: 100%;
