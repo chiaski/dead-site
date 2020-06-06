@@ -381,8 +381,10 @@ iframe {
     }
 
     .full-button {
-        margin: 0 2em !important;
-        display: block;
+        
+        flex-basis:100%;
+        margin: 1em auto;
+        display: inline-block;
         text-align: center;
 
         a {
@@ -514,6 +516,7 @@ iframe {
 
 
     .portfolio-travel {
+        width:100%;
         margin-top: 50px;
         padding: 1.5em;
         height: auto;
