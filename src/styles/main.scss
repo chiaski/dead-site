@@ -172,6 +172,7 @@ body {
         font-weight: 100;
         font-size: 2.4em;
         text-align: center;
+        color: $bg-color;
     }
 
     .masterpiece {
@@ -197,13 +198,12 @@ body {
         max-width: 350px;
         padding: 1em 2em 0 0;
         opacity: .6;
-        mix-blend-mode: lighten;
         pointer-events: none;
 
     }
 
     p {
-        color: $light-color;
+        color: $bg-color;
         font-size: 1em;
         line-height: 1.65em;
         text-align: left;
@@ -220,14 +220,14 @@ body {
             line-height: 1.3em;
             text-decoration: none;
             cursor: pointer;
-            color: $white;
+            color: $bg-color;
         }
     }
 
     h2 {
         font-family: "Canela";
         text-align: center;
-        color: $accent;
+        color: $bg-color !important;
         margin: 1em;
         font-size: 2em;
         font-weight: 600;
