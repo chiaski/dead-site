@@ -195,6 +195,7 @@ body {
         float: left;
         width:220px;
         margin-right:1.25em;
+        margin-bottom:.2em;
         pointer-events: none;
     }
 
@@ -237,11 +238,11 @@ body {
             float: none;
             text-align: center;
             margin: auto;
-            max-width: 250px;
+            max-width: 180px;
         }
 
         .intro-p {
-            margin-top: -6em;
+            margin-top: -1em;
         }
 
     }
