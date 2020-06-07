@@ -516,6 +516,8 @@ iframe {
 
 
     .portfolio-travel {
+        
+        margin:2em;
         width:100%;
         margin-top: 50px;
         padding: 1.5em;
@@ -1247,9 +1249,11 @@ iframe {
 }
 
 .portfolio-large {
-    margin: 3em 0 2em 0 !important;
+    margin: 3em auto 2em auto !important;
     padding: 1em;
     min-height: 250px;
+    width:80%;
+    max-width:700px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
