@@ -534,14 +534,18 @@ details[open] > summary{
             }
 
             p {
-                margin: 0;
+                margin: 0 0 .5em 0;
                 color: $white;
-                line-height: 1.4em;
+                line-height: 1.2em;
+                
             }
-            
 
-
-
+        }
+        
+        .showcase-box:hover{
+            h1{
+                color: $accent;
+            }
         }
 
 
