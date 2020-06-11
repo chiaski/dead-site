@@ -202,9 +202,10 @@ body {
     p {
         color: $bg-color;
         font-size: 1em;
+        font-family:"Suisse Intl";
         line-height: 1.65em;
         text-align: left;
-        font-weight: 300;
+        font-weight: 400;
         text-rendering: optimizeLegibility;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
@@ -213,6 +214,7 @@ body {
             display: inline-block;
             font-size: 1.3em;
             font-family: "Canela";
+            font-weight:100;
             font-style: italic;
             line-height: 1.3em;
             text-decoration: none;
