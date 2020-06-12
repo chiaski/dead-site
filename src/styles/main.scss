@@ -208,18 +208,18 @@ body {
 
     p {
         color: $bg-color;
-        font-size: 1em;
-        font-family:"Suisse Intl";
+        font-size: 1.3em;
+        font-family:"Canela";
         line-height: 1.65em;
         text-align: left;
-        font-weight: 400;
+        font-weight: 300;
         text-rendering: optimizeLegibility;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
 
         a {
             display: inline-block;
-            font-size: 1.3em;
+            font-size: 1.2em;
             font-family: "Canela";
             font-weight:100;
             font-style: italic;
@@ -228,6 +228,9 @@ body {
             cursor: pointer;
             color: $bg-color;
         }
+    }
+    a{
+            color: $bg-color;
     }
 
     h2 {
@@ -261,9 +264,7 @@ body {
 .social {
 
     a {
-
         text-decoration: none;
-        color: $accent;
         margin-right: 1em;
         padding-top: .5em;
     }
@@ -293,7 +294,7 @@ body {
             color: $light-color;
             cursor: ne-resize;
             margin: 0 1em;
-            opacity: 0.7;
+            opacity: 0.75;
 
             -webkit-transition: all .3s linear;
             -moz-transition: all .3s linear;
