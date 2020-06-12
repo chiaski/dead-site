@@ -2,9 +2,8 @@ node_modules
 testing
 yarn.lock
 .DS_Store
-*/.DS_Store
+**/.DS_Store
 */fonts/*
 fonts/*
 public/assets/fonts/*
 *.psd
-.DS_Store
