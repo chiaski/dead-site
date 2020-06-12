@@ -136,7 +136,8 @@ body {
 
     .header-right a:hover {
         mix-blend-mode: exclusion;
-        text-shadow: 0 0 20px #fff;
+        text-shadow: 0 0 20px rgba(255, 255, 255, 0.59);
+        cursor: ne-resize;
     }
 
     @media only screen and (max-width: 700px) {
@@ -208,9 +209,9 @@ body {
 
     p {
         color: $bg-color;
-        font-size: 1.3em;
+        font-size: 1.25em;
         font-family:"Canela";
-        line-height: 1.65em;
+        line-height: 1.4em;
         text-align: left;
         font-weight: 300;
         text-rendering: optimizeLegibility;
@@ -229,6 +230,7 @@ body {
             color: $bg-color;
         }
     }
+    
     a{
             color: $bg-color;
     }
