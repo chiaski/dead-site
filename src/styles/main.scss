@@ -7,10 +7,17 @@ $white: #f0f8f7;
 $black: #3131ef;
 $accent: #a3a3f4;
 
-/* MAIN STRUCTURAL ELEMENTS HEHEHE */
+$white-screen: #3131ef;
+
+
+/* MAIN STRUCTURAL ELEMENTS */
 
 body {
+    background: $white-screen;
+    cursor: default;
     text-rendering: optimizeLegibility;
+    font-display: swap;
+    font-family: "GT America", Helvetica, Arial, Sans-Serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }

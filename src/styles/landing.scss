@@ -7,17 +7,6 @@ $accent: #a3a3f4;
 $blue-screen: #cacdf2;
 $white-screen: #3131ef;
 
-body {
-    background: $white-screen;
-    cursor: default;
-    font-display: swap;
-    font-family: "GT America", Helvetica, Arial, Sans-Serif;
-}
-
-div {
-    box-sizing: border-box;
-}
-
 a {
     -webkit-transition: all .3s linear;
     -moz-transition: all .3s linear;
