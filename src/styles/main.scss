@@ -164,6 +164,7 @@ body {
 
 #about {
 
+    font-display: swap;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -266,6 +267,7 @@ body {
 .social {
 
     a {
+        color: $white;
         text-decoration: none;
         margin-right: 1em;
         padding-top: .5em;
