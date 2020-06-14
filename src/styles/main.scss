@@ -36,16 +36,13 @@ body {
 
 .container {
     position: absolute;
-    
     width: 100%;
     top: 0;
     left: 0;
     margin: 0;
     display: flex;
     flex-wrap: wrap;
-    align-content: flex-start;
-    justify-content: center;
-    align-items: center;
+    place-items:center;
     font-family: "GT America", Helvetica;
 }
 
@@ -55,7 +52,6 @@ body {
     align-items: center;
     width: 100%;
     justify-content: center;
-    background: none;
 
     .box-inner {
         margin: auto;
@@ -86,7 +82,7 @@ body {
 
     p {
         font-family: "GT America";
-        line-height: 1.7em;
+        line-height: 1.6em;
     }
 }
 
