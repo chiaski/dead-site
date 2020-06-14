@@ -13,19 +13,6 @@ html {
     padding-bottom: 2em;
 }
 
-box {
-    
-    margin: 0;
-    padding: 0;
-    left: 0;
-
-    .box-inner {
-        left: 0;
-        width: 95%;
-        left: 0;
-    }
-}
-
 a {
     text-decoration: none;
 }
@@ -787,7 +774,7 @@ iframe {
             margin-bottom: .5em;
         }
 
-        .p-emphasis {
+        p.emphasis {
             font-weight: 800;
             max-width:600px;
             font-size: 1.4em;
@@ -949,7 +936,6 @@ iframe {
     
     @media only screen and (max-width: 860px) {
         
-        max-width:95vw;
         background-size: cover;
         background-position: center 50px;
         
@@ -959,6 +945,13 @@ iframe {
             margin:0;
         }
             
+    }
+    
+    @media only screen and (max-width: 500px) {
+    
+        .quote-block{
+            font-size:2.2em;
+        }
     }
 
     
