@@ -245,6 +245,10 @@ details[open] > summary{
     
     margin-top:-1.5em;
     text-align: center;
+    
+    .box-inner{
+        max-width:800px;
+    }
 
     a {
         text-decoration: none;
@@ -383,6 +387,7 @@ details[open] > summary{
 
     .box-inner {
         padding-top: 70px;
+        
     }
 
     p {
