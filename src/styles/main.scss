@@ -96,42 +96,35 @@ body {
     display: flex;
     justify-content: space-between;
     background-repeat: repeat-x;
+    
+    a{
+        color: $white;
 
-    .header-left a {
-        font-family: 'Canela';
+        font-size:1.6em;
         font-weight: 100;
-        font-size: 1.1em;
-        text-decoration: none;
-        color: #f9f9f9;
-    }
-
-    .header-left a:hover {
-        background: none;
-        mix-blend-mode: difference;
-    }
-
-    .header-left {
-        font-size: 1.4em;
-    }
-
-    .header-right a {
-        text-decoration: none;
-        color: #f9f9f9;
-        font-size: 1.2em;
-        margin: .5em;
+        font-family: 'Canela';
+        
         padding: .5em;
-        line-height: 32px;
-        font-family: 'GT America';
         -webkit-transition: all .3s linear;
         -moz-transition: all .3s linear;
         -ms-transition: all .3s linear;
         -o-transition: all .3s linear;
         transition: all .3s linear;
+        
     }
-
-    .header-right a:hover {
+    
+    a:hover{
         mix-blend-mode: exclusion;
         text-shadow: 0 0 20px rgba(255, 255, 255, 0.59);
+    }
+
+
+    .header-left a:hover {
+        background: none;
+    }
+
+
+    .header-right a:hover {
         cursor: ne-resize;
     }
 
