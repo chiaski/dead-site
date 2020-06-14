@@ -8,16 +8,6 @@ $dark-mid: #262c2b;
 
 $lightcyan: #eff7f4;
 
-::-moz-selection {
-    background: #f8c9c9;
-    color: $dark-mid;
-}
-
-::selection {
-    background: #f8c9c9;
-    color: $dark-mid;
-}
-
 html {
     scroll-behavior: smooth;
     padding-bottom: 2em;
@@ -40,15 +30,14 @@ a {
     text-decoration: none;
 }
 
-
 /* IMAGE CONTAINER TYPES */
 
 
 .image-container {
     
+    margin-left:1em;
     text-align: center;
     width:100%;
-    max-width: 98vw;
     overflow: hidden;
     display: flex;
     flex-wrap: wrap;
@@ -57,7 +46,7 @@ a {
 
     img, video{
         max-width: 98%;
-        margin: auto;
+        margin:0 auto;
         display: block;
         padding:.25em;
     }
