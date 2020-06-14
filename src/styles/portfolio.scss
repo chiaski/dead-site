@@ -798,6 +798,17 @@ iframe {
             margin-bottom: .5em;
         }
 
+        .p-emphasis {
+            font-weight: 800;
+            max-width:600px;
+            font-size: 1.4em;
+            line-height:1.2em;
+            font-family: "GT America Expanded";
+            margin:.5em auto;
+            text-align: center;
+        }
+
+
 
         @media only screen and (max-width: 800px) {
 
@@ -1211,24 +1222,6 @@ iframe {
     
 }
 
-
-.p-emphasis {
-    font-weight: 800;
-    width:90%;
-    max-width:600px;
-    font-size: 1.4em;
-    font-family: "GT America Expanded" !important;
-    margin:1em 0;
-    text-align: center;
-    
-    @media only screen and (max-width: 600px) {
-     
-        
-        
-    }
-    
-    
-}
 
 .summary-add {
     text-align: left;
