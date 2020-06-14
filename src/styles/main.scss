@@ -119,11 +119,10 @@ body {
         text-shadow: 0 0 20px rgba(255, 255, 255, 0.59);
     }
 
-
-    .header-left a:hover {
-        background: none;
+    
+    .header-right a{
+        margin-left:1em;
     }
-
 
     .header-right a:hover {
         cursor: ne-resize;
