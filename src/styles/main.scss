@@ -35,15 +35,14 @@ body {
 
 
 .container {
-    position: absolute;
     width: 100%;
-    top: 0;
-    left: 0;
+    height: auto;
     margin: 0;
     display: flex;
     flex-wrap: wrap;
     place-items:center;
     font-family: "GT America", Helvetica;
+    
 }
 
 .box {

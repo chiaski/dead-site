@@ -252,16 +252,14 @@ iframe {
 
 }
 
-.container #portfolio{
-    padding-top:0;
-}
-
 
 #portfolio {
     
+    margin:0 auto;
     
-            .portfolio-study{
-                display: flex;
+    .portfolio-study{
+        margin: 0 auto;
+        display: flex;
                 flex-wrap: wrap;
                 max-width: 100%;
             }
@@ -493,8 +491,9 @@ iframe {
 
     .portfolio-travel {
         
+        box-sizing: border-box;
         margin:2em;
-        width:100%;
+        width:95%;
         margin-top: 50px;
         padding: 1.5em;
         height: auto;
