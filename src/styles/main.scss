@@ -105,7 +105,8 @@ body {
         text-decoration: none;
         font-size:1.6em;
         font-weight: 100;
-        font-family: 'Canela';
+        font-family: 'Canela', 'Georgia';
+        font-display: swap;
         
         padding: .5em;
         -webkit-transition: all .3s linear;
@@ -623,10 +624,6 @@ details[open] summary ~ * {
 
 }
 
-#portfolio-list h3 {
-    text-align: left;
-}
-
 h1, h2, h3{
     width: 100%;
 }
@@ -713,8 +710,9 @@ h1, h2, h3{
 
 // Portfolio
 
-.portfolio-link {
-    text-decoration: none;
+
+#portfolio-list h3 {
+    text-align: left;
 }
 
 .portfolio-container {
@@ -723,8 +721,6 @@ h1, h2, h3{
     align-items: center;
     justify-content: center;
 }
-
-
 
 .portfolio-nav {
     padding: .5em;
