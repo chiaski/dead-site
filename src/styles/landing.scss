@@ -15,7 +15,23 @@ a {
     transition: all .3s linear;
 }
 
+#navigation{
 
+    margin-top:1.5em;
+    text-align: center;
+
+    div{
+        width:90vw;
+        max-width: 900px;
+        margin:0 auto;
+    }
+    
+    a{
+        margin:0 .25em;
+        justify-content: center;
+    }
+    
+}
 
 .landing-style-container {
     position: absolute;
@@ -54,25 +70,6 @@ a {
 
     }
 
-    .special-links{
-        text-align: right;
-        margin-bottom:1em;
-        
-        a{
-            padding:.2em;
-            text-decoration: none;
-            background:none !important;
-            color: $accent !important;
-            margin-right:.75em;
-        }
-        
-        a:hover{
-            text-shadow: 0 0 20px rgba(255, 255, 255, 0.59);
-            cursor: ne-resize;
-        }
-        
-        
-    }
     
     .landing-overlay{
         position: absolute;
@@ -135,6 +132,7 @@ a {
 
 #landing {
 
+    margin-top:2em;
     min-height:440px;
     height:auto;
     
@@ -256,7 +254,7 @@ a {
         
     
         p {
-            font-size: 1.1em;
+            font-size: 1.2em;
             line-height: 1.4em;
         }
 
