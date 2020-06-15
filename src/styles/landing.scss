@@ -138,44 +138,6 @@ a {
     min-height:440px;
     height:auto;
     
-    details{
-        font-size:1em;
-        line-height:.8em;
-        font-family:"GT America";
-    }
-
-
-    details summary::-webkit-details-marker {
-      display:none;
-    }
-
-    details[open]{
-        margin-top:1em;
-    }
-    details[open] > summary{
-        display: none;
-    }
-
-    
-    details a {
-        font-family: "GT America";
-    }
-    
-    details a:hover{
-        color: $white-screen;
-        background:$white;
-    }
-    
-    @media only screen and (max-width: 700px) {
-        min-height:380px;
-    
-        details{
-            font-size:.8em;
-            display: none;
-        }
-    }
-
-    
 
     h1 {
         font-family: "Canela";
@@ -214,9 +176,18 @@ a {
     a{
         text-decoration: none;
         padding:.1em;
+        color: $white;
+
+    }
+    
+    p a::after{
+        content: "↗\00FE0E ";
+        font-size:.8em;
+    }
+    
+    p a:hover{
         color: $accent;
     }
-
      
     em {
         font-style: normal !important;
@@ -230,6 +201,48 @@ a {
         color:$accent;
     }
 
+    
+    details{
+        font-size:1em;
+        line-height:.8em;
+        font-family:"GT America";
+    }
+
+
+    details summary::-webkit-details-marker {
+      display:none;
+    }
+
+    details[open]{
+        margin-top:1em;
+    }
+    details[open] > summary{
+        display: none;
+    }
+
+    
+    details a {
+        font-family: "GT America";
+    }
+    
+    details a::after{
+        content: "";
+    }
+    
+    details a:hover{
+        color: $white-screen;
+        background:$white;
+    }
+    
+    @media only screen and (max-width: 700px) {
+        min-height:380px;
+    
+        details{
+            font-size:.8em;
+            display: none;
+        }
+    }
+    
     /* LANDING SHOWCASE */
 
 
