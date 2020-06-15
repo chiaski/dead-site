@@ -16,16 +16,6 @@ a {
 }
 
 
-details summary::-webkit-details-marker {
-  display:none;
-}
-
-details[open]{
-    margin-top:1em;
-}
-details[open] > summary{
-    display: none;
-}
 
 .landing-style-container {
     position: absolute;
@@ -44,6 +34,10 @@ details[open] > summary{
             font-family:"Canela", "GT America", apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial;
             line-height:1.3em !important;
             font-size:2.6em !important;
+            
+            a{
+                font-family:"Canela";
+            }
             
             
             strong{
@@ -149,8 +143,29 @@ details[open] > summary{
         line-height:.8em;
         font-family:"GT America";
     }
-    
 
+
+    details summary::-webkit-details-marker {
+      display:none;
+    }
+
+    details[open]{
+        margin-top:1em;
+    }
+    details[open] > summary{
+        display: none;
+    }
+
+    
+    details a {
+        font-family: "GT America";
+    }
+    
+    details a:hover{
+        color: $white-screen;
+        background:$white;
+    }
+    
     @media only screen and (max-width: 700px) {
         min-height:380px;
     
@@ -196,22 +211,13 @@ details[open] > summary{
 
     }
 
-
-    p a {
+    a{
         text-decoration: none;
         padding:.1em;
-        color: #6060e6;
-        font-family: "GT America";
+        color: $accent;
     }
-    
-    p a:hover{
-        background:yellow;
-    }
-    
-        
-    
-    
 
+     
     em {
         font-style: normal !important;
         font-family: "Canela";
