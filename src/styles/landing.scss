@@ -413,6 +413,9 @@ a {
 
 #landing-chia {
 
+    margin:0 auto;
+    max-width: 1000px;
+    
     .box-inner {
         padding-top: 70px;
         
@@ -424,12 +427,14 @@ a {
     }
 
     .thing {
+        
         margin-top: 50vh;
         position: absolute;
         background-position: center center;
         background-size: contain;
         background-repeat: no-repeat;
-        z-index: -999;
+        pointer-events: none;
+        z-index: 99;
         
         @media only screen and (max-width: 700px) {
             display: none;
@@ -618,42 +623,6 @@ a {
 
 }
 
-
-/* LANDING AREAS */
-
-.landing-name {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 2em;
-
-    h1 {
-        font-size: 2.6em !important;
-    }
-
-
-    @media only screen and (max-width: 700px) {
-        display: none;
-    }
-}
-
-
-#project-random{
-    position: absolute;
-    width:100vw;
-    height:100vh;
-    top:0; left: 0;
-    pointer-events: none;
-    z-index:9999999;
-    mix-blend-mode: screen;
-    opacity:0.2;
-}
-
-#project-random video, #project-random source{
-    filter:grayscale(.9);
-    min-width: 100%;
-    min-height: 100%;
-}
 
 
 
