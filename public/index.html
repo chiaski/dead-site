@@ -85,13 +85,13 @@
 
 <div id="cbox">
 
-        <div class="cbox-here" style="display:none;">
+        <div id="cbox-here" style="display:none;">
             
         <iframe src="https://www6.cbox.ws/box/?boxid=838368&boxtag=3XKQTb" width="500" height="450" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>	
 	
         </div>
         
-        <button onClick="$('.cbox-here').toggle();">Let's chat! 🌈</button>
+        <button onClick="var thing = document.getElementById('cbox-here');thing.style.display = (thing.style.display == 'none') ? 'block' : 'none';">Let's chat! 🌈</button>
         
     </div>
 
