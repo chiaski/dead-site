@@ -47,7 +47,7 @@ a {
         box-sizing: border-box;
         display: block;
         width: 80vw;
-        max-width: 750px;
+        max-width: 850px;
         margin-top:1em;
         
         p.intro{
@@ -128,7 +128,7 @@ a {
         color: $accent;
     }
     
-    .cbox-here iframe{
+    3cbox-here iframe{
         margin-right: 1em;
         mix-blend-mode: difference;
     }
@@ -208,6 +208,7 @@ a {
     details{
         font-size:1em;
         line-height:.8em;
+        max-width: 90%;
         font-family:"GT America";
     }
 
@@ -272,11 +273,11 @@ a {
 
 #landing-works {
     
-    margin-top:-1.5em;
+    margin-top:-1em;
     text-align: center;
     
     .box-inner{
-        max-width:800px;
+        max-width:1000px;
     }
 
     a {
@@ -314,8 +315,8 @@ a {
         }
 
         .project-box {
-            width: 260px; 
-            max-width: 90%;
+            width: 285px; 
+            max-width: 95%;
             box-sizing: border-box;
             justify-content: center;
             align-items: center;
@@ -339,7 +340,7 @@ a {
             font-weight: 300;
             font-style: italic;
             font-family: "Canela", Helvetica, Arial;
-            font-size: 1.8em;
+            font-size: 2.4em;
             line-height: 1.1em;
             cursor: e-resize;
         }
@@ -354,7 +355,8 @@ a {
             text-transform: uppercase;
             text-align: center;
             display: block;
-            font-size: .5em !important;
+            font-size: .6em !important;
+            letter-spacing: 1px;
             color: $blue-screen;
             margin: .2em 0;
             font-weight: 100;
