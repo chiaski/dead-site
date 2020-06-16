@@ -479,11 +479,13 @@ a {
     
     
     .showcase-container.landing{
-        max-height:300px;
-        overflow: hidden;
+        padding:1em;
+        border:1px solid $white;
+        max-width: 700px;
+        max-height:250px;
+        overflow-y: scroll;
         box-sizing: border-box;
         color: $white;
-        padding:1.5em 0;
     }
     
     
@@ -491,7 +493,6 @@ a {
          
         position: relative;
         box-sizing: border-box;
-        animation: marquee 30s linear infinite;
         
     }
     
@@ -600,7 +601,6 @@ a {
 
     a {
         display: inline-block;
-        width: 80%;
         line-height: 1.2em;
         padding: .5em 0;
         text-decoration: none;
@@ -616,13 +616,6 @@ a {
 
 }
 
-
-
-
-@keyframes marquee {
-    0%   { top:   8em }
-    100% { top: -58em }
-}
 
 
 @-webkit-keyframes color-change {
