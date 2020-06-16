@@ -29,7 +29,6 @@ a {
     overflow: hidden;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
     justify-content: center;    
 
     img, video{
@@ -57,12 +56,13 @@ a {
 
 
     em {
-        justify-content: center;
         text-align: center;
         display: block;
         font-size: .8em;
         padding: .5em;
         opacity:0.85;
+        width: 100%;
+        background: red !important;
     }
     
     a{
@@ -759,6 +759,12 @@ iframe {
                 margin: 0 1% 3% 1%;
             }
 
+        }
+        
+        .col.feature{
+            h3{
+                text-align: center;
+            }
         }
 
 
