@@ -1253,26 +1253,24 @@ iframe {
 }
 
 .portfolio-large {
-    margin: 3em auto 2em auto !important;
+    margin:0 auto;
     padding: 1em;
     min-height: 250px;
     width:80%;
-    max-width:700px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    display: flex;
-    vertical-align: center;
     cursor: help !important;
+    display: block;
 
     .portfolio-large-center {
-        margin: auto;
+        margin: 4em;
     }
 
     h1 {
         cursor: help !important;
         text-align: center !important;
-        font-size: 2em !important;
+        mix-blend-mode: difference;
         line-height: 1em;
     }
 
