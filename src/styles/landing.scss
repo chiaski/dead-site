@@ -239,10 +239,12 @@ a {
 #cbox{
     
     position: fixed;
-    width:100%;
+    left: 50%;
+    transform: translateX(-50%);
     bottom:15px;
     text-align: center;
     z-index:999;
+    margin:0 auto;
     
     button{
         padding:1em;
