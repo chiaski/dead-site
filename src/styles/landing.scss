@@ -90,16 +90,6 @@ a {
 
     
     
-    @media only screen and (max-width: 600px) {
-        .special{
-            p.intro{
-                font-size:2em !important; 
-                line-height:1.2em;
-            }
-        }
-        
-    }
-
 
 }
 
@@ -239,7 +229,7 @@ a {
         background:$white;
     }
     
-    @media only screen and (max-width: 700px) {
+    @media only screen and (max-width: 780px) {
         min-height:380px;
     
         details{
