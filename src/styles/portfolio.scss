@@ -34,14 +34,12 @@ a {
 
     img, video{
         max-width: 98%;
+        max-height:80vh;
         margin:0 auto;
         display: block;
         padding:.25em;
     }
     
-    img.feature{
-        max-height:80vh;
-    }
     
     img.image-part {
         max-width: 70%;
@@ -86,6 +84,7 @@ a {
     }
     
 }
+
 
 
 .image-container-max{
@@ -160,7 +159,7 @@ a {
 
 
 .image-container-iphone {
-    max-height: 720px;
+    max-height: 680px;
     
     img{
         max-width:337px !important;
@@ -745,12 +744,15 @@ iframe {
 
             img {
                 max-width:95%;
+                max-height: none;
                 box-sizing: border-box;
             }
             
 
             .col-half {
+                margin:0 .1em;
                 width: 49%;
+                
                 
                 img:first-child{
                     margin-top:1em;
