@@ -232,7 +232,7 @@ iframe {
 
 
     .box-inner {
-        max-width: 1000px;
+        max-width: 1200px;
         margin-top: 100px;
     }
 
@@ -263,7 +263,7 @@ iframe {
         display: flex;
                 flex-wrap: wrap;
                 max-width: 100%;
-            }
+    }
     
     .box-inner{
         max-width: 100%;
@@ -551,11 +551,11 @@ iframe {
 
     }
 
-    .portfolio-description {
+    .box-inner {
 
         display: flex;
         justify-content: center;
-        max-width: 920px;
+        max-width: 1200px;
         margin: 0;
         padding: 0;
         box-sizing: border-box;
@@ -716,7 +716,7 @@ iframe {
 
         .col {
 
-            max-width:800px;
+            max-width:1200px;
             box-sizing: border-box;
             padding:1em 0;
             margin: auto;
@@ -996,6 +996,8 @@ iframe {
     }
 
     .col-third {
+        
+        max-width:230px;
         border-radius: 5px;
         padding: .5em;
         
