@@ -38,92 +38,6 @@ a {
     
 }
 
-.landing-style-container {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-
-    .special {
-        box-sizing: border-box;
-        display: block;
-        width: 80vw;
-        max-width: 850px;
-        margin-top:1em;
-        
-        p.intro{
-            
-            font-family:"Canela", "GT America", apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial;
-            line-height:1.3em !important;
-            font-size:2.8em !important;
-            
-            a{
-                font-family:"Canela";
-            }
-            
-            
-            strong{
-                font-weight:300;
-                -webkit-animation: color-change 3s infinite;
-                -moz-animation: color-change 3s infinite;
-                -o-animation: color-change 3s infinite;
-                -ms-animation: color-change 3s infinite;
-                animation: color-change 3s infinite;
-            }
-            
-        }
-        
-
-    }
-
-    
-    #landing-overlay{
-        position: absolute;
-        width:35vw;
-        mix-blend-mode: saturation;
-        pointer-events: none;
-        
-        img{
-            width:100%;
-            max-width:400px;
-        }
-    }
-
-    
-    
-
-}
-
-
-#cbox{
-    
-    position: fixed;
-    width:100%;
-    bottom:15px;
-    text-align: center;
-    z-index:999;
-    
-    button{
-        padding:1em;
-        font-family: "Canela";
-        font-weight: 100;
-        font-size:1em;
-        border:0;
-        background: none;
-        color:#fff;
-        mix-blend-mode: exclusion;
-        margin:1em;
-    }
-    
-    button:hover{
-        color: $accent;
-    }
-    
-    3cbox-here iframe{
-        margin-right: 1em;
-        mix-blend-mode: difference;
-    }
-    
-}
 
 #landing {
 
@@ -152,7 +66,6 @@ a {
 
     p {
         margin: 0;
-        //font-family:"Aktiv-Grotesk" !important;
         font-size: 1.2em;
         line-height: 1.4em;
         font-weight: 300;
@@ -259,6 +172,99 @@ a {
             line-height: .8em;
         }
     } 
+}
+
+
+.landing-style-container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+
+    .special {
+        box-sizing: border-box;
+        display: block;
+        width: 80vw;
+        max-width: 850px;
+        margin-top:1em;
+        
+        p.intro{
+            
+            font-family:"Canela", "GT America", apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial;
+            line-height:1.3em !important;
+            font-size:2.6em !important;
+            
+            a{
+                font-family:"Canela";
+            }
+            
+            strong{
+                font-weight:300;
+                -webkit-animation: color-change 3s infinite;
+                -moz-animation: color-change 3s infinite;
+                -o-animation: color-change 3s infinite;
+                -ms-animation: color-change 3s infinite;
+                animation: color-change 3s infinite;
+            }
+            
+            @media only screen and (max-width: 780px) {
+             
+                font-size:2.2em !important;
+                
+            }
+            
+        }
+        
+
+    }
+
+    
+    #landing-overlay{
+        position: absolute;
+        width:35vw;
+        mix-blend-mode: saturation;
+        pointer-events: none;
+        
+        img{
+            width:100%;
+            max-width:400px;
+        }
+    }
+
+    
+    
+
+}
+
+
+#cbox{
+    
+    position: fixed;
+    width:100%;
+    bottom:15px;
+    text-align: center;
+    z-index:999;
+    
+    button{
+        padding:1em;
+        font-family: "Canela";
+        font-weight: 100;
+        font-size:1em;
+        border:0;
+        background: none;
+        color:#fff;
+        mix-blend-mode: exclusion;
+        margin:1em;
+    }
+    
+    button:hover{
+        color: $accent;
+    }
+    
+    3cbox-here iframe{
+        margin-right: 1em;
+        mix-blend-mode: difference;
+    }
+    
 }
 
 #landing-works {
