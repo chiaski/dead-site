@@ -422,11 +422,11 @@ details[open] summary ~ * {
 
 
 
+
 .portfolio-project-container {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    margin: 0;
     padding: 0;
     box-sizing: border-box;
     justify-content: center;
@@ -435,6 +435,10 @@ details[open] summary ~ * {
     .project-box:hover {
         cursor: e-resize;
         filter: grayscale(0);
+    }
+    
+    a{
+        text-decoration: none;
     }
 
     .project-box {
@@ -449,6 +453,7 @@ details[open] summary ~ * {
         flex-wrap: wrap;
         text-decoration: none;
         margin-bottom: 2em;
+        
 
         h2 {
             margin-top: .25em;
@@ -461,6 +466,22 @@ details[open] summary ~ * {
             -o-transition: all .3s linear;
             transition: all .3s linear;
         }
+        
+
+        h3 {
+            font-family: "GT America";
+            text-transform: uppercase;
+            text-align: left;
+            display: block;
+            font-size: .9em;
+            letter-spacing: .5px;
+            font-weight: 100;
+            color: $accent;
+            padding: 0;
+            margin: 0;
+            cursor: e-resize;
+        }
+
 
         .quote-block {
             margin-bottom: .5em;
@@ -478,17 +499,11 @@ details[open] summary ~ * {
             cursor: e-resize;
             filter: invert(0);
 
-            -webkit-transition: all .3s linear;
-            -moz-transition: all .3s linear;
-            -ms-transition: all .3s linear;
-            -o-transition: all .3s linear;
-            transition: all .3s linear;
         }
 
         .btn {
             display: none !important;
         }
-
 
 
     }
@@ -550,20 +565,6 @@ details[open] summary ~ * {
         font-style: normal;
         font-family: 'GT America Expanded';
     }
-
-    h3 {
-        font-family: "GT America";
-        text-transform: uppercase;
-        text-align: left;
-        display: block;
-        font-size: .9em !important;
-        letter-spacing: .5px;
-        color: $accent !important;
-        padding: 0;
-        margin: 0;
-        cursor: e-resize;
-    }
-
 
     @media only screen and (max-width: 1100px) {
 
@@ -711,6 +712,36 @@ h1, h2, h3{
 // Portfolio
 
 
+#portfolio-list {
+    background: none;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+
+
+    .box-inner {
+        max-width: 1200px;
+        margin-top: 100px;
+    }
+
+    .project-box h2 {
+        font-size: 2.3em;
+        -webkit-transition: all .3s linear;
+        -moz-transition: all .3s linear;
+        -ms-transition: all .3s linear;
+        -o-transition: all .3s linear;
+        transition: all .3s linear;
+    }
+
+    .project-box:hover {
+        h2 {
+            color: $accent !important;
+        }
+    }
+
+}
+
+
 #portfolio-list h3 {
     text-align: left;
 }
@@ -734,6 +765,7 @@ h1, h2, h3{
         opacity: 0.6 !important;
         background: none !important;
         cursor: pointer;
+        color: $white;
 
         -webkit-transition: all .3s linear;
         -moz-transition: all .3s linear;
@@ -750,7 +782,9 @@ h1, h2, h3{
 
     a:hover {
         opacity: 1 !important;
-        color: $accent;
+        color: $accent;        
+        text-shadow: 0 0 20px rgba(255, 255, 255, 0.59);
+
     }
 
 }

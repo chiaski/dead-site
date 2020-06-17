@@ -263,35 +263,6 @@ iframe {
 }
 
 
-#portfolio-list {
-    background: none;
-    display: flex;
-    justify-content: center;
-    width: 100vw;
-
-
-    .box-inner {
-        max-width: 1200px;
-        margin-top: 100px;
-    }
-
-    .project-box h2 {
-        font-size: 2.3em;
-        -webkit-transition: all .3s linear;
-        -moz-transition: all .3s linear;
-        -ms-transition: all .3s linear;
-        -o-transition: all .3s linear;
-        transition: all .3s linear;
-    }
-
-    .project-box:hover {
-        h2 {
-            color: $accent !important;
-        }
-    }
-
-}
-
 
 #portfolio {
     
