@@ -135,7 +135,7 @@ body {
 
         height:50px;
         padding: 2em .5em;
-
+        
         .header-left {
             display: none;
         }
@@ -143,6 +143,10 @@ body {
         .header-right {
             width: 100%;
             text-align: center;
+        }
+        
+        .header-right a{
+            margin-left:0;
         }
         
 
