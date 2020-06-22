@@ -294,6 +294,10 @@ iframe {
 
     ol.feature-large,
     ul.feature-large {
+        
+        max-width: 900px;
+        margin: 1em auto;
+        
         li {
             font-size: 1.125rem;
             padding-bottom:.5em;
