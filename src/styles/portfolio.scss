@@ -1094,7 +1094,7 @@ iframe {
     flex-wrap: wrap;
 
 
-    p {
+    p.summary {
         line-height: 1.7em;
         width: 100% !important;
         max-width: 100% !important;
@@ -1116,7 +1116,7 @@ iframe {
         text-transform: uppercase;
         font-size:.8em;
         letter-spacing: 0.4px;
-    
+        
         strong{
             font-family:"Canela";
             font-weight: 100;
