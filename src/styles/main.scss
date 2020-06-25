@@ -792,13 +792,14 @@ h1, h2, h3{
 .portfolio-nav {
     padding: .5em;
     text-align: center;
-    font-size: 1.2em;
-    line-height: .8em;
 
     a {
-        font-family: "GT America Expanded";
+        font-family: "Canela";
+        font-style: italic;
+        font-weight: 100;
+        font-size:2rem;
         margin: 0 1em;
-        opacity: 0.6 !important;
+        opacity: 0.7;
         background: none !important;
         cursor: pointer;
         color: $white;
