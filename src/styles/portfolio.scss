@@ -299,7 +299,7 @@ iframe {
         margin: 1em auto;
         
         li {
-            font-size: 1.125rem;
+            font-size:1rem;
             padding-bottom:.5em;
             margin: auto;
             line-height: 1.5em;
@@ -1062,11 +1062,12 @@ iframe {
 
 
 .feature-testimonials{
+    
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     padding:2em 1em;
-    
+    margin:0 auto;
     
     .testimonial{
         margin:1em;
