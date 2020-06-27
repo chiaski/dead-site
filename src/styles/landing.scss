@@ -219,13 +219,14 @@ a {
 
     
     #landing-overlay{
+        background: $white-screen;
         position: absolute;
-        width:35vw;
-        mix-blend-mode: saturation;
+        width:50vw;
         pointer-events: none;
         
         img{
             width:100%;
+            mix-blend-mode: exclusion;
             max-width:400px;
         }
     }
@@ -345,11 +346,13 @@ a {
 
 #landing-chia {
 
+    margin-left:-1em;
     margin:0 auto;
-    max-width: 1000px;
+    width: 90%;
+    max-width: 900px;
     
     .box-inner {
-        padding-top: 70px;
+        padding-top: 100px;
         
     }
 
@@ -377,10 +380,11 @@ a {
         font-family: "GT America Expanded";
         display: block;
         color: $white;
-        margin: 0;
+        margin: 0 auto;
         font-weight: 100;
         text-transform: uppercase;
         font-size: 1em;
+        text-align: center;
     }
 
     .landing-word {
@@ -416,6 +420,9 @@ a {
         
     }
     
+    .social{
+        text-align: center;
+    }
     
     .showcase-container.landing{
         padding:1em;
