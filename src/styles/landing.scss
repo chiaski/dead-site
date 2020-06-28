@@ -551,31 +551,51 @@ a {
 }
 
 #landing-more{
-    color: $white;
+    
+    // outline: 1px solid red;
+    padding: 5vh 0;
+    margin: 0 auto;
+    min-height: 100vh;
+    width:100%;
+  //  color: $white-screen;
+  //  background: $white;
     
     p{
         color: $white;
     }
     
-}
+    .box-inner{
+        max-width:1500px;
+        width:90%;
+    }
+    
+    
+    .projects-archive {
 
-.projects-archive {
+        a { 
+            font-family:"Canela";
+            font-weight: 100;
+            font-size:1.6em;
+            line-height: 1.6em;
+            
+            display: inline;
+            
+            padding: .25em;
+            margin:.5em .1em;
+            
+            text-decoration: none;
+            color: $white;
+        //    color: $white-screen;          
 
-    a {
-        display: inline-block;
-        line-height: 1.2em;
-        padding: .5em 0;
-        text-decoration: none;
-        color: $white;          
-        border-bottom: 1px solid $accent;
+        }
+
+        a:hover {
+            color: $accent;
+        }
 
     }
 
-    a:hover {
-        color: $accent !important;
-        border-bottom: 1px solid $white !important;
-    }
-
+    
 }
 
 
