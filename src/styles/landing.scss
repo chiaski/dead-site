@@ -344,6 +344,17 @@ a {
     
 }
 
+
+    h2 {
+        font-family: "GT America Expanded";
+        display: block;
+        color: $white;
+        margin: 0 auto;
+        font-weight: 100;
+        font-size: 1em;
+        text-align: center;
+    }
+
 #landing-chia {
 
     margin-left:-1em;
@@ -376,16 +387,6 @@ a {
             }
     }
 
-    h2 {
-        font-family: "GT America Expanded";
-        display: block;
-        color: $white;
-        margin: 0 auto;
-        font-weight: 100;
-        text-transform: uppercase;
-        font-size: 1em;
-        text-align: center;
-    }
 
     .landing-word {
         position: relative;
@@ -422,6 +423,12 @@ a {
     
     .social{
         text-align: center;
+        
+        a{
+            border-bottom: 1px solid $white;
+            padding:.25em;
+        }
+        
     }
     
     .showcase-container.landing{
@@ -541,6 +548,15 @@ a {
     }
 
 
+}
+
+#landing-more{
+    color: $white;
+    
+    p{
+        color: $white;
+    }
+    
 }
 
 .projects-archive {
