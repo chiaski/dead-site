@@ -790,7 +790,7 @@ h1, h2, h3{
 }
 
 .portfolio-nav {
-    padding: .5em;
+    padding: 1em;
     text-align: center;
 
     a {
@@ -803,6 +803,7 @@ h1, h2, h3{
         background: none !important;
         cursor: pointer;
         color: $white;
+        white-space: nowrap;
 
         -webkit-transition: all .3s linear;
         -moz-transition: all .3s linear;
@@ -811,8 +812,7 @@ h1, h2, h3{
         transition: all .3s linear;
 
         @media only screen and (max-width: 850px) {
-            display: block;
-            padding: .5em .25em;
+            padding: .25em;
         }
 
     }

@@ -1123,11 +1123,10 @@ iframe {
     .summary-details {
         
         padding:1.5em;
+        padding-top: 0;
         display: flex;
         justify-content: space-between;
-        text-transform: uppercase;
-        font-size:.8em;
-        letter-spacing: 0.4px;
+        font-size:1em;
         
         strong{
             font-family:"Canela";
