@@ -73,6 +73,8 @@
 
 
     <div class="header" id="navigation" style="background-image:url(../assets/portfolio/developh/nav-trans.png);">
+        <div id="_progress"></div>
+        
         <div class="header-left"><a href="../index.html" style="color:#1d2da7;">Developh</a></div>
         <div class="header-right">
             <a href="../about.html">About</a>
@@ -523,7 +525,7 @@
                     
                     
             <h3>Intern.ph</h3>
-            <p>In January 2020 we launched a compensation database for the Philippines, giving students the ability to know how they might be compensated at a company and what to expect. This product release falls in line with our Career Immersion programming and Summer Internship matching, programs we're been running since 2018.</p>
+            <p>In January 2020 we launched a compensation database for the Philippines, giving students the ability to know how they might be compensated at a company and what to expect. This product release falls in line with our Career Immersion programming and Summer Internship matching, programs we've been running since 2018. To date, we have over 400+ reports on hundreds of companies and startups.</p>
                     
                          
         <div class="col">
@@ -533,13 +535,10 @@
                 </div>
             </div>        
             <div class="col-half">
-                <span class="image-container">
                     <img loading="lazy" class="image-full board" src="../assets/portfolio/developh/internph-post.jpeg">
-                </span>
                 
-                <p>Intern.ph is an example of a tool we've released that goes into constant use and reach. It's important for us to watch on how these materials get distributed to ensure the data is relevant to all;  most submissions are referred to from outside of Deveoph.</p>
-                
-                    <img loading="lazy" class="image-full comment" src="../assets/portfolio/developh/comment-intern.ph.jpg">
+                <br>
+                <p>Intern.ph is an example of a tool we've released that goes into constant use and reach. It's important for us to watch on how these materials get distributed to ensure the data is relevant to all;  most submissions are referred to from outside of Developh.</p>
                     
                 
             </div>     
@@ -692,6 +691,23 @@ $(document).ready(function() {
         window.location = linkLocation;
     }
 });
+        
+           
+document.addEventListener(
+  "scroll",
+  function() {
+    var scrollTop =
+      document.documentElement["scrollTop"] || document.body["scrollTop"];
+    var scrollBottom =
+      (document.documentElement["scrollHeight"] ||
+        document.body["scrollHeight"]) - document.documentElement.clientHeight;
+    scrollPercent = scrollTop / scrollBottom * 100 + "%";
+    document
+      .getElementById("_progress")
+      .style.setProperty("--scroll", scrollPercent);
+  },
+  { passive: true }
+);
 </script>
     
 
