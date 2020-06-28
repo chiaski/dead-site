@@ -1442,3 +1442,18 @@ iframe {
     }
 }
 
+
+
+/* PROGRESS BAR */
+
+#_progress {
+    position: fixed;
+      --scroll: 0%;
+      background: linear-gradient(to right,rgba(151, 255, 227, 0.51) var(--scroll),transparent 0);
+    mix-blend-mode: difference;
+      width: 100%;
+      height: 2px;
+      top:0;
+    left:0;
+      z-index: 100;
+  }

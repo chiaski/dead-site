@@ -75,6 +75,8 @@
 <body style="background:#121212;">
 
     <div class="header header-alt" id="navigation" style="background-image:url(../assets/portfolio/lastfm/nav-trans.png);">
+        <div id="_progress"></div>
+        
         <div class="header-left"><a href="../index.html">Last.fm</a></div>
         <div class="header-right">
             <a href="../about.html">About</a>
@@ -978,6 +980,23 @@ $(document).ready(function() {
         window.location = linkLocation;
     }
 });
+        
+        
+document.addEventListener(
+  "scroll",
+  function() {
+    var scrollTop =
+      document.documentElement["scrollTop"] || document.body["scrollTop"];
+    var scrollBottom =
+      (document.documentElement["scrollHeight"] ||
+        document.body["scrollHeight"]) - document.documentElement.clientHeight;
+    scrollPercent = scrollTop / scrollBottom * 100 + "%";
+    document
+      .getElementById("_progress")
+      .style.setProperty("--scroll", scrollPercent);
+  },
+  { passive: true }
+);
 </script>
     
 
