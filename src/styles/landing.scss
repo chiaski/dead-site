@@ -277,6 +277,7 @@ a {
 #landing-works {
     
     margin-top:-2em;
+    padding-bottom: 100px;
     text-align: center;
     
     .box-inner{
@@ -361,11 +362,7 @@ a {
     margin:0 auto;
     width: 90%;
     max-width: 900px;
-    
-    .box-inner {
-        padding-top: 100px;
-        
-    }
+
 
     p {
         color: $white;
@@ -565,7 +562,8 @@ a {
     }
     
     .box-inner{
-        max-width:1500px;
+        max-width:1100px;
+        padding: 1em;
         width:90%;
     }
     
@@ -575,13 +573,13 @@ a {
         a { 
             font-family:"Canela";
             font-weight: 100;
-            font-size:1.6em;
+            font-size:1.4em;
             line-height: 1.6em;
             
             display: inline;
             
-            padding: .25em;
-            margin:.5em .1em;
+            margin:.5em 0;
+            margin-right: .75em;
             
             text-decoration: none;
             color: $white;
