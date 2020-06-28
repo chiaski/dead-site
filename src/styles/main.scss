@@ -261,12 +261,14 @@ body {
 }
 
 .social {
-
+    text-align: center;
+    
     a {
         color: $white;
         text-decoration: none;
         margin-right: 1em;
-        padding-top: .5em;
+        border-bottom: 1px solid $white;
+        padding:.25em;
         white-space: nowrap;
     }
 
@@ -274,6 +276,9 @@ body {
         text-shadow: 0 0 10px $accent;
     }
 }
+
+
+
 
 
 #footer {
