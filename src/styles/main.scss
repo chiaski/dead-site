@@ -134,7 +134,11 @@ body {
     @media only screen and (max-width: 700px) {
 
         height:50px;
-        padding: 2em .5em;
+        padding: 1em .5em;
+        
+        a{
+            font-size:1.4em !important;
+        }
         
         .header-left {
             display: none;
