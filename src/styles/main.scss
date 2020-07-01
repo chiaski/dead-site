@@ -206,7 +206,7 @@ body {
 
     p {
         color: $bg-color;
-        font-size: 1.5em;
+        font-size: 1.6em;
         font-family:"Canela";
         line-height: 1.25em;
         text-align: left;
@@ -890,6 +890,7 @@ mark {
 }
 
 hr {
+    border:0;
     margin: 3em 0 3em 0;
     height: 20px;
 }
