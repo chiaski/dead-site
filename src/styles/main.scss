@@ -193,7 +193,7 @@ body {
     }
 
     .box-inner {
-        max-width: 700px;
+        max-width: 1100px;
     }
 
     img.chia {
@@ -206,9 +206,9 @@ body {
 
     p {
         color: $bg-color;
-        font-size: 1.25em;
+        font-size: 1.5em;
         font-family:"Canela";
-        line-height: 1.4em;
+        line-height: 1.25em;
         text-align: left;
         font-weight: 300;
         text-rendering: optimizeLegibility;
@@ -225,6 +225,10 @@ body {
             text-decoration: none;
             cursor: pointer;
             color: $bg-color;
+        }
+        
+        a:hover{
+            text-decoration: underline;
         }
     }
     
