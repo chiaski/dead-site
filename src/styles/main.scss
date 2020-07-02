@@ -40,9 +40,9 @@ body {
     margin: 0;
     display: flex;
     flex-wrap: wrap;
-    place-items:center;
+    place-items: center;
     font-family: "GT America", Helvetica;
-    
+
 }
 
 .box {
@@ -51,9 +51,9 @@ body {
     place-items: center;
     justify-content: center;
     width: 100%;
-    
+
     .box-inner {
-        margin:0 auto;
+        margin: 0 auto;
     }
 
     .inner-center {
@@ -64,9 +64,6 @@ body {
 .box {
 
     h1 {
-        font-family: 'GT America Expanded';
-        font-size: 1.8em;
-        margin-bottom: .2em;
 
         sup {
             font-family: 'GT America Expanded';
@@ -96,35 +93,35 @@ body {
     justify-content: space-between;
     background-repeat: repeat-x;
     background-size: contain;
-    
-    a{
+
+    a {
         color: $white;
 
-        opacity:0.7;
+        opacity: 0.7;
         text-decoration: none;
-        font-size:1.6em;
+        font-size: 1.6em;
         font-weight: 100;
         font-family: 'Canela', 'Georgia';
         font-display: swap;
-        
+
         padding: .5em;
         -webkit-transition: all .3s linear;
         -moz-transition: all .3s linear;
         -ms-transition: all .3s linear;
         -o-transition: all .3s linear;
         transition: all .3s linear;
-        
+
     }
-    
-    a:hover{
-        opacity:1;
+
+    a:hover {
+        opacity: 1;
         mix-blend-mode: exclusion;
         text-shadow: 0 0 20px rgba(255, 255, 255, 0.59);
     }
 
-    
-    .header-right a{
-        margin-left:1em;
+
+    .header-right a {
+        margin-left: 1em;
     }
 
     .header-right a:hover {
@@ -133,13 +130,13 @@ body {
 
     @media only screen and (max-width: 700px) {
 
-        height:50px;
+        height: 50px;
         padding: 1em .5em;
-        
-        a{
-            font-size:1.4em !important;
+
+        a {
+            font-size: 1.4em !important;
         }
-        
+
         .header-left {
             display: none;
         }
@@ -148,11 +145,11 @@ body {
             width: 100%;
             text-align: center;
         }
-        
-        .header-right a{
-            margin-left:0;
+
+        .header-right a {
+            margin-left: 0;
         }
-        
+
 
     }
 
@@ -170,16 +167,12 @@ body {
 
     padding: 2em;
     margin-top: 8vh;
+    
 
-    h1 {
-        font-family: "Canela";
-        font-style: italic;
-        font-weight: 100;
-        font-size: 2.4em;
-        text-align: center;
+    h1, h2, h3{
         color: $bg-color;
     }
-
+    
     .masterpiece {
         justify-content: center;
         text-align: center;
@@ -194,20 +187,21 @@ body {
 
     .box-inner {
         max-width: 1100px;
+        padding: 2em;
     }
 
     img.chia {
         float: left;
-        width:220px;
-        margin-right:1.25em;
-        margin-bottom:.2em;
+        width: 220px;
+        margin-right: 1.25em;
+        margin-bottom: .2em;
         pointer-events: none;
     }
 
     p {
         color: $bg-color;
         font-size: 1.6em;
-        font-family:"Canela";
+        font-family: "Canela";
         line-height: 1.25em;
         text-align: left;
         font-weight: 300;
@@ -219,21 +213,21 @@ body {
             display: inline-block;
             font-size: 1.2em;
             font-family: "Canela";
-            font-weight:100;
+            font-weight: 100;
             font-style: italic;
             line-height: 1.3em;
             text-decoration: none;
             cursor: pointer;
             color: $bg-color;
         }
-        
-        a:hover{
+
+        a:hover {
             text-decoration: underline;
         }
     }
-    
-    a{
-            color: $bg-color;
+
+    a {
+        color: $bg-color;
     }
 
     h2 {
@@ -243,6 +237,47 @@ body {
         margin: 1em;
         font-size: 2em;
         font-weight: 600;
+    }
+    
+    #links{
+        
+        .col-third{
+            text-align: left;
+        }
+        
+        .col-third h3{
+            font-family: "GT America";
+            text-transform: uppercase;
+            font-size:.8em;
+            margin-bottom:1em;
+        }
+        
+        .col-third a{
+            display: block;
+            text-decoration: none;
+            font-family:"Canela";
+            font-size: 1.4em;
+            font-weight: 100;
+            text-align: left;
+            padding:.25em 0;
+            
+        }
+        
+        .col-third a:hover{
+            text-decoration: underline;
+        }
+        
+        
+        .col-third a:hover > sup{
+            text-decoration: none !important;
+        }
+        
+        
+            sup{
+                font-size:.6em !important;
+            }
+        
+        
     }
 
     @media only screen and (max-width: 850px) {
@@ -266,13 +301,13 @@ body {
 
 .social {
     text-align: center;
-    
+
     a {
         color: $white;
         text-decoration: none;
         margin-right: 1em;
         border-bottom: 1px solid $white;
-        padding:.25em;
+        padding: .25em;
         white-space: nowrap;
     }
 
@@ -286,16 +321,16 @@ body {
 
 
 #footer {
-    
+
     box-sizing: border-box;
-    font-family:"Canela";
+    font-family: "Canela";
     font-weight: 100;
-    font-size:1.4em;
+    font-size: 1.4em;
     text-align: center;
     width: 100%;
     height: 190px;
     padding: 2em;
-    margin:1em 0;
+    margin: 1em 0;
     display: block;
 
     .footer-links {
@@ -330,26 +365,46 @@ body {
         a.about {
             float: left;
         }
-         
+
         @media only screen and (max-width: 600px) {
-        
+
             margin-top: 1em;
-            
-            a{
-                font-size:.75em;
+
+            a {
+                font-size: .75em;
             }
-            
+
         }
-        
-    }
-    
-    @media only screen and (max-width: 600px) {
-    
-        height: auto;
-        padding:1em;
-        
+
     }
 
+    @media only screen and (max-width: 600px) {
+
+        height: auto;
+        padding: 1em;
+
+    }
+
+
+
+}
+
+.col {
+
+    margin: 0 auto;
+    width: 95%;
+    max-width: 1000px;
+    box-sizing: border-box;
+    padding: 1em 0;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    .col-third{
+        margin:.25em;
+        width: 31%;
+    }
 
 
 }
@@ -406,17 +461,17 @@ body {
 
     @media only screen and (max-width: 600px) {
 
-        margin:0;
-        
+        margin: 0;
+
         input[type="submit"] {
-            padding:.5em;
+            padding: .5em;
         }
-        
+
         input[type="submit"]:hover {
-            padding-left:.75em;
+            padding-left: .75em;
         }
-        
-        
+
+
     }
 }
 
@@ -485,8 +540,8 @@ details[open] summary ~ * {
         cursor: e-resize;
         filter: grayscale(0);
     }
-    
-    a{
+
+    a {
         text-decoration: none;
     }
 
@@ -502,7 +557,7 @@ details[open] summary ~ * {
         flex-wrap: wrap;
         text-decoration: none;
         margin-bottom: 2em;
-        
+
 
         h2 {
             margin-top: .25em;
@@ -515,7 +570,7 @@ details[open] summary ~ * {
             -o-transition: all .3s linear;
             transition: all .3s linear;
         }
-        
+
 
         h3 {
             font-family: "GT America";
@@ -576,7 +631,7 @@ details[open] summary ~ * {
 
     .project-box-desc {
         margin: 0 .5em;
-        width:100%;
+        width: 100%;
         text-align: left;
     }
 
@@ -674,8 +729,29 @@ details[open] summary ~ * {
 
 }
 
-h1, h2, h3{
+h1,
+h2,
+h3 {
     width: 100%;
+}
+
+
+h1 {
+        font-family: "Canela";
+        font-style: italic;
+        font-weight: 100;
+        text-align: center;
+        font-size: 1.8em;
+        margin-bottom: .2em;
+}
+
+
+h3{
+    font-family: "Canela";
+    font-weight: 100;
+    font-size: 1.6em;
+    margin: 0;
+    padding:.5em 0;
 }
 
 #projects {
@@ -810,7 +886,7 @@ h1, h2, h3{
         font-family: "Canela";
         font-style: italic;
         font-weight: 100;
-        font-size:2rem;
+        font-size: 2rem;
         margin: 0 1em;
         opacity: 0.7;
         background: none !important;
@@ -832,7 +908,7 @@ h1, h2, h3{
 
     a:hover {
         opacity: 1 !important;
-        color: $accent;        
+        color: $accent;
         text-shadow: 0 0 20px rgba(255, 255, 255, 0.59);
 
     }
@@ -890,7 +966,7 @@ mark {
 }
 
 hr {
-    border:0;
+    border: 0;
     margin: 3em 0 3em 0;
     height: 20px;
 }
