@@ -252,6 +252,10 @@ body {
             margin-bottom:1em;
         }
         
+            u{
+                text-decoration: none;
+            }
+        
         .col-third a{
             display: block;
             text-decoration: none;
@@ -261,15 +265,19 @@ body {
             text-align: left;
             padding:.25em 0;
             
+            
+            p{
+                opacity: 0.75;
+                margin:0;
+                font-family: "GT America";
+                padding:.25em 0;
+                font-size:.6em;
+            }
+            
         }
         
-        .col-third a:hover{
+        .col-third a:hover > u{
             text-decoration: underline;
-        }
-        
-        
-        .col-third a:hover > sup{
-            text-decoration: none !important;
         }
         
         
@@ -396,7 +404,7 @@ body {
     max-width: 1000px;
     box-sizing: border-box;
     padding: 1em 0;
-    margin: auto;
+    margin: 0 0 1em 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
