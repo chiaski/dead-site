@@ -557,7 +557,7 @@ a {
 
 #landing-more{
     
-    // outline: 1px solid red;
+    // outline: 1px solid #deabb1;
     padding: 7.5vh 0;
     margin: 0 auto;
     width:100%;
@@ -621,27 +621,27 @@ a {
 
 
 @-webkit-keyframes color-change {
-    0% { color: red; }
+    0% { color: #deabb1; }
     50% { color: $accent; }
-    100% { color: red; }
+    100% { color: #deabb1; }
 }
 @-moz-keyframes color-change {
-    0% { color: red; }
+    0% { color: #deabb1; }
     50% { color: $accent; }
-    100% { color: red; }
+    100% { color: #deabb1; }
 }
 @-ms-keyframes color-change {
-    0% { color: red; }
+    0% { color: #deabb1; }
     50% { color: $accent; }
-    100% { color: red; }
+    100% { color: #deabb1; }
 }
 @-o-keyframes color-change {
-    0% { color: red; }
+    0% { color: #deabb1; }
     50% { color: $accent; }
-    100% { color: red; }
+    100% { color: #deabb1; }
 }
 @keyframes color-change {
-    0% { color: red; }
+    0% { color: #deabb1; }
     50% { color: $accent; }
-    100% { color: red; }
+    100% { color: #deabb1; }
 }

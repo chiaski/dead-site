@@ -2,12 +2,13 @@
 @import "fonts.css";
 
 $bg-color: #121657;
-$light-color: #f0f8f7;
-$white: #f0f8f7;
-$black: #121657;
-$accent: #eb7c9e;
+$light-color: #ecf4f3;
+$white: #ecf4f3;
 
-$white-screen: #121657;
+$black: #121657;
+$accent: #eb7c9e; // pink
+
+$white-screen: #121657; // dark blue thing
 
 
 /* MAIN STRUCTURAL ELEMENTS */
@@ -188,9 +189,9 @@ body {
 
     img.chia {
         float: left;
-        width: 220px;
+        width: 260px;
         margin-right: 1.25em;
-        margin-bottom: .2em;
+        margin-bottom:.25em;
         pointer-events: none;
     }
 
@@ -915,9 +916,8 @@ h3{
     }
 
     a:hover {
-        opacity: 1 !important;
+        opacity: 1;
         color: $accent;
-        text-shadow: 0 0 20px rgba(255, 255, 255, 0.59);
 
     }
 
