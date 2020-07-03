@@ -283,6 +283,11 @@ a {
     .box-inner{
         max-width:1000px;
     }
+    
+    h3{
+        font-family:"GT America";
+    }
+
 
     a {
         text-decoration: none;
@@ -297,7 +302,7 @@ a {
         font-size: 2em;
 
     }
-
+    
     a.btn:hover {
         color: $white;
     }
@@ -441,6 +446,10 @@ a {
         margin:1em 0;
         display: flex;
         flex-wrap: wrap;
+        
+        h3{
+            font-family: "GT America";
+        }
         
             a{
                 opacity:1;
