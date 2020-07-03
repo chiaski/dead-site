@@ -96,7 +96,8 @@ body {
     background-size: contain;
 
     a {
-        color: $white;
+        color: $light-color;
+        opacity: 0.8;
 
         text-decoration: none;
         font-size: 1.6em;
@@ -274,7 +275,8 @@ body {
         }
         
         .col-third a:hover > u{
-            text-decoration: underline;
+            border-bottom: 1px solid $white-screen;
+            //text-decoration: underline;
         }
         
         
@@ -287,7 +289,11 @@ body {
 
     @media only screen and (max-width: 850px) {
 
-        padding: 0 2em;
+        padding: 0 .25em;
+        
+        .box-inner{
+            padding:1em;
+        }
 
         img.chia {
             float: none;
@@ -309,11 +315,13 @@ body {
     text-align: center;
 
     a {
+        display: inline-block;
         color: $white;
         text-decoration: none;
         margin-right: 1em;
+        height:35px;
         border-bottom: 1px solid $white;
-        padding: .25em;
+        padding: .5em .25em;
         white-space: nowrap;
     }
 
@@ -411,6 +419,16 @@ body {
         margin:.25em;
         width: 31%;
     }
+    
+    
+    @media only screen and (max-width: 800px) {
+        
+        .col-third{
+            width: 100%;
+            margin-bottom: 1.5em;
+        }
+        
+    }
 
 
 }
@@ -491,7 +509,7 @@ body {
     .footer-links {
 
         a {
-            color: #000;
+            color: #121657;
         }
     }
 
