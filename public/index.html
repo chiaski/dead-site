@@ -95,6 +95,7 @@
 
     <div class="container">
 
+<!--
         <div class="header header-alt" data-aos="fade-down" data-aos-duration="1000" id="navigation" data-aos-delay="500" style="background-image: url(assets/landing/cover.png);">
             <div>
             <a href="about.html">About</a>
@@ -104,53 +105,60 @@
             <a href="resume.pdf">Résumé</a>
             </div>
         </div>
+-->
 
+        <div id="landing-overlay">
+        </div>
+            
         
         <div class="box" id="landing">
 
-            <div class="landing-style-container" data-aos="fade-up"
-     data-aos-anchor-placement="center-center" data-aos-duration="1000" data-aos-delay="500">
-                <div class="special" id="chia-about">
+            <div class="inner" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+            <div class="landing-style-container">
+                <div class="intro">
+                    
+                    <div class="links">
+                    <a href="about.html">About</a>
+                    
+                    <a href="resume">Résumé</a>
+                        
+                    <a href="work">Selected Work</a>
+                        
+                    <a href="create">Creations</a>
+                        
+                    <a href="https://medium.com/@chiaski" target="_blank">Writing</a>
+                        </div>
+                    
 
                     <p class="intro">
-                        Hi, I'm Chia. I'm a CS  & Art student at Yale, from Manila. I aspire to create <strong>radical</strong> things. <a href="https://nostudentleft.com">Let's leave no student behind.</a>
+                        Hi, I'm Chia. I'm a CS  & Art student at Yale, from Manila. I aspire to create <em>radical</em> things. <a href="https://nostudentleft.com">Let's leave no student behind.</a>
                     </p>
 
+<!--
                     <details>
                         <summary>
                             <p><em>A little more?</em></p>
                         </summary>
                         <p>
                             I'm a technologist & designer building systems, communities, and experiences. <a href="https://developh.org" target="_blank">At Developh</a>, I accelerate and invest in youth-led innovation across Southeast Asia. On campus, I do creative research at the <a href="https://ccam.yale.edu/">CCAM</a>, advise <a href="https://www.city.yale.edu/">startups</a>, and lead a <a href="https://uxsocietyyale.org">design organization</a>. 
-                            Online, I <a href="https://chias.blog">write</a>, game, and build worlds. <a href="mailto:chiamisola@gmail.com">Let's talk?</a>
+                            Online, I <a href="https://chias.blog">write</a>, game, and build worlds.
                         </p>
 
 
                     </details>
+-->
 
-                    <br>
 
                 </div>
-
-
-                <div id="landing-overlay">
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <div class="box" id="landing-works">
-                <div class="box-inner"  data-aos="fade-up" data-aos-delay="700" data-aos-duration="900" >
-                    <div class="landing-projects" onmouseout="document.getElementById('landing-overlay').innerHTML = '';">
+                
+                <div id="landing-works" class="projects" onmouseout="document.getElementById('landing-overlay').innerHTML = '';">
 
 
                         <a href="work/ibotoph" data-link="ibotoph" onmouseover="hover('iboto');">
                             <div class="project-box" id="link-ibotoph">
                                 <div class="project-box-desc">
                                     <h2>Iboto.ph</h2>
-                                    <h3>Voter Education For the masses</h3>
+                                    <h3>Voter education platform for the masses</h3>
 
                                 </div>
                             </div>
@@ -162,7 +170,7 @@
 
                                 <div class="project-box-desc">
                                     <h2>Developh</h2>
-                                    <h3>Nonprofit accelerating tech</h3>
+                                    <h3> Global tech community & accelerator </h3>
                                 </div>
 
                             </div>
@@ -201,7 +209,7 @@
 
                                 <div class="project-box-desc">
                                     <h2>Last.fm App</h2>
-                                    <h3>Empowerment in Music</h3>
+                                    <h3>Empowering how we listen with data</h3>
                                 </div>
 
                             </div>
@@ -214,7 +222,7 @@
                             <div class="project-box">
                                 <div class="project-box-desc">
                                     <h2>Letterboxd </h2>
-                                    <h3>Film Social Networks</h3>
+                                    <h3>Designing social networks  around film</h3>
 
                                 </div>
                             </div>
@@ -224,8 +232,8 @@
                         <a href="work/design" data-link="design" onmouseover="hover('design');">
                             <div class="project-box">
                                 <div class="project-box-desc">
-                                    <h2> Archive </h2>
-                                    <h3>Web + Graphic Archive</h3>
+                                    <h2> Graphical </h2>
+                                    <h3>A collection of graphic design work </h3>
 
                                 </div>
                             </div>
@@ -233,19 +241,19 @@
 
                     </div>
 
-                    <br><br>
-                    <a class="btn" href="work.html" onmouseover="hover('more');">More?</a>
+            </div>
+            </div>
 
-                </div>
         </div>
 
 
         <div class="box" id="landing-chia">
+<!--
 
+            <div class="thing" style="background-image:url(assets/landing/thing-lately.png);width:250px; height:250px;top:50vh;right:0;"></div>
 
-            <div class="thing" style="background-image:url(assets/landing/thing-lately.png);width:250px; height:250px;top:20vh;right:0;"></div>
-
-            <div class="thing" style="background-image:url(assets/landing/thing-circle.png);width:190px; height:190px;top:124vh;left:3vw;"></div>
+            <div class="thing" style="background-image:url(assets/landing/thing-cirscle.png);width:190px; height:190px;top:124vh;left:3vw;"></div>
+-->
 
             <div class="box-inner">
 
@@ -261,121 +269,87 @@
                 </div>
 -->
                 
+                          
+        <div class="col" id="links">
+            
+            <div class="col-third">
+            
+                <h3>Documents</h3>
+                <a href="resume"><u>Résumé</u> <sup>Dark/Light</sup></a>
                 
-                <div class="social">
-                    <h2>Find Me</h2><br>
-
-                    <a href="https://chias.blog" target="_blank">Chia's Blog</a>
-
-                    <a href="https://github.com/chiaski" target="_blank">Github</a>
-
-                    <a href="https://linkedin.com/in/amisola" target="_blank">LinkedIn</a>
-                    
-                    <a href="https://www.are.na/chia-amisola/" target="_blank">Are.na</a>
-
-                    <a href="https://chi.itch.io/" target="_blank">Games</a>
-                    
-                    <a href="https://figma.com/@chia" target="_blank">Figma</a>
-                    
-                    <a href="https://medium.com/@chiaski" target="_blank">Medium</a>
-
-                </div><br><br>
-
+                <br>
                 
-                <h2>Recently</h2>
-                <div class="showcase-container">
+                <h3>Get in Touch</h3>
+                <a href="mailto:chiamisola@gmail.com"><u>Email</u></a>
+                
+                <a href="https://linkedin.com/in/amisola" target="_blank"><u>LinkedIn</u></a>
+                
+                <br>
+                <h3>Find Me</h3>
+                    <a href="https://github.com/chiaski" target="_blank"><u>Github</u></a>
 
-                    <a href="https://chi.itch.io/house" target="_blank" rel="noreferrer">
-                        <div class="showcase-box">
+                    <a href="https://www.are.na/chia-amisola/" target="_blank"><u>Are.na</u></a>
 
-                            <h1>house</h1>
-                            <p>A universe simulator in sound and in your file explorer, created after Orteil's Nested </p>
-                            <h3>Simulation</h3>
-
-                        </div>
-                    </a>
+                    <a href="https://chi.itch.io/" target="_blank"><u>Games</u></a>
                     
+                    <a href="https://figma.com/@chia" target="_blank"><u>Figma</u></a>
                     
-                    
-
-                    <a href="https://shopteleport.com" rel="noreferrer">
-                        <div class="showcase-box">
-
-                            <h1>Teleport</h1>
-                            <p>Designing and building some cool things to shape the future of ~cool~ shopping</p>
-                            <h3>Interning this summer...</h3>
-
-                        </div>
-                    </a>
-
-
-                    <a href="https://developh.org" rel="noreferrer">
-                        <div class="showcase-box">
-
-                            <h1>Developh</h1>
-                            <p>I founded Developh in 2016, now we're nurturing student founders in Southeast Asia. We're advising student-centric incubation & tech education, running an accelerator, and an online community. Say hi&mdash;chia@developh.org.</p>
-                            <h3>Organization</h3>
-
-                        </div>
-                    </a>
-
-
-                    <a href="https://uxsocietyyale.org">
-                        <div class="showcase-box">
-                            <h1>User Experience Society @ Yale</h1>
-                            <p>Founded Yale's design organization (a chapter of UXSociety founded in Manila) where we work with 20+ designers, teaching design and serving clients.</p>
-                            <h3>Organization</h3>
-
-                        </div>
-                    </a>
-<!--
-
-                    <a href="https://ccam.yale.edu/" target="_blank">
-                        <div class="showcase-box">
-                            <h1>Center for Collaborative Arts & Media</h1>
-                            <p>Building experimental and emerging tech across games, the peer-to-peer web, and exploring code and the web as an art form.</p>
-                        </div>
-                    </a>
--->
-                    
-                    
-                    <a href="https://chiaski.github.io/if" target="_blank" rel="noreferrer">
-                        <div class="showcase-box">
-
-                            <h1>if</h1>
-                            <p>A collection of interactive fiction pieces uploaded on my Github, including gay girls pray for a gun and others.</p>
-                            <h3>Poetry</h3>
-
-                        </div>
-                    </a>
-                    
-<!--
-                    
-
-                    <a href="https://chi.itch.io/gay-girl-prays-for-a-gun">
-                        <div class="showcase-box">
-                            <h1>gay girl prays for a gun</h1>
-                            <p>Poetry and gods. ~5k words</p>
-                            <h3>Interactive Fiction</h3>
-
-                        </div>
-                    </a>
--->
-<!--
-
-                    <a href="musicOH">
-                        <div class="showcase-box">
-                            <h1>musicOH!</h1>
-                            <p>Topsters alternative chart generator.</p>
-                            <h3>CHART GEN</h3>
-
-                        </div>
-                    </a>
--->
-
-
-                </div>
-
+                    <a href="https://medium.com/@chiaski" target="_blank"><u>Medium</u></a>
+                 <a href="https://chias.blog" target="_blank"><u>Chia's Blog</u></a>
+                
+            
+            </div>
+            
+            <div class="col-third" class="awards">
+            
+                <h3>Awards/Speaking</h3>
+                
+                <a href="https://xd.adobe.com/ideas/perspectives/social-impact/design-circle-scholarship-2020-winners/?scid=0a0062bb-a20b-412a-9e7a-74966c3cacc6&mv=social&mv2=owned_social" target="_blank"><u>Adobe<br>Design Circle</u></a>       
+                
+                <a href="https://anitab.org" target="_blank"><u>AnitaB.org<br> Student of Vision</u></a>
+                
+                <a href="https://www.palantir.com/students/scholarship/wit-north-america/" target="_blank"><u>Palantir Women in Technology</u></a> 
+                
+                <a href="https://www.wearefamilyfoundation.org/chiara-amisola" target="_blank"><u>We Are Family Fdtn<br> Global Teen Leader</u></a>
+                
+                <a href="https://devcon.ph" target="_blank"><u>DevCon Summit</u></a>
+                
+                <a href="https://imaginecup.microsoft.com"><u>Microsoft<br>Imagine Cup Philippines</u></a>
+                
+            </div>
+            
+            
+            <div class="col-third">
+            
+                <h3>Experience</h3>
+                
+                <a href="https://developh.org"><u>Developh</u> <sup>2016&mdash;</sup>
+                <p>Tech accelerator and community for Southeast Asia</p>
+                </a>
+                
+                <a href="https://uxsociety.org"><u>User Experience Society</u> <sup> 2019&mdash;</sup>
+                <p>Nurturing human-centric design leaders</p>
+                </a>
+                
+                <a href="https://shopteleport.com"><u>Lab.ph </u><sup>Summer 2020</sup>
+                <p>Smart cities and networking for the Philippines</p>
+                </a>
+                
+                <a href="https://lab.ph"><u>Teleport </u><sup>Summer 2020</sup>
+                <p>The future of shopping</p></a>
+                
+                <a href="https://rappler.com"><u>Rappler</u> <sup>Summer 2019</sup>
+                <p>Designing for newsrooms and civic tech</p>
+                </a>
+                
+                <a href="https://edukasyon.ph"><u>Edukasyon.ph</u><sup>Summer 2017</sup>
+                <p>Education for millions of Filipinos</p></a>
+                
+            
+            </div>
+                     
+        </div>
+                
             </div>
         </div>
         
@@ -456,11 +430,10 @@
             </div>
         </div>
         
-        <div class="box" id="landing-chia" style="padding-top: 0;">
+        <div class="box" id="landing-chia">
             
             <div class="box-inner">
                 
-                    <h2>Newsletter</h2>
                 <p>If you enjoy my writing, experiments, or creations, I have a Tinyletter I send out every few months!</p>
                 
                 
@@ -497,34 +470,24 @@
                 
                 switch(what){
                     case "iboto":
-                        document.getElementById("landing-overlay").innerHTML = '<img src="./assets/portfolio/preview-ibotoph.jpg">';
-                         document.getElementById("landing-overlay").style.top = "180px"
-                         document.getElementById("landing-overlay").style.left = "450px"
+                        document.getElementById("landing-overlay").innerHTML = '<img src="./assets/portfolio/big-iboto.jpg">';
                         break;
                         
                         
                     case "developh":
                         document.getElementById("landing-overlay").innerHTML = '<img src="./assets/portfolio/preview-developh.jpg">';
-                         document.getElementById("landing-overlay").style.top = "240px"
-                         document.getElementById("landing-overlay").style.left = "130px"
                         break;
                         
                     case "lastfm":
                         document.getElementById("landing-overlay").innerHTML = '<img src="./assets/portfolio/preview-lastfm.jpg">';
-                         document.getElementById("landing-overlay").style.top = "-20px"
-                         document.getElementById("landing-overlay").style.left = "300px"
                         break;
                         
                     case "letterboxd":
                         document.getElementById("landing-overlay").innerHTML = '<img src="./assets/portfolio/preview-letterboxd.jpg">';
-                         document.getElementById("landing-overlay").style.top = "410px"
-                         document.getElementById("landing-overlay").style.left = "-190px"
                         break;
                         
                     case "design":
                         document.getElementById("landing-overlay").innerHTML = '<img src="./assets/portfolio/preview-designs.jpg">';
-                         document.getElementById("landing-overlay").style.top = "100"
-                         document.getElementById("landing-overlay").style.left = "420px"
                         break;
                 }
                 
