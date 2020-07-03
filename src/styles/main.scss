@@ -1,13 +1,13 @@
 @import "reset.scss";
 @import "fonts.css";
 
-$bg-color: #3131ef;
+$bg-color: #121657;
 $light-color: #f0f8f7;
 $white: #f0f8f7;
-$black: #3131ef;
-$accent: #a3a3f4;
+$black: #121657;
+$accent: #eb7c9e;
 
-$white-screen: #3131ef;
+$white-screen: #121657;
 
 
 /* MAIN STRUCTURAL ELEMENTS */
@@ -97,14 +97,12 @@ body {
     a {
         color: $white;
 
-        opacity: 0.7;
         text-decoration: none;
         font-size: 1.6em;
         font-weight: 100;
         font-family: 'Canela', 'Georgia';
         font-display: swap;
-
-        padding: .5em;
+        padding: .25em .5em;
         -webkit-transition: all .3s linear;
         -moz-transition: all .3s linear;
         -ms-transition: all .3s linear;
@@ -114,9 +112,7 @@ body {
     }
 
     a:hover {
-        opacity: 1;
-        mix-blend-mode: exclusion;
-        text-shadow: 0 0 20px rgba(255, 255, 255, 0.59);
+        border-bottom: 1px solid $accent;
     }
 
 
@@ -307,6 +303,7 @@ body {
 
 }
 
+
 .social {
     text-align: center;
 
@@ -320,7 +317,7 @@ body {
     }
 
     a:hover {
-        text-shadow: 0 0 10px $accent;
+        border-bottom: 1px solid $accent;
     }
 }
 

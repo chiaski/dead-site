@@ -1,11 +1,16 @@
-$bg-color: #3131ef;
+$bg-color: #121657;
 $light-color: #f0f8f7;
-$white: #f0f8f7;
+$white: #ecf4f3;
+$text: #ecf4f3;
 
-$text: #2b2c36;
-$accent: #a3a3f4;
+$accent: #eb7c9e;
 $blue-screen: #cacdf2;
-$white-screen: #3131ef;
+$white-screen: #121657;
+
+
+body{
+    background: $white-screen;
+}
 
 a {
     -webkit-transition: all .3s linear;
@@ -14,6 +19,7 @@ a {
     -o-transition: all .3s linear;
     transition: all .3s linear;
 }
+
 
 #footer{
     height:80px;
@@ -304,7 +310,7 @@ a {
     }
     
     a.btn:hover {
-        color: $white;
+        border-bottom: 1px solid $accent;
     }
 
     .landing-projects{
@@ -462,7 +468,7 @@ a {
             max-width: 75% !important;
             min-width: 280px;
             margin: 0 .5em 1.5em .5em;
-            padding-bottom: 1em;
+            padding-bottom: .5em;
 
             h1 {
                 font-family: Canela;
@@ -471,6 +477,7 @@ a {
                 font-size: 1.8em;
                 font-weight: 400;
                 font-style: italic;
+                text-align: left;
                 letter-spacing: .5px;
                 -webkit-transition: all .3s linear;
                 -moz-transition: all .3s linear;
@@ -491,7 +498,9 @@ a {
             }
 
             h3 {
-                margin: 0;
+                margin: 0 ;
+                padding:.25em 0;
+                margin-top: .5em;
                 font-size: .7em;
                 color: $accent;
                 font-weight: 100;
@@ -500,7 +509,7 @@ a {
             }
 
             p {
-                margin: 0 0 .5em 0;
+                margin: 0;
                 color: $white;
                 line-height: 1.2em;
                 
