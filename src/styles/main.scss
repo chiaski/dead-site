@@ -243,6 +243,7 @@ body {
     @media only screen and (max-width: 850px) {
 
         padding: 0 .25em;
+        font-size:.8em;
 
         .box-inner {
             padding: 1em;
@@ -255,10 +256,6 @@ body {
             max-width: 180px;
         }
 
-        .intro-p {
-            margin-top: -1em;
-        }
-
     }
 
 }
@@ -267,9 +264,12 @@ body {
 
     #links {
         
+        width: 100%;
+        max-width: 1200px;
         margin: auto;
 
         .col-third {
+            margin:0 .5em;
             text-align: left;
         }
 
@@ -428,9 +428,18 @@ body {
         width: 31%;
     }
 
-
+    
     @media only screen and (max-width: 800px) {
+        justify-content: flex-start;
+        
+        .col-third{
+           width: 47%; 
+        }
 
+    }
+
+    @media only screen and (max-width: 560px) {
+        
         .col-third {
             width: 100%;
             margin-bottom: 1.5em;
@@ -500,10 +509,6 @@ body {
 
         input[type="submit"] {
             padding: .5em;
-        }
-
-        input[type="submit"]:hover {
-            padding-left: .75em;
         }
 
 

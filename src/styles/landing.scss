@@ -8,11 +8,12 @@ $blue-screen: #aac0d0;
 $white-screen: #121657;
 
 
-body{
+body {
     background: $white-screen;
 }
 
-.social a, a {
+.social a,
+a {
     color: $white;
     -webkit-transition: all .3s linear;
     -moz-transition: all .3s linear;
@@ -22,38 +23,61 @@ body{
 }
 
 
-
-#footer{
-    height:80px;
+h2 {
+    font-family: "GT America Expanded";
+    display: block;
+    color: $white;
+    margin: 0 auto;
+    font-weight: 100;
+    font-size: 1em;
+    text-align: center;
 }
 
-#navigation{
+h3{
+    color: $white;
+}
+
+
+#footer {
+    height: 80px;
+}
+
+#navigation {
 
     padding-top: 2em;
     text-align: center;
 
-    div{
-        width:90vw;
+    div {
+        width: 90vw;
         max-width: 900px;
-        margin:0 auto;
+        margin: 0 auto;
     }
-    
-    a{
-        font-size:1.8em;
-        margin:0 .25em;
+
+    a {
+        font-size: 1.8em;
+        margin: 0 .25em;
         color: $white;
         justify-content: center;
     }
-    
+
 }
 
 
 #landing {
 
-    margin-top:2em;
-    min-height:480px;
-    height:auto;
+    margin-top: 1em;
+    margin: 0 auto;
+    min-height: 90vh;
+    width:95%;
+    padding:auto 2em;
+    height: auto;
     
+    .inner{
+        //outline: 1px solid blue;
+        position: relative;
+        margin-top: auto;
+        z-index: 999;
+    }
 
     h1 {
         font-family: "Canela";
@@ -73,93 +97,23 @@ body{
     }
 
 
-    p {
-        margin: 0;
-        font-size: 1.2em;
-        line-height: 1.4em;
-        font-weight: 300;
-        color: $white;
 
-        sup {
-            font-weight: 300;
-            font-style: italic;
-            font-family: "Canela";
-        }
-
-    }
-
-    a{
+    a {
         text-decoration: none;
-        padding:.1em;
-        color: $white;
+        padding: .1em;
 
     }
-    
-    p a::after{
+
+    p a::after {
         content: "↗\00FE0E ";
-        font-size:.8em;
+        font-size: .8em;
     }
-    
-    p a:hover{
+
+    p a:hover {
         color: $accent;
     }
-     
-    em {
-        font-style: normal !important;
-        font-family: "Canela";
-        line-height: 1em !important;
-        color: $white;
-        font-size:1.2em;
-    }
-    
-    em:hover{
-        color:$accent;
-    }
-
-    
-    details{
-        font-size:1em;
-        line-height:.8em;
-        max-width: 90%;
-        font-family:"GT America";
-    }
 
 
-    details summary::-webkit-details-marker {
-      display:none;
-    }
-
-    details[open]{
-        margin-top:1em;
-    }
-    details[open] > summary{
-        display: none;
-    }
-
-    
-    details a {
-        font-family: "GT America";
-        color: $accent;
-    }
-    
-    details a::after{
-        content: "";
-    }
-    
-    details a:hover{
-        color: $white-screen;
-        background:$white;
-    }
-    
-    @media only screen and (max-width: 780px) {
-        min-height:380px;
-    
-        details{
-            font-size:.8em;
-            display: none;
-        }
-    }
-     
     /* LANDING SHOWCASE */
 
 
@@ -169,138 +123,158 @@ body{
         sup {
             display: none;
         }
-        
-    
-        p {
-            font-size: 1.2em;
-            line-height: 1.4em;
-        }
 
-        em {
-            font-size: .7em;
-            line-height: .8em;
-        }
-    } 
+    }
 }
 
 
+
 .landing-style-container {
-    position: absolute;
+
+    width: 100%;
+    max-width: 1600px;
+    padding: .5em;
+
     display: flex;
     justify-content: center;
 
-    .special {
+    .intro {
+        
         box-sizing: border-box;
         display: block;
-        width: 80vw;
-        max-width: 850px;
-        margin-top:1em;
+        margin-top: auto;
         
-        p.intro{
-            
-            font-family:"Canela", "GT America", apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial;
-            line-height:1.125em !important;
-            font-size:2.8em !important;
+        .links {
+            margin-bottom: 2em;
             
             a{
-                font-family:"Canela";
+                line-height: 1.25em;
+                font-family: "Canela";
+                font-weight: 100;
+                font-size: 1.6em;
+                margin-right: 1em;
             }
             
-            strong{
-                font-weight:300;
+            a:hover{
+                border-bottom: 1px solid $white;
+            }
+            
+        }
+
+        p.intro {
+            margin: 0;
+            margin-right: .5em;
+            font-weight: 100;
+            color: $white;
+            max-width: 760px;
+            font-family: "Canela", "GT America", apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial;
+            line-height: 1.125em !important;
+            font-size: 3.2em !important;
+            
+            strong {
+                font-weight: 300;
                 -webkit-animation: color-change 3s infinite;
                 -moz-animation: color-change 3s infinite;
                 -o-animation: color-change 3s infinite;
                 -ms-animation: color-change 3s infinite;
                 animation: color-change 3s infinite;
             }
-            
+
             @media only screen and (max-width: 780px) {
-             
-                font-size:2.3em !important;
-                
+
+                margin-bottom: 0;
+                font-size: 2.3em !important;
+
+            }
+
+        }
+
+
+    }
+
+
+        @media only screen and (max-width: 900px) {
+            
+            margin-top: 2em;
+            flex-wrap: wrap;
+            
+            .intro{
+                width: 100%;
             }
             
+            #landing-works{
+                width: 100%;
+                
+            }
         }
-        
-
-    }
-
-    
-    #landing-overlay{
-        background: $white-screen;
-        position: absolute;
-        width:50vw;
-        pointer-events: none;
-        
-        img{
-            width:100%;
-            mix-blend-mode: exclusion;
-            max-width:400px;
-        }
-    }
-
-    
-    
 
 }
 
 
-#cbox{
-    
+#landing-overlay {
+    position: absolute;
+    top:0; left:0;
+    background: $white-screen;
+    width: 100%;
+    height:60%;
+    max-height: 600px;
+    opacity: 0.5;
+    pointer-events: none;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        overflow: hidden;
+        mix-blend-mode: saturation;
+    }
+}
+
+#cbox {
+
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
-    bottom:15px;
+    bottom: 15px;
     text-align: center;
-    z-index:999;
-    margin:0 auto;
-    
-    button{
-        padding:1em;
+    z-index: 999;
+    margin: 0 auto;
+
+    button {
+        padding: 1em;
         font-family: "Canela";
         font-weight: 100;
-        font-size:1em;
-        border:0;
+        font-size: 1em;
+        border: 0;
         background: none;
-        color:#fff;
+        color: #fff;
         mix-blend-mode: exclusion;
-        margin:1em;
+        margin: 1em;
     }
-    
-    button:hover{
+
+    button:hover {
         color: $accent;
     }
-    
-    #cbox-here iframe{
+
+    #cbox-here iframe {
         margin-right: 1em;
         mix-blend-mode: difference;
     }
-    
+
 }
-
-
 
 
 
 #landing-works {
-    
-    margin-top:-2em;
-    padding-bottom: 100px;
+
+    width: 30%;
+    max-width: 280px;
+    margin-top: -5%;
+    padding-left: 1.5%;
     text-align: center;
-    
-    .box-inner{
-        max-width:1000px;
-    }
-    
-    h3{
-        font-family:"GT America";
-    }
 
-
-    a {
-        text-decoration: none;
-
+    h3 {
+        font-family: "GT America";
     }
 
     a.btn {
@@ -311,80 +285,115 @@ body{
         font-size: 2em;
 
     }
-    
+
     a.btn:hover {
         border-bottom: 1px solid $accent;
     }
 
-    .landing-projects{
-        
-        a{
-            width:270px;
-            padding:1em;
-            display: inline-block;
-            
-            h2{
-                font-weight: 100;
-                font-family:"Canela";
-                font-style: italic;
-                font-size:2.4em;
-                color: $white;
-                -webkit-transition: all .3s linear;
-                -moz-transition: all .3s linear;
-                -ms-transition: all .3s linear;
-                -o-transition: all .3s linear;
-                transition: all .3s linear;
-            }
-            
-            h3{
-                font-weight:100;
-                font-size:.6em;
-                letter-spacing: .5px;
-                color:$accent;
-                text-transform: uppercase;
-            }
-            
+
+    a {
+        text-align: left;
+        width:100%;
+        padding: .5em 0;
+        display: inline-block;
+
+        h2 {
+            text-align: left;
+            font-weight: 100;
+            font-family: "Canela";
+            font-size: 2em;
+            color: $white;
+            -webkit-transition: all .3s linear;
+            -moz-transition: all .3s linear;
+            -ms-transition: all .3s linear;
+            -o-transition: all .3s linear;
+            transition: all .3s linear;
         }
-        
-        a:hover{
-            
-            h2{
-                color: $accent;
-            }
-            
+
+        h3 {
+            width: 90%;
+            font-weight: 100;
+            font-size: .6em;
+            letter-spacing: .25px;
+            color: $white;
+            opacity: 0.8;
         }
-        
-        
+
     }
+
+    a:hover {
+
+        h2 {
+            color: $accent;
+        }
+
+    }
+
     
+        @media only screen and (max-width: 900px) {
+
+            margin: 1em auto;
+            width: 100%;
+            max-width: 100%;
+            border-top: 1px solid $white;
+            padding:1em 0;
+            
+            a{
+                
+                margin-bottom: .5em;
+                
+                h2{
+                }
+                
+                h3{
+                    padding:0;
+                    font-size: .8em;
+                }
+                
+            }
+            
+    }
+
 }
 
 
-    h2 {
-        font-family: "GT America Expanded";
-        display: block;
+#landing-chia {
+
+    padding:1em 1em 2em 1em;
+    margin: 0 auto;
+    max-width: 1600px;
+    
+    .box-inner{
+        width: 100%;
+    }
+    
+    #links{
+    
+        max-width: 1000px;
+        
+        a:hover > u{
+            border-bottom: 1px solid $white;
+        }
+        
+        p{
+            text-align: left;
+        }
+        
+        @media only screen and (max-width: 700px) {
+            .awards{
+                display: none !important;
+            }
+        }
+        
+    }
+    
+    p{
         color: $white;
-        margin: 0 auto;
-        font-weight: 100;
-        font-size: 1em;
         text-align: center;
     }
 
-#landing-chia {
-
-    margin-left:-1em;
-    margin:0 auto;
-    width: 90%;
-    max-width: 900px;
-
-
-    p {
-        color: $white;
-
-    }
-
     .thing {
-        
+
         margin-top: 50vh;
         position: absolute;
         background-position: center center;
@@ -392,10 +401,10 @@ body{
         background-repeat: no-repeat;
         pointer-events: none;
         z-index: 99;
-        
+
         @media only screen and (max-width: 700px) {
             display: none;
-            }
+        }
     }
 
 
@@ -429,177 +438,52 @@ body{
                 color: $accent !important;
             }
         }
-        
+
     }
-    
-    .showcase-container.landing{
-        padding:1em;
-        border:1px solid $white;
-        max-width: 700px;
-        max-height:250px;
-        overflow-y: scroll;
-        box-sizing: border-box;
-        color: $white;
-    }
-    
-    
-    .showcase-container.landing .projects-archive{
-         
-        position: relative;
-        box-sizing: border-box;
-        
-    }
-    
-    .showcase-container {
-        
-        margin:1em 0;
-        display: flex;
-        flex-wrap: wrap;
-        
-        h3{
-            font-family: "GT America";
-        }
-        
-            a{
-                opacity:1;
-            }
-
-        
-        .showcase-box {
-            display: inline-block;
-            border-bottom: 1px solid $white;
-            max-width: 75% !important;
-            min-width: 280px;
-            margin: 0 .5em 1.5em .5em;
-            padding-bottom: .5em;
-
-            h1 {
-                font-family: Canela;
-                color: $white;
-                margin: 0;
-                font-size: 1.8em;
-                font-weight: 400;
-                font-style: italic;
-                text-align: left;
-                letter-spacing: .5px;
-                -webkit-transition: all .3s linear;
-                -moz-transition: all .3s linear;
-                -ms-transition: all .3s linear;
-                -o-transition: all .3s linear;
-                transition: all .3s linear;
-            }
-
-            h1::before {
-                font-size: .8em;
-                vertical-align: super;
-                margin-left: -1em;
-            }
-
-            h2 {
-                clear: both;
-                display: block;
-            }
-
-            h3 {
-                margin: 0 ;
-                padding:.25em 0;
-                margin-top: .5em;
-                font-size: .7em;
-                color: $accent;
-                font-weight: 100;
-                text-transform: uppercase;
-                letter-spacing: .4px;
-            }
-
-            p {
-                margin: 0;
-                color: $white;
-                line-height: 1.2em;
-                
-            }
-
-        }
-        
-        .showcase-box:hover{
-            h1{
-                color: $accent;
-            }
-        }
-
-
-        @media only screen and (max-width: 700px) {
-
-            .showcase-box {
-                width: 70vw !important;
-                
-                h1{
-                    font-size:1.5em;
-                    font-weight: 100;
-                }
-                
-                p{
-                    font-size:.8em;
-                    margin:.25em 0;
-                }
-                
-            }
-
-        
-
-            .showcase-box:hover > h1 {
-                color: $accent;
-            }
-
-
-        }
-        
-    }
-
 
 }
 
-#landing-more{
-    
+#landing-more {
+
     // outline: 1px solid #deabb1;
-    padding: 7.5vh 0;
+    padding: 20px .5em;
     margin: 0 auto;
-    width:100%;
-  //  color: $white-screen;
-  //  background: $white;
-    
-    p{
+    width: 100%;
+    //  color: $white-screen;
+    //  background: $white;
+
+    p {
         color: $white;
     }
-    
-    .box-inner{
-        max-width:1100px;
-        padding: 1em;
-        width:90%;
+
+    .box-inner {
+        max-width: 1100px;
+        padding:0 1em;
     }
-    
-    
+
+
     .projects-archive {
-            font-family:"Canela";
-            font-size:1.4em;
-            font-weight: 100;
-            line-height: 1.6em;
-        
-        .explanation{
+        font-family: "Canela";
+        font-size: 1.4em;
+        font-weight: 100;
+        line-height: 1.6em;
+
+        .explanation {
             font-style: italic;
             color: $accent;
-            font-size:1.4em;
+            font-size: 1.4em;
         }
 
-        a { 
-            
+        a {
+
             display: inline;
-            
-            margin:.5em 0;
+
+            margin: .5em 0;
             margin-right: .5em;
-            
+
             text-decoration: none;
             color: $white;
-        //    color: $white-screen;          
+            //    color: $white-screen;          
 
         }
 
@@ -608,43 +492,87 @@ body{
         }
 
     }
-    
-    @media only screen and (max-width: 700px) {
-    
-        .box-inner{
-            width:100%;
-        }
-            
-    }
-    
 
-    
+    @media only screen and (max-width: 700px) {
+
+        .box-inner {
+            width: 100%;
+        }
+
+    }
+
+
+
 }
 
 
 
 @-webkit-keyframes color-change {
-    0% { color: #deabb1; }
-    50% { color: $accent; }
-    100% { color: #deabb1; }
+    0% {
+        color: #deabb1;
+    }
+
+    50% {
+        color: $accent;
+    }
+
+    100% {
+        color: #deabb1;
+    }
 }
+
 @-moz-keyframes color-change {
-    0% { color: #deabb1; }
-    50% { color: $accent; }
-    100% { color: #deabb1; }
+    0% {
+        color: #deabb1;
+    }
+
+    50% {
+        color: $accent;
+    }
+
+    100% {
+        color: #deabb1;
+    }
 }
+
 @-ms-keyframes color-change {
-    0% { color: #deabb1; }
-    50% { color: $accent; }
-    100% { color: #deabb1; }
+    0% {
+        color: #deabb1;
+    }
+
+    50% {
+        color: $accent;
+    }
+
+    100% {
+        color: #deabb1;
+    }
 }
+
 @-o-keyframes color-change {
-    0% { color: #deabb1; }
-    50% { color: $accent; }
-    100% { color: #deabb1; }
+    0% {
+        color: #deabb1;
+    }
+
+    50% {
+        color: $accent;
+    }
+
+    100% {
+        color: #deabb1;
+    }
 }
+
 @keyframes color-change {
-    0% { color: #deabb1; }
-    50% { color: $accent; }
-    100% { color: #deabb1; }
+    0% {
+        color: #deabb1;
+    }
+
+    50% {
+        color: $accent;
+    }
+
+    100% {
+        color: #deabb1;
+    }
 }
