@@ -165,12 +165,14 @@ body {
 
     padding: 2em;
     margin-top: 8vh;
-    
 
-    h1, h2, h3{
+
+    h1,
+    h2,
+    h3 {
         color: $bg-color;
     }
-    
+
     .masterpiece {
         justify-content: center;
         text-align: center;
@@ -192,7 +194,7 @@ body {
         float: left;
         width: 260px;
         margin-right: 1.25em;
-        margin-bottom:.25em;
+        margin-bottom: .25em;
         pointer-events: none;
     }
 
@@ -236,63 +238,14 @@ body {
         font-size: 2em;
         font-weight: 600;
     }
-    
-    #links{
-        
-        .col-third{
-            text-align: left;
-        }
-        
-        .col-third h3{
-            font-family: "GT America";
-            text-transform: uppercase;
-            font-size:.8em;
-            margin-bottom:1em;
-        }
-        
-            u{
-                text-decoration: none;
-            }
-        
-        .col-third a{
-            display: block;
-            text-decoration: none;
-            font-family:"Canela";
-            font-size: 1.4em;
-            font-weight: 100;
-            text-align: left;
-            padding:.25em 0;
-            
-            
-            p{
-                opacity: 0.75;
-                margin:0;
-                font-family: "GT America";
-                padding:.25em 0;
-                font-size:.6em;
-            }
-            
-        }
-        
-        .col-third a:hover > u{
-            border-bottom: 1px solid $white-screen;
-            //text-decoration: underline;
-        }
-        
-        
-            sup{
-                font-size:.6em !important;
-            }
-        
-        
-    }
+
 
     @media only screen and (max-width: 850px) {
 
         padding: 0 .25em;
-        
-        .box-inner{
-            padding:1em;
+
+        .box-inner {
+            padding: 1em;
         }
 
         img.chia {
@@ -311,6 +264,61 @@ body {
 }
 
 
+
+    #links {
+        
+        margin: auto;
+
+        .col-third {
+            text-align: left;
+        }
+
+        .col-third h3 {
+            font-family: "GT America";
+            text-transform: uppercase;
+            font-size: .8em;
+            margin-bottom: 1em;
+        }
+
+        u {
+            line-height: 1.25em;
+            text-decoration: none;
+        }
+
+        .col-third a {
+            display: block;
+            text-decoration: none;
+            font-family: "Canela";
+            font-size: 1.4em;
+            font-weight: 100;
+            text-align: left;
+            padding: .25em 0;
+
+
+            p {
+                line-height: 1.25em;
+                opacity: 0.75;
+                margin: 0;
+                font-family: "GT America";
+                padding: .25em 0;
+                font-size: .6em;
+            }
+
+        }
+
+        .col-third a:hover > u {
+            border-bottom: 1px solid $accent;
+            //text-decoration: underline;
+        }
+
+
+        sup {
+            font-size: .6em !important;
+        }
+
+    }
+
+
 .social {
     text-align: center;
 
@@ -319,7 +327,7 @@ body {
         color: $white;
         text-decoration: none;
         margin-right: 1em;
-        height:35px;
+        height: 35px;
         border-bottom: 1px solid $white;
         padding: .5em .25em;
         white-space: nowrap;
@@ -414,20 +422,20 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
-    .col-third{
-        margin:.25em;
+
+    .col-third {
+        margin: .25em;
         width: 31%;
     }
-    
-    
+
+
     @media only screen and (max-width: 800px) {
-        
-        .col-third{
+
+        .col-third {
             width: 100%;
             margin-bottom: 1.5em;
         }
-        
+
     }
 
 
@@ -465,7 +473,7 @@ body {
 
     input[type="submit"] {
         position: relative;
-        left:0;
+        left: 0;
         display: inline-block;
         box-sizing: border-box;
         padding: 1em;
@@ -483,7 +491,7 @@ body {
 
     input[type="submit"]:hover {
         position: relative;
-        left:10px;
+        left: 10px;
     }
 
     @media only screen and (max-width: 600px) {
@@ -764,21 +772,21 @@ h3 {
 
 
 h1 {
-        font-family: "Canela";
-        font-style: italic;
-        font-weight: 100;
-        text-align: center;
-        font-size: 1.8em;
-        margin-bottom: .2em;
+    font-family: "Canela";
+    font-style: italic;
+    font-weight: 100;
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: .2em;
 }
 
 
-h3{
+h3 {
     font-family: "Canela";
     font-weight: 100;
     font-size: 1.6em;
     margin: 0;
-    padding:.5em 0;
+    padding: .5em 0;
 }
 
 #projects {
