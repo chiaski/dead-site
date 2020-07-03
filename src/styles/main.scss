@@ -243,7 +243,7 @@ body {
     @media only screen and (max-width: 850px) {
 
         padding: 0 .25em;
-        font-size:.8em;
+        font-size: .8em;
 
         .box-inner {
             padding: 1em;
@@ -262,62 +262,62 @@ body {
 
 
 
-    #links {
-        
-        width: 100%;
-        max-width: 1200px;
-        margin: auto;
+#links {
 
-        .col-third {
-            margin:0 .5em;
-            text-align: left;
-            padding-bottom: 1em;
-        }
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
 
-        .col-third h3 {
-            font-family: "GT America";
-            text-transform: uppercase;
-            font-size: .8em;
-            margin-bottom: 1em;
-        }
+    .col-third {
+        margin: 0 .5em;
+        text-align: left;
+        padding-bottom: 1em;
+    }
 
-        u {
+    .col-third h3 {
+        font-family: "GT America";
+        text-transform: uppercase;
+        font-size: .8em;
+        margin-bottom: 1em;
+    }
+
+    u {
+        line-height: 1.25em;
+        text-decoration: none;
+    }
+
+    .col-third a {
+        display: block;
+        text-decoration: none;
+        font-family: "Canela";
+        font-size: 1.4em;
+        font-weight: 100;
+        text-align: left;
+        margin-bottom: .5em;
+
+
+        p {
             line-height: 1.25em;
-            text-decoration: none;
-        }
-
-        .col-third a {
-            display: block;
-            text-decoration: none;
-            font-family: "Canela";
-            font-size: 1.4em;
-            font-weight: 100;
-            text-align: left;
-            margin-bottom: .25em;
-
-
-            p {
-                line-height: 1.25em;
-                opacity: 0.75;
-                margin: 0;
-                font-family: "GT America";
-                padding: .25em 0;
-                font-size: .6em;
-            }
-
-        }
-
-        .col-third a:hover > u {
-            border-bottom: 1px solid $accent;
-            //text-decoration: underline;
-        }
-
-
-        sup {
-            font-size: .6em !important;
+            opacity: 0.75;
+            margin: 0;
+            font-family: "GT America";
+            padding: .25em 0;
+            font-size: .6em;
         }
 
     }
+
+    .col-third a:hover > u {
+        border-bottom: 1px solid $accent;
+        //text-decoration: underline;
+    }
+
+
+    sup {
+        font-size: .6em !important;
+    }
+
+}
 
 
 .social {
@@ -429,18 +429,18 @@ body {
         width: 31%;
     }
 
-    
+
     @media only screen and (max-width: 800px) {
         justify-content: flex-start;
-        
-        .col-third{
-           width: 47%; 
+
+        .col-third {
+            width: 47%;
         }
 
     }
 
     @media only screen and (max-width: 560px) {
-        
+
         .col-third {
             width: 100%;
             margin-bottom: 1.5em;
