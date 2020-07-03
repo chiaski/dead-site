@@ -70,22 +70,22 @@
     </div>
 
     <div id="portfolio-page" class="container">
+        
         <div class="box" id="portfolio">
             <div class="box-inner inner-center portfolio-description">
-                <div>
+                <div class="portfolio-study">
+                    
+        <div class="intro" style="background-image:url(../assets/portfolio/twitter/goal.png);background-position: center 80px;">
+
+                <div class="intro-inner">
                     <div class="quote-block">
                         When conversation grows larger, how can we ensure people still listen?
                     </div>
+            </div>
+                    </div>
                     
-                    <br><br>
-                    
-                    <span class="image-container" style="padding:1em;">
-                        <img class="image-full" src="../assets/portfolio/twitter/goal.png">
-                    </span>
-                    <br><br>
-
                     <div class="summary-container">
-                        <p class="summary" style="color:#090b33;">Twitter wants to be the place where people find out what's happening about the world. With the growth in Twitter's users and new algorithms that tend to result in more "viral" content, it's easier for people to feel lost in the conversation. Our objective was to make <strong>notifications and engagements more intuitive at scale</strong>, to convert and measure more follower relationships and sustained interaction between users.<br>I led the development of a series of feature fixes on Tweets.</p>
+                        <p class="summary" style="color:#090b33;">Twitter wants to be the place where people find out what's happening about the world. With the growth in Twitter's users and new algorithms that tend to result in more "viral" content, it's easier for people to feel lost in the conversation. Our objective was to make <em>notifications and quotes more intuitive at scale</em>, to convert and measure more follower relationships and sustained interaction between users.<br>I led the development of a series of feature fixes on Tweets&mdash;later implemented on Twitter today.</p>
 
 
                         <div class="summary-details">
@@ -98,9 +98,9 @@
 
                     <h2 id="part-context">Context</h2>
                     <h1>Elevating the Twitter conversation</h1>
-                    <p><mark>Notifications</mark> are key to the Twitter platform: it's how engagement spreads. Recent Twitter developments trend through this, such as with algorithmic feeds that recommend tweets from the interactions of our followed user's own followings.</p>
+                    <p>Notificationsare key to the Twitter platform: it's how engagement spreads. Recent Twitter developments trend through this, such as with algorithmic feeds that recommend tweets from the interactions of our followed user's own followings.</p>
 
-                    <p>After being tasked to identify an area of improvement from the user profile page, we thought intentionally about core interactions becoming a spectacle. In contrast to desired goals of larger reach, inhibiting large conversations closes people on to follower loops. <mark>We believe there's space for notifications as they are today to grow to a place for stronger connections, and not just meaningless numbers. </mark></p>
+                    <p>After being tasked to identify an area of improvement from the user profile page, we thought intentionally about core interactions becoming a spectacle. In contrast to desired goals of larger reach, inhibiting large conversations closes people on to follower loops. <em>We believe there's space for notifications as they are today to grow to a place for stronger connections, and not just meaningless numbers. </em></p>
 
 
                     <p>Due to the timeframe (less than three days!) and with the given scope, we relied on quick user interviews, conversations with current engineers, and friends-and-family input to gather frustrations. We penned these down on boards and saw a common theme around interactions:</p>
@@ -170,7 +170,7 @@
 
                     <p>From this series of observations and with our personas in mind, we defined goals based on Twitter's recent product releases and opportunity areas in our problem scope:</p>
 
-                    <ol>
+                    <ol class="feature-large">
                         <li>Use tweet engagements as a space to drive more connections through an <em>entrypoint for follow-follower relationships, and continued conversations through quote tweets.</em></li>
                         <li>Increase user engagement with people outside of their mutual space (people who follow them, others) <mark>increasing follow-up interactions</mark>; and</li>
                         <li>Increase user follow-follower relationship entry points through the engagement space</li>
@@ -180,9 +180,7 @@
 
                     <p>We want Cane to not feel overwhelmed when he goes viral, or be able to join in the conversation even after a few hours. Mary wants to sort through replies faster because they have little time, and feel like their inputs are being seen when responding to larger figureheads&mdash;they may also benefit from more followers and interaction.</p>
 
-                    <center>
-                        <div class="p-emphasis" style="font-family:'GT America' !important"> Our goal is to reframe Twitter's engagements as a space to form connections&mdash;at any size, to convert likes, retweets, and replies, into places for follow relationships and continued conversation </div>
-                    </center>
+                        <p class="center-emphasis"> Our goal is to reframe Twitter's engagements as a space to form connections&mdash;at any size, to convert likes, retweets, and replies, into places for follow relationships and continued conversation </p>
 
                     <p><strong>Repurposing existing components</strong> was also a key design decision. There are QoL fixes and shouldn't take too much sprints to put out; we wanted something measurable that wouldn't take too much engineering time away from larger features: so to keep the design true and build on many underexplored portions of Twitter's functionality, everything is reused.</p>
 
@@ -192,14 +190,15 @@
                     <h2 id="part-design">Design</h2>
                     <h1>Bridging new interactions through better journeys</h1>
 
-                    <center>
+
+                <div class="image-container">
                         <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Wr2Y7E64_X0?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </center>
+                    </div>
 
 
                     <p>Better engagements introduces an array of quality of life fixes in the <mark>tweet and timeline engagements area</mark>, here's a brief overview of the spaces that we're touching:</p>
 
-                    <ul>
+                    <ul class="feature-large">
                         <li><strong>Search Engagements</strong>: This allows users to search under the “liked by” and “retweeted by” menu’s to see which accounts engaged with that tweet</li>
 
                         <li><strong>Quote Tweet Presence</strong>: Allows users to see the who quoted tweets and what they said. Enables continued conversation whether it be about comedy or politics</li>
@@ -218,7 +217,7 @@
                     </span>
                     
                     
-                    <p>Users want to see who's participating in the conversations around with them.<br>At the moment, <mark>viewing the list of likes or retweets doesn't offer the list of users engaged in any sort of order.</mark></p>
+                    <p>Users want to see who's participating in the conversations around with them.<br>At the moment, <strong>viewing the list of likes or retweets doesn't offer the list of users engaged in any sort of order.</strong></p>
                     
                     
                 <div class="col">
@@ -322,7 +321,7 @@
             </div>
 
                     
-                    <p>We saw a huge gap with quote tweets, which are growing as such a critical part of twitter conversations. <mark>The only way to view all of a Tweet' quoted replies is to copy its permalink and paste it into search. </mark> It doesn't make sense to obscure this part of the conversation.<br>Adding a tangible quote number and building on a modal for transparency <mark>opens us up to more diverse and sustained conversations.</mark></p>
+                    <p>We saw a huge gap with quote tweets, which are growing as such a critical part of twitter conversations. <em>The only way to view all of a Tweet' quoted replies is to copy its permalink and paste it into search. </em> It doesn't make sense to obscure this part of the conversation.<br>Although we were just working on visual fixes and had minimal insights on how aalgorithms were driven, this visual change could still shift things up. Adding a tangible quote number and building on a modal for transparency opens us up to more diverse and sustained conversations. </p>
 
                     
                     <h3>Resolving the gap in quote tweets</h3>
@@ -360,16 +359,18 @@
                     <br>
                     <br>
                     
+        <div class="image-container">
     <video width="100%" autoplay loop>
       <source src="../assets/portfolio/twitter/profile%20list.mp4" type="video/mp4">
     Your browser does not support the video tag.
     </video>
+                    </div>
 
                      <div class="col">
                 <div class="col-half">
         
         <h3>Your lists on the profile</h3>
-        <p>I added a new space below the "You might like" to display the lists that users are a part of. Highlighting these groupings of users is also a key  discovery tool&mdash;special in that it is <mark>user-curated.</mark>
+        <p>I added a new space below the "You might like" to display the lists that users are a part of. Highlighting these groupings of users is also a key  discovery tool&mdash;special in that it is <em>user-curated.</em>
                     
                 </div>  
                 <div class="col-half">
@@ -393,7 +394,7 @@
 
                     <p>Navigating engagement and performance is tricky. But what makes Twitter incredible is all these untapped features: DMs turning global conversation into intimate connections, to recognizing the jokes and also controversies from quote tweets. Taking the timeline to another level was interesting when recognizing that conversation is more than just in its 280-character purity: simple clarifications on the interface and understanding of user behaviors has the potential to create huge ripples in engagement.</p>
 
-                    <ul>
+                    <ul class="feature-large">
                         <li>The value of giving users <strong>authentic experiences and giving them agency</strong> in their interactions can increase engagement rather than inhibit it.</li>
                         <li>We're moving away from the tweet as the sole conversation piece and letting users build on them&mdash;just as talk goes in real life.</li>
                         <li>Massive overhauls or new features aren't the only way to drive growth or conversions. Listening to user interactions and looking into subtle competitor interactions rather than just large new features is hugely informational.</li>
