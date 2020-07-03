@@ -445,6 +445,8 @@ body {
     }
 
     input[type="submit"] {
+        position: relative;
+        left:0;
         display: inline-block;
         box-sizing: border-box;
         padding: 1em;
@@ -461,7 +463,8 @@ body {
     }
 
     input[type="submit"]:hover {
-        padding-left: 1.5em;
+        position: relative;
+        left:10px;
     }
 
     @media only screen and (max-width: 600px) {
