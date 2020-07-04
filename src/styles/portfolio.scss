@@ -60,27 +60,23 @@ a {
 .image-container {
     
     margin-left:1em;
-    padding: 1em;
     text-align: center;
     width:100%;
     max-width: 100%;
     overflow: hidden;
+    overflow-y: scroll;
     box-sizing: border-box;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;   
-    
 
     img, video{
         max-width: 98%;
         max-height:80vh;
-        margin:0 auto;
+        margin: auto;
         display: block;
         padding:.25em;
     }
-    
-    
     
     
     img.image-part {
@@ -106,7 +102,6 @@ a {
         font-size: .8em;
         padding: .5em;
         opacity:0.85;
-        width: 100%
     }
     
     a{
@@ -126,6 +121,10 @@ a {
 
     }
     
+}
+
+.image-container.image-container-iphone{
+    max-height: 640px;
 }
 
 
@@ -177,14 +176,6 @@ a {
         display: inline-block;
     }
 
-    em {
-        justify-content: center;
-        text-align: center;
-        display: block;
-        font-size: .8em;
-        padding: .5em;
-    }
-    
     @media only screen and (max-width: 600px) {
         
         max-width:100%;
@@ -198,6 +189,14 @@ a {
         }
     }
 
+}
+
+.image-container-tall em, .image-container-iphone em, .image-container em{
+    
+        text-align: center;
+        display: block;
+        font-size: .8em;
+        padding: .5em;
 }
 
 
