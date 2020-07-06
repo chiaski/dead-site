@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="./assets/styles/font-canela.css">
     
     <style type="text/css">
-        #portfolio-list{
+           #portfolio-list{
         }
         
         #portfolio-list .box-inner{
@@ -34,20 +34,23 @@
             display: flex;
             flex-direction: row-reverse;
             flex-wrap: wrap;
+            justify-content: space-around;
         }
         
         .portfolio-project-container .project-box img{
-            max-width: 600px;
+            width: 600px;
+            max-width: 55%;
             padding-right: 1em;
         }
         
        .portfolio-project-container .project-box .project-box-desc{
+           max-width: 35%;
            width: 425px;
            padding-right: 2em;
         }
     
         .portfolio-project-container .project-box .project-box-desc h2{
-            font-size: 3em !important;
+            font-size: 2.8em !important;
             line-height: 1em !important;
         }
         
@@ -67,11 +70,26 @@
         
         .portfolio-nav a{
             font-style: normal;
+            line-height: 1.2em;
         }
         
         #footer{
             margin-bottom: 80px;
         }
+         
+    @media only screen and (max-width: 800px) {
+        .portfolio-project-container .project-box .project-box-desc {
+            max-width: 100%;
+            width: 95%;
+            padding:0 1em;
+            margin-bottom: 1em;
+        }
+        
+        .portfolio-project-container .project-box img{
+            max-width: 100%;
+        }
+        
+         }
     </style>
     
 </head>
