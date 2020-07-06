@@ -5,25 +5,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Chiaski: Work</title>
+       <title>Chia Amisola ↗ Work</title>
 
-    <meta name="description" content="Chiaski is Chiara Amisola. An 19-year-old activist, developer, and creator in love with code and prose.">
+    <meta name="description" content="Chia Amisola is an aspiring creative technologist building radical tech.">
+    
     <meta name="keywords" content="chia amisola, chiaski, chiara amisola, developers society, devsoc, portfolio, website, metro manila, blog, graphic design, web developer,writer,writing">
     <meta name="author" content="Chia Amisola">
     <link rel="shortcut icon" href="favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha256-NuCn4IvuZXdBaFKJOAcsU2Q3ZpwbdFisd5dux4jkQ5w=" crossorigin="anonymous" />
 
     <link rel="stylesheet" href="../assets/styles/theme-main.css">
     <link rel="stylesheet" href="./assets/styles/font-canela.css">
 
+     <style type="text/css">
+        #portfolio-list{
+        }
+        
+        #portfolio-list .box-inner{
+
+        }
+
+        .portfolio-project-container{
+            width:100%;
+        }
+        
+        .portfolio-project-container .project-box{
+            max-width: 1300px;
+            width:100%;
+            display: flex;
+            flex-direction: row-reverse;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        
+        .portfolio-project-container .project-box img{
+            width: 600px;
+            max-width: 55%;
+            padding-right: 1em;
+        }
+        
+       .portfolio-project-container .project-box .project-box-desc{
+           max-width: 35%;
+           width: 425px;
+           padding-right: 2em;
+        }
+    
+        .portfolio-project-container .project-box .project-box-desc h2{
+            font-size: 2.8em !important;
+            line-height: 1em !important;
+        }
+        
+        .portfolio-project-container .project-box .project-box-desc h3{
+            color: lightpink;
+        }
+        
+        .portfolio-nav{
+            position: fixed;
+            width:100%;
+            left:0; bottom:0;
+            padding:1.5em 0;
+            background: #121657;
+            z-index: 999;
+            border-top: 1px solid #ecf4f3;
+        }
+        
+        .portfolio-nav a{
+            font-style: normal;
+            line-height: 1.2em;
+        }
+        
+        #footer{
+            margin-bottom: 80px;
+        }
+         
+    @media only screen and (max-width: 800px) {
+        .portfolio-project-container .project-box .project-box-desc {
+            max-width: 100%;
+            width: 95%;
+            padding:0 1em;
+            margin-bottom: 1em;
+        }
+        
+        .portfolio-project-container .project-box img{
+            max-width: 100%;
+        }
+        
+         }
+    </style>
+    
 </head>
 
 <body>
     <div class="container-alt container-portfolio">
 
         <div class="header header-alt" id="navigation">
-            <div class="header-left"><a href="../index.html">chia.dev</a></div>
+            <div class="header-left"><a href="../index.html">Selected Work</a></div>
             <div class="header-right">
                 <a href="../about">About</a>
                 <a href="https://medium.com/@chiaski">Writing</a>
@@ -42,10 +118,8 @@
 
                     </div>
                 
-                <br>
                 
                 <div class="portfolio-project-container">
-
 
                     <a href="ibotoph" class="type-design">
                         <div class="project-box" id="link-ibotoph">
@@ -54,7 +128,9 @@
                             <div class="project-box-desc">
                                 <h2>Iboto.ph</h2>
                                 <div class="quote-block">
-                                    Designing voter education for the Philippine masses by building a national campaign to empower progressives.
+                                    Designing voter education for the Philippine masses by building a national campaign to empower progressives reaching over three Filipinos in the 2019 elections.<br><br>
+                                
+                                    Now gearing up to work closer with candidates and build on digital strategy for 2022.  I lead a team of 25 to educate and mobilize voters.
                                 </div>
                                 <h3>Website + Campaign</h3>
                             </div>
@@ -126,9 +202,11 @@
                                 <h2>Last.fm</h2>
                                 
                                 <div class="quote-block">
-                                   Empowering users with data on their sounds on the musical calling card for music nerds. A complete rehaul, some product review, and slight music flex.
+                                    Empowering users with data on their sound and music on the musical calling card for music nerds.
+                                <br><br>    
+                                A complete rehaul for a platform without a mobile experience, some product review, and slight music flex.
                                 </div>
-                                <h3>Mobile App Redesign</h3>
+                                <h3>Mobile Deisgn</h3>
 
                             </div>
 
@@ -160,7 +238,7 @@
                             <div class="project-box-desc">
                                 <h2>Collab Incubator</h2>
                                 <div class="quote-block">
-                                    Collab is a by-students, for-students incubator for technology and social impact. I designed our pitch off's brand identity and forms for an event of 100+ attendees.
+                                     Collab is a by-students, for-students incubator for technology and social impact. I designed our pitch off event's brand identity and forms for an event of 100+ attendees.
                                 </div>
 
                                 <h3>Event</h3>
@@ -181,7 +259,7 @@
                                 <div class="quote-block">
                                    For love of film: a small series of feature concepts and redesigns for the social film discovery platform.
                                 </div>
-                                <h3>Case Study</h3>
+                                <h3>Web UX</h3>
 
                             </div>
 
@@ -291,45 +369,22 @@
                             </div>
                         </div>
                     </a>
-                    
 
-                        <div class="project-box type-design" style="cursor: not-allowed !important;">
-                            <img src="../assets/portfolio/preview-technologyph.jpg" style="cursor: not-allowed !important;">
-
-                            <div class="project-box-desc" style="cursor: not-allowed !important;">
-                                <h2 style="cursor: not-allowed !important;">Technology.ph </h2>
-                                <div class="quote-block" style="cursor: not-allowed !important;">
-                                    Technology.ph is a newsletter-first publication centered around Philippine technology and culture. I write, design, and deliver to hundreds of subscribers twice a month.
-                                </div>
-                                <h3 style="cursor: not-allowed !important;">Publication</h3>
-
-
-                            </div>
-
-                            <a>
-                                <div class="btn" style="cursor: not-allowed !important;">Soon</div>
-                            </a>
-
-                        </div>
-
-
-                    <!--
-
-
-                    <div class="project-box project-unavailable" id="link-ibotoph" style="cursor: not-allowed !important;">
-                        <img src="assets/portfolio/preview-technologyph.jpg">
+                    <a><div class="project-box project-unavailable" id="link-ibotoph" style="cursor: not-allowed !important;">
+                        <img src="../assets/portfolio/preview-technologyph.jpg">
 
                         <div class="project-box-desc" style="cursor: not-allowed !important;">
                             <h2>Technology.ph </h2>
-                            <h3>Website + Newsletter</h3>
                             <div class="quote-block">
                                 Technology.ph is a publication and biweekly digest for everything Philippine tech, published by Developh. I designed the experience, write, and deliver materials for the newsletter.
                             </div>
+                            <h3>Coming Soon</h3>
 
                         </div>
 
-                    </div>
+                    </div></a>
 
+                      <!--
                     <a href="https://github.com/chiaski/3d-thirdimpact" target="_blank">
                         <div class="project-box">
                             <img src="assets/portfolio/preview-kimochiwarui.jpg" style="width:600px;">
