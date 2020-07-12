@@ -67,7 +67,7 @@ a {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    justify-content: center;   
+    justify-content: center;
     
 
     img, video, iframe{
@@ -76,6 +76,10 @@ a {
         margin: auto;
         display: block;
         padding:.25em;
+    }
+    
+    iframe{
+        width: 95%;
     }
     
     
@@ -603,7 +607,6 @@ iframe {
         
         iframe{
             max-width:100%;
-            width:550px;
         }
 
         a {
