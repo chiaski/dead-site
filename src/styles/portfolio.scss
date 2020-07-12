@@ -68,8 +68,9 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;   
+    
 
-    img, video{
+    img, video, iframe{
         max-width: 98%;
         max-height:80vh;
         margin: auto;
