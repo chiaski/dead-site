@@ -674,6 +674,8 @@ iframe {
         blockquote.testimonial {
             display: inline-block;
             width: 30%;
+            max-width: 95%;
+            margin-bottom: .25em;
             float: right;
             border: 0;
             font-stretch: expanded;
@@ -688,6 +690,7 @@ iframe {
             }
         }
 
+        
 
         blockquote {
             box-sizing: border-box;
