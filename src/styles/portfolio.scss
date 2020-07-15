@@ -1125,7 +1125,7 @@ iframe {
             font-size:.8em;
             margin:.5em;
         }
-        
+
     }
 }
 
@@ -1150,6 +1150,19 @@ iframe {
         font-weight: 100;
         font-size:1.6em !important;
         line-height:1.4em !important;
+        
+        a{
+            font-family: "Canela" !important;
+            font-weight: 100 !important;
+            font-style: italic;
+            font-size:1.2em;
+        }
+        
+        a:hover{
+            text-decoration: none !important;
+            border-bottom: 1px solid $lightcyan;
+        }
+        
     }
 
 
