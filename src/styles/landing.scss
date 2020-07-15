@@ -72,6 +72,21 @@ h3{
     padding:auto 2em;
     height: auto;
     
+    .announcement{
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        border-bottom: 1px solid $white;
+        padding: .5em;
+        text-align: center;
+        
+        a::after{
+            content: " →";
+        }
+        
+    }
+    
     .inner{
         //outline: 1px solid blue;
         position: relative;

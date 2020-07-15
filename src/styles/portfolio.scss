@@ -132,6 +132,13 @@ a {
 }
 
 
+.image-container.image-container-fullscreen{
+    margin: 0 !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain !important;
+}
+
 
 .image-container-max{
     position: relative;
