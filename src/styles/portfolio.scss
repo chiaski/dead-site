@@ -811,24 +811,26 @@ iframe {
         // Portfolio Paragraph Styles
         
         p.center-emphasis{
-            font-family: "Canela";
+            font-family: "GT America";
             text-align: center;
-            font-size:1.2em;
-            line-height: 1.4em;
+            line-height: 1.5em;
             padding:1em;
             // additional spacing
-            margin-top:.5em;
+            margin: 50px auto;
             font-weight: 100;
-            margin-bottom: .5em;
+            max-width: 550px;
             
             strong{
+                font-family:"Canela" !important;
                 font-weight: 100;
-                font-size:1.6em;
+                font-size:2.5em;
+                line-height: 1em;
                 font-style: italic;
+                padding-bottom: .5em;
+                display: inline-block;
             }
             
             a{
-                font-family:"Canela";
                 font-weight: 100;
             }
         }
@@ -1131,7 +1133,8 @@ iframe {
 
 
 .summary-container {
-    padding: 1em 2.5em;
+    
+    padding: 2em;
     margin:2em auto;
     max-width: 900px;
 
@@ -1140,10 +1143,10 @@ iframe {
 
 
     p.summary {
-        line-height: 1.7em;
+        
         width: 100% !important;
         max-width: 100% !important;
-        padding:1em;
+        line-height: 1.7em;
         margin:0;
         
         font-family:"Canela";
@@ -1168,7 +1171,6 @@ iframe {
 
     .summary-details {
         
-        padding:1.5em;
         padding-top: 0;
         display: flex;
         justify-content: space-between;
@@ -1187,25 +1189,22 @@ iframe {
     
     }
 
-
     .summary-add {
-        padding:.5em;
         font-size: 1em;
         line-height:1.5em;
-
     }
 
     @media only screen and (max-width: 800px) {
-
-        padding: 0;
+        
+        padding: 1.5em;
         
         .summary-details {
-            padding: .5em 1.5em;
             display: flex;
             flex-wrap: wrap;
         }
         
         .summary-add{
+            max-width: 100%;
             width:100%;   
             font-size:1em;
             margin-bottom: 1em;
