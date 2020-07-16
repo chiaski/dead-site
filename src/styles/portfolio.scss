@@ -170,7 +170,7 @@ a {
 
     max-width: 90vw;
     overflow-x: scroll;
-    margin: 1em;
+    margin: 1em auto;
 
     img {
         max-height: 350px;
@@ -787,6 +787,11 @@ iframe {
                 margin:0 .1em;
                 width: 49%;
                 
+                h3{
+                    font-size: 2.75em;
+                    margin: .25em;
+                    padding: 0;
+                }
                 
                 img:first-child{
                     margin-top:1em;
@@ -904,6 +909,8 @@ iframe {
             }
 
             .col {
+                
+                margin-top: 1em;
                 max-width: 100%;
                 width: 100vv;
                 display: flex;
@@ -916,11 +923,24 @@ iframe {
 
                 .col-half {
                     width: 100%;
+                    
+                    h3{
+                        font-size: 2em;
+                        text-align: left;
+                        margin: 0;
+                    }
+                    
                 }
 
                 .col-third {
                     width:48%;
                     min-width: 150px;
+                    
+                    h3{
+                        margin: 0;
+                        padding: 0;
+                    }
+                    
                 }
 
             }
