@@ -913,10 +913,6 @@ iframe {
                     width:100%;
                 }
                 
-                    h3{
-                        font-size:1em;
-                    }
-                    
 
                 .col-half {
                     width: 100%;
@@ -1057,9 +1053,9 @@ iframe {
 
 
     h3 {
-        font-family: "GT America";
+        font-family: "Canela";
         padding: .5em 0;
-        font-size: 1em;
+        font-size: 1.5em;
         line-height:1em;
     }
 
@@ -1073,8 +1069,7 @@ iframe {
             padding: 0;
             margin: 0;
             padding-right:.5em;
-            font-size: .8rem !important;
-            line-height:1rem !important;
+            line-height:1.5em !important;
         }
 
         @media only screen and (max-width: 700px) {
