@@ -182,13 +182,12 @@ h3{
 
         p.intro {
             margin: 0;
-            margin-right: .5em;
             font-weight: 100;
             color: $white;
-            max-width: 760px;
+            max-width: 780px;
             font-family: "Canela", "GT America", apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial;
             line-height: 1.125em !important;
-            font-size: 3.2em !important;
+            font-size: 3.8em !important;
             
             strong {
                 font-weight: 300;
@@ -202,7 +201,7 @@ h3{
             @media only screen and (max-width: 780px) {
 
                 margin-bottom: 0;
-                font-size: 2.3em !important;
+                font-size: 3.2em !important;
 
             }
 
@@ -213,7 +212,7 @@ h3{
 
 
         @media only screen and (max-width: 800px) {
-            margin-top: 2em;
+            margin-top: 4em;
             flex-wrap: wrap;
             
             .intro{
@@ -228,6 +227,95 @@ h3{
 
 }
 
+#landing-works {
+
+    width: 32%;
+    max-width: 230px;
+    margin-top: -5%;
+    padding-left: 2.5em;
+    text-align: center;
+
+    h3 {
+        font-family: "GT America";
+    }
+
+    a.btn {
+        font-family: "Canela";
+        color: $accent;
+        text-decoration: none;
+        font-weight: 100;
+        font-size: 2em;
+    }
+
+    a.btn:hover {
+        border-bottom: 1px solid $accent;
+    }
+
+
+    a {
+        width:100%;
+        padding: .5em;
+        margin: 0 auto;
+        margin-bottom: .5em;
+        display: inline-block;
+
+        h2 {
+            text-align: right;
+            font-weight: 100;
+            font-family: "Canela";
+            font-size: 2.8em;
+            color: $white;
+            -webkit-transition: all .3s linear;
+            -moz-transition: all .3s linear;
+            -ms-transition: all .3s linear;
+            -o-transition: all .3s linear;
+            transition: all .3s linear;
+        }
+
+        h3 {
+            text-align: right;
+            font-weight: 100;
+            font-size: .6em;
+            letter-spacing: .25px;
+            color: $white;
+            opacity: 0.8;
+        }
+
+    }
+
+    a:hover {
+
+        h2 {
+            color: $accent;
+        }
+
+    }
+
+    
+        @media only screen and (max-width: 800px) {
+
+            margin: 1em auto;
+            width: 100%;
+            max-width: 100%;
+            border-top: 1px solid $white;
+            padding:1em 0;
+            
+            a{        
+                margin-bottom: .5em;
+                
+                h2{
+                }
+                
+                h3{
+                    padding:0;
+                    font-size: .8em;
+                }
+                
+            }
+            
+    }
+
+}
 
 #landing-overlay {
     position: absolute;
@@ -283,95 +371,6 @@ h3{
 
 
 
-#landing-works {
-
-    width: 30%;
-    max-width: 280px;
-    margin-top: -5%;
-    padding-left: 1.5%;
-    text-align: center;
-
-    h3 {
-        font-family: "GT America";
-    }
-
-    a.btn {
-        font-family: "Canela";
-        color: $accent;
-        text-decoration: none;
-        font-weight: 100;
-        font-size: 2em;
-
-    }
-
-    a.btn:hover {
-        border-bottom: 1px solid $accent;
-    }
-
-
-    a {
-        text-align: left;
-        width:100%;
-        padding: .5em 0;
-        display: inline-block;
-
-        h2 {
-            text-align: left;
-            font-weight: 100;
-            font-family: "Canela";
-            font-size: 2.25em;
-            color: $white;
-            -webkit-transition: all .3s linear;
-            -moz-transition: all .3s linear;
-            -ms-transition: all .3s linear;
-            -o-transition: all .3s linear;
-            transition: all .3s linear;
-        }
-
-        h3 {
-            width: 90%;
-            font-weight: 100;
-            font-size: .6em;
-            letter-spacing: .25px;
-            color: $white;
-            opacity: 0.8;
-        }
-
-    }
-
-    a:hover {
-
-        h2 {
-            color: $accent;
-        }
-
-    }
-
-    
-        @media only screen and (max-width: 800px) {
-
-            margin: 1em auto;
-            width: 100%;
-            max-width: 100%;
-            border-top: 1px solid $white;
-            padding:1em 0;
-            
-            a{        
-                margin-bottom: .5em;
-                
-                h2{
-                }
-                
-                h3{
-                    padding:0;
-                    font-size: .8em;
-                }
-                
-            }
-            
-    }
-
-}
 
 
 #landing-chia {
@@ -485,13 +484,14 @@ h3{
     }
 
     .box-inner {
-        max-width: 1100px;
+        max-width: 1000px;
         padding:0 1em;
     }
 
 
     .projects-archive {
         font-family: "Canela";
+        text-align: center;
         font-size: 1.4em;
         font-weight: 100;
         line-height: 1.6em;
