@@ -65,12 +65,10 @@ h3{
 
 #landing {
 
-    margin-top: 1em;
     margin: 0 auto;
     min-height: 90vh;
     width:95%;
     padding:auto 2em;
-    height: auto;
     
     .announcement{
         position: absolute;
@@ -80,6 +78,10 @@ h3{
         border-bottom: 1px solid $white;
         padding: .5em;
         text-align: center;
+
+        a{
+            text-decoration: none;
+        }
         
         a::after{
             content: " →";
@@ -89,8 +91,7 @@ h3{
     
     .inner{
         //outline: 1px solid blue;
-        position: relative;
-        margin-top: auto;
+        margin-top: 50px;
         z-index: 999;
     }
 
@@ -111,14 +112,6 @@ h3{
         }
     }
 
-
-
-    a {
-        text-decoration: none;
-        padding: .1em;
-
-    }
-
     p a::after {
         content: "↗\00FE0E ";
         font-size: .8em;
@@ -132,9 +125,13 @@ h3{
     /* LANDING SHOWCASE */
 
 
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 760px) {
         
-        margin-top: 2.5em;
+        margin-top: 1em;
+        
+        .inner{
+            margin-top: 0;
+        }
 
         .hide,
         sup {
@@ -154,6 +151,7 @@ h3{
     padding: 1em;
     
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 
     .intro {
@@ -163,15 +161,22 @@ h3{
         margin-top: auto;
         
         .links {
+
+            text-align: center;
             margin-bottom: 2em;
             
             a{
-                line-height: 1.25em;
+                width: 100px;
+                display: inline-block;
+                
+                text-decoration: none;
                 font-family: "Canela";
                 font-weight: 100;
                 font-size: 1.6em;
-                margin-right: 1em;
-                padding:0 .25em;
+                padding:.5em;
+                margin:auto .5em;
+                
+                border-bottom: 1px solid transparent;
             }
             
             a:hover{
@@ -181,10 +186,12 @@ h3{
         }
 
         p.intro {
-            margin: 0;
+            margin: .5em auto;
+            max-width: 780px;
+            
+            text-align: center;
             font-weight: 100;
             color: $white;
-            max-width: 780px;
             font-family: "Canela", "GT America", apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial;
             line-height: 1.125em !important;
             font-size: 3.8em !important;
@@ -201,7 +208,7 @@ h3{
             @media only screen and (max-width: 780px) {
 
                 margin-bottom: 0;
-                font-size: 3.2em !important;
+                font-size: 2.6em !important;
 
             }
 
@@ -212,11 +219,24 @@ h3{
 
 
         @media only screen and (max-width: 800px) {
-            margin-top: 4em;
+            
+            margin-top: 2.5em;
             flex-wrap: wrap;
+            
             
             .intro{
                 width: 100%;
+                
+                .links{
+                    margin-bottom: .5em;
+                    
+                    a{
+                        padding: .25em;
+                        margin: 0 auto;
+                    }
+                    
+                }
+
             }
             
             #landing-works{
@@ -228,10 +248,9 @@ h3{
 }
 
 #landing-works {
-
-    width: 32%;
-    max-width: 230px;
-    margin-top: -5%;
+//
+//    width: 32%;
+//    max-width: 230px;
     padding-left: 2.5em;
     text-align: center;
 
@@ -240,11 +259,15 @@ h3{
     }
 
     a.btn {
+        margin-top: 2em;
+        
         font-family: "Canela";
         color: $accent;
         text-decoration: none;
+        
         font-weight: 100;
-        font-size: 2em;
+        font-size: .75em;
+        padding: 0;
     }
 
     a.btn:hover {
@@ -253,17 +276,18 @@ h3{
 
 
     a {
-        width:100%;
-        padding: .5em;
-        margin: 0 auto;
+        padding: 1em 2em;
+        margin: 0 .5em;
         margin-bottom: .5em;
         display: inline-block;
+        
+        text-align: center;
+        text-decoration: none;
 
         h2 {
-            text-align: right;
             font-weight: 100;
             font-family: "Canela";
-            font-size: 2.8em;
+            font-size: 2.5em;
             color: $white;
             -webkit-transition: all .3s linear;
             -moz-transition: all .3s linear;
@@ -273,7 +297,6 @@ h3{
         }
 
         h3 {
-            text-align: right;
             font-weight: 100;
             font-size: .6em;
             letter-spacing: .25px;
@@ -387,7 +410,7 @@ h3{
         p{
             padding: .5em;
             max-width: 880px;
-            text-align: left;
+            text-align: center;
             margin:0 auto;
             margin-bottom: 1em;
             line-height: 1.8em;
