@@ -373,6 +373,8 @@ iframe {
     }
 
     h4 {
+        margin: 0 auto;
+        
         display: block;
         text-align: left;
         padding-top:.5em;
@@ -380,8 +382,8 @@ iframe {
         font-weight: 200;
         line-height: 1.125em;
         
-            width: 95%;
-            max-width: 750px;
+        width: 95%;
+        max-width: 750px;
         font-family: "GT America";
     }
 
@@ -991,7 +993,7 @@ iframe {
 #portfolio .intro{
 
     width: 100%;
-    min-height:600px;
+    min-height:550px;
     
     background-size: contain;
     background-position: center;
@@ -999,22 +1001,20 @@ iframe {
     background-repeat: no-repeat;
     
     
+    .intro-inner{
+        position: relative;
+        top:200px;
+    }
+    
     .quote-block{
-        width: auto;
         max-width: 700px;
-        font-size:3.6rem;
-        line-height: 1.1em;
+        font-size:4rem;
+        line-height: 1em;
         padding:.5em;
-        margin-bottom: .5em;
         margin: auto !important;
     }
     
     
-    .intro-inner{
-        position: relative;
-        top:220px;
-
-    }
     
     @media only screen and (max-width: 860px) {
         
