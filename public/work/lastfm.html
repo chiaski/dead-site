@@ -85,23 +85,20 @@
 
 
     <div class="container alt">
+        <div class="box" id="portfolio">
 
 
-
-        <div class="box" id="portfolio" style="background: none;">
-
-
-            <div class="box-inner" style="background: none;">
+            <div class="box-inner">
 
 
-                <div class="portfolio-study" style="background:none;">
+                <div class="portfolio-study" style="background-image: url(../assets/portfolio/lastfm/background-1.jpg);">
 
 
                     <div class="intro" style="background-image:url(../assets/portfolio/lastfm/cover.jpg);background-position: center 10px;">
 
                         <div class="intro-inner">
                             <div class="quote-block">
-                                Connecting music fans to data through scrobbles.
+                                Connecting music fans to their listening data through scrobbles
                             </div>
 
 
@@ -159,8 +156,9 @@
                     <p>After looking at hundreds of music charts, I rediscovered Last.fm: a site that syncs with music platforms and collects your listening activity in one space. It delivers listening reports, recommendations, and lets you chat over artists, albums, and music and follow other people's activity.
                     As a music fan, I fell in love with the product: it understands me like no other. My activity, meeting new friends over mmusic, and giving me the best recommendations of any platform.</p>
 
-                    <p class='center-emphasis'>
-                        <strong>In the age of streaming, Last.fm unifies music&mdash;making it more relevant than ever</strong></p>
+            <p class='center-emphasis'>
+                <strong>In the age of streaming, Last.fm unifies music&mdash;making the product more relevant than ever</strong>
+            </p>
 
                     <p>Here's the thing: Last.fm brands itself as your <strong>"musical calling card."</strong> However, the mobile application doesn't reflect this yet. I set out to design a mobile experience for Last.fm: <strong>the go-to place for music from everywhere should be accessible anywhere.</strong></p>
 
@@ -359,7 +357,12 @@
                     <h2 id="part-overview">OVERVIEW</h2>
                     <h1>A redesigned musicscape</h1>
 
-                    <p>Last.fm is an incredible product that has the potential to expand its existing demographic and userbase (largely diehard music fans, extensive listeners) into the masses. By pushing on screens and nudging the user towards discovery, I wanted to be intentional about including features that could build on this service. <em>Brainstormed on paper, here are mid-fi screens I designed.</em></p>
+                    <p>Last.fm is an incredible product that has the potential to expand its existing demographic and userbase (largely diehard music fans, extensive listeners) into the masses. By pushing on screens and nudging the user towards discovery, there's a ton of potential to revive it with a redesign. Here, I focus on an exploration that touches on these main screen forms.</p>
+                    
+                    
+                    
+                    
+                    <p><strong>KPIs for this Redesign</strong>&mdash;Usage of discovery and informational screens: Search, viewing details on music, and the recommendation features.<br> I would cut track/album/artist pages if they weren't being used, and focus more on dataa.</p>
                     <!--
 
                     
@@ -371,39 +374,6 @@
                     </div>
 -->
 
-                    <div class="col">
-
-
-
-                        <span class="image-container">
-                            <br><br><img loading="lazy" class="image-full" src="../assets/portfolio/lastfm/overview-personal.jpg">
-                        </span>
-
-                        <h4>Last.fm is the most powerful place to get insights on your listening history.</h4>
-
-                        <p>Spaces for profiles and listening reports give users another layer of insights, and help them connect with other music fans. Social engagements begin and end with the music. </p>
-
-
-                        <hr>
-
-                        <div class="image-container image-container-max">
-                            <img loading="lazy" src="../assets/portfolio/lastfm/overview-onboard.jpg">
-                        </div>
-
-                        <h4>Building out a quick mobile onboarding flow.</h4>
-                        <br>
-                        <p>Now music fans can begin exploring their tastes and history right from mobile.</p>
-
-                    </div>
-
-                    <hr>
-
-                    <p>With these changes, I would love to look into metrics around the usage of discovery features to find potential areas for expansion: are users tapping onto more music than before? How does a mobile listening report with stats on their activity change the way they act? </p>
-
-                    <blockquote>Take a closer look at how these screens were crafted with music and love, plus see them in action!</blockquote>
-
-
-                    <hr>
 
                     <div class="image-container" style="margin:4em 0 2em 0;">
 
@@ -419,8 +389,13 @@
                        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" height="750" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fh5QrrEognp9uL4aQUF908p%2FLast.fm-Redesign%3Fnode-id%3D2610%253A49%26viewport%3D3514%252C449%252C0.6177548170089722%26scaling%3Dscale-down&chrome=DOCUMENTATION" allowfullscreen></iframe>
                     </div>
                     <hr>
+                    
+                    
+                    <h2 id="part-prototype">In-depth</h2>
+
 
                     <div class="col">
+<!--
                         <div class="col-third">
                             <div class="image-container image-container-iphone">
                                 <em>Present app home</em>
@@ -436,8 +411,14 @@
                             </div>
 
                         </div>
+-->
 
-                        <p><strong>NEW HOME</strong>&mdash;On the new home, recent tracks are more condensed but offer users a direct way to visit their <em>listening reports</em> and <em>discovery suggestions</em>.</p>
+                            <div class="image-container">
+                                <img loading="lazy" class="image-full" src="../assets/portfolio/lastfm/home.jpg">
+                            </div>
+
+                    <h4>Gathering your listening history & recommendations</h4>
+                        <p><strong>Home</strong>&mdash;On the new home, recent tracks are condensed to top listens; users are given more channels to explore their profile, recommendations, and listening reports.</p>
 
                     </div>
 
@@ -483,7 +464,7 @@
                             </ul>
                             
                     <blockquote class="testimonial" style="float: none;width: 100%;">
-                        "Next to people, Last.fm gives me the best recommendations. I think that's my favorite thing about it."
+                        "Next to talking with actual people, Last.fm gives me the best recommendations. I think that's my favorite thing about it."
                     </blockquote>
 
                         </div>
@@ -517,7 +498,7 @@
                     <hr>
 
                     <div class="image-container">
-                        <img loading="lazy" class="image-full" src="../assets/portfolio/lastfm/scrobble-edit-2.png">
+                        <img loading="lazy" class="image-full" src="../assets/portfolio/lastfm/scrobble-edit.jpg">
                         <em>Edit scrobble</em><br><br>
                     </div>
 
@@ -779,42 +760,18 @@
                     <span class="image-container">
 
                         <img loading="lazy" class="image-full " src="../assets/portfolio/lastfm/onboarding-register.jpg">
-                    </span><br>
-
-                    <p>
-                        Visually, music is highlighted to hook users into syncing and signing up. As they connect services, background overlays shifts&mdash;showing how it truly revolves around your taste.</p><br>
-
-                    <span class="image-container">
-                        <center>
-                            <video width="280px" autoplay muted loop>
-                                <source src="../assets/portfolio/lastfm/video-launch-min.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                            <em>Launch animation concept</em>
-                        </center>
                     </span>
-
-
-                    <div class="col">
-                        <div class="col-half">
-                            <p><strong>New launch</strong>&mdash;I cleaned up the Last.fm launch screen and like the website, added a rotating background image based on trending artists.</p>
-                        </div>
-                        <div class="col-half">
-
-                            <p><strong>Key Assumption</strong>&mdash;Last.fm's edge is in its <strong>data.</strong> It is empowering to listeners when they can understand their behavior&mdash;no other music service understands this as well.</p>
-
-                        </div>
+                    
+                    <hr>
+                    
+                    <p>
+                        Visually, music is highlighted to hook users into syncing and signing up. As they connect services, background overlays shifts&mdash;showing how it truly revolves around your taste.</p>
+                    <hr>
+                    <div class="image-container">
+                        <img loading="lazy" class="image-full " src="../assets/portfolio/lastfm/onboarding-slides.jpg">
                     </div>
-
-                    <br>
-
-
-
-                    <span class="image-container">
-
-                        <img loading="lazy" class="image-full " src="../assets/portfolio/lastfm/onboarding-slide.jpg">
-                    </span><br>
-
+                    
+                
                     <p>This new syncing and information sequence targets user confusion with where music was being pulled from, and gives a brief overview about Last.fm's core features and music terminology.</p>
 
                     <br><br>
@@ -847,14 +804,7 @@
                         </details>
 
 
-                    </div><br><br>
-
-
-                    <blockquote>
-                        <strong> In progress: </strong> Copy and ways to improve the home music screen right after registration.
-                    </blockquote>
-
-                    <hr>
+                    </div>
 
                     <hr>
 

@@ -302,8 +302,9 @@ iframe {
     .portfolio-study{
         margin: 0 auto;
         display: flex;
-                flex-wrap: wrap;
-                max-width: 100%;
+        flex-wrap: wrap;
+        max-width: 100%;
+        background-size: contain;
     }
     
     .box-inner{
@@ -1264,13 +1265,18 @@ iframe {
         h5 {
             margin: 0;
             font-family: "GT America";
+            font-weight: 100;
+            background: #832f2f;
+            display: inline-block;
+            padding:.5em;
         }
 
         h4 {
             font-family: "GT America Expanded";
             font-size: 1.6em;
             font-weight: 800;
-            margin:.2em 0 .25em 0;
+            padding: 0 !important;
+            margin: .5em 0 !important; 
         }
 
 
