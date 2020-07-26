@@ -695,12 +695,12 @@ iframe {
 
         blockquote.testimonial {
             display: inline-block;
-            width: 30%;
-            max-width: 95%;
+            width: 95%;
+            max-width: 450px;
             margin-bottom: .25em;
+            padding: 1em;
             float: right;
             border: 0;
-            font-stretch: expanded;
             color: #191919;
             font-family: "GT America Expanded";
 
@@ -980,16 +980,23 @@ iframe {
 
     width: 100%;
     min-height:550px;
+
     
     background-size: contain;
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
+
+    
+    position: relative;
+    display: flex;
+    place-items:center;
     
     
     .intro-inner{
         position: relative;
-        top:200px;
+        margin: 0 auto;
+        margin-top: 100px;
     }
     
     .quote-block{
@@ -997,19 +1004,24 @@ iframe {
         font-size:4rem;
         line-height: 1em;
         padding:.5em;
-        margin: auto !important;
     }
     
     
     
-    @media only screen and (max-width: 860px) {
+    @media only screen and (max-width: 700px) {
         
         background-size: cover;
         background-position: center 200px;
         
+        .intro-inner{
+            position: absolute;
+            bottom: 0;
+        }
+        
         .quote-block{
-            font-size:2.8em;
-            padding: 0;
+            text-align: left;
+            font-size: 3.6em;
+            padding: .5em;
             margin:0;
         }
             
