@@ -920,6 +920,13 @@ iframe {
                 .col-half {
                     width: 100%;
                     
+                    blockquote.testimonial{
+                        max-width: 100%;
+                        width: 100%;
+                        margin: 1em auto;
+                        text-align: center;
+                    }
+                    
                     h3{
                         font-size: 2em;
                         text-align: left;
