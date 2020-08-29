@@ -661,10 +661,6 @@ iframe {
 
         }
 
-        li {
-            font-size: 1.125rem;
-        }
-
         p strong {
             font-weight: 800;
         }
@@ -1269,8 +1265,7 @@ iframe {
         max-width:750px;
         
         padding: .5em;
-        margin: 1em;
-        font-size: .9em;
+        margin: 1em 1em 2em 1em;
 
         img {
             max-width: 100%;
@@ -1300,19 +1295,14 @@ iframe {
 
 
         p {
-            margin: 0 !important;
-            padding: 0 !important;
-        }
-        
-        ul li{
-            font-size:.8em !important;
+            margin: 0;
+            padding: 0;
         }
 
         @media only screen and (max-width: 900px) {
 
             max-width: 100vw !important;
-            padding:0;
-            margin:0;
+            padding: 0;
             
             p{
                 font-size:1em !important;
