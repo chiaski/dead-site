@@ -176,14 +176,15 @@ h3 {
                 padding: .5em;
                 margin: auto .5em;
 
-                border-bottom: 1px solid transparent;
-            }
-
-            a:hover {
-                border-bottom: 1px solid $white;
             }
 
         }
+
+
+        .links:hover a:not(:hover) {
+            filter: blur(1px);
+        }
+
 
         p.intro {
             margin: .5em auto;
@@ -194,7 +195,7 @@ h3 {
             color: $white;
             font-family: "Canela", "GT America", apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial;
             line-height: 1.125em !important;
-            font-size: 3.8em !important;
+            font-size: 3em;
 
             strong {
                 font-weight: 300;
@@ -247,6 +248,12 @@ h3 {
 
 }
 
+
+
+#landing-works:hover a:not(:hover) {
+    filter: blur(1px);
+}
+
 #landing-works {
     //
     //    width: 32%;
@@ -257,6 +264,7 @@ h3 {
     h3 {
         font-family: "GT America";
     }
+
 
     a.btn {
         margin-top: 2em;
@@ -276,6 +284,7 @@ h3 {
 
 
     a {
+        font-size: 1em;
         padding: 1em 2em;
         margin: 0 .5em;
         margin-bottom: .5em;
@@ -416,8 +425,8 @@ h3 {
             margin-bottom: 1em;
             line-height: 1.8em;
         }
-        
-        h1{
+
+        h1 {
             color: $accent;
             padding: .5em;
         }
