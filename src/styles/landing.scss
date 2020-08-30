@@ -404,6 +404,7 @@ h3 {
 
     padding: 1em;
     margin: 0 auto;
+    min-height: 250px;
     max-width: 1600px;
 
     .box-inner {
@@ -524,6 +525,10 @@ h3 {
         padding: 0 1em;
     }
 
+    .projects-archive:hover a:not(:hover) {
+        filter: blur(1px);
+        opacity:0.9;
+    }
 
     .projects-archive {
         font-family: "Canela";
@@ -542,6 +547,7 @@ h3 {
 
             display: inline;
 
+            padding:0 .25em;
             margin: .5em 0;
             margin-right: .5em;
 
@@ -549,10 +555,6 @@ h3 {
             color: $white;
             //    color: $white-screen;          
 
-        }
-
-        a:hover {
-            color: $accent;
         }
 
     }
