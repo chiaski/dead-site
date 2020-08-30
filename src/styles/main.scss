@@ -8,7 +8,7 @@ $white: #35383b;
 $black: #aab2b4;
 $accent: #35383b; // pink
 
-$white-screen: #aab2b4; 
+$white-screen: #aab2b4;
 
 
 /* MAIN STRUCTURAL ELEMENTS */
@@ -82,6 +82,11 @@ body {
     }
 }
 
+
+.header:hover a:not(:hover) {
+    filter: blur(1px);
+}
+
 .header {
     position: fixed;
     z-index: 999;
@@ -112,11 +117,6 @@ body {
         transition: all .3s linear;
 
     }
-
-    a:hover {
-        border-bottom: 1px solid $accent;
-    }
-
 
     .header-right a {
         margin-left: 1em;
@@ -261,51 +261,51 @@ body {
 }
 
 
-        .why {
-            
-            margin: 50px auto;
+.why {
+
+    margin: 50px auto;
 
 
-            ol {
-                list-style: none;
-                counter-reset: why;
+    ol {
+        list-style: none;
+        counter-reset: why;
 
-                li {
-                    max-width: 600px;
-                    text-align: left;
-                    margin: 0 auto;
-                    counter-increment: why;
+        li {
+            max-width: 600px;
+            text-align: left;
+            margin: 0 auto;
+            counter-increment: why;
 
-                    h3 {
-                        font-size: 2em;
-                        line-height: 120%;
-                        padding: 0;
-                    }
-
-                    p {
-                        text-align: left !important;
-                    }
-                }
-
-                li::before {
-                    position: absolute;
-                    margin-left: -50px;
-                    content: counter(why);
-                    color: $white;
-                    border: 1px solid $white;
-                    padding: .25em;
-                    text-align: center;
-                    border-radius: 100px;
-                    height: 35px;
-                    width: 35px;
-                    display: inline-block;
-                    font-size: 1em;
-                }
-
-
+            h3 {
+                font-size: 2em;
+                line-height: 120%;
+                padding: 0;
             }
 
+            p {
+                text-align: left !important;
+            }
         }
+
+        li::before {
+            position: absolute;
+            margin-left: -50px;
+            content: counter(why);
+            color: $white;
+            border: 1px solid $white;
+            padding: .25em;
+            text-align: center;
+            border-radius: 100px;
+            height: 35px;
+            width: 35px;
+            display: inline-block;
+            font-size: 1em;
+        }
+
+
+    }
+
+}
 
 
 #links {
