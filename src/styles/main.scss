@@ -1,14 +1,14 @@
 @import "reset.scss";
 @import "fonts.css";
 
-$bg-color: #121657;
-$light-color: #ecf4f3;
-$white: #ecf4f3;
+$bg-color: #aab2b4;
+$light-color: #35383b;
+$white: #35383b;
 
-$black: #121657;
-$accent: #eb7c9e; // pink
+$black: #aab2b4;
+$accent: #35383b; // pink
 
-$white-screen: #121657; // dark blue thing
+$white-screen: #aab2b4; 
 
 
 /* MAIN STRUCTURAL ELEMENTS */
@@ -726,7 +726,7 @@ details[open] summary ~ * {
 
         font-family: "GT America";
         text-rendering: optimizelegibility;
-        color: #ededf7;
+        color: $white;
         line-height: 22px;
         font-size: 14px;
         padding: 0;
