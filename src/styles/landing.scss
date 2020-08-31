@@ -412,6 +412,19 @@ h3 {
     }
 
     .currently {
+        
+        p.now{
+            font-family:"Canela";
+            font-weight: 100;
+            font-size: 1.5em;
+            line-height: 1.4em;
+            text-align: left;
+        }
+        
+        p.now a{
+            text-decoration: none;
+            border-bottom: 1px solid;
+        }
 
         p {
             padding: .5em;
@@ -426,9 +439,29 @@ h3 {
             color: $accent;
             padding: .5em;
         }
-
-
-
+    }
+    
+    .why{
+        
+        summary::-webkit-details-marker {
+            display: none;
+        }   
+        
+        summary:hover{
+            cursor:help;
+        }
+        
+        details summary{
+            display: inline;
+            
+            h3{
+                display: inline;
+                line-height: 1.6em;
+                padding-bottom: 1em;
+            }
+            
+        }
+        
     }
 
     #links {
@@ -510,7 +543,7 @@ h3 {
 #landing-more {
 
     // outline: 1px solid #deabb1;
-    padding: 20px .5em;
+    padding: 40px .5em;
     margin: 0 auto;
     width: 100%;
     //  color: $white-screen;
