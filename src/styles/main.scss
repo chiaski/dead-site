@@ -225,6 +225,15 @@ body {
             text-decoration: underline;
         }
     }
+    
+    li p{
+        font-family: "GT America";
+        font-size:1em;
+        line-height: 1.6em;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 1.5em;
+    }
 
     a {
         color: $bg-color;
@@ -283,7 +292,8 @@ body {
             }
 
             p {
-                text-align: left !important;
+                font-family: "GT America";
+                text-align: left;
             }
         }
 
