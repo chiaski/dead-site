@@ -260,6 +260,9 @@ h3 {
     //    max-width: 230px;
     padding-left: 2.5em;
     text-align: center;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
 
     h3 {
         font-family: "GT America";
@@ -268,6 +271,7 @@ h3 {
 
     a.btn {
         margin-top: 2em;
+        width: 100%;
 
         font-family: "Canela";
         color: $accent;
@@ -281,7 +285,8 @@ h3 {
 
     a {
         font-size: .8em;
-        padding: 1em 2em;
+        padding: 1em;
+        width: 220px;
         margin: 0 .5em;
         margin-bottom: .5em;
         display: inline-block;
@@ -325,7 +330,6 @@ h3 {
         margin: 1em auto;
         width: 100%;
         max-width: 100%;
-        border-top: 1px solid $white;
         padding: 1em 0;
 
         a {
@@ -340,6 +344,10 @@ h3 {
 
         }
 
+    }
+    
+    @media only screen and(max-width: 600px){
+        border-top: 1px solid $white;
     }
 
 }
@@ -579,10 +587,8 @@ h3 {
         a {
 
             display: inline;
-
-            padding:0 .25em;
             margin: .5em 0;
-            margin-right: .5em;
+            margin-right: .25em;
 
             text-decoration: none;
             color: $white;
