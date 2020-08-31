@@ -645,10 +645,10 @@ details[open] summary ~ * {
         text-decoration: none;
         margin-bottom: 2em;
 
-
         h2 {
+            font-style: normal;
             margin-top: .25em;
-            font-size: 2em;
+            font-size: 1.8em;
             color: $white;
             margin-bottom: .1em;
             -webkit-transition: all .3s linear;
@@ -664,7 +664,7 @@ details[open] summary ~ * {
             text-transform: uppercase;
             text-align: left;
             display: block;
-            font-size: .9em;
+            font-size: .6em;
             letter-spacing: .5px;
             font-weight: 100;
             color: $accent;
@@ -677,7 +677,6 @@ details[open] summary ~ * {
         .quote-block {
             margin-bottom: .5em;
             max-width: 100%;
-
             width: 100%;
         }
 
