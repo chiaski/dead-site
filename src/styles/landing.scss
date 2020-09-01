@@ -320,14 +320,19 @@ h3 {
             letter-spacing: .25px;
             color: $white;
             opacity: 0.8;
+            -webkit-transition: all .3s linear;
+            -moz-transition: all .3s linear;
+            -ms-transition: all .3s linear;
+            -o-transition: all .3s linear;
+            transition: all .3s linear;
         }
 
     }
 
     a:hover {
 
-        h2 {
-            color: $accent;
+        h2, h3{
+            color: #fff;
         }
 
     }
@@ -368,20 +373,22 @@ h3 {
     position: absolute;
     top: 0;
     left: 0;
-    background: $white-screen;
     width: 100%;
-    height: 80%;
-    max-height: 750px;
+    height: 100%;
+    max-height: 900px;
     opacity: 0.5;
     pointer-events: none;
 
     img {
         width: 100%;
         height: 100%;
+        opacity: 0.8;
         object-fit: cover;
         overflow: hidden;
-        mix-blend-mode: saturation;
+        filter: grayscale(1);
+        mix-blend-mode: overlay;
     }
+    
 }
 
 #cbox {
@@ -608,8 +615,8 @@ h3 {
             text-decoration: none;
             color: $white;
             //    color: $white-screen;          
-
         }
+        
 
     }
 
