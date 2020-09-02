@@ -701,12 +701,13 @@ details[open] summary ~ * {
 
         img {
             overflow: hidden;
+            opacity: 0.8;
+            filter: grayscale(1);
             max-width: 100%;
             padding: 0 .5em;
             margin: auto;
             text-align: center;
             cursor: e-resize;
-            filter: invert(0);
 
         }
 
@@ -720,7 +721,7 @@ details[open] summary ~ * {
 
     .project-box:hover {
         img {
-            filter: invert(1);
+            filter: grayscale(0);
         }
 
         a {
