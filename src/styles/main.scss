@@ -25,12 +25,12 @@ body {
 
 ::-moz-selection {
     /* Code for Firefox */
-    color: $white;
+    color: $bg-color;
     background: $accent;
 }
 
-::selection {
-    color: $white;
+::selection {    
+    color: $bg-color;
     background: $accent;
 }
 
