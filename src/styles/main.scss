@@ -191,10 +191,15 @@ body {
     }
 
     img.chia {
+			position: fixed;
+			overflow: hidden;
+			z-index: -9;
+			top: 0;
+			left: 0;
         float: left;
-        width: 260px;
-        margin-right: 1.25em;
-        margin-bottom: .25em;
+        width: 100vw;
+			height: 100vw;
+			opacity: 0.5;
         pointer-events: none;
     }
 
@@ -203,7 +208,7 @@ body {
         font-family: "Canela";
         line-height: 1.25em;
         text-align: left;
-        font-weight: 300;
+        font-weight: 200;
         text-rendering: optimizeLegibility;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;

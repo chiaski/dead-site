@@ -31,11 +31,11 @@
     
     <style type="text/css">
         .header-left a, .header-right a, #footer a{
-            color:#121657;
+            color:#e3abbc;
         }
         
         body, p, h1, h2, h3, a{
-            color:#121657 !important;
+            color:#e3abbc !important;
         }
         
         .social a{
@@ -43,7 +43,7 @@
         }
         
         body{
-            background: #e3abbc;
+            background: #121657;
         }
         
         .why ol li::before{
@@ -51,28 +51,63 @@
             border: #121657 1px solid; 
         }
 			
+			#links a:hover, .header a:hover{
+				filter: hue-rotate(120deg);
+			}
+			
 			p.big{
-				font-size: 3em;
+				font-size: 3.6em;
+				line-height: 1.1em !important;
+				margin-bottom: 0 !important;
+			}
+			
+			.col-half.about{
+				width: 69%;
+			}
+			
+			.col-third.experience{
+				width: 50%;
+			}
+			
+    @media only screen and (max-width: 700px) {
+			p.big{
+				font-size: 2.25em;
+			}
+			
+			.col-third, .col-half{
+				margin: 0 !important;
+			}
+			
+			.col-half.about{
+				width: 100%;
+			}
+			
+			.col-third.experience{
+				width: 100%;
+			}
+			
+			
 			}
 			
 			.intro-subp p{
 				font-family: "GT America" !important;
 				font-weight: 200 !important;
 				font-size: 1.125em !important;
+				line-height: 1.5em !important;
 			}
 			
 			.intro-subp p a{
 				font-family: "GT America" !important;
 				font-style: normal !important;
 				font-size: 1em !important;
-				border-bottom: 1px solid #121657;
+				border-bottom: 1px solid #e3abbc;
 				text-decoration: none;
 			}
         
     </style>
     
 </head>
-<body style="background:#e3abbc;">
+<body>
     
 <div class="container container-portfolio">
     <div class="header" id="navigation">
@@ -88,38 +123,27 @@
     
     
     <div class="box" id="about">
-        <div class="box-inner">
+        <div class="box-inner"><br>
             
-            <h1>About</h1>
+            <h1>About Chia Amisola</h1>
             
-            <center><img class="chia" src="assets/images/chia-pink.jpg">
+            <center><img class="chia" src="assets/images/chia-pinkbig.jpg">
                 
             <div class="intro-p">    
             <p class="big">
             <!--<p>What best describes what I want to become is a creative technologist: I'm a designer & coder interested in unlocking the potential of the web as a medium to tell stories, bridge people together, and empower creation. </p>-->
             
-                As a technologist & designer, I seek  radical experiences that question systems at scale.
+                As a technologist & designer: I <em>build</em> radical systems for communities, creators, and experiences&mdash;questioning systems at scale.
                 <!--I seek to explore the experiential potential of the web and question systems at scale to work towards computational justice through code and design. Everyday, I dream of building solutions that empower creators.-->
+							</p>
                 
-						<div class="intro-subp">
-            <p>
-                I founded <a class="btn" href="https://developh.org" target="_blank">Developh</a> to disrupt tech in Southeast Asia, where our accelerator & programs serve over 100,000 students. I founded <a href="https://uxsociety.org" target="_blank">User Experience Society Yale</a>, build for a  progressive Philippines post-weaponization of the internet at <a href="https://iboto.ph">Iboto.ph</a>, and design at <a href="https://lab.ph">LAB.PH</a>. I'm also part of the first <a href="https://xd.adobe.com/ideas/perspectives/social-impact/design-circle-scholarship-2020-winners/" target="_blank">Adobe Design Circle</a> Cohort.
-                </p>
-                
-                <p>I've designed for collective action at the Yale Women's Center, <a href="https://mmpride.org/">Manila Pride March</a>, make <a href="https://chi.itch.io"> games</a>, to working in <a href="https://rappler.com">newsrooms</a> under fire.   I also build <a href="https://ccam.yale.edu"> creative tools,</a> scout <a href="https://technology.ph">Southeast Asian tech,</a> and <a href="htttps://girls.ph">scream about things</a> I love. I'm most interested in building tools & spaces for creators, or setting out to build experiences that fundamentally change the way you see the world.</p>
-                
-            <p>As an occasional speaker, I was the 2018 AnitaB.org Student of Vision at the GHC keynote stage&mdash;speaking in frequent workshops at Developh to arenas of 20,000. Last year, I spoke in three continents. This year, I've spoken at 20+ events virtually!</p>
-                
-                
-            <p>You'll see me attending shows, updating Wikipedia, worldbuilding, collecting vinyl, reading on game design, playing incrementals, and watching three hour-long movies. I am best described as chaotic and committed.</p>
-                
-							</div>
+						
 							
                 </div> 
 
                 <br>
                 
-        <div class="col" id="links">
+        <div class="col" id="links" style="display: flex;">
             
             <div class="col-third" style="max-width: 190px;">
             
@@ -149,26 +173,29 @@
             
             </div>
             
-            <div class="col-third">
+            <div class="col-half about">
             
-                <h3>Awards/Speaking</h3>
+            <div class="intro-subp">
+            <p>Currently a CS & Art student at Yale from Manila, Philippines. All I know is to create, and now I must focus on who to create for.<br><br>I founded <a class="btn" href="https://developh.org" target="_blank">Developh</a> to disrupt tech in Southeast Asia, where our accelerator & programs serve over 100,000 students. I founded <a href="https://uxsociety.org" target="_blank">User Experience Society Yale</a>, build for a  progressive Philippines post-weaponization of the internet at <a href="https://iboto.ph">Iboto.ph</a>, and design at <a href="https://lab.ph">LAB.PH</a>. I'm also part of the first <a href="https://xd.adobe.com/ideas/perspectives/social-impact/design-circle-scholarship-2020-winners/" target="_blank">Adobe Design Circle</a> Cohort.
+                </p>
+                <p>I've designed for collective action at the Yale Women's Center serving dozens of residency groups in Yale for thousands of constituents, <a href="https://mmpride.org/">Manila Pride March</a>, make <a href="https://chi.itch.io"> games</a>, to working in <a href="https://rappler.com">newsrooms</a> under fire.   I also build <a href="https://ccam.yale.edu"> creative tools,</a> scout <a href="https://technology.ph">Southeast Asian tech,</a> and <a href="htttps://girls.ph">scream about things</a> I love. I'm most interested in building tools & spaces for creators, or setting out to build experiences that fundamentally change the way you see the world.<br>
+								As an occasional speaker, I was the 2018 AnitaB.org Student of Vision at the GHC keynote stage&mdash;speaking in frequent workshops at Developh to arenas of 20,000. Last year, I spoke in three continents. This year, I've spoken at 20+ events virtually!</p>
                 
-                <a href="https://xd.adobe.com/ideas/perspectives/social-impact/design-circle-scholarship-2020-winners/?scid=0a0062bb-a20b-412a-9e7a-74966c3cacc6&mv=social&mv2=owned_social" target="_blank"><u>Adobe<br>Design Circle</u></a>       
                 
-                <a href="https://anitab.org" target="_blank"><u>AnitaB.org<br> Student of Vision</u></a>
+            <p>Find me at the merch table,  updating Wikipedia, worldbuilding, playing incrementals, & watching three hour-long movies. I am best described as chaotic and committed.</p>
                 
-                <a href="https://www.palantir.com/students/scholarship/wit-north-america/" target="_blank"><u>Palantir Women in Technology</u></a> 
-                
-                <a href="https://www.wearefamilyfoundation.org/chiara-amisola" target="_blank"><u>We Are Family Fdtn<br> Global Teen Leader</u></a>
-                
-                <a href="https://devcon.ph" target="_blank"><u>DevCon Summit</u></a>
-                
-                <a href="https://imaginecup.microsoft.com"><u>Microsoft<br>Imagine Cup Philippines</u></a>
-                
+							</div>
+							
             </div>
+                     
+        </div>
+							
+							
+							
+							<div class="col" id="links" style="border-top: 1px solid #121657;">
             
             
-            <div class="col-third">
+            <div class="col-third experience">
             
                 <h3>Experience</h3>
                 
@@ -202,9 +229,33 @@
                 
                 <a href="https://edukasyon.ph" target="_blank"><u>Edukasyon.ph</u><sup>Summer '17</sup>
                 <p>Education for millions of Filipinos</p></a>
-                
-            
             </div>
+								
+								
+								<div class="col-third" style="max-width: 32px;">
+								</div>
+								
+								
+            <div class="col-third">
+            
+                <h3>Awards/Speaking</h3>
+                
+                <a href="https://xd.adobe.com/ideas/perspectives/social-impact/design-circle-scholarship-2020-winners/?scid=0a0062bb-a20b-412a-9e7a-74966c3cacc6&mv=social&mv2=owned_social" target="_blank"><u>Adobe<br>Design Circle</u></a>   
+							
+                <a href="https://www.facebook.com/psysc.nscm" target="_blank"><u>National Science Club Month<br>Speaker</u></a>       
+                
+                <a href="https://anitab.org" target="_blank"><u>AnitaB.org<br> Student of Vision</u></a>
+                
+                <a href="https://www.palantir.com/students/scholarship/wit-north-america/" target="_blank"><u>Palantir<br>Women in Technology</u></a> 
+                
+                <a href="https://www.wearefamilyfoundation.org/chiara-amisola" target="_blank"><u>We Are Family Fdtn<br> Global Teen Leader</u></a>
+                
+                <a href="https://devcon.ph" target="_blank"><u>DevCon Summit<br>Speaker</u></a>
+                
+                <a href="https://imaginecup.microsoft.com"><u>Microsoft<br>Imagine Cup Philippines</u></a>
+                
+            </div>
+              
                      
         </div>
                 
