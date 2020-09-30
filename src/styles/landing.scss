@@ -8,501 +8,505 @@ $white-screen: #aab2b4;
 
 
 body {
-    background: $bg-color;
-    color: $text;
+	background: $bg-color;
+	color: $text;
 }
 
 .social a,
 a {
-    color: $white;
-    -webkit-transition: all .3s linear;
-    -moz-transition: all .3s linear;
-    -ms-transition: all .3s linear;
-    -o-transition: all .3s linear;
-    transition: all .3s linear;
+	color: $white;
+	-webkit-transition: all .3s linear;
+	-moz-transition: all .3s linear;
+	-ms-transition: all .3s linear;
+	-o-transition: all .3s linear;
+	transition: all .3s linear;
 }
 
 
 h2 {
-    font-family: "GT America Expanded";
-    display: block;
-    color: $white;
-    margin: 0 auto;
-    font-weight: 100;
-    font-size: 1em;
-    text-align: center;
+	font-family: "GT America Expanded";
+	display: block;
+	color: $white;
+	margin: 0 auto;
+	font-weight: 100;
+	font-size: 1em;
+	text-align: center;
 }
 
 h3 {
-    color: $white;
+	color: $white;
 }
 
 
 #footer {
-    height: 80px;
+	height: 80px;
 }
 
 #navigation {
 
-    padding-top: 2em;
-    text-align: center;
+	padding-top: 2em;
+	text-align: center;
 
-    div {
-        width: 90vw;
-        max-width: 900px;
-        margin: 0 auto;
-    }
+	div {
+		width: 90vw;
+		max-width: 900px;
+		margin: 0 auto;
+	}
 
-    a {
-        font-size: 1.8em;
-        margin: 0 .25em;
-        color: $white;
-        justify-content: center;
-    }
+	a {
+		font-size: 1.8em;
+		margin: 0 .25em;
+		color: $white;
+		justify-content: center;
+	}
 
 }
 
 
-#landing-work{
+#landing-work {
 	min-height: 100vh;
-	
-	
-	.projects-large{
-		
-		.project-box{
+
+
+	.projects-large {
+
+		.project-box {
 			width: 600px;
 			height: 400px;
 			background-size: contain;
 		}
-		
+
 	}
-	
-	
+
+
 }
 
 
 #landing {
 
-    margin: 0 auto;
-    width: 95%;
-    padding: auto 2em;
+	margin: 0 auto;
+	width: 95%;
+	padding: auto 2em;
 	min-height: 90vh;
-	
-	.radial{
+
+	.radial {
 		position: absolute;
 	}
 
-    .announcement {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        border-bottom: 1px solid $white;
-        padding: .5em;
-        text-align: center;
+	.announcement {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		border-bottom: 1px solid $white;
+		padding: .5em;
+		text-align: center;
 
-        a {
-            text-decoration: none;
-        }
+		a {
+			text-decoration: none;
+		}
 
-        a:hover{
-            filter: blur(1px);
-        }
-        
-        a::after {
-         //   content: " →";
-        }
-        
-        @media only screen and (max-width: 760px) {
-            display: none;
-        }
+		a:hover {
+			filter: blur(1px);
+		}
 
-    }
+		a::after {
+			//   content: " →";
+		}
 
-    .inner {
-			height: auto;
-        z-index: 999;
-			margin: 2em auto;
-			
-    }
+		@media only screen and (max-width: 760px) {
+			display: none;
+		}
 
-    h1 {
-        font-family: "Canela";
-        font-weight: 300;
-        font-size: 2.2em;
-        margin-bottom: .2em;
-        color: $white;
-        display: inline;
-        font-style: italic;
+	}
 
-        sup {
-            font-family: "GT America Expanded";
-            font-size: 12px;
-            font-weight: 100;
-            margin-bottom: 10px;
-        }
-    }
+	.inner {
+		height: auto;
+		z-index: 999;
+		margin: 2em auto;
 
-    p a::after {
-        content: "↗\00FE0E ";
-        font-size: .8em;
-    }
+	}
 
-    p a:hover {
-        color: $accent;
-    }
+	h1 {
+		font-family: "Canela";
+		font-weight: 300;
+		font-size: 2.2em;
+		margin-bottom: .2em;
+		color: $white;
+		display: inline;
+		font-style: italic;
 
+		sup {
+			font-family: "GT America Expanded";
+			font-size: 12px;
+			font-weight: 100;
+			margin-bottom: 10px;
+		}
+	}
 
-    /* LANDING SHOWCASE */
+	p a::after {
+		content: "↗\00FE0E ";
+		font-size: .8em;
+	}
+
+	p a:hover {
+		color: $accent;
+	}
 
 
-    @media only screen and (max-width: 760px) {
+	/* LANDING SHOWCASE */
 
-        margin-top: 1em;
 
-        .inner {
-            margin-top: 0;
-        }
+	@media only screen and (max-width: 760px) {
 
-        .hide,
-        sup {
-            display: none;
-        }
+		margin-top: 1em;
 
-    }
+		.inner {
+			margin-top: 0;
+		}
+
+		.hide,
+		sup {
+			display: none;
+		}
+
+	}
 }
 
 
 
 .landing-style-container {
 
-    width: 100%;
-    max-width: 1600px;
+	width: 100%;
+	max-width: 1600px;
 
-    padding: 1em;
+	padding: 1em;
 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 
-    .intro {
+	.intro {
 
-        box-sizing: border-box;
-        display: block;
-        margin-top: auto;
-				width: 100%;
+		box-sizing: border-box;
+		display: block;
+		margin-top: auto;
+		width: 100%;
 
-        .links {
+		.links {
 
-            text-align: center;
-            margin-bottom: 2em;
+			text-align: center;
+			margin-bottom: 2em;
 
-            a {
-                width: 120px;
-                display: inline-block;
+			a {
+				width: 110px;
+				display: inline-block;
 
-                text-decoration: none;
-                font-family: "Canela";
-                font-weight: 100;
-                font-size: 1.6em;
-                padding: .5em;
-                margin: auto .5em;
+				text-decoration: none;
+				font-family: "Canela";
+				font-weight: 100;
+				font-size: 1.6em;
+				padding: .5em;
+				margin: auto .5em;
 
-            }
-					
-					a:hover{
-						background: $white;
-						color:$bg-color;
-					}
+			}
 
-        }
+			a:hover {
+				background: $white;
+				color: $bg-color;
+			}
 
-
-        .links:hover a:not(:hover) {
-            filter: blur(1px);
-        }
+		}
 
 
-        p.intro {
-            margin: .5em auto;
-            max-width: 1100px;
-
-            text-align: center;
-            font-weight: 100;
-            color: $white;
-            font-family: "Canela", "GT America", apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial;
-            line-height: .85em !important;
-            font-size: 4.8em;
-
-            strong {
-                font-weight: 300;
-                -webkit-animation: color-change 3s infinite;
-                -moz-animation: color-change 3s infinite;
-                -o-animation: color-change 3s infinite;
-                -ms-animation: color-change 3s infinite;
-                animation: color-change 3s infinite;
-            }
-
-            @media only screen and (max-width: 780px) {
-
-                margin-bottom: 0;
-                font-size: 2.6em !important;
-
-            }
-
-        }
+		.links:hover a:not(:hover) {
+			filter: blur(1px);
+		}
 
 
-    }
+		p.intro {
+			margin: .5em auto;
+			max-width: 1100px;
+
+			text-align: center;
+			font-weight: 100;
+			color: $white;
+			font-family: "Canela", "GT America", apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial;
+			line-height: .85em !important;
+			font-size: 4.8em;
+
+			strong {
+				font-weight: 300;
+				-webkit-animation: color-change 3s infinite;
+				-moz-animation: color-change 3s infinite;
+				-o-animation: color-change 3s infinite;
+				-ms-animation: color-change 3s infinite;
+				animation: color-change 3s infinite;
+			}
+
+			@media only screen and (max-width: 780px) {
+
+				margin-bottom: 0;
+				font-size: 2.6em !important;
+
+			}
+
+		}
 
 
-    @media only screen and (max-width: 800px) {
-
-        margin-top: .5em;
-        flex-wrap: wrap;
+	}
 
 
-        .intro {
-					width: 100%;
+	@media only screen and (max-width: 800px) {
 
-            .links {
-                margin-bottom: .5em;
+		margin-top: .5em;
+		flex-wrap: wrap;
 
-                a {
-                    padding: .25em;
-                    margin: 0 auto;
-                }
+		.intro {
+			width: 100%;
 
-            }
+			p.intro {
+				padding: .25em;
+				font-size: 4em !important;
+				max-width: 95vw;
+			}
 
-        }
+			.links {
+				margin-bottom: .5em;
 
-        #landing-works {
-            width: 100%;
+				a {
+					padding: .25em;
+					margin: 0 auto;
+				}
 
-        }
-    }
+			}
+
+		}
+
+		#landing-works {
+			width: 100%;
+
+		}
+	}
 
 }
 
 
 
 #landing-works:hover a:not(:hover) {
-    filter: blur(1px);
+	filter: blur(1px);
 }
 
 #landing-works {
-    //
-    //    width: 32%;
-    //    max-width: 230px;
-    text-align: center;
-		margin: auto 2em;
+	//
+	//    width: 32%;
+	//    max-width: 230px;
+	text-align: center;
+	margin: 0 auto;
 	max-width: 95vw;
-	
-	.__projects{
+
+	.__projects {
 		width: auto;
 		overflow-x: scroll;
-    flex-wrap: nowrap;
-    display: flex;
-		/* width */
-		
-		
-	}
-
-	
-::-webkit-scrollbar {
-	height: 5px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: none;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: $text;
-	border-radius: 30px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: $text;
-}
-
-	
-    h3 {
-        font-family: "GT America";
-    }
-
-
-    a.btn {
-
-        font-family: "Canela";
-        color: $accent;
-        text-decoration: none;
-        font-weight: 100;
-        font-size: .75em;
-        padding: 0;
-			margin-top: 2em;
-    }
-
-
-    a {
-        font-size: .8em;
-        width: 200px;
-        margin: 0 1em;
-			padding: .5em;
-        margin-bottom: .5em;
-        display: inline-block;
-
-			flex-shrink: 0;
-        text-align: center;
-        text-decoration: none;
-			
-			img{
-				filter: grayscale(100%);
-				mix-blend-mode: difference;
-				max-height: 150px;
-            -webkit-transition: all .3s linear;
-            -moz-transition: all .3s linear;
-            -ms-transition: all .3s linear;
-            -o-transition: all .3s linear;
-            transition: all .3s linear;
-			}
-			
-
-        h2 {
-						margin: 0;
-            font-weight: 100;
-            font-family: "Canela";
-            font-size: 2.5em;
-            color: $white;
-            -webkit-transition: all .3s linear;
-            -moz-transition: all .3s linear;
-            -ms-transition: all .3s linear;
-            -o-transition: all .3s linear;
-            transition: all .3s linear;
-        }
-
-        h3 {
-            font-weight: 100;
-            font-size: .8em;
-            color: $white;
-            opacity: 0.8;
-            -webkit-transition: all .3s linear;
-            -moz-transition: all .3s linear;
-            -ms-transition: all .3s linear;
-            -o-transition: all .3s linear;
-            transition: all .3s linear;
-        }
-
-			
-			h4{
-				font-size: .8em;
-				font-weight: 100;
-			}
-			
-    }
-
-    a:hover {
-
-        h2, h3{
-            color: #fff;
-            text-shadow: 0 0 20px #5d5d5d;
-        }
-			
-			img{
-				transform: translateY(-4px);
-				
-				filter: grayscale(0%);
-			}
-			
+		flex-wrap: nowrap;
+		display: flex;
 	}
 
 
-    @media only screen and (max-width: 800px) {
+	::-webkit-scrollbar {
+		height: 5px;
+	}
 
-        margin: 1em auto;
-        width: 100%;
-        max-width: 100%;
-        padding: 1em 0;
+	/* Track */
+	::-webkit-scrollbar-track {
+		background: none;
+	}
 
-        a {
-            width: 100%;
-            margin-bottom: 1em;
+	/* Handle */
+	::-webkit-scrollbar-thumb {
+		background: $text;
+		border-radius: 30px;
+	}
 
-            h2 {
-                font-size: 3em;
-            }
+	/* Handle on hover */
+	::-webkit-scrollbar-thumb:hover {
+		background: $text;
+	}
 
-            h3 {
-                padding: 0;
-                font-size: 1em;
-                letter-spacing: -.2px;
-            }
 
-        }
+	h3 {
+		font-family: "GT America";
+	}
 
-    }
-    
-    @media only screen and(max-width: 600px){
-        border-top: 1px solid $white;
-    }
 
+	a.btn {
+
+		font-family: "Canela";
+		color: $accent;
+		text-decoration: none;
+		font-weight: 100;
+		font-size: .75em;
+		padding: 0;
+		margin-top: 2em;
+	}
+
+
+	a {
+		font-size: .8em;
+		width: 200px;
+		margin: 0 1em;
+		padding: .5em;
+		margin-bottom: .5em;
+		display: inline-block;
+
+		flex-shrink: 0;
+		text-align: center;
+		text-decoration: none;
+
+		img {
+			filter: grayscale(100%);
+			mix-blend-mode: difference;
+			max-height: 150px;
+			-webkit-transition: all .3s linear;
+			-moz-transition: all .3s linear;
+			-ms-transition: all .3s linear;
+			-o-transition: all .3s linear;
+			transition: all .3s linear;
+		}
+
+
+		h2 {
+			margin: 0;
+			font-weight: 100;
+			font-family: "Canela";
+			font-size: 2.5em;
+			color: $white;
+			-webkit-transition: all .3s linear;
+			-moz-transition: all .3s linear;
+			-ms-transition: all .3s linear;
+			-o-transition: all .3s linear;
+			transition: all .3s linear;
+		}
+
+		h3 {
+			font-weight: 100;
+			font-size: .8em;
+			color: $white;
+			opacity: 0.8;
+			-webkit-transition: all .3s linear;
+			-moz-transition: all .3s linear;
+			-ms-transition: all .3s linear;
+			-o-transition: all .3s linear;
+			transition: all .3s linear;
+		}
+
+
+		h4 {
+			font-size: .8em;
+			font-weight: 100;
+		}
+
+	}
+
+	a:hover {
+
+		h2,
+		h3 {
+			color: #fff;
+			text-shadow: 0 0 20px #5d5d5d;
+		}
+
+		img {
+			transform: translateY(-4px);
+
+			filter: grayscale(0%);
+		}
+
+	}
+
+
+	@media only screen and (max-width: 700px) {
+
+		margin: 1em auto;
+		padding: 1em 0;
+		
+		.__projects{
+			width: auto;
+		}
+
+		a {
+			margin-bottom: 2em;
+			width: 280px;
+			
+			img{
+				max-height: 280px;
+			}
+
+			h2 {
+				font-size: 2.8em;
+			}
+
+			h3 {
+				padding: 0;
+				font-size: 1em;
+				letter-spacing: -.2px;
+			}
+
+		}
+
+	}
 }
 
 #landing-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    max-height: 900px;
-    opacity: 0.5;
-    pointer-events: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	max-height: 900px;
+	opacity: 0.5;
+	pointer-events: none;
 
-    img {
-        width: 100%;
-        height: 100%;
-        opacity: 0.8;
-        object-fit: cover;
-        overflow: hidden;
-        filter: grayscale(1);
-        mix-blend-mode: overlay;
-    }
-    
+	img {
+		width: 100%;
+		height: 100%;
+		opacity: 0.8;
+		object-fit: cover;
+		overflow: hidden;
+		filter: grayscale(1);
+		mix-blend-mode: overlay;
+	}
+
 }
 
 #cbox {
 
-    position: fixed;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 15px;
-    text-align: center;
-    z-index: 999;
-    margin: 0 auto;
+	position: fixed;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 15px;
+	text-align: center;
+	z-index: 999;
+	margin: 0 auto;
 
-    button {
-        padding: 1em;
-        font-family: "Canela";
-        font-weight: 100;
-        font-size: 1em;
-        border: 0;
-        background: none;
-        mix-blend-mode: exclusion;
-        margin: 1em;
-    }
+	button {
+		padding: 1em;
+		font-family: "Canela";
+		font-weight: 100;
+		font-size: 1em;
+		border: 0;
+		background: none;
+		mix-blend-mode: exclusion;
+		margin: 1em;
+	}
 
-    button:hover {
-        color: $accent;
-    }
+	button:hover {
+		color: $accent;
+	}
 
-    #cbox-here iframe {
-        margin-right: 1em;
-        mix-blend-mode: difference;
-    }
+	#cbox-here iframe {
+		margin-right: 1em;
+		mix-blend-mode: difference;
+	}
 
 }
 
@@ -512,214 +516,214 @@ h3 {
 
 #landing-chia {
 
-    padding: 1em;
-    margin: 0 auto;
-    min-height: 250px;
-    max-width: 1600px;
+	padding: 1em;
+	margin: 0 auto;
+	min-height: 250px;
+	max-width: 1600px;
 
-    .box-inner {
-        width: 100%;
-    }
+	.box-inner {
+		width: 100%;
+	}
 
-    .currently {
-        
-        p.now{
-            font-family:"Canela";
-            font-weight: 100;
-            font-size: 1.5em;
-            line-height: 1.4em;
-            text-align: left;
-					
-					.big{
-						font-style: italic;
-						font-size: 1.5em;
-						line-height: 1em;
-					}
-					
-					
-        }
-        
-        p.now a{
-            text-decoration: none;
-            border-bottom: 1px solid;
-        }
+	.currently {
 
-        p {
-            padding: .5em;
-            max-width: 880px;
-            margin: 0 auto;
-            margin-bottom: 1em;
-            line-height: 1.8em;
-						
-        }
-			
+		p.now {
+			font-family: "Canela";
+			font-weight: 100;
+			font-size: 1.5em;
+			line-height: 1.4em;
+			text-align: left;
 
-        h1 {
-            color: $accent;
-            padding: .5em;
-        }
-    }
-    
-    .why{
-        
-        p{
-            text-align: left;
-        }
-        
-        summary::-webkit-details-marker {
-            display: none;
-        }   
-        
-        summary:hover{
-            cursor:help;
-        }
-        
-        details summary{
-            display: inline;
-            
-            h3{
-                display: inline;
-                line-height: 1em;
-                padding-bottom: 1em;
-            }
-            
-        }
-        
-    }
-
-    #links {
-
-        max-width: 1000px;
-
-        a:hover > u {
-            border-bottom: 1px solid $white;
-        }
-
-        p {
-            text-align: left;
-        }
-
-        @media only screen and (max-width: 700px) {
-            .awards {
-                display: none !important;
-            }
-        }
-
-    }
-
-    p {
-        color: $white;
-        text-align: center;
-    }
-
-    .thing {
-
-        margin-top: 50vh;
-        position: absolute;
-        background-position: center center;
-        background-size: contain;
-        background-repeat: no-repeat;
-        pointer-events: none;
-        z-index: 99;
-
-        @media only screen and (max-width: 700px) {
-            display: none;
-        }
-    }
+			.big {
+				font-style: italic;
+				font-size: 1.5em;
+				line-height: 1em;
+			}
 
 
-    .landing-word {
-        position: relative;
-        max-width: 500px;
-        clear: both;
-        display: flex;
-        justify-content: space-around;
+		}
 
-        h1 {
-            font-family: Canela;
-            font-weight: 100;
-            font-style: italic;
-            display: inline;
-            font-size: 2.8em;
-            line-height: .9em !important;
-            vertical-align: top;
-            color: $white;
-            margin: 0;
-        }
+		p.now a {
+			text-decoration: none;
+			border-bottom: 1px solid;
+		}
 
-        p {
-            padding: 1em;
-            margin-top: -1em;
-            max-width: 300px;
-            color: $white;
-            vertical-align: top;
+		p {
+			padding: .5em;
+			max-width: 880px;
+			margin: 0 auto;
+			margin-bottom: 1em;
+			line-height: 1.8em;
 
-            a {
-                color: $accent !important;
-            }
-        }
+		}
 
-    }
+
+		h1 {
+			color: $accent;
+			padding: .5em;
+		}
+	}
+
+	.why {
+
+		p {
+			text-align: left;
+		}
+
+		summary::-webkit-details-marker {
+			display: none;
+		}
+
+		summary:hover {
+			cursor: help;
+		}
+
+		details summary {
+			display: inline;
+
+			h3 {
+				display: inline;
+				line-height: 1em;
+				padding-bottom: 1em;
+			}
+
+		}
+
+	}
+
+	#links {
+
+		max-width: 1000px;
+
+		a:hover > u {
+			border-bottom: 1px solid $white;
+		}
+
+		p {
+			text-align: left;
+		}
+
+		@media only screen and (max-width: 700px) {
+			.awards {
+				display: none !important;
+			}
+		}
+
+	}
+
+	p {
+		color: $white;
+		text-align: center;
+	}
+
+	.thing {
+
+		margin-top: 50vh;
+		position: absolute;
+		background-position: center center;
+		background-size: contain;
+		background-repeat: no-repeat;
+		pointer-events: none;
+		z-index: 99;
+
+		@media only screen and (max-width: 700px) {
+			display: none;
+		}
+	}
+
+
+	.landing-word {
+		position: relative;
+		max-width: 500px;
+		clear: both;
+		display: flex;
+		justify-content: space-around;
+
+		h1 {
+			font-family: Canela;
+			font-weight: 100;
+			font-style: italic;
+			display: inline;
+			font-size: 2.8em;
+			line-height: .9em !important;
+			vertical-align: top;
+			color: $white;
+			margin: 0;
+		}
+
+		p {
+			padding: 1em;
+			margin-top: -1em;
+			max-width: 300px;
+			color: $white;
+			vertical-align: top;
+
+			a {
+				color: $accent !important;
+			}
+		}
+
+	}
 
 }
 
 #landing-more {
 
-    // outline: 1px solid #deabb1;
-    padding: 40px .5em;
-    margin: 0 auto;
-    width: 100%;
-    //  color: $white-screen;
-    //  background: $white;
+	// outline: 1px solid #deabb1;
+	padding: 40px .5em;
+	margin: 0 auto;
+	width: 100%;
+	//  color: $white-screen;
+	//  background: $white;
 
-    p {
-        color: $white;
-    }
+	p {
+		color: $white;
+	}
 
-    .box-inner {
-        max-width: 1000px;
-        padding: 0 1em;
-    }
+	.box-inner {
+		max-width: 1000px;
+		padding: 0 1em;
+	}
 
-    .projects-archive:hover a:not(:hover) {
-        filter: blur(1px);
-        opacity:0.9;
-    }
+	.projects-archive:hover a:not(:hover) {
+		filter: blur(1px);
+		opacity: 0.9;
+	}
 
-    .projects-archive {
-        font-family: "Canela";
-        text-align: center;
-        font-size: 1.4em;
-        font-weight: 100;
-        line-height: 1.6em;
+	.projects-archive {
+		font-family: "Canela";
+		text-align: center;
+		font-size: 1.4em;
+		font-weight: 100;
+		line-height: 1.6em;
 
-        .explanation {
-            font-style: italic;
-            color: $accent;
-            font-size: 1.4em;
-        }
+		.explanation {
+			font-style: italic;
+			color: $accent;
+			font-size: 1.4em;
+		}
 
-        a {
+		a {
 
-            display: inline;
-            margin: .5em 0;
-            margin-right: .25em;
+			display: inline;
+			margin: .5em 0;
+			margin-right: .25em;
 
-            text-decoration: none;
-            color: $white;
-            //    color: $white-screen;          
-        }
-        
+			text-decoration: none;
+			color: $white;
+			//    color: $white-screen;          
+		}
 
-    }
 
-    @media only screen and (max-width: 700px) {
+	}
 
-        .box-inner {
-            width: 100%;
-        }
+	@media only screen and (max-width: 700px) {
 
-    }
+		.box-inner {
+			width: 100%;
+		}
+
+	}
 
 
 
@@ -728,71 +732,71 @@ h3 {
 
 
 @-webkit-keyframes color-change {
-    0% {
-        color: #deabb1;
-    }
+	0% {
+		color: #deabb1;
+	}
 
-    50% {
-        color: $accent;
-    }
+	50% {
+		color: $accent;
+	}
 
-    100% {
-        color: #deabb1;
-    }
+	100% {
+		color: #deabb1;
+	}
 }
 
 @-moz-keyframes color-change {
-    0% {
-        color: #deabb1;
-    }
+	0% {
+		color: #deabb1;
+	}
 
-    50% {
-        color: $accent;
-    }
+	50% {
+		color: $accent;
+	}
 
-    100% {
-        color: #deabb1;
-    }
+	100% {
+		color: #deabb1;
+	}
 }
 
 @-ms-keyframes color-change {
-    0% {
-        color: #deabb1;
-    }
+	0% {
+		color: #deabb1;
+	}
 
-    50% {
-        color: $accent;
-    }
+	50% {
+		color: $accent;
+	}
 
-    100% {
-        color: #deabb1;
-    }
+	100% {
+		color: #deabb1;
+	}
 }
 
 @-o-keyframes color-change {
-    0% {
-        color: #deabb1;
-    }
+	0% {
+		color: #deabb1;
+	}
 
-    50% {
-        color: $accent;
-    }
+	50% {
+		color: $accent;
+	}
 
-    100% {
-        color: #deabb1;
-    }
+	100% {
+		color: #deabb1;
+	}
 }
 
 @keyframes color-change {
-    0% {
-        color: #deabb1;
-    }
+	0% {
+		color: #deabb1;
+	}
 
-    50% {
-        color: $accent;
-    }
+	50% {
+		color: $accent;
+	}
 
-    100% {
-        color: #deabb1;
-    }
+	100% {
+		color: #deabb1;
+	}
 }
