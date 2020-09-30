@@ -62,16 +62,31 @@
 			}
 			
 			.col-half.about{
-				width: 69%;
+				flex: 1;
 			}
 			
 			.col-third.experience{
+				flex: 1;
 				width: 50%;
 			}
+			
+			.col{
+				justify-content: space-between;
+				flex-wrap: wrap !important;
+			}
+			
+			.col-third.links{
+				max-width: 190px;
+			}
+			
 			
     @media only screen and (max-width: 700px) {
 			p.big{
 				font-size: 2.25em;
+			}
+			
+			.col{
+				flex-wrap: nowrap;
 			}
 			
 			.col-third, .col-half{
@@ -80,6 +95,16 @@
 			
 			.col-half.about{
 				width: 100%;
+				flex: none;
+			}
+			
+			.col-third.links{
+				display: block;
+				max-height: 150px;
+				overflow-y: scroll;
+				width: 100%;
+				max-width: none;
+				flex: none;
 			}
 			
 			.col-third.experience{
@@ -102,6 +127,11 @@
 				font-size: 1em !important;
 				border-bottom: 1px solid #e3abbc;
 				text-decoration: none;
+			}
+			
+			.why ol li::before{
+				color:#e3abbc;
+				border: 1px solid #e3abbc;
 			}
         
     </style>
@@ -143,9 +173,9 @@
 
                 <br>
                 
-        <div class="col" id="links" style="display: flex;">
+        <div class="col" id="links">
             
-            <div class="col-third" style="max-width: 190px;">
+            <div class="col-third links">
             
                 <h3>Documents</h3>
                 <a href="resume"><u>Résumé</u> <sup>Dark/Light</sup></a>

@@ -198,7 +198,7 @@ body {
 			left: 0;
         float: left;
         width: 100vw;
-			height: 100vw;
+			height: 100vh;
 			opacity: 0.5;
         pointer-events: none;
     }
@@ -256,13 +256,11 @@ body {
         .box-inner {
             padding: 1em;
         }
-
-        img.chia {
-            float: none;
-            text-align: center;
-            margin: auto;
-            max-width: 180px;
-        }
+			
+			img.chia{
+				height: 100vh;
+				width: auto;
+			}
 
     }
 
