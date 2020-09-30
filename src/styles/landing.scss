@@ -208,6 +208,11 @@ h3 {
                 margin: auto .5em;
 
             }
+					
+					a:hover{
+						background: $white;
+						color:$bg-color;
+					}
 
         }
 
@@ -483,6 +488,7 @@ h3 {
             margin-bottom: 1em;
             line-height: 1.8em;
         }
+			
 
         h1 {
             color: $accent;

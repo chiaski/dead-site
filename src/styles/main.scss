@@ -200,7 +200,6 @@ body {
 
     p {
         color: $bg-color;
-        font-size: 1.6em;
         font-family: "Canela";
         line-height: 1.25em;
         text-align: left;
@@ -209,21 +208,6 @@ body {
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
 
-        a {
-            display: inline-block;
-            font-size: 1.2em;
-            font-family: "Canela";
-            font-weight: 100;
-            font-style: italic;
-            line-height: 1.3em;
-            text-decoration: none;
-            cursor: pointer;
-            color: $bg-color;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
     }
     
     li p{
