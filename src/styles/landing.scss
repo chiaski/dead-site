@@ -64,9 +64,21 @@ h3 {
 
 
 #landing-work{
+	min-height: 100vh;
+	
+	
+	.projects-large{
+		
+		.project-box{
+			width: 600px;
+			height: 400px;
+			background-size: contain;
+		}
+		
+	}
+	
 	
 }
-
 
 
 #landing {

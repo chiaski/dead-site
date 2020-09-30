@@ -82,10 +82,10 @@ body {
     }
 }
 
-
-.header:hover a:not(:hover) {
-    filter: blur(1px);
-}
+//
+//.header:hover a:not(:hover) {
+//    filter: blur(1px);
+//}
 
 .header {
     position: fixed;
@@ -94,7 +94,7 @@ body {
     width: 100%;
     top: 0px;
     box-sizing: border-box;
-    padding: 1.25em 1em;
+    padding: 1.5em 1em;
     display: flex;
     justify-content: space-between;
     background-repeat: repeat-x;
