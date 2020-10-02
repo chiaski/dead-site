@@ -211,17 +211,12 @@ h3 {
 
 			}
 
-			a:hover {
-				background: $white;
-				color: $bg-color;
-			}
-
 		}
 
-//
-//		.links:hover a:not(:hover) {
-//			filter: blur(1px);
-//		}
+
+		.links:hover a:not(:hover) {
+			opacity: 0.4;
+		}
 
 
 		p.intro {
