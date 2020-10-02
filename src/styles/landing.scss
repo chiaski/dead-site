@@ -296,18 +296,38 @@ h3 {
 }
 
 #landing-works {
-	//
-	//    width: 32%;
-	//    max-width: 230px;
 	text-align: center;
 	margin: 0 auto;
 	max-width: 95vw;
-
+	
 	.__projects {
 		width: auto;
 		overflow-x: scroll;
 		flex-wrap: nowrap;
 		display: flex;
+		position: relative;
+
+		.dither-a, .dither-b{
+			position: fixed;
+			padding: 0 5em;
+			width:115px;
+			height:100%;
+			background-size: cover;
+			background-repeat: repeat-y;
+			pointer-events: none;
+			z-index: 9999;
+		}
+		
+		.dither-a{
+			right: 0;
+		}
+		
+		.dither-b{
+			left: 0;
+			transform: rotate(180deg);
+		}
+
+		
 	}
 
 
@@ -354,7 +374,6 @@ h3 {
 
 		img {
 			filter: grayscale(100%);
-			mix-blend-mode: difference;
 			max-height: 200px;
 			-webkit-transition: all .3s linear;
 			-moz-transition: all .3s linear;
