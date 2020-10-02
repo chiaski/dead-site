@@ -1,10 +1,10 @@
-$bg-color: #aab2b4;
+$bg-color: #c0c5c6;
 $light-color: #475158;
 $white: #35383b;
 $text: #35383b;
 
 $accent: #475158;
-$white-screen: #aab2b4;
+$white-screen: #c0c5c6;
 
 
 body {
@@ -218,10 +218,10 @@ h3 {
 
 		}
 
-
-		.links:hover a:not(:hover) {
-			filter: blur(1px);
-		}
+//
+//		.links:hover a:not(:hover) {
+//			filter: blur(1px);
+//		}
 
 
 		p.intro {
@@ -296,7 +296,8 @@ h3 {
 
 
 #landing-works:hover a:not(:hover) {
-	filter: blur(1px);
+//	filter: blur(1px);
+	opacity: 0.4;
 }
 
 #landing-works {
@@ -414,12 +415,11 @@ h3 {
 
 		h2,
 		h3 {
-			color: #fff;
+//			color: #fff;
 		}
 
 		img {
 			transform: translateY(-4px);
-
 			filter: grayscale(0%);
 		}
 
@@ -689,8 +689,7 @@ h3 {
 	}
 
 	.projects-archive:hover a:not(:hover) {
-		filter: blur(1px);
-		opacity: 0.9;
+		opacity: 0.5;
 	}
 
 	.projects-archive {
