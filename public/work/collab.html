@@ -45,6 +45,8 @@
 
 
     <div class="header" id="navigation" style="background-image:url(../assets/portfolio/collab/nav-trans.png);">
+		<div id="_progress"></div>
+			
         <div class="header-left"><a href="../index.html" style="color:#7c1da7;">Collab</a></div>
         <div class="header-right">
             <a href="../about.html">About</a>
@@ -270,6 +272,25 @@ $(document).ready(function() {
         window.location = linkLocation;
     }
 });
+			
+			
+		document.addEventListener(
+			"scroll",
+			function() {
+				var scrollTop =
+					document.documentElement["scrollTop"] || document.body["scrollTop"];
+				var scrollBottom =
+					(document.documentElement["scrollHeight"] ||
+						document.body["scrollHeight"]) - document.documentElement.clientHeight;
+				scrollPercent = scrollTop / scrollBottom * 100 + "%";
+				document
+					.getElementById("_progress")
+					.style.setProperty("--scroll", scrollPercent);
+			}, {
+				passive: true
+			}
+		);
+
 </script>
     
     

@@ -57,6 +57,8 @@
 <body style="background:#15181c;">
 
     <div class="header header-alt" id="navigation" style="background-image:url(../assets/portfolio/letterboxd/nav-trans.png);">
+		<div id="_progress"></div>
+			
         <div class="header-left"><a href="../index.html">Letterboxd</a></div>
         <div class="header-right">
             <a href="../about.html">About</a>
@@ -630,7 +632,7 @@ There’s nothing more critical to the film experience than being able to articu
                         </div>
                     </div>
                         
-                        <div class="portfolio-travel" style="background:#a72b2b;">
+                        <div class="portfolio-travel" style="background:#15181c;">
                     
                 <!-- Back / Home -->
                     <a href="collab.html" class="travel-left">
@@ -690,6 +692,26 @@ $(document).ready(function() {
         window.location = linkLocation;
     }
 });
+			
+			
+		document.addEventListener(
+			"scroll",
+			function() {
+				var scrollTop =
+					document.documentElement["scrollTop"] || document.body["scrollTop"];
+				var scrollBottom =
+					(document.documentElement["scrollHeight"] ||
+						document.body["scrollHeight"]) - document.documentElement.clientHeight;
+				scrollPercent = scrollTop / scrollBottom * 100 + "%";
+				document
+					.getElementById("_progress")
+					.style.setProperty("--scroll", scrollPercent);
+			}, {
+				passive: true
+			}
+		);
+
+			
 </script>
     
     
