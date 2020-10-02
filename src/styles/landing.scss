@@ -86,7 +86,7 @@ h3 {
 	margin: 0 auto;
 	width: 95%;
 	padding: auto 2em;
-	min-height: 80vh;
+	min-height: 90vh;
 
 	.radial {
 		position: absolute;
@@ -336,18 +336,9 @@ h3 {
 		font-family: "GT America";
 	}
 
-
-	a.btn {
-
-		font-family: "Canela";
-		color: $accent;
-		text-decoration: none;
-		font-weight: 100;
-		font-size: .75em;
-		padding: 0;
-		margin-top: 2em;
+	a.btn{
+		margin-top: 3em;
 	}
-
 
 	a {
 		font-size: .8em;
