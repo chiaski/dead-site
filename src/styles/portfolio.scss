@@ -54,6 +54,10 @@ h3 {
 	margin: auto;
 }
 
+img{
+	max-width: 800px;
+}
+
 
 /* IMAGE CONTAINER TYPES */
 
@@ -61,7 +65,6 @@ h3 {
 
 .image-container {
 
-	margin-left: 1em;
 	text-align: center;
 	width: 100%;
 	max-width: 100%;
@@ -75,7 +78,7 @@ h3 {
 	img,
 	video,
 	iframe {
-		max-width: 98%;
+		max-width: 900px;
 		margin: auto;
 		display: block;
 		padding: .25em;
@@ -305,15 +308,9 @@ iframe {
 	margin: 0 auto;
 
 	.portfolio-study {
+		max-width: 1400px;
 		margin: 0 auto;
-		display: flex;
-		flex-wrap: wrap;
-		max-width: 100%;
 		background-size: contain;
-	}
-
-	.box-inner {
-		max-width: 100%;
 	}
 
 	hr {
@@ -637,8 +634,8 @@ iframe {
 	.box-inner {
 
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: center;
-		max-width: 1200px;
 		margin: 0;
 		padding: 0;
 		box-sizing: border-box;
@@ -998,16 +995,15 @@ iframe {
 
 #portfolio .intro {
 
-	width: 100%;
-	min-height: 550px;
+	width: 100vw;
+	min-height: 700px;
 
+	margin-top: -100px;
 	background-size: contain;
-	background-position: center;
+	background-position: center top;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 
-
-	position: relative;
 	display: flex;
 	place-items: center;
 
@@ -1025,12 +1021,11 @@ iframe {
 		padding: .5em;
 	}
 
-
-
 	@media only screen and (max-width: 800px) {
 
-		background-size: cover;
 		background-size: 150%;
+		background-position: center center;
+		min-height: 400px;
 
 		.intro-inner {
 			position: absolute;
@@ -1163,6 +1158,15 @@ iframe {
 }
 
 
+p.byline{
+	font-family: "Canela";
+	font-weight: 100;
+	font-size: 2.6em !important;
+	max-width: 900px !important;
+	width: 100%;
+
+	padding: .25em .5em !important;
+}
 
 .summary-container {
 
