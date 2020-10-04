@@ -1158,16 +1158,6 @@ iframe {
 }
 
 
-p.byline{
-	font-family: "Canela";
-	font-weight: 100;
-	font-size: 2.6em !important;
-	max-width: 900px !important;
-	width: 100%;
-
-	padding: .25em .5em !important;
-}
-
 .summary-container {
 
 	padding: 1em;
@@ -1181,12 +1171,16 @@ p.byline{
 		width: 100% !important;
 		max-width: 100% !important;
 		margin-bottom: 1.5em !important;
-
+		text-indent: 2em;
 		
 		font-weight: 100;
-		font-size: 1.5em !important;
+		font-size: 1.8em !important;
 		line-height: 1.25em !important;
 		font-family:"Canela";
+		
+		em{
+			font-size: 1.2em;
+		}
 
 
 		a {

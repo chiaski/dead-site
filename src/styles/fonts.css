@@ -48,6 +48,25 @@
 
 
 @font-face {
+    font-family: 'Canela';
+    src: url('../fonts/Canela-Thin.woff2') format('woff2'),
+        url('../fonts/Canela-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Canela';
+    src: url('../fonts/Canela-ThinItalic.woff2') format('woff2'),
+        url('../fonts/Canela-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+}
+
+
+
+
+@font-face {
     font-family: 'Sporting Grotesque';
     src: url('../fonts/SportingGrotesque-Regular.woff2') format('woff2'),
         url('../fonts/SportingGrotesque-Regular.woff') format('woff');
