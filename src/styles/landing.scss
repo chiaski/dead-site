@@ -204,7 +204,7 @@ h3 {
 
 				text-decoration: none;
 				font-family: "Canela";
-				font-weight: 300;
+				font-weight: 100;
 				font-size: 1.6em;
 				padding: .5em;
 				margin: auto .5em;
@@ -226,7 +226,7 @@ h3 {
 			margin-bottom: 1em;
 
 			text-align: center;
-			font-weight: 300;
+			font-weight: 100;
 			color: $white;
 			font-family: "Canela", "GT America", apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial;
 			line-height: .9em !important;
@@ -321,13 +321,18 @@ h3 {
 
 	/* Handle */
 	::-webkit-scrollbar-thumb {
-		background: $text;
+		background-color: rgba(53, 56, 59, 0.2);
 		border-radius: 30px;
+			-webkit-transition: all .3s linear;
+			-moz-transition: all .3s linear;
+			-ms-transition: all .3s linear;
+			-o-transition: all .3s linear;
+			transition: all .3s linear;
 	}
 
 	/* Handle on hover */
-	::-webkit-scrollbar-thumb:hover {
-		background: $text;
+	.__projects:hover ::-webkit-scrollbar-thumb {
+		background-color: rgba(53, 56, 59, 0.5);
 	}
 
 
@@ -512,12 +517,12 @@ h3 {
 
 	.currently {
 		
-		max-width: 850px;
+		max-width: 860px;
 		margin: 0 auto;
 
 		p.now {
 			font-family: "Canela";
-			font-weight: 300;
+			font-weight: 100;
 			font-size: 2.5em;
 			line-height: 1.2em;
 			text-align: left;
