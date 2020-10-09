@@ -255,7 +255,7 @@ h3 {
 
 	@media only screen and (max-width: 800px) {
 
-		margin-top: 175px;
+		margin-top: 30px;
 		flex-wrap: wrap;
 
 		.intro {
@@ -301,11 +301,13 @@ h3 {
 	text-align: center;
 	margin: 0 auto;
 	padding-top: 1vh;
+	overflow-y: hidden;
 	max-width: 95vw;
 	
 	.__projects {
 		width: auto;
 		overflow-x: scroll;
+	overflow-y: hidden;
 		flex-wrap: nowrap;
 		display: flex;
 		position: relative;
@@ -347,10 +349,11 @@ h3 {
 		margin-top: 3em;
 		font-family: "GT America" !important;
 	}
+	
 
 	a {
 		font-size: .8em;
-		width: 240px;
+		width: 220px;
 		margin: 0 .5em;
 		padding: .5em;
 		margin-bottom: 2em;
@@ -360,6 +363,10 @@ h3 {
 		text-align: center;
 		text-decoration: none;
 
+		.project-box-desc{
+			position: relative;
+		}
+		
 		img {
 			filter: grayscale(100%);
 			max-height: 220px;
@@ -401,7 +408,25 @@ h3 {
 			font-size: .8em;
 			font-weight: 100;
 		}
-
+		
+		._tooltip {
+				display:none;
+			
+			img{
+				height: 300px;
+				max-height: 300px;
+			}
+			
+		}
+		.project-box-desc:hover ._tooltip {
+				display:block;
+				position:fixed;
+				overflow:hidden;
+			margin-top: -50px;
+			margin-left: -150px;
+			mix-blend-mode: difference;
+			pointer-events: none;
+		}
 	}
 
 	a:hover {
@@ -430,7 +455,7 @@ h3 {
 
 		a {
 			margin-bottom: 2em;
-			width: 280px;
+			width: 240px;
 			
 			img{
 				max-height: 280px;
