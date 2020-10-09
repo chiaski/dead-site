@@ -82,11 +82,11 @@ h3 {
 
 
 #landing {
-
+	
 	margin: 0 auto;
-	width: 95%;
 	padding: auto 2em;
-	min-height: 90vh;
+	min-height: 100vh;
+	justify-content: flex-start;
 
 	.radial {
 		position: absolute;
@@ -102,13 +102,15 @@ h3 {
 	}
 	
 	.landing-links{
-		position: relative;
+		position: absolute;
 		top: 0;
-		left: 0;
-		padding: 0 1em;
+  	left: 50%;
+  	transform: translateX(-50%);
 		min-height: 100px;
 		width: 100%;
-		box-sizing: border-box;
+		max-width: 90vw;
+		margin: 1em auto;
+		margin-bottom: 2.5vh;
 		
 		display: flex;
 		justify-content: space-between;
@@ -205,60 +207,31 @@ h3 {
 
 .landing-style-container {
 
+	margin-top: 5em;
+	position: relative;
+	bottom: 0;
 	width: 100%;
-	max-width: 1600px;
-	margin-top: 2em;
-	padding: 1em;
-
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 
 	.intro {
 
-		box-sizing: border-box;
-		display: block;
-		margin-top: auto;
-		width: 100%;
-
-		.links {
-
-			text-align: center;
-			margin-bottom: 2em;
-
-			a {
-				width: 110px;
-				display: inline-block;
-
-				text-decoration: none;
-				font-family: "Canela";
-				font-weight: 100;
-				font-size: 1.6em;
-				padding: .5em;
-				margin: auto .5em;
-
-			}
-
-		}
-
-
-		.links:hover a:not(:hover) {
-			opacity: 0.4;
-		}
-
+		bottom: 0;
+		margin-top: 1.5vh;
+		width: 100vw;
 
 		p.intro {
-			margin: 0 auto;
-			width: 1300px;
+			width: 800px;
 			max-width: 90vw;
-			margin-bottom: 1em;
+			padding: 1.5rem 0;
+			margin: 0 auto;
 
 			text-align: center;
 			font-weight: 300;
-			color: $white;
 			font-family: "Canela", "GT America", apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial;
 			line-height: .9em !important;
-			font-size: 3em;
+			font-size: 3.6em;
 
 			strong {
 				font-weight: 300;
@@ -276,16 +249,17 @@ h3 {
 
 	@media only screen and (max-width: 800px) {
 
-		margin-top: .5em;
+		margin-top: 175px;
 		flex-wrap: wrap;
 
 		.intro {
 			width: 100%;
 
 			p.intro {
-				padding: .25em;
+				padding: 0 .5em;
+				text-align: center;
 				font-weight: 300;
-				font-size: 2.8em !important;
+				font-size:3em !important;
 				max-width: 95vw;
 				margin-bottom: 0;
 			}
@@ -320,6 +294,7 @@ h3 {
 #landing-works {
 	text-align: center;
 	margin: 0 auto;
+	padding-top: 1vh;
 	max-width: 95vw;
 	
 	.__projects {
@@ -343,7 +318,7 @@ h3 {
 
 	/* Handle */
 	::-webkit-scrollbar-thumb {
-		background-color: rgba(53, 56, 59, 0.2);
+		background-color: rgba(53, 56, 59, 0.1);
 		border-radius: 30px;
 			-webkit-transition: all .3s linear;
 			-moz-transition: all .3s linear;
@@ -354,7 +329,7 @@ h3 {
 
 	/* Handle on hover */
 	.__projects:hover ::-webkit-scrollbar-thumb {
-		background-color: rgba(53, 56, 59, 0.5);
+		background-color: rgba(53, 56, 59, 0.1);
 	}
 
 
@@ -364,15 +339,15 @@ h3 {
 
 	a.btn{
 		margin-top: 3em;
-		font-weight: 100;
+		font-family: "GT America" !important;
 	}
 
 	a {
 		font-size: .8em;
-		width: 220px;
+		width: 240px;
 		margin: 0 .5em;
 		padding: .5em;
-		margin-bottom: 1em;
+		margin-bottom: 2em;
 		display: inline-block;
 
 		flex-shrink: 0;
@@ -381,7 +356,7 @@ h3 {
 
 		img {
 			filter: grayscale(100%);
-			max-height: 200px;
+			max-height: 220px;
 			-webkit-transition: all .3s linear;
 			-moz-transition: all .3s linear;
 			-ms-transition: all .3s linear;
@@ -532,10 +507,12 @@ h3 {
 
 	padding: 1em;
 	margin: 0 auto;
-	max-width: 1200px;
+	background-size: cover;
+	
 
 	.box-inner {
 		width: 100%;
+		max-width: 1200px;
 	}
 
 	.currently {
@@ -614,6 +591,15 @@ h3 {
 	#links {
 
 		max-width: 1000px;
+		
+		.col-third{
+			
+			mix-blend-mode: screen;
+			filter: invert(1);
+		
+		}
+		
+		
 
 		a:hover > u {
 			border-bottom: 1px solid $white;
