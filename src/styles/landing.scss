@@ -1,10 +1,10 @@
-$bg-color: #c0c5c6;
+$bg-color: #ACB2B4;
 $light-color: #475158;
 $white: #35383b;
 $text: #35383b;
 
 $accent: #475158;
-$white-screen: #c0c5c6;
+$white-screen: #ACB2B4;
 
 
 body {
@@ -93,38 +93,76 @@ h3 {
 		pointer-events: none;
 	}
 
-	.announcement {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		border-bottom: 1px solid $white;
-		padding: .5em;
-		text-align: center;
-
-		a {
-			text-decoration: none;
-		}
-
-		a:hover {
-			filter: blur(1px);
-		}
-
-		a::after {
-			//   content: " →";
-		}
-
-		@media only screen and (max-width: 760px) {
-			display: none;
-		}
-
-	}
 
 	.inner {
 		height: auto;
 		z-index: 999;
-		margin: 2em auto;
+		margin: .5em auto;
 
+	}
+	
+	.landing-links{
+		position: relative;
+		top: 0;
+		left: 0;
+		padding: 0 1em;
+		min-height: 100px;
+		width: 100%;
+		box-sizing: border-box;
+		
+		display: flex;
+		justify-content: space-between;
+		
+		._left{
+			padding: 0 1em;
+			max-width: 50%;
+			font-size: .8em;
+			
+			p{
+				max-width: 400px;
+				line-height: 1.25em;
+			}
+			
+			p a{
+				opacity: 0.8;
+				text-decoration: none;
+			}
+			
+			p a:hover{
+				opacity: 1;
+			}
+			
+			
+		@media only screen and (max-width: 760px) {
+			
+			max-width: 80%;
+			
+			p{
+				max-width: 100%;
+			}
+			}
+			
+		}
+		
+		._right{
+			padding: 1em;
+			max-width: 50%;
+			
+			a{
+				display: block;
+				line-height: 1em;
+				margin-bottom: .5em;
+				text-transform: uppercase;
+				text-decoration: none;
+			}
+			
+			a:hover{
+				transform: translateX(-2px);
+			}
+			
+		}
+		
+		
 	}
 
 	h1 {
@@ -143,16 +181,6 @@ h3 {
 			margin-bottom: 10px;
 		}
 	}
-
-	p a::after {
-		content: "↗\00FE0E ";
-		font-size: .8em;
-	}
-
-	p a:hover {
-		color: $accent;
-	}
-
 
 	/* LANDING SHOWCASE */
 
@@ -179,7 +207,7 @@ h3 {
 
 	width: 100%;
 	max-width: 1600px;
-
+	margin-top: 2em;
 	padding: 1em;
 
 	display: flex;
@@ -226,7 +254,7 @@ h3 {
 			margin-bottom: 1em;
 
 			text-align: center;
-			font-weight: 100;
+			font-weight: 300;
 			color: $white;
 			font-family: "Canela", "GT America", apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial;
 			line-height: .9em !important;
@@ -240,14 +268,6 @@ h3 {
 				-ms-animation: color-change 3s infinite;
 				animation: color-change 3s infinite;
 			}
-
-			@media only screen and (max-width: 780px) {
-
-				margin-bottom: 0;
-				font-size: 2.6em !important;
-
-			}
-
 		}
 
 
@@ -264,8 +284,10 @@ h3 {
 
 			p.intro {
 				padding: .25em;
-				font-size: 3.6em !important;
+				font-weight: 300;
+				font-size: 2.8em !important;
 				max-width: 95vw;
+				margin-bottom: 0;
 			}
 
 			.links {
@@ -342,6 +364,7 @@ h3 {
 
 	a.btn{
 		margin-top: 3em;
+		font-weight: 100;
 	}
 
 	a {
@@ -523,7 +546,7 @@ h3 {
 		p.now {
 			font-family: "Canela";
 			font-weight: 100;
-			font-size: 2.5em;
+			font-size: 2.25em;
 			line-height: 1.2em;
 			text-align: left;
 			margin-bottom: 0;
@@ -539,6 +562,7 @@ h3 {
 			
 		@media only screen and (max-width: 700px) {
 			padding: .25em;
+			font-size: 1.6em;
 			
 			}
 
@@ -551,6 +575,11 @@ h3 {
 		
 		a:hover{
 			opacity: 0.6;
+		}
+		@media only screen and (max-width: 700px) {
+			a{
+				margin-left:.5em;
+			}
 		}
 		
 	}
