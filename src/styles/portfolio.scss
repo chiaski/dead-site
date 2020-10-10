@@ -464,11 +464,11 @@ iframe {
 		width: 100%;
 
 		a {
-			font-family: "GT America Expanded";
+			font-weight: 100;
+			font-size: 1.5em;
+			font-family: "Canela";
 			padding: .5em !important;
-			background: none !important;
-			color: #2d1080 !important;
-			border-bottom: 1px solid #2d1080;
+			color: $dark-mid !important;
 		}
 
 
