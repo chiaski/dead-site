@@ -62,25 +62,6 @@ body {
     }
 }
 
-.box {
-
-    h1 {
-
-        sup {
-            font-family: 'GT America Expanded';
-            font-size: 12px;
-            font-weight: 100;
-            margin-bottom: 10px;
-            line-height: .5em;
-        }
-    }
-
-
-    p {
-        font-family: "GT America";
-        line-height: 1.6em;
-    }
-}
 
 //
 //.header:hover a:not(:hover) {
@@ -1105,6 +1086,12 @@ h3 {
 
 
 /* MAIN ELEEMENTS */
+
+p{
+	font-size: 1em;
+	font-family: "GT America";
+}
+
 
 li {
     font-size: .9em;
