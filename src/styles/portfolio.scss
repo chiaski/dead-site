@@ -72,6 +72,7 @@ img{
 	max-width: 100vw;
 	overflow: hidden;
 	box-sizing: border-box;
+	object-fit: contain;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -310,7 +311,6 @@ iframe {
 	margin: 0 auto;
 
 	.portfolio-study {
-		background: blue;
 		position: relative;
 		margin: 0 auto;
 		background-size: contain;
@@ -703,7 +703,7 @@ iframe {
 		blockquote.testimonial {
 			display: inline-block;
 			width: 95%;
-			max-width: 450px;
+			max-width: 400px;
 			margin-bottom: .25em;
 			padding: 1em;
 			float: right;
@@ -767,6 +767,10 @@ iframe {
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: center;
+			
+			h1, h2, h3{
+				max-width: 100%;
+			}
 
 
 			h2 {
@@ -776,6 +780,7 @@ iframe {
 
 			p {
 				margin: 0 .8em;
+				max-width: 100%;
 			}
 
 
