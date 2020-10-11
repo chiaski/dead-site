@@ -49,6 +49,7 @@ h2 {
 }
 
 h3 {
+	width: 700px;
 	font-size: 2em;
 	font-family: "Canela";
 	font-weight: 300;
@@ -674,7 +675,7 @@ iframe {
 			padding-top: .5em;
 			padding-bottom: 1em;
 			max-width: 95vw;
-			width: 820px;
+			width: 700px;
 			margin: auto;
 
 		}
@@ -1411,8 +1412,8 @@ iframe {
 }
 
 
-/* ALT COLOR */
 
+/* ALT COLOR */
 
 
 .alt {
@@ -1448,89 +1449,6 @@ iframe {
 	}
 
 }
-
-#sticky-header.alt {
-	background: #001a19 !important;
-
-
-	h2 {
-		color: $lightcyan !important;
-		line-height: 1em;
-		font-size: .8em;
-		letter-spacing: .1em;
-		text-transform: none;
-	}
-}
-
-#sticky-header {
-	width: 100%;
-	padding: 1em;
-
-	h2 {
-		line-height: 1em;
-		margin-top: -2em;
-		font-size: .8em;
-	}
-}
-
-.sticky {
-	top: 0;
-	padding: 1em;
-}
-
-/* PORTFOLIO PAGE */
-
-
-.portfolio-landing,
-.portfolio-page-landing {
-	font-family: "GT America Expanded";
-	vertical-align: center;
-	justify-content: center;
-	align-content: center;
-	display: flex;
-	flex-wrap: wrap;
-
-	h1 {
-		color: lightblue;
-		font-weight: 300;
-		font-size: 3em;
-		line-height: 1.2em;
-		margin: 0;
-	}
-
-	p {
-		text-align: center;
-		font-family: "GT America Expanded";
-		margin: 0;
-		max-width: 500px;
-	}
-
-	.portfolio-overview {
-
-		a {
-			font-family: "GT America Expanded";
-			font-size: .9em;
-		}
-	}
-}
-
-.container-portfolio {
-	h1 {
-		text-align: center;
-		margin: 0 1em 1em 1em;
-	}
-
-	h3 {
-		text-align: center;
-		margin: 0;
-		color: #dce6e8;
-		font-family: "GT America Expanded";
-		font-size: 1em;
-		font-weight: 100;
-	}
-}
-
-
 
 /* PROGRESS BAR */
 
