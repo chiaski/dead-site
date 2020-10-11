@@ -774,7 +774,7 @@ iframe {
 			margin: auto;
 			display: flex;
 			flex-wrap: wrap;
-			justify-content: space-between;
+			justify-content: center;
 			
 			h1, h2, h3{
 				max-width: 100%;
@@ -940,13 +940,13 @@ iframe {
 						font-size: 2em;
 						text-align: left;
 						margin: 0;
+						padding-left: .25em;
 					}
 
 				}
 
 				.col-third {
-					width: 48%;
-					min-width: 150px;
+					width: 46%;
 				}
 
 			}
@@ -1099,7 +1099,6 @@ iframe {
 	}
 
 	.col-third {
-		max-width: 230px;
 		border-radius: 5px;
 		padding: .5em;
 
@@ -1118,8 +1117,14 @@ iframe {
 			padding: .5em;
 			margin: .5em;
 			width: 100% !important;
+			text-align: left;
 
+			h3{
+				text-align: left;
+			}
+			
 			p {
+				text-align: left;
 				margin: 0;
 				padding: 0 !important;
 			}
