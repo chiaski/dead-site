@@ -427,17 +427,6 @@
 
 		<div class="box footer-alt" id="footer">
 
-			<div class="footer-newsletter">
-				<form action="https://tinyletter.com/weeaboo" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/weeaboo', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><input type="text" style="width:140px" placeholder="Enter your email to subscribe to my newsletter" name="email" id="tlemail" /><input type="hidden" value="1" name="embed" /><input type="submit" value="→" /></form>
-			</div>
-
-			<div class="footer-links">
-				<a href="../about" class="about">About</a>
-
-				<a href="https://medium.com/@chiaski">Writing</a>
-				<a href="mailto:chiamisola@gmail.com">Mail</a>
-
-			</div>
 		</div>
 
 
@@ -446,6 +435,14 @@
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
 
+    
+<script type="text/javascript">
+    $(document).ready(function() {
+      $('#footer').load('foot.html');
+    });
+
+  </script>
+  
 	<script type="text/javascript">
 		$(document).ready(function() {
 			$("body").css("display", "none");

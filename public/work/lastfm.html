@@ -97,7 +97,7 @@
 				<div class="intro" style="background-image:url(../assets/portfolio/lastfm/full.jpg);">
 					<div class="intro-inner">
 						<div class="summary-container">
-							<p class="summary">Last.fm is a classic music tracking & discovery platform. In a time of streaming, its ability to aggregate and socialize users over data grows more important to how we network over music.
+							<p class="summary">Last.fm is a classic music activity tracking & discovery platform. In an age of streaming, its ability to socialize users over data influences how we network over music.
 							</p>
 						</div>
 				</div>
@@ -752,17 +752,17 @@
 
 							<p>This is Last.fm's edge: it gives users a data-driven glimpse into their musical history.<br>
 
-								<p>The reports are filtered by week, month, or year: with immediate scrobble counts, day views, overlaid on their top discovery of the week.</p>
+								<p>The reports are filtered by week, month, or year. Each section is designed to occupy the full screen height, letting it sink in.</p>
 
 								<ul>
 									<li><strong>Scrobble counts</strong> displayed as bars encourage users to listen even more than previous weeks.</li>
 									<li><strong>Top music</strong> highlights the user's top artist, album, and track.</li>
-									<li><strong>The Last.fm tag timeline</strong> shows the diversity in music taste over time, and highlights the user-generated tags on Last.fm.</li>
+<!--									<li><strong>The Last.fm tag timeline</strong> shows the diversity in music taste over time, and highlights the user-generated tags on Last.fm.</li>-->
 									<li><strong>Discoveries</strong> show users their top listens throughout the week.</li>
 								</ul>
 
 
-								<p><strong>Listening Report Notifications</strong>&mdash;Last.fm also has incredible potential to use push notifications and emails to deliver users overviews of their activity, driving them to check their stats and discover some new music along the way.</p>
+								<p><strong>Listening Report Notifications</strong>&mdash;Also nudged on onboarding, it's important to notify users about their weekly reports to get them to come back to the app frequently, driving them to listen to more and giving us more data to work with.</p>
 
 						</div>
 						<div class="col-half">
@@ -926,39 +926,10 @@
 					</div>
 
 				</div>
-			</div>
 		</div>
 
 		<div class="box footer footer-alt" id="footer">
-			
-		<div class="_foot">
-			<div class="_left"><p>Chia is a CS & Art junior at Yale, from Manila. ☼ Beyond being a technologist + designer, they lead Developh for 100,000+ students exploring tech for impact with dozens of ventures grown, make lots of experiments, design at Yale's design consultancy and Women's Center, and they once wrote a novel. <a href="../about.html">More on Chia →</a></p></div>
-			
-			<div class="_right">
-				<p>Selected Works</p>
-				<a href="ibotoph.html">Iboto.ph</a>
-				<a href="lastfm.html">Last.fm</a>
-				<a href="twitter.html">Twitter</a>
-				<a href="developh.html">Developh</a>
-				<a href="letterboxd.html">Letterboxd</a> 
-				<a href="collab.html">Collab</a> 
-				<a href="wybc.html">WYBC Radio</a> 
-				<a href="design.html">Graphic</a>
-				<a href="../work.html">All</a>
-			</div>
-		</div>
-
-			<div class="footer-newsletter">
-				<form action="https://tinyletter.com/weeaboo" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/weeaboo', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><input type="text" style="width:140px" placeholder="Enter your email to subscribe to my newsletter" name="email" id="tlemail" /><input type="hidden" value="1" name="embed" /><input type="submit" value="→" /></form>
-			</div>
-
-			<div class="footer-links">
-				<a href="../about" class="about">About</a>
-
-				<a href="https://medium.com/@chiaski">Writing</a>
-				<a href="mailto:chiamisola@gmail.com">Mail</a>
-
-			</div>
+		
 		</div>
 
 
@@ -973,6 +944,13 @@
     </script>-->
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+  
+   <script type="text/javascript">
+    $(document).ready(function() {
+      $('#footer').load('foot.html');
+    });
+
+  </script>
 
 	<script type="text/javascript">
 		$(document).ready(function() {
