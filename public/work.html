@@ -49,16 +49,9 @@
       justify-content: space-around;
     }
 
-    .portfolio-project-container .project-box img {
-      width: 520px;
-      max-width: 55%;
-      padding-right: 1em;
-      display: none;
-    }
-    
-   .quote-block{
+    .quote-block {
       text-indent: 2em;
-      
+      display: none;
     }
 
     .portfolio-project-container .project-box .project-box-desc .quote-block {
@@ -66,22 +59,20 @@
       line-height: 1.5em;
     }
 
+    .project-box-desc h3 {
+      text-align: center !important;
+    }
+
 
     .portfolio-project-container .project-box .project-box-desc h2 {
       font-size: 2.8em !important;
       line-height: 1em !important;
+      text-align: center;
     }
 
 
-
-.portfolio-project-container:hover a:not(:hover) {
-  //	filter: blur(1px);
-  opacity: 0.4;
-}
-
-    
-    #footer {
-      margin-bottom: 80px;
+    .portfolio-project-container:hover a:not(:hover) {
+      opacity: 0.4;
     }
 
     ._foot ._left a,
@@ -90,8 +81,55 @@
       text-decoration: none;
     }
 
+    ._tooltip {
+      display: none;
+    }
+
+    ._tooltip img {
+      width: 300px;
+    }
+
+    .project-box:hover ._tooltip {
+      display: block;
+      position: fixed;
+      overflow: hidden;
+      margin-top: -50px;
+      margin-left: -150px;
+      mix-blend-mode: difference;
+      pointer-events: none;
+    }
+    
+    #landing-more{
+      padding: 40px .5em;
+    }
+    
+    #landing-more .box-inner{
+      max-width: 1000px;
+    }
+
+    .projects-archive {
+    font-family: "Canela";
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: 300;
+    line-height: 1.4em; 
+    }
+    
+    .projects-archive a {
+
+      display: inline;
+      margin: .5em 0;
+      margin-right: .25em;
+      font-weight: 300;
+      text-decoration: none;          
+    }
+    
+     .projects-archive:hover a:not(:hover) {
+    opacity: 0.5;
+  }
+    
     @media only screen and (max-width: 800px) {
-      
+
 
       .portfolio-project-container .project-box {
         max-width: 95%;
@@ -123,7 +161,7 @@
 </head>
 
 <body>
-  
+
   <div class="container alt container-portfolio">
 
     <div class="header header-alt" id="navigation">
@@ -134,15 +172,16 @@
         <a data-filter="art">Play</a>
       </div>
     </div>
-    
-    
+
+
     <div class="box" id="portfolio">
       <div class="box-inner">
         <div class="portfolio-project-container">
 
           <a href="work/teleport" class="type-design">
             <div class="project-box" id="link-ibotoph">
-              <img src="assets/portfolio/preview-teleport.jpg">
+
+                <img src="assets/portfolio/preview-teleport.jpg">
 
               <div class="project-box-desc">
                 <h2>Teleport</h2>
@@ -456,6 +495,95 @@
         </div>
       </div>
     </div>
+     <div class="box" id="landing-more">
+
+      <div class="box-inner">
+
+        <div class="showcase-container landing">
+          <div class="projects-archive">
+
+            <span class="explanation">And yet, there is so much more to create.</span>
+
+            <a href="http://bit.ly/wohdearstudent" rel="noreferrer" target="_blank">A week-in-the-life experience of Filipino students during the pandemic.</a>
+            
+            <a href="https://develo.ph/phtech" rel="noreferrer" target="_blank">A student's guide to tech in the Philippines.</a>
+
+            <a href="https://worksofhe.art/stories/collaborate/">The radical need to collaborate.</a>
+
+            
+            <a href="http://martiallawmuseum.ph/" rel="noreferrer" target="_blank">Writing pedagogy against dictators.</a>
+
+            <a href="https://nostudentleft.com" rel="noreferrer" target="_blank">Helping thousands of Filipino students in need.</a>
+
+            <a href="https://developh.org/act" rel="noreferrer" target="_blank">Fundraising for organizations fighting to end injustice.</a>
+
+            <a href="https://chiaski.github.io/if/where%20we%20watched%20sunsets/where%20we%20watched%20sunsets.html">A love poem.</a>
+
+            <a href="https://house.chiaski.com/" rel="noreferrer" target="_blank">A universe simulator in sound, after Orteil's Nested.</a>
+
+
+            <a href="sophomore/index.html" rel="noreferrer" target="_blank">My Art Sophomore Review.</a>
+
+            <a href="http://girls.ph" rel="noreferrer" target="_blank">Some girls publishing recommendations for the next thing you'll love.</a>
+
+            <a href="https://intern.ph" rel="noreferrer" target="_blank">Tracking companies & compensations in the Philippines.</a>
+
+            <a href="https://chia.dev/musicOH/" target="_blank">A Topsters alternative music chart builder.</a>
+
+
+            <a href="https://chiaski.github.io/if/gay%20girl%20prays%20for%20a%20gun/gay%20girl%20prays%20for%20a%20gun.html" rel="noreferrer" target="_blank">An interactive fiction about girls and God.</a>
+
+            <a href="http://www.round.ph" rel="noreferrer" target="_blank">An introspective journey around the world with everyone you knew.</a>
+
+            <!--
+                            <a href="create/godidle" target="_blank">A god idle incremental <small>(EXPERIMENTAL)</small>.</a>
+                            
+                            <a href="create/godsent/index.html" target="_blank">Of presidents playing god.</a>
+                            
+                            <a href="https://developh.org/collab" rel="noreferrer" target="_blank">A by-students, for-students accelerator.</a>
+                     
+                            <a href="https://bit.ly/yalewomenscenter" rel="noreferrer" target="_blank">A newsletter from the Yale Women's Center.</a>
+-->
+
+            <a href="https://technology.ph/" rel="noreferrer" target="_blank">A newsletter on Philippine tech, culture, and innovation delivered to you 2x a month.</a>
+
+            <a href="https://chia.dev/fifteen/parti.html" target="_blank">A video series about myself and my failure to grow up.</a>
+
+            <a href="https://iboto.ph/" rel="noreferrer" target="_blank">A campaign collating progressive candidates for the Philippine midterms, reaching over millions of Filipinos.</a>
+
+            <a href="https://chia.dev/nintendo/a%20game.html" target="_blank">A digital experience about time, videogames, and self.</a>
+
+            <a href="https://chiaski.github.io/if/The%20Day%20After.html" target="_blank">An interactive fiction piece taking place the day after you die <small>(CW)</small>.</a>
+
+            <a href="https://www.rambutanliterary.com/uploads/7/0/9/8/70986665/rambutan_literary_-_issue_five.pdf" target="_blank" rel="noreferrer">Reclamation, a poem published in Rambutan Literary.</a>
+
+            <a href="https://www.facebook.com/siklabpoetry/photos/a.1110630002359700/1420970821325615/?type=3&theater" target="_blank" rel="noreferrer">A Song for Our Fathers, shared by Siklab Poetry.</a>
+
+            <!--
+                            <a href="https://chia.dev/batid/" target="_blank">A Microsoft imagine cup-winning project about digital humanitarianism.</a>
+                            
+                            <a href="https://chi.itch.io/on-tracks-of-never-ending-light" target="_blank">A Flickuboy after a Godspeed You! song.</a>
+                            
+-->
+            <a href="https://chia.dev/poetry/" target="_blank">A poem a day from national poetry month in 2018.</a>
+            <!--
+                            
+                            <a href="days">A tale of sadness and sorrow...</a>
+-->
+
+            <a href="games/specter">texting your ded gf.</a>
+            <a href="https://chia.dev/work-2016/" target="_blank">A collection of work from age 16 and before.</a>
+
+            <a href="https://chia.dev/dump/behindthesea.html">A place behind the sea.</a>
+
+          </div>
+
+
+
+        </div>
+
+      </div>
+    </div>
 
 
 
@@ -479,6 +607,7 @@
   </div>
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+
 
   <script type="text/javascript">
     $(document).ready(function() {
