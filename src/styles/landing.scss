@@ -8,801 +8,809 @@ $white-screen: #ACB2B4;
 
 
 body {
-	background: $bg-color;
-	color: $text;
+  background: $bg-color;
+  color: $text;
 }
 
 
 .loader {
-	position: fixed;
-	left: 0px;
-	top: 0px;
-	width: 100vw;
-	height: 100vh;
-	z-index: 999999;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999999;
   background: $bg-color;
   pointer-events: none;
   animation: .75s ease-out 2.25s 1 pageload forwards;
-  
-  .inner{
+
+  .inner {
     position: absolute;
-    top: 50%; 
-    left: 50%; 
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
   }
-  
-  h1{
+
+  h1 {
     font-size: 2.6em;
   }
-  
+
 }
 
 @keyframes pageload {
   0% {
     opacity: 1;
   }
-  
+
   99% {
     opacity: 0;
   }
+
   100% {
     opacity: 0;
   }
 }
 
-.social a,
-a {
-	color: $white;
-	-webkit-transition: all .3s linear;
-	-moz-transition: all .3s linear;
-	-ms-transition: all .3s linear;
-	-o-transition: all .3s linear;
-	transition: all .3s linear;
+
+@keyframes colorchange {
+  0% {
+    background: #f4dfe2;
+  }
+
+  10% {
+    background: #f5dccc;
+  }
+
+  20% {
+    background: #f5f3cc;
+  }
+
+  30% {
+    background: #c3e7c4;
+  }
+
+  40% {
+    background: #c3e7e7;
+  }
+
+  50% {
+    background: #c3d6e7;
+  }
+
+  60% {
+    background: #bdbdee;
+  }
+
+  70% {
+    background: #e0d6ed;
+  }
+
+  80% {
+    background: #ecd6f2;
+  }
+
+  90% {
+    background: #f4cee7;
+  }
+
+  100% {
+    background: #f4dfe2;
+  }
 }
 
+@-webkit-keyframes colorchange
 
-h2 {
-	font-family: "GT America Expanded";
-	display: block;
-	color: $white;
-	margin: 0 auto;
-	font-weight: 100;
-	font-size: 1em;
-	text-align: center;
+/* Safari and Chrome - necessary duplicate */
+  {
+  0% {
+    background: #f4dfe2;
+  }
+
+  10% {
+    background: #f5dccc;
+  }
+
+  20% {
+    background: #f5f3cc;
+  }
+
+  30% {
+    background: #c3e7c4;
+  }
+
+  40% {
+    background: #c3e7e7;
+  }
+
+  50% {
+    background: #c3d6e7;
+  }
+
+  60% {
+    background: #bdbdee;
+  }
+
+  70% {
+    background: #e0d6ed;
+  }
+
+  80% {
+    background: #ecd6f2;
+  }
+
+  90% {
+    background: #f4cee7;
+  }
+
+  100% {
+    background: #f4dfe2;
+  }
 }
+
 
 h3 {
-	color: $white;
+  color: $white;
 }
 
-
-#footer {
-	height: 80px;
-}
 
 #navigation {
 
-	padding-top: 2em;
-	text-align: center;
+  padding-top: 2em;
+  text-align: center;
 
-	div {
-		width: 90vw;
-		max-width: 900px;
-		margin: 0 auto;
-	}
+  div {
+    width: 90vw;
+    max-width: 900px;
+    margin: 0 auto;
+  }
 
-	a {
-		font-size: 1.8em;
-		margin: 0 .25em;
-		color: $white;
-		justify-content: center;
-	}
+  a {
+    font-size: 1.8em;
+    margin: 0 .25em;
+    color: $white;
+    justify-content: center;
+  }
 
 }
 
 
 #landing-work {
-	min-height: 100vh;
+  min-height: 100vh;
 
+  .projects-large {
 
-	.projects-large {
+    .project-box {
+      width: 600px;
+      height: 400px;
+      background-size: contain;
+    }
 
-		.project-box {
-			width: 600px;
-			height: 400px;
-			background-size: contain;
-		}
-
-	}
-
-
+  }
 }
 
 
 #landing {
-	
-	margin: 0 auto;
-	padding: auto 2em;
-	min-height: 100vh;
-	justify-content: flex-start;
 
-	.radial {
-		position: absolute;
-		pointer-events: none;
-	}
+  margin: 0 auto;
+  padding: auto 2em;
+  min-height: 100vh;
+  justify-content: flex-start;
 
-
-	.inner {
-		height: auto;
-		z-index: 999;
-		margin: .5em auto;
-
-	}
-	
-	.landing-links{
-		position: absolute;
-		top: 0;
-  	left: 50%;
-  	transform: translateX(-50%);
-		min-height: 100px;
-		width: 100%;
-		max-width: 95vw;
-		margin: 1em auto;
-		margin-bottom: 2.5vh;
-		
-		display: flex;
-		justify-content: space-between;
-		
-		._left{
-			padding: 0 1em;
-			max-width: 70%;
-			font-size: .8em;
-			
-			p{
-				max-width: 500px;
-				line-height: 1.25em;
-			}
-			
-			p a{
-				opacity: 0.8;
-				text-decoration: none;
-			}
-			
-			p a:hover{
-				opacity: 1;
-			}
-			
-		}
-		
-		._right{
-			padding: 1em;
-			max-width: 50%;
-			
-			a{
-				display: block;
-				line-height: 1em;
-				margin-bottom: .5em;
-				text-transform: uppercase;
-				text-decoration: none;
-			}
-			
-			a:hover{
-				transform: translateX(-2px);
-			}
-			
-		}
-		
-	
-		@media only screen and (max-width: 760px) {
-			
-			max-width: 100vw;
-			margin: 0;
-			
-			._left{
-				
-				max-width: 80%;
-			
-			p{
-				max-width: 100%;
-			}
-			}
-			
-		}
-		
-	}
-
-	h1 {
-		font-family: "Canela";
-		font-weight: 300;
-		font-size: 2.2em;
-		margin-bottom: .2em;
-		color: $white;
-		display: inline;
-		font-style: italic;
-
-		sup {
-			font-family: "GT America Expanded";
-			font-size: 12px;
-			font-weight: 100;
-			margin-bottom: 10px;
-		}
-	}
-
-	/* LANDING SHOWCASE */
+  .radial {
+    position: absolute;
+    pointer-events: none;
+  }
 
 
-	@media only screen and (max-width: 760px) {
+  .inner {
+    height: auto;
+    z-index: 999;
+    margin: .5em auto;
 
-		margin-top: 1em;
+  }
 
-		.inner {
-			margin-top: 0;
-		}
+  .landing-links {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    min-height: 100px;
+    width: 100%;
+    padding: 2vw;
+    margin-bottom: 2.5vh;
+    background-size: contain;
+    z-index: 1000;
 
-		.hide,
-		sup {
-			display: none;
-		}
+    display: flex;
+    justify-content: space-between;
+    
+    .wrapper{
+    }
+    
 
-	}
+    ._left {
+      padding: 0 1em;
+      max-width: 70%;
+      font-size: .8em;
+
+      p {
+        max-width: 400px;
+        line-height: 1.25em;
+      }
+
+      p a {
+        opacity: 0.8;
+        text-decoration: none;
+      }
+
+      p a:hover {
+        opacity: 1;
+      }
+
+    }
+
+    ._right {
+      padding: 1em;
+      max-width: 50%;
+
+      a {
+        display: block;
+        line-height: 1em;
+        margin-bottom: .5em;
+        text-transform: uppercase;
+        text-decoration: none;
+      }
+
+      a:hover {
+        transform: translateX(-2px);
+      }
+
+    }
+
+
+    @media only screen and (max-width: 760px) {
+
+      position: absolute;
+      max-width: 100vw;
+      margin: 0;
+
+      ._left {
+
+        max-width: 80%;
+
+        p {
+          max-width: 100%;
+        }
+      }
+
+    }
+
+  }
+
+  h1 {
+    font-family: "Canela";
+    font-weight: 300;
+    font-size: 2.2em;
+    margin-bottom: .2em;
+    color: $white;
+    display: inline;
+    font-style: italic;
+
+    sup {
+      font-family: "GT America Expanded";
+      font-size: 12px;
+      font-weight: 100;
+      margin-bottom: 10px;
+    }
+  }
+
+  /* LANDING SHOWCASE */
+
+
+  @media only screen and (max-width: 760px) {
+
+    margin-top: 1em;
+
+    .inner {
+      margin-top: 0;
+    }
+
+    .hide,
+    sup {
+      display: none;
+    }
+
+  }
 }
 
 
 
 .landing-style-container {
 
-	margin-top: 5em;
-	position: relative;
-	bottom: 0;
-	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 
-	.intro {
+  .intro {
+  
+    margin-top: 5vh;
+    width: 100vw;
 
-		bottom: 0;
-		margin-top: 1.5vh;
-		width: 100vw;
-
-		p.intro {
-			width: 800px;
-			max-width: 90vw;
-			padding: 1.5rem 0;
-			margin: 0 auto;
-
-			text-align: center;
-			font-weight: 300;
-			font-family: "Canela", "GT America", apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial;
-			line-height: .9em !important;
-			font-size: 3.6em;
-
-			strong {
-				font-weight: 300;
-				-webkit-animation: color-change 3s infinite;
-				-moz-animation: color-change 3s infinite;
-				-o-animation: color-change 3s infinite;
-				-ms-animation: color-change 3s infinite;
-				animation: color-change 3s infinite;
-			}
-		}
+    p.intro {
+      letter-spacing: -1.5px;
+      max-width: 90vw;
+      padding: 1.5rem .5rem;
+      margin: 0 auto;
+      text-align: center;
+      font-weight: 300;
+      font-family: "Canela", "GT America", apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial;
+      line-height: .9em !important;
+      font-size: 3.6em
+    }
 
 
-	}
+  }
 
 
-	@media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 800px) {
 
-		margin-top: 140px;
-		flex-wrap: wrap;
+    margin-top: 200px;
+    flex-wrap: wrap;
 
-		.intro {
-			width: 100%;
+    .intro {
+      width: 100%;
 
-			p.intro {
-				padding: 0 .5em;
-				text-align: center;
-				font-weight: 300;
-				font-size:3em !important;
-				max-width: 95vw;
-				margin-bottom: 0;
-			}
+      p.intro {
+        text-align: center;
+        font-weight: 300;
+        max-width: 95vw;
+        margin-bottom: 0;
+      }
 
-			.links {
-				margin-bottom: .5em;
 
-				a {
-					padding: .25em;
-					margin: 0 auto;
-				}
-
-			}
-
-		}
-
-		#landing-works {
-			width: 100%;
-
-		}
-	}
+    }
+    
+  }
 
 }
 
 
 
 #landing-works:hover a:not(:hover) {
-//	filter: blur(1px);
-	opacity: 0.4;
+  //	filter: blur(1px);
+  opacity: 0.4;
 }
 
 #landing-works {
-	text-align: center;
-	margin: 0 auto;
-	padding-top: 1vh;
-	overflow-y: hidden;
-	max-width: 95vw;
-	
-	.__projects {
-		width: auto;
-		overflow-x: scroll;
-	overflow-y: hidden;
-		flex-wrap: nowrap;
-		display: flex;
-		position: relative;
+  
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 1vh;
+  overflow-y: hidden;
+  max-width: 95vw;
 
-	}
+  .__projects {
+    width: auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    flex-wrap: nowrap;
+    display: flex;
+    position: relative;
 
-
-	::-webkit-scrollbar {
-		height: 5px;
-	}
-
-	/* Track */
-	::-webkit-scrollbar-track {
-		background: none;
-	}
-
-	/* Handle */
-	::-webkit-scrollbar-thumb {
-		background-color: rgba(53, 56, 59, 0.1);
-		border-radius: 30px;
-			-webkit-transition: all .3s linear;
-			-moz-transition: all .3s linear;
-			-ms-transition: all .3s linear;
-			-o-transition: all .3s linear;
-			transition: all .3s linear;
-	}
-
-	/* Handle on hover */
-	.__projects:hover ::-webkit-scrollbar-thumb {
-		background-color: rgba(53, 56, 59, 0.1);
-	}
+  }
 
 
-	h3 {
-		font-family: "GT America";
-	}
+  ::-webkit-scrollbar {
+    height: 5px;
+  }
 
-	a.btn{
-		margin-top: 3em;
-		font-family: "GT America" !important;
-	}
-	
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: none;
+  }
 
-	a {
-		font-size: .8em;
-		width: 220px;
-		margin: 0 .5em;
-		padding: .5em;
-		margin-bottom: 2em;
-		display: inline-block;
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba(53, 56, 59, 0.1);
+    border-radius: 30px;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+  }
 
-		flex-shrink: 0;
-		text-align: center;
-		text-decoration: none;
-
-		.project-box-desc{
-			position: relative;
-		}
-		
-		img {
-			filter: grayscale(100%);
-			max-height: 220px;
-			-webkit-transition: all .3s linear;
-			-moz-transition: all .3s linear;
-			-ms-transition: all .3s linear;
-			-o-transition: all .3s linear;
-			transition: all .3s linear;
-		}
+  /* Handle on hover */
+  .__projects:hover ::-webkit-scrollbar-thumb {
+    background-color: rgba(53, 56, 59, 0.1);
+  }
 
 
-		h2 {
-			margin: 0;
-			font-weight: 300;
-			font-family: "Canela";
-			font-size: 2.6em;
-			color: $white;
-			-webkit-transition: all .3s linear;
-			-moz-transition: all .3s linear;
-			-ms-transition: all .3s linear;
-			-o-transition: all .3s linear;
-			transition: all .3s linear;
-		}
+  h3 {
+    font-family: "GT America";
+  }
 
-		h3 {
-			font-weight: 100;
-			font-size: .8em;
-			color: $white;
-			opacity: 0.8;
-			-webkit-transition: all .3s linear;
-			-moz-transition: all .3s linear;
-			-ms-transition: all .3s linear;
-			-o-transition: all .3s linear;
-			transition: all .3s linear;
-		}
+  a.btn {
+    margin-top: 3em;
+    font-family: "GT America" !important;
+  }
 
 
-		h4 {
-			font-size: .8em;
-			font-weight: 100;
-		}
-		
-		._tooltip {
-				display:none;
-			
-			img{
-				height: 300px;
-				max-height: 300px;
-			}
-			
-		}
-		.project-box-desc:hover ._tooltip {
-				display:block;
-				position:fixed;
-				overflow:hidden;
-			margin-top: -50px;
-			margin-left: -150px;
-			mix-blend-mode: difference;
-			pointer-events: none;
-		}
-	}
+  a {
+    font-size: .8em;
+    width: 220px;
+    margin: 0 .5em;
+    padding: .5em;
+    margin-bottom: 2em;
+    display: inline-block;
 
-	a:hover {
+    flex-shrink: 0;
+    text-align: center;
+    text-decoration: none;
 
-		h2,
-		h3 {
-//			color: #fff;
-		}
+    .project-box-desc {
+      position: relative;
+    }
 
-		img {
-			transform: translateY(-4px);
-			filter: grayscale(0%);
-		}
-
-	}
+    img {
+      filter: grayscale(100%);
+      max-height: 220px;
+      -webkit-transition: all .3s linear;
+      -moz-transition: all .3s linear;
+      -ms-transition: all .3s linear;
+      -o-transition: all .3s linear;
+      transition: all .3s linear;
+    }
 
 
-	@media only screen and (max-width: 700px) {
+    h2 {
+      margin: 0;
+      font-weight: 300;
+      font-family: "Canela";
+      font-size: 2.6em;
+      color: $white;
+      -webkit-transition: all .3s linear;
+      -moz-transition: all .3s linear;
+      -ms-transition: all .3s linear;
+      -o-transition: all .3s linear;
+      transition: all .3s linear;
+    }
 
-		margin: 1em auto;
-		padding: 1em 0;
-		
-		.__projects{
-			width: auto;
-		}
+    h3 {
+      font-weight: 100;
+      font-size: .8em;
+      color: $white;
+      opacity: 0.8;
+      -webkit-transition: all .3s linear;
+      -moz-transition: all .3s linear;
+      -ms-transition: all .3s linear;
+      -o-transition: all .3s linear;
+      transition: all .3s linear;
+    }
 
-		a {
-			margin-bottom: 2em;
-			width: 240px;
-			
-			img{
-				max-height: 280px;
-			}
 
-			h2 {
-				font-size: 2.8em;
-			}
+    h4 {
+      font-size: .8em;
+      font-weight: 100;
+    }
 
-			h3 {
-				padding: 0;
-				font-size: 1em;
-				letter-spacing: -.2px;
-			}
+    ._tooltip {
+      display: none;
 
-		}
+      img {
+        height: 300px;
+        max-height: 300px;
+      }
 
-	}
+    }
+
+    .project-box-desc:hover ._tooltip {
+      display: block;
+      position: fixed;
+      overflow: hidden;
+      margin-top: -50px;
+      margin-left: -150px;
+      mix-blend-mode: difference;
+      pointer-events: none;
+    }
+  }
+
+  a:hover {
+
+    h2,
+    h3 {
+      //			color: #fff;
+    }
+
+    img {
+      transform: translateY(-4px);
+      filter: grayscale(0%);
+    }
+
+  }
+
+
+  @media only screen and (max-width: 700px) {
+
+    margin: 1em auto;
+    padding: 1em 0;
+
+    .__projects {
+      width: auto;
+    }
+
+    a {
+      margin-bottom: 2em;
+      width: 240px;
+
+      img {
+        max-height: 280px;
+      }
+
+      h2 {
+        font-size: 2.8em;
+      }
+
+      h3 {
+        padding: 0;
+        font-size: 1em;
+        letter-spacing: -.2px;
+      }
+
+    }
+
+  }
 }
+
 
 #landing-overlay {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100vw;
-	height: 100vh;
-	max-height: 900px;
-	opacity: 0.5;
-	pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  max-height: 900px;
+  opacity: 0.5;
+  pointer-events: none;
 
-	img {
-		width: 100%;
-		height: 100%;
-		opacity: 0.8;
-		object-fit: cover;
-		overflow: hidden;
-		filter: grayscale(1);
-		mix-blend-mode: overlay;
-	}
-
-}
-
-#cbox {
-
-	position: fixed;
-	left: 50%;
-	transform: translateX(-50%);
-	bottom: 15px;
-	text-align: center;
-	z-index: 999;
-	margin: 0 auto;
-
-	button {
-		padding: 1em;
-		font-family: "Canela";
-		font-weight: 100;
-		font-size: 1em;
-		border: 0;
-		background: none;
-		mix-blend-mode: exclusion;
-		margin: 1em;
-	}
-
-	button:hover {
-		color: $accent;
-	}
-
-	#cbox-here iframe {
-		margin-right: 1em;
-		mix-blend-mode: difference;
-	}
+  img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    object-fit: cover;
+    overflow: hidden;
+    filter: grayscale(1);
+    mix-blend-mode: overlay;
+  }
 
 }
-
-
 
 
 
 #landing-chia {
 
-	padding: 1em;
-	margin: 0 auto;
-	background-size: cover;
-	
+  padding: 1em;
+  margin: 0 auto;
 
-	.box-inner {
-		width: 100%;
-		max-width: 1200px;
-	}
+  .box-inner {
+    width: 100%;
+    max-width: 1200px;
+  }
 
-	.currently {
-		
-		max-width: 860px;
-		margin: 0 auto;
+  .currently {
 
-		p.now {
-			font-family: "Canela";
-			font-weight: 100;
-			font-size: 2.25em;
-			line-height: 1.2em;
-			text-align: left;
-			margin-bottom: 0;
-			
-			a.more{
-				text-decoration: none;
-				border: none;
-			}
-			
-			a.more:hover{
-				margin-left: 6px;
-			}
-			
-		@media only screen and (max-width: 700px) {
-			padding: .25em;
-			font-size: 1.6em;
-			
-			}
+    max-width: 860px;
+    margin: 0 auto;
+
+    p.now {
+      font-family: "Canela";
+      font-weight: 100;
+      font-size: 2.25em;
+      line-height: 1.2em;
+      text-align: left;
+      margin-bottom: 0;
+
+      a.more {
+        text-decoration: none;
+        border: none;
+      }
+
+      a.more:hover {
+        margin-left: 6px;
+      }
+
+      @media only screen and (max-width: 700px) {
+        padding: .25em;
+        font-size: 1.6em;
+
+      }
 
 
-		}
+    }
 
-		 a {
-			text-decoration: none;
-		}
-		
-		a:hover{
-			opacity: 0.6;
-		}
-		@media only screen and (max-width: 700px) {
-			a{
-				margin-left:.5em;
-			}
-		}
-		
-	}
+    a {
+      text-decoration: none;
+    }
 
-	.why {
+    a:hover {
+      opacity: 0.6;
+    }
 
-		p {
-			text-align: left;
-		}
+    @media only screen and (max-width: 700px) {
+      a {
+        margin-left: .5em;
+      }
+    }
 
-		summary::-webkit-details-marker {
-			display: none;
-		}
+  }
 
-		summary:hover {
-			cursor: help;
-		}
+  #links {
 
-		details summary {
-			display: inline;
+    max-width: 1000px;
+    
+    a:hover > u {
+      border-bottom: 1px solid $white;
+    }
 
-			h3 {
-				display: inline;
-				line-height: 1em;
-				padding-bottom: 1em;
-			}
+    p {
+      text-align: left;
+    }
 
-		}
+    @media only screen and (max-width: 700px) {
+      .awards {
+        display: none !important;
+      }
+    }
 
-	}
+  }
 
-	#links {
+  p {
+    color: $white;
+    text-align: center;
+  }
 
-		max-width: 1000px;
-		
-		.col-third{
-			
-			mix-blend-mode: screen;
-			filter: invert(1);
-		
-		}
-		
-		
+  .thing {
 
-		a:hover > u {
-			border-bottom: 1px solid $white;
-		}
+    margin-top: 50vh;
+    position: absolute;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    pointer-events: none;
+    z-index: 99;
 
-		p {
-			text-align: left;
-		}
-
-		@media only screen and (max-width: 700px) {
-			.awards {
-				display: none !important;
-			}
-		}
-
-	}
-
-	p {
-		color: $white;
-		text-align: center;
-	}
-
-	.thing {
-
-		margin-top: 50vh;
-		position: absolute;
-		background-position: center center;
-		background-size: contain;
-		background-repeat: no-repeat;
-		pointer-events: none;
-		z-index: 99;
-
-		@media only screen and (max-width: 700px) {
-			display: none;
-		}
-	}
+    @media only screen and (max-width: 700px) {
+      display: none;
+    }
+  }
 
 
-	.landing-word {
-		position: relative;
-		max-width: 500px;
-		clear: both;
-		display: flex;
-		justify-content: space-around;
+  .landing-word {
+    position: relative;
+    max-width: 500px;
+    clear: both;
+    display: flex;
+    justify-content: space-around;
 
-		h1 {
-			font-family: Canela;
-			font-weight: 100;
-			font-style: italic;
-			display: inline;
-			font-size: 2.8em;
-			line-height: .9em !important;
-			vertical-align: top;
-			color: $white;
-			margin: 0;
-		}
+    h1 {
+      font-family: Canela;
+      font-weight: 100;
+      font-style: italic;
+      display: inline;
+      font-size: 2.8em;
+      line-height: .9em !important;
+      vertical-align: top;
+      color: $white;
+      margin: 0;
+    }
 
-		p {
-			padding: 1em;
-			margin-top: -1em;
-			max-width: 300px;
-			color: $white;
-			vertical-align: top;
+    p {
+      padding: 1em;
+      margin-top: -1em;
+      max-width: 300px;
+      color: $white;
+      vertical-align: top;
 
-			a {
-				color: $accent !important;
-			}
-		}
+      a {
+        color: $accent !important;
+      }
+    }
 
-	}
+  }
 
 }
 
+  .why {
+
+    p {
+      text-align: left;
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+    summary:hover {
+      cursor: help;
+    }
+
+    details summary {
+      display: inline;
+
+      h3 {
+        display: inline;
+        line-height: 1em;
+        padding-bottom: 1em;
+      }
+
+    }
+
+  }
+
+
 #landing-more {
 
-	// outline: 1px solid #deabb1;
-	padding: 40px .5em;
-	margin: 0 auto;
-	width: 100%;
-	//  color: $white-screen;
-	//  background: $white;
+  // outline: 1px solid #deabb1;
+  padding: 40px .5em;
+  margin: 0 auto;
+  width: 100%;
+  //  color: $white-screen;
+  //  background: $white;
 
-	p {
-		color: $white;
-	}
+  p {
+    color: $white;
+  }
 
-	.box-inner {
-		max-width: 1000px;
-		padding: 0 1em;
-	}
+  .box-inner {
+    max-width: 1000px;
+    padding: 0 1em;
+  }
 
-	.projects-archive:hover a:not(:hover) {
-		opacity: 0.5;
-	}
+  .projects-archive:hover a:not(:hover) {
+    opacity: 0.5;
+  }
 
-	.projects-archive {
-		font-family: "Canela";
-		text-align: center;
-		font-size: 1.4em;
-		font-weight: 300;
-		line-height: 1.6em;
+  .projects-archive {
+    font-family: "Canela";
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: 300;
+    line-height: 1.6em;
 
-		.explanation {
-			font-style: italic;
-			color: $accent;
-			font-size: 1.4em;
-		}
+    .explanation {
+      font-style: italic;
+      color: $accent;
+      font-size: 1.4em;
+    }
 
-		a {
+    a {
 
-			display: inline;
-			margin: .5em 0;
-			margin-right: .25em;
+      display: inline;
+      margin: .5em 0;
+      margin-right: .25em;
 
-			text-decoration: none;
-			color: $white;
-			//    color: $white-screen;          
-		}
+      text-decoration: none;
+      color: $white;
+      //    color: $white-screen;          
+    }
 
 
-	}
+  }
 
-	@media only screen and (max-width: 700px) {
+  @media only screen and (max-width: 700px) {
 
-		.box-inner {
-			width: 100%;
-		}
-		
-		.projects-archive{
-			line-height: 1.3em;
-			
-		}
+    .box-inner {
+      width: 100%;
+    }
 
-	}
+    .projects-archive {
+      line-height: 1.3em;
+
+    }
+
+  }
 
 
 
@@ -811,71 +819,71 @@ h3 {
 
 
 @-webkit-keyframes color-change {
-	0% {
-		color: #deabb1;
-	}
+  0% {
+    color: #deabb1;
+  }
 
-	50% {
-		color: $accent;
-	}
+  50% {
+    color: $accent;
+  }
 
-	100% {
-		color: #deabb1;
-	}
+  100% {
+    color: #deabb1;
+  }
 }
 
 @-moz-keyframes color-change {
-	0% {
-		color: #deabb1;
-	}
+  0% {
+    color: #deabb1;
+  }
 
-	50% {
-		color: $accent;
-	}
+  50% {
+    color: $accent;
+  }
 
-	100% {
-		color: #deabb1;
-	}
+  100% {
+    color: #deabb1;
+  }
 }
 
 @-ms-keyframes color-change {
-	0% {
-		color: #deabb1;
-	}
+  0% {
+    color: #deabb1;
+  }
 
-	50% {
-		color: $accent;
-	}
+  50% {
+    color: $accent;
+  }
 
-	100% {
-		color: #deabb1;
-	}
+  100% {
+    color: #deabb1;
+  }
 }
 
 @-o-keyframes color-change {
-	0% {
-		color: #deabb1;
-	}
+  0% {
+    color: #deabb1;
+  }
 
-	50% {
-		color: $accent;
-	}
+  50% {
+    color: $accent;
+  }
 
-	100% {
-		color: #deabb1;
-	}
+  100% {
+    color: #deabb1;
+  }
 }
 
 @keyframes color-change {
-	0% {
-		color: #deabb1;
-	}
+  0% {
+    color: #deabb1;
+  }
 
-	50% {
-		color: $accent;
-	}
+  50% {
+    color: $accent;
+  }
 
-	100% {
-		color: #deabb1;
-	}
+  100% {
+    color: #deabb1;
+  }
 }

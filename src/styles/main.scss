@@ -63,10 +63,36 @@ body {
 }
 
 
-//
-//.header:hover a:not(:hover) {
-//    filter: blur(1px);
-//}
+
+h1,
+h2,
+h3 {
+    width: 100%;
+}
+
+
+h1 {
+    font-family: "Canela";
+    font-weight: 100;
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: .2em;
+}
+
+
+h3 {
+    font-family: "Canela";
+    font-weight: 100;
+    font-size: 1.6em;
+    margin: 0;
+    padding: .5em 0;
+}
+
+a{
+  color:$white;
+}
+
+
 
 .header {
     position: fixed;
@@ -86,7 +112,7 @@ body {
         opacity: 0.8;
 
         text-decoration: none;
-        font-size: 1.6em;
+        font-size: 2em;
         font-weight: 100;
         font-family: 'Canela', 'Georgia';
         font-display: swap;
@@ -635,14 +661,6 @@ body {
 }
 
 
-blockquote a,
-p a,
-li a,
-.summary-details a {
-    //opacity:0.75;
-
-}
-
 
 
 details[open] summary ~ * {
@@ -866,30 +884,6 @@ details[open] summary ~ * {
 
 }
 
-h1,
-h2,
-h3 {
-    width: 100%;
-}
-
-
-h1 {
-    font-family: "Canela";
-    font-style: italic;
-    font-weight: 100;
-    text-align: center;
-    font-size: 1.8em;
-    margin-bottom: .2em;
-}
-
-
-h3 {
-    font-family: "Canela";
-    font-weight: 100;
-    font-size: 1.6em;
-    margin: 0;
-    padding: .5em 0;
-}
 
 #projects {
 
