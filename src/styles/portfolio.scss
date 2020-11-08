@@ -365,7 +365,6 @@ iframe {
 
 	.summary-details a,
 	p a {
-		font-weight: bold;
 		background: none;
 		color: $accent;
 		font-family: "GT America";
@@ -1198,6 +1197,8 @@ iframe {
 
 
 	.summary-details {
+    
+    margin: 2.5vh 0 5vh 0;
 		padding-top: 0;
 		display: flex;
 		flex-wrap: wrap;

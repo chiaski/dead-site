@@ -230,11 +230,11 @@ h3 {
 
     ._left {
       padding: 0 1em;
-      max-width: 70%;
+      max-width: 90%;
       font-size: .8em;
 
       p {
-        max-width: 400px;
+        max-width: 450px;
         line-height: 1.25em;
       }
 
@@ -342,7 +342,7 @@ h3 {
       letter-spacing: -1.5px;
       max-width: 90vw;
       padding: 1.5rem .5rem;
-      margin: 0 auto;
+      margin: 1vh auto;
       text-align: center;
       font-weight: 300;
       font-family: "Canela", "GT America", apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial;
@@ -433,8 +433,7 @@ h3 {
   }
 
   a.btn {
-    margin-top: 3em;
-    font-family: "GT America" !important;
+    margin-top: 2em;
   }
 
 
@@ -658,10 +657,8 @@ h3 {
       text-align: left;
     }
 
-    @media only screen and (max-width: 700px) {
-      .awards {
-        display: none !important;
-      }
+    @media only screen and (max-width: 700px) {display: none;
+     
     }
 
   }
