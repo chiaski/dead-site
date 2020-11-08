@@ -39,11 +39,11 @@
 
     .portfolio-project-container {
       width: 100%;
+      max-width: 1300px;
     }
 
     .portfolio-project-container .project-box {
-      max-width: 1300px;
-      width: 100%;
+      width: 320px;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
@@ -53,12 +53,12 @@
       width: 520px;
       max-width: 55%;
       padding-right: 1em;
+      display: none;
     }
-
-    .portfolio-project-container .project-box .project-box-desc {
-      max-width: 40%;
-      width: 420px;
-      padding-right: 1.5em;
+    
+   .quote-block{
+      text-indent: 2em;
+      
     }
 
     .portfolio-project-container .project-box .project-box-desc .quote-block {
@@ -73,6 +73,13 @@
     }
 
 
+
+.portfolio-project-container:hover a:not(:hover) {
+  //	filter: blur(1px);
+  opacity: 0.4;
+}
+
+    
     #footer {
       margin-bottom: 80px;
     }
@@ -116,6 +123,7 @@
 </head>
 
 <body>
+  
   <div class="container alt container-portfolio">
 
     <div class="header header-alt" id="navigation">
@@ -126,10 +134,9 @@
         <a data-filter="art">Play</a>
       </div>
     </div>
-    <div class="box" id="portfolio-list">
-  
-
-
+    
+    
+    <div class="box" id="portfolio">
       <div class="box-inner">
         <div class="portfolio-project-container">
 
@@ -143,8 +150,6 @@
                   This Summer, I was a Product Design Intern at Teleport&mdash;an early-stage startup building a community where anyone can show off their style and earn.<br><br>
 
                   I worked on design from user research to making fast-paced iterations for our mobile interfaces, and wore many other hats. From working on product specs and roadmapping, leading GTM ad campaigns, building community amongst our early adopters, and coding our front-end surfaces.
-                  <br><br>
-                  I'm continuing work at Teleport as a part-time Associate Product Designer.
                 </div>
                 <h3>Early-stage Startup: Mobile App + Web + Product</h3>
               </div>
@@ -455,24 +460,6 @@
 
 
     <div class="box footer" id="footer">
-      <div class="_foot">
-        <div class="_left">
-          <p>Chia is a CS & Art junior at Yale, from Manila. ☼ Beyond being a technologist + designer, they lead Developh for 100,000+ students exploring tech for impact with dozens of ventures grown, make lots of experiments, design at Yale's design consultancy and Women's Center, and they once wrote a novel. <a href="../about.html">More on Chia →</a></p>
-        </div>
-
-        <div class="_right">
-          <p>Selected Works</p>
-          <a href="ibotoph.html">Iboto.ph</a>
-          <a href="lastfm.html">Last.fm</a>
-          <a href="twitter.html">Twitter</a>
-          <a href="developh.html">Developh</a>
-          <a href="letterboxd.html">Letterboxd</a>
-          <a href="collab.html">Collab</a>
-          <a href="wybc.html">WYBC Radio</a>
-          <a href="design.html">Graphic</a>
-          <a href="../work.html">All</a>
-        </div>
-      </div>
 
       <div class="footer-newsletter">
         <form action="https://tinyletter.com/weeaboo" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/weeaboo', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><input type="text" style="width:140px" placeholder="Enter your email to subscribe to my newsletter" name="email" id="tlemail" /><input type="hidden" value="1" name="embed" /><input type="submit" value="→" /></form>

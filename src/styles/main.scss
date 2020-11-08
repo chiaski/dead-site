@@ -890,96 +890,14 @@ details[open] summary ~ * {
 }
 
 
-#projects {
-
-  top: 15%;
-  margin: 1em;
-
-  h1 {
-    margin: 0;
-    color: $white;
-    font-size: .9em;
-    font-family: "aktiv-grotesk-extended";
-    text-align: center;
-  }
-
-
-
-  .projects-archive {
-    padding-top: 1em;
-  }
-
-
-  .projects-archive a {
-    color: $white;
-    margin: .5em .8em .5em 0;
-    padding: .1em;
-    line-height: 2em;
-    font-size: .9em;
-    text-decoration: none;
-    -webkit-transition: all .3s linear;
-    -moz-transition: all .3s linear;
-    -ms-transition: all .3s linear;
-    -o-transition: all .3s linear;
-    transition: all .3s linear;
-  }
-
-  .projects-archive a:hover {
-    background: blue;
-  }
-
-
-  .projects-details {
-    padding-top: 15%;
-
-    p {
-      font-size: 13px;
-      color: $white;
-      margin: 0;
-      padding-bottom: 1em;
-      line-height: 18px;
-    }
-
-    a h3 {
-      margin: 0;
-      color: blue;
-      font-size: 15px;
-
-      -webkit-transition: all .3s linear;
-      -moz-transition: all .3s linear;
-      -ms-transition: all .3s linear;
-      -o-transition: all .3s linear;
-      transition: all .3s linear;
-    }
-
-    a h3:hover {
-      color: $accent;
-    }
-
-    h3 {
-      margin: 0;
-    }
-
-    a {
-      margin: 0;
-      text-decoration: none;
-      box-sizing: border-box;
-    }
-  }
-
-}
-
-
-
 // Portfolio
 
 
-#portfolio-list {
+#portfolio {
   background: none;
   display: flex;
   justify-content: center;
   width: 100vw;
-
 
   .box-inner {
     max-width: 1200px;
@@ -1003,10 +921,6 @@ details[open] summary ~ * {
 
 }
 
-
-#portfolio-list h3 {
-  text-align: left;
-}
 
 .portfolio-container {
   flex-wrap: wrap;
