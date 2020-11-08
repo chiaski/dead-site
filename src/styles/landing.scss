@@ -194,6 +194,7 @@ h3 {
   top: 0;
   width: 100%;
   padding: 2.5vh 1em;
+  padding-top: 5vh;
   box-sizing: border-box;
   background-size: contain;
   z-index: 1000;
@@ -290,14 +291,14 @@ h3 {
 
     p.intro {
       letter-spacing: -1.5px;
-      max-width: 90vw;
+      max-width: 700px;
       padding: 1.5rem .5rem;
       margin: 1vh auto;
       text-align: center;
-      font-weight: 200;
+      font-weight: 100;
       font-family: "Canela", "GT America", apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial;
       line-height: .9em !important;
-      font-size: 4.2em;
+      font-size: 4.6em;
       cursor: help;
     }
 
@@ -317,7 +318,6 @@ h3 {
         text-align: center;
         font-size: 3.5em;
         max-width: 95vw;
-        margin-bottom: 0;
       }
 
 
@@ -469,11 +469,6 @@ h3 {
 
   a:hover {
 
-    h2,
-    h3 {
-      //			color: #fff;
-    }
-
     img {
       transform: translateY(-4px);
       filter: grayscale(0%);
@@ -484,12 +479,8 @@ h3 {
 
   @media only screen and (max-width: 700px) {
 
-    margin: 1em auto;
-    padding: 1em 0;
-
-    .__projects {
-      width: auto;
-    }
+    margin: 0 auto;
+    padding: 0;
 
     a {
       margin-bottom: 2em;
@@ -515,29 +506,6 @@ h3 {
 }
 
 
-#landing-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  max-height: 900px;
-  opacity: 0.5;
-  pointer-events: none;
-
-  img {
-    width: 100%;
-    height: 100%;
-    opacity: 0.8;
-    object-fit: cover;
-    overflow: hidden;
-    filter: grayscale(1);
-    mix-blend-mode: overlay;
-  }
-
-}
-
-
 
 #landing-chia {
 
@@ -552,8 +520,8 @@ h3 {
 
   p.now {
     font-family: "Canela";
-    font-weight: 100;
     font-size: 2.5em;
+    font-weight: 200;
     line-height: 1.2em;
     max-width: 900px;
     margin: 0 auto;
@@ -575,7 +543,7 @@ h3 {
 
     @media only screen and (max-width: 700px) {
       padding: .25em;
-      font-size: 1.6em;
+      font-size: 1.8em;
 
     }
 

@@ -2,34 +2,17 @@
     font-family: 'Canela';
     src: url('../fonts/Canela-LightItalic.woff2') format('woff2'),
         url('../fonts/Canela-LightItalic.woff') format('woff');
-    font-weight: 300;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Canela';
-    src: url('../fonts/Canela-Regular.woff2') format('woff2'),
-        url('../fonts/Canela-Regular.woff') format('woff');
     font-weight: normal;
-    font-style: normal;
+    font-style: italic;
 }
 
 @font-face {
     font-family: 'Canela';
     src: url('../fonts/Canela-Light.woff2') format('woff2'),
         url('../fonts/Canela-Light.woff') format('woff');
-    font-weight: 300;
+    font-weight: normal;
     font-style: normal;
 }
-
-@font-face {
-    font-family: 'Canela';
-    src: url('../fonts/Canela-RegularItalic.woff2') format('woff2'),
-        url('../fonts/Canela-RegularItalic.woff') format('woff');
-    font-weight: normal;
-    font-style: italic;
-}
-
 
 @font-face {
     font-family: 'Canela';

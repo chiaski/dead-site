@@ -84,9 +84,6 @@
 
   <div class="container">
     
-    <div id="landing-overlay">
-    </div>
-
     <div class="box" id="landing">
       <div class="inner">
 
@@ -100,7 +97,8 @@
 
           <div class="intro">
 
-            <p class="intro">Chia is making radical systems for creators & communities.
+            
+            <p class="intro">Chia is crafting radical systems for creators & communities.
             </p>
 
           </div>
@@ -109,8 +107,6 @@
 
 
             <div class="__projects">
-
-
               <a href="work/ibotoph" data-link="ibotoph" onmouseover="hover('iboto');">
                 <div class="project-box" id="link-ibotoph">
                   <div class="project-box-desc">
@@ -545,7 +541,12 @@
         tooltips[i].style.left = x;
       }
     };
+    
+    
+    
 
+    
+    
   </script>
   <script type="text/javascript">
     function hover(what) {
@@ -588,28 +589,9 @@
 
     }
 
-
-    function fade(element) {
-      var op = 1; // initial opacity
-      var timer = setInterval(function() {
-        if (op <= 0.1) {
-          clearInterval(timer);
-          element.style.display = 'none';
-        }
-        element.style.opacity = op;
-        element.style.filter = 'alpha(opacity=' + op * 100 + ")";
-        op -= op * 0.1;
-      }, 50);
-
   </script>
-  <!--
-    
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-  AOS.init();
-</script>
-        
--->
+  
+  
 </body>
 
 </html>
