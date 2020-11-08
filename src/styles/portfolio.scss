@@ -70,24 +70,22 @@ img{
 
 .image-container {
 
-	width: 100%;
+	width: auto;
   margin: 0 auto;
-	max-width: 110vw;
+	max-width: 90vw;
   padding: 0;
-	text-align: center;
-	overflow: hidden;
-	box-sizing: border-box;
-  object-fit: contain;
 	display: flex;
 	flex-direction: column;
+  box-sizing: border-box;
 	justify-content: center;
+  object-fit: contain;
 
 	img,
 	video,
 	iframe {
+    width: 100%;
     max-width: 100%;
-		margin: 0 auto;
-		display: block;
+    margin: 0 auto;
 	}
 
 	iframe {
@@ -110,7 +108,6 @@ img{
 		box-shadow: 0 0 20px #ccc;
 		margin-top: 1em;
 	}
-
 
 	em {
 		text-align: center;
@@ -153,7 +150,7 @@ img{
 	object-fit: cover;
 	
 	img{
-		max-width: 100vw;
+		max-width: 100%;
 	}
 	
 }
@@ -321,6 +318,7 @@ iframe {
 
 	.portfolio-study {
 		position: relative;
+    max-width: 100vw;
 		margin: 0 auto;
 		background-size: contain;
 	}
@@ -804,9 +802,6 @@ iframe {
 					padding: 0;
 				}
 
-				img:first-child {
-					margin-top: 1em;
-				}
 			}
 
 			.col-third {
@@ -866,7 +861,6 @@ iframe {
 				video {
 					margin: auto;
 					padding: 0;
-					width: 100%;
 				}
 			}
 
