@@ -70,7 +70,7 @@ img{
 
 .image-container {
 
-	width: auto;
+	width: 100%;
   margin: 0 auto;
 	max-width: 90vw;
   padding: 0;
@@ -710,19 +710,23 @@ iframe {
 		blockquote.testimonial {
 			display: inline-block;
 			width: 95%;
-			max-width: 400px;
-			margin-bottom: .25em;
-			padding: 1em;
+      max-width: 350px;
+      font-size: 1.75em;
+      line-height: 1.25em;
 			float: right;
+      padding: .5em;
+      margin: 0;
 			border: 0;
 			color: #191919;
-			font-family: "GT America Expanded";
+			font-family: "Canela";
 
 			@media only screen and (max-width: 600px) {
 				float: none;
 				text-align: center;
 				width: 100%;
 				margin-left: -2%;
+        margin-bottom: 0;
+        font-size: 1.5em;
 			}
 		}
 
@@ -735,7 +739,7 @@ iframe {
 			margin: auto;
 			font-size: 1em;
 			padding: 1em;
-			margin-bottom: 2em;
+      margin-bottom: 0;
 			border-top: 1px solid $dark-mid;
 			border-bottom: 1px solid $dark-mid;
 			color: $dark-lightest;

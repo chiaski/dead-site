@@ -153,72 +153,6 @@ h3 {
 }
 
 
-#navigation {
-
-  padding-top: 2em;
-  text-align: center;
-
-  div {
-    width: 90vw;
-    max-width: 900px;
-    margin: 0 auto;
-  }
-
-  a {
-    font-size: 1.8em;
-    margin: 0 .25em;
-    color: $white;
-    justify-content: center;
-  }
-
-}
-
-
-#landing-work {
-  min-height: 100vh;
-
-  .projects-large {
-
-    .project-box {
-      width: 600px;
-      height: 400px;
-      background-size: contain;
-    }
-
-  }
-}
-
-
-.landing-links {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  padding: 2.5vh 1em;
-  padding-top: 5vh;
-  box-sizing: border-box;
-  background-size: contain;
-  z-index: 1000;
-  text-align: center;
-
-  .wrapper {
-    display: flex;
-    justify-content: space-between;
-  }
-
-    a {
-      text-transform: uppercase;
-      padding: .5em;
-      margin: 0 1em;
-      opacity: 0.8;
-      text-decoration: none;
-    }
-
-    a:hover {
-      opacity: 1;
-      cursor: ne-resize;
-    }
-}
-
 #landing {
 
   margin: 0 auto;
@@ -284,6 +218,7 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: -2em;
 
   .intro {
 
@@ -299,7 +234,7 @@ h3 {
       font-weight: 100;
       font-family: "Canela", "GT America", apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial;
       line-height: .9em !important;
-      font-size: 4.6em;
+      font-size: 7.6vh;
       cursor: help;
     }
 
@@ -307,9 +242,8 @@ h3 {
   }
 
 
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 600px) {
 
-    margin-top: 5vh;
     flex-wrap: wrap;
 
     .intro {
@@ -317,7 +251,6 @@ h3 {
 
       p.intro {
         text-align: center;
-        font-size: 3.2em;
         max-width: 95vw;
       }
 
@@ -521,11 +454,12 @@ h3 {
 
   p.now {
     font-family: "Canela";
-    font-size: 2.5em;
+    font-size: 2.25em;
     font-weight: 200;
-    line-height: 1.2em;
+    line-height: 1.25em;
     max-width: 900px;
     margin: 0 auto;
+    padding: .5em;
     text-align: left;
     
     a{
@@ -728,6 +662,23 @@ h3 {
 
 }
 
+
+#footer{
+  position: fixed;
+  bottom: 0;
+}
+
+.header .header-right a{
+  margin-left: 1.25em;
+  margin-right: 0;
+  padding-right: 0;
+}
+
+.header .header-left a{
+  text-align: left;
+  margin-left: 0;
+  padding-left: 0;
+}
 
 
 @-webkit-keyframes color-change {
