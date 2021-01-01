@@ -23,6 +23,8 @@ body {
   background: $bg-color;
   pointer-events: none;
   animation: .75s ease-out 0.2s 1 pageload forwards;
+  // TO REMOVE
+  display: none;
 
   .inner {
     position: absolute;
