@@ -98,6 +98,11 @@ hr{
       font-size: .5em;
     }
     
+    
+    @media only screen and (max-width: 760px) {
+      font-size: 2.8em;
+    }
+    
   }
   
   #social{
@@ -115,6 +120,7 @@ hr{
     a:hover{
       text-decoration: underline;
     }
+    
     
   }
   
@@ -142,6 +148,24 @@ hr{
       max-width: 450px;
     }
     
+  }
+  
+  
+    @media only screen and (max-width: 760px) {
+
+      a{
+        
+        p{
+          font-size: .8em;
+        }
+
+        h2{
+      font-size: 2.8em;
+          
+        }
+        
+      }
+  
   }
   
   
@@ -179,6 +203,21 @@ hr{
   
   a:hover{
     text-decoration: underline;
+  }
+  
+  
+  @media only screen and (max-width: 760px) {
+    
+    h2{
+      font-size: 2.8em;
+    }
+
+    a{
+      font-size: .9em;
+      display: block;
+    }
+    
+      
   }
   
 }
