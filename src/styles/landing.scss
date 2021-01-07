@@ -1,4 +1,4 @@
-$bg: #bfbfbf; //bfbfbf
+$bg: #f0f0ea; //bfbfbf
 $text: #272a2e;
 $blue: #121657;
 
@@ -45,7 +45,8 @@ hr{
   height: 1px;
   display: block;
   width: 100%;
-  background: $text;
+  background: none;
+//  background: $text;
 }
 
 
@@ -57,7 +58,7 @@ hr{
   padding: 2.5em;
   
   .box-inner{
-    width: 100%;
+    max-width: 800px;
   }
   
 }
@@ -66,7 +67,10 @@ hr{
 // HEADER
 
 #navigation{
-  flex-direction: row-reverse;
+//  left: 50%;
+//  transform: translateX(-50%);
+  max-width: 1300px;
+  padding: 5em;
   
   a:hover{
     color: $bg;
@@ -82,21 +86,45 @@ hr{
 
 // AREAS
 
+#hotanimeboy{
+  position: fixed;
+  opacity: 0.3;
+  max-width: 40vw;
+  left: -150px;
+  z-index: -1;
+  pointer-events: none;
+  
+  img{
+    object-fit: contain;
+  }
+  
+}
+
 #landing{
   
+  bottom:  0;
+  left: 0;
+  position: fixed;
+  margin: 3em;
+//  margin-top: 5em;
+  max-width: 420px;
+  
   .intro{
-    margin-left: 0;
-    margin-right: auto;
-    margin-bottom: 0;
     
-    max-width: 640px;
-    
-    font-size: 3.4em;
     font-weight: 100;
-    font-family: "Canela";
-    line-height: 95%;
-    
+    font-family: "GT America";
+    font-size: 1rem;
+    line-height: 130%;
+//    font-family: "Canela";
+//    font-size: 2.2rem;
+//    line-height: 115%;
     text-indent: 50px;
+    margin-bottom: .5em;
+    
+    a{
+      text-decoration: none;
+      color: blue;
+    }
     
     span{
       font-size: .5em;
@@ -111,13 +139,14 @@ hr{
   
   #social{
     
+    margin-top: 0;
     width: 100%;
     display: block;
     margin-bottom: 1em;
     
     a{
       text-decoration: none;
-      margin-right: 1em;
+      margin-right: 1.5em;
       font-size: .8em;
     }
     
@@ -130,7 +159,24 @@ hr{
   
 }
 
+
 #work{
+  
+  max-width: 1400px;
+  margin: 0 auto;
+  
+  .box-inner{
+    margin-right: 0;
+    margin-left: auto;
+    
+    margin-top: 4.5em;
+    padding-bottom: 4em;
+  }
+  
+}
+
+#projects{
+
   
   a{
     display: block;
@@ -139,7 +185,7 @@ hr{
     text-decoration: none;
     
     ._images{
-      display: flex;
+      display: none;
       max-width: 90vw;
       max-height: 300px;
       padding: 1em 0;
@@ -164,7 +210,7 @@ hr{
       margin: 0;
       padding: 0;
       text-indent: 50px;
-      max-width: 450px;
+      max-width: 250px;
     }
     
   }
@@ -200,7 +246,7 @@ hr{
 }
 
 
-#work:hover a:not(:hover) {
+#projects:hover a:not(:hover) {
   opacity: 0.5;
 }
 

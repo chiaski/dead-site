@@ -77,6 +77,8 @@
   <div class="loader"></div>
 
 
+  <div id="hotanimeboy"><img src="assets/images/kaworu.png"></div>
+  
   <div class="container">
 
     <div class="header" id="navigation">
@@ -84,7 +86,6 @@
 
       <div class="header-right">
         <a href="about">About</a>
-        <a href="work.html"> Work</a>
         <a href="#experiments" class="exp"> Experiments</a>
         <a href="resume">Résumé</a>
       </div>
@@ -94,12 +95,15 @@
       <div class="box-inner">
 
         <p class="intro">
-          Chia studies CS & Art at Yale, from Manila. They craft radical systems for creators and communities. <span onclick="color()">🌈</span>
+          Chia studies computing & art at Yale, by way of Manila. They craft radical systems for creators and communities. 
+          
+<!--          Currently nurturing technologists in Southeast Asia at <a href="https://developh.org">Developh</a>, bringing Filipinos together at <a href="https://kumu.ph">Kumu</a>, publishing every week at <a href="https://chias.blog">chias.blog</a>.-->
+          <span onclick="color()">🌈</span>
         </p>
 
         <div id="social">
           
-          <a href="mailto:chiamisola@gmail.com">HELLO</a>
+          <a href="mailto:chiamisola@gmail.com">MAIL</a>
           
           <a href="https://twitter.com/hotemogf" target="_blank">TWT</a>
           
@@ -111,17 +115,21 @@
           
           <a href="https://www.figma.com/@chia" target="_blank">FIGMA</a>
           
-          
+<!--      
           <a href="http://chi.itch.io/" target="_blank">ITCH.IO</a>
           
           <a href="https://www.twitch.tv/hotemogf" target="_blank">TWITCH</a>
+-->
           
 
         </div>
+      </div>
+    </div>
+    
+    <div class="box" id="work">
+      <div class="box-inner">
 
-        <hr>
-
-        <div id="work">
+        <div id="projects">
 
           <a href="work/ibotoph.html">
             
@@ -140,7 +148,7 @@
           <a href="work/ibotoph.html">
 
             <h2>Developh</h2>
-            <p>Bringing over 100,000 students in Southeast Asia to tech for social impact through community.</p>
+            <p>Bringing over 100,000 students in Southeast Asia to tech for social impact.</p>
 
           </a>
 
@@ -283,23 +291,23 @@
 
 
   <script>
-    var colors = ["#db635b", "#e3abbc", "#bfbfbf", "#81a391", "#9a97d1", "#8db1ad", "#f0cb7d", "#d67a90", "#ACB2B4"];
-
-    const choose = colors[Math.floor(Math.random() * colors.length)];
-
-    document.body.style.background = choose;
-
-    var links = document.getElementById("navigation").getElementsByTagName("a");
-
-    for (var i = 0; i < links.length; i++) {
-      //      links[i].style.color = choose;
-    }
-
-    function color() {
-      const choose = colors[Math.floor(Math.random() * colors.length)];
-
-      document.body.style.background = choose;
-    }
+//    var colors = ["#db635b", "#e3abbc", "#bfbfbf", "#81a391", "#9a97d1", "#8db1ad", "#f0cb7d", "#d67a90", "#ACB2B4"];
+//
+//    const choose = colors[Math.floor(Math.random() * colors.length)];
+//
+//    document.body.style.background = choose;
+//
+//    var links = document.getElementById("navigation").getElementsByTagName("a");
+//
+//    for (var i = 0; i < links.length; i++) {
+//      //      links[i].style.color = choose;
+//    }
+//
+//    function color() {
+//      const choose = colors[Math.floor(Math.random() * colors.length)];
+//
+//      document.body.style.background = choose;
+//    }
 
 
     var tooltips = document.querySelectorAll('.project-box-desc ._tooltip');
