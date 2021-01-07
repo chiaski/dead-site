@@ -77,7 +77,9 @@
   <div class="loader"></div>
 
 
+  <div id="hotanimeboy-2"><img src="assets/images/sasuke.webp"></div>
   <div id="hotanimeboy"><img src="assets/images/kaworu.png"></div>
+  <div id="hotanimeboy-cover"></div>
   
   <div class="container">
 
@@ -145,7 +147,7 @@
 
           <hr>
 
-          <a href="work/ibotoph.html">
+          <a href="work/ibotoph.html" onmouseover="sasuke();">
 
             <h2>Developh</h2>
             <p>Bringing over 100,000 students in Southeast Asia to tech for social impact.</p>
@@ -309,6 +311,19 @@
 //      document.body.style.background = choose;
 //    }
 
+    
+    function sasuke(){
+     
+      var s = document.getElementById('hotanimeboy').style;
+s.opacity = 0;
+      
+       var b = document.getElementById('hotanimeboy-2').style;
+      
+      b.opacity = 1;
+      
+      
+      
+    };
 
     var tooltips = document.querySelectorAll('.project-box-desc ._tooltip');
 
