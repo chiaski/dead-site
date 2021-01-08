@@ -9,6 +9,7 @@ $dark-mid: #35383b;
 
 $lightcyan: #eff7f4;
 
+
 @import "colors.scss";
 
 
@@ -605,7 +606,6 @@ iframe {
     margin: 0;
     border: 0;
     color: #191919;
-    font-family: "Canela";
 
     @media only screen and (max-width: 600px) {
       float: none;
@@ -617,22 +617,7 @@ iframe {
     }
   }
 
-
-
-  blockquote {
-    box-sizing: border-box;
-    width: auto;
-    max-width: 800px;
-    margin: auto;
-    font-size: 1em;
-    padding: 1em;
-    margin-bottom: 0;
-    border-top: 1px solid $dark-mid;
-    border-bottom: 1px solid $dark-mid;
-    color: $dark-lightest;
-    line-height: 1.5em;
-  }
-
+  
   table {
 
     padding: 1em 0;
@@ -724,9 +709,8 @@ iframe {
     max-width: 95vw;
 
     strong {
-      font-size: 2.2em;
-      line-height: 1em;
-      font-style: italic;
+      font-size: 2em;
+      line-height: 110%;
       display: inline-block;
     }
 
@@ -967,7 +951,6 @@ iframe {
   }
 
   h3 {
-    font-family: "Canela";
     padding: .5em 0 0 0;
     font-size: 1.5em;
     line-height: 1em;
@@ -1060,27 +1043,14 @@ iframe {
   p.summary {
     width: 100%;
     max-width: 100%;
-    text-indent: 50px;
-
-    font-size: 2.6em !important;
-    line-height: 1.25em !important;
     
-
     em {
       font-size: 1.2em;
     }
 
 
-    a {
-      font-family: "Canela" !important;
-      font-weight: 100 !important;
-      font-style: italic;
-      font-size: 1.2em;
-    }
-
     a:hover {
-      text-decoration: none !important;
-      border-bottom: 1px solid $lightcyan;
+      border-bottom: 1px solid $link-hover;
     }
 
   }
@@ -1294,15 +1264,12 @@ iframe {
 
 
 .alt {
-  color: $white-light;
-
-  #footer {
-    background: none;
-  }
-
+  
+  color: $bg;
+  
   .box {
-    background: #001a19;
-    color: $white;
+    background: $text;
+    color: $bg;
   }
 
   h2 {

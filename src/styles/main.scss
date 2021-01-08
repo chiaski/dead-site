@@ -36,7 +36,10 @@ body {
   display: flex;
   flex-wrap: wrap;
   place-items: center;
+}
 
+.container.alt{
+  color: $bg;
 }
 
 .box {
@@ -437,6 +440,10 @@ a:hover {
     text-align: right;
 
     font-family: 'Inconsolata', monospace;
+    
+    p{
+      text-align: center;
+    }
 
     a {
       color: $text;
