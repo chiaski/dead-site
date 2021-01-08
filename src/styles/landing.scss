@@ -1,5 +1,5 @@
-$bg: #f0f0ea; //bfbfbf
-$text: #272a2e;
+$bg: #efefef; //#272a2e
+$text: #191a1a;
 $blue: #121657;
 
 body {
@@ -55,7 +55,7 @@ hr{
 
 .box{
   
-  padding: 2.5em;
+  padding: 5vw;
   
   .box-inner{
     max-width: 800px;
@@ -67,10 +67,16 @@ hr{
 // HEADER
 
 #navigation{
-//  left: 50%;
-//  transform: translateX(-50%);
-  max-width: 1300px;
-  padding: 5em;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 1000px;
+  margin: 0 auto;
+  background: linear-gradient($bg, transparent);
+  
+  a{
+    color: $text;
+  }
+
   
   a:hover{
     color: $bg;
@@ -85,21 +91,6 @@ hr{
 
 
 // AREAS
-
-#hotanimeboy, #hotanimeboy-2{
-  position: fixed;
-  opacity: 0.8;
-  max-width: 40vw;
-  left: -150px;
-  z-index: -9;
-  pointer-events: none;
-  transition: 1s;
-  
-  img{
-    object-fit: contain;
-  }
-  
-}
 
 #hotanimeboy-2{
   opacity: 0;
@@ -121,23 +112,20 @@ hr{
 
 #landing{
   
-  bottom:  0;
-  left: 0;
-  position: fixed;
-  margin: 3em;
 //  margin-top: 5em;
-  max-width: 420px;
+  max-width: 900px;
+  margin: 0 auto;
   
   .intro{
-    
-    font-weight: 100;
-    font-family: "GT America";
-    font-size: 1rem;
-    line-height: 130%;
-//    font-family: "Canela";
-//    font-size: 2.2rem;
-//    line-height: 115%;
+//    font-family: "GT America";
+//    font-size: 1rem;
+//    line-height: 130%;
+    font-size: 2.8rem;
+    font-weight: 300;
+    line-height: 110%;
+    letter-spacing: -2px;
     text-indent: 50px;
+    text-align: center;
     margin-bottom: .5em;
     
     a{
@@ -151,7 +139,12 @@ hr{
     
     
     @media only screen and (max-width: 760px) {
-      font-size: 2.8em;
+      letter-spacing: -1.5px;
+      font-weight: 100;
+      font-size: 1.75em;
+      line-height: 100%;
+      padding: .75em;
+      text-indent: 0;
     }
     
   }
@@ -164,6 +157,8 @@ hr{
     margin-bottom: 1em;
     
     a{
+      
+      color: $text;
       text-decoration: none;
       margin-right: 1.5em;
       font-size: .8em;
@@ -181,15 +176,10 @@ hr{
 
 #work{
   
-  max-width: 1400px;
+  max-width: 1600px;
   margin: 0 auto;
   
   .box-inner{
-    margin-right: 0;
-    margin-left: auto;
-    
-    margin-top: 4.5em;
-    padding-bottom: 4em;
   }
   
 }
@@ -198,6 +188,7 @@ hr{
 
   
   a{
+    color: $text;
     display: block;
     font-size: 1em;
     padding: 1.5em 0;
@@ -219,7 +210,6 @@ hr{
     }
     
     h2{
-      font-family: "Canela";
       font-weight: 100;
       font-size: 3.4em;
       margin: 0;
@@ -230,6 +220,7 @@ hr{
       padding: 0;
       text-indent: 50px;
       max-width: 250px;
+      font-size: .9em;
     }
     
   }
@@ -272,15 +263,12 @@ hr{
 
 #experiments{
   
-  margin: 1.5em 0;
-  max-width: 580px;
-  
-  h2{
-      font-family: "Canela";
-      font-weight: 100;
-      font-size: 3.4em;
-      margin: 0;
-    }
+  margin: 1.5em auto;
+  width: 90vw;
+  max-width: 880px;
+  counter-reset: item;
+  text-align: center;
+
   
   span.spacer{
     width: 45px;
@@ -290,24 +278,60 @@ hr{
   a{
     text-decoration: none;
     margin-right: .25em;
-    padding: .1em 0;
+    margin-left: .25em;
+    padding: .15em;
+    line-height: 120%;
+    font-size: 1rem;
+    font-weight: 300;
     display: inline-block;
   }
   
-  a:hover{
-    text-decoration: underline;
+  a::before{
+    counter-increment: item;
+    content: counter(item);
+    border: 1px solid $text;
+    border-radius: 100%;
+    padding: .25em;
+    font-size: .4em;
+    display: inline-block;
+    text-align: center;
+    line-height: 150%;
+    width: 18px;
+    height: 18px;
+    margin-right: .5em;
+    position: relative;
+    bottom: 6px;
+    right: 2.5px;
+  }
+  
+  a:hover::before{
+    background: $text;
+    color: $bg;
   }
   
   
   @media only screen and (max-width: 760px) {
+    
+    span.spacer{
+      display: none;
+    }
     
     h2{
       font-size: 2.8em;
     }
 
     a{
-      font-size: .9em;
-      display: block;
+      font-size: .8rem;
+      display: inline-block;
+      padding: 0;
+      margin: .25em;
+    }
+    
+    a::before{
+      margin-right: .1em;
+      height: 16px;
+      width: 16px;
+      font-size: .6em;
     }
     
       
@@ -318,6 +342,7 @@ hr{
 
 #newsletter{
   margin: 1.5em 0;
+  text-align: center;
 }
 
 

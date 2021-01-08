@@ -18,7 +18,7 @@ body {
   cursor: default;
   text-rendering: optimizeLegibility;
   font-display: swap;
-  font-family: "GT America", Helvetica, Arial, Sans-Serif;
+  font-family: "Bau Pro", Helvetica, Arial, Sans-Serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -42,7 +42,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   place-items: center;
-  font-family: "GT America", Helvetica;
 
 }
 
@@ -72,7 +71,6 @@ h3 {
 
 
 h1 {
-  font-family: "Canela";
   font-weight: 100;
   text-align: center;
   font-size: 1.8em;
@@ -81,11 +79,14 @@ h1 {
 
 
 h3 {
-  font-family: "Canela";
   font-weight: 100;
   font-size: 1.6em;
   margin: 0;
   padding: .5em 0;
+}
+
+h1, h3{
+  font-family: "Inconsolata";
 }
 
 a {
@@ -112,6 +113,8 @@ a {
   justify-content: space-between;
   background-repeat: repeat-x;
   background-size: contain;
+  
+  font-family: 'Inconsolata', monospace;
 
   a {
     color: $white;
@@ -119,7 +122,6 @@ a {
     text-decoration: none;
     font-size: .8rem;
     font-weight: 100;
-    font-family: 'GT America';
     text-transform: uppercase;
     font-display: swap;
     padding: .25em;
@@ -597,7 +599,7 @@ a {
 
 .footer-newsletter {
 
-  text-align: left;
+  text-align: center;
   margin-left: 1em;
   height: 60px;
   margin-bottom: 1.5em;
@@ -979,44 +981,12 @@ details[open] summary ~ * {
 
 }
 
-.portfolio-box {
-
-  display: inline-block;
-  width: 300px;
-  text-align: left;
-  padding: 1.3em;
-
-  img {
-    width: 100%;
-  }
-
-  h2 {
-
-    font-weight: 100;
-    margin: 0;
-    font-size: 1em;
-    text-decoration: none;
-    color: #2b13af;
-  }
-
-  p {
-    margin: 0;
-    margin-top: -7px;
-    color: #5e5d62;
-    font-size: .8em;
-  }
-}
-
-.portfolio-box:hover {
-  background: #f6e404;
-}
-
 
 /* MAIN ELEEMENTS */
 
 p {
-  font-size: 1em;
-  font-family: "GT America";
+  font-size: 1rem;
+  font-family: "Bau Pro";
 }
 
 
