@@ -72,13 +72,15 @@ h1 {
 
 
 h3 {
-  font-size: 1.6em;
+  font-size: 1.25em;
+  letter-spacing: -.25px;
   margin: 0;
   padding: .5em 0;
 }
 
 h1, h3{
-  font-family: "Inconsolata";
+  font-family: "Bau Pro";
+  font-weight: 300;
 }
 
 p{
@@ -100,7 +102,6 @@ a:hover{
 
 
 .header {
-  
   position: fixed;
   z-index: 9;
   height: 80px;
@@ -116,7 +117,7 @@ a:hover{
   font-family: 'Inconsolata', monospace;
 
   a {
-    color: $white;
+    color: $text;
     text-decoration: none;
     letter-spacing: 1px;
     font-size: .8rem;
@@ -130,7 +131,6 @@ a:hover{
     -ms-transition: all .3s linear;
     -o-transition: all .3s linear;
     transition: all .3s linear;
-
   }
   
   a:hover{
@@ -175,41 +175,27 @@ a:hover{
 
 #about {
 
-  font-display: swap;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  vertical-align: center;
+  padding-top: 100px;
   cursor: help;
-  padding: 2em;
-
-  .masterpiece {
-    justify-content: center;
-    text-align: center;
+  
+  .box-inner{
+    width: 900px;
     max-width: 90vw;
-
-    img {
-      max-width: 210px;
-      width: 45%;
-      margin: .5em;
-    }
-  }
-
-  .box-inner {
-    max-width: 1100px;
-    padding: 2em;
+    margin: 0 auto;
   }
 
   img.chia {
     position: fixed;
     overflow: hidden;
     z-index: -9;
-    top: 0;
-    left: 0;
-    float: left;
-    width: 100vw;
-    height: 100vh;
-    opacity: 0.5;
+    padding-top: 100px;
+    top: 8vh;
+    right: 10vw;
+    width: 300px;
+    height: auto;
+    mix-blend-mode: darken;
+    background: $bg;
+    opacity: 1;
     pointer-events: none;
   }
 
@@ -219,6 +205,11 @@ a:hover{
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
+  }
+  
+  .hello{
+    font-size: 1.25em;
+    max-width: 600px;
   }
   
   
@@ -284,13 +275,24 @@ a:hover{
 
 }
 
+.credentials{
+  
+  a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .9em;
+    margin-right: 1em;
+    font-family: "Inconsolata";
+  }
+  
+}
 
 .why {
 
+  display: none;
   margin: 50px auto;
 
   h1 {
-    font-family: "GT America";
     text-transform: uppercase;
     font-size: .9em;
   }
@@ -315,7 +317,6 @@ a:hover{
       }
 
       p {
-        font-family: "GT America";
         text-align: left;
       }
       
@@ -355,8 +356,6 @@ a:hover{
 
   }
 
-
-
 }
 
 
@@ -373,7 +372,6 @@ a:hover{
   }
 
   .col-third h3 {
-    font-family: "GT America";
     text-transform: uppercase;
     font-size: .8em;
     margin-bottom: 1em;
@@ -387,7 +385,6 @@ a:hover{
   .col-third a {
     display: block;
     text-decoration: none;
-    font-family: "Canela";
     font-size: 1.4em;
     font-weight: 300;
     text-align: left;
@@ -420,98 +417,42 @@ a:hover{
 
 
 #footer {
+  
+  position: relative;
   width: 100%;
+  max-width: 1050px;
+
   margin:0 auto;
   box-sizing: border-box;
   text-align: center;
   padding: 2.5em;
   margin-top: 80px;
   display: block;
+  
 
   ._foot {
-    
-    padding: .5em;
-    display: flex;
-    justify-content: space-between;
 
-    p {
-      margin: 0;
-      padding-bottom: 1em;
-    }
-
-  }
-
-  ._left {
-    width: 50%;
-
-    p {
-      line-height: 1.25em;
-      text-align: left;
-      max-width: 500px;
-    }
-
-    a {
-      font-weight: 100;
-      font-size: 2.6em;
-      font-style: italic;
-      color: $black;
-      opacity: 0.8;
-    }
-
-    a:hover {
-      opacity: 1;
-    }
-
-  }
-
-  ._right {
-    width: 50%;
-    max-width: 400px;
+    margin: 0 auto;
     text-align: right;
-    display: none;
-    font-size: .8em;
+    
+    font-family: 'Inconsolata', monospace;
     
     a {
-      font-family: "GT America";
-      padding: .5em;
-      margin: .25em;
-      text-transform: uppercase;
-      color: $black;
-      opacity: 0.8;
-      text-decoration: none;
-    }
-
-    a:hover {
-      opacity: 1;
-
-    }
-
-  }
-
-  .footer-links {
-    a {
-      font-size: .8rem;
-      float: right;
-      text-transform: uppercase;
-      text-decoration: none;
-      display: inline-block;
-      color: $light-color;
-      cursor: ne-resize;
-      padding: .5em .25em;
-      margin: 0 .15em;
-      
-      opacity: 0.75;
-      font-weight: 100;
-
-      -webkit-transition: all .3s linear;
-      -moz-transition: all .3s linear;
-      -ms-transition: all .3s linear;
-      -o-transition: all .3s linear;
-      transition: all .3s linear;
-    }
-
-    a:hover {
-      opacity: 1;
+    color: $text;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: .8rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    font-display: swap;
+    padding: .25em;
+    margin: .15em;
+    margin-left: 1em;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
     }
 
     a.about {
@@ -602,21 +543,8 @@ a:hover{
   height: 60px;
   margin-bottom: 1.5em;
 
-  h3 {
-    display: inline-block;
-    font-family: "Canela";
-    font-weight: 300;
-    font-style: italic;
-    font-size: 2.2em;
-    line-height: 60px;
-    height: 50px;
-    margin-right: 1em;
-    vertical-align: bottom;
-  }
-
   input[type="text"] {
     display: inline-block;
-    font-family: "GT America";
     border: 0;
     height: 40px;
     width: 80% !important;
@@ -747,7 +675,6 @@ details[open] summary ~ * {
 
 
     h3 {
-      font-family: "GT America";
       text-transform: uppercase;
       text-align: left;
       display: block;
@@ -817,8 +744,6 @@ details[open] summary ~ * {
   }
 
   .quote-block {
-
-    font-family: "GT America";
     text-rendering: optimizelegibility;
     color: $white;
     line-height: 22px;
@@ -835,21 +760,12 @@ details[open] summary ~ * {
     display: inline-block;
     font-weight: 300;
     font-style: italic;
-    font-family: "Canela", Helvetica, Arial;
     font-size: 2.1em;
     color: $accent;
     line-height: 1.1em;
     cursor: e-resize;
   }
 
-  sup {
-    color: $accent;
-    vertical-align: normal;
-    font-size: .1em;
-    font-weight: 100;
-    font-style: normal;
-    font-family: 'GT America Expanded';
-  }
 
   @media only screen and (max-width: 1100px) {
 
@@ -948,7 +864,6 @@ details[open] summary ~ * {
   text-align: center;
 
   a {
-    font-family: "Canela";
     font-style: italic;
     font-weight: 100;
     font-size: 2rem;
