@@ -103,9 +103,13 @@ VERSION 1.4
         <p class="intro">
           Chia studies Computing & the Arts at Yale, from Manila. They create radical systems for creators and communities in pursuit of making creation ubiquituous, as the internet age had given them.
         </p>
-        <p class="intro-sub">    
+        <p>    
           Currently nurturing technologists in Southeast Asia at <a href="https://developh.org">Developh</a>, bringing Filipinos together at <a href="https://kumu.ph">Kumu</a>, publishing every week at <a href="https://chias.blog">chias.blog</a>.
         </p>
+        </div>
+        
+        <div class="credentials">
+        
         </div>
 
         <div id="social">
@@ -136,7 +140,7 @@ VERSION 1.4
     <div class="box" id="work">
       <div class="box-inner">
 
-        <div id="projects">
+        <div id="projects" data-masonry='{ "itemSelector": "a", "columnWidth": auto }'>
 
           <a href="work/ibotoph.html">
             
@@ -147,7 +151,8 @@ VERSION 1.4
             
             <h2>Iboto.ph</h2>
             <p>Designing a voter education campaign and platform for the Philippine masses.</p>
-
+            <span class="tag">Campaign</span>
+            <span class="tag">Web</span>
           </a>
 
           <hr>
@@ -156,7 +161,9 @@ VERSION 1.4
 
             <h2>Developh</h2>
             <p>Bringing over 100,000 students in Southeast Asia to tech for social impact.</p>
-
+            <span class="tag">Community</span>
+            <span class="tag">Brand</span>
+            <span class="tag">Experience</span>
           </a>
 
           <hr>
@@ -165,7 +172,7 @@ VERSION 1.4
 
             <h2>Last.fm Mobile</h2>
             <p>Playing around with an old favorite music service that empowers streaming with data.</p>
-
+            <span class="tag">Mobile</span>
           </a>
 
           <hr>
@@ -174,6 +181,7 @@ VERSION 1.4
 
             <h2>Chias.blog</h2>
             <p>My five-year-old blog, where I often share non-technical thoughts and be a pretend music journalist.</p>
+            <span class="tag">Writing</span>
 
           </a>
           
@@ -184,14 +192,27 @@ VERSION 1.4
             <h2>Interactive Fiction</h2>
             <p>Vignettes and fictive pieces.</p>
 
+            <span class="tag">Experience</span>
+            <span class="tag">Writing</span>
           </a>
 
+          <hr>
+
+          <a href="punishing">
+
+            <h2>The Punishing</h2>
+            <p>The shape of the web bends, deepens, and constricts itself to destroy the most vulnerable. </p>
+            <span class="tag">Writing</span>
+
+          </a>
+          
           <hr>
 
           <a href="work/twitter.html">
 
             <h2>Quote Tweets</h2>
             <p>Exploring and fixing up quote tweets over a week-long program at the Twitter HQ in Summer 2019.</p>
+            <span class="tag">Web</span>
 
           </a>
 
@@ -201,6 +222,7 @@ VERSION 1.4
 
             <h2>Visuals</h2>
             <p>Curated collection of my miscellaneous graphic design and experimental visual work.</p>
+            <span class="tag">Visual</span>
 
           </a>
 
@@ -209,6 +231,10 @@ VERSION 1.4
         <hr>
 
         <div id="experiments">
+          
+        <p>Other Work</p>
+          <hr>
+          
           
           <a href="https://kurtkolev.com" rel="noreferrer" target="_blank">Website for a friend's album.</a>
 
@@ -260,8 +286,12 @@ VERSION 1.4
                             <a href="https://bit.ly/yalewomenscenter" rel="noreferrer" target="_blank">A newsletter from the Yale Women's Center.</a>
 -->
 
-          <a href="https://technology.ph/" rel="noreferrer" target="_blank">Newsletter on Philippine tech.</a>
-
+          <a href="https://technology.ph/" rel="noreferrer" target="_blank">Newsletter on Philippine tech, written by me.</a>
+            
+          <a href="https://www.youtube.com/watch?v=eLPtfs862m8" rel="noreferrer" target="_blank">Pinoy videoke on your browser.</a>
+            
+          <a href="https://lettered.herokuapp.com" rel="noreferrer" target="_blank">All in life must come round.</a>
+            
           <a href="https://chia.dev/fifteen/parti.html" target="_blank">Fifteen.</a>
           <a href="https://chia.dev/nintendo/a%20game.html" target="_blank">Time, videogames, and self.</a>
 
@@ -282,11 +312,11 @@ VERSION 1.4
         
         <div id="newsletter">
 
-        <p>I have a Tinyletter I send out once a year or so.</p>
+        <p>I also have a newsletter I send out once a year or so.</p>
 
 
         <div class="footer-newsletter">
-          <form action="https://tinyletter.com/weeaboo" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/weeaboo', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><input type="text" style="width:140px" placeholder="Enter your email to subscribe" name="email" id="tlemail" /><input type="hidden" value="1" name="embed" /><input type="submit" value="→" /></form>
+          <form action="https://tinyletter.com/weeaboo" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/weeaboo', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><input type="text" style="width:140px" placeholder="I need your email to talk to you." name="email" id="tlemail" /><input type="hidden" value="1" name="embed" /><input type="submit" value="OK, I'm listening →" /></form>
         </div>
           
         <hr>
@@ -294,7 +324,6 @@ VERSION 1.4
           
           
 </div>
-
       </div>
 
     </div>
@@ -303,7 +332,7 @@ VERSION 1.4
 
   </div>
 
-
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
   <script>
 //    var colors = ["#db635b", "#e3abbc", "#bfbfbf", "#81a391", "#9a97d1", "#8db1ad", "#f0cb7d", "#d67a90", "#ACB2B4"];
