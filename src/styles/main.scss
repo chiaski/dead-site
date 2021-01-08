@@ -244,6 +244,7 @@ a:hover {
           
       width: auto;
       float: none;
+      padding: 0;
       
       a{
         margin-bottom: .5em;
@@ -256,7 +257,8 @@ a:hover {
 
   @media only screen and (max-width: 900px) {
     
-    padding-top: 90px;
+    background-position: bottom;
+    padding-top: 60px;
 
     img.chia {
       position: static;
@@ -380,7 +382,7 @@ a:hover {
     text-align: left;
     text-transform: uppercase;
 
-    font-size: .9em;
+    font-size: .8em;
     margin-bottom: 1em;
 
     font-family: 'Inconsolata', monospace;
@@ -471,6 +473,7 @@ a:hover {
     }
 
     a.about {
+      padding-right: 1.5em;
       float: left;
       text-align: left;
     }
@@ -502,6 +505,8 @@ a:hover {
 
     .col-third {
       width: 47%;
+      
+      
     }
 
   }
@@ -511,6 +516,8 @@ a:hover {
     .col-third {
       width: 100%;
       margin-bottom: 1.5em;
+      
+      
     }
 
   }
@@ -529,8 +536,8 @@ a:hover {
     display: inline-block;
     border: 0;
     height: 40px;
-    width: 80% !important;
-    max-width: 360px;
+    width:  80vw;
+    max-width: 330px;
     padding: 1em;
 
   }
@@ -542,7 +549,6 @@ a:hover {
     box-sizing: border-box;
     padding: 1em;
     background: none;
-    color: $white;
     border: 0;
     font-size: 1.3em;
     margin: 0;
@@ -563,6 +569,7 @@ a:hover {
     margin: 0;
 
     input[type="submit"] {
+      position: static;
       padding: .5em;
     }
 
@@ -910,6 +917,40 @@ hr {
   border: 0;
   margin: 0;
   height: 20px;
+}
+
+
+/* DECORATIVE */
+
+.static {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  right: -50%;
+  bottom: -50%;
+  width: 250vw;
+  height: 250vh;
+  pointer-events: none;
+  background-repeat: repeat;
+  background-size: 300%;
+  animation: bg-animation 2s infinite;
+  opacity: 1;
+  z-index: 9999999999;
+}
+
+
+@keyframes bg-animation {
+    0% { transform: translate(0,0) }
+    10% { transform: translate(-5%,-5%) }
+    20% { transform: translate(-10%,5%) }
+    30% { transform: translate(5%,-10%) }
+    40% { transform: translate(-5%,15%) }
+    50% { transform: translate(-10%,5%) }
+    60% { transform: translate(9%,0) }
+    70% { transform: translate(0,10%) }
+    80% { transform: translate(-9%,0) }
+    90% { transform: translate(6%,5%) }
+    100% { transform: translate(5%,0) }
 }
 
 .cursor {

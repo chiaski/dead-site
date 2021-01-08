@@ -89,6 +89,13 @@ background: linear-gradient(180deg, $bg 0%, $bg 60%, rgba(0,0,0,0) 100%);
     margin-left: 1.5em;
   }
   
+  
+    @media only screen and (max-width: 1000px) {
+      .header-right a{
+        margin: .5em;
+      }
+  }
+  
 }
 
 
@@ -144,7 +151,7 @@ background: linear-gradient(180deg, $bg 0%, $bg 60%, rgba(0,0,0,0) 100%);
   }
     
     @media only screen and (max-width: 1000px) {
-      padding-top: 70px;
+      padding-top: 45px;
     }
   
   #social{
@@ -167,6 +174,10 @@ background: linear-gradient(180deg, $bg 0%, $bg 60%, rgba(0,0,0,0) 100%);
       text-decoration: underline;
     }
     
+    
+    @media only screen and (max-width: 900px) {
+     text-align: center; 
+    }
     
   }
   
@@ -204,7 +215,7 @@ background: linear-gradient(180deg, $bg 0%, $bg 60%, rgba(0,0,0,0) 100%);
     text-decoration: none;
     
     ._images{
-      filter: grayscale(1);
+//      filter: grayscale(1);
       object-fit: cover;
       max-width: 95%;
       overflow: hidden;
@@ -253,6 +264,12 @@ background: linear-gradient(180deg, $bg 0%, $bg 60%, rgba(0,0,0,0) 100%);
   }
   
   a:hover{
+    
+    span.tag{
+      background: $text;
+      color: $bg;
+    }
+    
     ._images{
       filter: grayscale(0);
       
