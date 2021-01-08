@@ -27,7 +27,6 @@
 didnt make this ascii art tho
 VERSION 1.4
 
-
 -->
 
 
@@ -79,10 +78,13 @@ VERSION 1.4
 
 <body>
   <div class="loader"></div>
+  <div class="cursor"></div>
 
-
+  <div id="naruto" style="background-image: url(assets/portfolio/landing/pein.png);"></div>
   
   <div class="container">
+    
+    <div id="overlay"></div>
 
     <div class="header" id="navigation">
       <div class="header-left"><a href="index.html">Chia Amisola</a></div>
@@ -97,12 +99,14 @@ VERSION 1.4
     <div class="box" id="landing">
       <div class="box-inner">
 
+        <div class="hello">
         <p class="intro">
-          Chia studies Computing & the Arts at Yale, from Manila. They create radical systems for creators and communities in pursuit of making creation  ubiquituous, just as the internet age had given them.
+          Chia studies Computing & the Arts at Yale, from Manila. They create radical systems for creators and communities in pursuit of making creation ubiquituous, as the internet age had given them.
         </p>
         <p class="intro-sub">    
           Currently nurturing technologists in Southeast Asia at <a href="https://developh.org">Developh</a>, bringing Filipinos together at <a href="https://kumu.ph">Kumu</a>, publishing every week at <a href="https://chias.blog">chias.blog</a>.
         </p>
+        </div>
 
         <div id="social">
           
@@ -274,6 +278,7 @@ VERSION 1.4
         </div>
 
         <hr>
+        <hr>
         
         <div id="newsletter">
 
@@ -283,6 +288,11 @@ VERSION 1.4
         <div class="footer-newsletter">
           <form action="https://tinyletter.com/weeaboo" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/weeaboo', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><input type="text" style="width:140px" placeholder="Enter your email to subscribe" name="email" id="tlemail" /><input type="hidden" value="1" name="embed" /><input type="submit" value="→" /></form>
         </div>
+          
+        <hr>
+        <hr>
+          
+          
 </div>
 
       </div>
@@ -294,6 +304,7 @@ VERSION 1.4
   </div>
 
 
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
   <script>
 //    var colors = ["#db635b", "#e3abbc", "#bfbfbf", "#81a391", "#9a97d1", "#8db1ad", "#f0cb7d", "#d67a90", "#ACB2B4"];
 //
@@ -324,76 +335,21 @@ VERSION 1.4
         tooltips[i].style.left = x;
       }
     };
+    
+    var $cursor = $('.cursor');
 
-    // dots is an array of Dot objects,
-    // mouse is an object used to track the X and Y position
-    // of the mouse, set with a mousemove event listener below
-    var dots = [],
-      mouse = {
-        x: 0,
-        y: 0
-      };
+function moveCursor(e) {
+  $cursor.addClass('is-moving');
+  $cursor.css({"top": e.pageY, "left": e.pageX});
 
-    // The Dot object used to scaffold the dots
-    var Dot = function() {
-      this.x = 0;
-      this.y = 0;
-      this.node = (function() {
-        var n = document.createElement("div");
-        n.className = "trail";
-        document.body.appendChild(n);
-        return n;
-      }());
-    };
-    // The Dot.prototype.draw() method sets the position of 
-    // the object's <div> node
-    Dot.prototype.draw = function() {
-      this.node.style.left = this.x + "px";
-      this.node.style.top = this.y + "px";
-    };
+  clearTimeout(timer2);
 
-    // Creates the Dot objects, populates the dots array
-    for (var i = 0; i < 30; i++) {
-      var d = new Dot();
-      dots.push(d);
-    }
+   var timer2 = setTimeout(function() {
+       $cursor.removeClass('is-moving');
+   }, 300);
+}
 
-    // This is the screen redraw function
-    function draw() {
-      // Make sure the mouse position is set everytime
-      // draw() is called.
-      var x = mouse.x,
-        y = mouse.y;
-
-      // This loop is where all the 90s magic happens
-      dots.forEach(function(dot, index, dots) {
-        var nextDot = dots[index + 1] || dots[0];
-
-        dot.x = x;
-        dot.y = y;
-        dot.draw();
-        x += (nextDot.x - dot.x) * .1;
-        y += (nextDot.y - dot.y) * .1;
-
-      });
-    }
-
-    addEventListener("mousemove", function(event) {
-      //event.preventDefault();
-      mouse.x = event.pageX;
-      mouse.y = event.pageY;
-    });
-
-    // animate() calls draw() then recursively calls itself
-    // everytime the screen repaints via requestAnimationFrame().
-    function animate() {
-      draw();
-      requestAnimationFrame(animate);
-    }
-
-    // And get it started by calling animate().
-    animate();
-
+$(window).on('mousemove', moveCursor);
   </script>
 
   <script type="text/javascript">

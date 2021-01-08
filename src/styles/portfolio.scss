@@ -9,6 +9,9 @@ $dark-mid: #35383b;
 
 $lightcyan: #eff7f4;
 
+@import "colors.scss";
+
+
 html {
   scroll-behavior: smooth;
   padding-bottom: 2em;
@@ -27,7 +30,6 @@ h3 {
 }
 
 h1 {
-  font-family: "Canela" !important;
   font-weight: 100;
   font-style: normal;
   font-size: 3rem !important;
@@ -37,7 +39,6 @@ h1 {
 }
 
 h2 {
-  font-family: "GT America";
   font-variant: small-caps;
   font-size: .9em;
   font-weight: 100;
@@ -51,7 +52,6 @@ h2 {
 h3 {
   width: 700px;
   font-size: 2em;
-  font-family: "Canela";
   font-weight: 300;
   padding-top: 1.5em;
   padding-bottom: .5em;
@@ -460,7 +460,6 @@ iframe {
     a {
       font-weight: 100;
       font-size: 1.5em;
-      font-family: "Canela";
       padding: .5em !important;
       color: $dark-mid !important;
     }
@@ -492,14 +491,12 @@ iframe {
   .travel-right::before {
     content: "→\00FE0E ";
     margin-right: .3em;
-    font-family: "GT America" !important;
   }
 
 
   .travel-left::before {
     content: "←\00FE0E ";
     margin-right: .3em;
-    font-family: "GT America" !important;
   }
 
   a {
@@ -507,13 +504,11 @@ iframe {
     text-decoration: none;
     background: none !important;
     line-height: 2.6em;
-    font-family: "gt america";
 
 
     strong {
       font-weight: 100;
       font-size: 2.4em;
-      font-family: "Canela";
     }
   }
 
@@ -729,8 +724,6 @@ iframe {
     max-width: 95vw;
 
     strong {
-      font-family: "Canela" !important;
-      font-weight: 100;
       font-size: 2.2em;
       line-height: 1em;
       font-style: italic;
@@ -1065,14 +1058,13 @@ iframe {
   justify-content: center;
 
   p.summary {
-    width: 100% !important;
-    max-width: 100% !important;
-    text-indent: 2em;
+    width: 100%;
+    max-width: 100%;
+    text-indent: 50px;
 
-    font-weight: 100;
     font-size: 2.6em !important;
     line-height: 1.25em !important;
-    font-family: "Canela";
+    
 
     em {
       font-size: 1.2em;
@@ -1111,13 +1103,11 @@ iframe {
     line-height: 1.4em;
 
     strong {
-      font-family: "Canela";
+      font-family: "Inconsolata";
+      text-transform: uppercase;
       font-weight: 100;
-      font-style: italic;
-      font-size: 1.8em;
-      line-height: .5em;
-      font-variant: normal;
-      text-transform: none;
+      letter-spacing: 2px;
+      font-size: 1em;
       letter-spacing: 0;
     }
 

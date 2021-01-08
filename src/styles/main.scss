@@ -1,21 +1,15 @@
 @import "reset.scss";
 @import "fonts.css";
-
-$bg-color: #aab2b4;
-$light-color: #35383b;
-$white: #35383b;
-
-$black: #aab2b4;
-$accent: #35383b; // pink
-
-$white-screen: #aab2b4;
+@import "colors.scss";
 
 
 /* MAIN STRUCTURAL ELEMENTS */
 
 body {
-  background: $white-screen;
   cursor: default;
+  background: $bg;
+  color: $text;
+  
   text-rendering: optimizeLegibility;
   font-display: swap;
   font-family: "Bau Pro", Helvetica, Arial, Sans-Serif;
@@ -42,7 +36,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   place-items: center;
-
+  
 }
 
 .box {
@@ -71,7 +65,6 @@ h3 {
 
 
 h1 {
-  font-weight: 100;
   text-align: center;
   font-size: 1.8em;
   margin-bottom: .2em;
@@ -79,7 +72,6 @@ h1 {
 
 
 h3 {
-  font-weight: 100;
   font-size: 1.6em;
   margin: 0;
   padding: .5em 0;
@@ -89,21 +81,28 @@ h1, h3{
   font-family: "Inconsolata";
 }
 
+p{
+  font-family: "Bau Pro";
+}
+
 a {
   -webkit-transition: all .3s cubic-bezier(.17, .67, .83, .67);
   -moz-transition: all .3s cubic-bezier(.17, .67, .83, .67);
   -ms-transition: all .3s cubic-bezier(.17, .67, .83, .67);
   -o-transition: all .3s cubic-bezier(.17, .67, .83, .67);
   transition: all .3s cubic-bezier(.17, .67, .83, .67);
-  color: $white;
+  color: $link;
 }
 
+a:hover{
+  color: $link-hover;
+}
 
 
 .header {
   
   position: fixed;
-  z-index: 99999;
+  z-index: 9;
   height: 80px;
   width: 100%;
   top: 0px;
@@ -118,8 +117,8 @@ a {
 
   a {
     color: $white;
-
     text-decoration: none;
+    letter-spacing: 1px;
     font-size: .8rem;
     font-weight: 100;
     text-transform: uppercase;
@@ -182,15 +181,7 @@ a {
   align-items: center;
   vertical-align: center;
   cursor: help;
-  font-family: "GT America";
   padding: 2em;
-
-
-  h1,
-  h2,
-  h3 {
-    color: $bg-color;
-  }
 
   .masterpiece {
     justify-content: center;
@@ -223,39 +214,47 @@ a {
   }
 
   p {
-    color: $bg-color;
-    font-family: "Canela";
-    line-height: 1.25em;
     text-align: left;
-    font-weight: 200;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
   }
+  
+  
+    @media only screen and (max-width: 700px) {
 
-  li p {
-    font-family: "GT America";
-    font-size: 1em;
-    line-height: 1.6em;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 1.5em;
-  }
+      .col {
+        flex-wrap: nowrap;
+      }
 
-  a {
-    color: $bg-color;
-  }
+      .col-third,
+      .col-half {
+        margin: 0 !important;
+      }
 
-  h2 {
-    font-family: "Canela";
-    text-align: center;
-    color: $bg-color !important;
-    margin: 1em;
-    font-size: 2em;
-    font-weight: 600;
-  }
+      .col-half.about {
+        width: 100%;
+        flex: none;
+      }
 
+      .col-third.links {
+        display: block;
+        max-height: 150px;
+        overflow-y: scroll;
+        width: 100%;
+        max-width: none;
+        flex: none;
+      }
+
+      .col-third.experience {
+        width: 100%;
+      }
+
+
+    }
+
+  
 
   @media only screen and (max-width: 850px) {
 
@@ -452,7 +451,6 @@ a {
     }
 
     a {
-      font-family:"Canela";
       font-weight: 100;
       font-size: 2.6em;
       font-style: italic;
@@ -987,6 +985,12 @@ details[open] summary ~ * {
 p {
   font-size: 1rem;
   font-family: "Bau Pro";
+  
+  a{
+    text-decoration: none;
+    color: $link;
+  }
+  
 }
 
 
@@ -1007,18 +1011,27 @@ mark {
 
 hr {
   border: 0;
-  margin: 3em 0 3em 0;
+  margin: 0;
   height: 20px;
 }
 
-
-
-.trail { /* className for the trail elements */
-    position: absolute;
-    height: 16px; width: 12px;
-    border-radius: 100px;
-    background: $white;
-    pointer-events: none;
-    z-index: 999999;
-  }
+.cursor {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: -50%;
+  left: -50%;
+  margin: -25px 0 0 -25px;
+  border-radius: 50%;
+  background-color: #fff;
+  backface-visibility: hidden;
+  transition: transform 0.5s ease-out;
+  mix-blend-mode: difference;
+  z-index: 999;
+  pointer-events: none;
+}
+  
+.cursor.is-moving {
+  transform: scale(0.9);
+}
 
