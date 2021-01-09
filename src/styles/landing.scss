@@ -245,14 +245,16 @@ background: linear-gradient(180deg, $bg 0%, $bg 60%, rgba(0,0,0,0) 100%);
       font-family: "Inconsolata";
       text-transform: uppercase;
       margin: 0;
-      margin-left: -18px;
+      padding: .5em auto;
+//      margin-left: -18px;
+      width: auto;
     }
     
-    h2::before{
-      position: relative;
-      left: -10px;
-      content: "⤷";
-    }
+//    h2::before{
+//      position: relative;
+//      left: -10px;
+//      content: "⤷";
+//    }
     
     p{
       margin: 0;
