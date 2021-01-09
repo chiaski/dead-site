@@ -169,12 +169,15 @@
       text-transform: uppercase;
       letter-spacing: 1px;
       text-decoration: none;
-      margin-right: 1.5em;
       font-size: .8em;
+      padding: .25em;
+      margin: .15em;
+      margin-right: 1.5em;
     }
     
     a:hover{
-      text-decoration: underline;
+      background: $text;
+      color: $bg;
     }
     
     
