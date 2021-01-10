@@ -185,8 +185,26 @@ a:hover {
     mix-blend-mode: darken;
     object-fit: cover;
     
+    
+    @media only screen and (max-width: 800px) {
+      
+      position: relative;
+      top: 10vh;
+      left: 0;
+      right: 0;
+      width: 100%;
+      text-align: center;
+      
+    }
   }
 
+
+    @media only screen and (max-width: 700px) {
+      
+      div.mangacap ~ .mangacap {
+          display: none;
+      }
+}
 
 #about {
 
