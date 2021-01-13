@@ -140,11 +140,14 @@
 //    font-weight: 300;
 //    line-height: 110%;
 //    letter-spacing: -1.5px;
-    font-size: 1.25em;
     text-align: left;
-    max-width: 500px;
+    max-width: 700px;
     margin-left: 0;
     margin-right: auto;
+    
+    p{
+      font-size: 1.25em;
+    }
     
     a{
       text-decoration: none;
@@ -191,6 +194,10 @@
   
     @media only screen and (max-width: 900px) {
       margin: 0;
+      
+      .hello p{
+        font-size: 1em;
+      }
   }
   
 }
@@ -200,9 +207,10 @@
   
   margin: 0 auto;
   padding: 0;
+  padding-top: 1em;
   
   .box-inner{
-    max-width: 1000px;
+    max-width: 1600px;
     width: 95vw;
     margin: 0 auto;
   }
@@ -223,13 +231,13 @@
     font-size: 1em;
     margin: .5em;
     padding: 1em .5em;
-    max-width: 470px;
+    max-width: 440px;
     text-decoration: none;
     
     ._images{
 //      filter: grayscale(1);
       object-fit: cover;
-      max-width: 95%;
+      width: 100%;
       overflow: hidden;
       
       img{
@@ -295,15 +303,24 @@
   }
   
   
+    @media only screen and (min-width: 1600px) {
+      
+      a{
+        width: 45%;
+        
+      }
+      
+  }
+  
     @media only screen and (max-width: 1000px) {
 
       a{
-        max-width: 360px;
+        width: 100%;
         
         ._images{
           
           img{
-            max-width: 88%;
+            width: 100%;
           }
           
         }
@@ -320,9 +337,9 @@
 }
 
 
-//#projects:hover a:not(:hover) {
-//  opacity: 0.5;
-//}
+#projects:hover a:not(:hover) {
+  opacity: 0.5;
+}
 
 
 #experiments{
