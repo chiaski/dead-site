@@ -29,87 +29,102 @@
 
 // SIZING 
 
-.container{
+.container {
   background: $bg;
 }
 
-.box{
+.box {
   padding: 5vw;
-  
+
 }
 
 // NARUTO
 
-#naruto{
-  mix-blend-mode: darken; position: fixed; left: 0; top: 0; height: 100%; width: 100%; background-repeat: no-repeat; background-size: contain; max-width: 420px; background-position: bottom left; 
+#naruto {
+  mix-blend-mode: darken;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  max-width: 420px;
+  background-position: bottom left;
   pointer-events: none;
-  opacity: 0.6;
-  
-    @media only screen and (max-width: 1100px) {
-      opacity: 0.4;
+  opacity: 0;
+
+  @media only screen and (max-width: 1100px) {
+    opacity: 0.1;
   }
-  
+
   @media only screen and (max-width: 760px) {
     max-width: 200px;
   }
-  
+
 }
 
 
 // HEADER
 
-#overlay{
+#overlay {
   position: fixed;
   bottom: 0;
   left: 0;
   z-index: 999;
   width: 100%;
-  height:90px;
+  height: 90px;
   background-color: $bg;
-  background: linear-gradient(0deg, $bg 0%, rgba(239,239,239,0) 100%);
+  background: linear-gradient(0deg, $bg 0%, rgba(239, 239, 239, 0) 100%);
   opacity: 0.8;
 }
 
-#navigation{
-  left: 50%;
-  transform: translateX(-50%);
-  max-width: 1050px;
+.header {
+  width: 100%;
   margin: 0 auto;
   background-color: $bg;
-  background: linear-gradient(180deg, $bg 0%, $bg 60%, rgba(239,239,239,0) 100%);
-  
-  a{
+  background: linear-gradient(180deg, $bg 0%, $bg 60%, rgba(239, 239, 239, 0) 100%);
+
+  .header-wrapper {
+    margin: 0 auto;
+    width: 100%;
+//    max-width: 1050px;
+    display: flex;
+    justify-content: space-between;
+
+    .header-right {
+      float: right;
+    }
+
+  }
+
+  a {
     color: $text;
   }
 
-  
-  a:hover{
+
+  a:hover {
     color: $bg;
   }
-  
-  .header-right a{
-    margin-left: 1.5em;
+
+  @media only screen and (max-width: 1000px) {
+    .header-right a {
+      margin: .5em;
+    }
   }
-  
-  
-    @media only screen and (max-width: 1000px) {
-      .header-right a{
-        margin: .5em;
-      }
-  }
-  
+
 }
 
 
 // AREAS
 
-#hotanimeboy-2{
+#hotanimeboy-2 {
   opacity: 0;
   left: -90px;
 }
 
-#hotanimeboy-cover{
-  
+#hotanimeboy-cover {
+
   background: linear-gradient(transparent 5%, #f0f0ea 95%, #f0f0ea 95%);
   position: fixed;
   z-index: -8;
@@ -118,55 +133,58 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  
+
 }
 
-#landing{
-  
+#landing {
+
   margin: 0 auto;
-  margin-top: 80px;
+  margin-top: 70px;
   padding: 0;
-  
-  .box-inner{
+
+  .box-inner {
     width: 900px;
-    max-width: 90vw;
-  }
-  
-  .hello{
-//    font-family: "GT America";
-//    font-size: 1rem;
-//    line-height: 130%;
-//    font-size: 2.8rem;
-//    font-weight: 300;
-//    line-height: 110%;
-//    letter-spacing: -1.5px;
-    text-align: left;
-    max-width: 700px;
+    max-width: 100vw;
     margin-left: 0;
     margin-right: auto;
-    
-    p{
+  }
+
+  .hello {
+    //    font-family: "GT America";
+    //    font-size: 1rem;
+    //    line-height: 130%;
+    //    font-size: 2.8rem;
+    //    font-weight: 300;
+    //    line-height: 110%;
+    //    letter-spacing: -1.5px;
+    text-align: left;
+    width: 700px;
+    max-width: 80vw;
+    margin-left: 2.5em;
+
+    p {
+      text-indent: 50px;
       font-size: 1.25em;
     }
-    
-    a{
+
+    a {
       text-decoration: none;
       color: $link;
     }
   }
-    
-    @media only screen and (max-width: 1000px) {
-      padding-top: 45px;
-    }
-  
-  #social{
-    
+
+  @media only screen and (max-width: 800px) {
+    padding-top: 60px;
+  }
+
+  #social {
+
+    margin-left: 2.5em;
     margin-top: 30px;
-    margin-left: -1.5em;
     width: 100%;
-    
-    a{
-      
+
+    a {
+
       font-family: "Inconsolata";
       color: $text;
       text-transform: uppercase;
@@ -175,57 +193,65 @@
       font-size: .8em;
       padding: .25em;
       margin: .15em;
-      margin-right: 1.5em;
+      margin-right: 1em;
     }
-    
-    a:hover{
+
+    a:hover {
       background: $text;
       color: $bg;
     }
-    
-    
+
+
     @media only screen and (max-width: 900px) {
-     text-align: center; 
-      margin-left: 0;
-    }
-    
-  }
-  
-  
-    @media only screen and (max-width: 900px) {
-      margin: 0;
+      text-align: center;
+      margin: 0 auto;
       
-      .hello p{
-        font-size: 1em;
+      a{
+        margin-right: .5em;
+        margin-left:.5em;
       }
+      
+    }
+
   }
-  
+
+
+  @media only screen and (max-width: 900px) {
+    
+    margin-top: 0;
+    padding-top: 50px;
+
+    .hello p {
+      font-size: 1em;
+    }
+  }
+
 }
 
 
-#work{
-  
+#work {
+
   margin: 0 auto;
   padding: 0;
   padding-top: 1em;
-  
-  .box-inner{
+
+  .box-inner {
     max-width: 1600px;
     width: 95vw;
     margin: 0 auto;
   }
-  
+
 }
 
-#projects{
-  
+#projects {
+
   margin: 0 auto;
-  
-  hr{
+
+  hr {
     display: none;
   }
-  
-  a{
+
+  a {
     color: $text;
     display: inline-block;
     font-size: 1em;
@@ -233,22 +259,22 @@
     padding: 1em .5em;
     max-width: 440px;
     text-decoration: none;
-    
-    ._images{
-//      filter: grayscale(1);
+
+    ._images {
+      //      filter: grayscale(1);
       object-fit: cover;
       width: 100%;
       overflow: hidden;
-      
-      img{
-        width: auto;
+
+      img {
+        width: 100%;
         height: auto;
         object-fit: cover;
       }
-      
+
     }
-    
-    span.tag{
+
+    span.tag {
       font-family: "Inconsolata";
       text-transform: uppercase;
       font-size: .8em;
@@ -258,104 +284,114 @@
       border: 1px solid $text;
       border-radius: 8px;
     }
-    
-    h2{
+
+    h2 {
       font-weight: 100;
       font-size: 1.25rem;
       font-family: "Inconsolata";
       text-transform: uppercase;
       margin: .25em auto;
-//      margin-left: -18px;
+      //      margin-left: -18px;
       width: auto;
     }
-    
-//    h2::before{
-//      position: relative;
-//      left: -10px;
-//      content: "⤷";
-//    }
-    
-    p{
+
+    //    h2::before{
+    //      position: relative;
+    //      left: -10px;
+    //      content: "⤷";
+    //    }
+
+    p {
       margin: 0;
       padding: .25em 0;
       max-width: 280px;
       font-size: .9em;
     }
-    
+
   }
-  
-  a:hover{
-    
-    span.tag{
+
+  a:hover {
+
+    span.tag {
       background: $text;
       color: $bg;
     }
-    
-    ._images{
-      filter: grayscale(0);
-      
-      img{
-      }
-      
-    }
-    
-    
-  }
-  
-  
-    @media only screen and (min-width: 1600px) {
-      
-      a{
-        width: 45%;
-        
-      }
-      
-  }
-  
-    @media only screen and (max-width: 1000px) {
 
-      a{
-        width: 100%;
-        
-        ._images{
-          
-          img{
-            width: 100%;
-          }
-          
-        }
-        
-        p{
-          font-size: .8em;
-        }
-        
-      }
-  
+    ._images {
+      filter: grayscale(0);
+
+      img {}
+
+    }
+
+
   }
-  
-  
+
+
+  @media only screen and (min-width: 1200px) {
+
+    a {
+      max-width: 50vw;
+      width: 45%;
+
+      ._images {
+        img {
+          width: 100%;
+          max-width: 100%;
+        }
+      }
+
+
+    }
+
+  }
+
+  @media only screen and (max-width: 1000px) {
+
+    a {
+      width: 100%;
+
+      ._images {
+
+        img {
+          width: 95%;
+          text-align: center;
+          margin: 0 auto;
+        }
+
+      }
+
+      p {
+        font-size: .8em;
+      }
+
+    }
+
+  }
+
+
 }
 
 
 #projects:hover a:not(:hover) {
-  opacity: 0.5;
+  filter: grayscale(1);
 }
 
 
-#experiments{
-  
+#experiments {
+
   margin: 1.5em auto;
   width: 90vw;
   max-width: 880px;
   counter-reset: item;
   text-align: center;
-  
-  span.spacer{
+
+  span.spacer {
     width: 45px;
     display: inline-block;
   }
-  
-  a{
+
+  a {
     text-decoration: none;
     margin-right: .25em;
     margin-left: .25em;
@@ -366,8 +402,8 @@
     display: inline-block;
     color: $text;
   }
-  
-  a::before{
+
+  a::before {
     font-family: "Inconsolata";
     counter-increment: item;
     content: counter(item);
@@ -385,44 +421,44 @@
     bottom: 6px;
     right: 2.5px;
   }
-  
-  a:hover::before{
+
+  a:hover::before {
     background: $text;
     color: $bg;
   }
-  
-  
+
+
   @media only screen and (max-width: 760px) {
-    
-    span.spacer{
+
+    span.spacer {
       display: none;
     }
-    
-    h2{
+
+    h2 {
       font-size: 2.8em;
     }
 
-    a{
+    a {
       font-size: .8rem;
       display: inline-block;
       padding: 0;
       margin: .25em;
     }
-    
-    a::before{
+
+    a::before {
       margin-right: .1em;
       height: 16px;
       width: 16px;
       font-size: .6em;
     }
-    
-      
+
+
   }
-  
+
 }
 
 
-#newsletter{
+#newsletter {
   margin: 1.5em 0;
   text-align: center;
   padding-bottom: 10vh;
@@ -444,4 +480,3 @@
     opacity: 0;
   }
 }
-

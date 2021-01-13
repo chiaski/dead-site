@@ -89,12 +89,14 @@ VERSION 1.4
     <div id="overlay"></div>
 
     <div class="header" id="navigation">
+      <div class="header-wrapper">
       <div class="header-left"><a href="index.html">Chia Amisola</a></div>
 
       <div class="header-right">
         <a href="about">About</a>
         <a href="#experiments" class="exp"> Experiments</a>
         <a href="resume">Résumé</a>
+      </div>
       </div>
     </div>
 
@@ -377,6 +379,20 @@ VERSION 1.4
 //
 //      document.body.style.background = choose;
 //    }
+    
+    $(window).scroll(function() {
+  var scrollTop = $(this).scrollTop();
+
+  $('#naruto').css({
+    opacity: function() {
+      var elementHeight = $(this).height(),
+          opacity = ((1 - (elementHeight - scrollTop) / elementHeight) * 0.25);
+          
+      return opacity;
+    }
+  });
+});
+
 
     
     var tooltips = document.querySelectorAll('.project-box-desc ._tooltip');
