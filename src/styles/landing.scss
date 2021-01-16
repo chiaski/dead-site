@@ -236,10 +236,8 @@
   padding-top: 1em;
 
   .box-inner {
-    max-width: 1600px;
     width: 95vw;
     margin: 0 auto;
-    background: blue;
   }
 }
 
@@ -259,14 +257,14 @@
     font-size: 1em;
     margin: .5em;
     padding: 1em .5em;
-    max-width: 49vw;
-    background: red;
+    width: 48%;
     text-decoration: none;
 
     ._images {
       //      filter: grayscale(1);
       object-fit: cover;
       width: 100%;
+      max-width: 48vw;
       overflow: hidden;
 
       img {
@@ -283,7 +281,7 @@
       text-transform: uppercase;
       font-size: .8em;
       letter-spacing: .1px;
-      padding: .15em .25em;
+      padding: .15em .5em;
       margin-right: .25em;
       border: 1px solid $text;
       border-radius: 8px;
@@ -308,8 +306,8 @@
     p {
       margin: 0;
       padding: .25em 0;
-      max-width: 280px;
-      font-size: .9em;
+      max-width: 320px;
+      font-size: 1em;
     }
 
   }
@@ -323,9 +321,6 @@
 
     ._images {
       filter: grayscale(0);
-
-      img {}
-
     }
 
 
@@ -335,13 +330,14 @@
   @media only screen and (min-width: 1200px) {
 
     a {
-      max-width: 50vw;
-      width: 45%;
+      max-width: 48vw;
+      width: 48%;
 
       ._images {
         img {
           width: 100%;
-          max-width: 100%;
+          max-width: 100vw;
+          max-height: 50vh;
         }
       }
 
@@ -357,10 +353,13 @@
       max-width: 100%;
 
       ._images {
+        
+        max-width: 100vw;
 
         img {
           width: 95%;
           max-height: 30vh;
+          max-width: 100vw;
           text-align: center;
           margin: 0 auto;
         }

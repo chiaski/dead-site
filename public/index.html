@@ -108,7 +108,7 @@ VERSION 1.4
           Chia is twenty and studies Computing & the Arts at Yale, from Manila. They create radical systems for creators and communities in pursuit of making creation ubiquituous, as the internet age had given them.
         </p>
         <p>    
-          Currently nurturing Filipino technologists at <a href="https://developh.org">Developh</a>, exploring Filipino connection at <a href="https://kumu.ph">Kumu</a>, writing every week at <a href="https://chias.blog">chias.blog</a>. Also a speaker (Grace Hopper Conf Keynote), worldbuilder, Adobe Design Circle Scholar.
+          Currently nurturing Filipino technologists at <a href="https://developh.org">Developh</a>, exploring Filipino connection at <a href="https://kumu.ph">Kumu</a>, writing every week at <a href="https://chias.blog">chias.blog</a>. Also a speaker (Grace Hopper Conf Keynote), worldbuilder, Adobe Design Circle Scholar.<br>I share process, experiments, and thinking here.
         </div>
         
         <div class="credentials">
@@ -143,7 +143,7 @@ VERSION 1.4
     <div class="box" id="work">
       <div class="box-inner">
 
-        <div id="projects" class="grid" data-masonry='{ "fitWidth": true}'>
+        <div id="projects" class="grid">
 
           <a href="work/ibotoph.html">
             
@@ -359,27 +359,23 @@ VERSION 1.4
 
 
   </div>
-
+<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
 <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
   <script>
-//    var colors = ["#db635b", "#e3abbc", "#bfbfbf", "#81a391", "#9a97d1", "#8db1ad", "#f0cb7d", "#d67a90", "#ACB2B4"];
-//
-//    const choose = colors[Math.floor(Math.random() * colors.length)];
-//
-//    document.body.style.background = choose;
-//
-//    var links = document.getElementById("navigation").getElementsByTagName("a");
-//
-//    for (var i = 0; i < links.length; i++) {
-//      //      links[i].style.color = choose;
-//    }
-//
-//    function color() {
-//      const choose = colors[Math.floor(Math.random() * colors.length)];
-//
-//      document.body.style.background = choose;
-//    }
+//    
+//var $grid = $('.grid').masonry({  fitWidth: true
+//});
+//    
+    
+$(window).on('load', function(){
+
+  var $grid = new Masonry( '.grid', {
+    // options
+  });
+
+    
+});
     
     $(window).scroll(function() {
   var scrollTop = $(this).scrollTop();
