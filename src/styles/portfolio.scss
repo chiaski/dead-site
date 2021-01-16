@@ -318,11 +318,12 @@ iframe {
   ol.feature-large,
   ul.feature-large {
 
-    width: 100%;
+    width: 95%;
     max-width: 820px;
     margin: 1em auto;
 
     li {
+      width: 90%;
       font-size: 1rem;
       padding-bottom: .5em;
       margin: auto;
@@ -671,6 +672,11 @@ iframe {
       width: 31%;
       box-sizing: border-box;
       margin: 1%;
+      
+      h3{
+        font-size: 1em;
+      }
+      
     }
 
   }
@@ -737,12 +743,15 @@ iframe {
     h3 {
       max-width: 95vw;
       width: 100%;
-      margin: auto;
     }
 
     h1 {
       font-size: 2em;
       padding: 0.25em;
+    }
+    
+    h2{
+      margin-top: 1em;
     }
 
     h2,
@@ -813,7 +822,6 @@ iframe {
     details {
       margin: 0 auto;
       padding: 1em;
-      font-size: .8rem;
       line-height: 1.6em;
       margin-bottom: 1em;
     }

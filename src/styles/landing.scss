@@ -239,9 +239,11 @@
     max-width: 1600px;
     width: 95vw;
     margin: 0 auto;
+    background: blue;
   }
-
 }
+
+
 
 #projects {
 
@@ -257,7 +259,8 @@
     font-size: 1em;
     margin: .5em;
     padding: 1em .5em;
-    max-width: 440px;
+    max-width: 49vw;
+    background: red;
     text-decoration: none;
 
     ._images {
@@ -269,6 +272,7 @@
       img {
         width: 100%;
         height: auto;
+        max-height: 40vh;
         object-fit: cover;
       }
 
@@ -346,15 +350,17 @@
 
   }
 
-  @media only screen and (max-width: 1000px) {
+  @media only screen and (max-width: 900px) {
 
     a {
       width: 100%;
+      max-width: 100%;
 
       ._images {
 
         img {
           width: 95%;
+          max-height: 30vh;
           text-align: center;
           margin: 0 auto;
         }
@@ -368,8 +374,6 @@
     }
 
   }
-
-
 }
 
 
