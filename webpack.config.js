@@ -6,13 +6,12 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 
 
-
-const devMode = process.env.NODE_ENV !== 'production';
+//const devMode = process.env.NODE_ENV !== 'production';
 module.exports = {
   // Tells Webpack which built-in optimizations to use
   // In 'production' mode, Webpack will minify and uglify our JS code
   // If you leave this out, Webpack will default to 'production'
- // mode: devMode ? 'development' : 'production',
+  mode: 'production',
   // Webpack needs to know where to start the bundling process,
   // so we define the main JS and Sass files, both under
   // the './src' directory
@@ -126,6 +125,27 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: 'assets/styles/[name].css',
       chunkFilename: "[name].css"
-    })
+    }),
+    new ImageminPlugin({
+      minimizerOptions: {
+        // Lossless optimization with custom option
+        // Feel free to experiment with options for better result for you
+        plugins: [
+          ['gifsicle', { interlaced: true }],
+          ['jpegtran', { progressive: true }],
+          ['optipng', { optimizationLevel: 5 }],
+          [
+            'svgo',
+            {
+              plugins: [
+                {
+                  removeViewBox: false,
+                },
+              ],
+            },
+          ],
+        ],
+      },
+    }),
   ]
 };
