@@ -13,6 +13,7 @@
     "css-loader": "^3.2.0",
     "cssnano": "^4.1.10",
     "file-loader": "^4.2.0",
+    "imagemin": "github:imagemin/imagemin#bfd7c547045f68ed92243c6a772f6265a08a687f",
     "imagemin-gifsicle": "^6.0.1",
     "imagemin-jpegtran": "^6.0.0",
     "imagemin-optipng": "^6.0.0",
@@ -35,6 +36,7 @@
   },
   "dependencies": {
     "aos": "^2.3.4",
+    "imagemin-cli": "^6.0.0",
     "imagemin-webpack-plugin": "^2.4.2",
     "jquery": "^3.4.1"
   }
