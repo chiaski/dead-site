@@ -5,7 +5,6 @@ var ImageminPlugin = require('imagemin-webpack-plugin').default
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 
-
 //const devMode = process.env.NODE_ENV !== 'production';
 module.exports = {
   // Tells Webpack which built-in optimizations to use
@@ -86,20 +85,9 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
-              // The image will be named with the original name and
-              // extension
-              name: '[name].[ext]',
-              // Indicates where the images are stored and will use
-              // this path when generating the CSS files.
-              // Example, in main.scss I have
-              // url('../../public/assets/images/venice-italy.jpg')
-              // and when generating the CSS file, it will be
-              // outputted as url(../images/venice-italy.jpg), which
-              // is relative to /styles/main.css
-              publicPath: '../images',
-              // When this option is 'true', the loader will emit
-              // the image to output.path
-              emitFile: false
+              name: '[name].[ext]'
+//              publicPath: '../images',
+//              emitFile: true
             }
           }
         ]
@@ -126,6 +114,7 @@ module.exports = {
       filename: 'assets/styles/[name].css',
       chunkFilename: "[name].css"
     }),
+    new ImageminPlugin({test: '**'}),
     new ImageminPlugin({
       minimizerOptions: {
         // Lossless optimization with custom option
@@ -138,9 +127,6 @@ module.exports = {
             'svgo',
             {
               plugins: [
-                {
-                  removeViewBox: false,
-                },
               ],
             },
           ],
