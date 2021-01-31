@@ -280,8 +280,16 @@ VERSION 1.4
 
           
         </div>
-
+        
         <hr>
+        <hr>
+        
+        <div id="rss">
+          <p>Recent Writing</p>
+          
+        
+        </div>
+
         <hr>
         <hr>
 
@@ -402,6 +410,28 @@ VERSION 1.4
 <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
 <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    
+        <script type="text/javascript">
+          $.getJSON("https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fchias.blog%2Ffeed%2F", function(data){
+            console.log(data.items);
+            var bloge = [];
+             $.each( data.items, function( i, item ) {
+    bloge.push( "<a href='" + item.link + "'>" + item.title + "<sup>" + item.pubDate + "</sup></a>" );
+               
+          if(i === 12){
+            return false;
+          }
+               
+  });
+            
+        $('#rss').append(bloge);
+            
+          });
+//        $('#rss').append($('<h2/>').text(item.title));
+
+
+        </script>
+    
   <script>
 //    
 //var $grid = $('.grid').masonry({  fitWidth: true

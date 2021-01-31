@@ -381,6 +381,42 @@
 }
 
 
+#rss{
+  
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  
+  p{
+    text-align: center;
+  }
+  
+  a{
+    display: inline-block;
+    padding: .5em;
+    margin: .25em 1em;
+    text-decoration: none;
+    color: $black;
+    
+    sup{
+      display: block;
+      font-size: .5em;
+    }
+    
+  }
+  
+  a:hover{
+    
+    sup{
+      background: $black;
+      color: $bg;
+    }
+    
+  }
+  
+}
+
+
 #experiments {
 
   margin: 1.5em auto;
