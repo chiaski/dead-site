@@ -36,7 +36,7 @@ h1, h2, h3, h4, h5 {
 /* MAIN STRUCTURAL ELEMENTS */
 body {
   cursor: default;
-  background: #EFEFEF;
+  background: #F7F9F8;
   color: #35383b;
   text-rendering: optimizeLegibility;
   font-display: swap;
@@ -46,11 +46,11 @@ body {
 
 ::-moz-selection {
   /* Code for Firefox */
-  color: #EFEFEF;
+  color: #F7F9F8;
   background: #35383b; }
 
 ::selection {
-  color: #EFEFEF;
+  color: #F7F9F8;
   background: #35383b; }
 
 .container {
@@ -62,7 +62,7 @@ body {
   place-items: center; }
 
 .container.alt {
-  color: #EFEFEF; }
+  color: #F7F9F8; }
 
 .box {
   display: flex;
@@ -141,7 +141,7 @@ a:hover {
     transition: all .3s linear; }
   .header a:hover {
     background: #35383b;
-    color: #EFEFEF; }
+    color: #F7F9F8; }
   .header .header-right a {
     margin-left: 2em; }
   .header .header-right a:hover {
@@ -164,7 +164,7 @@ a:hover {
   height: auto;
   z-index: 0;
   overflow: hidden;
-  background: #EFEFEF;
+  background: #F7F9F8;
   mix-blend-mode: darken;
   object-fit: cover; }
   @media only screen and (max-width: 800px) {
@@ -181,7 +181,7 @@ a:hover {
     display: none; } }
 
 #about {
-  background-color: #EFEFEF;
+  background-color: #F7F9F8;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
@@ -208,11 +208,6 @@ a:hover {
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale; }
-  #about .hello {
-    font-size: 1.25em;
-    max-width: 560px;
-    float: left;
-    z-index: 1; }
   #about .credentials {
     margin-top: 180px;
     float: right;
@@ -277,8 +272,8 @@ a:hover {
       position: absolute;
       margin-left: -40px;
       content: counter(why);
-      color: #EFEFEF;
-      border: 1px solid #EFEFEF;
+      color: #F7F9F8;
+      border: 1px solid #F7F9F8;
       padding: .15em;
       text-align: center;
       border-radius: 100px;
@@ -335,7 +330,7 @@ a:hover {
     color: #35383b; }
   #links .col-third a:hover sup {
     background: #35383b;
-    color: #EFEFEF; }
+    color: #F7F9F8; }
 
 #footer {
   background: none;
@@ -373,7 +368,7 @@ a:hover {
       transition: all .3s linear; }
     #footer ._foot a:hover {
       background: #35383b;
-      color: #EFEFEF; }
+      color: #F7F9F8; }
     #footer ._foot a.about {
       padding-right: 1.5em;
       float: left;
@@ -527,7 +522,7 @@ details[open] summary ~ * {
     text-align: left; }
   .portfolio-project-container .quote-block {
     text-rendering: optimizelegibility;
-    color: #EFEFEF;
+    color: #F7F9F8;
     line-height: 22px;
     font-size: 14px;
     padding: 0;
@@ -598,7 +593,7 @@ details[open] summary ~ * {
     opacity: 0.7;
     background: none !important;
     cursor: pointer;
-    color: #EFEFEF;
+    color: #F7F9F8;
     white-space: nowrap;
     -webkit-transition: all .3s linear;
     -moz-transition: all .3s linear;
@@ -649,7 +644,7 @@ hr {
   background-repeat: repeat;
   background-size: 300%;
   animation: bg-animation 2s infinite;
-  opacity: 1;
+  opacity: 0.4;
   z-index: 9999999999; }
 
 @keyframes bg-animation {
