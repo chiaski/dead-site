@@ -19,12 +19,12 @@ body {
 
 ::-moz-selection {
   /* Code for Firefox */
-  color: $bg-color;
+  color: $bg;
   background: $accent;
 }
 
 ::selection {
-  color: $bg-color;
+  color: $bg;
   background: $accent;
 }
 
@@ -72,10 +72,12 @@ h1 {
   font-size: 1.5em;
   line-height: 90%;
   margin: .5em auto;
+  font-family: 'Times Now', serif;
 }
 
 
 h3 {
+  font-family: 'Times Now', serif;
   font-size: 1.5em;
   letter-spacing: -.25px;
   margin: 0;
@@ -86,10 +88,6 @@ h1,
 h3 {
   font-family: "Bau Pro";
   font-weight: 300;
-}
-
-p {
-  font-family: "Bau Pro";
 }
 
 a {
@@ -119,15 +117,13 @@ a:hover {
   background-repeat: repeat-x;
   background-size: contain;
 
-  font-family: 'Inconsolata', monospace;
+  font-family: 'Bau Pro', monospace;
 
   a {
     color: $text;
     text-decoration: none;
-    letter-spacing: 1px;
     font-size: .8rem;
     font-weight: 100;
-    text-transform: uppercase;
     font-display: swap;
     padding: .25em;
     margin: .15em;
@@ -237,9 +233,6 @@ a:hover {
 
   p {
     text-align: left;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
   }
   
   .credentials {
@@ -262,7 +255,7 @@ a:hover {
       text-transform: uppercase;
       font-size: .9em;
       margin-right: 1.5em;
-      font-family: "Inconsolata";
+      font-family: "Bau Pro";
     }
 
 
@@ -411,7 +404,7 @@ a:hover {
     font-size: .8em;
     margin-bottom: 1em;
 
-    font-family: 'Inconsolata', monospace;
+    font-family: 'Bau Pro', monospace;
 
     p {
       text-transform: none;
@@ -467,8 +460,7 @@ a:hover {
     padding-bottom: 5vh;
     margin: 0 auto;
     text-align: right;
-
-    font-family: 'Inconsolata', monospace;
+    font-family: 'Bau Pro', monospace;
     
     p{
       text-align: center;
@@ -477,10 +469,9 @@ a:hover {
     a {
       color: $text;
       text-decoration: none;
-      letter-spacing: 1px;
+      letter-spacing: -.25px;
       font-size: .8rem;
       font-weight: 100;
-      text-transform: uppercase;
       font-display: swap;
       padding: .25em;
       margin: .15em;
@@ -898,7 +889,9 @@ details[open] summary ~ * {
 
 p {
   font-size: 1rem;
-  font-family: "Bau Pro";
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 
   a {
     text-decoration: none;

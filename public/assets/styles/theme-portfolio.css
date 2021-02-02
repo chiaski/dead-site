@@ -14,20 +14,25 @@ h3 {
   margin: 0 auto; }
 
 h1 {
-  padding-bottom: 25px; }
+  padding-bottom: 25px;
+  font-size: 2em;
+  letter-spacing: -1px;
+  font-family: 'Times Now', serif; }
 
 h2 {
   font-weight: 100;
   margin: 0 auto;
   margin-top: 1.5em;
-  padding: .25em;
-  font-family: 'Inconsolata', monospace;
+  padding: .5em;
   font-size: .9em;
-  text-transform: uppercase;
   line-height: 110%; }
 
 h3 {
-  text-align: center; }
+  text-align: center;
+  letter-spacing: -.5px;
+  font-family: 'Times Now', serif;
+  max-width: 450px;
+  margin: 1em auto; }
 
 img {
   max-width: 800px;
@@ -319,10 +324,10 @@ iframe {
     text-decoration: none; }
     .portfolio-travel a strong {
       letter-spacing: .5px;
-      font-size: 2em;
+      font-size: 2.5em;
       font-weight: 300;
-      text-transform: uppercase;
-      font-family: 'Inconsolata',   monospace; }
+      letter-spacing: -1px;
+      font-family: 'Times Now', serif; }
   @media only screen and (max-width: 700px) {
     .portfolio-travel .travel-left,
     .portfolio-travel .travel-right {
@@ -453,7 +458,7 @@ iframe {
     margin: 0 auto;
     width: 550px;
     max-width: 95vw;
-    font-family: 'Inconsolata',   monospace;
+    font-family: 'Bau Pro',   monospace;
     font-weight: 300;
     font-size: 1.25em;
     line-height: 120%;
@@ -675,7 +680,7 @@ iframe {
     margin-bottom: 1.5em;
     line-height: 1.4em; }
     .summary-container .summary-add strong {
-      font-family: "Inconsolata";
+      font-family: "Bau Pro";
       text-transform: uppercase;
       font-weight: 100;
       letter-spacing: 2px;
@@ -730,7 +735,7 @@ iframe {
       margin: 0;
       display: inline-block;
       margin-bottom: .5em;
-      font-family: 'Inconsolata', monospace; }
+      font-family: 'Bau Pro', monospace; }
     .container-persona .persona h4 {
       font-weight: 800;
       padding: 0 !important;

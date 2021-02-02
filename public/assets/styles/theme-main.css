@@ -1,4 +1,7 @@
-@import url(https://fonts.googleapis.com/css2?family=Inconsolata&display=swap);
+/*
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+*/
 @font-face {
   font-family: 'Bau Pro';
   src: url(../fonts/BauPro.woff2) format("woff2"), url(../fonts/BauPro.woff) format("woff");
@@ -11,6 +14,90 @@
   src: url(../fonts/BauPro-Medium.woff2) format("woff2"), url(../fonts/BauPro-Medium.woff) format("woff");
   font-weight: 500;
   font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Times Now';
+  src: url("https://chia.design/assets/fonts/TimesNow-Bold.woff2") format("woff2"), url("https://chia.design/assets/fonts/TimesNow-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Times Now';
+  src: url("https://chia.design/assets/fonts/TimesNow-BoldItalic.woff2") format("woff2"), url("https://chia.design/assets/fonts/TimesNow-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Times Now';
+  src: url("https://chia.design/assets/fonts/TimesNow-ExtraBoldItalic.woff2") format("woff2"), url("https://chia.design/assets/fonts/TimesNow-ExtraBoldItalic.woff") format("woff");
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Times Now';
+  src: url("https://chia.design/assets/fonts/TimesNow-ExtraBold.woff2") format("woff2"), url("https://chia.design/assets/fonts/TimesNow-ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Times Now';
+  src: url("https://chia.design/assets/fonts/TimesNow-ExtraLightItalic.woff2") format("woff2"), url("https://chia.design/assets/fonts/TimesNow-ExtraLightItalic.woff") format("woff");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Times Now';
+  src: url("https://chia.design/assets/fonts/TimesNow-ExtraLight.woff2") format("woff2"), url("https://chia.design/assets/fonts/TimesNow-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Times Now';
+  src: url("https://chia.design/assets/fonts/TimesNow-LightItalic.woff2") format("woff2"), url("https://chia.design/assets/fonts/TimesNow-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Times Now';
+  src: url("https://chia.design/assets/fonts/TimesNow-SemiBold.woff2") format("woff2"), url("https://chia.design/assets/fonts/TimesNow-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Times Now';
+  src: url("https://chia.design/assets/fonts/TimesNow-SemiBoldItalic.woff2") format("woff2"), url("https://chia.design/assets/fonts/TimesNow-SemiBoldItalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Times Now';
+  src: url("https://chia.design/assets/fonts/TimesNow-Light.woff2") format("woff2"), url("https://chia.design/assets/fonts/TimesNow-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Times Now';
+  src: url("https://chia.design/assets/fonts/TimesNow-SemiLight.woff2") format("woff2"), url("https://chia.design/assets/fonts/TimesNow-SemiLight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Times Now';
+  src: url("https://chia.design/assets/fonts/TimesNow-SemiLightItalic.woff2") format("woff2"), url("https://chia.design/assets/fonts/TimesNow-SemiLightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
   font-display: swap; }
 
 html {
@@ -84,9 +171,11 @@ h1 {
   text-align: center;
   font-size: 1.5em;
   line-height: 90%;
-  margin: .5em auto; }
+  margin: .5em auto;
+  font-family: 'Times Now', serif; }
 
 h3 {
+  font-family: 'Times Now', serif;
   font-size: 1.5em;
   letter-spacing: -.25px;
   margin: 0;
@@ -96,9 +185,6 @@ h1,
 h3 {
   font-family: "Bau Pro";
   font-weight: 300; }
-
-p {
-  font-family: "Bau Pro"; }
 
 a {
   -webkit-transition: all 0.3s cubic-bezier(0.17, 0.67, 0.83, 0.67);
@@ -123,14 +209,12 @@ a:hover {
   justify-content: space-between;
   background-repeat: repeat-x;
   background-size: contain;
-  font-family: 'Inconsolata', monospace; }
+  font-family: 'Bau Pro', monospace; }
   .header a {
     color: #35383b;
     text-decoration: none;
-    letter-spacing: 1px;
     font-size: .8rem;
     font-weight: 100;
-    text-transform: uppercase;
     font-display: swap;
     padding: .25em;
     margin: .15em;
@@ -204,10 +288,7 @@ a:hover {
     opacity: 1;
     pointer-events: none; }
   #about p {
-    text-align: left;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale; }
+    text-align: left; }
   #about .credentials {
     margin-top: 180px;
     float: right;
@@ -224,7 +305,7 @@ a:hover {
       text-transform: uppercase;
       font-size: .9em;
       margin-right: 1.5em;
-      font-family: "Inconsolata"; }
+      font-family: "Bau Pro"; }
     @media only screen and (max-width: 900px) {
       #about .credentials {
         width: auto;
@@ -311,7 +392,7 @@ a:hover {
     text-transform: uppercase;
     font-size: .8em;
     margin-bottom: 1em;
-    font-family: 'Inconsolata', monospace; }
+    font-family: 'Bau Pro', monospace; }
     #links .col-third a p {
       text-transform: none;
       font-size: .8em;
@@ -347,16 +428,15 @@ a:hover {
     padding-bottom: 5vh;
     margin: 0 auto;
     text-align: right;
-    font-family: 'Inconsolata', monospace; }
+    font-family: 'Bau Pro', monospace; }
     #footer ._foot p {
       text-align: center; }
     #footer ._foot a {
       color: #35383b;
       text-decoration: none;
-      letter-spacing: 1px;
+      letter-spacing: -.25px;
       font-size: .8rem;
       font-weight: 100;
-      text-transform: uppercase;
       font-display: swap;
       padding: .25em;
       margin: .15em;
@@ -610,7 +690,9 @@ details[open] summary ~ * {
 /* MAIN ELEEMENTS */
 p {
   font-size: 1rem;
-  font-family: "Bau Pro"; }
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
   p a {
     text-decoration: none;
     color: mediumblue; }

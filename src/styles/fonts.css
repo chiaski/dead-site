@@ -1,5 +1,7 @@
+/*
 
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+*/
 
 @font-face {
     font-family: 'Bau Pro';
@@ -18,3 +20,114 @@
     font-style: normal;
     font-display: swap;
 }
+
+
+
+@font-face {
+    font-family: 'Times Now';
+    src: url('https://chia.design/assets/fonts/TimesNow-Bold.woff2') format('woff2'),
+        url('https://chia.design/assets/fonts/TimesNow-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Times Now';
+    src: url('https://chia.design/assets/fonts/TimesNow-BoldItalic.woff2') format('woff2'),
+        url('https://chia.design/assets/fonts/TimesNow-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Times Now';
+    src: url('https://chia.design/assets/fonts/TimesNow-ExtraBoldItalic.woff2') format('woff2'),
+        url('https://chia.design/assets/fonts/TimesNow-ExtraBoldItalic.woff') format('woff');
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Times Now';
+    src: url('https://chia.design/assets/fonts/TimesNow-ExtraBold.woff2') format('woff2'),
+        url('https://chia.design/assets/fonts/TimesNow-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Times Now';
+    src: url('https://chia.design/assets/fonts/TimesNow-ExtraLightItalic.woff2') format('woff2'),
+        url('https://chia.design/assets/fonts/TimesNow-ExtraLightItalic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Times Now';
+    src: url('https://chia.design/assets/fonts/TimesNow-ExtraLight.woff2') format('woff2'),
+        url('https://chia.design/assets/fonts/TimesNow-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Times Now';
+    src: url('https://chia.design/assets/fonts/TimesNow-LightItalic.woff2') format('woff2'),
+        url('https://chia.design/assets/fonts/TimesNow-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Times Now';
+    src: url('https://chia.design/assets/fonts/TimesNow-SemiBold.woff2') format('woff2'),
+        url('https://chia.design/assets/fonts/TimesNow-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Times Now';
+    src: url('https://chia.design/assets/fonts/TimesNow-SemiBoldItalic.woff2') format('woff2'),
+        url('https://chia.design/assets/fonts/TimesNow-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Times Now';
+    src: url('https://chia.design/assets/fonts/TimesNow-Light.woff2') format('woff2'),
+        url('https://chia.design/assets/fonts/TimesNow-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Times Now';
+    src: url('https://chia.design/assets/fonts/TimesNow-SemiLight.woff2') format('woff2'),
+        url('https://chia.design/assets/fonts/TimesNow-SemiLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Times Now';
+    src: url('https://chia.design/assets/fonts/TimesNow-SemiLightItalic.woff2') format('woff2'),
+        url('https://chia.design/assets/fonts/TimesNow-SemiLightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
