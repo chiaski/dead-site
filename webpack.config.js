@@ -10,7 +10,7 @@ module.exports = {
   // Tells Webpack which built-in optimizations to use
   // In 'production' mode, Webpack will minify and uglify our JS code
   // If you leave this out, Webpack will default to 'production'
-  mode: 'production',
+  mode: 'development',
   // Webpack needs to know where to start the bundling process,
   // so we define the main JS and Sass files, both under
   // the './src' directory
