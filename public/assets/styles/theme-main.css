@@ -403,8 +403,6 @@ a:hover {
       margin-bottom: 1.5em; } }
 
 .footer-newsletter {
-  text-align: center;
-  margin-left: 1em;
   height: 60px;
   margin-bottom: 1.5em; }
   .footer-newsletter input[type="text"] {
@@ -459,18 +457,16 @@ details[open] summary ~ * {
 .portfolio-project-container {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
   padding: 0;
   box-sizing: border-box;
-  justify-content: center;
-  align-self: top; }
+  justify-content: center; }
   .portfolio-project-container .project-box:hover {
     cursor: e-resize;
     filter: grayscale(0); }
   .portfolio-project-container a {
     text-decoration: none; }
   .portfolio-project-container .project-box {
-    width: 500px;
+    width: 420px;
     overflow: hidden;
     box-sizing: border-box;
     justify-content: center;
@@ -481,31 +477,26 @@ details[open] summary ~ * {
     flex-wrap: wrap;
     text-decoration: none;
     margin-bottom: 2em; }
+    .portfolio-project-container .project-box .quote-block {
+      display: none; }
     .portfolio-project-container .project-box h2 {
+      margin-top: .5em;
+      font-size: 1em;
       font-style: normal;
-      font-size: 1.5em;
-      color: #EFEFEF;
-      margin-bottom: .1em;
       -webkit-transition: all .3s linear;
       -moz-transition: all .3s linear;
       -ms-transition: all .3s linear;
       -o-transition: all .3s linear;
       transition: all .3s linear; }
     .portfolio-project-container .project-box h3 {
-      text-transform: uppercase;
       text-align: left;
       display: block;
-      font-size: .6em;
-      letter-spacing: .5px;
+      font-size: .8em;
       font-weight: 300;
       color: #35383b;
       padding: 0;
       margin: 0;
       cursor: e-resize; }
-    .portfolio-project-container .project-box .quote-block {
-      margin-bottom: .5em;
-      max-width: 100%;
-      width: 100%; }
     .portfolio-project-container .project-box img {
       overflow: hidden;
       opacity: 0.8;
@@ -520,6 +511,8 @@ details[open] summary ~ * {
       -ms-transition: all .3s linear;
       -o-transition: all .3s linear;
       transition: all .3s linear; }
+    .portfolio-project-container .project-box .quote-block {
+      color: #35383b; }
     .portfolio-project-container .project-box .btn {
       display: none !important; }
   .portfolio-project-container .project-box:hover img {
@@ -578,20 +571,15 @@ details[open] summary ~ * {
 #portfolio {
   background: none;
   display: flex;
-  justify-content: center;
-  width: 100vw; }
+  justify-content: center; }
   #portfolio .box-inner {
-    max-width: 1200px;
-    margin-top: 100px; }
+    max-width: 1600px; }
   #portfolio .project-box h2 {
-    font-size: 2em;
     -webkit-transition: all .3s linear;
     -moz-transition: all .3s linear;
     -ms-transition: all .3s linear;
     -o-transition: all .3s linear;
     transition: all .3s linear; }
-  #portfolio .project-box:hover h2 {
-    color: #35383b !important; }
 
 .portfolio-container {
   flex-wrap: wrap;

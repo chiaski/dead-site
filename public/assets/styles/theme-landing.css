@@ -299,9 +299,16 @@
       font-size: .6em; } }
 
 #newsletter {
-  margin: 1.5em 0;
+  width: 100%;
+  margin: 1.5em auto;
   text-align: center;
   padding-bottom: 10vh; }
+
+.cover {
+  height: 290px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center; }
 
 /* ANIMATIONS */
 @keyframes pageload {

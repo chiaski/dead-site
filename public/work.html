@@ -30,142 +30,16 @@
 
   </script>
 
-  <style type="text/css">
-    .container {
-      max-width: 100vw;
-      overflow-x: hidden;
-    }
-
-
-    .portfolio-project-container {
-      width: 100%;
-      max-width: 1300px;
-    }
-
-    .portfolio-project-container .project-box {
-      width: 320px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-    }
-
-    .quote-block {
-      text-indent: 2em;
-      display: none;
-    }
-
-    .portfolio-project-container .project-box .project-box-desc .quote-block {
-      font-size: .8em;
-      line-height: 1.5em;
-    }
-
-    .project-box-desc h3 {
-      text-align: center !important;
-    }
-
-
-    .portfolio-project-container .project-box .project-box-desc h2 {
-      font-size: 2.8em !important;
-      line-height: 1em !important;
-      text-align: center;
-    }
-
-
-    .portfolio-project-container:hover a:not(:hover) {
-      opacity: 0.4;
-    }
-
-    ._foot ._left a,
-    ._foot ._right a {
-      color: #35383b !important;
-      text-decoration: none;
-    }
-
-    ._tooltip {
-      display: none;
-    }
-
-    ._tooltip img {
-      width: 300px;
-    }
-
-    .project-box:hover ._tooltip {
-      display: block;
-      position: fixed;
-      overflow: hidden;
-      margin-top: -50px;
-      margin-left: -150px;
-      mix-blend-mode: difference;
-      pointer-events: none;
-    }
-    
-    #landing-more{
-      padding: 40px .5em;
-    }
-    
-    #landing-more .box-inner{
-      max-width: 1000px;
-    }
-
-    .projects-archive {
-      font-family: "Canela";
-      text-align: center;
-      font-size: 1.5em;
-      font-weight: 300;
-      line-height: 1.5em; 
-    }
-    
-    .projects-archive a {
-
-      display: inline;
-      margin: .5em 0;
-      margin-right: .25em;
-      font-weight: 300;
-      text-decoration: none;          
-    }
-    
-     .projects-archive:hover a:not(:hover) {
-    opacity: 0.5;
-  }
-    
-    @media only screen and (max-width: 800px) {
-
-
-      .portfolio-project-container .project-box {
-        max-width: 95%;
-        margin: 0 auto;
-        padding: 0 2em;
-        box-sizing: border-box;
-      }
-
-      .portfolio-project-container .project-box .project-box-desc {
-        max-width: 100vw;
-        padding: 0;
-        margin-bottom: 2.5em;
-      }
-
-      .portfolio-project-container .project-box .project-box-desc h2 {
-        font-size: 2em !important;
-      }
-
-      .portfolio-project-container .project-box img {
-        max-width: 100vw;
-      }
-
-    }
-
-  </style>
-
 </head>
 
 <body>
 
-  <div class="container alt container-portfolio">
+  <div class="container container-portfolio">
 
     <div class="header header-alt" id="navigation">
       <div class="header-left"><a href="index.html">Selected Work</a></div>
       <div class="header-right">
-        <a href="index.html">Index</a>
+        <a>Filter:</a> 
         <a data-filter="design">Product</a>
         <a data-filter="art">Play</a>
       </div>
@@ -174,6 +48,11 @@
 
     <div class="box" id="portfolio">
       <div class="box-inner">
+        
+        <div class="cover" style="background-image: url(assets/portfolio/landing/akatsuki.jpg);">
+        </div>
+        <p style="text-align: center;">An extensive collection of work.</p>
+        
         <div class="portfolio-project-container">
 
             <a href="https://bit.ly/wohdearstudent" class="type-design">
@@ -600,25 +479,18 @@
           
       </div>
     </div>
+       
+
+    <div id="newsletter">
+
+        <p>I also have a newsletter I send out once a year or so.</p>
 
 
-
-    <div class="box footer" id="footer">
-
-      <div class="footer-newsletter">
-        <form action="https://tinyletter.com/weeaboo" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/weeaboo', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><input type="text" style="width:140px" placeholder="Enter your email to subscribe to my newsletter" name="email" id="tlemail" /><input type="hidden" value="1" name="embed" /><input type="submit" value="→" /></form>
-      </div>
-
-      <div class="footer-links">
-        <a href="about" class="about">About</a>
-
-        <a href="https://medium.com/@chiaski">Writing</a>
-        <a href="mailto:chiamisola@gmail.com">Mail</a>
-
-      </div>
-    </div>
-
-
+        <div class="footer-newsletter">
+          <form action="https://tinyletter.com/weeaboo" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/weeaboo', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><input type="text"  placeholder="I need your email to talk to you." name="email" id="tlemail" /><input type="hidden" value="1" name="embed" />
+            <input type="submit" value="OK, I'm listening →" /></form>
+        </div>
+        </div>
 
   </div>
 
