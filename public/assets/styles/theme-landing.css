@@ -153,7 +153,10 @@
 #projects {
   margin: 0 auto; }
   #projects hr {
-    display: none; }
+    pointer-events: none;
+    display: inline-block;
+    width: 50px;
+    height: 40px; }
   #projects a {
     color: #35383b;
     display: inline-block;
@@ -170,7 +173,7 @@
       #projects a ._images img {
         width: 100%;
         height: auto;
-        max-height: 40vh;
+        max-height: 35vh;
         object-fit: cover; }
     #projects a span.tag {
       font-family: "Inconsolata";
@@ -183,16 +186,15 @@
       border-radius: 8px; }
     #projects a h2 {
       font-weight: 100;
-      font-size: 1.25rem;
-      font-family: "Inconsolata";
-      text-transform: uppercase;
-      margin: .25em auto;
+      font-size: 1.25em;
+      letter-spacing: -.5px;
+      margin: .15em auto;
       width: auto; }
     #projects a p {
-      margin: 0;
+      margin: 0 0 .25em 0;
       padding: .25em 0;
       max-width: 320px;
-      font-size: 1em; }
+      font-size: .9em; }
   #projects a:hover span.tag {
     background: #35383b;
     color: #EFEFEF; }
@@ -205,7 +207,7 @@
       #projects a ._images img {
         width: 100%;
         max-width: 100vw;
-        max-height: 50vh; } }
+        max-height: 35vh; } }
   @media only screen and (max-width: 900px) {
     #projects a {
       width: 100%;
@@ -217,9 +219,7 @@
           max-height: 30vh;
           max-width: 100vw;
           text-align: center;
-          margin: 0 auto; }
-      #projects a p {
-        font-size: .8em; } }
+          margin: 0 auto; } }
 
 #projects:hover a:not(:hover) {
   filter: grayscale(1); }
