@@ -302,7 +302,7 @@ a:hover {
       margin-top: .5em; }
     #about .credentials a {
       text-decoration: none;
-      text-transform: uppercase;
+      letter-spacing: -.25px;
       font-size: .9em;
       margin-right: 1.5em;
       font-family: "Bau Pro"; }
@@ -380,7 +380,9 @@ a:hover {
     text-align: left;
     padding-bottom: 1em; }
   #links .col-third h3 {
-    font-size: 1em;
+    font-family: "Times Now", serif;
+    font-size: 1.5em;
+    letter-spacing: -1px;
     margin-bottom: 1em; }
   #links u {
     line-height: 1.25em;
@@ -389,10 +391,10 @@ a:hover {
     display: block;
     text-decoration: none;
     text-align: left;
-    text-transform: uppercase;
-    font-size: .8em;
-    margin-bottom: 1em;
-    font-family: 'Bau Pro', monospace; }
+    font-size: .9em;
+    margin-bottom: .5em;
+    font-family: 'Bau Pro', sans-serif;
+    letter-spacing: -.25px; }
     #links .col-third a p {
       text-transform: none;
       font-size: .8em;
@@ -402,7 +404,7 @@ a:hover {
       margin: 0;
       color: #35383b; }
   #links .col-third a:hover {
-    color: mediumblue; }
+    text-decoration: underline; }
   #links sup {
     font-size: .5em;
     padding: .15em .25em;
@@ -689,7 +691,6 @@ details[open] summary ~ * {
 
 /* MAIN ELEEMENTS */
 p {
-  font-size: 1rem;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }

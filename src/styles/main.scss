@@ -38,7 +38,7 @@ body {
   place-items: center;
 }
 
-.container.alt{
+.container.alt {
   color: $bg;
 }
 
@@ -171,35 +171,35 @@ a:hover {
 }
 
 
-  .mangacap{
-    position: absolute;
-    width: auto;
-    height: auto;
-    z-index: 0;
-    overflow: hidden;
-    background: $bg;
-    mix-blend-mode: darken;
-    object-fit: cover;
-    
-    
-    @media only screen and (max-width: 800px) {
-      
-      position: relative;
-      top: 10vh;
-      left: 0;
-      right: 0;
-      width: 100%;
-      text-align: center;
-      
-    }
+.mangacap {
+  position: absolute;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  overflow: hidden;
+  background: $bg;
+  mix-blend-mode: darken;
+  object-fit: cover;
+
+
+  @media only screen and (max-width: 800px) {
+
+    position: relative;
+    top: 10vh;
+    left: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+
   }
+}
 
 
-    @media only screen and (max-width: 700px) {
-      
-      div.mangacap ~ .mangacap {
-          display: none;
-      }
+@media only screen and (max-width: 700px) {
+
+  div.mangacap ~ .mangacap {
+    display: none;
+  }
 }
 
 #about {
@@ -211,7 +211,7 @@ a:hover {
   background-attachment: fixed;
   padding-top: 100px;
   cursor: help;
-  
+
   .box-inner {
     width: 900px;
     max-width: 90vw;
@@ -234,7 +234,7 @@ a:hover {
   p {
     text-align: left;
   }
-  
+
   .credentials {
 
     margin-top: 180px;
@@ -252,7 +252,7 @@ a:hover {
 
     a {
       text-decoration: none;
-      text-transform: uppercase;
+      letter-spacing: -.25px;
       font-size: .9em;
       margin-right: 1.5em;
       font-family: "Bau Pro";
@@ -260,12 +260,12 @@ a:hover {
 
 
     @media only screen and (max-width: 900px) {
-          
+
       width: auto;
       float: none;
       padding: 0;
-      
-      a{
+
+      a {
         margin-bottom: .5em;
       }
 
@@ -275,7 +275,7 @@ a:hover {
 
 
   @media only screen and (max-width: 900px) {
-    
+
     background-position: bottom;
     padding-top: 60px;
 
@@ -385,7 +385,9 @@ a:hover {
   }
 
   .col-third h3 {
-    font-size: 1em;
+    font-family: "Times Now", serif;
+    font-size: 1.5em;
+    letter-spacing: -1px;
     margin-bottom: 1em;
   }
 
@@ -399,12 +401,12 @@ a:hover {
     display: block;
     text-decoration: none;
     text-align: left;
-    text-transform: uppercase;
 
-    font-size: .8em;
-    margin-bottom: 1em;
+    font-size: .9em;
+    margin-bottom: .5em;
 
-    font-family: 'Bau Pro', monospace;
+    font-family: 'Bau Pro', sans-serif;
+    letter-spacing: -.25px;
 
     p {
       text-transform: none;
@@ -419,7 +421,7 @@ a:hover {
   }
 
   .col-third a:hover {
-    color: $link-hover;
+    text-decoration: underline;
   }
 
 
@@ -430,8 +432,8 @@ a:hover {
     border-radius: 8px;
     color: $text;
   }
-  
-  .col-third a:hover sup{
+
+  .col-third a:hover sup {
     background: $text;
     color: $bg;
   }
@@ -450,7 +452,7 @@ a:hover {
   padding: 2.5em;
   margin: 0 auto;
   margin-top: 5vh;
-  
+
   box-sizing: border-box;
   text-align: center;
   display: block;
@@ -461,8 +463,8 @@ a:hover {
     margin: 0 auto;
     text-align: right;
     font-family: 'Bau Pro', monospace;
-    
-    p{
+
+    p {
       text-align: center;
     }
 
@@ -482,8 +484,8 @@ a:hover {
       -o-transition: all .3s linear;
       transition: all .3s linear;
     }
-    
-    
+
+
     a:hover {
       background: $text;
       color: $bg;
@@ -496,7 +498,7 @@ a:hover {
     }
 
   }
-  
+
 }
 
 .col {
@@ -522,8 +524,8 @@ a:hover {
 
     .col-third {
       width: 47%;
-      
-      
+
+
     }
 
   }
@@ -533,8 +535,8 @@ a:hover {
     .col-third {
       width: 100%;
       margin-bottom: 1.5em;
-      
-      
+
+
     }
 
   }
@@ -551,7 +553,7 @@ a:hover {
     display: inline-block;
     border: 0;
     height: 40px;
-    width:  80vw;
+    width: 80vw;
     max-width: 330px;
     padding: 1em;
 
@@ -663,10 +665,10 @@ details[open] summary ~ * {
     text-decoration: none;
     margin-bottom: 2em;
 
-    .quote-block{
+    .quote-block {
       display: none;
     }
-    
+
     h2 {
       margin-top: .5em;
       font-size: 1em;
@@ -707,8 +709,8 @@ details[open] summary ~ * {
       transition: all .3s linear;
 
     }
-    
-    .quote-block{
+
+    .quote-block {
       color: $black;
     }
 
@@ -826,7 +828,7 @@ details[open] summary ~ * {
   background: none;
   display: flex;
   justify-content: center;
-  
+
   .box-inner {
     max-width: 1600px;
   }
@@ -888,10 +890,9 @@ details[open] summary ~ * {
 /* MAIN ELEEMENTS */
 
 p {
-  font-size: 1rem;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 
   a {
     text-decoration: none;
@@ -943,17 +944,49 @@ hr {
 
 
 @keyframes bg-animation {
-    0% { transform: translate(0,0) }
-    10% { transform: translate(-5%,-5%) }
-    20% { transform: translate(-10%,5%) }
-    30% { transform: translate(5%,-10%) }
-    40% { transform: translate(-5%,15%) }
-    50% { transform: translate(-10%,5%) }
-    60% { transform: translate(9%,0) }
-    70% { transform: translate(0,10%) }
-    80% { transform: translate(-9%,0) }
-    90% { transform: translate(6%,5%) }
-    100% { transform: translate(5%,0) }
+  0% {
+    transform: translate(0, 0)
+  }
+
+  10% {
+    transform: translate(-5%, -5%)
+  }
+
+  20% {
+    transform: translate(-10%, 5%)
+  }
+
+  30% {
+    transform: translate(5%, -10%)
+  }
+
+  40% {
+    transform: translate(-5%, 15%)
+  }
+
+  50% {
+    transform: translate(-10%, 5%)
+  }
+
+  60% {
+    transform: translate(9%, 0)
+  }
+
+  70% {
+    transform: translate(0, 10%)
+  }
+
+  80% {
+    transform: translate(-9%, 0)
+  }
+
+  90% {
+    transform: translate(6%, 5%)
+  }
+
+  100% {
+    transform: translate(5%, 0)
+  }
 }
 
 .cursor {
