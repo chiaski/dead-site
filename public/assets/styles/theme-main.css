@@ -270,62 +270,27 @@ a:hover {
   background-repeat: no-repeat;
   background-position: right;
   background-attachment: fixed;
-  padding-top: 100px;
+  padding-top: 80px;
   cursor: help; }
   #about .box-inner {
     width: 900px;
     max-width: 90vw;
     margin: 0 auto; }
-  #about img.chia {
-    position: fixed;
-    overflow: hidden;
-    z-index: -9;
-    padding-top: 70px;
-    top: 3vh;
-    right: 10vw;
-    width: 300px;
-    height: auto;
-    opacity: 1;
-    pointer-events: none; }
-  #about p {
-    text-align: left; }
-  #about .credentials {
-    margin-top: 180px;
-    float: right;
-    width: 250px;
-    padding: .5em;
-    z-index: 1; }
-    #about .credentials h3 {
-      font-size: 1em;
-      padding: 0;
-      margin: 0;
-      margin-top: .5em; }
-    #about .credentials a {
-      text-decoration: none;
-      letter-spacing: -.25px;
-      font-size: .9em;
-      margin-right: 1.5em;
-      font-family: "Bau Pro"; }
-    @media only screen and (max-width: 900px) {
-      #about .credentials {
-        width: auto;
-        float: none;
-        padding: 0; }
-        #about .credentials a {
-          margin-bottom: .5em; } }
+  #about .hello {
+    max-width: 90vw;
+    width: 600px;
+    font-family: 'Times Now', serif;
+    font-size: 1.5rem;
+    letter-spacing: -.5px; }
   @media only screen and (max-width: 900px) {
     #about {
       background-position: bottom;
-      padding-top: 60px; }
-      #about img.chia {
-        position: static;
-        width: 100%;
-        max-height: 200px; }
-      #about .col {
-        flex-wrap: nowrap; }
+      padding-top: 40px; }
+      #about .hello {
+        font-size: 1.25rem !important; }
       #about .col-third,
       #about .col-half {
-        margin: 0 !important; } }
+        margin: 0; } }
 
 .why {
   display: none;
@@ -460,7 +425,6 @@ a:hover {
   margin: 0 auto;
   width: 95%;
   max-width: 1000px;
-  box-sizing: border-box;
   padding: 1em 0;
   margin: 0 0 1em 0;
   display: flex;
@@ -477,7 +441,7 @@ a:hover {
   @media only screen and (max-width: 560px) {
     .col .col-third {
       width: 100%;
-      margin-bottom: 1.5em; } }
+      margin-bottom: .5em; } }
 
 .footer-newsletter {
   height: 60px;
