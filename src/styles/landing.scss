@@ -382,8 +382,11 @@ $link: #3b3ba2;
     }
 
     a {
+
       width: 100%;
       max-width: 100%;
+      padding: .5em;
+      margin: 0;
 
       ._images {
 
@@ -412,22 +415,22 @@ $link: #3b3ba2;
 #rss {
 
   scroll-margin-top: 200px;
-  max-width: 1200px;
+  max-width: 900px;
   margin: 0 auto;
   text-align: center;
 
   a {
     display: inline-block;
-    width: 350px;
-    height: 20px;
-    padding: .25em;
-    margin: 0 .5em 1em 0;
+    height: 30px;
+    padding: .5em;
+    margin: 0 .5em;
     line-height: 110%;
     border-bottom: 1px solid $black;
     text-align: left;
     text-decoration: none;
     color: $black;
     font-size: .9rem;
+    max-width: 30ch;
 
     // truncate
     text-overflow: ellipsis;
@@ -450,18 +453,19 @@ $link: #3b3ba2;
 
   a:hover {
 
-    sup {
-      background: $black;
-      color: $bg;
-    }
+    background: $black;
+    color: $white;
 
   }
 
-  @media only screen and (max-width: 760px) {
+  @media only screen and (max-width: 768px) {
 
     a {
       font-size: .8em;
-
+      display: block;
+      max-width: 100%;
+      width: 100%;
+      margin: .5em 0;
 
       sup {
         display: inline-block;
@@ -507,8 +511,6 @@ $link: #3b3ba2;
     font-family: "Bau Pro";
     counter-increment: item;
     content: counter(item);
-    border: 1px solid $text;
-    border-radius: 100%;
     padding: .25em;
     font-size: .4em;
     display: inline-block;
@@ -525,7 +527,7 @@ $link: #3b3ba2;
   }
 
 
-  @media only screen and (max-width: 760px) {
+  @media only screen and (max-width: 768px) {
 
     span.spacer {
       display: none;
@@ -536,10 +538,13 @@ $link: #3b3ba2;
     }
 
     a {
-      font-size: .8rem;
-      display: inline-block;
+      font-size: .9rem;
+      line-height: 110%;
+      display: block;
+      width: 100%;
+      text-align: left;
       padding: 0;
-      margin: .25em;
+      margin: .5em 0;
     }
 
     a::before {
@@ -559,6 +564,11 @@ $link: #3b3ba2;
   margin: 1.5em auto;
   text-align: center;
   padding-bottom: 10vh;
+
+  @media only screen and (max-width: 768px) {
+    padding-bottom: 250px
+  }
+
 }
 
 .cover {
