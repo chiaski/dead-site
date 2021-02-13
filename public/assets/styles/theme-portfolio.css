@@ -28,6 +28,7 @@ h2 {
   line-height: 110%; }
 
 h3 {
+  font-size: 2em;
   text-align: center;
   letter-spacing: -.5px;
   font-family: 'Times Now', serif;
@@ -730,7 +731,8 @@ iframe {
       margin: 0;
       display: inline-block;
       margin-bottom: .5em;
-      font-family: 'Bau Pro', monospace; }
+      font-family: 'Bau Pro', monospace;
+      font-weight: normal; }
     .container-persona .persona h4 {
       font-weight: 800;
       padding: 0 !important;
