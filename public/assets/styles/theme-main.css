@@ -243,6 +243,7 @@ a:hover {
         margin-left: 0; } }
 
 .mangacap {
+  display: none;
   position: absolute;
   width: auto;
   height: auto;
@@ -278,10 +279,10 @@ a:hover {
     margin: 0 auto; }
   #about .hello {
     max-width: 90vw;
-    width: 600px;
     font-family: 'Times Now', serif;
     font-size: 1.5rem;
-    letter-spacing: -.5px; }
+    letter-spacing: -.5px;
+    text-indent: 60px; }
   @media only screen and (max-width: 900px) {
     #about {
       background-position: bottom;
@@ -347,8 +348,8 @@ a:hover {
   #links .col-third h3 {
     font-family: "Times Now", serif;
     font-size: 1.5em;
-    letter-spacing: -1px;
-    margin-bottom: 1em; }
+    letter-spacing: -.5px;
+    margin-bottom: .5em; }
   #links u {
     line-height: 1.25em;
     text-decoration: none; }
@@ -362,19 +363,17 @@ a:hover {
     letter-spacing: -.25px; }
     #links .col-third a p {
       text-transform: none;
-      font-size: .8em;
       line-height: 110%;
       max-width: 80%;
       padding: 0;
-      margin: 0;
+      margin: .25em 0 1em 0;
       color: #35383b; }
-  #links .col-third a:hover {
+  #links .col-third a:hover u {
     text-decoration: underline; }
   #links sup {
-    font-size: .5em;
+    font-size: .8em;
     padding: .15em .25em;
-    border: 1px solid #35383b;
-    border-radius: 8px;
+    text-transform: uppercase;
     color: #35383b; }
   #links .col-third a:hover sup {
     background: #35383b;

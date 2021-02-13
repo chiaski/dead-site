@@ -171,6 +171,7 @@ a:hover {
 
 
 .mangacap {
+  display: none;
   position: absolute;
   width: auto;
   height: auto;
@@ -219,10 +220,10 @@ a:hover {
 
   .hello {
     max-width: 90vw;
-    width: 600px;
     font-family: 'Times Now', serif;
     font-size: 1.5rem;
     letter-spacing: -.5px;
+    text-indent: 60px;
   }
 
 
@@ -333,8 +334,8 @@ a:hover {
   .col-third h3 {
     font-family: "Times Now", serif;
     font-size: 1.5em;
-    letter-spacing: -1px;
-    margin-bottom: 1em;
+    letter-spacing: -.5px;
+    margin-bottom: .5em;
   }
 
   u {
@@ -356,26 +357,28 @@ a:hover {
 
     p {
       text-transform: none;
-      font-size: .8em;
       line-height: 110%;
       max-width: 80%;
       padding: 0;
-      margin: 0;
+      margin: .25em 0 1em 0;
       color: $text;
     }
 
   }
 
   .col-third a:hover {
-    text-decoration: underline;
+
+    u {
+      text-decoration: underline;
+    }
+
   }
 
 
   sup {
-    font-size: .5em;
+    font-size: .8em;
     padding: .15em .25em;
-    border: 1px solid $text;
-    border-radius: 8px;
+    text-transform: uppercase;
     color: $text;
   }
 
