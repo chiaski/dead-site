@@ -111,12 +111,11 @@ a:hover {
   width: 100%;
   top: 0px;
   box-sizing: border-box;
-  padding: 2.5em;
+  padding: 2em;
   display: flex;
   justify-content: space-between;
   background-repeat: repeat-x;
   background-size: contain;
-
   font-family: 'Bau Pro', monospace;
 
   a {
@@ -218,8 +217,12 @@ a:hover {
     margin: 0 auto;
   }
 
-  .hello{
-    max-width:90vw;width: 600px; font-family:'Times Now', serif; font-size: 1.5rem; letter-spacing: -.5px;
+  .hello {
+    max-width: 90vw;
+    width: 600px;
+    font-family: 'Times Now', serif;
+    font-size: 1.5rem;
+    letter-spacing: -.5px;
   }
 
 
@@ -228,7 +231,7 @@ a:hover {
     background-position: bottom;
     padding-top: 40px;
 
-    .hello{
+    .hello {
       font-size: 1.25rem !important;
     }
 

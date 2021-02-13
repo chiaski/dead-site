@@ -38,7 +38,6 @@ $link: #3b3ba2;
 
 .box {
   padding: 5vw;
-
 }
 
 // NARUTO
@@ -84,19 +83,76 @@ $link: #3b3ba2;
 
 .header {
   width: 100%;
+  height: 150px;
   margin: 0 auto;
+  padding: 2em;
   background-color: $bg;
-  background: linear-gradient(180deg, $bg 0%, $bg 60%, rgba(247, 249, 248, 0) 100%);
+  background: linear-gradient(180deg, $bg 0%, $bg 70%, rgba(247, 249, 248, 0) 100%);
 
   .header-wrapper {
     margin: 0 auto;
     width: 100%;
-//    max-width: 1050px;
+    max-width: 1000px;
     display: flex;
     justify-content: space-between;
 
+    .header-left {
+      margin-right: 1em;
+      display: none;
+    }
+
+    .header-info {
+      width: 60vw;
+      max-width: 450px;
+      margin-right: 1em;
+
+      p {
+        padding: 0;
+        margin: 0;
+        font-size: 13.5px;
+
+        a {
+          margin: 0;
+          padding: 0;
+        }
+
+        a::before {
+          content: "↗";
+          font-size: .8em;
+          margin-right: .5em;
+        }
+
+        a.more {
+          text-decoration: underline;
+        }
+
+        a.more::before {
+          display: none;
+        }
+
+        a:hover {
+          text-decoration: none;
+        }
+
+      }
+
+    }
+
     .header-right {
       float: right;
+      display: flex;
+      align-content: flex-start;
+      flex-wrap: wrap;
+      max-width: 220px;
+
+      a {
+        margin: 0;
+        padding: .25em;
+        line-height: 100%;
+        display: inline-block;
+      }
+
+
     }
 
   }
@@ -110,13 +166,44 @@ $link: #3b3ba2;
     color: $bg;
   }
 
-  @media only screen and (max-width: 1000px) {
-    .header-right a {
-      margin: .5em;
+  @media only screen and (max-width: 768px) {
+
+    height: 150px;
+    padding: 1em;
+
+    .header-wrapper {
+      flex-wrap: wrap;
+      align-content: flex-start;
+
+      .header-info {
+        width: 100%;
+        margin: 0 0 1em 0;
+      }
+
+      .header-right {
+
+        width: 100%;
+        max-width: 100vw;
+        height: auto;
+
+        a {
+          display: inline-block;
+          width: auto;
+          margin: 0 .25em 0 0;
+        }
+
+      }
+
     }
+
+
   }
 
 }
+
+
+// LANDING-ONLY
+
 
 
 // AREAS
@@ -124,40 +211,14 @@ $link: #3b3ba2;
 #landing {
 
   margin: 0 auto;
-  margin-top: 75px;
+  background: red;
   padding: 0;
-  
+
   .box-inner {
     width: 900px;
     max-width: 100vw;
     margin-left: 0;
     margin-right: auto;
-  }
-
-  .hello {
-    font-family: 'Times Now' !important;
-    //    line-height: 130%;
-    //    font-size: 2.8rem;
-    //    font-weight: 300;
-    //    line-height: 110%;
-    //    letter-spacing: -1.5px;
-    font-size: 1.25em;
-    letter-spacing: -.25px;
-    text-align: left;
-    width: 640px;
-    max-width: 90vw;
-    margin-left: 2.5em;
-    color: $black;
-    
-    p {
-      text-indent: 50px;
-      font-size: 1.25em;
-    }
-
-    a {
-      text-decoration: none;
-      color: $link;
-    }
   }
 
   @media only screen and (max-width: 800px) {
@@ -186,26 +247,15 @@ $link: #3b3ba2;
     }
 
 
-    @media only screen and (max-width: 900px) {
-      text-align: center;
-      margin: 0 auto;
-      
-      a{
-        margin-right: .5em;
-        margin-left:.5em;
-      }
-      
-    }
-
   }
 
 
   @media only screen and (max-width: 900px) {
-    
+
     margin: 0;
     padding-top: 50px;
 
-    .hello{
+    .hello {
       padding: 0;
       margin-left: 1.5em;
     }
@@ -217,11 +267,11 @@ $link: #3b3ba2;
 #work {
 
   margin: 0 auto;
-  padding: 0;
-  padding-top: 1em;
+  padding: 150px 1.5em 0 1.5em;
 
   .box-inner {
-    width: 95vw;
+    width: 100%;
+    max-width: 1000px;
     margin: 0 auto;
   }
 }
@@ -259,41 +309,34 @@ $link: #3b3ba2;
       img {
         width: 100%;
         height: auto;
-        max-height: 35vh;
+        max-height: 45vh;
         object-fit: cover;
       }
 
     }
 
-    span.tag {
-      font-family: "Bau Pro";
-      font-size: .8em;
-      padding: .15em .5em;
-      margin-right: .25em;
-      border: 1px solid $text;
-      border-radius: 8px;
-    }
 
     h2 {
       font-weight: 100;
       font-size: 1.25em;
       letter-spacing: -.5px;
       margin: .15em auto;
-      //      margin-left: -18px;
       width: auto;
     }
 
-    //    h2::before{
-    //      position: relative;
-    //      left: -10px;
-    //      content: "⤷";
-    //    }
-
     p {
-      margin: 0 0 .25em 0;
+      margin: 0 0 .15em 0;
       padding: .25em 0;
       max-width: 320px;
       font-size: .9em;
+    }
+
+    span.tag {
+      font-family: "Bau Pro";
+      font-size: .7rem;
+      padding: 0;
+      margin-right: .25em;
+      text-transform: uppercase;
     }
 
   }
@@ -314,7 +357,7 @@ $link: #3b3ba2;
 
 
   @media only screen and (min-width: 1200px) {
-    
+
 
     a {
       max-width: 48vw;
@@ -324,7 +367,6 @@ $link: #3b3ba2;
         img {
           width: 100%;
           max-width: 100vw;
-          max-height: 22.5vh;
         }
       }
 
@@ -335,16 +377,16 @@ $link: #3b3ba2;
 
   @media only screen and (max-width: 900px) {
 
-    hr{
+    hr {
       display: none;
     }
-    
+
     a {
       width: 100%;
       max-width: 100%;
 
       ._images {
-        
+
         max-width: 100vw;
 
         img {
@@ -367,39 +409,67 @@ $link: #3b3ba2;
 }
 
 
-#rss{
-  
-  max-width: 800px;
+#rss {
+
+  scroll-margin-top: 200px;
+  max-width: 1200px;
   margin: 0 auto;
   text-align: center;
-  
-  p{
-    text-align: center;
-  }
-  
-  a{
+
+  a {
     display: inline-block;
+    width: 350px;
+    height: 20px;
     padding: .25em;
-    margin: .5em 1em;
+    margin: 0 .5em 1em 0;
+    line-height: 110%;
+    border-bottom: 1px solid $black;
+    text-align: left;
     text-decoration: none;
     color: $black;
-    
-    sup{
-      display: block;
-      font-size: .5em;
-    }
-    
+    font-size: .9rem;
+
+    // truncate
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
   }
-  
-  a:hover{
-    
-    sup{
+
+  a:before {
+    content: "↗";
+    font-size: .8em;
+    float: left;
+    margin-right: 1em;
+  }
+
+  // ADD TITLE TO EMPTY BLOG POSTS (WTF)
+
+  a:empty:after {
+    content: "Untitled";
+  }
+
+  a:hover {
+
+    sup {
       background: $black;
       color: $bg;
     }
-    
+
   }
-  
+
+  @media only screen and (max-width: 760px) {
+
+    a {
+      font-size: .8em;
+
+
+      sup {
+        display: inline-block;
+      }
+    }
+
+  }
+
 }
 
 
@@ -429,6 +499,11 @@ $link: #3b3ba2;
   }
 
   a::before {
+
+    position: relative;
+    bottom: 6px;
+    right: 2.5px;
+
     font-family: "Bau Pro";
     counter-increment: item;
     content: counter(item);
@@ -442,9 +517,6 @@ $link: #3b3ba2;
     width: 18px;
     height: 18px;
     margin-right: .5em;
-    position: relative;
-    bottom: 6px;
-    right: 2.5px;
   }
 
   a:hover::before {
@@ -482,7 +554,6 @@ $link: #3b3ba2;
 
 }
 
-
 #newsletter {
   width: 100%;
   margin: 1.5em auto;
@@ -490,7 +561,7 @@ $link: #3b3ba2;
   padding-bottom: 10vh;
 }
 
-.cover{
+.cover {
   height: 290px;
   width: 100%;
   background-repeat: no-repeat;
@@ -512,4 +583,3 @@ $link: #3b3ba2;
     opacity: 0;
   }
 }
-
