@@ -411,25 +411,24 @@ $link: #3b3ba2;
 }
 
 
+.contain {}
+
 #rss {
 
   scroll-margin-top: 200px;
-  max-width: 900px;
+  max-width: 1100px;
   margin: 0 auto;
   text-align: center;
 
   a {
-    display: inline-block;
-    height: 30px;
-    padding: .5em;
-    margin: 0 .5em;
+    display: block;
+    padding: .8em 0;
     line-height: 110%;
     border-bottom: 1px solid $black;
     text-align: left;
     text-decoration: none;
     color: $black;
     font-size: .9rem;
-    max-width: 30ch;
 
     // truncate
     text-overflow: ellipsis;
@@ -441,7 +440,9 @@ $link: #3b3ba2;
     content: "↗";
     font-size: .8em;
     float: left;
-    margin-right: 1em;
+    margin-right: .5em;
+    display: inline-block;
+    width: 15px;
   }
 
   // ADD TITLE TO EMPTY BLOG POSTS (WTF)
@@ -460,7 +461,7 @@ $link: #3b3ba2;
   @media only screen and (max-width: 768px) {
 
     a {
-      font-size: .8em;
+      font-size: .9rem;
       display: block;
       max-width: 100%;
       width: 100%;
@@ -479,11 +480,12 @@ $link: #3b3ba2;
 #experiments {
 
   scroll-margin-top: 200px;
-  margin: 1.5em auto;
-  width: 90vw;
-  max-width: 880px;
+  max-width: 1100px;
   counter-reset: item;
   text-align: center;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 
   span.spacer {
     width: 45px;
@@ -491,34 +493,29 @@ $link: #3b3ba2;
   }
 
   a {
+    width: 49%;
     text-decoration: none;
-    margin-right: .25em;
-    margin-left: .25em;
-    padding: .15em;
     line-height: 120%;
     font-size: .9rem;
+    padding: .6em 0;
     font-weight: 300;
-    display: inline-block;
+    display: block;
+    border-bottom: 1px solid $black;
     color: $text;
+    text-align: left;
   }
 
   a::before {
-
-    position: relative;
-    bottom: 6px;
-    right: 2.5px;
-
+    display: inline-block;
     font-family: "Bau Pro";
     counter-increment: item;
     content: counter(item);
-    padding: .5em;
-    font-size: .4em;
-    display: inline-block;
-    text-align: center;
-    line-height: 150%;
+    font-size: .8em;
+    width: 15px;
+    margin-right: .5em;
   }
 
-  a:hover::before {
+  a:hover {
     background: $text;
     color: $bg;
   }
@@ -540,7 +537,7 @@ $link: #3b3ba2;
       display: block;
       width: 100%;
       text-align: left;
-      padding: 0;
+      padding: .5em 0;
       margin: .5em 0;
     }
 
