@@ -202,7 +202,7 @@
       max-width: 220px; }
       .header .header-wrapper .header-right a {
         margin: 0;
-        padding: .25em;
+        padding: .25em .5em;
         line-height: 100%;
         display: inline-block; }
   .header a {
