@@ -326,7 +326,6 @@ $link: #3b3ba2;
 
     p {
       margin: 0 0 .15em 0;
-      padding: .25em 0;
       max-width: 320px;
       font-size: .9em;
     }
@@ -512,14 +511,11 @@ $link: #3b3ba2;
     font-family: "Bau Pro";
     counter-increment: item;
     content: counter(item);
-    padding: .25em;
+    padding: .5em;
     font-size: .4em;
     display: inline-block;
     text-align: center;
     line-height: 150%;
-    width: 18px;
-    height: 18px;
-    margin-right: .5em;
   }
 
   a:hover::before {

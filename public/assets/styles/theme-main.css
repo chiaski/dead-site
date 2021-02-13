@@ -240,6 +240,7 @@ a:hover {
         width: 100%;
         text-align: center; }
       .header .header-right a {
+        padding: .5em;
         margin-left: 0; } }
 
 .mangacap {
