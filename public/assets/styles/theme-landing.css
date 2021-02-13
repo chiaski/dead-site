@@ -268,14 +268,14 @@
 
 #work {
   margin: 0 auto;
-  padding: 140px 1.5em 0 1.5em; }
+  padding: 120px 1.5em 0 1.5em; }
   #work .box-inner {
     width: 100%;
     max-width: 1000px;
     margin: 0 auto; }
   @media only screen and (max-width: 768) {
     #work {
-      padding-top: 220px; } }
+      padding-top: 260px; } }
 
 #projects {
   margin: 0 auto; }
@@ -379,6 +379,7 @@
     float: left;
     margin-right: .5em;
     display: inline-block;
+    font-family: "Bau Pro";
     width: 15px; }
   #rss a:empty:after {
     content: "Untitled"; }
