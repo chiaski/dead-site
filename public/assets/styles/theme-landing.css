@@ -174,12 +174,12 @@
       display: none; }
     .header .header-wrapper .header-info {
       width: 60vw;
-      max-width: 560px; }
+      max-width: 520px; }
       .header .header-wrapper .header-info p {
         padding: 0;
         margin: 0;
-        font-size: 1.1em;
-        line-height: 120%; }
+        font-size: .9em;
+        line-height: 130%; }
         .header .header-wrapper .header-info p a {
           margin: 0;
           padding: 0;
@@ -200,8 +200,8 @@
       max-width: 220px; }
       .header .header-wrapper .header-right a {
         margin: 0;
-        padding: .25em .5em;
-        font-size: 1em;
+        padding: .25em;
+        font-size: .9em;
         line-height: 100%;
         display: inline-block; }
   .header a {
