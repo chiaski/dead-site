@@ -122,6 +122,11 @@
 
 .container {
   background: #F7F9F8; }
+  .container p {
+    font-size: .9em;
+    line-height: 140%;
+    max-width: 460px;
+    padding-bottom: 1em; }
 
 .box {
   padding: 5vw; }
@@ -186,7 +191,7 @@
           font-size: 1em; }
         .header .header-wrapper .header-info p a::before {
           content: "↗";
-          font-size: .8em;
+          font-size: .25em;
           margin-right: .5em; }
         .header .header-wrapper .header-info p a.more::before {
           display: none; }
@@ -457,6 +462,8 @@
   margin: 1.5em auto;
   text-align: center;
   padding-bottom: 10vh; }
+  #newsletter p {
+    margin: 0 auto; }
   @media only screen and (max-width: 768px) {
     #newsletter {
       padding-bottom: 250px; } }

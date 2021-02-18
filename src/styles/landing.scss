@@ -34,6 +34,14 @@ $link: #3b3ba2;
 
 .container {
   background: $bg;
+  
+  p{
+    font-size: .9em;
+    line-height: 140%;
+    max-width: 460px;
+    padding-bottom: 1em;
+  }
+  
 }
 
 .box {
@@ -118,7 +126,7 @@ $link: #3b3ba2;
 
         a::before {
           content: "↗";
-          font-size: .8em;
+          font-size: .25em;
           margin-right: .5em;
         }
 
@@ -583,6 +591,10 @@ $link: #3b3ba2;
   text-align: center;
   padding-bottom: 10vh;
 
+  p{
+    margin: 0 auto;
+  }
+  
   @media only screen and (max-width: 768px) {
     padding-bottom: 250px
   }
