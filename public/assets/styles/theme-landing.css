@@ -122,14 +122,15 @@
 
 .container {
   background: #F7F9F8; }
-  .container p {
-    font-size: .9em;
-    line-height: 140%;
-    max-width: 460px;
-    padding-bottom: 1em; }
 
 .box {
   padding: 5vw; }
+
+.contain p {
+  font-size: .9em;
+  line-height: 140%;
+  max-width: 460px;
+  padding-bottom: 1em; }
 
 #naruto {
   mix-blend-mode: darken;
@@ -363,8 +364,7 @@
   text-align: center; }
   #rss h4 {
     text-align: left;
-    padding: 1em 0;
-    margin-top: .5em;
+    padding: .5em 0;
     display: block;
     font-weight: normal; }
   #rss a {
