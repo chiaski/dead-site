@@ -214,19 +214,32 @@ a:hover {
   cursor: help;
 
   .box-inner {
-    width: 900px;
+    width: 700px;
     max-width: 90vw;
     margin: 0 auto;
   }
 
   .hello {
     max-width: 90vw;
-    font-family: 'Times Now', serif;
-    font-size: 1.5rem;
-    letter-spacing: -.5px;
+    font-size: 1rem;
+    letter-spacing: -.25px;
     text-indent: 60px;
   }
+  
+  h3{
+    font-family: "Bau Pro" !important;
+    font-size: 1rem !important;
+  }
 
+  .col-third.experience{
+    
+    p{
+      font-size: .8em;
+      line-height: 140%;
+    }
+    
+  }
+  
 
   @media only screen and (max-width: 900px) {
 
@@ -932,24 +945,4 @@ hr {
   100% {
     transform: translate(5%, 0)
   }
-}
-
-.cursor {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  top: -50%;
-  left: -50%;
-  margin: -25px 0 0 -25px;
-  border-radius: 50%;
-  background-color: #fff;
-  backface-visibility: hidden;
-  transition: transform 0.5s ease-out;
-  mix-blend-mode: difference;
-  z-index: 999;
-  pointer-events: none;
-}
-
-.cursor.is-moving {
-  transform: scale(0.75);
 }

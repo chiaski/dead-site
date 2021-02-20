@@ -275,15 +275,20 @@ a:hover {
   padding-top: 80px;
   cursor: help; }
   #about .box-inner {
-    width: 900px;
+    width: 700px;
     max-width: 90vw;
     margin: 0 auto; }
   #about .hello {
     max-width: 90vw;
-    font-family: 'Times Now', serif;
-    font-size: 1.5rem;
-    letter-spacing: -.5px;
+    font-size: 1rem;
+    letter-spacing: -.25px;
     text-indent: 60px; }
+  #about h3 {
+    font-family: "Bau Pro" !important;
+    font-size: 1rem !important; }
+  #about .col-third.experience p {
+    font-size: .8em;
+    line-height: 140%; }
   @media only screen and (max-width: 900px) {
     #about {
       background-position: bottom;
@@ -717,22 +722,4 @@ hr {
     transform: translate(6%, 5%); }
   100% {
     transform: translate(5%, 0); } }
-
-.cursor {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  top: -50%;
-  left: -50%;
-  margin: -25px 0 0 -25px;
-  border-radius: 50%;
-  background-color: #fff;
-  backface-visibility: hidden;
-  transition: transform 0.5s ease-out;
-  mix-blend-mode: difference;
-  z-index: 999;
-  pointer-events: none; }
-
-.cursor.is-moving {
-  transform: scale(0.75); }
 
