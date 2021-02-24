@@ -225,21 +225,21 @@ a:hover {
     letter-spacing: -.25px;
     text-indent: 60px;
   }
-  
-  h3{
+
+  h3 {
     font-family: "Bau Pro" !important;
     font-size: 1rem !important;
   }
 
-  .col-third.experience{
-    
-    p{
+  .col-third.experience {
+
+    p {
       font-size: .8em;
       line-height: 140%;
     }
-    
+
   }
-  
+
 
   @media only screen and (max-width: 900px) {
 
@@ -247,7 +247,7 @@ a:hover {
     padding-top: 40px;
 
     .hello {
-      font-size: 1.25rem !important;
+      font-size: 1rem;
     }
 
     .col-third,

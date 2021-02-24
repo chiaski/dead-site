@@ -294,7 +294,7 @@ a:hover {
       background-position: bottom;
       padding-top: 40px; }
       #about .hello {
-        font-size: 1.25rem !important; }
+        font-size: 1rem; }
       #about .col-third,
       #about .col-half {
         margin: 0; } }
