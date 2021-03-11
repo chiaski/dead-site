@@ -217,6 +217,14 @@ h4 {
     background: #1f1f1f;
     color: #f0f0f0;
     text-decoration: none; }
+  @media only screen and (max-width: 900px) {
+    .info {
+      flex-wrap: wrap;
+      margin-bottom: 1em; }
+      .info p {
+        max-width: 100%; }
+      .info .work {
+        margin: 0; } }
 
 #landing {
   margin: 0 auto;
@@ -266,7 +274,11 @@ h4 {
     font-size: 4vw; }
   @media only screen and (max-width: 768px) {
     #work {
-      padding-top: 180px; } }
+      padding-top: 0px; }
+      #work h1 {
+        font-size: 2.6em;
+        margin-bottom: 0;
+        padding-bottom: 1.5em; } }
 
 #projects {
   margin: 0 auto; }
@@ -367,7 +379,7 @@ h4 {
     content: "Untitled"; }
   #rss a:hover {
     background: #1f1f1f;
-    color: #1f1f1f; }
+    color: #f0f0f0; }
   @media only screen and (max-width: 768px) {
     #rss a {
       font-size: .9rem;
