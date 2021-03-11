@@ -78,7 +78,7 @@ body {
   color: #35383b;
   text-rendering: optimizeLegibility;
   font-display: swap;
-  font-family: "Bau Pro", Helvetica, Arial, Sans-Serif;
+  font-family: "Neue Montreal", Helvetica, Arial, Sans-Serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
@@ -137,7 +137,6 @@ h4 {
 
 h1,
 h3 {
-  font-family: "Bau Pro";
   font-weight: 300; }
 
 a {
@@ -162,8 +161,7 @@ a:hover {
   display: flex;
   justify-content: space-between;
   background-repeat: repeat-x;
-  background-size: contain;
-  font-family: 'Bau Pro', monospace; }
+  background-size: contain; }
   .header a {
     color: #35383b;
     text-decoration: none;
@@ -238,7 +236,6 @@ a:hover {
     letter-spacing: -.25px;
     text-indent: 60px; }
   #about h3 {
-    font-family: "Bau Pro" !important;
     font-size: 1rem !important; }
   #about .col-third.experience p {
     font-size: .8em;
@@ -319,7 +316,6 @@ a:hover {
     text-align: left;
     font-size: .9em;
     margin-bottom: .5em;
-    font-family: 'Bau Pro', sans-serif;
     letter-spacing: -.25px; }
     #links .col-third a p {
       text-transform: none;
@@ -353,8 +349,7 @@ a:hover {
   #footer ._foot {
     padding-bottom: 5vh;
     margin: 0 auto;
-    text-align: right;
-    font-family: 'Bau Pro', monospace; }
+    text-align: right; }
     #footer ._foot p {
       text-align: center; }
     #footer ._foot a {

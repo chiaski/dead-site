@@ -12,7 +12,7 @@ body {
 
   text-rendering: optimizeLegibility;
   font-display: swap;
-  font-family: "Bau Pro", Helvetica, Arial, Sans-Serif;
+  font-family: "Neue Montreal", Helvetica, Arial, Sans-Serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -90,7 +90,6 @@ h4{
 
 h1,
 h3 {
-  font-family: "Bau Pro";
   font-weight: 300;
 }
 
@@ -120,7 +119,6 @@ a:hover {
   justify-content: space-between;
   background-repeat: repeat-x;
   background-size: contain;
-  font-family: 'Bau Pro', monospace;
 
   a {
     color: $text;
@@ -231,7 +229,6 @@ a:hover {
   }
 
   h3 {
-    font-family: "Bau Pro" !important;
     font-size: 1rem !important;
   }
 
@@ -369,8 +366,6 @@ a:hover {
 
     font-size: .9em;
     margin-bottom: .5em;
-
-    font-family: 'Bau Pro', sans-serif;
     letter-spacing: -.25px;
 
     p {
@@ -429,7 +424,6 @@ a:hover {
     padding-bottom: 5vh;
     margin: 0 auto;
     text-align: right;
-    font-family: 'Bau Pro', monospace;
 
     p {
       text-align: center;
