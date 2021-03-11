@@ -165,7 +165,7 @@ a:hover {
   .header a {
     color: #35383b;
     text-decoration: none;
-    font-size: .8rem;
+    font-size: 1.125rem;
     font-weight: 100;
     font-display: swap;
     padding: .25em;
@@ -229,10 +229,11 @@ a:hover {
   #about .box-inner {
     width: 1000px;
     max-width: 90vw;
-    margin: 0 auto; }
+    margin: 0 auto;
+    padding: 1em; }
   #about .hello {
     max-width: 90vw;
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     line-height: 150%;
     letter-spacing: -.1px;
     text-indent: 60px; }
@@ -318,9 +319,9 @@ a:hover {
     display: block;
     text-decoration: none;
     text-align: left;
-    font-size: .9em;
+    font-size: 1em;
     margin-bottom: .5em;
-    letter-spacing: -.25px; }
+    letter-spacing: -.15px; }
     #links .col-third a p {
       text-transform: none;
       line-height: 110%;
@@ -360,17 +361,10 @@ a:hover {
       color: #35383b;
       text-decoration: none;
       letter-spacing: -.25px;
-      font-size: .8rem;
-      font-weight: 100;
-      font-display: swap;
+      font-size: 1.125rem;
       padding: .25em;
       margin: .15em;
-      margin-left: 1em;
-      -webkit-transition: all .3s linear;
-      -moz-transition: all .3s linear;
-      -ms-transition: all .3s linear;
-      -o-transition: all .3s linear;
-      transition: all .3s linear; }
+      margin-left: 1em; }
     #footer ._foot a:hover {
       background: #35383b;
       color: #F7F9F8; }
