@@ -181,6 +181,9 @@ h3 {
   margin: 0;
   padding: .5em 0; }
 
+h4 {
+  font-weight: 300; }
+
 h1,
 h3 {
   font-family: "Bau Pro";
