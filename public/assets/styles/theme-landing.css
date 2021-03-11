@@ -17,72 +17,23 @@
   font-display: swap; }
 
 @font-face {
-  font-family: 'Times Now';
-  src: url("https://chia.design/assets/fonts/TimesNow-Bold.woff2") format("woff2"), url("https://chia.design/assets/fonts/TimesNow-Bold.woff") format("woff");
+  font-family: 'Neue Montreal';
+  src: url(../fonts/NeueMontreal-Bold.woff2) format("woff2"), url(../fonts/NeueMontreal-Bold.woff) format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
-  font-family: 'Times Now';
-  src: url("https://chia.design/assets/fonts/TimesNow-BoldItalic.woff2") format("woff2"), url("https://chia.design/assets/fonts/TimesNow-BoldItalic.woff") format("woff");
-  font-weight: bold;
-  font-style: italic;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Times Now';
-  src: url("https://chia.design/assets/fonts/TimesNow-ExtraBoldItalic.woff2") format("woff2"), url("https://chia.design/assets/fonts/TimesNow-ExtraBoldItalic.woff") format("woff");
-  font-weight: 800;
-  font-style: italic;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Times Now';
-  src: url("https://chia.design/assets/fonts/TimesNow-ExtraBold.woff2") format("woff2"), url("https://chia.design/assets/fonts/TimesNow-ExtraBold.woff") format("woff");
-  font-weight: 800;
+  font-family: 'Neue Montreal';
+  src: url(../fonts/NeueMontreal-Regular.woff2) format("woff2"), url(../fonts/NeueMontreal-Regular.woff) format("woff");
+  font-weight: normal;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
-  font-family: 'Times Now';
-  src: url("https://chia.design/assets/fonts/TimesNow-ExtraLightItalic.woff2") format("woff2"), url("https://chia.design/assets/fonts/TimesNow-ExtraLightItalic.woff") format("woff");
-  font-weight: 200;
-  font-style: italic;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Times Now';
-  src: url("https://chia.design/assets/fonts/TimesNow-ExtraLight.woff2") format("woff2"), url("https://chia.design/assets/fonts/TimesNow-ExtraLight.woff") format("woff");
-  font-weight: 200;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Times Now';
-  src: url("https://chia.design/assets/fonts/TimesNow-LightItalic.woff2") format("woff2"), url("https://chia.design/assets/fonts/TimesNow-LightItalic.woff") format("woff");
-  font-weight: 300;
-  font-style: italic;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Times Now';
-  src: url("https://chia.design/assets/fonts/TimesNow-SemiBold.woff2") format("woff2"), url("https://chia.design/assets/fonts/TimesNow-SemiBold.woff") format("woff");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Times Now';
-  src: url("https://chia.design/assets/fonts/TimesNow-SemiBoldItalic.woff2") format("woff2"), url("https://chia.design/assets/fonts/TimesNow-SemiBoldItalic.woff") format("woff");
-  font-weight: 600;
-  font-style: italic;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Times Now';
-  src: url("https://chia.design/assets/fonts/TimesNow-Light.woff2") format("woff2"), url("https://chia.design/assets/fonts/TimesNow-Light.woff") format("woff");
-  font-weight: 300;
+  font-family: 'Neue Montreal';
+  src: url(../fonts/NeueMontreal-Medium.woff2) format("woff2"), url(../fonts/NeueMontreal-Medium.woff) format("woff");
+  font-weight: 500;
   font-style: normal;
   font-display: swap; }
 
@@ -102,7 +53,8 @@
 
 @charset "UTF-8";
 body {
-  color: #1f1f1f; }
+  color: #1f1f1f;
+  font-family: 'Neue Montreal'; }
 
 h1,
 h2,
@@ -116,7 +68,7 @@ h4 {
   text-align: left;
   padding: .25em 0;
   display: block;
-  font-weight: 300; }
+  font-weight: 400; }
 
 .loader {
   position: fixed;
