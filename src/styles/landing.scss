@@ -143,8 +143,10 @@ input {
 
     .header-left {
 
+      margin-left: -.25em;
+      
       a {
-        font-size: 1em;
+        font-size: 1.125em;
       }
 
     }
@@ -160,7 +162,7 @@ input {
       a {
         margin: 0;
         padding: .25em;
-        font-size: 1em;
+        font-size: 1.125em;
         line-height: 100%;
         display: inline-block;
       }
@@ -172,6 +174,7 @@ input {
 
   a {
     color: $text;
+    height: auto;
   }
 
 
@@ -181,8 +184,7 @@ input {
 
   @media only screen and (max-width: 768px) {
 
-    position: absolute;
-    height: 150px;
+    height: 100px;
     padding: 1em;
 
     .header-wrapper {
@@ -276,12 +278,15 @@ input {
     flex-wrap: wrap;
     margin-bottom: 1em;
     
-    p{
+    p, .work{
       max-width: 100%;
-    }
-    
-    .work{
       margin: 0;
+      padding: 0;
+      
+      h4{
+        margin: 0;
+      }
+      
     }
     
   }
@@ -367,12 +372,13 @@ input {
 
   @media only screen and (max-width: 768px) {
 
-    padding-top: 0px;
+    padding-top: 80px;
     
     h1{
       font-size: 2.6em;
-      margin-bottom: 0;
-      padding-bottom: 1.5em;
+      margin-bottom: 1em;
+      padding: .5em;
+      width: 100%;
     }
 
   }

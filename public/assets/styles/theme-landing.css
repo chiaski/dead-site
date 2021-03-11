@@ -146,8 +146,10 @@ h4 {
     max-width: 1010px;
     display: flex;
     justify-content: space-between; }
-    .header .header-wrapper .header-left a {
-      font-size: 1em; }
+    .header .header-wrapper .header-left {
+      margin-left: -.25em; }
+      .header .header-wrapper .header-left a {
+        font-size: 1.125em; }
     .header .header-wrapper .header-right {
       float: right;
       display: flex;
@@ -157,17 +159,17 @@ h4 {
       .header .header-wrapper .header-right a {
         margin: 0;
         padding: .25em;
-        font-size: 1em;
+        font-size: 1.125em;
         line-height: 100%;
         display: inline-block; }
   .header a {
-    color: #1f1f1f; }
+    color: #1f1f1f;
+    height: auto; }
   .header a:hover {
     color: #f0f0f0; }
   @media only screen and (max-width: 768px) {
     .header {
-      position: absolute;
-      height: 150px;
+      height: 100px;
       padding: 1em; }
       .header .header-wrapper {
         flex-wrap: wrap;
@@ -221,10 +223,12 @@ h4 {
     .info {
       flex-wrap: wrap;
       margin-bottom: 1em; }
-      .info p {
-        max-width: 100%; }
-      .info .work {
-        margin: 0; } }
+      .info p, .info .work {
+        max-width: 100%;
+        margin: 0;
+        padding: 0; }
+        .info p h4, .info .work h4 {
+          margin: 0; } }
 
 #landing {
   margin: 0 auto;
@@ -274,11 +278,12 @@ h4 {
     font-size: 4vw; }
   @media only screen and (max-width: 768px) {
     #work {
-      padding-top: 0px; }
+      padding-top: 80px; }
       #work h1 {
         font-size: 2.6em;
-        margin-bottom: 0;
-        padding-bottom: 1.5em; } }
+        margin-bottom: 1em;
+        padding: .5em;
+        width: 100%; } }
 
 #projects {
   margin: 0 auto; }
