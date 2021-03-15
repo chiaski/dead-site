@@ -1,8 +1,6 @@
 @import "colors.scss";
 @import "fonts.css";
 
-$bg: #f0f0f0;
-
 $light-color: #F7F9F8;
 $white: #1f1f1f;
 
@@ -157,7 +155,6 @@ input {
       display: flex;
       align-content: flex-start;
       flex-wrap: wrap;
-      max-width: 500px;
 
       a {
         margin: 0;
@@ -429,16 +426,16 @@ input {
 
     h2 {
       font-weight: 100;
-      font-size: 1em;
-      letter-spacing: -.25px;
-      margin: .15em auto;
+      font-size: 1.125em;
+      letter-spacing: -.15px;
+      margin: .25em auto;
       width: auto;
     }
 
     p {
-      margin: 0 0 .15em 0;
+      margin: .25em 0 .15em 0;
       max-width: 320px;
-      font-size: .8em;
+      font-size: .9em;
     }
 
     span.tag {
