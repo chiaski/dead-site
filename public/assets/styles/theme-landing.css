@@ -189,13 +189,29 @@ h4 {
   display: flex; }
   .info .work {
     padding: .25em 1em;
-    margin-left: 1em; }
+    margin-left: 1em;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    .info .work h4 {
+      width: 100%;
+      display: block; }
     .info .work a {
       font-size: .8em;
-      margin: 0 .5em;
-      padding: .15em; }
+      margin: .25em .5em;
+      padding: .15em .15em;
+      display: block; }
     .info .work a::before {
       display: none; }
+    .info .work ._work {
+      width: 50%;
+      display: flex;
+      flex-wrap: wrap;
+      vertical-align: top;
+      align-items: baseline;
+      justify-content: flex-start; }
+    .info .work ._social a {
+      width: 42%; }
   .info p {
     padding: 1em;
     margin: 0;

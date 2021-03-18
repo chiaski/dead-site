@@ -223,16 +223,39 @@ input {
   .work{
     padding: .25em 1em;
     margin-left: 1em;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+    h4{
+      width: 100%;
+      display: block;
+    }
 
     a{
       font-size: .8em;
-      margin: 0 .5em;
-      padding: .15em;
+      margin: .25em .5em;
+      padding: .15em .15em;
+      display: block;
     }
     
     a::before{
       display: none;
     }
+    
+    ._work{
+      width: 50%;
+      display: flex;
+      flex-wrap: wrap;
+      vertical-align: top;
+      align-items: baseline;
+      justify-content: flex-start;
+    }
+    
+    ._social a{
+      width: 42%;
+    }
+    
   
   }
   

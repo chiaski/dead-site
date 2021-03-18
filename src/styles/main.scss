@@ -596,6 +596,7 @@ details[open] summary ~ * {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
   justify-content: center;
 
@@ -605,18 +606,19 @@ details[open] summary ~ * {
   }
 
   a {
+    width: 46%;
+    max-width: 380px;
     text-decoration: none;
+    display: inline-block;
   }
 
   .project-box {
-    width: 420px;
     overflow: hidden;
     box-sizing: border-box;
     justify-content: center;
     align-items: center;
     align-self: top;
     padding: 1em;
-    display: flex;
     flex-wrap: wrap;
     text-decoration: none;
     margin-bottom: 2em;
@@ -640,12 +642,13 @@ details[open] summary ~ * {
     h3 {
       text-align: left;
       display: block;
-      font-size: .8em;
+      font-size: .9em;
       font-weight: 300;
       color: $accent;
       padding: 0;
       margin: 0;
       cursor: e-resize;
+      font-family: "Neue Montreal";
     }
 
     img {
@@ -677,19 +680,6 @@ details[open] summary ~ * {
 
   }
 
-
-  .project-box:hover {
-    img {
-      filter: grayscale(0);
-    }
-
-    a {
-      color: $accent !important;
-    }
-
-
-  }
-
   .project-unavailable {
     cursor: not-allowed !important;
   }
@@ -709,6 +699,7 @@ details[open] summary ~ * {
     font-size: 1em;
     text-align: left !important;
     cursor: e-resize;
+    display: none;
   }
 
   h2 {
@@ -722,15 +713,6 @@ details[open] summary ~ * {
     line-height: 1.1em;
     cursor: e-resize;
   }
-
-
-  @media only screen and (max-width: 1100px) {
-
-    .project-box {
-      width: 390px;
-    }
-  }
-
 
   @media only screen and (max-width: 800px) {
 
@@ -786,7 +768,7 @@ details[open] summary ~ * {
   justify-content: center;
 
   .box-inner {
-    max-width: 1600px;
+    max-width: 1900px;
   }
 
   .project-box h2 {
