@@ -53,6 +53,7 @@
 
 @charset "UTF-8";
 body {
+  background: #f0f0f0;
   color: #1f1f1f;
   font-family: 'Neue Montreal'; }
 
@@ -65,10 +66,9 @@ input {
   color: #1f1f1f; }
 
 h4 {
+  margin: .5em 0;
   text-align: left;
-  padding: .25em 0;
-  display: block;
-  font-weight: 400; }
+  display: block; }
 
 .loader {
   position: fixed;
@@ -79,8 +79,7 @@ h4 {
   z-index: 999999;
   background: #f0f0f0;
   pointer-events: none;
-  animation: .75s ease-out 0.2s 1 pageload forwards;
-  display: none; }
+  animation: .75s ease-out 0.2s 1 pageload forwards; }
   .loader .inner {
     position: absolute;
     top: 50%;
@@ -137,7 +136,7 @@ h4 {
   width: 100%;
   height: 100px;
   margin: 0 auto;
-  padding: 1.5em 2em;
+  padding: 2.5em;
   background-color: #f0f0f0;
   background: linear-gradient(180deg, #f0f0f0 0%, #f0f0f0 40%, rgba(247, 249, 248, 0) 100%); }
   .header .header-wrapper {
@@ -147,9 +146,12 @@ h4 {
     display: flex;
     justify-content: space-between; }
     .header .header-wrapper .header-left {
+      font-family: "Times Now";
+      letter-spacing: -.25px;
       margin-left: -.25em; }
       .header .header-wrapper .header-left a {
-        font-size: 1.125em; }
+        font-size: 1.5em;
+        font-weight: 400; }
     .header .header-wrapper .header-right {
       float: right;
       display: flex;
@@ -186,28 +188,34 @@ h4 {
             margin: 0 .25em 0 0; } }
 
 .info {
-  display: flex; }
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1em; }
+  .info h4 {
+    display: block;
+    width: 100%;
+    font-family: "Times Now";
+    font-size: 1.25em;
+    display: block;
+    margin: .25em; }
   .info .work {
-    padding: .25em 1em;
-    margin-left: 1em;
+    margin-left: auto;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap; }
-    .info .work h4 {
-      width: 100%;
-      display: block; }
+    align-items: top;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    vertical-align: top; }
+    .info .work ._work {
+      margin-left: 1em;
+      width: 200px; }
     .info .work a {
+      font-size: .9em;
       padding: .25em;
-      margin: 0 .15em;
-      display: inline-block; }
+      margin: .25em .15em;
+      display: block; }
     .info .work a::before {
       display: none; }
-    .info .work ._work {
-      display: flex;
-      flex-wrap: wrap;
-      vertical-align: top;
-      align-items: baseline;
-      justify-content: flex-start; }
   .info p {
     padding: 1em;
     margin: 0;
@@ -234,12 +242,17 @@ h4 {
     .info {
       flex-wrap: wrap;
       margin-bottom: 1em; }
-      .info p, .info .work {
+      .info p,
+      .info .work {
         max-width: 100%;
         margin: 0;
         padding: 0; }
-        .info p h4, .info .work h4 {
-          margin: 0; } }
+        .info p h4,
+        .info .work h4 {
+          margin: 0; }
+        .info p ._work,
+        .info .work ._work {
+          margin: 2.5vh 0; } }
 
 #landing {
   margin: 0 auto;
@@ -324,11 +337,13 @@ h4 {
         max-height: 45vh;
         object-fit: cover; }
     #projects a h2 {
-      font-weight: 100;
-      font-size: 1.125em;
-      letter-spacing: -.15px;
-      margin: .25em auto;
-      width: auto; }
+      font-weight: 400;
+      letter-spacing: -.25px;
+      margin: .15em auto;
+      width: auto;
+      font-family: "Times Now";
+      font-style: italic;
+      font-size: 1.5em; }
     #projects a p {
       margin: .25em 0 .15em 0;
       max-width: 320px;

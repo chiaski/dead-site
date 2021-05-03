@@ -12,9 +12,10 @@ $text: #1f1f1f;
 $link: #1f1f1f;
 $link-hover: #1f1f1f;
 
-body{
+body {
+  background: $bg;
   color: $white;
-    font-family: 'Neue Montreal';
+  font-family: 'Neue Montreal';
 }
 
 h1,
@@ -27,12 +28,11 @@ input {
 }
 
 
-  h4 {
-    text-align: left;
-    padding: .25em 0;
-    display: block;
-    font-weight: 400;
-  }
+h4 {
+  margin: .5em 0;
+  text-align: left;
+  display: block;
+}
 
 
 .loader {
@@ -46,7 +46,6 @@ input {
   pointer-events: none;
   animation: .75s ease-out 0.2s 1 pageload forwards;
   // TO REMOVE
-  display: none;
 
   .inner {
     position: absolute;
@@ -128,7 +127,7 @@ input {
   width: 100%;
   height: 100px;
   margin: 0 auto;
-  padding: 1.5em 2em;
+  padding: 2.5em;
   background-color: $bg;
   background: linear-gradient(180deg, $bg 0%, $bg 40%, rgba(247, 249, 248, 0) 100%);
 
@@ -141,12 +140,14 @@ input {
 
     .header-left {
 
+      font-family: "Times Now";
+      letter-spacing: -.25px;
       margin-left: -.25em;
-      
-      a {
-        font-size: 1.125em;
-      }
 
+      a {
+        font-size: 1.5em;
+        font-weight: 400;
+      }
     }
 
 
@@ -217,44 +218,50 @@ input {
 
 
 .info {
-  
+
   display: flex;
-  
-  .work{
-    padding: .25em 1em;
-    margin-left: 1em;
+  flex-direction: row;
+  margin-bottom: 1em;
+
+  h4 {
+    display: block;
+    width: 100%;
+    font-family: "Times Now";
+    font-size: 1.25em;
+    display: block;
+    margin: .25em;
+  }
+
+  .work {
+    margin-left: auto;
     display: flex;
     justify-content: space-between;
+    align-items: top;
+    align-content: flex-start;
     flex-wrap: wrap;
-    
-    h4{
-      width: 100%;
+    vertical-align: top;
+
+
+    ._work {
+      margin-left: 1em;
+      width: 200px;
+    }
+
+
+    a {
+      font-size: .9em;
+      padding: .25em;
+      margin: .25em .15em;
       display: block;
     }
 
-    a{
-      padding: .25em;
-      margin: 0 .15em;
-      display: inline-block;
-    }
-    
-    a::before{
+    a::before {
       display: none;
     }
-    
-    ._work{
-      display: flex;
-      flex-wrap: wrap;
-      vertical-align: top;
-      align-items: baseline;
-      justify-content: flex-start;
-      
-    }
-    
-    
-  
+
+
   }
-  
+
 
   p {
     padding: 1em;
@@ -263,50 +270,55 @@ input {
     font-size: 1em;
     line-height: 150%;
   }
-  
-    a {
-      color: $white;
-      margin: 0;
-      padding: 0;
-      font-size: 1em;
-      text-decoration: none;
-    }
-    
 
-    a::before {
-      content: "↗";
-      font-size: .25em;
-      margin-right: 1em;
-    }
+  a {
+    color: $white;
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    text-decoration: none;
+  }
 
-    a.more::before {
-      display: none;
-    }
 
-    a:hover {
-      background: $white;
-      color: $bg;
-      text-decoration: none;
-    }
-  
+  a::before {
+    content: "↗";
+    font-size: .25em;
+    margin-right: 1em;
+  }
+
+  a.more::before {
+    display: none;
+  }
+
+  a:hover {
+    background: $white;
+    color: $bg;
+    text-decoration: none;
+  }
+
   @media only screen and (max-width: 900px) {
-  
+
     flex-wrap: wrap;
     margin-bottom: 1em;
-    
-    p, .work{
+
+    p,
+    .work {
       max-width: 100%;
       margin: 0;
       padding: 0;
-      
-      h4{
+
+      h4 {
         margin: 0;
       }
-      
+
+      ._work {
+        margin: 2.5vh 0;
+      }
+
     }
-    
+
   }
-  
+
 }
 
 
@@ -376,8 +388,8 @@ input {
     max-width: 1000px;
     margin: 0 auto;
   }
-  
-  h1{
+
+  h1 {
     padding: 2.5em;
     font-family: "Times Now";
     letter-spacing: -1.5px;
@@ -389,8 +401,8 @@ input {
   @media only screen and (max-width: 768px) {
 
     padding-top: 80px;
-    
-    h1{
+
+    h1 {
       font-size: 2.6em;
       margin-bottom: 1em;
       padding: .5em;
@@ -427,7 +439,7 @@ input {
     ._images {
       //      filter: grayscale(1);
       object-fit: cover;
-  mix-blend-mode: darken;
+      mix-blend-mode: darken;
       width: 100%;
       max-width: 48vw;
       overflow: hidden;
@@ -441,14 +453,16 @@ input {
       }
 
     }
-    
+
 
     h2 {
-      font-weight: 100;
-      font-size: 1.125em;
-      letter-spacing: -.15px;
-      margin: .25em auto;
+      font-weight: 400;
+      letter-spacing: -.25px;
+      margin: .15em auto;
       width: auto;
+      font-family: "Times Now";
+      font-style: italic;
+      font-size: 1.5em;
     }
 
     p {
@@ -532,8 +546,7 @@ input {
 }
 
 
-#projects:hover a:not(:hover) {
-}
+#projects:hover a:not(:hover) {}
 
 
 #rss {
