@@ -127,25 +127,21 @@ h4 {
   width: 100%;
   height: 100px;
   margin: 0 auto;
-  padding: 2.5em;
   background-color: $bg;
   background: linear-gradient(180deg, $bg 0%, $bg 40%, rgba(247, 249, 248, 0) 100%);
 
   .header-wrapper {
     margin: 0 auto;
     width: 100%;
-    max-width: 1010px;
     display: flex;
     justify-content: space-between;
 
     .header-left {
 
-      font-family: "Times Now";
-      letter-spacing: -.25px;
       margin-left: -.25em;
 
       a {
-        font-size: 1.5em;
+        font-size: 1.125em;
         font-weight: 400;
       }
     }
@@ -176,11 +172,7 @@ h4 {
   }
 
 
-  a:hover {
-    color: $bg;
-  }
-
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 900px) {
 
     height: 100px;
     padding: 2em;
@@ -217,11 +209,14 @@ h4 {
 // LANDING-ONLY
 
 
-.info {
+.info, .invitation {
 
   display: flex;
   flex-direction: row;
-  margin-bottom: 1em;
+  
+  h2{
+    font-weight: normal;
+  }
 
   h4 {
     display: block;
@@ -243,17 +238,18 @@ h4 {
 
 
     ._work {
-      margin-left: 1em;
-      width: 200px;
+      width: auto;
+      padding: 1em;
+      margin: 0 1em;
     }
 
 
     a {
-      font-size: .9em;
       padding: .25em;
       margin: .25em .15em;
       display: block;
     }
+    
 
     a::before {
       display: none;
@@ -264,10 +260,9 @@ h4 {
 
 
   p {
-    padding: 1em;
-    margin: 0;
+    font-size: 1.15em;
+    margin-bottom: 1em;
     max-width: 500px;
-    font-size: 1em;
     line-height: 150%;
   }
 
@@ -306,13 +301,16 @@ h4 {
       max-width: 100%;
       margin: 0;
       padding: 0;
+      margin-bottom: 1em;
 
       h4 {
         margin: 0;
       }
 
       ._work {
-        margin: 2.5vh 0;
+        padding: 0;
+        margin: 1em 0;
+        margin-right: 2em;
       }
 
     }
@@ -321,67 +319,125 @@ h4 {
 
 }
 
+.info{
+  min-height: 85vh;
+  width: 100%;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  
+  div{
+    margin-top: auto;
+    margin-bottom: 0;
+  }
+}
+
+.invitation{
+  
+  margin-top: 40px;
+  max-width: 1050px;
+  display: flex;
+  justify-content: space-between;
+  
+  h2{
+    margin: 0;
+    padding: .5em;
+  }
+  
+  p{
+    line-height: 160%;
+    font-size: 1em;
+    padding: 1em;
+  }
+  
+  a{
+    text-decoration: underline;
+  }
+  
+  a:hover{
+    color: $bg;
+  }
+  
+  a::before{
+    display: none;
+  }
+  
+  .interests{
+    padding: 0 2em;
+    max-width: 60%;
+    
+    li{
+      max-width: 90%;
+    }
+    
+  }
+  
+  ul{
+    margin: 0;
+  }
+  
+  @media only screen and (max-width: 900px) {
+      
+    p{
+      margin: 1em 0;
+    }
+    
+    .interests{
+      max-width: 100%;
+      padding: 0;
+    }
+    
+    h2{
+      margin: 1em 0;
+      padding: 0;
+    }
+  }
+  
+}
+
 
 // AREAS
 
-#landing {
+#intro {
 
+  width: 100%;
   margin: 0 auto;
-  background: red;
-  padding: 0;
+  padding: 100px 1.5em 0 1.5em;background-repeat: no-repeat;background-position: top center;
 
   .box-inner {
-    width: 900px;
-    max-width: 100vw;
-    margin-left: 0;
-    margin-right: auto;
-  }
-
-  @media only screen and (max-width: 800px) {
-    padding-top: 60px;
-  }
-
-  #social {
-
-    margin-left: 2.5em;
-    margin-top: 30px;
+    margin: 0 auto;
     width: 100%;
+  }
 
-    a {
-      text-decoration: none;
-      font-size: .8em;
-      padding: .25em;
-      margin: .15em;
-      margin-right: 1em;
-    }
-
-    a:hover {
-      background: $text;
-      color: $bg;
-    }
-
-
+  h1 {
+    padding: 2.5em;
+    font-family: "Times Now";
+    letter-spacing: -1.5px;
+    font-weight: 100;
+    font-size: 4vw;
   }
 
 
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 768px) {
 
-    margin: 0;
-    padding-top: 50px;
 
-    .hello {
-      padding: 0;
-      margin-left: 1.5em;
+    h1 {
+      font-size: 2.6em;
+      margin-bottom: 1em;
+      padding: .5em;
+      width: 100%;
     }
+
   }
 
 }
 
 
+
 #work {
 
   margin: 0 auto;
-  padding: 100px 1.5em 0 1.5em;
+  padding: 0 1.5em;
 
   .box-inner {
     width: 100%;
@@ -399,8 +455,6 @@ h4 {
 
 
   @media only screen and (max-width: 768px) {
-
-    padding-top: 80px;
 
     h1 {
       font-size: 2.6em;
@@ -591,7 +645,6 @@ h4 {
 
     background: $black;
     color: $bg;
-
   }
 
   @media only screen and (max-width: 768px) {
@@ -659,7 +712,6 @@ h4 {
 
   a:hover {
     background: $text;
-    color: $bg;
   }
 
 
@@ -697,10 +749,8 @@ h4 {
 
 #newsletter {
   width: 100%;
-  margin: 3em auto;
+  margin: 2em auto;
   text-align: center;
-  padding-top: 5vh;
-  padding-bottom: 10vh;
 
   p {
     margin: 0 auto;

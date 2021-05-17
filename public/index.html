@@ -70,6 +70,22 @@ VERSION 1.4
     gtag('config', 'UA-155308379-1');
 
   </script>
+  
+<style type="text/css">
+
+  #intro{
+    background-image: url(assets/portfolio/dump.jpg);
+    
+  }
+  
+  
+  @media only screen and (max-width: 900px) {
+    #intro{
+      background-image:none;
+    }
+    }
+  
+</style>
 
   <link rel="stylesheet" href="./assets/styles/theme-main.css">
   <link rel="stylesheet" href="./assets/styles/theme-landing.css">
@@ -78,7 +94,7 @@ VERSION 1.4
 
 <body>
 
-  <div class="static" style="background: transparent url(https://chia.design/punishing/images/noise.png) repeat 0 0;"></div>
+<!--  <div class="static" style="background: transparent url(https://chia.design/punishing/images/noise.png) repeat 0 0;"></div>-->
   <div class="loader"></div>
   <!--  <div class="cursor"></div>-->
 
@@ -103,30 +119,15 @@ VERSION 1.4
       </div>
     </div>
 
-    <div class="box" id="landing" style="display: none;">
-      <div class="box-inner">
 
-        <div class="hello">
-          <p>
-            📍 Currently nurturing Filipino technologists at <a href="https://developh.org">Developh</a>, exploring Filipino connection at <a href="https://kumu.ph">Kumu</a>, writing every week at <a href="https://chias.blog">chias.blog</a>, creative experimentation at the <a href="https://ccam.yale.edu">Center for Collaborative Arts & Media</a>. I'm a speaker (Grace Hopper Conf Keynote), worldbuilder, Adobe Design Circle Scholar. I share process, experiments, and thinking here.
-        </div>
-
-        <div class="credentials">
-
-        </div>
-
-      </div>
-    </div>
-
-    <div class="box" id="work">
+    <div class="box" id="intro">
       <div class="box-inner">
 
         <div class="info">
           <div>
             <p><a href="about.html" class="more">Chia is 21</a> and studying Computing & the Arts at Yale, from Manila. They are a creative technologist creating radical systems for creators and communities in pursuit of making creation ubiquituous, as the internet age had given them.</p>
 
-            <!--            <h4>Silly little interests</h4>-->
-            <p>Chia loves the internet, design theory, and Car Seat Headrest. This website is a showcase of work (design, development, & writing), in-depth process, strange passion, and more.</p>
+            <p>Chia loves the internet, design theory, and Car Seat Headrest. This website is a showcase of work (design, development, & writing), in-depth process, strange passion, and more.<br><a href="invitation">I'm shy, but I would love to meet you.</a></p>
           </div>
 
           <div class="work">
@@ -138,6 +139,7 @@ VERSION 1.4
               <a href="https://uxsocietyyale.org">Design at UXSociety</a>
               <a href="https://twitter.com/frometherest">Worldbuilding at Etherest</a>
             </div>
+            
             <div class="_work">
 
               <a href="mailto:chiara.amisola@yale.edu">Mail</a>
@@ -161,6 +163,11 @@ VERSION 1.4
           </div>
 
         </div>
+      </div>
+      </div>
+      
+    <div class="box" id="work">
+      <div class="box-inner">
 
         <h3>Some Work</h3>
 
@@ -326,6 +333,12 @@ VERSION 1.4
 
           <div id="experiments">
 
+            <a href="https://chia.codes/projects/apocalypse/" rel="noreferrer" target="_blank">An incremental.</a>
+            
+            <a href="https://www.qbo.com.ph/" rel="noreferrer" target="_blank">Community advocate at QBO.</a>
+            
+            <a href="https://badinter.net" rel="noreferrer" target="_blank">Internet histories at badinter.net</a>
+            
             <a href="https://chi.itch.io/bisita" rel="noreferrer" target="_blank">Bisita, a recollection.</a>
 
 
@@ -473,16 +486,12 @@ VERSION 1.4
       $('#rss').append(bloge);
 
     });
+    
     //        $('#rss').append($('<h2/>').text(item.title));
 
   </script>
 
   <script>
-    //    
-    //var $grid = $('.grid').masonry({  fitWidth: true
-    //});
-    //    
-
     $(window).on('load', function() {
 
       var $grid = new Masonry('.grid', {
@@ -491,94 +500,28 @@ VERSION 1.4
 
 
     });
+// naur this is not mine
+$(function () {
+  var n = {
+    x: -1,
+    y: -1
+  };
+  $(document).mousemove(function (i) {
+    n.x = i.pageX, n.y = i.pageY
+  });
+  var i = function () {
+    return "hsla(" + n.y / $(window).height() * 360 + ", 70%, 50%, 1)"
+  };
+  $("#experiments a").hover(function () {
+    var n = i();
+    $(this).css("background-color", n)
+  }, function () {
+   $(this).css("background-color", "")
+  })
+  
+});
 
-    $(window).scroll(function() {
-      var scrollTop = $(this).scrollTop();
-
-      $('#naruto').css({
-        opacity: function() {
-          var elementHeight = $(this).height(),
-            opacity = ((1 - (elementHeight - scrollTop) / elementHeight) * 0.15);
-
-          return opacity;
-        }
-      });
-    });
-
-
-
-    var tooltips = document.querySelectorAll('.project-box-desc ._tooltip');
-
-    window.onmousemove = function(e) {
-      var x = (e.clientX + 20) + 'px',
-        y = (e.clientY + 20) + 'px';
-      for (var i = 0; i < tooltips.length; i++) {
-        tooltips[i].style.top = y;
-        tooltips[i].style.left = x;
-      }
-    };
-
-    var $cursor = $('.cursor');
-
-    function moveCursor(e) {
-      $cursor.addClass('is-moving');
-      $cursor.css({
-        "top": e.pageY,
-        "left": e.pageX
-      });
-
-      clearTimeout(timer2);
-
-      var timer2 = setTimeout(function() {
-        $cursor.removeClass('is-moving');
-      }, 300);
-    }
-
-    $(window).on('mousemove', moveCursor);
-
-  </script>
-
-  <script type="text/javascript">
-    function hover(what) {
-
-      var ele = document.getElementById("landing-overlay");
-      fade(ele);
-
-      switch (what) {
-        case "teleport":
-          document.getElementById("landing-overlay").innerHTML = '<img src="./assets/portfolio/big-teleport.jpg">';
-          break;
-
-
-        case "iboto":
-          document.getElementById("landing-overlay").innerHTML = '<img src="./assets/portfolio/big-iboto.jpg">';
-          break;
-
-
-        case "developh":
-          document.getElementById("landing-overlay").innerHTML = '<img src="./assets/portfolio/preview-developh.jpg">';
-          break;
-
-
-        case "twitter":
-          document.getElementById("landing-overlay").innerHTML = '<img src="./assets/portfolio/big-twitter.jpg">';
-          break;
-
-        case "lastfm":
-          document.getElementById("landing-overlay").innerHTML = '<img src="./assets/portfolio/preview-lastfm.jpg">';
-          break;
-
-        case "letterboxd":
-          document.getElementById("landing-overlay").innerHTML = '<img src="./assets/portfolio/preview-letterboxd.jpg">';
-          break;
-
-        case "design":
-          document.getElementById("landing-overlay").innerHTML = '<img src="./assets/portfolio/preview-designs.jpg">';
-          break;
-      }
-
-    }
-
+    
   </script>
 
 

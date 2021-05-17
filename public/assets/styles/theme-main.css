@@ -74,7 +74,7 @@ h1, h2, h3, h4, h5 {
 /* MAIN STRUCTURAL ELEMENTS */
 body {
   cursor: default;
-  background: #f0f0f0;
+  background: #f7f7f7;
   color: #35383b;
   text-rendering: optimizeLegibility;
   font-display: swap;
@@ -84,11 +84,11 @@ body {
 
 ::-moz-selection {
   /* Code for Firefox */
-  color: #f0f0f0;
+  color: #f7f7f7;
   background: #35383b; }
 
 ::selection {
-  color: #f0f0f0;
+  color: #f7f7f7;
   background: #35383b; }
 
 .container {
@@ -100,7 +100,7 @@ body {
   place-items: center; }
 
 .container.alt {
-  color: #f0f0f0; }
+  color: #f7f7f7; }
 
 .box {
   display: flex;
@@ -177,7 +177,7 @@ a:hover {
     transition: all .3s linear; }
   .header a:hover {
     background: #35383b;
-    color: #f0f0f0; }
+    color: #f7f7f7; }
   .header .header-right a {
     margin-left: .25em; }
   .header .header-right a:hover {
@@ -202,7 +202,7 @@ a:hover {
   height: auto;
   z-index: 0;
   overflow: hidden;
-  background: #f0f0f0;
+  background: #f7f7f7;
   mix-blend-mode: darken;
   object-fit: cover; }
   @media only screen and (max-width: 800px) {
@@ -219,7 +219,7 @@ a:hover {
     display: none; } }
 
 #about {
-  background-color: #f0f0f0;
+  background-color: #f7f7f7;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
@@ -338,7 +338,7 @@ a:hover {
     color: #35383b; }
   #links .col-third a:hover sup {
     background: #35383b;
-    color: #f0f0f0; }
+    color: #f7f7f7; }
 
 #footer {
   background: none;
@@ -367,7 +367,7 @@ a:hover {
       margin-left: 1em; }
     #footer ._foot a:hover {
       background: #35383b;
-      color: #f0f0f0; }
+      color: #f7f7f7; }
     #footer ._foot a.about {
       padding-right: 1.5em;
       float: left;
