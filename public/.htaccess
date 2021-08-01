@@ -1,7 +1,12 @@
-Redirect 302 /resume /resume.pdf
-Redirect 302 /roblox https://www.notion.so/chiaski/Roblox-Design-Challenge-Micronovel-Reading-App-30521570e78642dd9d45fe736db49129
-Redirect 302 /presentation https://www.figma.com/proto/3QcputR7E8WIjQPRn07DUL/Portfolio-Presentation-Spotify?node-id=1%3A4&viewport=573%2C474%2C0.038287315517663956&scaling=min-zoom
 
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.html [NC,L]
+
+Redirect 302 /portal https://develo.ph/portal
+Redirect 302 /deck https://developh.org/deck.pdf
+Redirect 302 /deckinnovation https://developh.org/deckInnovation.pdf
+Redirect 302 /ACT https://developh.org/act
+Redirect 302 /core https://www.notion.so/developh/Core-Recruiting-5438c631e4a14248a2b34cb0afabd745
+Redirect 302 /CORE https://www.notion.so/developh/Core-Recruiting-5438c631e4a14248a2b34cb0afabd745
+Redirect 302 /discord https://discord.gg/K756ZXT

@@ -203,8 +203,9 @@ h4 {
     vertical-align: top; }
     .info .work ._work, .invitation .work ._work {
       width: auto;
-      padding: 1em;
-      margin: 0 1em; }
+      padding: .5em;
+      margin: 0 1em;
+      box-sizing: border-box; }
     .info .work a, .invitation .work a {
       padding: .25em;
       margin: .25em .15em;
@@ -214,7 +215,7 @@ h4 {
   .info p, .invitation p {
     font-size: 1.15em;
     margin-bottom: 1em;
-    max-width: 500px;
+    max-width: 520px;
     line-height: 150%; }
   .info a, .invitation a {
     color: #1f1f1f;
@@ -232,10 +233,13 @@ h4 {
     background: #1f1f1f;
     color: #f7f7f7;
     text-decoration: none; }
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 1200px) and (min-width: 600px) {
+    .info ._socials, .invitation ._socials {
+      display: none; } }
+  @media only screen and (max-width: 800px) {
     .info, .invitation {
       flex-wrap: wrap;
-      margin-bottom: 1em; }
+      margin-top: 200px; }
       .info p,
       .info .work, .invitation p,
       .invitation .work {
@@ -243,16 +247,15 @@ h4 {
         margin: 0;
         padding: 0;
         margin-bottom: 1em; }
-        .info p h4,
-        .info .work h4, .invitation p h4,
-        .invitation .work h4 {
-          margin: 0; }
         .info p ._work,
         .info .work ._work, .invitation p ._work,
         .invitation .work ._work {
           padding: 0;
           margin: 1em 0;
-          margin-right: 2em; } }
+          margin-right: 2m; } }
+  @media only screen and (max-width: 600px) {
+    .info, .invitation {
+      margin-top: 0; } }
 
 .info {
   min-height: 85vh;
@@ -275,7 +278,7 @@ h4 {
   .invitation p {
     line-height: 160%;
     font-size: 1em;
-    padding: 1em; }
+    padding: .75em; }
   .invitation a {
     text-decoration: underline; }
   .invitation a:hover {
@@ -314,6 +317,12 @@ h4 {
     letter-spacing: -1.5px;
     font-weight: 100;
     font-size: 4vw; }
+  @media only screen and (max-width: 800px) {
+    #intro {
+      background-position: -200px -200px; } }
+  @media only screen and (max-width: 600px) {
+    #intro {
+      background-image: none; } }
   @media only screen and (max-width: 768px) {
     #intro h1 {
       font-size: 2.6em;
@@ -376,6 +385,11 @@ h4 {
       font-family: "Times Now";
       font-style: italic;
       font-size: 1.5em; }
+      #projects a h2 sup {
+        vertical-align: middle;
+        font-style: normal;
+        font-size: .5em;
+        font-family: 'Neue Montreal'; }
     #projects a p {
       margin: .25em 0 .15em 0;
       max-width: 320px;
@@ -397,7 +411,7 @@ h4 {
       #projects a ._images img {
         width: 100%;
         max-width: 100vw; } }
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 1000px) {
     #projects hr {
       display: none; }
     #projects a {
