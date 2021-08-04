@@ -103,7 +103,7 @@ a {
 }
 
 a:hover {
-  color: $link-hover;
+  opacity: 0.5;
 }
 
 
@@ -135,17 +135,15 @@ a:hover {
     transition: all .3s linear;
   }
 
-  a:hover {
-    background: $text;
-    color: $bg;
-  }
-
   .header-right a {
     margin-left: .25em;
   }
 
   .header-right a:hover {
     cursor: ne-resize;
+    color: $text;
+    background: none;
+    opacity: 0.5;
   }
 
   @media only screen and (max-width: 700px) {
@@ -224,26 +222,18 @@ a:hover {
 
   .hello {
     max-width: 90vw;
-    font-size: 1.125rem;
     line-height: 150%;
     letter-spacing: -.1px;
     text-indent: 60px;
+    padding: .5em;
   }
   
-  img{
-    max-width: 300px;
-    padding: 1em;
-  }
-
-  h3 {
-    font-size: 1.5rem;
-  }
-
   .col-third.experience {
 
     p {
       font-size: 1em;
       line-height: 140%;
+      margin-bottom: 1em;
     }
 
   }
@@ -344,8 +334,8 @@ a:hover {
 #links {
 
   width: 100%;
-  max-width: 1200px;
-  margin: auto;
+  display: flex;
+  justify-content: space-between;
 
   .col-third {
     margin: 0 .5em;
@@ -372,7 +362,7 @@ a:hover {
     text-align: left;
 
     font-size: 1em;
-    margin-bottom: .5em;
+    margin-bottom: 1em;
     letter-spacing: -.15px;
 
     p {
@@ -388,16 +378,12 @@ a:hover {
 
   .col-third a:hover {
 
-    u {
-      text-decoration: underline;
-    }
 
   }
 
 
   sup {
     font-size: .8em;
-    padding: .15em .25em;
     text-transform: uppercase;
     color: $text;
   }
@@ -416,9 +402,8 @@ a:hover {
   background: none;
   position: relative;
   width: 100%;
-  max-width: 1050px;
 
-  padding: 2.5em;
+  padding: 2em;
   margin: 0 auto;
   margin-top: 5vh;
 
@@ -439,17 +424,11 @@ a:hover {
     a {
       color: $text;
       text-decoration: none;
-      letter-spacing: -.25px;
       font-size: 1.125rem;
       padding: .25em;
       margin: .15em;
-      margin-left: 1em;
-    }
-
-
-    a:hover {
-      background: $text;
-      color: $bg;
+      min-width: 60px;
+      display: inline-block;
     }
 
     a.about {
@@ -831,6 +810,9 @@ p {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  letter-spacing: .05px;
+  line-height: 150%;
 
   a {
     text-decoration: none;

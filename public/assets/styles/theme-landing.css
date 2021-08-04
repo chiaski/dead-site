@@ -148,17 +148,6 @@ h4 {
       .header .header-wrapper .header-left a {
         font-size: 1.125em;
         font-weight: 400; }
-    .header .header-wrapper .header-right {
-      float: right;
-      display: flex;
-      align-content: flex-start;
-      flex-wrap: wrap; }
-      .header .header-wrapper .header-right a {
-        margin: 0;
-        padding: .25em;
-        font-size: 1.125em;
-        line-height: 100%;
-        display: inline-block; }
   .header a {
     color: #1f1f1f;
     height: auto; }
@@ -213,7 +202,6 @@ h4 {
     .info .work a::before, .invitation .work a::before {
       display: none; }
   .info p, .invitation p {
-    font-size: 1.15em;
     margin-bottom: 1em;
     max-width: 520px;
     line-height: 150%; }
@@ -230,8 +218,7 @@ h4 {
   .info a.more::before, .invitation a.more::before {
     display: none; }
   .info a:hover, .invitation a:hover {
-    background: #1f1f1f;
-    color: #f7f7f7;
+    opacity: 0.5;
     text-decoration: none; }
   @media only screen and (max-width: 1200px) and (min-width: 600px) {
     .info ._socials, .invitation ._socials {
@@ -260,6 +247,8 @@ h4 {
 .info {
   min-height: 85vh;
   width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
   padding: 1em;
   display: flex;
   justify-content: space-between; }
@@ -335,7 +324,7 @@ h4 {
   padding: 0 1.5em; }
   #work .box-inner {
     width: 100%;
-    max-width: 1000px;
+    max-width: 1100px;
     margin: 0 auto; }
   #work h1 {
     padding: 2.5em;
@@ -399,11 +388,13 @@ h4 {
       padding: 0;
       margin-right: .25em;
       text-transform: uppercase; }
-  #projects a:hover span.tag {
-    background: #1f1f1f;
-    color: #f7f7f7; }
-  #projects a:hover ._images {
-    filter: grayscale(0); }
+  #projects a:hover {
+    opacity: 1; }
+    #projects a:hover span.tag {
+      background: #1f1f1f;
+      color: #f7f7f7; }
+    #projects a:hover ._images {
+      filter: grayscale(0); }
   @media only screen and (min-width: 1200px) {
     #projects a {
       max-width: 48vw;
@@ -455,6 +446,7 @@ h4 {
   #rss a:empty:after {
     content: "Untitled"; }
   #rss a:hover {
+    opacity: 1;
     background: #1f1f1f;
     color: #f7f7f7; }
   @media only screen and (max-width: 768px) {

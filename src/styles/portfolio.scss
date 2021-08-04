@@ -549,9 +549,7 @@ iframe {
   }
 
   p {
-    font-size: 1rem;
     color: #435262;
-    line-height: 1.7rem;
     padding-top: .5em;
     padding-bottom: 1em;
     max-width: 95vw;
@@ -635,7 +633,7 @@ iframe {
     margin: auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
 
     h1,
     h2,
@@ -664,7 +662,7 @@ iframe {
 
     .col-half {
       margin: 0 .3em;
-      width: 49%;
+      width: 48%;
       padding: 1em;
 
       h3 {

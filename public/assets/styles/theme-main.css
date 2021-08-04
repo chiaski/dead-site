@@ -145,10 +145,10 @@ a {
   -ms-transition: all 0.3s cubic-bezier(0.17, 0.67, 0.83, 0.67);
   -o-transition: all 0.3s cubic-bezier(0.17, 0.67, 0.83, 0.67);
   transition: all 0.3s cubic-bezier(0.17, 0.67, 0.83, 0.67);
-  color: mediumblue; }
+  color: #666a6d; }
 
 a:hover {
-  color: mediumblue; }
+  opacity: 0.5; }
 
 .header {
   position: fixed;
@@ -175,13 +175,13 @@ a:hover {
     -ms-transition: all .3s linear;
     -o-transition: all .3s linear;
     transition: all .3s linear; }
-  .header a:hover {
-    background: #35383b;
-    color: #f7f7f7; }
   .header .header-right a {
     margin-left: .25em; }
   .header .header-right a:hover {
-    cursor: ne-resize; }
+    cursor: ne-resize;
+    color: #35383b;
+    background: none;
+    opacity: 0.5; }
   @media only screen and (max-width: 700px) {
     .header {
       height: 50px;
@@ -233,18 +233,14 @@ a:hover {
     padding: 1em; }
   #about .hello {
     max-width: 90vw;
-    font-size: 1.125rem;
     line-height: 150%;
     letter-spacing: -.1px;
-    text-indent: 60px; }
-  #about img {
-    max-width: 300px;
-    padding: 1em; }
-  #about h3 {
-    font-size: 1.5rem; }
+    text-indent: 60px;
+    padding: .5em; }
   #about .col-third.experience p {
     font-size: 1em;
-    line-height: 140%; }
+    line-height: 140%;
+    margin-bottom: 1em; }
   @media only screen and (max-width: 900px) {
     #about {
       background-position: bottom;
@@ -301,8 +297,8 @@ a:hover {
 
 #links {
   width: 100%;
-  max-width: 1200px;
-  margin: auto; }
+  display: flex;
+  justify-content: space-between; }
   #links .col-third {
     margin: 0 .5em;
     text-align: left;
@@ -320,7 +316,7 @@ a:hover {
     text-decoration: none;
     text-align: left;
     font-size: 1em;
-    margin-bottom: .5em;
+    margin-bottom: 1em;
     letter-spacing: -.15px; }
     #links .col-third a p {
       text-transform: none;
@@ -329,11 +325,8 @@ a:hover {
       padding: 0;
       margin: .25em 0 1em 0;
       color: #35383b; }
-  #links .col-third a:hover u {
-    text-decoration: underline; }
   #links sup {
     font-size: .8em;
-    padding: .15em .25em;
     text-transform: uppercase;
     color: #35383b; }
   #links .col-third a:hover sup {
@@ -344,8 +337,7 @@ a:hover {
   background: none;
   position: relative;
   width: 100%;
-  max-width: 1050px;
-  padding: 2.5em;
+  padding: 2em;
   margin: 0 auto;
   margin-top: 5vh;
   box-sizing: border-box;
@@ -360,14 +352,11 @@ a:hover {
     #footer ._foot a {
       color: #35383b;
       text-decoration: none;
-      letter-spacing: -.25px;
       font-size: 1.125rem;
       padding: .25em;
       margin: .15em;
-      margin-left: 1em; }
-    #footer ._foot a:hover {
-      background: #35383b;
-      color: #f7f7f7; }
+      min-width: 60px;
+      display: inline-block; }
     #footer ._foot a.about {
       padding-right: 1.5em;
       float: left;
@@ -606,10 +595,13 @@ details[open] summary ~ * {
 p {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  letter-spacing: .05px;
+  line-height: 150%; }
   p a {
     text-decoration: none;
-    color: mediumblue; }
+    color: #666a6d; }
 
 li {
   font-size: .9em;
