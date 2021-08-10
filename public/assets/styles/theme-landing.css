@@ -53,9 +53,13 @@
 
 @charset "UTF-8";
 body {
-  background: #f7f7f7;
   color: #1f1f1f;
   font-family: 'Neue Montreal'; }
+
+.container {
+  background: linear-gradient(180deg, #efaacc 0%, #f2d2a6 17%, #fffd9f 31%, #94e0b0 45%, #aae9ed 62%, #bfbde6 79%); }
+  .container * {
+    z-index: 1; }
 
 h1,
 h2,
@@ -64,6 +68,12 @@ h4,
 p,
 input {
   color: #1f1f1f; }
+
+hr {
+  width: 100%; }
+
+h3 {
+  font-size: 2em; }
 
 h4 {
   margin: .5em 0;
@@ -79,7 +89,7 @@ h4 {
   z-index: 999999;
   background: #f7f7f7;
   pointer-events: none;
-  animation: .75s ease-out 0.2s 1 pageload forwards; }
+  animation: 1.25s ease-out 0.2s 1 pageload forwards; }
   .loader .inner {
     position: absolute;
     top: 50%;
@@ -88,56 +98,27 @@ h4 {
   .loader h1 {
     font-size: 2.6em; }
 
-.container {
-  background: #f7f7f7; }
-
-.box {
-  padding: 5vw; }
-
 .contain p {
-  font-size: .9em;
   line-height: 140%;
   max-width: 460px;
   padding-bottom: 1em; }
 
-#naruto {
-  display: none;
-  mix-blend-mode: darken;
-  position: fixed;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: contain;
-  max-width: 420px;
-  background-position: bottom left;
-  pointer-events: none;
-  opacity: 0; }
-  @media only screen and (max-width: 1100px) {
-    #naruto {
-      opacity: 0.1; } }
-  @media only screen and (max-width: 760px) {
-    #naruto {
-      max-width: 200px; } }
-
 #overlay {
+  pointer-events: none;
   position: fixed;
-  bottom: 0;
+  top: 0;
   left: 0;
-  z-index: 999;
+  z-index: 0;
   width: 100%;
-  height: 90px;
-  background-color: #f7f7f7;
-  background: linear-gradient(0deg, #f7f7f7 0%, rgba(247, 249, 248, 0) 100%);
-  opacity: 0.8; }
+  height: 100vh;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #f7f7f7 25%, #f7f7f7 100%);
+  opacity: 1; }
 
 .header {
   width: 100%;
   height: 100px;
   margin: 0 auto;
-  background-color: #f7f7f7;
-  background: linear-gradient(180deg, #f7f7f7 0%, #f7f7f7 40%, rgba(247, 249, 248, 0) 100%); }
+  z-index: 9; }
   .header .header-wrapper {
     margin: 0 auto;
     width: 100%;
@@ -148,113 +129,78 @@ h4 {
       .header .header-wrapper .header-left a {
         font-size: 1.125em;
         font-weight: 400; }
-  .header a {
-    color: #1f1f1f;
-    height: auto; }
   @media only screen and (max-width: 900px) {
     .header {
       height: 100px;
-      padding: 2em; }
-      .header .header-wrapper {
-        flex-wrap: wrap;
-        align-content: flex-start; }
-        .header .header-wrapper .header-right {
-          margin: 0;
-          width: 100%;
-          max-width: 100vw;
-          height: auto;
-          font-size: .8em; }
-          .header .header-wrapper .header-right a {
-            display: inline-block;
-            width: auto;
-            padding: .25em;
-            margin: 0 .25em 0 0; } }
+      padding: 2em; } }
 
-.info, .invitation {
-  display: flex;
-  flex-direction: row; }
-  .info h2, .invitation h2 {
-    font-weight: normal; }
-  .info h4, .invitation h4 {
-    display: block;
-    width: 100%;
-    font-family: "Times Now";
-    font-size: 1.25em;
-    display: block;
-    margin: .25em; }
-  .info .work, .invitation .work {
-    margin-left: auto;
+.info,
+.invitation {
+  margin-top: auto;
+  margin-bottom: 0; }
+  .info ._work,
+  .invitation ._work {
+    margin: 0 auto;
     display: flex;
-    justify-content: space-between;
-    align-items: top;
-    align-content: flex-start;
-    flex-wrap: wrap;
-    vertical-align: top; }
-    .info .work ._work, .invitation .work ._work {
+    flex-wrap: nowrap;
+    flex-direction: row; }
+    .info ._work .__work,
+    .invitation ._work .__work {
       width: auto;
-      padding: .5em;
+      padding: .75em;
       margin: 0 1em;
+      margin-right: 2em;
       box-sizing: border-box; }
-    .info .work a, .invitation .work a {
-      padding: .25em;
-      margin: .25em .15em;
+    .info ._work h3,
+    .invitation ._work h3 {
+      font-size: 1.5em;
+      margin-top: -1em;
+      padding: .25em 0; }
+    .info ._work a,
+    .invitation ._work a {
+      font-size: 1.125em;
+      color: #1f1f1f;
+      padding: .25em 0;
       display: block; }
-    .info .work a::before, .invitation .work a::before {
+    .info ._work a::before,
+    .invitation ._work a::before {
       display: none; }
-  .info p, .invitation p {
-    margin-bottom: 1em;
-    max-width: 520px;
-    line-height: 150%; }
-  .info a, .invitation a {
-    color: #1f1f1f;
-    margin: 0;
-    padding: 0;
-    font-size: 1em;
-    text-decoration: none; }
-  .info a::before, .invitation a::before {
-    content: "↗";
-    font-size: .25em;
-    margin-right: 1em; }
-  .info a.more::before, .invitation a.more::before {
-    display: none; }
-  .info a:hover, .invitation a:hover {
-    opacity: 0.5;
-    text-decoration: none; }
-  @media only screen and (max-width: 1200px) and (min-width: 600px) {
-    .info ._socials, .invitation ._socials {
+  @media only screen and (max-width: 1300px) {
+    .info ._work,
+    .invitation ._work {
       display: none; } }
-  @media only screen and (max-width: 800px) {
-    .info, .invitation {
-      flex-wrap: wrap;
-      margin-top: 200px; }
-      .info p,
-      .info .work, .invitation p,
-      .invitation .work {
-        max-width: 100%;
-        margin: 0;
-        padding: 0;
-        margin-bottom: 1em; }
-        .info p ._work,
-        .info .work ._work, .invitation p ._work,
-        .invitation .work ._work {
-          padding: 0;
-          margin: 1em 0;
-          margin-right: 2m; } }
-  @media only screen and (max-width: 600px) {
-    .info, .invitation {
-      margin-top: 0; } }
 
 .info {
-  min-height: 85vh;
-  width: 100%;
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 1em;
+  margin-top: 2.5em;
   display: flex;
-  justify-content: space-between; }
-  .info div {
-    margin-top: auto;
-    margin-bottom: 0; }
+  flex-wrap: wrap;
+  height: auto;
+  width: 100%;
+  padding: 1em;
+  margin-right: 1em; }
+  .info ._words {
+    margin-right: 2.5em; }
+    .info ._words p {
+      margin-top: 0;
+      max-width: 380px;
+      font-size: 20px;
+      margin-bottom: 1em;
+      line-height: 150%; }
+      .info ._words p strong {
+        font-family: "Times Now";
+        font-weight: normal;
+        font-style: italic;
+        font-size: 1.125em; }
+    .info ._words p.-indent {
+      text-indent: 50px; }
+  @media only screen and (max-width: 1260px) {
+    .info ._words p {
+      max-width: 380px; } }
+  @media only screen and (max-width: 800px) {
+    .info ._words {
+      margin: 0 auto; }
+      .info ._words p {
+        max-width: 100%; } }
 
 .invitation {
   margin-top: 40px;
@@ -292,39 +238,22 @@ h4 {
       padding: 0; } }
 
 #intro {
+  min-height: 450px;
   width: 100%;
-  margin: 0 auto;
-  padding: 100px 1.5em 0 1.5em;
-  background-repeat: no-repeat;
-  background-position: top center; }
+  padding: 1.25em;
+  box-sizing: border-box; }
+  #intro p a {
+    font-family: "Times Now"; }
   #intro .box-inner {
-    margin: 0 auto;
+    margin-top: auto;
     width: 100%; }
-  #intro h1 {
-    padding: 2.5em;
-    font-family: "Times Now";
-    letter-spacing: -1.5px;
-    font-weight: 100;
-    font-size: 4vw; }
-  @media only screen and (max-width: 800px) {
-    #intro {
-      background-position: -200px -200px; } }
-  @media only screen and (max-width: 600px) {
-    #intro {
-      background-image: none; } }
-  @media only screen and (max-width: 768px) {
-    #intro h1 {
-      font-size: 2.6em;
-      margin-bottom: 1em;
-      padding: .5em;
-      width: 100%; } }
 
 #work {
   margin: 0 auto;
   padding: 0 1.5em; }
   #work .box-inner {
     width: 100%;
-    max-width: 1100px;
+    padding: .75em;
     margin: 0 auto; }
   #work h1 {
     padding: 2.5em;
@@ -340,7 +269,9 @@ h4 {
       width: 100%; } }
 
 #projects {
-  margin: 0 auto; }
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between; }
   #projects hr {
     pointer-events: none;
     display: inline-block;
@@ -368,23 +299,22 @@ h4 {
         object-fit: cover; }
     #projects a h2 {
       font-weight: 400;
-      letter-spacing: -.25px;
-      margin: .15em auto;
+      letter-spacing: -.5px;
+      margin: .25em 0;
       width: auto;
-      font-family: "Times Now";
-      font-style: italic;
-      font-size: 1.5em; }
+      font-size: 1.5rem;
+      font-family: "Times Now"; }
       #projects a h2 sup {
         vertical-align: middle;
         font-style: normal;
         font-size: .5em;
         font-family: 'Neue Montreal'; }
     #projects a p {
-      margin: .25em 0 .15em 0;
+      margin: .25em 0;
       max-width: 320px;
       font-size: .9em; }
     #projects a span.tag {
-      font-size: .7rem;
+      font-size: .75rem;
       padding: 0;
       margin-right: .25em;
       text-transform: uppercase; }
@@ -398,11 +328,19 @@ h4 {
   @media only screen and (min-width: 1200px) {
     #projects a {
       max-width: 48vw;
-      width: 48%; }
+      width: calc(32.5% - 8px); }
       #projects a ._images img {
         width: 100%;
         max-width: 100vw; } }
-  @media only screen and (max-width: 1000px) {
+  @media only screen and (max-width: 1200px) {
+    #projects hr {
+      display: none; }
+    #projects a {
+      width: 100%;
+      max-width: calc(50% - 1em);
+      padding: .5em;
+      margin: 0; } }
+  @media only screen and (max-width: 700px) {
     #projects hr {
       display: none; }
     #projects a {
@@ -421,28 +359,27 @@ h4 {
 
 #rss {
   scroll-margin-top: 200px;
-  max-width: 1100px;
   margin: 0 auto;
-  text-align: center; }
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
   #rss a {
     display: block;
-    padding: .8em 0;
+    padding: .75em 0;
     line-height: 110%;
-    border-bottom: 1px solid #1f1f1f;
     text-align: left;
     text-decoration: none;
     color: #1f1f1f;
     font-size: .9rem;
+    width: calc(32% - .5em);
+    border-bottom: 1px solid black;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden; }
-  #rss a:before {
-    content: "↗";
-    font-size: .8em;
-    float: left;
-    margin-right: .5em;
-    display: inline-block;
-    width: 15px; }
+  #rss h4 {
+    width: 100%;
+    margin: 1em 0; }
   #rss a:empty:after {
     content: "Untitled"; }
   #rss a:hover {
@@ -455,7 +392,7 @@ h4 {
       display: block;
       max-width: 100%;
       width: 100%;
-      margin: .5em 0; }
+      margin: 0; }
       #rss a sup {
         display: inline-block; }
     #rss a:before {
@@ -464,7 +401,6 @@ h4 {
 
 #experiments {
   scroll-margin-top: 200px;
-  max-width: 1100px;
   counter-reset: item;
   text-align: center;
   display: flex;
@@ -474,16 +410,16 @@ h4 {
     width: 45px;
     display: inline-block; }
   #experiments a {
-    width: 49%;
+    width: calc(32% - .5em);
     text-decoration: none;
     line-height: 120%;
     font-size: .9rem;
-    padding: .6em 0;
+    padding: .75em 0;
     font-weight: 300;
     display: block;
-    border-bottom: 1px solid #1f1f1f;
     color: #1f1f1f;
-    text-align: left; }
+    text-align: left;
+    border-bottom: 1px solid black; }
   #experiments a::before {
     display: inline-block;
     counter-increment: item;
@@ -492,7 +428,8 @@ h4 {
     width: 15px;
     margin-right: .5em; }
   #experiments a:hover {
-    background: #1f1f1f; }
+    background: #1f1f1f;
+    opacity: 1; }
   @media only screen and (max-width: 768px) {
     #experiments span.spacer {
       display: none; }
@@ -504,8 +441,7 @@ h4 {
       display: block;
       width: 100%;
       text-align: left;
-      padding: .5em 0;
-      margin: .5em 0; }
+      padding: .5em 0; }
     #experiments a::before {
       margin-right: .1em;
       height: 16px;
@@ -515,7 +451,8 @@ h4 {
 #newsletter {
   width: 100%;
   margin: 2em auto;
-  text-align: center; }
+  text-align: center;
+  z-index: 9; }
   #newsletter p {
     margin: 0 auto; }
   @media only screen and (max-width: 768px) {

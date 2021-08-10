@@ -145,7 +145,8 @@ a {
   -ms-transition: all 0.3s cubic-bezier(0.17, 0.67, 0.83, 0.67);
   -o-transition: all 0.3s cubic-bezier(0.17, 0.67, 0.83, 0.67);
   transition: all 0.3s cubic-bezier(0.17, 0.67, 0.83, 0.67);
-  color: #666a6d; }
+  color: #35383b;
+  text-decoration: none; }
 
 a:hover {
   opacity: 0.5; }
@@ -219,11 +220,6 @@ a:hover {
     display: none; } }
 
 #about {
-  background-color: #f7f7f7;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: right;
-  background-attachment: fixed;
   padding-top: 80px;
   cursor: help; }
   #about .box-inner {
@@ -231,11 +227,13 @@ a:hover {
     max-width: 90vw;
     margin: 0 auto;
     padding: 1em; }
+  #about p {
+    font-size: 1.125rem; }
   #about .hello {
     max-width: 90vw;
     line-height: 150%;
     letter-spacing: -.1px;
-    text-indent: 60px;
+    text-indent: 50px;
     padding: .5em; }
   #about .col-third.experience p {
     font-size: 1em;
@@ -386,7 +384,7 @@ a:hover {
 
 .footer-newsletter {
   height: 60px;
-  margin-bottom: 1.5em; }
+  margin-bottom: 1em; }
   .footer-newsletter input[type="text"] {
     display: inline-block;
     border: 0;
@@ -601,7 +599,7 @@ p {
   line-height: 150%; }
   p a {
     text-decoration: none;
-    color: #666a6d; }
+    color: #35383b; }
 
 li {
   font-size: .9em;
@@ -632,7 +630,7 @@ hr {
   background-repeat: repeat;
   background-size: 300%;
   animation: bg-animation 2s infinite;
-  opacity: 0.4;
+  opacity: 0.7;
   z-index: 9999999999; }
 
 @keyframes bg-animation {

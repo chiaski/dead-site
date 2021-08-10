@@ -13,9 +13,17 @@ $link: #1f1f1f;
 $link-hover: #1f1f1f;
 
 body {
-  background: $bg;
   color: $white;
   font-family: 'Neue Montreal';
+}
+
+.container {
+  background: linear-gradient(180deg, rgb(239, 170, 204) 0%, rgb(242, 210, 166) 17%, rgb(255, 253, 159) 31%, rgb(148, 224, 176) 45%, rgb(170, 233, 237) 62%, rgba(191, 189, 230, 1) 79%);
+
+  * {
+    z-index: 1;
+  }
+
 }
 
 h1,
@@ -27,6 +35,13 @@ input {
   color: $white;
 }
 
+hr {
+  width: 100%;
+}
+
+h3{
+  font-size: 2em;
+}
 
 h4 {
   margin: .5em 0;
@@ -44,7 +59,7 @@ h4 {
   z-index: 999999;
   background: $bg;
   pointer-events: none;
-  animation: .75s ease-out 0.2s 1 pageload forwards;
+  animation: 1.25s ease-out 0.2s 1 pageload forwards;
   // TO REMOVE
 
   .inner {
@@ -61,74 +76,36 @@ h4 {
 }
 
 
-// SIZING 
-
-.container {
-  background: $bg;
-}
-
-.box {
-  padding: 5vw;
-}
+// SIZING #
 
 .contain {
 
   p {
-    font-size: .9em;
     line-height: 140%;
     max-width: 460px;
     padding-bottom: 1em;
   }
 }
 
-// NARUTO
-
-#naruto {
-  display: none;
-  mix-blend-mode: darken;
-  position: fixed;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: contain;
-  max-width: 420px;
-  background-position: bottom left;
-  pointer-events: none;
-  opacity: 0;
-
-  @media only screen and (max-width: 1100px) {
-    opacity: 0.1;
-  }
-
-  @media only screen and (max-width: 760px) {
-    max-width: 200px;
-  }
-
-}
-
-
 // HEADER
 
 #overlay {
+  pointer-events: none;
   position: fixed;
-  bottom: 0;
+  top: 0;
   left: 0;
-  z-index: 999;
+  z-index: 0;
   width: 100%;
-  height: 90px;
-  background-color: $bg;
-  background: linear-gradient(0deg, $bg 0%, rgba(247, 249, 248, 0) 100%);
-  opacity: 0.8;
+  height: 100vh;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, $bg 25%, $bg 100%);
+  opacity: 1;
 }
 
 .header {
   width: 100%;
   height: 100px;
   margin: 0 auto;
-  background-color: $bg;
-  background: linear-gradient(180deg, $bg 0%, $bg 40%, rgba(247, 249, 248, 0) 100%);
+  z-index: 9;
 
   .header-wrapper {
     margin: 0 auto;
@@ -146,44 +123,12 @@ h4 {
       }
     }
 
-
-
   }
-
-  a {
-    color: $text;
-    height: auto;
-  }
-
 
   @media only screen and (max-width: 900px) {
 
     height: 100px;
     padding: 2em;
-
-    .header-wrapper {
-      flex-wrap: wrap;
-      align-content: flex-start;
-
-      .header-right {
-
-        margin: 0;
-        width: 100%;
-        max-width: 100vw;
-        height: auto;
-        font-size: .8em;
-
-        a {
-          display: inline-block;
-          width: auto;
-          padding: .25em;
-          margin: 0 .25em 0 0;
-        }
-
-      }
-
-    }
-
 
   }
 
@@ -193,50 +138,42 @@ h4 {
 // LANDING-ONLY
 
 
-.info, .invitation {
+.info,
+.invitation {
 
-  display: flex;
-  flex-direction: row;
-  
-  h2{
-    font-weight: normal;
-  }
+  margin-top: auto;
+  margin-bottom: 0;
 
-  h4 {
-    display: block;
-    width: 100%;
-    font-family: "Times Now";
-    font-size: 1.25em;
-    display: block;
-    margin: .25em;
-  }
-
-  .work {
-    margin-left: auto;
+  ._work {
+    margin: 0 auto;
     display: flex;
-    justify-content: space-between;
-    align-items: top;
-    align-content: flex-start;
-    flex-wrap: wrap;
-    vertical-align: top;
+    flex-wrap: nowrap;
+    flex-direction: row;
 
-
-    ._work {
+    .__work {
       width: auto;
-      padding:.5em;
+      padding: .75em;
       margin: 0 1em;
+      margin-right: 2em;
       box-sizing: border-box;
+
+    }
     
+    h3{
+      font-size: 1.5em;
+      margin-top: -1em;
+      padding: .25em 0;
     }
 
 
     a {
-      padding: .25em;
-      margin: .25em .15em;
+      font-size: 1.125em;
+      color: $link;
+      padding: .25em 0;
       display: block;
-      
+
     }
-    
+
 
     a::before {
       display: none;
@@ -245,151 +182,139 @@ h4 {
 
   }
 
-
-  p {
-    margin-bottom: 1em;
-    max-width: 520px;
-    line-height: 150%;
-  }
-
-  a {
-    color: $white;
-    margin: 0;
-    padding: 0;
-    font-size: 1em;
-    text-decoration: none;
-  }
-
-
-  a::before {
-    content: "↗";
-    font-size: .25em;
-    margin-right: 1em;
-  }
-
-  a.more::before {
-    display: none;
-  }
-
-  a:hover {
-    opacity: 0.5;
-    text-decoration: none;
-  }
-
-  @media only screen and (max-width: 1200px) and (min-width: 600px) {
-  
-    ._socials{
+  @media only screen and (max-width: 1300px) {
+    ._work{
       display: none;
     }
-
-  }
-  
-  @media only screen and (max-width: 800px) {
-
-    flex-wrap: wrap;
-      margin-top: 200px;
-    
-    
-    p,
-    .work {
-      max-width: 100%;
-      margin: 0;
-      padding: 0;
-      margin-bottom: 1em;
-
-      ._work {
-        padding: 0;
-        margin: 1em 0;
-        margin-right: 2m;
-      }
-
-    }
-
-  }
-  @media only screen and (max-width: 600px) {
-
-    margin-top: 0;
   }
 
 }
 
-.info{
-  min-height: 85vh;
-  width: 100%;
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 1em;
+.info {
+
+  margin-top: 2.5em;
   display: flex;
-  justify-content: space-between;
+flex-wrap: wrap;
   
-  div{
-    margin-top: auto;
-    margin-bottom: 0;
+  height: auto;
+  width: 100%;
+  padding: 1em;
+  margin-right: 1em;
+
+  ._words {
+
+    margin-right: 2.5em;
+
+    p {
+      margin-top: 0;
+      max-width: 380px;
+      font-size: 20px;
+      margin-bottom: 1em;
+      line-height: 150%;
+      
+      strong{
+        font-family: "Times Now";
+        font-weight: normal;
+        font-style: italic;
+        font-size: 1.125em;
+      }
+      
+    }
+    
+    p.-indent{
+      text-indent: 50px;
+    }
   }
+
+  
+  @media only screen and (max-width: 1260px) {
+    
+    
+    ._words{
+    p{
+      max-width: 380px;
+    }
+    }
+    
+  }
+    
+  @media only screen and (max-width: 800px) {
+    
+    
+    ._words{
+      margin: 0 auto;
+      
+    p{
+      max-width: 100%;
+    }
+    }
+  }
+  
+  
 }
 
 
-.invitation{
-  
+.invitation {
+
   margin-top: 40px;
   max-width: 1050px;
   display: flex;
   justify-content: space-between;
-  
-  h2{
+
+  h2 {
     margin: 0;
     padding: .5em;
   }
-  
-  p{
+
+  p {
     line-height: 160%;
     font-size: 1em;
     padding: .75em;
   }
-  
-  a{
+
+  a {
     text-decoration: underline;
   }
-  
-  a:hover{
+
+  a:hover {
     color: $bg;
   }
-  
-  a::before{
+
+  a::before {
     display: none;
   }
-  
-  .interests{
+
+  .interests {
     padding: 0 2em;
     max-width: 60%;
-    
-    li{
+
+    li {
       max-width: 90%;
     }
-    
+
   }
-  
-  ul{
+
+  ul {
     margin: 0;
   }
-  
+
   @media only screen and (max-width: 900px) {
-      
-    p{
+
+    p {
       margin: 1em 0;
     }
-    
-    .interests{
+
+    .interests {
       max-width: 100%;
       padding: 0;
     }
-    
-    h2{
+
+    h2 {
       margin: 1em 0;
       padding: 0;
     }
   }
-  
+
 }
 
 
@@ -397,43 +322,18 @@ h4 {
 
 #intro {
 
+  min-height: 450px;
   width: 100%;
-  margin: 0 auto;
-  padding: 100px 1.5em 0 1.5em;
-  background-repeat: no-repeat;
-  background-position: top center;
+  padding: 1.25em;
+  box-sizing: border-box;
 
-  .box-inner {
-    margin: 0 auto;
-    width: 100%;
-  }
-
-  h1 {
-    padding: 2.5em;
+  p a{
     font-family: "Times Now";
-    letter-spacing: -1.5px;
-    font-weight: 100;
-    font-size: 4vw;
   }
   
-  @media only screen and (max-width: 800px) {
-    background-position: -200px -200px;
-  }
-  
-  @media only screen and (max-width: 600px) {
-      background-image:none;
-  }
-
-  @media only screen and (max-width: 768px) {
-
-
-    h1 {
-      font-size: 2.6em;
-      margin-bottom: 1em;
-      padding: .5em;
-      width: 100%;
-    }
-
+  .box-inner {
+    margin-top: auto;
+    width: 100%;
   }
 
 }
@@ -447,7 +347,7 @@ h4 {
 
   .box-inner {
     width: 100%;
-    max-width: 1100px;
+    padding: .75em;
     margin: 0 auto;
   }
 
@@ -474,10 +374,11 @@ h4 {
 }
 
 
-
 #projects {
 
   margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
 
   hr {
     // acts as spacer
@@ -517,31 +418,30 @@ h4 {
 
     h2 {
       font-weight: 400;
-      letter-spacing: -.25px;
-      margin: .15em auto;
+      letter-spacing: -.5px;
+      margin: .25em 0;
       width: auto;
+      font-size: 1.5rem;
       font-family: "Times Now";
-      font-style: italic;
-      font-size: 1.5em;
-        
-      sup{
+
+      sup {
         vertical-align: middle;
         font-style: normal;
         font-size: .5em;
         font-family: 'Neue Montreal';
       }
-      
-      
+
+
     }
 
     p {
-      margin: .25em 0 .15em 0;
+      margin: .25em 0;
       max-width: 320px;
       font-size: .9em;
     }
 
     span.tag {
-      font-size: .7rem;
+      font-size: .75rem;
       padding: 0;
       margin-right: .25em;
       text-transform: uppercase;
@@ -550,7 +450,7 @@ h4 {
   }
 
   a:hover {
-      opacity: 1;
+    opacity: 1;
 
     span.tag {
       background: $text;
@@ -567,10 +467,9 @@ h4 {
 
   @media only screen and (min-width: 1200px) {
 
-
     a {
       max-width: 48vw;
-      width: 48%;
+      width: calc(32.5% - 8px);
 
       ._images {
         img {
@@ -584,7 +483,25 @@ h4 {
 
   }
 
-  @media only screen and (max-width: 1000px) {
+
+
+  @media only screen and (max-width: 1200px) {
+
+    hr {
+      display: none;
+    }
+
+    a {
+
+      width: 100%;
+      max-width: calc(50% - 1em);
+      padding: .5em;
+      margin: 0;
+
+    }
+  }
+
+  @media only screen and (max-width: 700px) {
 
     hr {
       display: none;
@@ -622,19 +539,22 @@ h4 {
 #rss {
 
   scroll-margin-top: 200px;
-  max-width: 1100px;
   margin: 0 auto;
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 
   a {
     display: block;
-    padding: .8em 0;
+    padding: .75em 0;
     line-height: 110%;
-    border-bottom: 1px solid $black;
     text-align: left;
     text-decoration: none;
     color: $black;
     font-size: .9rem;
+    width: calc(32% - .5em);
+    border-bottom: 1px solid black;
 
     // truncate
     text-overflow: ellipsis;
@@ -642,13 +562,9 @@ h4 {
     overflow: hidden;
   }
 
-  a:before {
-    content: "↗";
-    font-size: .8em;
-    float: left;
-    margin-right: .5em;
-    display: inline-block;
-    width: 15px;
+  h4 {
+    width: 100%;
+    margin: 1em 0;
   }
 
   // ADD TITLE TO EMPTY BLOG POSTS (WTF)
@@ -670,7 +586,7 @@ h4 {
       display: block;
       max-width: 100%;
       width: 100%;
-      margin: .5em 0;
+      margin: 0;
 
       sup {
         display: inline-block;
@@ -692,7 +608,6 @@ h4 {
 #experiments {
 
   scroll-margin-top: 200px;
-  max-width: 1100px;
   counter-reset: item;
   text-align: center;
   display: flex;
@@ -705,16 +620,16 @@ h4 {
   }
 
   a {
-    width: 49%;
+    width: calc(32% - .5em);
     text-decoration: none;
     line-height: 120%;
     font-size: .9rem;
-    padding: .6em 0;
+    padding: .75em 0;
     font-weight: 300;
     display: block;
-    border-bottom: 1px solid $black;
     color: $text;
     text-align: left;
+    border-bottom: 1px solid black;
   }
 
   a::before {
@@ -728,6 +643,7 @@ h4 {
 
   a:hover {
     background: $text;
+    opacity: 1;
   }
 
 
@@ -748,7 +664,6 @@ h4 {
       width: 100%;
       text-align: left;
       padding: .5em 0;
-      margin: .5em 0;
     }
 
     a::before {
@@ -767,6 +682,7 @@ h4 {
   width: 100%;
   margin: 2em auto;
   text-align: center;
+  z-index: 9;
 
   p {
     margin: 0 auto;
@@ -785,7 +701,9 @@ h4 {
   background-position: center;
 }
 
+
 /* ANIMATIONS */
+
 
 @keyframes pageload {
   0% {

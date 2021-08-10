@@ -100,6 +100,7 @@ a {
   -o-transition: all .3s cubic-bezier(.17, .67, .83, .67);
   transition: all .3s cubic-bezier(.17, .67, .83, .67);
   color: $link;
+  text-decoration: none;
 }
 
 a:hover {
@@ -205,11 +206,6 @@ a:hover {
 
 #about {
 
-  background-color: $bg;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: right;
-  background-attachment: fixed;
   padding-top: 80px;
   cursor: help;
 
@@ -219,12 +215,16 @@ a:hover {
     margin: 0 auto;
     padding: 1em;
   }
+  
+  p{
+    font-size: 1.125rem;
+  }
 
   .hello {
     max-width: 90vw;
     line-height: 150%;
     letter-spacing: -.1px;
-    text-indent: 60px;
+    text-indent: 50px;
     padding: .5em;
   }
   
@@ -482,7 +482,7 @@ a:hover {
 .footer-newsletter {
 
   height: 60px;
-  margin-bottom: 1.5em;
+  margin-bottom: 1em;
 
   input[type="text"] {
     display: inline-block;
@@ -858,7 +858,7 @@ hr {
   background-repeat: repeat;
   background-size: 300%;
   animation: bg-animation 2s infinite;
-  opacity: 0.4;
+  opacity: 0.7;
   z-index: 9999999999;
 }
 
