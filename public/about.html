@@ -27,6 +27,64 @@
   <link rel="stylesheet" href="./assets/styles/theme-main.css">
 
   <style type="text/css">
+    
+#about {
+
+  padding-top: 80px;
+
+  @media only screen and (max-width: 900px) {
+
+    background-position: bottom;
+    padding-top: 40px;
+
+    .hello {
+      font-size: 1rem;
+    }
+
+    .col-third,
+    .col-half {
+      margin: 0;
+    }
+
+
+  }
+
+}
+    
+    
+
+  .box-inner {
+    width: 1000px;
+    max-width: 90vw;
+    margin: 0 auto;
+    padding: 1em;
+  }
+  
+  p{
+    font-size: 1.25rem;
+  }
+
+  .hello {
+    max-width: 90vw;
+    line-height: 150%;
+    letter-spacing: -.1px;
+    text-indent: 50px;
+    padding: .5em;
+  }
+  
+  .col-third.experience p{
+
+      font-size: 1em;
+      line-height: 200%;
+      margin-bottom: 1em;
+
+  }
+    
+    .experience u{
+      font-family: "Times Now";
+      font-size: 1.25em;
+    }
+
     .person{
       padding: .5em;
       float: right;
@@ -38,13 +96,11 @@
     
     .person img{
       width: 100%;
-      max-width: 250px;
+      max-width: 400px;
+      padding: .5em;
     }
     
-    .person p{
-      margin: 0;
-      text-indent: 0;
-    }
+
   </style>
 
 </head>
@@ -75,7 +131,6 @@
       
         <div class="person">
         <img src="assets/images/me.png" alt="chia">
-          <p>Interests: Long movies where nothing really happens, maps, speculative design, worldbuilding, maintaining rank in Top 10 Car Seat Headrest listeners of the world.</p>
         </div>
         
         <div class="hello">
@@ -141,6 +196,11 @@
 
           <div class="col-third experience">
             <h3>Experience</h3>
+            <sup>NOW&mdash;</sup>
+            <a href="spotify.com" target="_blank"><u>Spotify</u> 
+              <p>Design systems </p>
+            </a>
+            
             <sup>NOW&mdash;</sup>
             <a href="https://developh.org" target="_blank"><u>Developh</u> 
               <p>Nurturing better technologists in Southeast Asia</p>

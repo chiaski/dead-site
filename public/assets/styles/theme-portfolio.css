@@ -64,6 +64,8 @@ iframe {
     margin: 0 auto; }
   .image-container iframe {
     margin: 0 auto; }
+  .image-container img.image-stretch {
+    width: 100%; }
   .image-container img.image-part {
     max-width: 70%;
     border-left: 2.5em solid transparent;

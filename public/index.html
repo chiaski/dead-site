@@ -158,28 +158,16 @@ VERSION 1.4
         <h3>Some Work</h3>
 
         <div id="projects" class="grid">
+          
 
           <a href="work/ibotoph.html">
-
-            <div class="_images">
-              <img src="assets/portfolio/landing/ibotoph-2.jpg">
-            </div>
-
             <h2>Iboto.ph</h2>
             <p>Designing a voter education campaign and platform for the Philippine masses, reaching millions.</p>
             <span class="tag">Campaign</span>
             <span class="tag">Web</span>
           </a>
-
-          <hr>
-          <hr>
-
-
+          
           <a href="work/developh.html">
-
-            <div class="_images">
-              <img src="assets/portfolio/landing/developh.jpg">
-            </div>
             <h2>Developh</h2>
             <p>Nurturing community for over 150,000 young creators & technologists in Southeast Asia since 2016.</p>
             <span class="tag">Community</span>
@@ -188,24 +176,24 @@ VERSION 1.4
           </a>
 
 
-          <a>
-
-            <div class="_images">
-              <img src="assets/portfolio/landing/kumu.jpg">
-            </div>
-            <h2>Kumu <sup>2021</sup></h2>
+          <a class="wip">
+            <h2>Kumu <sup>(WIP)</sup></h2>
             <p>Building out the Filipino creator economy through livestreaming, gaming, and metaverse-building.</p>
             <span class="tag">Mobile</span>
             <span class="tag">Product</span>
-            <span class="tag">Design Systems</span>
+          </a>
+          
+          <a class="wip"> 
+            <h2>Spotify <sup>(WIP)</sup></h2>
+            <p>Contributing to Spotify's Encore design system for beautiful, scalable platform parity.</p>
+            <span class="tag">Web</span>
+            <span class="tag">Deisgn Systems</span>
           </a>
 
           
-          <a href="work/lastfm.html">
 
-            <div class="_images">
-              <img src="assets/portfolio/landing/lastfm-2.jpg">
-            </div>
+          
+          <a href="work/lastfm.html">
             <h2>Last.fm Mobile</h2>
             <p>Playing around with an old favorite music service that empowers streaming with data.</p>
             <span class="tag">Mobile</span>
@@ -213,10 +201,6 @@ VERSION 1.4
 
 
           <a href="https://chias.blog" target="_blank" rel="external">
-
-            <div class="_images">
-              <img src="assets/portfolio/landing/blog.jpg">
-            </div>
             <h2>Chias.blog</h2>
             <p>My five-year-old blog where I often share non-technical thoughts and be a pretend music journalist. Publishing every week or so.</p>
             <span class="tag">Writing</span>
@@ -224,12 +208,6 @@ VERSION 1.4
           </a>
 
           <a href="https://chiaski.github.io/if" target="_blank" rel="external">
-
-
-            <div class="_images">
-              <img src="assets/portfolio/landing/if.jpg">
-            </div>
-
             <h2>Interactive Fiction</h2>
             <p>Vignettes and fictive pieces.</p>
 
@@ -240,10 +218,6 @@ VERSION 1.4
 
 
           <a href="work/design.html">
-
-            <div class="_images">
-              <img src="assets/portfolio/landing/visuals.jpg">
-            </div>
             <h2>Visuals</h2>
             <p>Curated collection of graphic design work.</p>
             <span class="tag">Graphic Design</span>
@@ -251,10 +225,6 @@ VERSION 1.4
           </a>
 
           <a href="https://technology.ph" target="_blank">
-
-            <div class="_images">
-              <img src="assets/portfolio/landing/technologyph.jpg">
-            </div>
             <h2>Technology.ph</h2>
             <p>I write and publish a newsletter about Philippine innovation, startups, and tech.</p>
             <span class="tag">Writing</span>
@@ -263,10 +233,6 @@ VERSION 1.4
 
 
           <a href="punishing">
-
-            <div class="_images">
-              <img src="assets/portfolio/landing/punishing.jpg">
-            </div>
             <h2>The Punishing</h2>
             <p>The shape of the web bends, deepens, and constricts itself to destroy the most vulnerable. </p>
             <span class="tag">Writing</span>
@@ -275,10 +241,6 @@ VERSION 1.4
 
 
           <a href="http://hotemogf.com" target="_blank">
-
-            <div class="_images">
-              <img src="assets/portfolio/landing/stream.jpg">
-            </div>
             <h2>hot emo gf</h2>
             <p>Streaming design, games, and development on Twitch. (That's Sufjan Stevens.)</p>
             <span class="tag">pls follow me</span>
@@ -298,6 +260,7 @@ VERSION 1.4
 
         </div>
 
+        <hr>
         <hr>
         <hr>
 
@@ -350,7 +313,7 @@ VERSION 1.4
             <a href="https://startu.ph" rel="noreferrer" target="_blank">Investing in Filipino students.</a>
 
 
-            <a href="https://khaenriah.com" rel="noreferrer" target="_blank">Genshin Impact lore project, Khaenri'ah.</a>
+            <a href="https://khaenriah.com" rel="noreferrer" target="_blank">Khaenri'ah Lore Project.</a>
 
 
             <a href="https://chias.blog/2021/in-defense-of-disorder-on-career-creativity-and-professionalism/" rel="noreferrer" target="_blank">In defense of disorder.</a>
@@ -466,6 +429,8 @@ VERSION 1.4
 
 
   </div>
+    
+    
   <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
   <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
@@ -500,29 +465,6 @@ VERSION 1.4
 
 
     });
-    
-// naur this is not mine
-$(function () {
-  var n = {
-    x: -1,
-    y: -1
-  };
-  $(document).mousemove(function (i) {
-    n.x = i.pageX, n.y = i.pageY
-  });
-  var i = function () {
-    return "hsla(" + n.y / $(window).height() * 360 + ", 70%, 50%, 1)"
-  };
-  $("#experiments a").hover(function () {
-    var n = i();
-    $(this).css("background-color", n)
-  }, function () {
-   $(this).css("background-color", "")
-  })
-  
-});
-
-    
   </script>
 
 
