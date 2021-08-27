@@ -14,25 +14,24 @@ h3 {
   margin: 0 auto; }
 
 h1 {
-  padding-bottom: 25px;
-  font-size: 2em;
-  letter-spacing: -1px;
-  font-family: 'Times Now', serif; }
+  margin-bottom: 25px;
+  font-size: 2.5em;
+  font-family: freight-display-pro, serif; }
 
 h2 {
-  font-weight: 100;
+  font-size: 1em;
   margin: 0 auto;
   margin-top: 1.5em;
   padding: .5em;
-  font-size: .9em;
-  line-height: 110%; }
+  line-height: 120%; }
 
 h3 {
   font-size: 2em;
   text-align: center;
+  line-height: 100%;
   letter-spacing: -.5px;
-  font-family: 'Times Now', serif;
-  max-width: 450px;
+  font-family: freight-display-pro, serif;
+  max-width: 380px;
   margin: .5em auto; }
 
 img {
@@ -330,7 +329,7 @@ iframe {
       font-size: 2.5em;
       font-weight: 300;
       letter-spacing: -1px;
-      font-family: 'Times Now', serif; }
+      font-family: freight-display-pro, serif; }
   @media only screen and (max-width: 900px) {
     .portfolio-travel .travel-left,
     .portfolio-travel .travel-right {
@@ -362,8 +361,11 @@ iframe {
     opacity: 1; }
   .box-inner p {
     color: #435262;
-    padding-top: .5em;
-    padding-bottom: 1em;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: .25px;
+    padding: .5em 0 1.5em 0;
+    margin-top: 1em;
     max-width: 95vw;
     width: 700px;
     margin: auto; }
@@ -388,12 +390,9 @@ iframe {
     margin-bottom: 1em;
     color: #35383b; }
   .box-inner blockquote.testimonial {
-    display: inline-block;
+    display: block;
     width: 95%;
-    max-width: 350px;
-    font-size: 1.75em;
     line-height: 1.25em;
-    float: right;
     padding: .5em;
     margin: 0;
     border: 0;
@@ -460,7 +459,6 @@ iframe {
     margin: 0 auto;
     width: 550px;
     max-width: 95vw;
-    font-family: 'Bau Pro', monospace;
     font-weight: 300;
     font-size: 1.25em;
     line-height: 120%;
@@ -660,7 +658,11 @@ iframe {
   justify-content: center; }
   .summary-container p.summary {
     width: 100%;
-    max-width: 100%; }
+    max-width: 100%;
+    font-family: "freight-display-pro";
+    letter-spacing: -.25px;
+    font-size: 2.6em;
+    line-height: 100%; }
     .summary-container p.summary em {
       font-size: 1.2em; }
     .summary-container p.summary a:hover {
@@ -671,13 +673,12 @@ iframe {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    font-size: 1em; }
+    font-size: 1.25em; }
   .summary-container .summary-add {
     width: 30%;
     margin-bottom: 1.5em;
     line-height: 1.4em; }
     .summary-container .summary-add strong {
-      font-family: "Bau Pro";
       text-transform: uppercase;
       font-weight: 100;
       letter-spacing: 2px;
@@ -731,7 +732,6 @@ iframe {
       margin: 0;
       display: inline-block;
       margin-bottom: .5em;
-      font-family: 'Bau Pro', monospace;
       font-weight: normal; }
     .container-persona .persona h4 {
       font-weight: 800;
@@ -773,12 +773,12 @@ iframe {
 
 /* ALT COLOR */
 .alt {
-  color: #f7f7f7; }
+  color: #fcfbfa; }
   .alt .box {
     background: #35383b;
-    color: #f7f7f7; }
+    color: #fcfbfa; }
   .alt a {
-    color: #f7f7f7; }
+    color: #fcfbfa; }
   .alt h2 {
     color: #f0f0f0; }
   .alt #portfolio p {

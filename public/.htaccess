@@ -1,12 +1,5 @@
-
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.html [NC,L]
 
-Redirect 302 /portal https://develo.ph/portal
-Redirect 302 /deck https://developh.org/deck.pdf
-Redirect 302 /deckinnovation https://developh.org/deckInnovation.pdf
-Redirect 302 /ACT https://developh.org/act
-Redirect 302 /core https://www.notion.so/developh/Core-Recruiting-5438c631e4a14248a2b34cb0afabd745
-Redirect 302 /CORE https://www.notion.so/developh/Core-Recruiting-5438c631e4a14248a2b34cb0afabd745
-Redirect 302 /discord https://discord.gg/K756ZXT
+Redirect 302 /resume https://chia.design/resume.pdf

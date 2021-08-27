@@ -1,14 +1,8 @@
+@import url(https://use.typekit.net/gtc2hmc.css);
 /*
 
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
 */
-@font-face {
-  font-family: 'Neue Montreal';
-  src: url(../fonts/NeueMontreal-Bold.woff2) format("woff2"), url(../fonts/NeueMontreal-Bold.woff) format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap; }
-
 @font-face {
   font-family: 'Neue Montreal';
   src: url(../fonts/NeueMontreal-Regular.woff2) format("woff2"), url(../fonts/NeueMontreal-Regular.woff) format("woff");
@@ -21,20 +15,6 @@
   src: url(../fonts/NeueMontreal-Medium.woff2) format("woff2"), url(../fonts/NeueMontreal-Medium.woff) format("woff");
   font-weight: 500;
   font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Times Now';
-  src: url("https://chia.design/assets/fonts/TimesNow-SemiLight.woff2") format("woff2"), url("https://chia.design/assets/fonts/TimesNow-SemiLight.woff") format("woff");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Times Now';
-  src: url("https://chia.design/assets/fonts/TimesNow-SemiLightItalic.woff2") format("woff2"), url("https://chia.design/assets/fonts/TimesNow-SemiLightItalic.woff") format("woff");
-  font-weight: 300;
-  font-style: italic;
   font-display: swap; }
 
 @charset "UTF-8";
@@ -67,39 +47,10 @@ h4 {
   text-align: left;
   display: block; }
 
-.loader {
-  position: fixed;
-  left: 0px;
-  top: 0px;
-  width: 100vw;
-  height: 100vh;
-  z-index: 999999;
-  background: #f7f7f7;
-  pointer-events: none;
-  animation: 1.25s ease-out 0.2s 1 pageload forwards; }
-  .loader .inner {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); }
-  .loader h1 {
-    font-size: 2.6em; }
-
 .contain p {
   line-height: 140%;
   max-width: 460px;
   padding-bottom: 1em; }
-
-#overlay {
-  pointer-events: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 0;
-  width: 100%;
-  height: 100vh;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #f7f7f7 25%, #f7f7f7 100%);
-  opacity: 1; }
 
 .header {
   width: 100%;
@@ -170,7 +121,7 @@ h4 {
       margin-top: 0;
       max-width: 350px;
       margin-bottom: 1em;
-      font-size: 20px;
+      font-size: 18px;
       line-height: 150%; }
       .info ._words p strong {
         font-family: "Times Now";
@@ -212,7 +163,7 @@ h4 {
   .invitation a {
     text-decoration: underline; }
   .invitation a:hover {
-    color: #f7f7f7; }
+    color: #fcfbfa; }
   .invitation a::before {
     display: none; }
   .invitation .interests {
@@ -233,12 +184,14 @@ h4 {
       padding: 0; } }
 
 #intro {
-  min-height: 450px;
+  min-height: 100vh;
   width: 100%;
   margin-top: 1em;
   padding: 1.25em;
   box-sizing: border-box; }
   #intro .box-inner {
+    margin-bottom: 0;
+    margin-top: auto;
     width: 100%; }
 
 #work {
@@ -288,7 +241,7 @@ h4 {
       max-width: 48vw;
       min-height: 100px;
       overflow: hidden;
-      background: #f7f7f7; }
+      background: #fcfbfa; }
       #projects a ._images img {
         width: 100%;
         height: auto;
@@ -300,6 +253,7 @@ h4 {
       margin: .25em 0;
       width: auto;
       font-size: 1.75rem;
+      font-style: italic;
       font-family: "Times Now"; }
       #projects a h2 sup {
         vertical-align: middle;
@@ -320,7 +274,7 @@ h4 {
     opacity: 1; }
     #projects a:hover span.tag {
       background: #1f1f1f;
-      color: #f7f7f7; }
+      color: #fcfbfa; }
     #projects a:hover ._images {
       filter: grayscale(0); }
   @media only screen and (max-width: 1200px) {
@@ -452,22 +406,12 @@ h4 {
   z-index: 9; }
   #newsletter p {
     margin: 0 auto; }
-  @media only screen and (max-width: 768px) {
-    #newsletter {
-      padding-bottom: 250px; } }
+  #newsletter form {
+    padding: 1em 0; }
 
 .cover {
   height: 290px;
   width: 100%;
   background-repeat: no-repeat;
   background-position: center; }
-
-/* ANIMATIONS */
-@keyframes pageload {
-  0% {
-    opacity: 1; }
-  99% {
-    opacity: 0; }
-  100% {
-    opacity: 0; } }
 

@@ -1,14 +1,8 @@
+@import url(https://use.typekit.net/gtc2hmc.css);
 /*
 
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
 */
-@font-face {
-  font-family: 'Neue Montreal';
-  src: url(../fonts/NeueMontreal-Bold.woff2) format("woff2"), url(../fonts/NeueMontreal-Bold.woff) format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap; }
-
 @font-face {
   font-family: 'Neue Montreal';
   src: url(../fonts/NeueMontreal-Regular.woff2) format("woff2"), url(../fonts/NeueMontreal-Regular.woff) format("woff");
@@ -21,20 +15,6 @@
   src: url(../fonts/NeueMontreal-Medium.woff2) format("woff2"), url(../fonts/NeueMontreal-Medium.woff) format("woff");
   font-weight: 500;
   font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Times Now';
-  src: url("https://chia.design/assets/fonts/TimesNow-SemiLight.woff2") format("woff2"), url("https://chia.design/assets/fonts/TimesNow-SemiLight.woff") format("woff");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Times Now';
-  src: url("https://chia.design/assets/fonts/TimesNow-SemiLightItalic.woff2") format("woff2"), url("https://chia.design/assets/fonts/TimesNow-SemiLightItalic.woff") format("woff");
-  font-weight: 300;
-  font-style: italic;
   font-display: swap; }
 
 html {
@@ -60,7 +40,7 @@ h1, h2, h3, h4, h5 {
 /* MAIN STRUCTURAL ELEMENTS */
 body {
   cursor: default;
-  background: #f7f7f7;
+  background: #fcfbfa;
   color: #35383b;
   text-rendering: optimizeLegibility;
   font-display: swap;
@@ -70,23 +50,29 @@ body {
 
 ::-moz-selection {
   /* Code for Firefox */
-  color: #f7f7f7;
+  color: #fcfbfa;
   background: #35383b; }
 
 ::selection {
-  color: #f7f7f7;
+  color: #fcfbfa;
   background: #35383b; }
 
 .container {
   width: 100%;
   height: auto;
+  padding: 0;
   margin: 0;
   display: flex;
   flex-wrap: wrap;
   place-items: center; }
 
+.container * {
+  z-index: 1;
+  scroll-margin-top: 50px;
+  scroll-padding-top: 50px; }
+
 .container.alt {
-  color: #f7f7f7; }
+  color: #fcfbfa; }
 
 .box {
   display: flex;
@@ -101,29 +87,35 @@ body {
 
 h1,
 h2,
-h3 {
-  width: 100%; }
+h3,
+h4 {
+  width: 100%;
+  font-weight: 300; }
 
 h1 {
   text-align: center;
   font-size: 1.5em;
   line-height: 90%;
   margin: .5em auto;
-  font-family: 'Times Now', serif; }
+  font-family: 'freight-display-pro', serif; }
 
 h3 {
-  font-family: 'Times Now', serif;
+  font-family: 'freight-display-pro', serif;
   font-size: 1.5em;
   letter-spacing: -.25px;
   margin: 0;
   padding: .5em 0; }
 
-h1,
-h3 {
-  font-weight: 300; }
-
-h4 {
-  font-weight: 300; }
+.loader {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999999;
+  background: #fcfbfa;
+  pointer-events: none;
+  animation: 1.25s ease-out 0.2s 1 pageload forwards; }
 
 a {
   -webkit-transition: all 0.3s cubic-bezier(0.17, 0.67, 0.83, 0.67);
@@ -136,6 +128,17 @@ a {
 
 a:hover {
   opacity: 0.5; }
+
+#overlay {
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #fcfbfa 25%, #fcfbfa 100%);
+  opacity: 1; }
 
 .header {
   position: fixed;
@@ -225,57 +228,33 @@ a:hover {
         .why ol li {
           margin-left: -2em; } }
 
-#links {
-  width: 100%;
-  display: flex;
-  justify-content: space-between; }
-  #links .col-third {
-    margin: 0 .5em;
-    text-align: left;
-    padding-bottom: 1em; }
-  #links .col-third h3 {
-    font-family: "Times Now", serif;
-    font-size: 1.5em;
-    letter-spacing: -.5px;
-    margin-bottom: .5em; }
-  #links u {
-    line-height: 1.25em;
-    text-decoration: none; }
-  #links .col-third a {
-    display: block;
-    text-decoration: none;
-    text-align: left;
-    font-size: 1em;
-    margin-bottom: 1em;
-    letter-spacing: -.15px; }
-    #links .col-third a p {
-      text-transform: none;
-      line-height: 110%;
-      max-width: 80%;
-      padding: 0;
-      margin: .25em 0 1em 0;
-      color: #35383b; }
-  #links sup {
-    font-size: .8em;
-    text-transform: uppercase;
-    color: #35383b; }
-  #links .col-third a:hover sup {
-    background: #35383b;
-    color: #f7f7f7; }
-
 #footer {
   background: none;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
   width: 100%;
+  height: 150px;
+  z-index: 5;
   padding: 2em;
   margin: 0 auto;
-  margin-top: 5vh;
   box-sizing: border-box;
   text-align: center;
-  display: block; }
+  display: flex;
+  flex-wrap: wrap;
+  vertical-align: bottom; }
+  #footer ._foot-dec {
+    background: linear-gradient(180deg, #fcfbfa 0%, rgba(252, 251, 250, 0) 100%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0; }
   #footer ._foot {
-    padding-bottom: 5vh;
+    width: 100%;
     margin: 0 auto;
+    margin-top: auto;
+    margin-bottom: 0;
     text-align: right; }
     #footer ._foot p {
       text-align: center; }
@@ -305,10 +284,8 @@ a:hover {
     margin: .5em;
     width: 31%; }
   @media only screen and (max-width: 800px) {
-    .col {
-      justify-content: flex-start; }
-      .col .col-third {
-        width: 47%; } }
+    .col .col-third {
+      width: 47%; } }
   @media only screen and (max-width: 560px) {
     .col .col-third {
       width: 100%;
@@ -582,4 +559,12 @@ hr {
     transform: translate(6%, 5%); }
   100% {
     transform: translate(5%, 0); } }
+
+@keyframes pageload {
+  0% {
+    opacity: 1; }
+  99% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
 

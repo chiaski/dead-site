@@ -27,80 +27,7 @@
   <link rel="stylesheet" href="./assets/styles/theme-main.css">
 
   <style type="text/css">
-    
-#about {
-
-  padding-top: 80px;
-
-  @media only screen and (max-width: 900px) {
-
-    background-position: bottom;
-    padding-top: 40px;
-
-    .hello {
-      font-size: 1rem;
-    }
-
-    .col-third,
-    .col-half {
-      margin: 0;
-    }
-
-
-  }
-
-}
-    
-    
-
-  .box-inner {
-    width: 1000px;
-    max-width: 90vw;
-    margin: 0 auto;
-    padding: 1em;
-  }
-  
-  p{
-    font-size: 1.25rem;
-  }
-
-  .hello {
-    max-width: 90vw;
-    line-height: 150%;
-    letter-spacing: -.1px;
-    text-indent: 50px;
-    padding: .5em;
-  }
-  
-  .col-third.experience p{
-
-      font-size: 1em;
-      line-height: 200%;
-      margin-bottom: 1em;
-
-  }
-    
-    .experience u{
-      font-family: "Times Now";
-      font-size: 1.25em;
-    }
-
-    .person{
-      padding: .5em;
-      float: right;
-      filter: grayscale(100%);
-      border-left: 1px solid #35383b;
-      margin: 1em 0 1em 1em;
-      max-width: 300px;
-    }
-    
-    .person img{
-      width: 100%;
-      max-width: 400px;
-      padding: .5em;
-    }
-    
-
+    #about{padding-top:80px;}.col-half,.col-third{margin:0}#about .col-third.experience a p{font-size:1em;margin-bottom:2em}p{font-size:1.25rem;line-height:150%}p.big{font-family:freight-display-pro;line-height:110%;font-size:2.5em;letter-spacing:-.5px;margin:.5em 0}.hello{margin:0 auto;max-width:90vw;text-indent:50px;padding:.5em}.person{margin-top:1em;padding:.5em 1em;float:right;max-width:400px}.person img{width:100%;padding:.5em}#links{width:100%;max-width:90vw;display:flex;flex-wrap:wrap;justify-content:space-between}#links .col-third{margin:0 .5em;text-align:left;padding-bottom:1em}#links .col-third a{display:block;text-decoration:none;text-align:left;font-size:1em;margin-bottom:1em}#links .col-third a p{text-transform:none;line-height:110%;max-width:80%;margin:.25em 0 1em 0}#links .col-third a u{line-height:1.5em;text-decoration:none}#links p{font-size:1em}@media only screen and (max-width:900px){#links .col-third{width:calc(50% - 2em)}}.container{background:linear-gradient(180deg,#efaacc 0,#f2d2a6 17%,#fffd9f 31%,#94e0b0 45%,#aae9ed 62%,#bfbde6 79%)}
   </style>
 
 </head>
@@ -112,13 +39,17 @@
   <div class="cursor"></div>
 
   <div class="container">
+    
+    <div id="overlay"></div>
 
     <div class="header" id="navigation">
       <div class="header-left">
         <a href="index.html">About Chia</a>
       </div>
       <div class="header-right">
-        <a href="index.html">Index/Work</a>
+        <a href="index.html">Index</a>
+        <a href="index.html#projects">Work</a>
+        <a href="index.html#rss">Writing</a>
         <a href="index.html#experiments">Experiments</a>
         <a href="resume">Résumé</a>
       </div>
@@ -130,33 +61,29 @@
         
       
         <div class="person">
-        <img src="assets/images/me.png" alt="chia">
+        <img src="assets/images/chia.jpg" alt="chia">
         </div>
         
         <div class="hello">
-        
           
+          <p class="big">I'm Chia. I'm a Computing & the Arts senior at Yale,  from Manila. I consider myself a creative technologist building <em>radical systems</em> for creators and communities.</p>
           
-          <p>Hello. I'm Chia, currently a Computing & the Arts senior at Yale from Manila. I consider myself a creative technologist building radical systems for creators and communities.</p>
-          
-          <p>With <a class="btn" href="https://developh.org" target="_blank">Developh</a> I work to disrupt the tech pipeline in Southeast Asia, nurturing over 150,000+ technologists and creatives since 2016.  For work, I've recently worked on web design systems at Spotify and designed at <a href="https://kumu.ph">Kumu</a> to create authentic spaces for Filipino connection. In my free time, I manage Genshin Impact's largest lore community, the <a href="https://khaenriah.com">Khaenri'ah Lore Project</a>. In college, I'm President of <a href="https://uxsociety.org" target="_blank">User Experience Society Yale</a> and craft tools & research with the <a href="https://ccam.yale.edu">Center for Collaborative Arts & Media</a>. As of senior fall, I'm working on a project archiving Philippine design histories.
-            
-          <a href="https://xd.adobe.com/ideas/perspectives/social-impact/design-circle-scholarship-2020-winners/" target="_blank">Adobe</a>, the <a href="https://processingfoundation.org/fellowships" target="_blank">Processing Foundation</a>, <a href="https://uxpl.us/" target="_blank">UX+</a>, and <a href="https://anitab.org">AnitaB.org</a> have recognized me for my work.
-          </p>
-
-          <p>My experiences range from building & designing for collective action at the Yale Women's Center, Manila Pride March in high school, radio stations, <a href="https://chi.itch.io" target="_blank">indie games</a>, to <a href="https://rappler.com">newsrooms</a>. I write at <a href="https://chias.blog">chias.blog</a> and <a href="https://technology.ph">Technology.ph on Southeast Asian tech.</a>
-          On education, I teach with Developh regularly holding workshops and talks and have also spoken to arenas of 20,000. (I was the 2018 AnitaB.org Student of Vision, speaking on the GHC keynote stage.) Back when things were physical, I spoke across three continents in a year!</p>
-
-          
-          <p>Currently engrossed in building tools & spaces for creators, worldbuilding, investigating systems, researching internet histories, writing 25,000+ words a week for 2021, unlocking the full potential of the browser, exploring speculative design and design fiction. <a href="https://chias.blog/2021/2021-readings/">My current reading list can be found on my blog.</a></p>
+          <p>Currently engrossed in building tools & spaces for creators, worldbuilding, investigating systems and our relationships with tools, researching internet histories, writing 25,000+ words a week for 2021, wishing to unlock the full potential of the browser, and exploring speculative design. <a href="https://chias.blog/2021/2021-readings/">My current reading list can be found on my blog. ↗</a></p>
 
         </div>
 
 
-        <div class="col" id="links">
+        <div id="links">
 
           <div class="col-third">
 
+            <h3>Education</h3>
+            <p>Yale University<br>
+            Expected 05.2022<br>
+            B.A. Computing and the Arts
+            </p>
+            
+            
             <h3>Get in Touch</h3>
             <a href="mailto:chiamisola@gmail.com">Email</a>
 
@@ -195,10 +122,10 @@
           </div>
 
           <div class="col-third experience">
-            <h3>Experience</h3>
+            <h3>Work</h3>
             <sup>NOW&mdash;</sup>
             <a href="spotify.com" target="_blank"><u>Spotify</u> 
-              <p>Design systems </p>
+              <p>Design systems</p>
             </a>
             
             <sup>NOW&mdash;</sup>
@@ -208,12 +135,12 @@
 
             <sup>NOW&mdash;</sup>
             <a href="https://uxsociety.org" target="_blank"><u>User Experience Society</u>
-              <p>Nurturing human-centric design leaders at Yale</p>
+              <p>Design education at Yale</p>
             </a>
 
             <sup>NOW&mdash;</sup>
             <a href="https://kumu.ph" target="_blank"><u>Kumu</u>
-              <p>Communities to unlock the potential of the Philippines</p>
+              <p>Filipino livestreaming</p>
             </a>
 
             <sup>Summer & Fall 20</sup>
@@ -223,12 +150,12 @@
 
             <sup>Fall 20</sup>
             <a href="https://worksofhe.art" target="_blank"><u>Works of Heart</u> 
-              <p>Designing and writing at a Philippine-based social impact design studio</p>
+              <p>Social impact design studio</p>
             </a>
 
             <sup>Summer 19</sup>
             <a href="https://rappler.com" target="_blank"><u>Rappler</u> 
-              <p>Designing for newsrooms and civic tech</p>
+              <p>Designing for newsrooms</p>
             </a>
 
             <sup>Summer 19</sup>
@@ -241,27 +168,41 @@
               <p>Education for millions of Filipinos</p>
             </a>
           </div>
+          
+          <div class="col-third">
+
+            <h3>Speaking</h3>
+            
+            <a href="https://uxpl.us/" target="_blank">UX+ Conference<br>Speaker</a>
+            
+            <a href="https://2020.uxph.org/" target="_blank">UXPH Conference<br>Panelist</a>
+
+            <a href="https://www.facebook.com/psysc.nscm" target="_blank">National Science Club Month<br>Speaker</a>
+
+
+            <a href="https://devcon.ph" target="_blank">DevCon Summit<br>Speaker</a>
+            
+            <h3>Fellowships</h3>
+
+            <a> Processing Foundation<br>Fellow</a>
+            
+            <a> QBO<br>Community Advocate</a>
+          </div>
 
 
           <div class="col-third">
 
             <h3>Awards</h3>
 
-            <a href="https://xd.adobe.com/ideas/perspectives/social-impact/design-circle-scholarship-2020-winners/?scid=0a0062bb-a20b-412a-9e7a-74966c3cacc6&mv=social&mv2=owned_social" target="_blank"><u>Adobe<br>Design Circle</u></a>
+            <a href="https://xd.adobe.com/ideas/perspectives/social-impact/design-circle-scholarship-2020-winners/?scid=0a0062bb-a20b-412a-9e7a-74966c3cacc6&mv=social&mv2=owned_social" target="_blank">Adobe<br>Design Circle</a>
 
-            <a href="https://2020.uxph.org/" target="_blank"><u>UXPH Conference<br>Speaker</u></a>
+            <a href="https://anitab.org" target="_blank">AnitaB.org<br> Student of Vision</a>
 
-            <a href="https://www.facebook.com/psysc.nscm" target="_blank"><u>National Science Club Month<br>Speaker</u></a>
-
-            <a href="https://anitab.org" target="_blank"><u>AnitaB.org<br> Student of Vision</u></a>
-
-            <a href="https://www.palantir.com/students/scholarship/wit-north-america/" target="_blank"><u>Palantir<br>Women in Technology</u></a>
-
+            <a href="https://www.palantir.com/students/scholarship/wit-north-america/" target="_blank">Palantir<br>Women in Technology</a>
+            
             <a href="https://www.wearefamilyfoundation.org/chiara-amisola" target="_blank"><u>We Are Family Fdtn<br> Global Teen Leader</u></a>
+            
 
-            <a href="https://devcon.ph" target="_blank"><u>DevCon Summit<br>Speaker</u></a>
-
-            <a href="https://imaginecup.microsoft.com"><u>Microsoft<br>Imagine Cup Philippines</u></a>
 
           </div>
 
@@ -333,7 +274,8 @@
     </div>
 
 
-    <div class="box" id="footer">
+    <div class="box" id="footer" style="background-image:url(assets/images/footer.png);">
+      <div class="_foot-dec"></div>
       <div class="_foot">
 
         <a href="index" class="about">Chia Amisola</a>
