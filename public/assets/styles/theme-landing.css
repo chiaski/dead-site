@@ -359,6 +359,9 @@ p.desc {
     padding: 1.5em 0;
     width: 48%;
     text-decoration: none; }
+    #projects a img {
+      object-fit: cover;
+      width: 95%; }
     #projects a ._images {
       object-fit: cover;
       mix-blend-mode: darken;
@@ -506,26 +509,4 @@ p.desc {
     margin: 0 auto; }
   #newsletter form {
     padding: 1em 0; }
-
-.cover {
-  height: 290px;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-position: center; }
-
-@keyframes rainbow {
-  0% {
-    color: #d04489; }
-  15% {
-    color: #d99f4d; }
-  33% {
-    color: #d6bf3f; }
-  66% {
-    color: #42b26b; }
-  77% {
-    color: #3bb4bc; }
-  88% {
-    color: #425abf; }
-  100% {
-    color: #d04489; } }
 

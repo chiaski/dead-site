@@ -583,6 +583,7 @@ $link: #385dd9;
   a.wip {
     cursor: not-allowed !important;
   }
+  
 
   a {
     display: inline-block;
@@ -591,6 +592,11 @@ $link: #385dd9;
     padding: 1.5em 0;
     width: 48%;
     text-decoration: none;
+    
+    img{
+      object-fit: cover;
+      width: 95%;
+    }
 
     ._images {
       //      filter: grayscale(1);
@@ -617,7 +623,7 @@ $link: #385dd9;
     }
 
   }
-
+  
   a:hover {
 
     cursor: pointer;
@@ -853,55 +859,3 @@ $link: #385dd9;
 
 
 }
-
-.cover {
-  height: 290px;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-
-@keyframes rainbow {
-  0% {
-    color: rgb(208, 68, 137);
-  }
-
-  15% {
-    color: rgb(217, 159, 77);
-  }
-
-  33% {
-    color: rgb(214, 191, 63);
-  }
-
-  66% {
-    color: rgb(66, 178, 107);
-  }
-
-  77% {
-    color: rgb(59, 180, 188);
-  }
-
-  88% {
-    color: rgb(66, 90, 191);
-  }
-
-  100% {
-    color: rgb(208, 68, 137);
-  }
-}
-
-
-
-//
-//@keyframes rainbow {
-//  0% {background-color: rgb(239, 170, 204);}
-//  15%{background-color:rgb(242, 210, 166);}
-//  33%{background-color:rgb(255, 253, 159);}
-//  66%{background-color:rgb(148, 224, 176);}
-//  77% {background-color: rgb(170, 233, 237);}
-//  88% {background-color: rgb(191, 189, 230);}
-//  100% {background-color: rgb(239, 170, 204);}
-//}
-//
