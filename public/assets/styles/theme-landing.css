@@ -78,13 +78,16 @@ p.desc {
   top: 0;
   left: 0;
   width: 100%;
-  border-bottom: 1px solid #0A61CD;
+  background: #e1e6ea;
+  background: linear-gradient(180deg, #e1e6ea 0%, #e1e6ea 60%, rgba(225, 230, 234, 0) 100%);
+  padding: 2em;
+  box-sizing: border-box;
   z-index: 9; }
   #landing-header .landing-inner {
     display: flex;
     justify-content: space-between;
     vertical-align: top;
-    padding: 1em; }
+    padding: 0; }
     #landing-header .landing-inner div {
       margin-top: 0;
       margin-bottom: auto; }
@@ -92,14 +95,10 @@ p.desc {
     display: flex;
     justify-content: flex-end;
     width: 80%; }
-  #landing-header ._name {
-    font-family: 'freight-display-pro', serif;
-    font-style: italic;
-    font-size: 2.5em;
-    line-height: 90%; }
   #landing-header ._links {
     width: 100px;
-    max-width: 150px; }
+    max-width: 150px;
+    margin-right: 1em; }
     #landing-header ._links a {
       display: block;
       margin-bottom: .15em; }
@@ -189,7 +188,6 @@ p.desc {
       margin-top: 0;
       max-width: 350px;
       margin-bottom: 1em;
-      font-size: 18px;
       line-height: 150%; }
       .info ._words p strong {
         font-family: "Times Now";
@@ -300,10 +298,7 @@ p.desc {
       justify-content: flex-start;
       flex-wrap: wrap; }
       #work .box-inner ._manifesto a {
-        border-left: 1px solid #0A61CD;
-        border-right: 1px solid #0A61CD;
-        width: 350px;
-        padding: .5em 1em;
+        width: calc(33.33% - 1em);
         margin-right: 1em;
         height: auto; }
     @media only screen and (max-width: 900px) {

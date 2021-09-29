@@ -18,7 +18,7 @@ body {
 }
 
 .container {
-//  background: linear-gradient(180deg, $bg 0%, $bg 5%, rgb(239, 170, 204) 10%, rgb(242, 210, 166) 17%, rgb(255, 253, 159) 31%, rgb(148, 224, 176) 45%, rgb(170, 233, 237) 62%, rgb(191, 189, 230) 75%, rgb(255, 163, 241) 85%);
+  //  background: linear-gradient(180deg, $bg 0%, $bg 5%, rgb(239, 170, 204) 10%, rgb(242, 210, 166) 17%, rgb(255, 253, 159) 31%, rgb(148, 224, 176) 45%, rgb(170, 233, 237) 62%, rgb(191, 189, 230) 75%, rgb(255, 163, 241) 85%);
 
   * {
     z-index: 1;
@@ -27,13 +27,13 @@ body {
 
 }
 
-#footer{
+#footer {
   color: $black;
-  
-  ._foot a{
-    color: $black; 
+
+  ._foot a {
+    color: $black;
   }
-  
+
 }
 
 h1,
@@ -51,7 +51,7 @@ hr {
 
 h3 {
   font-size: 3em;
-  
+
   @media only screen and (max-width: 900px) {
     font-size: 2em;
   }
@@ -68,115 +68,112 @@ h4 {
 
 // SIZING #
 
-p.desc{
-    line-height: 140%;
-    max-width: 460px;
-    padding-bottom: 1em;
+p.desc {
+  line-height: 140%;
+  max-width: 460px;
+  padding-bottom: 1em;
 }
 
 // HEADER
 
 //top
 
-#landing-header{
+#landing-header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  border-bottom: 1px solid $white;
+  background: rgb(225, 230, 234);
+  background: linear-gradient(180deg, rgba(225, 230, 234, 1) 0%, rgba(225, 230, 234, 1) 60%, rgba(225, 230, 234, 0) 100%);
+  padding: 2em;
+  box-sizing: border-box;
   z-index: 9;
 
-  .landing-inner{
+  .landing-inner {
     display: flex;
     justify-content: space-between;
     vertical-align: top;
-    padding: 1em;
-    
-    div{
+    padding: 0;
+
+    div {
       margin-top: 0;
       margin-bottom: auto;
-    } 
+    }
   }
-  
-  .right{
+
+  .right {
     display: flex;
     justify-content: flex-end;
     width: 80%;
   }
-  
-  
-  ._name{
-      font-family: 'freight-display-pro', serif;
-    font-style: italic;
-    font-size: 2.5em;
-    line-height: 90%;
-  }
-  
-  ._links{
-    
+
+
+  ._links {
+
     width: 100px;
     max-width: 150px;
-    
-    a{
+    margin-right: 1em;
+
+    a {
       display: block;
       margin-bottom: .15em;
     }
-    
+
   }
-  
-  ._desc{
+
+  ._desc {
     width: 50%;
     max-width: 350px;
   }
-  
-  
+
+
   @media only screen and (max-width: 900px) {
-  
-    ._desc{
+
+    ._desc {
       display: none;
     }
-    
-    
+
+
   }
-  
+
 }
 
 // MANIFESTO
-#manifesto{
-  
-  display: none; 
-  
+#manifesto {
+
+  display: none;
+
   position: fixed;
   background: $black;
-  
+
   padding: 1em;
   height: 90vh;
   width: 600px;
   margin: 0 auto;
   top: 50px;
   left: 50%;
-  
+
   z-index: 999;
-  
+
   transform: rotate(-3deg) translateX(-50%);
 
-  ._text{
-    
+  ._text {
+
     height: 100%;
     padding: 1em;
     overflow-y: scroll;
-    
-    p{
+
+    p {
       color: $bg;
       font-size: 32px;
     }
-    
+
   }
-  
-  
+
+
 }
 
-#manifesto:hover{
+#manifesto:hover {
   transform: rotate(.5deg) translateX(-50%);
 }
 
@@ -268,7 +265,6 @@ p.desc{
       margin-top: 0;
       max-width: 350px;
       margin-bottom: 1em;
-      font-size: 18px;
       line-height: 150%;
 
       strong {
@@ -324,11 +320,11 @@ p.desc{
         line-height: 120%;
         letter-spacing: -.5px;
       }
-      
-      p em{
+
+      p em {
         letter-spacing: 0;
       }
-      
+
     }
 
     ._words {
@@ -338,11 +334,11 @@ p.desc{
         font-size: 16px;
         max-width: 100%;
       }
-      
-      p.-indent{
+
+      p.-indent {
         text-indent: 0;
       }
-      
+
     }
 
 
@@ -446,17 +442,17 @@ p.desc{
     width: 100%;
   }
 
-  ._announcement{
+  ._announcement {
     width: 100%;
     padding: .5em 1em;
     background: $white;
-    
-    a{
-    color: $bg;
+
+    a {
+      color: $bg;
     }
-    
+
   }
-  
+
   @media only screen and (max-width: 900px) {
 
     min-height: auto;
@@ -473,7 +469,7 @@ p.desc{
 
 
 
-#work{
+#work {
 
   margin: 0 auto;
   padding: 0 1.5em;
@@ -482,31 +478,27 @@ p.desc{
     width: 100%;
     padding: .75em;
     margin: 0 auto;
-    
-    ._manifesto{
-      
+
+    ._manifesto {
+
       display: flex;
       justify-content: flex-start;
       flex-wrap: wrap;
-      
-      a{
-        
-        border-left: 1px solid $black;
-        border-right: 1px solid $black;
-        width: 350px;
-        padding: .5em 1em;
+
+      a {
+        width: calc(33.33% - 1em);
         margin-right: 1em;
         height: auto;
-        
+
       }
-      
+
     }
 
     @media only screen and (max-width: 900px) {
 
       padding: 0;
-      
-      ._manifesto a{
+
+      ._manifesto a {
         margin: 1em 1em 1em 0;
       }
 
@@ -536,32 +528,32 @@ p.desc{
 
 $link: #385dd9;
 
-.projects a{
+.projects a {
 
-    h2 {
-      font-weight: 400;
-      margin: .25em 0;
-      width: auto;
-      font-size: 1.5rem;
-      font-family: 'freight-display-pro', serif;
-      color: $link;
-
-
-      sup {
-        vertical-align: middle;
-        font-style: normal;
-        font-size: .5em;
-      }
+  h2 {
+    font-weight: 400;
+    margin: .25em 0;
+    width: auto;
+    font-size: 1.5rem;
+    font-family: 'freight-display-pro', serif;
+    color: $link;
 
 
+    sup {
+      vertical-align: middle;
+      font-style: normal;
+      font-size: .5em;
     }
 
-    
-    p {
-      margin: .25em 0;
-      font-size: 1em;
-      max-width: 80%;
-    }
+
+  }
+
+
+  p {
+    margin: .25em 0;
+    font-size: 1em;
+    max-width: 80%;
+  }
 
 }
 
@@ -583,7 +575,7 @@ $link: #385dd9;
   a.wip {
     cursor: not-allowed !important;
   }
-  
+
 
   a {
     display: inline-block;
@@ -592,8 +584,8 @@ $link: #385dd9;
     padding: 1.5em 0;
     width: 48%;
     text-decoration: none;
-    
-    img{
+
+    img {
       object-fit: cover;
       width: 95%;
     }
@@ -616,6 +608,7 @@ $link: #385dd9;
       }
 
     }
+
     span.tag {
       font-family: 'freight-display-pro', serif;
       padding: 0;
@@ -623,7 +616,7 @@ $link: #385dd9;
     }
 
   }
-  
+
   a:hover {
 
     cursor: pointer;

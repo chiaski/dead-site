@@ -40,7 +40,7 @@ body {
   place-items: center;
 }
 
-.container *{
+.container * {
   z-index: 1;
   scroll-margin-top: 50px;
   scroll-padding-top: 50px;
@@ -69,7 +69,7 @@ body {
 
 h1,
 h2,
-h3, 
+h3,
 h4 {
   width: 100%;
   font-weight: 300;
@@ -138,7 +138,7 @@ a:hover {
   z-index: 0;
   width: 100%;
   height: 100vh;
-//  background: linear-gradient(180deg, rgba(241, 244, 230, 0) 0%, $bg 25%, $bg 100%);
+  //  background: linear-gradient(180deg, rgba(241, 244, 230, 0) 0%, $bg 25%, $bg 100%);
   opacity: 1;
 }
 
@@ -158,7 +158,6 @@ a:hover {
   a {
     color: $text;
     text-decoration: none;
-    font-size: 1.125rem;
     font-weight: 100;
     font-display: swap;
     padding: .25em;
@@ -208,13 +207,7 @@ a:hover {
 
 .why {
 
-  display: none;
   margin: 50px auto;
-
-  h1 {
-    text-transform: uppercase;
-    font-size: .9em;
-  }
 
   ol {
     list-style: none;
@@ -237,17 +230,18 @@ a:hover {
 
       p {
         text-align: left;
+        font-size: 1em;
       }
 
 
     }
 
+
     li::before {
       position: absolute;
       margin-left: -40px;
       content: counter(why);
-      color: $white;
-      border: 1px solid $white;
+      border: 1px solid;
       padding: .15em;
       text-align: center;
       border-radius: 100px;
@@ -277,6 +271,9 @@ a:hover {
 
 }
 
+#about {
+  padding-top: 80px;
+}
 
 #footer {
 
@@ -293,8 +290,8 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   vertical-align: bottom;
-  
-  ._foot-dec{
+
+  ._foot-dec {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -315,7 +312,6 @@ a:hover {
 
     a {
       text-decoration: none;
-      font-size: 1.125rem;
       padding: .25em;
       margin: .15em;
       min-width: 60px;
@@ -807,4 +803,3 @@ hr {
     opacity: 0;
   }
 }
-

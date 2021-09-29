@@ -168,7 +168,6 @@ a:hover {
   .header a {
     color: #35383b;
     text-decoration: none;
-    font-size: 1.125rem;
     font-weight: 100;
     font-display: swap;
     padding: .25em;
@@ -198,11 +197,7 @@ a:hover {
         margin-left: 0; } }
 
 .why {
-  display: none;
   margin: 50px auto; }
-  .why h1 {
-    text-transform: uppercase;
-    font-size: .9em; }
   .why ol {
     list-style: none;
     counter-reset: why; }
@@ -218,13 +213,13 @@ a:hover {
         line-height: 120%;
         padding: 0; }
       .why ol li p {
-        text-align: left; }
+        text-align: left;
+        font-size: 1em; }
     .why ol li::before {
       position: absolute;
       margin-left: -40px;
       content: counter(why);
-      color: #f0f0f0;
-      border: 1px solid #f0f0f0;
+      border: 1px solid;
       padding: .15em;
       text-align: center;
       border-radius: 100px;
@@ -240,6 +235,9 @@ a:hover {
         width: 90vw; }
         .why ol li {
           margin-left: -2em; } }
+
+#about {
+  padding-top: 80px; }
 
 #footer {
   position: relative;
@@ -268,7 +266,6 @@ a:hover {
       text-align: center; }
     #footer ._foot a {
       text-decoration: none;
-      font-size: 1.125rem;
       padding: .25em;
       margin: .15em;
       min-width: 60px;
