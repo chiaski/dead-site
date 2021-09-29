@@ -332,11 +332,12 @@ a:hover {
         position: static;
         padding: .5em; } }
 
-#footer.footer-alt .footer-links a {
-  color: #ACB2B4; }
-
-#footer.footer-alt .footer-newsletter input[type="submit"] {
-  color: #35383b !important; }
+#footer.footer-alt {
+  padding: 0 2em; }
+  #footer.footer-alt .footer-links a {
+    color: #ACB2B4; }
+  #footer.footer-alt .footer-newsletter input[type="submit"] {
+    color: #35383b !important; }
 
 details[open] summary ~ * {
   animation: sweep .75s ease-in-out; }
